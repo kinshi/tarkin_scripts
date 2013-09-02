@@ -46,7 +46,7 @@ bh_feral_force_wielder = Creature:new {
 				{group = "clothing_attachments", chance = 2750000}
 			},
 			lootChance = 6000000
-		},	
+		},			
 	},
 	weapons = {"light_jedi_weapons"},
 	conversationTemplate = "",
