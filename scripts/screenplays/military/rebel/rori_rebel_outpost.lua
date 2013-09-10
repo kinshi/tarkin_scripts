@@ -43,12 +43,12 @@ function RoriRebelOutpostScreenPlay:spawnMobiles()
 	--mobs
 
 		--Patrols outside the walls
-	spawnMobile("rori", "rebel_army_captain", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
-	spawnMobile("rori", "rebel_trooper", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
-	spawnMobile("rori", "rebel_medic", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
-	spawnMobile("rori", "rebel_trooper", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
-	spawnMobile("rori", "rebel_trooper", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
-	spawnMobile("rori", "rebel_first_lieutenant", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
+	spawnMobile("rori", "specforce_sentry_captain", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
+	spawnMobile("rori", "sentry_rebel_major", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
+	spawnMobile("rori", "sentry_specforce_combat_medic", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
+	spawnMobile("rori", "sentry_specforce", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
+	spawnMobile("rori", "sentry_specforce", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
+	spawnMobile("rori", "sentry_specforce_squad_leader", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
 
 	spawnMobile("rori", "rebel_army_captain", 360, math.random(16) + 3708.4, 96.1, math.random(24) + -6429.6, math.random(360), 0)
 	spawnMobile("rori", "rebel_trooper", 360, math.random(16) + 3708.4, 96.1, math.random(24) + -6429.6, math.random(360), 0)
