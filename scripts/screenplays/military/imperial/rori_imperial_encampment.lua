@@ -160,11 +160,23 @@ end
 
 	
 function RoriImperialEncampmentScreenPlay:teleportImpOutpost(pCollector, pPlayer)
-	local player = LuaSceneObject(pPlayer)
-	player:switchZone("naboo", 5333, 0, 6422, 0)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isImperial() == true) then
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("naboo", 5333, 0, 6422, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
 end
 
 function RoriImperialEncampmentScreenPlay:teleportImpRetreat(pCollector, pPlayer)
-	local player = LuaSceneObject(pPlayer)
-	player:switchZone("naboo", 2437.8, 0, -3895.7, 0)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isImperial() == true) then
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("naboo", 2437.8, 0, -3895.7, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
 end
