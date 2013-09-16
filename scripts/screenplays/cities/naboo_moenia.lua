@@ -9,7 +9,7 @@ registerScreenPlay("MoeniaScreenPlay", true)
 function MoeniaScreenPlay:start()
 	if (isZoneEnabled("naboo")) then
 		self:spawnSceneObjects()
---		self:spawnMobiles()
+		self:spawnMobiles()
 	end
 end
 
