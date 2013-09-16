@@ -126,11 +126,23 @@ function RoriRebelOutpostScreenPlay:spawnMobiles()
 -- Starbird base (Rori)
 	
 function RoriRebelOutpostScreenPlay:teleportStarbird(pCollector, pPlayer)
-	local player = LuaSceneObject(pPlayer)
-	player:switchZone("rori", -5310, 0, 5009, 0)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isRebel() == true) then	
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("rori", -5310, 0, 5009, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
 end
 
 function RoriRebelOutpostScreenPlay:teleportMoenia(pCollector, pPlayer)
-	local player = LuaSceneObject(pPlayer)
-	player:switchZone("naboo", 4731, 4, -4677, 0)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isRebel() == true) then
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("naboo", 4731, 4, -4677, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
 end
