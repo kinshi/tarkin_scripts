@@ -2044,7 +2044,3 @@ includeFile("lair/zucca_boar.lua")
 includeFile("lair/zucca_boar_desert.lua")
 includeFile("lair/zucca_boar_dune.lua")
 includeFile("lair/zucca_boar_wasteland.lua")
-
---Tarkin Custom
-
-includeFile("lair/yavin4_black_sun.lua")

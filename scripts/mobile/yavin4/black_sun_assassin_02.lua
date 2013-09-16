@@ -5,9 +5,9 @@ black_sun_assassin_02 = Creature:new {
 	pvpFaction = "death_watch",
 	faction = "",
 	level = 107,
-	chanceHit = 17.5,
-	damageMin = 670,
-	damageMax = 1050,
+	chanceHit = 25.5,
+	damageMin = 1050,
+	damageMax = 1675,
 	baseXp = 10081,
 	baseHAM = 36000,
 	baseHAMmax = 49000,
@@ -33,8 +33,8 @@ black_sun_assassin_02 = Creature:new {
 			groups = {
 				{group = "junk", chance = 3500000},
 				{group = "pistols", chance = 1750000},
-				{group = "melee_blacksun_razor", chance = 1750000},
-				{group = "carbines", chance = 1750000},
+				{group = "melee_blacksun_razor", chance = 750000},
+				{group = "carbines", chance = 2750000},
 				{group = "jetpack_parts", chance = 500000},				
 				{group = "bounty_hunter_armor_looted", chance = 700000},
 				{group = "jetpack_base", chance = 50000},
@@ -44,7 +44,7 @@ black_sun_assassin_02 = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
-	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,bountyhuntermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(black_sun_assassin_02, "black_sun_assassin_02")

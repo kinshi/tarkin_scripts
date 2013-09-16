@@ -8,7 +8,10 @@ ledger = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {}
+	customizationValues = {},
+	junkDealerTypeNeeded = JUNKGENERIC,
+	junkMinValue = 2,
+	junkMaxValue = 22
 }
 
 addLootItemTemplate("ledger", ledger)

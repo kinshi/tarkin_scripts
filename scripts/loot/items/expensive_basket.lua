@@ -8,7 +8,10 @@ expensive_basket = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {}
+	customizationValues = {},
+	junkDealerTypeNeeded = JUNKGENERIC,
+	junkMinValue = 2,
+	junkMaxValue = 22
 }
 
 addLootItemTemplate("expensive_basket", expensive_basket)

@@ -8,7 +8,10 @@ used_ticket = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {}
+	customizationValues = {},
+	junkDealerTypeNeeded = JUNKGENERIC,
+	junkMinValue = 2,
+	junkMaxValue = 22
 }
 
 addLootItemTemplate("used_ticket", used_ticket)

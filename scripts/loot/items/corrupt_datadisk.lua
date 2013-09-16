@@ -8,7 +8,10 @@ corrupt_datadisk = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {}
+	customizationValues = {},
+	junkDealerTypeNeeded = JUNKGENERIC,
+	junkMinValue = 2,
+	junkMaxValue = 22
 }
 
 addLootItemTemplate("corrupt_datadisk", corrupt_datadisk)
