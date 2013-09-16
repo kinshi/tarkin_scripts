@@ -57,3 +57,6 @@ includeFile("conversations/tasks/dolac_legasi_escaped_prisoner_conv.lua")
 includeFile("conversations/tasks/hedon_istee_conv.lua")
 includeFile("conversations/tasks/serene_floater_conv.lua")
 includeFile("conversations/tasks/ris_armor_quest_conv.lua")
+
+--Bestine Travel Convotemplate
+includeFile("conversations/tasks/bestine_travel_convotemplate.lua")
