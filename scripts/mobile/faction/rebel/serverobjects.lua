@@ -104,3 +104,13 @@ includeFile("faction/rebel/specops_agent.lua")
 includeFile("faction/rebel/specops_alliance_free_agent.lua")
 includeFile("faction/rebel/specops_trooper.lua")
 includeFile("faction/rebel/tactical_officer.lua")
+
+--Tarkin Sentry NPCs
+
+includeFile("faction/rebel/sentry_rebel_major.lua")
+includeFile("faction/rebel/sentry_specforce.lua")
+includeFile("faction/rebel/sentry_specforce_bombardier.lua")
+includeFile("faction/rebel/sentry_specforce_sniper.lua")
+includeFile("faction/rebel/sentry_specforce_squad_leader.lua")
+includeFile("faction/rebel/sentry_specforce_captain.lua")
+includeFile("faction/rebel/sentry_specforce_combat_medic.lua")

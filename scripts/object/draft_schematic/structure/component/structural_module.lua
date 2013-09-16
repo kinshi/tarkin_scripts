@@ -66,7 +66,7 @@ object_draft_schematic_structure_component_structural_module = object_draft_sche
    ingredientTitleNames = {"reinforcement_rods", "body_material", "insulation"},
    ingredientSlotType = {0, 0, 0},
    resourceTypes = {"metal", "ore", "ore"},
-   resourceQuantities = {50, 100, 100},
+   resourceQuantities = {38, 75, 75},
    contribution = {100, 100, 100},
 
 
