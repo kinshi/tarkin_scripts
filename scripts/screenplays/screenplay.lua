@@ -267,6 +267,8 @@ includeFile("static_spawns/tatooine_static_spawns_north.lua")
 --Yavin4
 includeFile("static_spawns/yavin4_static_spawns.lua")
 
+--Bestine Travel Terminal
+includeFile("tests/bestine_travel.lua")
 
 --Tests
 --includeFile("tests/options_bitmask_test.lua")
