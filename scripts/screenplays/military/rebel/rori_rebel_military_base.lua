@@ -110,6 +110,12 @@ end
 -- Starbird base (Rori) travel function
 	
 function RoriRebelMilitaryBaseScreenPlay:teleportRebelOutpost(pCollector, pPlayer)
-	local player = LuaSceneObject(pPlayer)
-	player:switchZone("rori", 3691, 0, -6403, 0)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isRebel() == true) then	
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("rori", 3691, 0, -6403, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
 end
