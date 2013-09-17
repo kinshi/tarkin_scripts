@@ -12,7 +12,7 @@ function BestineImperialOutpostScreenPlay:start()
 	end
 end
 
-function DantooineImperialOutpostScreenPlay:spawnMobiles()
+function BestineImperialOutpostScreenPlay:spawnMobiles()
 	
 	--Outside wall perimeter
 
@@ -40,5 +40,9 @@ function DantooineImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "sentry_stormtrooper", 450, -1149.4, 98.0, -3916.5, -178, 0)
 	spawnMobile("tatooine", "sentry_stormtrooper", 450, -1153.5, 98.0, -3912.2, 153, 0)
 	spawnMobile("tatooine", "sentry_stormtrooper", 450, -1154.0, 98.0, -3918.1, 179, 0)
+
+	-- Where the Zephy load in point should be (where players arrive when they travel into the base)
+
+	-- Where the travel terminal should be
 
 end
