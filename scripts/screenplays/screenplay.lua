@@ -270,6 +270,9 @@ includeFile("static_spawns/yavin4_static_spawns.lua")
 --Bestine Travel Terminal
 includeFile("tests/bestine_travel.lua")
 
+--Anniversary Droid
+includeFile("tests/anniversary.lua")
+
 --Tests
 --includeFile("tests/options_bitmask_test.lua")
 --includeFile("event/stresstest_20120128.lua")
