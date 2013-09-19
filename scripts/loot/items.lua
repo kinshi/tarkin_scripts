@@ -1,3 +1,12 @@
+JUNKNOTSELLABLE = 0
+JUNKGENERIC = 1
+JUNKCLOTHESANDJEWELLERY = 2
+JUNKWEAPONS = 4
+JUNKARMOUR = 8
+JUNKTUSKEN = 16
+JUNKJEDI = 32
+
+
 includeFile("items/aakuan_belt.lua")
 includeFile("items/aakuan_ring.lua")
 includeFile("items/aakuan_robe.lua")
@@ -26,6 +35,8 @@ includeFile("items/binary_liquid.lua")
 includeFile("items/blank_canvas.lua")
 includeFile("items/brackaset_plates.lua")
 includeFile("items/brackaset_plating_segment.lua")
+includeFile("items/broken_binoculars_s1.lua")
+includeFile("items/broken_binoculars_s2.lua")
 includeFile("items/broken_decryptor.lua")
 includeFile("items/broken_viewscreen_grey.lua")
 includeFile("items/broken_viewscreen_tan.lua")
@@ -36,6 +47,7 @@ includeFile("items/carved_bowl_schematic.lua")
 includeFile("items/closed_basket_schematic.lua")
 includeFile("items/corrupt_datadisk.lua")
 includeFile("items/corsec_id_badge.lua")
+includeFile("items/couch_blue_schematic.lua")
 includeFile("items/crystalline_clothing_treatment.lua")
 includeFile("items/damaged_datapad.lua")
 includeFile("items/de10_pistol_barrel.lua")
@@ -199,6 +211,7 @@ includeFile("items/streetlamp_schematic.lua")
 includeFile("items/tall_bottle_schematic.lua")
 includeFile("items/tanned_hide_s01_schematic.lua")
 includeFile("items/tanned_hide_s02_schematic.lua")
+includeFile("items/tatooine_tapestry_schematic.lua")
 includeFile("items/technical_console_schematic_1.lua")
 includeFile("items/technical_console_schematic_2.lua")
 includeFile("items/test_loot_item.lua")

@@ -23,5 +23,71 @@ function Yavin4StaticSpawnsScreenPlay:spawnMobiles()
 	-- Dark Jedi Enclave (5068, 310)
 	spawnMobile("yavin4", "dark_jedi_sentinel", 1800, 5074.2, 78.8, 313.9, 90, 0)
 	spawnMobile("yavin4", "dark_jedi_sentinel", 1800, 5074.3, 79.2, 306.4, 90, 0)	
+	
+	-- Black Sun Spawns
+	
+	-- NW Spawns
+	
+	--Assassins
+	
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+
+	--Scouts
+	
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + -5000, 9.7, math.random(2000) + 4000, math.random(360), 0)	
+
+	--East-Central
+	
+	--Assassins
+	
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_assassin_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+
+	--Scouts
+	
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
+	spawnMobile("yavin4", "black_sun_guard_02", 600, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)			
 
 end

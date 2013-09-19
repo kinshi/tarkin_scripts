@@ -43,14 +43,14 @@ function RoriRebelOutpostScreenPlay:spawnMobiles()
 	--mobs
 
 		--Patrols outside the walls
-	spawnMobile("rori", "specforce_sentry_captain", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
+	spawnMobile("rori", "sentry_specforce_captain", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
 	spawnMobile("rori", "sentry_rebel_major", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
 	spawnMobile("rori", "sentry_specforce_combat_medic", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
 	spawnMobile("rori", "sentry_specforce", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
 	spawnMobile("rori", "sentry_specforce", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
 	spawnMobile("rori", "sentry_specforce_squad_leader", 360, math.random(16) + 3618.3, 96.1, math.random(24) + -6469.6, math.random(360), 0)
 
-	spawnMobile("rori", "specforce_sentry_captain", 360, math.random(16) + 3708.4, 96.1, math.random(24) + -6429.6, math.random(360), 0)
+	spawnMobile("rori", "sentry_specforce_captain", 360, math.random(16) + 3708.4, 96.1, math.random(24) + -6429.6, math.random(360), 0)
 	spawnMobile("rori", "sentry_rebel_major", 360, math.random(16) + 3708.4, 96.1, math.random(24) + -6429.6, math.random(360), 0)
 	spawnMobile("rori", "sentry_specforce", 360, math.random(16) + 3708.4, 96.1, math.random(24) + -6429.6, math.random(360), 0)
 	spawnMobile("rori", "sentry_specforce", 360, math.random(16) + 3708.4, 96.1, math.random(24) + -6429.6, math.random(360), 0)
@@ -66,17 +66,17 @@ function RoriRebelOutpostScreenPlay:spawnMobiles()
 	spawnMobile("rori", "sentry_specforce", 360, 3674.4, 96.0, -6499.0, 180, 0)
 
 		--Outside
-	spawnMobile("rori", "specforce_sentry_captain", 360, 3644, 96, -6404, 133, 0)
+	spawnMobile("rori", "sentry_specforce_captain", 360, 3644, 96, -6404, 133, 0)
 	spawnMobile("rori", "sentry_specforce_combat_medic", 360, 3662, 96, -6402, 162, 0)
 	spawnMobile("rori", "sentry_specforce", 360, 3660, 96, -6443, 342, 0)
 	spawnMobile("rori", "sentry_specforce_sniper", 360, 3703, 96, -6404, 265, 0)
 	spawnMobile("rori", "sentry_specforce_sniper", 360, 3703, 96, -6431, 270, 0)
 	spawnMobile("rori", "sentry_rebel_major", 360, 3694, 96, -6441, 0, 0)
-	spawnMobile("rori", "specforce_sentry_captain", 360, 3679, 96, -6446, 210, 0)
+	spawnMobile("rori", "sentry_specforce_captain", 360, 3679, 96, -6446, 210, 0)
 	spawnMobile("rori", "sentry_specforce_squad_leader", 360, 3658, 96, -6443, 90, 0)
 	spawnMobile("rori", "sentry_specforce_bombardier", 360, 3670, 96, -6443, 270, 0)
 	spawnMobile("rori", "sentry_specforce", 360, 3641, 96, -6432, 90, 0)
-	spawnMobile("rori", "specforce_sentry_captain", 360, 3671, 96, -6480, 270, 0)
+	spawnMobile("rori", "sentry_specforce_captain", 360, 3671, 96, -6480, 270, 0)
 	spawnMobile("rori", "sentry_rebel_major", 360, 3657, 96, -6483, 140, 0)
 	spawnMobile("rori", "sentry_specforce_sniper", 360, 3642, 96, -6477, 110, 0)
 	spawnMobile("rori", "sentry_specforce_combat_medic", 360, 3656, 96, -6463, 80, 0)
@@ -84,10 +84,10 @@ function RoriRebelOutpostScreenPlay:spawnMobiles()
 		--Guard Tower with rifle trainer
 	spawnMobile("rori", "sentry_rebel_major", 360, 3651, 103, -6485, 90, 0)
 	spawnMobile("rori", "sentry_specforce_bombardier", 360, 3651, 103, -6489, 90, 0)
-	spawnMobile("rori", "specforce_sentry_captain", 360, 3645, 103, -6494, 180, 0)
+	spawnMobile("rori", "sentry_specforce_captain", 360, 3645, 103, -6494, 180, 0)
 	spawnMobile("rori", "sentry_specforce_combat_medic", 360, -2.0, 2, 3.5, 90, 4505604)
 		--Guard Tower with carbine trainer
-	spawnMobile("rori", "specforce_sentry_captain", 360, 3635, 103, -6439, 91, 0)
+	spawnMobile("rori", "sentry_specforce_captain", 360, 3635, 103, -6439, 91, 0)
 	spawnMobile("rori", "sentry_specforce_bombardier", 360, 3632, 103, -6432, 0, 0)
 	spawnMobile("rori", "sentry_specforce_sniper", 360, -2.5, 2.0, 3.7, 70, 4505993)
 		--Guard Tower with marksman trainer
@@ -100,10 +100,10 @@ function RoriRebelOutpostScreenPlay:spawnMobiles()
 	spawnMobile("rori", "sentry_specforce", 360, 2.1, 0.6, -6.5, 280, 4505636)
 	spawnMobile("rori", "sentry_rebel_major", 360, 7.8, 0.6, -4.4, 270, 4505637)
 		--Left Storage Shed with quest givers
-	spawnMobile("rori", "sentry_specfocre", 360, 0, 0.1, -6.0, 0, 4505666)
+	spawnMobile("rori", "sentry_specforce", 360, 0, 0.1, -6.0, 0, 4505666)
 		--Right Storage Shed (Cloner)
 	spawnMobile("rori", "sentry_specforce_combat_medic", 360, 5.3, 0.1, 0.9, 270, 4505609)
-	spawnMobile("rori", "specforce_sentry_squad_leader", 360, 0, 0.1, -6.0, 0, 4505608)
+	spawnMobile("rori", "sentry_specforce_squad_leader", 360, 0, 0.1, -6.0, 0, 4505608)
 
 	--misc
 	spawnMobile("rori", "rebel_recruiter", 0, 3683, 96, -6460, -101, 0)

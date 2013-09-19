@@ -9,7 +9,7 @@ registerScreenPlay("MoeniaScreenPlay", true)
 function MoeniaScreenPlay:start()
 	if (isZoneEnabled("naboo")) then
 		self:spawnSceneObjects()
---		self:spawnMobiles()
+		self:spawnMobiles()
 	end
 end
 
@@ -35,66 +35,22 @@ function MoeniaScreenPlay:spawnSceneObjects()
 	
 end
 
---function MoeniaScreenPlay:spawnMobiles()
+function MoeniaScreenPlay:spawnMobiles()
 
--- 1972, I cut n pasted these from the RO screenplay, just replace with your NPCs, and get rid of what you don't need. 
+-- SENTRIES
 
-	--mobs
-		--Outside
---	spawnMobile("rori", "rebel_army_captain", 360, 3644, 96, -6404, 133, 0)
---	spawnMobile("rori", "rebel_colonel", 360, 3662, 96, -6402, 162, 0)
---	spawnMobile("rori", "rebel_commando", 360, 3703, 96, -6404, 265, 0)
---	spawnMobile("rori", "rebel_commando", 360, 3703, 96, -6431, 270, 0)
---	spawnMobile("rori", "rebel_colonel", 360, 3694, 96, -6441, 0, 0)
---	spawnMobile("rori", "rebel_specforce_captain", 360, 3679, 96, -6446, 210, 0)
---	spawnMobile("rori", "rebel_colonel", 360, 3658, 96, -6443, 90, 0)
---	spawnMobile("rori", "rebel_specforce_urban_guerrilla", 360, 3670, 96, -6443, 270, 0)
---	spawnMobile("rori", "rebel_colonel", 360, 3641, 96, -6432, 90, 0)
---	spawnMobile("rori", "specforce_major", 360, 3671, 96, -6480, 270, 0)
---	spawnMobile("rori", "rebel_specforce_sergeant", 360, 3657, 96, -6483, 140, 0)
---	spawnMobile("rori", "specforce_wilderness_operative", 360, 3642, 96, -6477, 110, 0)
---	spawnMobile("rori", "rebel_specforce_urban_guerrilla", 360, 3656, 96, -6463, 80, 0)
---	spawnMobile("rori", "specforce_marine", 360, 3684, 96, -6458, 280, 0)
-		--Guard Tower with rifle trainer
---	spawnMobile("rori", "rebel_specforce_pathfinder", 360, 3651, 103, -6485, 90, 0)
---	spawnMobile("rori", "specforce_wilderness_operative", 360, 3651, 103, -6489, 90, 0)
---	spawnMobile("rori", "specforce_lieutenant", 360, 3645, 103, -6494, 180, 0)
---	spawnMobile("rori", "rebel_specforce_urban_guerrilla", 360, -2.0, 2, 3.5, 90, 4505604)
-		--Guard Tower with carbine trainer
---	spawnMobile("rori", "specforce_wilderness_operative", 360, 3635, 103, -6439, 91, 0)
---	spawnMobile("rori", "rebel_specforce_pathfinder", 360, 3632, 103, -6432, 0, 0)
---	spawnMobile("rori", "specforce_wilderness_operative", 360, -2.5, 2.0, 3.7, 70, 4505993)
-		--Guard Tower with marksman trainer
---	spawnMobile("rori", "specforce_wilderness_operative", 360, 3680, 103, -6491, 170, 0)
---	spawnMobile("rori", "rebel_specforce_pathfinder", 360, 3677, 103, -6481, 180, 0)
---	spawnMobile("rori", "specforce_wilderness_operative", 360, 3685, 103, -6485, 50, 0)
-		-- Tavern
---	spawnMobile("rori", "rebel_medic", 360, -8.5, 0.6, -7.3, 47, 4505636)
---	spawnMobile("rori", "specforce_marine", 360, 2.2, 0.6, -2.2, 243, 4505636)
---	spawnMobile("rori", "specforce_marine", 360, 2.1, 0.6, -6.5, 280, 4505636)
---	spawnMobile("rori", "rebel_high_general", 360, 7.8, 0.6, -4.4, 270, 4505637)
-		--Left Storage Shed with quest givers
---	spawnMobile("rori", "specforce_marine", 360, 0, 0.1, -6.0, 0, 4505666)
-		--Right Storage Shed (Cloner)
---	spawnMobile("rori", "rebel_medic", 360, 5.3, 0.1, 0.9, 270, 4505609)
---	spawnMobile("rori", "rebel_colonel", 360, 0, 0.1, -6.0, 0, 4505608)
+--spawnMobile("naboo", "sentry_rebel_major", 360, , , , , 0)
+spawnMobile("naboo", "sentry_specforce_sniper", 360, 4724.4, 4.2, -4685.7, 0, 0)
+spawnMobile("naboo", "sentry_specforce", 360, 4702.0, 4.2, -4674.6, 36, 0)
+spawnMobile("naboo", "sentry_specforce", 360, 4691.5, 4.2, -4649.4, 83, 0)
+spawnMobile("naboo", "sentry_specforce", 360, 4752.1, 4.2, -4675.0, -55, 0)
+spawnMobile("naboo", "sentry_specforce_captain", 360, 4716.0, 4.2, -4698.4, 5, 0)
+spawnMobile("naboo", "sentry_specforce_squad_leader", 360, 4699.7, 4.2, -4691.4, 41, 0)
+spawnMobile("naboo", "sentry_specforce_bombardier", 360, 4822.2, 4.2, -4700.8, -85, 0)
+spawnMobile("naboo", "sentry_specforce_bombardier", 360, 4822.4, 4.2, -4708.8, -68, 0)
+spawnMobile("naboo", "sentry_specforce_sniper", 360, 4827.4, 4.2, -4697.4, -48, 0)
 
-	--misc
---	spawnMobile("rori", "rebel_recruiter", 0, 3683, 96, -6460, -101, 0)
-
-	--trainer
---	spawnMobile("rori", "trainer_architect", 60, 3677, 96, -6418, 90, 0)
---	spawnMobile("rori", "trainer_armorsmith", 60, 3676, 96, -6432, 90, 0)
---	spawnMobile("rori", "trainer_carbine", 60, 3627, 104, -6433, 90, 0)
---	spawnMobile("rori", "trainer_chef", 60, 3681, 96, -6426, 180, 0)
---	spawnMobile("rori", "trainer_commando", 60, -1.6, 0.7, 2.7, 180, 4505792)
---	spawnMobile("rori", "trainer_marksman", 60, 3684.5, 104, -6488.5, 260, 0)
---	spawnMobile("rori", "trainer_rifleman", 60, 3649, 104, -6491.5, 315, 0)
---	spawnMobile("rori", "trainer_weaponsmith", 60, 3681, 96, -6420, 0, 0)
-
-	-- SENTRIES
-	
---	end
+end
 
 -- Zephyr Travel Destinations
 

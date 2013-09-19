@@ -6,8 +6,8 @@ black_sun_razor = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/special/blacksun_razor.iff",
 	craftingValues = {
-		{"mindamage",89,95,0},
-		{"maxdamage",169,248,0},
+		{"mindamage",75,90,0},
+		{"maxdamage",138,215,0},
 		{"attackspeed",3.6,2.5,1},
 		{"woundchance",14,26,0},
 		{"hitpoints",1500,1700,0},
@@ -22,9 +22,10 @@ black_sun_razor = {
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	skillMods = {
-
-	}
+	
+	-- randomDotChance: The chance of this weapon object dropping with a random dot on it. Higher number means less chance. Set to 0 to always have a random dot.
+	randomDotChance = 30
+	
 }
 
 addLootItemTemplate("black_sun_razor", black_sun_razor)
