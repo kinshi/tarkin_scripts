@@ -60,3 +60,9 @@ includeFile("conversations/tasks/ris_armor_quest_conv.lua")
 
 --Bestine Travel Convotemplate
 includeFile("conversations/tasks/bestine_travel_convotemplate.lua")
+
+--GM Pet Vendor
+includeFile("conversations/tasks/pet_vendor_template.lua")
+
+--Dispenser Droid
+includeFile("conversations/tasks/anniversary_template.lua")

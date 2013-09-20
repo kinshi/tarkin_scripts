@@ -311,16 +311,7 @@ yavin_world_creatures = {
 			numberToSpawn = 0,
 			weighting = 15,
 			size = 25
-		}
---		{
---			lairTemplateName = "yavin4_black_sun",
---			spawnLimit = -1,
---			minDifficulty = 61,
---			maxDifficulty = 90,
---			numberToSpawn = 0,
---			weighting = 15,
---			size = 25
---		}
+		},
 	}
 }
 
