@@ -16,6 +16,12 @@ function AnchorheadRebelBaseScreenPlay:spawnMobiles()
 	
 	-- Gate Locations
 	
+	spawnMobile("tatooine", "sentry_specforce", 360, 125.7, 52.0, -5369.3, 110, 0)
+	spawnMobile("tatooine", "sentry_specforce_sniper", 360, 119.4, 52.0, -5340.9, 60, 0)
+	spawnMobile("tatooine", "sentry_specforce_combat_medic", 360, 122.4, 52.0, -5330.6, -154, 0)
+	spawnMobile("tatooine", "sentry_specforce_squad_leader", 360, 149.4, 52.0, -5325.5, 29, 0)
+	spawnMobiel("tatooine", "sentry_specforce", 360, 32.2, 51.7, -5347.6, -88, 0)
+	spawnMobile("tatooine", "sentry_specforce", 360, 32,4, 51.9, -5340.3, -88, 0)
 	spawnMobile("tatooine", "specforce_marine", 360, 132.8, 52.0, -5375.0, 0, 0)
 	spawnMobile("tatooine", "specforce_marine", 360, 132.8. 52.0, -5368.8, 180, 0)
 	spawnMobile("tatooine", "specforce_marine", 360, 136.0, 52.0, -5369.6, 90, 0)
@@ -33,6 +39,7 @@ function AnchorheadRebelBaseScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "specforce_marine", 360, 30.1, 52.1, -5382.2, -90, 0)
 	spawnMobile("tatooine", "specforce_marine", 360, 31.5, 52.3, -5334.2, -90, 0)
 	spawnMobile("tatooine", "specforce_marine", 360, 61.0, 52.3, -5334.6, 140, 0)
+	spawnMobile("tatooine", "sentry_specforce", 360, 54.4, 52.0, -5346.8, -26, 0)
 
 	-- Other outside points
 
@@ -47,7 +54,8 @@ function AnchorheadRebelBaseScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "specforce_major", 360, 132.8, 52.0, -5404.3, 82, 0)
 	spawnMobile("tatooine", "specforce_marine", 360, 131.2, 52.0, -5400.2, 145, 0)
 	spawnMobile("tatooine", "specforce_marine", 360, 132.8, 52.0, -5407.7, 0, 0)
-
+	spawnMobile("tatooine", "sentry_specforce", 360, 103.5, 52.0, -5327.8, 16, 0)
+	spawnMobile("tatooine", "sentry_specforce", 360, 152.7, 52.0, -5325.5, 29, 0)
 
 	-- Cloning Center
 
