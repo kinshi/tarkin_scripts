@@ -7,7 +7,7 @@ FollowPlayerDroidScreenplay = ScreenPlay:new {
 registerScreenPlay("FollowPlayerDroidScreenplay", true)
 
 function FollowPlayerDroidScreenplay:start()
-	local pNpc = spawnMobile("tatooine", "intro_droid", 1, 200, 12.0, 12, -173, 0 )
+	local pNpc = spawnMobile("tatooine", "gm_pet_vendor", 1, 200, 12.0, 12, -173, 0 )
 	local collector = LuaSceneObject(pNpc)
 	collector:setCustomObjectName("\\#ee3377Pet Droid")
 	local col2creo = LuaCreatureObject(pNpc)
