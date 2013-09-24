@@ -5,6 +5,7 @@ JUNKWEAPONS = 4
 JUNKARMOUR = 8
 JUNKTUSKEN = 16
 JUNKJEDI = 32
+JUNKJAWA = 64
 
 
 includeFile("items/aakuan_belt.lua")
@@ -424,6 +425,31 @@ includeFile("items/recycler/red_wiring.lua")
 includeFile("items/recycler/small_motor.lua")
 includeFile("items/recycler/spinner_blade.lua")
 includeFile("items/recycler/tumble_blender_schematic.lua")
+
+--skill_buff sub-folder
+includeFile("items/skill_buff/skill_buff_carbine_accuracy.lua")
+includeFile("items/skill_buff/skill_buff_carbine_speed.lua")
+includeFile("items/skill_buff/skill_buff_heavy_weapon_accuracy.lua")
+includeFile("items/skill_buff/skill_buff_heavy_weapon_speed.lua")
+includeFile("items/skill_buff/skill_buff_mask_scent.lua")
+includeFile("items/skill_buff/skill_buff_melee_accuracy.lua")
+includeFile("items/skill_buff/skill_buff_melee_defense.lua")
+includeFile("items/skill_buff/skill_buff_ranged_accuracy.lua")
+includeFile("items/skill_buff/skill_buff_ranged_defense.lua")
+includeFile("items/skill_buff/skill_buff_onehandmelee_accuracy.lua")
+includeFile("items/skill_buff/skill_buff_onehandmelee_speed.lua")
+includeFile("items/skill_buff/skill_buff_pistol_accuracy.lua")
+includeFile("items/skill_buff/skill_buff_pistol_speed.lua")
+includeFile("items/skill_buff/skill_buff_polearm_accuracy.lua")
+includeFile("items/skill_buff/skill_buff_polearm_speed.lua")
+includeFile("items/skill_buff/skill_buff_rifle_accuracy.lua")
+includeFile("items/skill_buff/skill_buff_rifle_speed.lua")
+includeFile("items/skill_buff/skill_buff_thrown_accuracy.lua")
+includeFile("items/skill_buff/skill_buff_thrown_speed.lua")
+includeFile("items/skill_buff/skill_buff_twohandmelee_accuracy.lua")
+includeFile("items/skill_buff/skill_buff_twohandmelee_speed.lua")
+includeFile("items/skill_buff/skill_buff_unarmed_accuracy.lua")
+includeFile("items/skill_buff/skill_buff_unarmed_speed.lua")
 
 --task_loot sub-folder
 includeFile("items/task_loot/booto_lubble_thermal_detonator.lua")

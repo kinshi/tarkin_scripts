@@ -77,3 +77,9 @@ function ScreenPlay:spawnContainerLoot(pContainer)
 
 	writeData(container:getObjectID(), time + self.lootContainerRespawn)
 end
+
+
+
+Act = Object:new {
+
+}
