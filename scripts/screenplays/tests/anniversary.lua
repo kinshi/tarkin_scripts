@@ -16,7 +16,7 @@ registerScreenPlay("anniversary_screenplay", true)
 function anniversary_screenplay:start() 
 	printf("anniversary_screenplay.screenplaystart\n")
 
-	local pNpc = spawnMobile("naboo", "intro_droid", 1, -4881, 6.0, 4150, 35, 0 )
+	local pNpc = spawnMobile("corellia", "intro_droid", 1, -155.6, 28.0, -4709.3, 121, 0 )
 	local collector = LuaSceneObject(pNpc)
 	collector:setCustomObjectName("\\#ee3377DOT-Day Vendor")
 	local col2creo = LuaCreatureObject(pNpc)
