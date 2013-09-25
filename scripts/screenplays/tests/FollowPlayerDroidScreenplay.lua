@@ -57,24 +57,9 @@ function pet:getNextConversationScreen(conversationTemplate, conversingPlayer, s
 	 
 		end
 		if ( lastConversationScreen == nil ) then
-			print("Last conversation is null.  let's try to get the first screen")
-
-			local creature = LuaCreatureObject(conversingPlayer)
-			local hasAccepted = creature:hasScreenPlayState(anniversary_screenplay.states.accepted, anniversary_screenplay.questString)
-			print("hasAccepted() is " .. hasAccepted) 
-
-			if ( hasAccepted == 0 ) then
 			
-				print("no screenplaystate so must not have accepted it yet")
-				--nextConversationScreen = conversation:getInitialScreen()
 				nextConversationScreen = conversation:getScreen("first_screen")
-				--self:addQuestOptions(nextConversationScreen)
-				
-			else
-
-
-			nextConversationScreen = conversation:getScreen("completed")
-		end		
+			
 	
 		else
 			
