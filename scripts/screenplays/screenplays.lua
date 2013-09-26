@@ -23,6 +23,7 @@ includeFile("military/rebel/rori_rebel_outpost.lua")
 includeFile("military/rebel/corellia_rebel_hideout.lua")
 includeFile("military/rebel/rori_rebel_military_base.lua")
 includeFile("military/rebel/tatooine_anchorhead_rebel_base.lua")
+includeFile("military/rebel/lok_rebel_safehouse.lua")
 
 -- Theme parks
 require("themeParkLogic")

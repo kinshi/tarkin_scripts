@@ -279,6 +279,20 @@ function RebelHideoutScreenPlay:spawnSceneObjects()
 
 	local pTurret6 = spawnSceneObject("corellia", "object/installation/turret/turret_block_med.iff", -6457.1, 404, 6031.5, 0, 0.707107, 0, 0.707107, 0)
 	setTurretFaction(pTurret6)
+	
+	local pCollector = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -6528, 398.0, 6042, 0, 0, 0, 1, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(264)
+	collector:setCustomObjectName("\\#ee3377Travel to Anchorhead - Tatooine")
+	createObserver(OBJECTRADIALUSED, "RebelHideoutScreenPlay", "teleportAH", pCollector)
+
+	local pCollector2 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -6522.7, 398.0, 6043, 0, 0, 0, 1, 0)
+	local collector2 = LuaSceneObject(pCollector2)
+	local col2creo = LuaCreatureObject(pCollector2)
+	col2creo:setOptionsBitmask(264)
+	collector2:setCustomObjectName("\\#ee3377Travel to Moenia Starport - Naboo")
+	createObserver(OBJECTRADIALUSED, "RebelHideoutScreenPlay", "teleportMoenia", pCollector2)
 		
 end
 
@@ -287,5 +301,29 @@ function setTurretFaction(pTurret)
 		local turret = LuaTangibleObject(pTurret)
 		turret:setFaction(FACTIONREBEL)
 		turret:setPvpStatusBitmask(1)
+	end
+end
+
+--travel functions
+
+function RebelHideoutScreenPlay:teleportAH(pCollector, pPlayer)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isRebel() == true) then	
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("tatooine", 48, 0, -5342, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
+end
+
+function RebelHideoutScreenPlay:teleportMoenia(pCollector, pPlayer)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isRebel() == true) then	
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("naboo", 4731, 4, -4677, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
 end
