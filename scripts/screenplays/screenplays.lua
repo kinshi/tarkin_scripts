@@ -3,6 +3,8 @@ require("screenplay")
 
 --Military POIs
 
+--Imperial
+
 includeFile("military/imperial/corellia_stronghold.lua")
 includeFile("military/imperial/dathomir_imperial_prison.lua")
 includeFile("military/imperial/dantooine_imperial_outpost.lua")
@@ -13,11 +15,14 @@ includeFile("military/imperial/naboo_kaadra_outpost.lua")
 includeFile("military/imperial/naboo_imperial_emp_retreat.lua")
 includeFile("military/imperial/yavin4_imperial_base.lua")
 includeFile("military/imperial/rori_imperial_encampment.lua")
+includeFile("military/imperial/bestine_imperial_outpost.lua")
 
+--Rebel
 
 includeFile("military/rebel/rori_rebel_outpost.lua")
 includeFile("military/rebel/corellia_rebel_hideout.lua")
 includeFile("military/rebel/rori_rebel_military_base.lua")
+includeFile("military/rebel/tatooine_anchorhead_rebel_base.lua")
 
 -- Theme parks
 require("themeParkLogic")
