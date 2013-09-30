@@ -67,6 +67,11 @@ function TatooineImperialOasisOutpostScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "sentry_stormtrooper", 360, -5320.4, 6.5, 2735.2, -148, 0)
 	spawnMobile("tatooine", "sentry_stormtrooper", 360, -5321.4, 6.6, 2733.6, 18, 0)
 
+	-- Cloning Center
+
+	spawnMobile("tatooine", "sentry_stormtrooper", 360, -5309.4, 8.5, 2661.1 -5, 0)
+	spawnMobile("tatooine", "sentry_stormtrooper", 360, -5305.3, 8.5, 2661.1, 0, 0)
+
 	-- Lake/Oasis Patrol Group
 		-- where 2 patrol groups will be placed when AI becomes active, they will walk the perimeter
 		-- of the lake/oasis each group going in a different direction around the lake.
