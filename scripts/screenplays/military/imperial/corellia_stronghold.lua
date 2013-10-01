@@ -15,6 +15,32 @@ function StrongholdScreenPlay:start()
 	end
 end
 
+function StrongholdScreenPlay:spawnSceneObjects()
+
+	-- Travel terminal
+
+	local pCollector = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4610, 25, -5791, 0, 0, 0, 1, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377Travel to  Emperor's Retreat - (Naboo)")
+	createObserver(OBJECTRADIALUSED, "StrongholdScreenPlay", "teleportImpRetreat", pCollector)
+	
+	local pCollector2 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4617, 25, -5791, 0, 0, 0, 1, 0)
+	local collector = LuaSceneObject(pCollector2)
+	local col2creo = LuaCreatureObject(pCollector2)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377Travel to Imperial Detachment HQ - (Tatooine)")
+	createObserver(OBJECTRADIALUSED, "StrongholdScreenPlay", "teleportTatHQ", pCollector2)
+			
+	-- Terminals
+
+	spawnSceneObject("corellia", "object/tangible/terminal/terminal_character_builder.iff", 4624, 25, -5759, 0, 0, 0, 1, 0)
+	spawnSceneObject("corellia", "object/tangible/terminal/terminal_mission_imperial.iff", 4619, 25, -5759, 0, 0, 0, 1, 0)
+
+
+end
+
 function StrongholdScreenPlay:spawnMobiles()
 
 	spawnMobile("corellia", "dark_trooper", 360, 4696.72, 25, -5797.99, 198.662, 0)
@@ -64,4 +90,26 @@ function StrongholdScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "imperial_trooper", 400, 0.49, 0.125, -2.033, 0, 2715959)
 	spawnMobile("corellia", "imperial_trooper", 400, -1.11, 0.125, -2.76, 0, 2715959)
 
+end
+
+function StrongholdScreenPlay:teleportImpRetreat(pCollector, pPlayer)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isImperial() == true) then
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("naboo", 2437.8, 0, -3895.7, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
+end
+
+function StrongholdScreenPlay:teleportTatHQ(pCollector, pPlayer)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isImperial() == true) then
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("tatooine", -2576, 0, 2064, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
 end
