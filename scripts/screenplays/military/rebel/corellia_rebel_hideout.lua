@@ -23,7 +23,7 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "rebel_trooper", 300, -6565.580, 405.006, 5923.700, 143.563, 0)
 	spawnMobile("corellia", "rebel_commando", 300, -6563.200, 405.000, 5925.570, 120.821, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6556.8, 405.0, 5926.1, 140, 0)
-	spawnMobile("corellia", "sentry_spceforce", 300, -6564.2, 405.0, 5928.9, 136, 0)
+	spawnMobile("corellia", "sentry_specforce", 300, -6564.2, 405.0, 5928.9, 136, 0)
 	spawnMobile("corellia", "sentry_specforce_bombardier", 300, -6566.3, 405.0, 5936.8, 176, 0)
 	
 	-- South Barricade
@@ -47,7 +47,7 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "rebel_trooper", 300, -6482.090, 405.168, 5901.830, 68.976, 0)
 	spawnMobile("corellia", "rebel_first_lieutenant", 300, -6482.890, 405.000, 5907.930, 79.267, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6482.180, 405.000, 5905.760, 163.796, 0)
-	spawnMobile("corellia", "sentry_specforce", 300, -6483.2 405.0, 5908.8, 77, 0)
+--	spawnMobile("corellia", "sentry_specforce", 300, -6483.2 405.0, 5908.8, 77, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6482.8, 405.2, 5901.8, 76, 0)
 	spawnMobile("corellia", "sentry_specforce_bombardier", 300, -6491.8, 405.0, 5907.6, 110, 0)
 	
@@ -95,7 +95,7 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "rebel_corporal", 300, -6561.680, 405.000, 5940.370, -140.616, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6558.7, 405.0, 5937.3, -135, 0)
 	spawnMobile("corellia", "sentry_specforce_bombardier", 300, -6443.2, 403.2, 6018.2, 68, 0)
-	spawnMobile("corellia", "sentry_specforce_rebel_major", 300, -6446.6, 403.2, 6021.5, 68, 0)
+--	spawnMobile("corellia", "sentry_specforce_rebel_major", 300, -6446.6, 403.2, 6021.5, 68, 0)
 	
 	-- South Stairs
 	spawnMobile("corellia", "rebel_corporal", 300, -6546.770, 398.000, 5956.870, 52.042, 0)
@@ -110,7 +110,7 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	-- Southeast Ramp
 	spawnMobile("corellia", "sentry_specforce", 300, -6489.260, 405.000, 5916.220, 162.333, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6493.550, 405.000, 5915.540, 163.230, 0)
-	spawnMobile("corellia", "sentry_specforce_sniper", 300, -6494.0 403.0, 5926.7 171, 0)
+--	spawnMobile("corellia", "sentry_specforce_sniper", 300, -6494.0 403.0, 5926.7, 171, 0)
 	spawnMobile("corellia", "sentry_specforce_combat_medic", 300, -6491.8, 403.0, 5926.9, 171, 0)
 	
 	-- Main Building Entrance
