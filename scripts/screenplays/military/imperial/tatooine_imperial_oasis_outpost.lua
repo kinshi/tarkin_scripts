@@ -1,35 +1,36 @@
-TatooineImperialOasisOutpostScreenPlay = ScreenPlay:new {
+TatooineImperialOasisScreenPlay = ScreenPlay:new {
 	numberOfActs = 1,
 	
-	screenplayName = "TatooineImperialOasisOutpostScreenPlay"
+	screenplayName = "TatooineImperialOasisScreenPlay"
 }
 
-registerScreenPlay("TatooineImperialOasisOutpostScreenPlay", true)
+registerScreenPlay("TatooineImperialOasisScreenPlay", true)
 
-function TatooineImperialOasisOutpostScreenPlay:start()
+function TatooineImperialOasisScreenPlay:start()
 	if (isZoneEnabled("tatooine")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
 end
 
 function TatooineImperialOasisScreenPlay:spawnSceneObjects()
 
-	local pCollector = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", 3681.0, 96.0, -6409.0, 0, 0, 0, 1, 0)
+	local pCollector = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -5359.0, 8.0, 2753.0, 0, 0, 0, 1, 0)
 	local collector = LuaSceneObject(pCollector)
 	local col2creo = LuaCreatureObject(pCollector)
 	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Bestine Outpost - Tatooine")
-	createObserver(OBJECTRADIALUSED, "TatooineImperialOasisScreenPlay", "teleportBestine", pCollector)
+	collector:setCustomObjectName("\\#ee3377Travel to Imperial Detachment HQ - Tatooine")
+	createObserver(OBJECTRADIALUSED, "TatooineImperialOasisScreenPlay", "teleportImpHQ", pCollector)
 
-	local pCollector2 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", 3675.0, 96.0, -6409.0, 0, 0, 0, 1, 0)
+	local pCollector2 = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -5363.0, 8.0, 2753.0, 0, 0, 0, 1, 0)
 	local collector2 = LuaSceneObject(pCollector2)
 	local col2creo = LuaCreatureObject(pCollector2)
 	col2creo:setOptionsBitmask(264)
-	collector2:setCustomObjectName("\\#ee3377Travel to Imperial Stronghold - Corellia")
-	createObserver(OBJECTRADIALUSED, "TatooineImperialOasisScreenPlay", "teleportStronghold", pCollector2)
+	collector2:setCustomObjectName("\\#ee3377Travel to Imperial Outpost - Lok")
+	createObserver(OBJECTRADIALUSED, "TatooineImperialOasisScreenPlay", "teleportLok", pCollector2)
 	
 	-- BLUEFROG
-	--No need to add blue frog here, it is already loaded as part of the planetmanager
+	spawnSceneObject("tatooine", "object/tangible/terminal/terminal_character_builder.iff", -5310, 8.5, 2661, 0, 0, 0, 0, 0)
 
 	--Shuttle
 	--No need for a shuttle, the existing NPC starport serves as an adequate prop 
@@ -37,7 +38,7 @@ function TatooineImperialOasisScreenPlay:spawnSceneObjects()
 	
 end
 
-function TatooineImperialOasisOutpostScreenPlay:spawnMobiles()
+function TatooineImperialOasisScreenPlay:spawnMobiles()
 	
 	-- Lambda Shuttle Landing and Perimeter Area
 
@@ -110,22 +111,22 @@ end
 -- Zephyr Travel Destinations
 
 	
-function TatooineImperialOasis:teleportStarbird(pCollector, pPlayer)
+function TatooineImperialOasisScreenPlay:teleportImpHQ(pCollector, pPlayer)
 	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isRebel() == true) then	
+	if (playerfaction:isImperial() == true) then	
 		local player = LuaSceneObject(pPlayer)
-		player:switchZone("tatooine", -5310, 0, 5009, 0)
+		player:switchZone("tatooine", -2583, 0, 2072, 0)
 	else
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
 end
 
-function TatooineImperialOasis:teleportMoenia(pCollector, pPlayer)
+function TatooineImperialOasisScreenPlay:teleportLok(pCollector, pPlayer)
 	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isRebel() == true) then
+	if (playerfaction:isImperial() == true) then
 		local player = LuaSceneObject(pPlayer)
-		player:switchZone("corellia", 4731, 4, -4677, 0)
+		player:switchZone("lok", -1938, 0, -3133, 0)
 	else
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")

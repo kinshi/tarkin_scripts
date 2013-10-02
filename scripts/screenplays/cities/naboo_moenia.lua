@@ -24,15 +24,12 @@ function MoeniaScreenPlay:spawnSceneObjects()
 	collector:setCustomObjectName("\\#ee3377Travel to Rebel Outpost - Rori")
 	createObserver(OBJECTRADIALUSED, "MoeniaScreenPlay", "teleportRebelOutpost", pCollector)
 	
-	-- BLUEFROG
-	--No need to add blue frog here, it is already loaded as part of the planetmanager
-
-	--Shuttle
-	--No need for a shuttle, the existing NPC starport serves as an adequate prop 
-	--Players get here via F.A.R.T travel terminal at Moenia starport (Moenia is a Rebel stronghold)
-	--No Interplanetary FART terminal for Moenia, Rebels will need to use civilian transport in/out of Naboo, BUT
-	--Moenia SP will have Rebel sentries guareding the SP, recruiter and frog.
-	
+	local pCollector2 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4720, 4, -4654, 0, 0, 0, 1, 0)
+	local collector = LuaSceneObject(pCollector2)
+	local col2creo = LuaCreatureObject(pCollector2)
+	col2creo:setOptionsBitmask(264)
+	collector:setCustomObjectName("\\#ee3377Travel to Rebel Hideout - Corellia")
+	createObserver(OBJECTRADIALUSED, "MoeniaScreenPlay", "teleportHideout", pCollector2)
 end
 
 function MoeniaScreenPlay:spawnMobiles()
@@ -57,6 +54,24 @@ end
 -- Rebel Outpost (Rori)
 	
 function MoeniaScreenPlay:teleportRebelOutpost(pCollector, pPlayer)
-	local player = LuaSceneObject(pPlayer)
-	player:switchZone("rori", 3691, 0, -6403, 0)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isRebel() == true) then
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("rori", 3691, 0, -6403, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
 end
+
+function MoeniaScreenPlay:teleportHideout(pCollector, pPlayer)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isRebel() == true) then	
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("corellia", -6522, 0, 6035, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
+end
+

@@ -45,8 +45,8 @@ function LokImperialOutpostScreenPlay:spawnSceneObjects()
 	local collector = LuaSceneObject(pCollector)
 	local col2creo = LuaCreatureObject(pCollector)
 	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Imperial Detatchment HQ (Tatooine)")
-	createObserver(OBJECTRADIALUSED, "LokImperialOutpostScreenPlay", "teleportImpHQ", pCollector)
+	collector:setCustomObjectName("\\#ee3377Travel to Imperial Oasis (Tatooine)")
+	createObserver(OBJECTRADIALUSED, "LokImperialOutpostScreenPlay", "teleportImpOasis", pCollector)
 			
 	-- Terminals
 
@@ -403,11 +403,11 @@ function LokImperialOutpostScreenPlay:notifyCommanderDead(pCommander, pKiller)
      return 1
 end
 
-function LokImperialOutpostScreenPlay:teleportImpHQ(pCollector, pPlayer)
+function LokImperialOutpostScreenPlay:teleportImpOasis(pCollector, pPlayer)
 	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isRebel() == true) then	
+	if (playerfaction:isImperial() == true) then	
 		local player = LuaSceneObject(pPlayer)
-		player:switchZone("tatooine", -2576, 0, 2064, 0)
+		player:switchZone("tatooine", -5369, 0, 2748, 0)
 	else
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")

@@ -31,6 +31,20 @@ function NabooImperialEmpRetreatScreenPlay:spawnSceneObjects()
 	col2creo:setOptionsBitmask(128)
 	collector:setCustomObjectName("\\#ee3377Travel to Imperial Outpost - (Rori)")
 	createObserver(OBJECTRADIALUSED, "NabooImperialEmpRetreatScreenPlay", "teleportImpEncampment", pCollector2)
+	
+	local pCollector3 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", 2435, 292.0, -3896, 0, 0, 0, 0, 0)
+	local collector = LuaSceneObject(pCollector3)
+	local col2creo = LuaCreatureObject(pCollector3)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377Travel to Imperial Stronghold - (Corellia)")
+	createObserver(OBJECTRADIALUSED, "NabooImperialEmpRetreatScreenPlay", "teleportImpStronghold", pCollector3)
+	
+	local pCollector4 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", 2437, 292.0, -3896, 0, 0, 0, 0, 0)
+	local collector = LuaSceneObject(pCollector4)
+	local col2creo = LuaCreatureObject(pCollector4)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377Travel to Imperial Detachment HQ - (Tatooine)")
+	createObserver(OBJECTRADIALUSED, "NabooImperialEmpRetreatScreenPlay", "teleportImpHQ", pCollector4)
 			
 	-- Terminals
 
@@ -74,6 +88,28 @@ function NabooImperialEmpRetreatScreenPlay:teleportImpEncampment(pCollector, pPl
 	if (playerfaction:isImperial() == true) then	
 		local player = LuaSceneObject(pPlayer)
 		player:switchZone("rori", -5573.4, 0, -5620.9, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
+end
+
+function NabooImperialEmpRetreatScreenPlay:teleportImpStronghold(pCollector, pPlayer)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isImperial() == true) then	
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("corellia", 4630, 0, -5784, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
+end
+
+function NabooImperialEmpRetreatScreenPlay:teleportImpHQ(pCollector, pPlayer)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isImperial() == true) then	
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("tatooine", -2583, 0, 2072, 0)
 	else
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
