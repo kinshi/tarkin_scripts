@@ -9,9 +9,9 @@ corsec_id_badge = {
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	junkDealerTypeNeeded = JUNKGENERIC,
-	junkMinValue = 2,
-	junkMaxValue = 22
+	junkDealerTypeNeeded = JUNKGENERIC + JUNKCORSEC,
+	junkMinValue = 25,
+	junkMaxValue = 45
 }
 
 addLootItemTemplate("corsec_id_badge", corsec_id_badge)
