@@ -191,7 +191,7 @@ includeFile("static_spawns/tatooine_static_spawns_north.lua")
 includeFile("static_spawns/yavin4_static_spawns.lua")
 
 --Anniversary Droid
-includeFile("tests/anniversary.lua")
+--includeFile("tests/anniversary.lua")
 
 --GM Pet Vendor
 includeFile("tests/FollowPlayerDroidScreenplay.lua")
