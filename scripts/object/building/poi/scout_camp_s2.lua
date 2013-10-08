@@ -94,7 +94,7 @@ object_building_poi_scout_camp_s2 = object_building_poi_shared_scout_camp_s2:new
 			cellid = -1, 
 			containmentType = -1},
 
-		{templateFile = "object/tangible/camp/camp_chair_s2.iff", 
+		{templateFile = "object/tangible/terminal/terminal_bank.iff", 
 			x = .66, z = 0, y = -2.9, 
 			ox = 0, oy = -.13, oz = 0, ow = .99, 
 			cellid = -1, 
