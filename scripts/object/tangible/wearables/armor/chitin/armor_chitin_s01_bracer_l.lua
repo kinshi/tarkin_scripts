@@ -113,8 +113,8 @@ object_tangible_wearables_armor_chitin_armor_chitin_s01_bracer_l = object_tangib
 	experimentalWeights = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
 	experimentalGroupTitles = {"null", "null", "null", "null", "exp_quality", "exp_durability", "exp_durability", "exp_durability", "exp_durability", "null", "null", "exp_resistance", "null"},
 	experimentalSubGroupTitles = {"null", "null", "sockets", "hit_points", "armor_effectiveness", "armor_integrity", "armor_health_encumbrance", "armor_action_encumbrance", "armor_mind_encumbrance", "armor_rating", "armor_special_type", "armor_special_effectiveness", "armor_special_integrity"},
-	experimentalMin = {0, 0, 0, 1000, 1, 30000, 25, 22, 25, 1, 1, 5, 30000},
-	experimentalMax = {0, 0, 0, 5000, 40, 50000, 15, 13, 15, 1, 1, 55, 50000},
+	experimentalMin = {0, 0, 0, 1000, 1, 30000, 25, 22, 25, 1, 0, 5, 30000},
+	experimentalMax = {0, 0, 0, 5000, 40, 50000, 15, 13, 15, 1, 0, 55, 50000},
 	experimentalPrecision = {0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0},
 	experimentalCombineType = {0, 0, 4, 1, 1, 1, 1, 1, 1, 4, 4, 4, 1},
 }
