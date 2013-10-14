@@ -124,6 +124,89 @@ object_mobile_vehicle_shared_jetpack = SharedCreatureObjectTemplate:new {
 
 ObjectTemplates:addClientTemplate(object_mobile_vehicle_shared_jetpack, "object/mobile/vehicle/shared_jetpack.iff")
 
+object_mobile_vehicle_shared_barc_speeder = SharedCreatureObjectTemplate:new {
+	clientTemplateFileName = "object/mobile/vehicle/shared_barc_speeder.iff"
+	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
+--[[
+	acceleration = {8,3},
+	animationMapFilename = "",
+	appearanceFilename = "appearance/pv_jetpack_mandalorian.sat",
+	arrangementDescriptorFilename = "",
+
+	cameraHeight = 0,
+	certificationsRequired = {},
+	clearFloraRadius = 0,
+	clientDataFile = "",
+	clientGameObjectType = 65537,
+	collisionActionBlockFlags = 0,
+	collisionActionFlags = 255,
+	collisionActionPassFlags = 0,
+	collisionHeight = 1.8,
+	collisionLength = 6.8,
+	collisionMaterialBlockFlags = 0,
+	collisionMaterialFlags = 1,
+	collisionMaterialPassFlags = 0,
+	collisionOffsetX = 0,
+	collisionOffsetZ = 0,
+	collisionRadius = 2.7,
+	containerType = 5,
+	containerVolumeLimit = 0,
+	customizationVariableMapping = {},
+
+	detailedDescription = "@monster_detail:jetpack",
+
+	gameObjectType = 65537,
+	gender = 0,
+
+	locationReservationRadius = 0,
+	lookAtText = "string_id_table",
+
+	movementDatatable = "datatables/movement/movement_human.iff",
+
+	niche = 0,
+	noBuildRadius = 0,
+
+	objectName = "@monster_name:jetpack",
+	onlyVisibleInTools = 0,
+
+	paletteColorCustomizationVariables = {},
+	portalLayoutFilename = "",
+	postureAlignToTerrain = {0,0,1,0,0,1,0,1,0,0,0,0,1,1,1},
+
+	race = 0,
+	rangedIntCustomizationVariables = {},
+
+	scale = 1,
+	scaleThresholdBeforeExtentTest = 0.5,
+	sendToClient = 1,
+	slopeModAngle = 26,
+	slopeModPercent = 0.23,
+	slotDescriptorFilename = "abstract/slot/descriptor/mount_rider.iff",
+	snapToTerrain = 1,
+	socketDestinations = {},
+	species = 90,
+	speed = {13,7},
+	stepHeight = 2,
+	structureFootprintFileName = "",
+	surfaceType = 0,
+	swimHeight = 0,
+
+	targetable = 1,
+	totalCellNumber = 0,
+	turnRate = {77,154},
+
+	useStructureFootprintOutline = 0,
+
+	warpTolerance = 20,
+	waterModPercent = 0.75,
+
+	clientObjectCRC = 1613040434,
+	derivedFromTemplates = {"object/object/base/shared_base_object.iff", "object/tangible/base/shared_tangible_base.iff", "object/creature/base/shared_base_creature.iff", "object/mobile/shared_mobile.iff", "object/mobile/vehicle/shared_vehicle_base.iff", "object/mobile/vehicle/shared_landspeeder_base.iff"}
+]]
+}
+
+ObjectTemplates:addClientTemplate(object_mobile_vehicle_shared_barc_speeder, "object/mobile/vehicle/shared_barc_speeder.iff")
+
 object_mobile_vehicle_shared_landspeeder_av21 = SharedCreatureObjectTemplate:new {
 	clientTemplateFileName = "object/mobile/vehicle/shared_landspeeder_av21.iff"
 	--Data below here is deprecated and loaded from the tres, keeping for easy lookups
