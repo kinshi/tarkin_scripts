@@ -98,6 +98,32 @@ function StrongholdScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "imperial_trooper", 400, 0.49, 0.125, -2.033, 0, 2715959)
 	spawnMobile("corellia", "imperial_trooper", 400, -1.11, 0.125, -2.76, 0, 2715959)
 
+	-- Building Sentries
+
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4682.8, 25.0, -5829.8, -45, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4679.7, 25.0, -5832.9, -45, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4690.8, 25.0, -5821.8, -45, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4693.8, 25.0, -5818.8, -45, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4701.7, 25.0, -5810.9, -45, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4704.8, 25.0, -5807.8, -45, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4704.8, 25.0, -5760.2, -135, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4701.8, 25.0, -5757.2, -135, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4693.8, 25.0, -5749.2, -135, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4690.7, 25.0, -5746.1, -135, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4682.9, 25.0, -5738.3, -135, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4679.8, 25.0, -5735.2, -135, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4623.2, 25.0, -5760.2, 135, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4620.2, 25.0, -5763.2, 135, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4619.1, 25.0, -5804.7, 45, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4622.2, 25.0, -5807.8, 45, 0)
+
+	-- Gate/Base Entry Point Sentries
+
+	-- Need to add sentry_stormtrooper to the entrances
+	spawnMobile("corellia", "at_st", 400, 4661.8, 25.0, -5850.3, 180, 0)
+	spawnMobile("corellia", "at_st", 400, 4663.0, 25.0, -5720.2, 0, 0)
+	spawnMobile("corellia", "at_at", 400, 4644.5, 25.0, -5784.1, 90, 0)
+
 end
 
 function StrongholdScreenPlay:teleportImpRetreat(pCollector, pPlayer)
