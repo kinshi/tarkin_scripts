@@ -129,6 +129,7 @@ includeFile("cities/tatooine_mos_taike.lua")
 includeFile("cities/tatooine_bestine.lua")
 
 -- POIs
+includeFile("poi/corellia_grand_theater_vreni_island.lua")
 includeFile("poi/corellia_rogue_corsec_base.lua")
 includeFile("poi/dantooine_dantari_village.lua")
 includeFile("poi/dantooine_mokk_stronghold.lua")

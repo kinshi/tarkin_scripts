@@ -7,6 +7,7 @@ NUMBEROFPROFESSIONSTOMASTER = 6
 MAXIMUMNUMBEROFPROFESSIONSTOSHOWWITHHOLOCRON = NUMBEROFPROFESSIONSTOMASTER - 2
 
 HolocronJediManager = JediManager:new {
+	screenplayName = jediManagerName,
 	jediManagerName = jediManagerName,
 	jediProgressionType = HOLOCRONJEDIPROGRESSION,
 	startingEvent = nil,
@@ -17,49 +18,49 @@ HolocronJediManager = JediManager:new {
 function HolocronJediManager:getGrindableProfessionList()
 	local grindableProfessions = {
 		-- String Id, badge number, profession name
-		--{ "pilot_rebel_navy_corellia", 	131, "Rebel Pilot Corellia" },
-		--{ "pilot_imperial_navy_corellia", 	134, "Imperial Pilot Corellia" },
-		--{ "pilot_neutral_corellia", 		137, "Neutral Pilot Corellia" },
-		--{ "pilot_rebel_navy_tatooine", 	132, "Rebel Pilot Tatooine" },
-		--{ "pilot_imperial_navy_naboo", 	133, "Imperial Pilot Naboo" },
-		{ "crafting_architect_master", 		54,  "Architect" },
-		{ "crafting_armorsmith_master", 	55,  "Armorsmith" },
-		{ "crafting_artisan_master", 		56,  "Artisan" },
-		{ "outdoors_bio_engineer_master", 	62,  "Bio-Engineer" },
-		{ "combat_bountyhunter_master", 	44,  "Bounty-Hunter" },
-		{ "combat_brawler_master", 		45,  "Brawler" },
-		{ "combat_carbine_master", 		46,  "Carbineer" },
-		{ "crafting_chef_master", 		57,  "Chef" },
-		{ "science_combatmedic_master", 	67,  "Combat-Medic" },
-		{ "combat_commando_master", 		47,  "Commando" },
-		--{ "outdoors_creaturehandler_master", 	63,  "Creature-Handler" },
-		{ "social_dancer_master", 		70,  "Dancer" },
-		{ "science_doctor_master", 		68,  "Doctor" },
-		{ "crafting_droidengineer_master", 	58,  "Droid-Engineer" },
-		{ "social_entertainer_master", 		71,  "Entertainer" },
-		{ "combat_1hsword_master", 		42,  "Fencer" },
-		{ "social_imagedesigner_master", 	72,  "Image-Designer" },
-		{ "combat_marksman_master", 		48,  "Marksman" },
-		{ "science_medic_master", 		69,  "Medic" },
-		{ "crafting_merchant_master", 		59,  "Merchant" },
-		{ "social_musician_master", 		73,  "Musician" },
-		{ "combat_polearm_master", 		50,  "Polearm" },
-		{ "combat_pistol_master", 		49,  "Pistoleer" },
-		{ "social_politician_master", 		74,  "Politician" },
-		{ "outdoors_ranger_master", 		64,  "Ranger" },
-		{ "combat_rifleman_master", 		51,  "Rifleman" },
-		{ "outdoors_scout_master", 		65,  "Scout" },
-		--{ "crafting_shipwright", 		129, "Shipwright" },
-		{ "combat_smuggler_master", 		52,  "Smuggler" },
-		{ "outdoors_squadleader_master", 	66,  "Squad-Leader" },
-		{ "combat_2hsword_master", 		43,  "Swordsman" },
-		{ "crafting_tailor_master", 		60,  "Tailor" },
-		{ "crafting_weaponsmith_master", 	61,  "Weaponsmith" },
-		--{ "pilot_neutral_naboo", 		136, "Neutral Pilot Naboo" },
-		--{ "pilot_neutral_tatooine", 		138, "Neutral Pilot Tatooine" },
-		--{ "pilot_imperial_navy_tatooine", 	135, "Imperial Pilot Tatooine" },
-		{ "combat_unarmed_master", 		53,  "Tera-Kasi Artist" },
-		--{ "pilot_rebel_navy_naboo", 		130, "Rebel Pilot Naboo" }
+		--{ "pilot_rebel_navy_corellia", 	PILOT_REBEL_NAVY_CORELLIA },
+		--{ "pilot_imperial_navy_corellia", 	PILOT_IMPERIAL_NAVY_CORELLIA },
+		--{ "pilot_neutral_corellia", 		PILOT_CORELLIA },
+		--{ "pilot_rebel_navy_tatooine", 	PILOT_REBEL_NAVY_TATOOINE },
+		--{ "pilot_imperial_navy_naboo", 	PILOT_IMPERIAL_NAVY_NABOO },
+		{ "crafting_architect_master", 		CRAFTING_ARCHITECT_MASTER  },
+		{ "crafting_armorsmith_master", 	CRAFTING_ARMORSMITH_MASTER  },
+		{ "crafting_artisan_master", 		CRAFTING_ARTISAN_MASTER  },
+		{ "outdoors_bio_engineer_master", 	OUTDOORS_BIOENGINEER_MASTER  },
+		{ "combat_bountyhunter_master", 	COMBAT_BOUNTYHUNTER_MASTER  },
+		{ "combat_brawler_master", 		COMBAT_BRAWLER_MASTER  },
+		{ "combat_carbine_master", 		COMBAT_CARBINE_MASTER  },
+		{ "crafting_chef_master", 		CRAFTING_CHEF_MASTER  },
+		{ "science_combatmedic_master", 	SCIENCE_COMBATMEDIC_MASTER  },
+		{ "combat_commando_master", 		COMBAT_COMMANDO_MASTER  },
+		--{ "outdoors_creaturehandler_master", 	OUTDOORS_CREATUREHANDLER_MASTER  },
+		{ "social_dancer_master", 		SOCIAL_DANCER_MASTER  },
+		{ "science_doctor_master", 		SCIENCE_DOCTOR_MASTER  },
+		{ "crafting_droidengineer_master", 	CRAFTING_DROIDENGINEER_MASTER  },
+		{ "social_entertainer_master", 		SOCIAL_ENTERTAINER_MASTER  },
+		{ "combat_1hsword_master", 		COMBAT_1HSWORD_MASTER  },
+		{ "social_imagedesigner_master", 	SOCIAL_IMAGEDESIGNER_MASTER  },
+		{ "combat_marksman_master", 		COMBAT_MARKSMAN_MASTER  },
+		{ "science_medic_master", 		SCIENCE_MEDIC_MASTER  },
+		{ "crafting_merchant_master", 		CRAFTING_MERCHANT_MASTER  },
+		{ "social_musician_master", 		SOCIAL_MUSICIAN_MASTER  },
+		{ "combat_polearm_master", 		COMBAT_POLEARM_MASTER  },
+		{ "combat_pistol_master", 		COMBAT_PISTOL_MASTER  },
+		--{ "social_politician_master", 	SOCIAL_POLITICIAN_MASTER  },
+		{ "outdoors_ranger_master", 		OUTDOORS_RANGER_MASTER  },
+		{ "combat_rifleman_master", 		COMBAT_RIFLEMAN_MASTER  },
+		{ "outdoors_scout_master", 		OUTDOORS_SCOUT_MASTER  },
+		--{ "crafting_shipwright", 		CRAFTING_SHIPWRIGHT },
+		{ "combat_smuggler_master", 		COMBAT_SMUGGLER_MASTER  },
+		{ "outdoors_squadleader_master", 	OUTDOORS_SQUADLEADER_MASTER  },
+		{ "combat_2hsword_master", 		COMBAT_2HSWORD_MASTER  },
+		{ "crafting_tailor_master", 		CRAFTING_TAILOR_MASTER  },
+		{ "crafting_weaponsmith_master", 	CRAFTING_WEAPONSMITH_MASTER  },
+		--{ "pilot_neutral_naboo", 		PILOT_NEUTRAL_NABOO },
+		--{ "pilot_neutral_tatooine", 		PILOT_TATOOINE },
+		--{ "pilot_imperial_navy_tatooine", 	PILOT_IMPERIAL_NAVY_TATOOINE },
+		{ "combat_unarmed_master", 		COMBAT_UNARMED_MASTER  },
+		--{ "pilot_rebel_navy_naboo", 		PILOT_REBEL_NAVY_NABOO }
 	}
 	return grindableProfessions
 end
@@ -154,41 +155,7 @@ function HolocronJediManager:onPlayerLoggedIn(pCreatureObject)
 	HolocronJediManager.registerObservers(pCreatureObject)
 end
 
--- Get the profession name from the badge number. Only used for the temporary debug message in the checkForceCommand.
--- @param badgeNumber the badge number to find the profession name for.
--- @return the profession name associated with the badge number, Unknown profession returned if the badge number isn't found.
-function HolocronJediManager.getProfessionNameFromBadgeNumber(badgeNumber)
-	local skillList = HolocronJediManager.getGrindableProfessionList()
-	for i = 1, table.getn(skillList), 1 do
-		if skillList[i][2] == badgeNumber then
-			return skillList[i][3]
-		end
-	end
-	return "Unknown profession"
-end
-
--- Handling of the checkForceCommand.
--- Temporary debug message print out during test. This function should be empty when everything has been tested.
--- @param pCreatureObject pointer to the creature object for the player performing the command.
-function HolocronJediManager:checkForceStatusCommand(pCreatureObject)
-	HolocronJediManager.withCreatureAndPlayerObject(pCreatureObject, function(creatureObject, playerObject)
-		creatureObject:sendSystemMessage("Debug information for the holocron jedi progression system.")
-		creatureObject:sendSystemMessage("Professions selected for this player:")
-		local professions = playerObject:getHologrindProfessions()
-		for i = 1, table.getn(professions), 1 do
-			if playerObject:hasBadge(professions[i]) then
-				creatureObject:sendSystemMessage(HolocronJediManager.getProfessionNameFromBadgeNumber(professions[i]) .. " - completed")
-			else
-				creatureObject:sendSystemMessage(HolocronJediManager.getProfessionNameFromBadgeNumber(professions[i]) .. " - not mastered yet")
-			end
-		end
-		creatureObject:sendSystemMessage("You have mastered " .. HolocronJediManager.getNumberOfMasteredProfessions(pCreatureObject) .. " professions out of " .. NUMBEROFPROFESSIONSTOMASTER)
-		creatureObject:sendSystemMessage("Using a holocron would yield the following response.")
-		HolocronJediManager.sendHolocronMessage(pCreatureObject)
-	end)
-end
-
--- Get the profession name from the badge number. Only used for the temporary debug message in the checkForceCommand.
+-- Get the profession name from the badge number.
 -- @param badgeNumber the badge number to find the profession name for.
 -- @return the profession name associated with the badge number, Unknown profession returned if the badge number isn't found.
 function HolocronJediManager.getProfessionStringIdFromBadgeNumber(badgeNumber)
@@ -232,5 +199,7 @@ function HolocronJediManager:useHolocron(pSceneObject, pCreatureObject)
 	sceneObject = LuaSceneObject(pSceneObject)
 	sceneObject:destroyObjectFromWorld()
 end
+
+registerScreenPlay("HolocronJediManager", true)
 
 return HolocronJediManager

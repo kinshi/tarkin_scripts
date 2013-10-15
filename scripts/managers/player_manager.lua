@@ -404,26 +404,6 @@ maroj_melon = {
 	equipped = 0
 }
 
-ithArmorHead = {
-	template = "object/tangible/wearables/armor/ithorian_guardian/ith_armor_s02_helmet.iff"
-	equipped = 0
-}
-
-ithArmorChest = {
-	template = "object/tangible/wearables/armor/ithorian_guardian/ith_armor_s02_chest_plate.iff"
-	equipped = 0
-}
-
-ithArmorHands = {
-	template = "object/tangible/wearables/armor/ithorian_guardian/ith_armor_s02_gloves.iff"
-	equipped = 0
-}
-
-ithArmorFeet = {
-	template = "object/tangible/wearables/armor/ithorian_guardian/ith_armor_s02_boots.iff"
-	equipped = 0
-}
-
 
 ---------------------Male Humanoid Items------------------------------------
 
@@ -443,11 +423,11 @@ general_trandoshan_female_items = { }
 
 --------------------------Male Ithorian Items---------------------------
 
-general_ithorian_male_items = {ithArmorHead, ithArmorChest, ithArmorHands, ithArmorFeet}
+general_ithorian_male_items = {}
 
 --------------------------Female Ithorian Items---------------------------
 
-general_ithorian_female_items = {ithArmorHead, ithArmorChest, ithArmorHands, ithArmorFeet}
+general_ithorian_female_items = {}
 
 --------------------------Male Wookiee Items---------------------------
 

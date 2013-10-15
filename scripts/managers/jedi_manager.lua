@@ -1,28 +1,21 @@
+package.path = package.path .. ";scripts/screenplays/?.lua"
+JediManager = require("screenplay")
+
 NOJEDIPROGRESSION = 0
 HOLOCRONJEDIPROGRESSION = 1
 VILLAGEJEDIPROGRESSION = 2
 CUSTOMJEDIPROGRESSION = 3
 
-jediProgressionType = HOLOCRONJEDIPROGRESSION
+jediProgressionType = VILLAGEJEDIPROGRESSION
 
 jediManagerName = "JediManager"
 
 function printf(...) io.write(string.format(unpack(arg))) end
 
-Object = {
-}
-
-function Object:new (o)
-	o = o or { }
-	setmetatable(o, self)
-    self.__index = self
-    return o
-end
-
-JediManager = Object:new {
+JediManager = ScreenPlay:new {
+	screenplayName = jediManagerName,
 	jediManagerName = jediManagerName,
 	jediProgressionType = NOJEDIPROGRESSION,
-	startingEvent = nil,
 }
 
 -- Perform the supplied function with a creature object created from the pointer.
