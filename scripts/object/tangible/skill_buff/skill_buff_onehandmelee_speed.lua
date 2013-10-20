@@ -42,7 +42,15 @@
 
 
 object_tangible_skill_buff_skill_buff_onehandmelee_speed = object_tangible_skill_buff_shared_skill_buff_onehandmelee_speed:new {
-
+	templateType = SKILLBUFF,
+	objectMenuComponent = {"cpp", "SkillBuffObjectMenuComponent"},
+	attributeListComponent = "SkillBuffObjectAttributeListComponent",
+	
+	duration = 300,
+	useCount = 5,
+	modifiers = { "onehandmelee_speed", 10 },
+	buffName = "onehandmelee_speed",
+	buffCRC = 0x0696D76F
 }
 
 ObjectTemplates:addTemplate(object_tangible_skill_buff_skill_buff_onehandmelee_speed, "object/tangible/skill_buff/skill_buff_onehandmelee_speed.iff")

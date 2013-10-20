@@ -58,11 +58,14 @@ includeFile("conversations/tasks/hedon_istee_conv.lua")
 includeFile("conversations/tasks/serene_floater_conv.lua")
 includeFile("conversations/tasks/ris_armor_quest_conv.lua")
 
+-- Village
+includeFile("conversations/village/old_man_conv.lua")
+
 --Bestine Travel Convotemplate
-includeFile("conversations/tasks/bestine_travel_convotemplate.lua")
+--includeFile("conversations/tasks/bestine_travel_convotemplate.lua")
 
 --GM Pet Vendor
 includeFile("conversations/tasks/pet_vendor_template.lua")
 
 --Dispenser Droid
-includeFile("conversations/tasks/anniversary_template.lua")
+--includeFile("conversations/tasks/anniversary_template.lua")
