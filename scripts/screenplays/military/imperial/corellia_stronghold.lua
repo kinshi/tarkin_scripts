@@ -119,7 +119,12 @@ function StrongholdScreenPlay:spawnMobiles()
 
 	-- Gate/Base Entry Point Sentries
 
-	-- Need to add sentry_stormtrooper to the entrances
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4680.9, 25.0, -5717.1, -3, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4647.4, 25.0, -5716.5, -5, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4661.9, 25.0, -5716.1, 0, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4663.2, 25.0, -5852.8, 180, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4646.1, 25.0, -5852.3, 180, 0)
+	spawnMobile("corellia", "sentry_stormtrooper", 400, 4680.9, 25.0, -5850.7, 180, 0)
 	spawnMobile("corellia", "at_st", 400, 4661.8, 25.0, -5850.3, 180, 0)
 	spawnMobile("corellia", "at_st", 400, 4663.0, 25.0, -5720.2, 0, 0)
 	spawnMobile("corellia", "at_at", 400, 4644.5, 25.0, -5784.1, 90, 0)
