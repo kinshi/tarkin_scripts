@@ -60,7 +60,7 @@ end
 
 function LokImperialOutpostScreenPlay:spawnMobiles()
 
-	--Perimeter mobs
+	-- Perimeter mobs
 
 	spawnMobile("lok", "at_st", 720, -1762.0, 11.9, -3087.3, 90, 0)
 	spawnMobile("lok", "at_st", 720, -1939.5, 11.8, -2945.9, 0, 0)
@@ -150,7 +150,7 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "dark_trooper", 300, -1913.5, 11.9, -3239.1, 180, 0)
 	spawnMobile("lok", "dark_trooper", 300, -1923.5, 11.9, -3239.1, 180, 0)
 
-	--powerplant
+	-- Powerplant
 
 	spawnMobile("lok", "elite_sand_trooper", 300, -2084.8, 11.9, -2624.5, 175, 0)
 	spawnMobile("lok", "imperial_second_lieutenant", 300, -2087.0, 11.9, -2625.0, 175, 0)
@@ -172,7 +172,7 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "stormtrooper", 300, -2083.5, 11.9, -2821.1, 155, 0)
 	spawnMobile("lok", "stormtrooper", 300, -2082.0, 11.9, -2824.3, 155, 0)
 
-	--inside the walls (not in buildings)
+	-- Inside the walls (not in buildings)
 
 	spawnMobile("lok", "imperial_recruiter", 20, -1843.75, 12.1, -3069.1, 123, 0)
 	spawnMobile("lok", "junk_dealer", 20, -2000.5, 11.9, -3143.6, -34, 0)
@@ -223,6 +223,8 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "imperial_medic", 300, -1868.2, 11.9, -3021.2, 0, 0)
 	spawnMobile("lok", "stormtrooper_dewback", 300, -1891.9, 11.9, -3010.2, 180, 0)
 	spawnMobile("lok", "stormtrooper_dewback", 300, -1868.2, 11.9, -3010.2, 180, 0)
+	spawnMobile("lok", "stormtrooper_dewback", 300, -1859.9, 11.9, -3010.2, 180, 0)
+	spawnMobile("lok", "stormtrooper_dewback", 300, -1884.1, 11.9, -3010.2, 180, 0)
 
 	spawnMobile("lok", "stormtrooper", 300, -2024.4, 11.9, -3054.0, 180, 0)
 	spawnMobile("lok", "stormtrooper", 300, -2024.4, 11.9, -3074.3, 0, 0)
@@ -265,7 +267,7 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "dark_trooper", 300, -1905.7, 11.9, -3059.0, 180, 0)
 	spawnMobile("lok", "dark_trooper", 300, -1905.7, 11.9, -3075.7, 180, 0)
 
-	--in the buildings (not main building)
+	-- In the Buildings (NOT main building)
 
 	spawnMobile("lok", "imperial_first_lieutenant", 300, 4.3, 0, 1.68, -90, 8615442)
 	spawnMobile("lok", "imperial_medic", 300, 3.1, 0, -3.68, 90, 8615443)
@@ -306,7 +308,7 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "stormtrooper", 300, -0.8, 0, -5.4, 0, 8615448)
 	spawnMobile("lok", "stormtrooper", 300, 0.8, 0, -5.4, 0, 8615448)
 
-	--main building
+	-- Main Building
 
 	spawnMobile("lok", "commoner", 300, -1902.0, 18.9, -3081.5, -95, 0)
 	spawnMobile("lok", "commoner", 300, -1902.0, 18.9, -3084.5, -150, 0)
@@ -367,10 +369,57 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "imperial_trooper", 300, 0.0, 1.0, -4.2, -90, 8615420)
 	spawnMobile("lok", "imperial_trooper", 300, 0.0, 1.0, -7.3, -90, 8615420)
 
-	--General_Otto & imperial_commander
+	-- General_Otto & imperial_commander
 
 	local pOtto = spawnMobile("lok", "general_otto", 900, 18.7, 1.0, 21.1, -90, 8615421)
         createObserver(OBJECTDESTRUCTION, "LokImperialOutpostScreenPlay", "notifyOttoDead", pOtto)
+
+	-- Gate/Entry Guards
+
+	spawnMobile("lok", "sentry_stormtrooper", 300, -2034.3, 12.0, -3058.8, -90, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -2038.8, 12.0, -3060.9, -90, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -2038.8, 12.0, -3067.1, -90, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -2020.8, 12.0, -3067.1, -90, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -2021.1, 12.0, -3060.9, -90, 0)
+	spawnMobile("lok", "at_st", 300, -2041.0, 12.0, -3051.9, -90, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1944.5, 12.0, -2970.2, 0, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1934.5, 12.0, -2970.2, 0, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1934.5, 12.0, -2974.0, -90, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1944.5, 12.0, -2974.1, 90, 0)
+	spawnMobile("lok", "at-st", 300, -1958.0, 12.0, -2959.3, -90, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1815.2, 12.0, -3083.9, 90, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1815.0, 12.0, -3090.1, 90, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1804.6, 12.0, -3090.1, 90, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1804.2, 12.0, -3083.8, 90, 0)
+	spawnMobile("lok", "at_st", 300, -1792.5, 12.0, -3065.5, 180, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1910.6, 12.0, -3189.8, 180, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1919.5, 12.0, -3189.6, 180, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1919.5, 12.0, -3193.2, 180, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1910.5, 12.0, -3193.5, 180, 0)
+	spawnMobile("lok", "at-st", 300, -1935.3, 12.0, -3210.8, 180, 0)
+
+	-- Building/Structure Entry Guards
+
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1979.4, 12.0, -3015.5, 136, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1990.6, 12.0, -3026.7, 134, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -2011.5, 12.0, -3053.2, 178, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -2007.2, 12.0, -3053.0, 178, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -2018.5, 12.0, -3080.8, 89, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -2018.5, 12.0, -3085.2, 89, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1950.5, 12.0, -3160.7, 0, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1932.9, 12.0, -3160.7, 0, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1828.7, 12.0, -3099.0, 0, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1824.5, 12.0, -3088.1, 0, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1817.5, 12.0, -3070.2, -90, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1817.5, 12.0, -3065.7, -90, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1841.9, 12.0, -3036.0, 180, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1846.1, 12.0, -3036.0, 180, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1922.5, 12.0, -3013.8, -179, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1930.2, 12.0, -3013.7, -179, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1993.5, 12.0, -3111.1, 90, 0)
+	spawnMobile("lok", "sentry_stormtrooper", 300, -1993.5, 12.0, -3118.9, 90, 0)
+	spawnMobile("lok", "commoner_technician", 300, -1933.5, 12.0, -3005.0, -94, 0)
+	spawnMobile("lok", "commoner_technician", 300, -1923.2, 12.0, -3000.4, 179, 0)
 
 end
 
