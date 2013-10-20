@@ -386,7 +386,7 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "sentry_stormtrooper", 300, -1934.5, 12.0, -2970.2, 0, 0)
 	spawnMobile("lok", "sentry_stormtrooper", 300, -1934.5, 12.0, -2974.0, -90, 0)
 	spawnMobile("lok", "sentry_stormtrooper", 300, -1944.5, 12.0, -2974.1, 90, 0)
-	spawnMobile("lok", "at-st", 300, -1958.0, 12.0, -2959.3, -90, 0)
+	spawnMobile("lok", "at_st", 300, -1958.0, 12.0, -2959.3, -90, 0)
 	spawnMobile("lok", "sentry_stormtrooper", 300, -1815.2, 12.0, -3083.9, 90, 0)
 	spawnMobile("lok", "sentry_stormtrooper", 300, -1815.0, 12.0, -3090.1, 90, 0)
 	spawnMobile("lok", "sentry_stormtrooper", 300, -1804.6, 12.0, -3090.1, 90, 0)
@@ -396,7 +396,7 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "sentry_stormtrooper", 300, -1919.5, 12.0, -3189.6, 180, 0)
 	spawnMobile("lok", "sentry_stormtrooper", 300, -1919.5, 12.0, -3193.2, 180, 0)
 	spawnMobile("lok", "sentry_stormtrooper", 300, -1910.5, 12.0, -3193.5, 180, 0)
-	spawnMobile("lok", "at-st", 300, -1935.3, 12.0, -3210.8, 180, 0)
+	spawnMobile("lok", "at_st", 300, -1935.3, 12.0, -3210.8, 180, 0)
 
 	-- Building/Structure Entry Guards
 

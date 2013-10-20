@@ -95,7 +95,7 @@ function TatooineImperialOasisScreenPlay:spawnMobiles()
 
 	-- Cloning Center
 
-	spawnMobile("tatooine", "sentry_stormtrooper", 360, -5309.4, 8.5, 2661.1 -5, 0)
+	spawnMobile("tatooine", "sentry_stormtrooper", 360, -5309.4, 8.5, 2661.1, -5, 0)
 	spawnMobile("tatooine", "sentry_stormtrooper", 360, -5305.3, 8.5, 2661.1, 0, 0)
 
 	-- Lake/Oasis Patrol Group
