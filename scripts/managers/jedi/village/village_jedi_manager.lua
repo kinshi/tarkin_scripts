@@ -1,13 +1,22 @@
-package.path = package.path .. ";scripts/managers/?.lua"
+package.path = package.path .. ";scripts/managers/jedi/?.lua;scripts/managers/jedi/village/?.lua"
 JediManager = require("jedi_manager")
+VillageJediManagerHolocron = require("village_jedi_manager_holocron")
 
 jediManagerName = "VillageJediManager"
+
+TOTALNUMBEROFBADGESREQUIRED = 17
+NUMBEROFJEDIBADGESREQUIRED = 3
+NUMBEROFDIFFICULTBADGESREQUIRED = 3
+NUMBEROFEASYBADGESREQUIRED = 5
+NUMBEROFPROFESSIONBADGESREQUIRED = 1
+NUMBEROFCONTENTBADGESREQUIRED = 5
 
 JEDIBADGES = { 
 	EXP_TAT_BENS_HUT, 
 	EXP_YAV_TEMPLE_EXAR_KUN, 
 	EXP_DAN_JEDI_TEMPLE 
 }
+
 DIFFICULTBADGES = { 
 	EXP_TAT_TUSKEN_POOL, 
 	EXP_TAT_KRAYT_SKELETON, 
@@ -15,6 +24,7 @@ DIFFICULTBADGES = {
 	EXP_TAT_KRAYT_GRAVEYARD, 
 	EXP_DAT_SARLACC 
 }
+
 EASYBADGES = {
 	EXP_TAT_ESCAPE_POD,
 	EXP_TAT_LARS_HOMESTEAD,
@@ -53,6 +63,7 @@ EASYBADGES = {
 	BDG_EXP_ROR_IMP_HYPERDRIVE_FAC,
 	BDG_EXP_LOK_KIMOGILA_SKELETON
 }
+
 CONTENTBADGES = { 
 	BDG_THM_PARK_JABBA_BADGE, 
 	BDG_THM_PARK_IMPERIAL_BADGE, 
@@ -70,6 +81,7 @@ CONTENTBADGES = {
 	WARREN_COMPASSION, 
 	WARREN_HERO 
 }
+
 PROFESSIONBADGES = { 
 	COMBAT_1HSWORD_MASTER, 
 	COMBAT_2HSWORD_MASTER, 
@@ -116,9 +128,6 @@ PROFESSIONBADGES = {
 	PILOT_TATOOINE 
 }
 
-USEDHOLOCRON = "used_holocron"
-HOLOCRONCOOLDOWNTIME = 24 * 60 * 60 * 1000 -- 24 hours
-
 VillageJediManager = JediManager:new {
 	screenplayName = jediManagerName,
 	jediManagerName = jediManagerName,
@@ -126,69 +135,11 @@ VillageJediManager = JediManager:new {
 	startingEvent = nil,
 }
 
--- Check if the player can use the holocron.
--- @param pCreatureObject pointer to the creature object of the player who tries to use the holocron.
--- @return true if the player can use the holocron.
-function VillageJediManager.canUseHolocron(pCreatureObject)
-	return VillageJediManager.withCreatureAndPlayerObject(pCreatureObject, function(creatureObject, playerObject) 
-		return playerObject:isJedi() and not creatureObject:checkCooldownRecovery(USEDHOLOCRON)
-	end)
-end
-
--- Checks if the player can replenish the force or not.
--- @param pCreatureObject pointer to the creature object of the player who should be checked.
--- @return true if the player can replenish the force.
-function VillageJediManager.canReplenishForce(pCreatureObject)
-	return VillageJediManager.withCreaturePlayerObject(pCreatureObject, function(playerObject)
-		return playerObject:getForcePower() < playerObject:getForcePowerMax()
-	end)
-end
-
--- Use the holocron on the player.
--- @param pSceneObject pointer to the scene object of the holocron.
--- @param pCreatureObject pointer to the creature object of the player who is using the holocron.
-function VillageJediManager.useTheHolocron(pSceneObject, pCreatureObject)
-	VillageJediManager.withCreatureAndPlayerObject(pCreatureObject, function(creatureObject, playerObject) 
-		-- The holocrom hums softly as you feel your Force power replenish.
-		creatureObject:sendSystemMessage("@jedi_spam:holocron_force_replenish")
-		playerObject:setForcePower(playerObject:getForcePowerMax());
-		creatureObject:addCooldown(USEDHOLOCRON, HOLOCRONCOOLDOWNTIME)
-	end)
-	local sceneObject = LuaSceneObject(pSceneObject)
-	sceneObject:destroyObjectFromWorld()
-end
-
--- Send message to the player that he cannot replenish the force.
--- @param pCreatureObject pointer to the creature object of the player that tries to use the holocron.
-function VillageJediManager.cannotReplenishForce(pCreatureObject)
-	VillageJediManager.withCreatureObject(pCreatureObject, function(creatureObject)
-		-- You are already at your maximum Force power.
-		creatureObject:sendSystemMessage("@jedi_spam:holocron_force_max")
-	end)
-end
-
--- Send message to the player that he cannot use the holocron.
--- @param pCreatureObject pointer to the creature object of the player that tries to use the holocron.
-function VillageJediManager.cannotUseHolocron(pCreatureObject)
-	VillageJediManager.withCreatureObject(pCreatureObject, function(creatureObject)
-		-- The holocron hums briefly, but otherwise does nothing.
-		creatureObject:sendSystemMessage("@jedi_spam:holocron_no_effect")
-	end)
-end
-
 -- Handling of the useHolocron event.
 -- @param pSceneObject pointer to the holocron object.
 -- @param pCreatureObject pointer to the creature object that used the holocron.
 function VillageJediManager:useHolocron(pSceneObject, pCreatureObject)
-	if VillageJediManager.canUseHolocron(pCreatureObject) then
-		if VillageJediManager.canReplenishForce(pCreatureObject) then
-			VillageJediManager.useTheHolocron(pSceneObject, pCreatureObject)
-		else
-			VillageJediManager.cannotReplenishForce(pCreatureObject)
-		end
-	else
-		VillageJediManager.cannotUseHolocron(pCreatureObject)
-	end
+	VillageJediManagerHolocron.useHolocron(pSceneObject, pCreatureObject)
 end
 
 -- Count the number of badges that the player got in the list.
@@ -215,11 +166,11 @@ end
 -- @param pCreatureObject pointer to the creature object of the player.
 -- @return the total number of interesting badges.
 function VillageJediManager.countBadges(pCreatureObject)
-	local professionBadges = VillageJediManager.countBadgesInListToUpperLimit(pCreatureObject, PROFESSIONBADGES, 1)
-	local jediBadges = VillageJediManager.countBadgesInListToUpperLimit(pCreatureObject, JEDIBADGES, 3)
-	local contentBadges = VillageJediManager.countBadgesInListToUpperLimit(pCreatureObject, CONTENTBADGES, 5)
-	local difficultBadges = VillageJediManager.countBadgesInListToUpperLimit(pCreatureObject, DIFFICULTBADGES, 3)
-	local easyBadges = VillageJediManager.countBadgesInListToUpperLimit(pCreatureObject, EASYBADGES, 5)
+	local professionBadges = VillageJediManager.countBadgesInListToUpperLimit(pCreatureObject, PROFESSIONBADGES, NUMBEROFPROFESSIONBADGESREQUIRED)
+	local jediBadges = VillageJediManager.countBadgesInListToUpperLimit(pCreatureObject, JEDIBADGES, NUMBEROFJEDIBADGESREQUIRED)
+	local contentBadges = VillageJediManager.countBadgesInListToUpperLimit(pCreatureObject, CONTENTBADGES, NUMBEROFCONTENTBADGESREQUIRED)
+	local difficultBadges = VillageJediManager.countBadgesInListToUpperLimit(pCreatureObject, DIFFICULTBADGES, NUMBEROFDIFFICULTBADGESREQUIRED)
+	local easyBadges = VillageJediManager.countBadgesInListToUpperLimit(pCreatureObject, EASYBADGES, NUMBEROFEASYBADGESREQUIRED)
 	return professionBadges + jediBadges + contentBadges + difficultBadges + easyBadges
 end
 
@@ -228,7 +179,7 @@ end
 -- @return the jedi progression status, 0 to 5 to be used to return correct string id to the player.
 function VillageJediManager.getJediProgressionStatus(pCreatureObject)
 	local numberOfBadges = VillageJediManager.countBadges(pCreatureObject)
-	return math.floor((numberOfBadges / 17) * 5)
+	return math.floor((numberOfBadges / TOTALNUMBEROFBADGESREQUIRED) * 5)
 end
 
 -- Handling of the checkForceStatus command.
@@ -237,6 +188,46 @@ function VillageJediManager:checkForceStatusCommand(pCreatureObject)
 	VillageJediManager.withCreatureObject(pCreatureObject, function(creatureObject)
 		creatureObject:sendSystemMessage("@jedi_spam:fs_progress_" .. VillageJediManager.getJediProgressionStatus(pCreatureObject))
 	end)
+end
+
+-- Spawn the old man near the player.
+-- @pCreatureObject pointer to the creature object of the player.
+function VillageJediManager.spawnOldMan(pCreatureObject)
+	VillageJediManager.withSceneObject(pCreatureObject, function(sceneObject)
+		spawnMobile(sceneObject:getZoneName(), "old_man", 1, sceneObject:getPositionX(), sceneObject:getPositionZ(), sceneObject:getPositionY(), 0, sceneObject:getParentID())
+	end)
+end
+
+-- Check if the player should progress towards jedi and handle any events for it.
+-- @param pCreatureObject pointer to the creature object of the player.
+function VillageJediManager.checkAndHandleJediProgression(pCreatureObject)
+	if VillageJediManager.countBadges(pCreatureObject) >= TOTALNUMBEROFBADGESREQUIRED then
+		VillageJediManager.spawnOldMan(pCreatureObject)
+	end
+end
+
+-- Event handler for the BADGEAWARDED event.
+-- @param pCreatureObject pointer to the creature object of the player who was awarded with a badge.
+-- @param pCreatureObject2 pointer to the creature object of the player who was awarded with a badge.
+-- @param badgeNumber the badge number that was awarded.
+-- @return 0 to keep the observer active.
+function VillageJediManager:badgeAwardedEventHandler(pCreatureObject, pCreatureObject2, badgeNumber)
+	VillageJediManager.checkAndHandleJediProgression(pCreatureObject)
+
+	return 0
+end
+
+-- Register observer on the player for observing badge awards.
+-- @param pCreatureObject pointer to the creature object of the player to register observers on.
+function VillageJediManager.registerObservers(pCreatureObject)
+	createObserver(BADGEAWARDED, "VillageJediManager", "badgeAwardedEventHandler", pCreatureObject)
+end
+
+-- Handling of the onPlayerLoggedIn event. The progression of the player will be checked and observers will be registered.
+-- @param pCreatureObject pointer to the creature object of the player who logged in.
+function VillageJediManager:onPlayerLoggedIn(pCreatureObject)
+	VillageJediManager.checkAndHandleJediProgression(pCreatureObject)
+	VillageJediManager.registerObservers(pCreatureObject)
 end
 
 registerScreenPlay("VillageJediManager", true)
