@@ -191,14 +191,7 @@ includeFile("static_spawns/tatooine_static_spawns_north.lua")
 --Yavin4
 includeFile("static_spawns/yavin4_static_spawns.lua")
 
---Anniversary Droid
---includeFile("tests/anniversary.lua")
-
---GM Pet Vendor
-includeFile("tests/FollowPlayerDroidScreenplay.lua")
 
 --Tests
 --includeFile("tests/options_bitmask_test.lua")
 --includeFile("event/stresstest_20120128.lua")
---Bestine Travel Terminal
---includeFile("tests/bestine_travel.lua") 
