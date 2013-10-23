@@ -84,7 +84,7 @@ RadiusPerRank = {150, 200, 300, 400, 450}
 DecorationsPerRank = 10
 
 -- Amount to discount city maintenance  float.  1 = 100%, .75 =75%, .5=50% etc
-maintenanceDiscount = 1.0
+maintenanceDiscount = .5
 
 --[[
 	CITIES ALLOWED PER PLANET
@@ -185,7 +185,7 @@ CityTaxes = {
 CitySpecializations = {
 	{--Sample Rich
 		name = "@city/city:city_spec_sample_rich",
-		cost = 35000,
+		cost = 17500,
 		skillMods = {
 			{"private_spec_samplesize", 20},
 			{"private_spec_samplerate", 10}
@@ -193,49 +193,49 @@ CitySpecializations = {
 	},
 	{--Manufacturing Center
 		name = "@city/city:city_spec_industry",
-		cost = 25000,
+		cost = 12500,
 		skillMods = {
 			{"private_spec_assembly", 10}
 		}
 	},
 	{--Medical Center
 		name = "@city/city:city_spec_doctor",
-		cost = 40000,
+		cost = 20000,
 		skillMods = {
 			{"private_medical_rating", 10}
 		}
 	},
 	{--Clone Lab
 		name = "@city/city:city_spec_clone",
-		cost = 40000,
+		cost = 20000,
 		skillMods = {
 			{"private_spec_cloning", 20}
 		}
 	},
 	{--Research Center
 		name = "@city/city:city_spec_research",
-		cost = 60000,
+		cost = 30000,
 		skillMods = {
 			{"private_spec_experimentation", 15}
 		}
 	},
 	{--Improved Job Market
 		name = "@city/city:city_spec_missions",
-		cost = 40000,
+		cost = 20000,
 		skillMods = {
 			{"private_spec_missions", 20}
 		}
 	},
 	{--Entertainment District
 		name = "@city/city:city_spec_entertainer",
-		cost = 40000,
+		cost = 20000,
 		skillMods = {
 			{"private_spec_entertainer", 10}
 		}
 	},
 	{--Stronghold
 		name = "@city/city:city_spec_stronghold",
-		cost = 75000,
+		cost = 37500,
 		skillMods = {
 			{"private_defense", 50}
 		}
