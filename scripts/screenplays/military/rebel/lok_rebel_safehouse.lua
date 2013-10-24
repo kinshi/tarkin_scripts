@@ -34,9 +34,26 @@ function LokRebelSafehouseScreenPlay:spawnSceneObjects()
 	
 	-- No need for recruiter, the Major serves as one
 	
-	--TODO
-	-- AH still needs "sentry" class NPCs placed (replace the guards at the gates and the shuttle with Sentries
+	-- Shuttle Sentries
 	
+	spawnMobile("lok", "sentry_specforce", 300, -4762.7, 4.0, 3515.9, 135, 0)
+	spawnMobile("lok", "sentry_specforce", 300, -4767.9, 4.0, 3511.1, 135, 0)
+
+	-- Gate / Entrance Sentries
+
+	spawnMobile("lok", "sentry_specforce", 300, -4751.4, 4.0, 3503.8, 123, 0)
+	spawnMobile("lok", "rebel_engineer", 300, -4750.6, 4.0, 3507.4, 112, 0)
+	spawnMobile("lok", "sentry_specforce", 300, -4738.4, 4.0, 3509.3, 136, 0)
+	spawnMobile("lok", "sentry_specforce", 300, -4732.6, 4.0, 3518.5, 156, 0)
+	spawnMobile("lok", "rebel_scout", 300, -4741.2, 4.0, 3549.3, -136, 0)
+	spawnMobile("lok", "sentry_specforce", 300, -4743.4, 4.0, 3533.9, 135, 0)
+	spawnMobile("lok", "sentry_specforce", 300, -4747.2, 4.0, 3528.8, 90, 0)
+
+	-- Bridge Sentries
+
+	spanwMobile("lok", "sentry_specforce", 300, -4711.8, 2.0, 3484.1, 137, 0)
+	spawnMobile("lok", "sentry_specforce", 300, -4715.1, 1.9, 3480.8, 137, 0)
+
 end
 
 function LokRebelSafehouseScreenPlay:spawnMobiles()
