@@ -9,9 +9,9 @@ hyperdrive_part = {
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	junkDealerTypeNeeded = JUNKGENERIC,
-	junkMinValue = 20,
-	junkMaxValue = 40
+	skillMods = {
+
+	}
 }
 
 addLootItemTemplate("hyperdrive_part", hyperdrive_part)

@@ -6,11 +6,7 @@ theme_park_reward_imperial_vader = {
 	maximumLevel = 0,
 	lootItems = {
 		{itemTemplate = "enhanced_carbine_schematic", weight = 10000000}
-	},
-	craftingValues = {
-	},
-	customizationStringNames = {},
-	customizationValues = {}
+	}
 }
 
 addLootGroupTemplate("theme_park_reward_imperial_vader", theme_park_reward_imperial_vader)

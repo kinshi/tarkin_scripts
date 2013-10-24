@@ -9,9 +9,9 @@ expensive_basket = {
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	junkDealerTypeNeeded = JUNKGENERIC,
-	junkMinValue = 20,
-	junkMaxValue = 40
+	skillMods = {
+
+	}
 }
 
 addLootItemTemplate("expensive_basket", expensive_basket)

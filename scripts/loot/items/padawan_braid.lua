@@ -8,7 +8,10 @@ padawan_braid = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {}
+	customizationValues = {},
+	skillMods = {
+
+	}
 }
 
 addLootItemTemplate("padawan_braid", padawan_braid)

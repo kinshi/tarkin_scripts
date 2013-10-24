@@ -9,9 +9,9 @@ expired_ticket = {
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	junkDealerTypeNeeded = JUNKGENERIC,
-	junkMinValue = 20,
-	junkMaxValue = 40
+	skillMods = {
+
+	}
 }
 
 addLootItemTemplate("expired_ticket", expired_ticket)

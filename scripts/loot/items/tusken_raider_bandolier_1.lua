@@ -9,9 +9,9 @@ tusken_raider_bandolier_1 = {
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	junkDealerTypeNeeded = JUNKTUSKEN,
-	junkMinValue = 30,
-	junkMaxValue = 50
+	skillMods = {
+
+	}
 }
 
 addLootItemTemplate("tusken_raider_bandolier_1", tusken_raider_bandolier_1)

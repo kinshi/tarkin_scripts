@@ -9,9 +9,9 @@ recording_rod = {
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	junkDealerTypeNeeded = JUNKGENERIC,
-	junkMinValue = 20,
-	junkMaxValue = 40
+	skillMods = {
+
+	}
 }
 
 addLootItemTemplate("recording_rod", recording_rod)

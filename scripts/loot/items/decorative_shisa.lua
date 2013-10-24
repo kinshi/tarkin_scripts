@@ -9,9 +9,9 @@ decorative_shisa = {
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	junkDealerTypeNeeded = JUNKGENERIC,
-	junkMinValue = 20,
-	junkMaxValue = 40
+	skillMods = {
+
+	}
 }
 
 addLootItemTemplate("decorative_shisa", decorative_shisa)

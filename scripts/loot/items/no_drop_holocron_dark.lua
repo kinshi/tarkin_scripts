@@ -8,7 +8,10 @@ no_drop_holocron_dark = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {}
+	customizationValues = {},
+	skillMods = {
+
+	}
 }
 
 addLootItemTemplate("no_drop_holocron_dark", no_drop_holocron_dark)

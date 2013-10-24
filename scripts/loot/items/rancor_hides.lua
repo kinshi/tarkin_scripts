@@ -8,7 +8,7 @@ rancor_hides = {
 	craftingValues = {
 		{"armor_special_type",0,0,0},
 		{"armor_effectiveness",1,3,10},
-		{"armor_integrity",1500,3000,0},		
+		{"armor_integrity",1500,3000,0},
 		{"heateffectiveness",1,4,10},
 		{"coldeffectiveness",1,4,10},
 		{"armor_health_encumbrance",8,0,0},
@@ -17,7 +17,10 @@ rancor_hides = {
 		{"useCount",1,10,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {}
+	customizationValues = {},
+	skillMods = {
+
+	}
 }
 
 addLootItemTemplate("rancor_hides", rancor_hides)

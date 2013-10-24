@@ -5,9 +5,9 @@ theme_park_reward_imperial_kaja = {
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
-		{itemTemplate = "weapon_stock_quest", weight = 3333333},
+		{itemTemplate = "projectile_rifle_barrel_quest", weight = 3333333},
 		{itemTemplate = "tuned_weapon_scope_quest", weight = 3333334},
-		{itemTemplate = "projectile_rifle_barrel_quest", weight = 3333333}
+		{itemTemplate = "weapon_stock_quest", weight = 3333333}
 	}
 }
 
