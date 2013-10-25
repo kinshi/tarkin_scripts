@@ -187,6 +187,9 @@ includeFile("tests/anniversary.lua")
 --GM Pet Vendor
 includeFile("tests/FollowPlayerDroidScreenplay.lua")
 
+--Holiday Events
+includeFile("tests/TrickOrTreat.lua")
+
 --Tests
 --includeFile("tests/options_bitmask_test.lua")
 --includeFile("event/stresstest_20120128.lua")
