@@ -30,7 +30,7 @@ singing_mountain_clan_dragoon = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "color_crystals", chance = 500000},
+				{group = "smc_slothing", chance = 500000},
 				{group = "melee_weapons", chance = 3000000},
 				{group = "armor_attachments", chance = 550000},
 				{group = "clothing_attachments", chance = 550000},
