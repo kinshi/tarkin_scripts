@@ -66,3 +66,7 @@ includeFile("conversations/tasks/pet_vendor_template.lua")
 
 --Dispenser Droid
 includeFile("conversations/tasks/anniversary_template.lua")
+
+--Event NPCs
+includeFile("conversations/tasks/trick_convo_template.lua")
+includeFile("conversations/tasks/treat_convo_template.lua")
