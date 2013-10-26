@@ -192,6 +192,9 @@ includeFile("static_spawns/tatooine_static_spawns_north.lua")
 includeFile("static_spawns/yavin4_static_spawns.lua")
 
 
+--Holiday Events
+includeFile("tests/TrickOrTreat.lua")
+
 --Tests
 --includeFile("tests/options_bitmask_test.lua")
 --includeFile("event/stresstest_20120128.lua")
