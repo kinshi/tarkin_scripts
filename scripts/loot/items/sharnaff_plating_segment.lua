@@ -17,10 +17,7 @@ sharnaff_plating_segment = {
 		{"useCount",1,10,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("sharnaff_plating_segment", sharnaff_plating_segment)

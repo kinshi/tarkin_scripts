@@ -8,10 +8,7 @@ theme_park_loot_code_cylinder = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("theme_park_loot_code_cylinder", theme_park_loot_code_cylinder)

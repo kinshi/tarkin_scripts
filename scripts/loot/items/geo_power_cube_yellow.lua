@@ -12,10 +12,7 @@ geo_power_cube_yellow = {
 		{"useCount",1,10,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("geo_power_cube_yellow", geo_power_cube_yellow)

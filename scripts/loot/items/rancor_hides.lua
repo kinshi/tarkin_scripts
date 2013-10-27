@@ -17,10 +17,7 @@ rancor_hides = {
 		{"useCount",1,10,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("rancor_hides", rancor_hides)

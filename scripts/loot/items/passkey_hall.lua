@@ -8,10 +8,7 @@ passkey_hall = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("passkey_hall", passkey_hall)

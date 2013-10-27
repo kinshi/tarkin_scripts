@@ -8,10 +8,7 @@ skull_bol = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("skull_bol", skull_bol)

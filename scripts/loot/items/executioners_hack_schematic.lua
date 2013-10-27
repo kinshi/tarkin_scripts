@@ -8,10 +8,7 @@ executioners_hack_schematic = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("executioners_hack_schematic", executioners_hack_schematic)

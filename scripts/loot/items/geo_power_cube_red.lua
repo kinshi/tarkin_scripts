@@ -15,10 +15,7 @@ geo_power_cube_red = {
 		{"armor_mind_encumbrance",-4,-10,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("geo_power_cube_red", geo_power_cube_red)

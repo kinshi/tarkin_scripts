@@ -8,10 +8,7 @@ mandalorian_wine_schematic = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("mandalorian_wine_schematic", mandalorian_wine_schematic)

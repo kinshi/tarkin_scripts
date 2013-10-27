@@ -8,10 +8,7 @@ geo_relic_data_tablet = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("geo_relic_data_tablet", geo_relic_data_tablet)

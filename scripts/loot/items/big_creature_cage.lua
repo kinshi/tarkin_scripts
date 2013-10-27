@@ -8,10 +8,7 @@ big_creature_cage = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("big_creature_cage", big_creature_cage)

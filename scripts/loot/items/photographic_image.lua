@@ -9,9 +9,9 @@ photographic_image = {
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	skillMods = {
-
-	}
+	junkDealerTypeNeeded = JUNKGENERIC,
+	junkMinValue = 20,
+	junkMaxValue = 40
 }
 
 addLootItemTemplate("photographic_image", photographic_image)

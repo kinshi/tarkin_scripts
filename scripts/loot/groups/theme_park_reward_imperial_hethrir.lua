@@ -5,7 +5,7 @@ theme_park_reward_imperial_hethrir = {
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
-		{itemTemplate = "imperial_medallion", weight = 10000000}
+		{itemTemplate = "imperial_medallion", weight = 10000000},
 	}
 }
 

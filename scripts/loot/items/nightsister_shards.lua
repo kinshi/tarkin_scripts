@@ -13,10 +13,7 @@ nightsister_shards = {
 		{"useCount",1,10,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("nightsister_shards", nightsister_shards)

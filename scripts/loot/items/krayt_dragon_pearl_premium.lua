@@ -19,10 +19,7 @@ krayt_dragon_pearl_premium = {
 		{"quality",5,5,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("krayt_dragon_pearl_premium", krayt_dragon_pearl_premium)

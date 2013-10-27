@@ -9,9 +9,9 @@ broken_decryptor = {
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	skillMods = {
-
-	}
+	junkDealerTypeNeeded = JUNKGENERIC,
+	junkMinValue = 20,
+	junkMaxValue = 40
 }
 
 addLootItemTemplate("broken_decryptor", broken_decryptor)

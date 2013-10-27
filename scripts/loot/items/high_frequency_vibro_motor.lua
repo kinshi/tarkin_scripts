@@ -10,10 +10,7 @@ high_frequency_vibro_motor = {
 		{"useCount",1,5,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("high_frequency_vibro_motor", high_frequency_vibro_motor)

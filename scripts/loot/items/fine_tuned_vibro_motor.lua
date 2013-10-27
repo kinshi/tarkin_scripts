@@ -10,10 +10,7 @@ fine_tuned_vibro_motor = {
 		{"useCount",1,5,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("fine_tuned_vibro_motor", fine_tuned_vibro_motor)

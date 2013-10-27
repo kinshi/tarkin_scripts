@@ -9,9 +9,9 @@ recorded_image_1 = {
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	skillMods = {
-
-	}
+	junkDealerTypeNeeded = JUNKGENERIC,
+	junkMinValue = 20,
+	junkMaxValue = 40
 }
 
 addLootItemTemplate("recorded_image_1", recorded_image_1)

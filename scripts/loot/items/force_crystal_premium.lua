@@ -19,10 +19,7 @@ force_crystal_premium = {
 		{"quality",5,5,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("force_crystal_premium", force_crystal_premium)

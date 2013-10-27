@@ -8,10 +8,7 @@ geo_kwi_adrenal_boost = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("geo_kwi_adrenal_boost", geo_kwi_adrenal_boost)

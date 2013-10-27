@@ -8,10 +8,7 @@ theme_park_loot_jabba_datapad = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("theme_park_loot_jabba_datapad", theme_park_loot_jabba_datapad)

@@ -9,9 +9,9 @@ slave_collar = {
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	skillMods = {
-
-	}
+	junkDealerTypeNeeded = JUNKGENERIC,
+	junkMinValue = 20,
+	junkMaxValue = 40
 }
 
 addLootItemTemplate("slave_collar", slave_collar)

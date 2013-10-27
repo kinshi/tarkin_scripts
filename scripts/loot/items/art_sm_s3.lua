@@ -8,10 +8,7 @@ art_sm_s3 = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("art_sm_s3", art_sm_s3)

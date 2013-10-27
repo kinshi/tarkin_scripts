@@ -8,10 +8,7 @@ painting_endor_style_01 = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("painting_endor_style_01", painting_endor_style_01)

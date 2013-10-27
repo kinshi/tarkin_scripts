@@ -8,10 +8,7 @@ death_watch_overlord_vial = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("death_watch_overlord_vial", death_watch_overlord_vial)

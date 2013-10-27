@@ -20,10 +20,7 @@ geo_reinforcement_core = {
 		{"useCount",1,5,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("geo_reinforcement_core", geo_reinforcement_core)

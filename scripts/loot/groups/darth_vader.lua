@@ -5,6 +5,7 @@ darth_vader = {
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
+--		{itemTemplate = "lightsaber_vader", weight = 10000000}
 	}
 }
 

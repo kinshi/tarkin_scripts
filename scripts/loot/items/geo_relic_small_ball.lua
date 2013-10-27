@@ -8,10 +8,7 @@ geo_relic_small_ball = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("geo_relic_small_ball", geo_relic_small_ball)

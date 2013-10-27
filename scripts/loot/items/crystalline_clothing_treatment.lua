@@ -9,10 +9,7 @@ crystalline_clothing_treatment = {
 		{"useCount",1,6,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("crystalline_clothing_treatment", crystalline_clothing_treatment)

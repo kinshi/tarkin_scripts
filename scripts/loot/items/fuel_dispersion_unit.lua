@@ -8,10 +8,7 @@ fuel_dispersion_unit = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("fuel_dispersion_unit", fuel_dispersion_unit)

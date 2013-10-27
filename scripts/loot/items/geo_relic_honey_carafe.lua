@@ -8,10 +8,7 @@ geo_relic_honey_carafe = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("geo_relic_honey_carafe", geo_relic_honey_carafe)

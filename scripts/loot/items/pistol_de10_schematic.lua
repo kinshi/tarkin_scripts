@@ -8,10 +8,7 @@ pistol_de10_schematic = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("pistol_de10_schematic", pistol_de10_schematic)

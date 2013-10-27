@@ -8,10 +8,7 @@ theme_park_loot_design_documents = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("theme_park_loot_design_documents", theme_park_loot_design_documents)

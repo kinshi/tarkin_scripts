@@ -8,10 +8,7 @@ test_loot_item = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("test_loot_item", test_loot_item)

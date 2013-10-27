@@ -19,10 +19,7 @@ krayt_dragon_pearl_select = {
 		{"quality",4,4,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("krayt_dragon_pearl_select", krayt_dragon_pearl_select)

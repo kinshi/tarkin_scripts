@@ -8,10 +8,7 @@ holocron_dark = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("holocron_dark", holocron_dark)

@@ -8,10 +8,7 @@ passkey_mine = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("passkey_mine", passkey_mine)

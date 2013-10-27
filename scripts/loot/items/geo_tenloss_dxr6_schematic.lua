@@ -8,10 +8,7 @@ geo_tenloss_dxr6_schematic = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("geo_tenloss_dxr6_schematic", geo_tenloss_dxr6_schematic)

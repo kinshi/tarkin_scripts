@@ -8,10 +8,7 @@ geo_relic_spice_container = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("geo_relic_spice_container", geo_relic_spice_container)

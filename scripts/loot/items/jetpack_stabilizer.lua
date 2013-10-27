@@ -8,10 +8,7 @@ jetpack_stabilizer = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("jetpack_stabilizer", jetpack_stabilizer)

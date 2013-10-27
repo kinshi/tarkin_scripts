@@ -9,7 +9,7 @@ aakuan_common = {
 		{itemTemplate = "aakuan_ring", weight = 2000000},
 		{itemTemplate = "aakuan_robe", weight = 2000000},
 		{itemTemplate = "aakuan_shirt", weight = 2000000},
-		{itemTemplate = "chemical_recycler_schematic", weight = 2000000}
+		{itemTemplate = "chemical_recycler_schematic", weight = 2000000},
 	}
 }
 

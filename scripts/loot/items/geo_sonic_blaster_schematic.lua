@@ -8,10 +8,7 @@ geo_sonic_blaster_schematic = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("geo_sonic_blaster_schematic", geo_sonic_blaster_schematic)

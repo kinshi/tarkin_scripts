@@ -9,9 +9,9 @@ tusken_raider_belt = {
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	skillMods = {
-
-	}
+	junkDealerTypeNeeded = JUNKTUSKEN,
+	junkMinValue = 30,
+	junkMaxValue = 50
 }
 
 addLootItemTemplate("tusken_raider_belt", tusken_raider_belt)

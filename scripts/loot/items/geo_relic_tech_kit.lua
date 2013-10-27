@@ -8,10 +8,7 @@ geo_relic_tech_kit = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("geo_relic_tech_kit", geo_relic_tech_kit)

@@ -9,10 +9,7 @@ heavy_duty_clasp = {
 		{"useCount",1,6,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("heavy_duty_clasp", heavy_duty_clasp)

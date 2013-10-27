@@ -10,10 +10,7 @@ balanced_feed_mechanism = {
 		{"useCount",1,5,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("balanced_feed_mechanism", balanced_feed_mechanism)

@@ -43,7 +43,9 @@
 
 object_tangible_wearables_armor_bone_armor_bone_s01_bracer_r = object_tangible_wearables_armor_bone_shared_armor_bone_s01_bracer_r:new {
 	templateType = ARMOROBJECT,
-
+	
+	objectMenuComponent = {"cpp", "ArmorObjectMenuComponent"},
+	
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
 				"object/creature/player/human_male.iff",

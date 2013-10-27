@@ -9,10 +9,7 @@ heavy_duty_leather = {
 		{"useCount",1,6,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("heavy_duty_leather", heavy_duty_leather)

@@ -11,10 +11,7 @@ geo_solidifying_agent = {
 		{"useCount",1,7,0},
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("geo_solidifying_agent", geo_solidifying_agent)

@@ -8,10 +8,7 @@ de10_pistol_barrel = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("de10_pistol_barrel", de10_pistol_barrel)

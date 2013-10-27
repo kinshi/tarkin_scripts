@@ -8,10 +8,7 @@ geo_sword_core_schematic = {
 	craftingValues = {
 	},
 	customizationStringNames = {},
-	customizationValues = {},
-	skillMods = {
-
-	}
+	customizationValues = {}
 }
 
 addLootItemTemplate("geo_sword_core_schematic", geo_sword_core_schematic)
