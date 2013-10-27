@@ -166,8 +166,6 @@ includeFile("items/nightsister_lance_schematic.lua")
 includeFile("items/nightsister_layer.lua")
 includeFile("items/nightsister_shards.lua")
 includeFile("items/nightsister_vibro_unit.lua")
-<<<<<<< HEAD
-=======
 includeFile("items/no_drop_holocron_dark.lua")
 includeFile("items/no_drop_holocron_light.lua")
 includeFile("items/ns_boots.lua")
@@ -180,7 +178,6 @@ includeFile("items/ns_pants_type_02.lua")
 includeFile("items/ns_shirt_type_01.lua")
 includeFile("items/ns_shirt_type_02.lua")
 includeFile("items/ns_shirt_type_03.lua")
->>>>>>> e1908f3e7270856cb80f4264279b2ee59450b45d
 includeFile("items/nyax_necklace.lua")
 includeFile("items/packaged_flash_powder.lua")
 includeFile("items/padawan_braid.lua")
@@ -225,8 +222,6 @@ includeFile("items/sharnaff_plating_segment.lua")
 includeFile("items/shield_generator_personal_imperial_test_schematic.lua")
 includeFile("items/slave_brazier_schematic.lua")
 includeFile("items/slave_collar.lua")
-<<<<<<< HEAD
-=======
 includeFile("items/small_motor.lua")
 includeFile("items/smc_bicep_l.lua")
 includeFile("items/smc_bicep_r.lua")
@@ -240,7 +235,6 @@ includeFile("items/smc_pack.lua")
 includeFile("items/smc_shirt_type_01.lua")
 includeFile("items/smc_shirt_type_02.lua")
 includeFile("items/smc_shirt_type_03.lua")
->>>>>>> e1908f3e7270856cb80f4264279b2ee59450b45d
 includeFile("items/spear_rack_schematic.lua")
 includeFile("items/spitting_rawl_poster.lua")
 includeFile("items/squill_carcass.lua")

@@ -115,11 +115,8 @@ includeFile("groups/nightsister_crystals_1.lua")
 includeFile("groups/nightsister_crystals_2.lua")
 includeFile("groups/nightsister_crystals_3.lua")
 includeFile("groups/nightsister_crystals_4.lua")
-<<<<<<< HEAD
-=======
 includeFile("groups/nightsister_rare.lua")
 includeFile("groups/ns_clothing.lua")
->>>>>>> e1908f3e7270856cb80f4264279b2ee59450b45d
 includeFile("groups/nyax.lua")
 includeFile("groups/nyms_common.lua")
 includeFile("groups/padded_armor_looted.lua")
