@@ -30,8 +30,7 @@ singing_mountain_clan_outcast = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "crystals_okay", chance = 500000},
-				{group = "color_crystals", chance = 500000},
+				{group = "smc_slothing", chance = 1000000},
 				{group = "melee_weapons", chance = 2500000},
 				{group = "armor_attachments", chance = 550000},
 				{group = "clothing_attachments", chance = 550000},
