@@ -12,7 +12,9 @@ function LokKimogilaTownScreenPlay:start()
 end
 
 function LokKimogilaTownScreenPlay:spawnMobiles()
-	spawnMobile("lok", "giant_dune_kimogila", 1800, -17.6, 11.9, 2725.2, 159, 0)
+	spawnMobile("lok", "giant_dune_kimogila", 1800,math.random(2000) + -17.6, 11.9, math.random(2000) + 2725.2, math.random(360), 0)
+	spawnMobile("lok", "giant_dune_kimogila", 2000,math.random(2000) + -17.6, 11.9, math.random(2000) + 2725.2, math.random(360), 0)
+	spawnMobile("lok", "giant_dune_kimogila", 2200,math.random(2000) + -17.6, 11.9, math.random(2000) + 2725.2, math.random(360), 0)
 	spawnMobile("lok", "kimogila", 1800, -137.4, 11.9, 2656.9, -97, 0)
 	spawnMobile("lok", "kimogila", 1800, -118.0, 11.9, 2653.5, -116, 0)
 	spawnMobile("lok", "cas_vankoo", 1800, -12.4, 12.0, 2695.0, -38, 0)
@@ -32,3 +34,4 @@ function LokKimogilaTownScreenPlay:spawnMobiles()
 	spawnMobile("lok", "kimo_commoner", 300, -37.9, 12.0, 2716.7, 133, 0)
 	spawnMobile("lok", "kimo_commoner", 300, -38.7, 12.0, 2729.2, 14, 0)
 end
+
