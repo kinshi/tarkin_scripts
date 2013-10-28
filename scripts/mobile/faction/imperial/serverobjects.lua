@@ -133,14 +133,3 @@ includeFile("faction/imperial/stormtrooper_sniper.lua")
 includeFile("faction/imperial/stormtrooper_squad_leader.lua")
 includeFile("faction/imperial/veteran_compforce_trooper.lua")
 includeFile("faction/imperial/warden_vinzel_heylon.lua")
-
---Tarkin Custom
-
-includeFile("faction/imperial/sentry_imperial_major.lua")
-includeFile("faction/imperial/sentry_stormtrooper.lua")
-includeFile("faction/imperial/sentry_stormtrooper_bombardier.lua")
---includeFile("faction/imperial/sentry_stormtrooper_captain.lua")
-includeFile("faction/imperial/sentry_stormtrooper_combat_medic.lua")
-includeFile("faction/imperial/sentry_stormtrooper_rifleman.lua")
-includeFile("faction/imperial/sentry_stormtrooper_sniper.lua")
-includeFile("faction/imperial/sentry_stormtrooper_squad_leader.lua")
