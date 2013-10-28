@@ -44,3 +44,5 @@ nightsister_stalker = Creature:new {
 	conversationTemplate = "",
 	attacks = merge(pikemanmaster,brawlermaster,fencermaster)
 }
+
+CreatureTemplates:addCreatureTemplate(nightsister_stalker, "nightsister_stalker")
