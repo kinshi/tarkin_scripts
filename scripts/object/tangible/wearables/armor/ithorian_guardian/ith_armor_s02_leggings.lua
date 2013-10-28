@@ -45,6 +45,8 @@ object_tangible_wearables_armor_ithorian_guardian_ith_armor_s02_leggings = objec
 
 	templateType = ARMOROBJECT,
 
+	objectMenuComponent = {"cpp", "ArmorObjectMenuComponent"},	
+	
 	playerRaces = { "object/creature/player/ithorian_male.iff",
 				"object/creature/player/ithorian_female.iff",
 				"object/mobile/vendor/ithorian_female.iff",
