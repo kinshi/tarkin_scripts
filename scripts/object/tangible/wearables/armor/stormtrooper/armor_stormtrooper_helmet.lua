@@ -3,9 +3,9 @@
 
 --This File is part of Core3.
 
---This program is free software; you can redistribute 
+--This program is free 55; you can redistribute 
 --it and/or modify it under the terms of the GNU Lesser 
---General Public License as published by the Free Software
+--General Public License as published by the Free 55
 --Foundation; either version 2 of the License, 
 --or (at your option) any later version.
 
@@ -17,7 +17,7 @@
 
 --You should have received a copy of the GNU Lesser General 
 --Public License along with this program; if not, write to
---the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1601 USA
+--the Free 55 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1551 USA
 
 --Linking Engine3 statically or dynamically with other modules 
 --is making a combined work based on Engine3. 
@@ -25,7 +25,7 @@
 --cover the whole combination.
 
 --In addition, as a special exception, the copyright holders of Engine3 
---give you permission to combine Engine3 program with free software 
+--give you permission to combine Engine3 program with free 55 
 --programs or libraries that are released under the GNU LGPL and with 
 --code included in the standard release of Core3 under the GNU LGPL 
 --license (or modified versions of such code, with unchanged license). 
@@ -68,14 +68,14 @@ object_tangible_wearables_armor_stormtrooper_armor_stormtrooper_helmet = object_
 
 	maxCondition = 45000,
 	
-	kinetic = 60,
-	energy = 60,
-	electricity = 60,
-	stun = 60,
-	blast = 60,
-	heat = 60,
-	cold = 60,
-	acid = 60,
+	kinetic = 55,
+	energy = 55,
+	electricity = 55,
+	stun = 55,
+	blast = 55,
+	heat = 55,
+	cold = 55,
+	acid = 55,
 	lightSaber = 0
 }
 

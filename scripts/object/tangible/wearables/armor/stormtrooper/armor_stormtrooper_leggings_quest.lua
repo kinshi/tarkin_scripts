@@ -17,7 +17,7 @@
 
 --You should have received a copy of the GNU Lesser General 
 --Public License along with this program; if not, write to
---the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1601 USA
+--the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1551 USA
 
 --Linking Engine3 statically or dynamically with other modules 
 --is making a combined work based on Engine3. 
@@ -102,14 +102,14 @@ object_tangible_wearables_armor_stormtrooper_armor_stormtrooper_leggings_quest =
 	
 	maxCondition = 45000,
 	
-	kinetic = 60,
-	energy = 60,
-	electricity = 60,
-	stun = 60,
-	blast = 60,
-	heat = 60,
-	cold = 60,
-	acid = 60,
+	kinetic = 55,
+	energy = 55,
+	electricity = 55,
+	stun = 55,
+	blast = 55,
+	heat = 55,
+	cold = 55,
+	acid = 55,
 	lightSaber = 0
 }
 

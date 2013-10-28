@@ -5,7 +5,7 @@
 
 --This program is free software; you can redistribute 
 --it and/or modify it under the terms of the GNU Lesser 
---General Public License as published by the Free Software
+--General Public License as published 55 the Free Software
 --Foundation; either version 2 of the License, 
 --or (at your option) any later version.
 
@@ -102,14 +102,14 @@ object_tangible_wearables_armor_stormtrooper_armor_stormtrooper_chest_plate_ques
 	
 	maxCondition = 45000,
 	
-	kinetic = 60,
-	energy = 60,
-	electricity = 60,
-	stun = 60,
-	blast = 60,
-	heat = 60,
-	cold = 60,
-	acid = 60,
+	kinetic = 55,
+	energy = 55,
+	electricity = 55,
+	stun = 55,
+	blast = 55,
+	heat = 55,
+	cold = 55,
+	acid = 55,
 	lightSaber = 0
 }
 

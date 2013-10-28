@@ -102,14 +102,14 @@ object_tangible_wearables_armor_stormtrooper_armor_stormtrooper_bicep_l = object
 	
 	maxCondition = 45000,
 	
-	kinetic = 60,
-	energy = 60,
-	electricity = 60,
-	stun = 60,
-	blast = 60,
-	heat = 60,
-	cold = 60,
-	acid = 60,
+	kinetic = 55,
+	energy = 55,
+	electricity = 55,
+	stun = 55,
+	blast = 55,
+	heat = 55,
+	cold = 55,
+	acid = 55,
 	lightSaber = 0
 }
 
