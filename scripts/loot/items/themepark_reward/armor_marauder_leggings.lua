@@ -6,9 +6,9 @@ armor_marauder_leggings = {
 	customObjectName = "",
 	directObjectTemplate = "object/tangible/wearables/armor/marauder/armor_marauder_s02_leggings.iff",
 	craftingValues = {
-		{"armor_integrity",45000,45000,0},
+		{"armor_integrity",35000,35000,0},
 		{"armor_rating",1,1,0},
-		{"armor_effectiveness",50,50,0},
+		{"armor_effectiveness",45,45,0},
 		{"kineticeffectiveness",0,0,0},
 		{"heateffectiveness",0,0,0},
 		{"coldeffectiveness",0,0,0},

@@ -6,9 +6,9 @@ bh_armor_bicep_l = {
 	customObjectName = "",
 	directObjectTemplate = "object/tangible/wearables/armor/bounty_hunter/armor_bounty_hunter_bicep_l.iff",
 	craftingValues = {
-		{"armor_integrity",45000,45000,0},
+		{"armor_integrity",35000,35000,0},
 		{"armor_rating",1,1,0},
-		{"armor_effectiveness",60,60,0},
+		{"armor_effectiveness",55,55,0},
 --		{"energyeffectiveness",60,60},
 --		{"heateffectiveness",60,60,0},
 --		{"coldeffectiveness",-35,-35,0},

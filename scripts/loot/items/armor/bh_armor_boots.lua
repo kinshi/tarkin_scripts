@@ -6,9 +6,9 @@ bh_armor_boots = {
 	customObjectName = "",
 	directObjectTemplate = "object/tangible/wearables/armor/bounty_hunter/armor_bounty_hunter_boots.iff",
 	craftingValues = {
-		{"armor_integrity",45000,45000,0},
+		{"armor_integrity",35000,35000,0},
 		{"armor_rating",1,1,0},
-		{"armor_effectiveness",60,60,0},
+		{"armor_effectiveness",55,55,0},
 --		{"kineticeffectiveness",0,0,0},
 --		{"heateffectiveness",0,0,0},
 --		{"coldeffectiveness",0,0,0},
