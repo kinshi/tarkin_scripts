@@ -7,10 +7,14 @@ OLD_MAN_TEMPLATE = "old_man"
 OLD_MAN_RESPAWN_TIME = 0
 OLD_MAN_HEADING = 0
 OLD_MAN_ID_STRING = ":old_man_id"
+OLD_MAN_EVENT_SCHEDULED_STRING = "old_man_event_scheduled"
+OLD_MAN_NOT_SCHEDULED = 0
+OLD_MAN_SCHEDULED = 1
+OLD_MAN_SPAWNED = 2
 --OLD_MAN_SPAWN_TIME = 12 * 60 * 60 * 1000 -- 12 hours as base
 OLD_MAN_DESPAWN_TIME = 5 * 60 * 1000 -- 5 minutes
-OLD_MAN_SPAWN_TIME = 12 * 60 * 1000 -- 12 minutes as base for testing
---OLD_MAN_SPAWN_TIME = 12 * 1000 -- 12 seconds as base for testing
+--OLD_MAN_SPAWN_TIME = 12 * 60 * 1000 -- 12 minutes as base for testing
+OLD_MAN_SPAWN_TIME = 12 * 1000 -- 12 seconds as base for testing
 --OLD_MAN_DESPAWN_TIME = 30 * 1000 -- 30 seconds as base for testing
 OLD_MAN_STOP_FOLLOW_TIME = 15 * 1000 -- 15 seconds
 OLD_MAN_SPATIAL_CHAT_TIME = 5 * 1000 -- 5 seconds
@@ -30,12 +34,60 @@ function OldMan.spawnOldMan(pCreatureObject)
 	end)
 end
 
+-- Read persitent data from the player.
+-- @param pCreatureObject pointer to the creature object of the player.
+-- @param key the key to read the value from.
+-- @return the value written on the key.
+function OldMan.getScreenPlayStateFromPlayer(pCreatureObject, key)
+	return OldMan.withCreatureObject(pCreatureObject, function(creatureObject)
+		return creatureObject:getScreenPlayState(key)
+	end)
+end
+
+-- Read transient data from the player.
+-- @param pCreatureObject pointer to the creature object of the player.
+-- @param key the key to read the value from.
+-- @return the value written on the key.
+function OldMan.readTransientDataFromThePlayer(pCreatureObject, key)
+	return OldMan.withCreatureObject(pCreatureObject, function(creatureObject)
+		return readData(creatureObject:getObjectID() .. key)
+	end)
+end
+
 -- Read the id of the old man from the player he was spawned for.
 -- @param pCreatureObject pointer to the creature object of the player who got the old man spawned.
 -- @return the id of the old man stored on the player.
 function OldMan.readOldManIdFromPlayer(pCreatureObject)
-	return OldMan.withCreatureObject(pCreatureObject, function(creatureObject)
-		return readData(creatureObject:getObjectID() .. OLD_MAN_ID_STRING)
+	return OldMan.readTransientDataFromThePlayer(pCreatureObject, OLD_MAN_ID_STRING)
+end
+
+-- Write persistent data to the player.
+-- @param pCreatureObject pointer to the creature object of the player.
+-- @param key the key to write the value to.
+-- @param value the value to write.
+function OldMan.setScreenPlayStateOnPlayer(pCreatureObject, key, value)
+	OldMan.withCreatureObject(pCreatureObject, function(creatureObject)
+		creatureObject:setScreenPlayState(value, key)
+	end)
+end
+
+-- Clear persistent data to the player.
+-- @param pCreatureObject pointer to the creature object of the player.
+-- @param key the key to clear the value in.
+-- @param value the value to clear.
+function OldMan.removeScreenPlayStateOnPlayer(pCreatureObject, key, value)
+	OldMan.withCreatureObject(pCreatureObject, function(creatureObject)
+		creatureObject:removeScreenPlayState(value, key)
+	end)
+end
+
+-- Write transient data to the player.
+-- @param pCreatureObject pointer to the creature object of the player.
+-- @param key the key to write the value to.
+-- @param value the value to write.
+function OldMan.writeTransientDataToThePlayer(pCreatureObject, key, value)
+	OldMan.withCreatureObject(pCreatureObject, function(creatureObject)
+		writeData(creatureObject:getObjectID() .. key, value)
 	end)
 end
 
@@ -43,10 +95,8 @@ end
 -- @param pCreatureObject pointer to the creature object of the player who got the old man spawned.
 -- @param pOldMan pointer to the creature object of the spawned old man.
 function OldMan.saveOldManIdOnPlayer(pCreatureObject, pOldMan)
-	OldMan.withCreatureObject(pCreatureObject, function(playerCreatureObject)
-		OldMan.withCreatureObject(pOldMan, function(oldManCreatureObject)
-			writeData(playerCreatureObject:getObjectID() .. OLD_MAN_ID_STRING, oldManCreatureObject:getObjectID())
-		end)
+	OldMan.withCreatureObject(pOldMan, function(oldManCreatureObject)
+		OldMan.writeTransientDataToThePlayer(pCreatureObject, OLD_MAN_ID_STRING, oldManCreatureObject:getObjectID())
 	end)
 end
 
@@ -155,6 +205,13 @@ function OldMan:handleDespawnEvent(pCreatureObject)
 	OldMan.createSpawnOldManEvent(pCreatureObject)
 end
 
+-- Schedule despawn of the old man.
+-- @param pCreatureObject pointer to the creature object of the player whos old man should be despawned.
+-- @param time time until the old man should despawn.
+function OldMan.scheduleDespawnOfOldMan(pCreatureObject, time)
+	createEvent(time, "OldMan", "handleDespawnEvent", pCreatureObject)
+end
+
 -- Try to spawn the old man and create the needed events.
 -- @param pCreatureObject pointer to the creature object of the player who should get the old man spawned.
 -- @return true if everything were successful.
@@ -165,7 +222,7 @@ function OldMan.tryToSpawnOldMan(pCreatureObject)
 		OldMan.setToFollow(pOldMan, pCreatureObject)
 		createEvent(OLD_MAN_STOP_FOLLOW_TIME, "OldMan", "handleStopFollowPlayerEvent", pCreatureObject)
 		createEvent(OLD_MAN_SPATIAL_CHAT_TIME, "OldMan", "handleSpatialChatEvent", pCreatureObject)
-		createEvent(OLD_MAN_DESPAWN_TIME, "OldMan", "handleDespawnEvent", pCreatureObject)
+		OldMan.scheduleDespawnOfOldMan(pCreatureObject, OLD_MAN_DESPAWN_TIME)
 		return true
 	else
 		return false
@@ -175,6 +232,7 @@ end
 -- Function to handle the old man event.
 -- @param pCreatureObject pointer to the creature object who should have an event created for spawning the old man.
 function OldMan:handleSpawnOldManEvent(pCreatureObject)
+	OldMan.removeScreenPlayStateOnPlayer(pCreatureObject, OLD_MAN_EVENT_SCHEDULED_STRING, OLD_MAN_SCHEDULED)
 	if OldMan.canOldManBeSpawned(pCreatureObject) then
 		if not OldMan.tryToSpawnOldMan(pCreatureObject) then
 			OldMan.createSpawnOldManEvent(pCreatureObject)
@@ -184,10 +242,20 @@ function OldMan:handleSpawnOldManEvent(pCreatureObject)
 	end
 end
 
+-- Check if an event has already been scheduled for spawning the old man for this player.
+-- @param pCreatureObject pointer to the creature object of the player.
+-- return true if an event is already scheduled.
+function OldMan.hasOldManSpawnEventScheduled(pCreatureObject)
+	return OldMan.getScreenPlayStateFromPlayer(pCreatureObject, OLD_MAN_EVENT_SCHEDULED_STRING) == OLD_MAN_SCHEDULED
+end
+
 -- Generate an event to spawn the old man for the player.
 -- @param pCreatureObject pointer to the creature object who should have an event created for spawning the old man.
 function OldMan.createSpawnOldManEvent(pCreatureObject)
-	createEvent(true, OLD_MAN_SPAWN_TIME + math.random(OLD_MAN_SPAWN_TIME), "OldMan", "handleSpawnOldManEvent", pCreatureObject)
+	if not OldMan.hasOldManSpawnEventScheduled(pCreatureObject) then
+		OldMan.setScreenPlayStateOnPlayer(pCreatureObject, OLD_MAN_EVENT_SCHEDULED_STRING, OLD_MAN_SCHEDULED)
+		createEvent(true, OLD_MAN_SPAWN_TIME + math.random(OLD_MAN_SPAWN_TIME), "OldMan", "handleSpawnOldManEvent", pCreatureObject)
+	end
 end
 
 -- Check if the old man belongs to the player or not.
