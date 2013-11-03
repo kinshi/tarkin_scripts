@@ -31,6 +31,7 @@ function TalusImperialOutpostScreenPlay:spawnSceneObjects()
 end
 
 function TalusImperialOutpostScreenPlay:spawnMobiles()
+
 	spawnMobile("talus", "at_st", 300, -2167.8, 20.0, 2411.1, -8, 0)
 	spawnMobile("talus", "stormtrooper", 300, -2194.6, 20.0, 2344.9, 179, 0)
 	spawnMobile("talus", "stormtrooper", 300, -2187.9, 20.0, 2344.9, 179, 0)
@@ -59,6 +60,24 @@ function TalusImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("talus", "at_st", 300, -2198.2, 20.0, 2299.8, 0, 0)
 	spawnMobile("talus", "stormtrooper_bombardier", 300, -2195.2, 20.0, 2295.2, 0, 0)
 	spawnMobile("talus", "stormtrooper_bombardier", 300, -2201.2, 20.0, 2295.2, 0, 0)
+
+	-- Gate Entrance Guards
+
+	spawnMobile("talus", "sentry_stormtrooper", 300, -2175.1, 20.0, 2400.4, 0, 0)
+	spawnMobile("talus", "sentry_stormtrooper", 300, -2191.6, 20.0, 2400.8, 0, 0)
+	spawnMobile("talus", "sentry_stormtrooper", 300, -2276.6, 20.0, 2258.4, -121, 0)
+	spawnMobile("talus", "sentry_stormtrooper", 300, -2267.0, 20.0, 2243.8, -121, 0)
+	spawnMobile("talus", "sentry_stormtrooper", 300, -2099.2, 20.0, 2244.3, 121, 0)
+	spawnMobile("talus", "sentry_stormtrooper", 300, -2089.0, 20.0, 2258.4, 123, 0)
+	spawnMobile("talus", "at_st", 300, -2200.1, 20.0, 2408.8, 0, 0)
+	spawnMobile("talus", "at_st", 300, -2286.0, 20.0, 2264.2, -134, 0)
+	spawnMobile("talus", "at_st", 300, -2271.9, 20.0, 2230.3, -108, 0)
+	spawnMobile("talus", "at_st", 300, -2092.5, 20.0, 2230.5, 107, 0)
+	spawnMobile("talus", "at_st", 300, -2073.6, 20.0, 2260.2, 131, 0)
+
+	-- Tower Entrance Guards
+
+	spawnMobile("talus", "sentry_stormtrooper", 300, 
 end
 
 function TalusImperialOutpostScreenPlay:teleportStronghold(pCollector, pPlayer)
