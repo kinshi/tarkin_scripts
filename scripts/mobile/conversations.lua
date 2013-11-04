@@ -64,8 +64,3 @@ includeFile("conversations/tasks/ris_armor_quest_conv.lua")
 
 -- Village
 includeFile("conversations/village/old_man_conv.lua")
-
---Holiday Events
-includeFile("conversations/tasks/treat_convo_template.lua")
-includeFile("conversations/tasks/trick_convo_template.lua")
-
