@@ -137,6 +137,7 @@ includeFile("yavin4/vraker_orde.lua")
 includeFile("yavin4/yith_seenath.lua")
 
 --Tarkin Custom
+-- Custom Npcs
 
 includeFile("yavin4/black_sun_guard_02.lua")
 includeFile("yavin4/black_sun_assassin_02.lua")
