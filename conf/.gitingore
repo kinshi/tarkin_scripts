@@ -1,3 +1,9 @@
-*.lua
-*.lst
-*.txt
+adminusers.lst
+bannedusers.lst
+config.lua
+features.lua
+motd.txt
+restrictednames.txt
+rev.txt
+webusers.lst
+
