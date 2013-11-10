@@ -46,7 +46,7 @@ MakeLogin = 1
 MakeZone = 1
 MakePing = 1
 MakeStatus = 1
-MakeWeb = 1
+MakeWeb = 0
 
 ORB = ""
 
@@ -59,7 +59,7 @@ DBSecret = "swgemus3cr37!" -- Change this! This value should be unique and of re
 
 LoginPort = 44453
 LoginProcessingThreads = 1
-LoginAllowedConnections = 100
+LoginAllowedConnections = 3000
 LoginRequiredVersion = "20050408-18:00"
 
 MantisHost = "127.0.0.1"
@@ -74,7 +74,7 @@ AutoReg = 1
 ProgressMonitors = "true"
 
 PingPort = 44462
-PingAllowedConnections = 100
+PingAllowedConnections = 3000
 
 ZoneProcessingThreads = 10
 ZoneAllowedConnections = 30000
@@ -138,8 +138,6 @@ TrePath = "/home/swgemu/workspace/tre"
 
 TreFiles = {
 	"default_patch.tre",
-	"patch_16_00.tre",
-	"patch_15_00.tre",
 	"patch_sku1_14_00.tre",
 	"patch_14_00.tre",
 	"patch_sku1_13_00.tre",
@@ -194,7 +192,7 @@ TreFiles = {
 
 --Status Server Config
 StatusPort = 44455
-StatusAllowedConnections = 100
+StatusAllowedConnections = 500
 StatusInterval = 30 -- interval to check if zone is locked up (in seconds)
 
 --Web Server Config
