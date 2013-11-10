@@ -1,17 +1,17 @@
 r3_crafted = Creature:new {
 	objectName = "@mob/creature_names:r3_crafted",
-	socialGroup = "townsperson",
-	pvpFaction = "townsperson",
-	faction = "townsperson",
+	socialGroup = "",
+	pvpFaction = "",
+	faction = "",
 	level = 4,
 	chanceHit = 0.24,
-	damageMin = 40,
-	damageMax = 45,
-	baseXp = 62,
-	baseHAM = 113,
-	baseHAMmax = 138,
+	damageMin = 135,
+	damageMax = 150,
+	baseXp = 0,
+	baseHAM = 4000,
+	baseHAMmax = 4500,
 	armor = 0,
-	resists = {15,15,15,15,15,15,15,-1,-1},
+	resists = {0,0,0,0,0,0,0,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -27,13 +27,11 @@ r3_crafted = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {
-		"object/mobile/r3_crafted.iff"
+		"object/creature/npc/droid/crafted/r3_droid.iff"
 	},		
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = {
-	}
 }
 
 CreatureTemplates:addCreatureTemplate(r3_crafted, "r3_crafted")
