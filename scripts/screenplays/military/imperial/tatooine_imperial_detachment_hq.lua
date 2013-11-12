@@ -51,11 +51,13 @@ function ImperialDetachmentHQScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "stormtrooper", 300, -2590.52, 5, 2111.61, -90, 0)
 	spawnMobile("tatooine", "stormtrooper", 300, -2591.35, 5, 2107.1, -90, 0)
 	spawnMobile("tatooine", "stormtrooper", 300, -2592.6, 5, 2100.61, -90, 0)
-	
+	spawnMobile("tatooine", "at_st", 300, -2583.5, 5.2, 2102.6, -86, 0)
+	spawnMobile("tatooine", "at_st", 300, -2580.2, 5.3, 2112.2, -84, 0)
 	
 	-- Shuttle
 	spawnMobile("tatooine", "imperial_pilot", 300, -2574.77, 5.42, 2087.59, -120, 0)
 	spawnMobile("tatooine", "imperial_trooper", 300, -2579.42, 5.28, 2085.23, 55, 0)
+	spawnMobile("tatooine", "sentry_stormtrooper", 300, -2571.0, 5.5, 2090.9, -116, 0)
 	
 	-- Equipment
 	spawnMobile("tatooine", "imperial_trooper", 300, -2590.8, 5, 2069.73, 180, 0)
@@ -67,13 +69,16 @@ function ImperialDetachmentHQScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "imperial_private", 300, -2555.57, 5.77, 2132.51, -45, 0)
 		
 	-- Office Exterior
-	spawnMobile("tatooine", "stormtrooper", 300, -2573.94, 5.5, 2131.27, 180, 0)
+	spawnMobile("tatooine", "sentry_stormtrooper", 300, -2573.94, 5.5, 2131.27, 180, 0)
+	spawnMobile("tatooine", "sentry_stormtrooper", 300, -2578.4, 5.4, 2132.1, -170, 0)
 	
 	-- Barracks Exterior
-	spawnMobile("tatooine", "stormtrooper", 300, -2568.7, 5.69, 2118.6, -90, 0)
+	spawnMobile("tatooine", "sentry_stormtrooper", 300, -2568.7, 5.69, 2118.6, -90, 0)
+	spawnMobile("tatooine", "sentry_stormtrooper", 300, -2568.0, 5.7, 2122.4, -80, 0)
 	
 	-- Bunker Exterior
-	spawnMobile("tatooine", "stormtrooper", 300, -2576.48, 5.36, 2098.1, -90, 0)
+	spawnMobile("tatooine", "sentry_stormtrooper", 300, -2576.48, 5.36, 2098.1, -90, 0)
+	spawnMobile("tatooine", "sentry_stormtrooper", 300, -2575.7, 5.4, 2101.9, -81, 0)
 	
 	-- Office Interior
 	spawnMobile("tatooine", "imperial_second_lieutenant", 300, 5.36, 0.1, 1.85, -90, 1250091)
