@@ -106,14 +106,14 @@ object_building_faction_perk_hq_hq_s01_imp_pvp = object_building_faction_perk_hq
 			  {templateFile = "object/tangible/hq_destructible/override_terminal.iff", x = 1, z = 0, y = -1, ow =-.685, ox =0, oz = 0, oy =.728, cellid = 3, containmentType = -1},
 		},
 		
-			
+--Tarkin GCW NPCs			
 		childCreatureObjects = {
 	
-			{ mobile="stormtrooper", x=-4.8, z=0, y=1.4, cellid=2, respawn=300, containmentType=-1, heading=0},
-			{ mobile="imperial_first_lieutenant", x=3.6, z=0, y=1.8, cellid=4, respawn=300, containmentType=-1, heading=4.71}, 
-			{ mobile="imperial_medic", x=-3.8, z=0, y=-2.3, cellid=6, respawn=300, containmentType=-1, heading=3.14},
-			{ mobile="dark_trooper", x=-0.1, z=0, y=-2.8, cellid=3, respawn=300, containmentType=-1, heading=0},
-			{ mobile="stormtrooper_colonel", x=3.5, z=0, y=-4, cellid=5, respawn=300, containmentType=-1, heading=4.71},
+			{ mobile="gcw_stormtrooper", x=-4.8, z=0, y=1.4, cellid=2, respawn=300, containmentType=-1, heading=0},
+			{ mobile="gcw_imperial_first_lieutenant", x=3.6, z=0, y=1.8, cellid=4, respawn=300, containmentType=-1, heading=4.71}, 
+			{ mobile="gcw_imperial_medic", x=-3.8, z=0, y=-2.3, cellid=6, respawn=300, containmentType=-1, heading=3.14},
+			{ mobile="gcw_dark_trooper", x=-0.1, z=0, y=-2.8, cellid=3, respawn=300, containmentType=-1, heading=0},
+			{ mobile="gcw_stormtrooper_colonel", x=3.5, z=0, y=-4, cellid=5, respawn=300, containmentType=-1, heading=4.71},
 
 			{ mobile="imperial_recruiter", x=-1, z=0, y=-5.5, cellid=3, containmentType=-1, respawn=60, heading=0},
 		},
