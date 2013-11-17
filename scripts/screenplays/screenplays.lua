@@ -128,6 +128,8 @@ includeFile("cities/talus_dearic.lua")
 includeFile("cities/talus_nashal.lua")
 includeFile("cities/tatooine_mos_taike.lua")
 includeFile("cities/tatooine_bestine.lua")
+-- Theed Cantina
+includeFile("cities/naboo_theed_cantina.lua")
 
 -- POIs
 includeFile("poi/corellia_grand_theater_vreni_island.lua")

@@ -92,7 +92,7 @@ ZonesEnabled = {
 	--"cinco_city_test_m5",
 	"corellia",
 	--"creature_test",
-	--"dantooine",
+	"dantooine",
 	"dathomir",
 	--"dungeon1",
 	"endor",

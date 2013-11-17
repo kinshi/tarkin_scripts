@@ -106,32 +106,32 @@ object_building_faction_perk_hq_hq_s01_imp = object_building_faction_perk_hq_sha
 			  {templateFile = "object/tangible/hq_destructible/override_terminal.iff", x = 1, z = 0, y = -1, ow =-.685, ox =0, oz = 0, oy =.728, cellid = 3, containmentType = -1},
 		},
 
-
+--Tarkin GCW NPCs
 		childCreatureObjects = {
-		 	{ mobile="dark_trooper", x=4, z=0, y=50, cellid=-1, respawn=300, containmentType=-1, heading=0},
-		 	{ mobile="dark_trooper", x=0, z=0, y=50, cellid=-1, respawn=300, containmentType=-1, heading=0},
-			{ mobile="dark_trooper", x=-4, z=0, y=50, cellid=-1, respawn=300, containmentType=-1, heading=0},
-			{ mobile="at_st", x=0, z=0, y=42, cellid=-1, respawn=300, containmentType=-1, heading=0},
+		 	{ mobile="gcw_dark_trooper", x=4, z=0, y=50, cellid=-1, respawn=300, containmentType=-1, heading=0},
+		 	{ mobile="gcw_dark_trooper", x=0, z=0, y=50, cellid=-1, respawn=300, containmentType=-1, heading=0},
+			{ mobile="gcw_dark_trooper", x=-4, z=0, y=50, cellid=-1, respawn=300, containmentType=-1, heading=0},
+			{ mobile="gcw_at_st", x=0, z=0, y=42, cellid=-1, respawn=300, containmentType=-1, heading=0},
 
-		 	{ mobile="dark_trooper", x=-25, z=0, y=14, cellid=-1, respawn=300, containmentType=-1, heading=0},
-		 	{ mobile="dark_trooper", x=-30, z=0, y=14, cellid=-1, respawn=300, containmentType=-1, heading=0},
-			{ mobile="stormtrooper", x=-27.5, z=0, y=16.5, cellid=-1, respawn=300, containmentType=-1, heading=0},
-			{ mobile="stormtrooper_medic", x=-25, z=0, y=19, cellid=-1, respawn=300, containmentType=-1, heading=0},
-		 	{ mobile="stormtrooper_bombardier", x=-30, z=0, y=19, cellid=-1, respawn=300, containmentType=-1, heading=0},
+		 	{ mobile="gcw_dark_trooper", x=-25, z=0, y=14, cellid=-1, respawn=300, containmentType=-1, heading=0},
+		 	{ mobile="gcw_dark_trooper", x=-30, z=0, y=14, cellid=-1, respawn=300, containmentType=-1, heading=0},
+			{ mobile="gcw_stormtrooper", x=-27.5, z=0, y=16.5, cellid=-1, respawn=300, containmentType=-1, heading=0},
+			{ mobile="gcw_stormtrooper_medic", x=-25, z=0, y=19, cellid=-1, respawn=300, containmentType=-1, heading=0},
+		 	{ mobile="gcw_stormtrooper_bombardier", x=-30, z=0, y=19, cellid=-1, respawn=300, containmentType=-1, heading=0},
 
-			{ mobile="dark_trooper", x=25, z=0, y=14, cellid=-1, respawn=300, containmentType=-1, heading=0},
-		 	{ mobile="dark_trooper", x=30, z=0, y=14, cellid=-1, respawn=300, containmentType=-1, heading=0},
-			{ mobile="stormtrooper", x=27.5, z=0, y=16.5, cellid=-1, respawn=300, containmentType=-1, heading=0},
-			{ mobile="stormtrooper_medic", x=25, z=0, y=19, cellid=-1, respawn=300, containmentType=-1, heading=0},
-		 	{ mobile="stormtrooper_bombardier", x=30, z=0, y=19, cellid=-1, respawn=300, containmentType=-1, heading=0},
+			{ mobile="gcw_dark_trooper", x=25, z=0, y=14, cellid=-1, respawn=300, containmentType=-1, heading=0},
+		 	{ mobile="gcw_dark_trooper", x=30, z=0, y=14, cellid=-1, respawn=300, containmentType=-1, heading=0},
+			{ mobile="gcw_stormtrooper", x=27.5, z=0, y=16.5, cellid=-1, respawn=300, containmentType=-1, heading=0},
+			{ mobile="gcw_stormtrooper_medic", x=25, z=0, y=19, cellid=-1, respawn=300, containmentType=-1, heading=0},
+		 	{ mobile="gcw_stormtrooper_bombardier", x=30, z=0, y=19, cellid=-1, respawn=300, containmentType=-1, heading=0},
 
-			{ mobile="stormtrooper", x=-8, z=0, y=10, cellid=-1, respawn=300, containmentType=-1, heading=1.571},
-			{ mobile="stormtrooper", x=8, z=0, y=10, cellid=-1, respawn=300, containmentType=-1, heading=-1.571},
-		 	{ mobile="stormtrooper", x=15, z=0, y=0, cellid=-1, respawn=300, containmentType=-1, heading=0},
-			{ mobile="stormtrooper", x=0, z=0, y=9, cellid=-1, respawn=300, containmentType=-1, heading=0},
+			{ mobile="gcw_stormtrooper", x=-8, z=0, y=10, cellid=-1, respawn=300, containmentType=-1, heading=1.571},
+			{ mobile="gcw_stormtrooper", x=8, z=0, y=10, cellid=-1, respawn=300, containmentType=-1, heading=-1.571},
+		 	{ mobile="gcw_stormtrooper", x=15, z=0, y=0, cellid=-1, respawn=300, containmentType=-1, heading=0},
+			{ mobile="gcw_stormtrooper", x=0, z=0, y=9, cellid=-1, respawn=300, containmentType=-1, heading=0},
 
-			{ mobile="imperial_first_lieutenant", x=3.6, z=0, y=1.8, cellid=4, respawn=300, containmentType=-1, heading=0},
-			{ mobile="imperial_medic", x=-3.8, z=0, y=-2.3, cellid=6, respawn=300, containmentType=-1, heading=0},
+			{ mobile="gcw_imperial_first_lieutenant", x=3.6, z=0, y=1.8, cellid=4, respawn=300, containmentType=-1, heading=0},
+			{ mobile="gcw_imperial_medic", x=-3.8, z=0, y=-2.3, cellid=6, respawn=300, containmentType=-1, heading=0},
 			{ mobile="imperial_recruiter", x=-1, z=0, y=-5.5, cellid=3, containmentType=-1, respawn=60, heading=0},
 		},
 
