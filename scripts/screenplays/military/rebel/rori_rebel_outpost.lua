@@ -152,13 +152,11 @@ end
 function RoriRebelOutpostScreenPlay:spawnSceneObjects()
 	
 	-- Turrets
-	local pTurret1 = spawnSceneObject("rori", "object/installation/turret/turret_block_med.iff", 3664.8, 96.0, -6448.1, 0, 1, 0, 0, 0)
+	local pTurret1 = spawnSceneObject("rori", "object/installation/turret/turret_block_med.iff", 3664.8, 96.0, -6448.1, 0, 0, 0, 1, 0)
 	setTurretFaction(pTurret1)
-	-- This sets the turrent with a due north facing towards the base entance.
 
 	local pTurret2 = spawnSceneObject("rori", "object/installation/turret/turret_block_med.iff", 3682.1, 96.0, -6472.1, 0, -0.707107, 0, 0.707107, 0)
 	setTurretFaction(pTurret2)
-	-- This sets the turrent with a due west facing towards the storage sheds
 
 end
 
