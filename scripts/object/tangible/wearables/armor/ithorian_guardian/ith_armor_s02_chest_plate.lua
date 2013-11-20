@@ -44,8 +44,6 @@
 object_tangible_wearables_armor_ithorian_guardian_ith_armor_s02_chest_plate = object_tangible_wearables_armor_ithorian_guardian_shared_ith_armor_s02_chest_plate:new {
 	templateType = ARMOROBJECT,
 
-	objectMenuComponent = {"cpp", "ArmorObjectMenuComponent"},	
-	
 	playerRaces = { "object/creature/player/ithorian_male.iff",
 				"object/creature/player/ithorian_female.iff",
 				"object/mobile/vendor/ithorian_female.iff",
@@ -62,14 +60,16 @@ object_tangible_wearables_armor_ithorian_guardian_ith_armor_s02_chest_plate = ob
 	-- LIGHT, MEDIUM, HEAVY
 	rating = LIGHT,
 
-	kinetic = 25,
-	energy = 25,
-	electricity = 25,
-	stun = 25,
-	blast = 25,
-	heat = 25,
-	cold = 25,
-	acid = 25,
+	maxCondition = 7000,
+	
+	kinetic = 15,
+	energy = 15,
+	electricity = 15,
+	stun = 15,
+	blast = 15,
+	heat = 15,
+	cold = 15,
+	acid = 15,
 	lightSaber = 0,
 
 	numberExperimentalProperties = {1, 1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1},
