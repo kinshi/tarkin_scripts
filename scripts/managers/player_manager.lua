@@ -178,7 +178,7 @@ artisan_trandoshan_female_items = {flaredCuffShirt, wrappedSkirt}
 
 --------------------------Male Ithorian Items---------------------------
 
-artisan_ithorian_male_items = {ithMysticShirt, ithPatrolPants, ithDressVest}
+artisan_ithorian_male_items = {ithMysticShirt, ithPatrolPants, ithDressVest, ithArmorHelmet}
 
 --------------------------Female Ithorian Items---------------------------
 
