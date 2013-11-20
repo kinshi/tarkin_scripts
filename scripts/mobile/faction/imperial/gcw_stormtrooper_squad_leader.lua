@@ -46,7 +46,7 @@ gcw_stormtrooper_squad_leader = Creature:new {
 	},
 	weapons = {"stormtrooper_weapons"},
 	conversationTemplate = "",
-	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
+	attacks = merge(riflemanmaster,carbineermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(gcw_stormtrooper_squad_leader, "gcw_stormtrooper_squad_leader")
