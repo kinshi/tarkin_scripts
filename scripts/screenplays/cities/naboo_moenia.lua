@@ -34,18 +34,39 @@ end
 
 function MoeniaScreenPlay:spawnMobiles()
 
--- SENTRIES
+	-- SENTRIES
 
---spawnMobile("naboo", "sentry_rebel_major", 360, , , , , 0)
-spawnMobile("naboo", "sentry_specforce_sniper", 360, 4724.4, 4.2, -4685.7, 0, 0)
-spawnMobile("naboo", "sentry_specforce", 360, 4702.0, 4.2, -4674.6, 36, 0)
-spawnMobile("naboo", "sentry_specforce", 360, 4691.5, 4.2, -4649.4, 83, 0)
-spawnMobile("naboo", "sentry_specforce", 360, 4752.1, 4.2, -4675.0, -55, 0)
-spawnMobile("naboo", "sentry_specforce_captain", 360, 4716.0, 4.2, -4698.4, 5, 0)
-spawnMobile("naboo", "sentry_specforce_squad_leader", 360, 4699.7, 4.2, -4691.4, 41, 0)
-spawnMobile("naboo", "sentry_specforce_bombardier", 360, 4822.2, 4.2, -4700.8, -85, 0)
-spawnMobile("naboo", "sentry_specforce_bombardier", 360, 4822.4, 4.2, -4708.8, -68, 0)
-spawnMobile("naboo", "sentry_specforce_sniper", 360, 4827.4, 4.2, -4697.4, -48, 0)
+	--spawnMobile("naboo", "sentry_rebel_major", 360, , , , , 0)
+	spawnMobile("naboo", "sentry_specforce_sniper", 360, 4724.4, 4.2, -4685.7, 0, 0)
+	spawnMobile("naboo", "sentry_specforce", 360, 4702.0, 4.2, -4674.6, 36, 0)
+	spawnMobile("naboo", "sentry_specforce", 360, 4691.5, 4.2, -4649.4, 83, 0)
+	spawnMobile("naboo", "sentry_specforce", 360, 4752.1, 4.2, -4675.0, -55, 0)
+	spawnMobile("naboo", "sentry_specforce_captain", 360, 4716.0, 4.2, -4698.4, 5, 0)
+	spawnMobile("naboo", "sentry_specforce_squad_leader", 360, 4699.7, 4.2, -4691.4, 41, 0)
+	spawnMobile("naboo", "sentry_specforce_bombardier", 360, 4822.2, 4.2, -4700.8, -85, 0)
+	spawnMobile("naboo", "sentry_specforce_bombardier", 360, 4822.4, 4.2, -4708.8, -68, 0)
+	spawnMobile("naboo", "sentry_specforce_sniper", 360, 4827.4, 4.2, -4697.4, -48, 0)
+
+
+	-- Guards around Rebel Recruiter
+
+	spawnMobile("naboo", "sentry_specforce", 300, math.random(15) + 4807.0, 4.2, math.random(11) -4689.5, math.random(360), 0)
+	spawnMobile("naboo", "sentry_specforce", 300, math.random(15) + 4807.0, 4.2, math.random(11) -4689.5, math.random(360), 0)
+	spawnMobile("naboo", "sentry_specforce", 300, math.random(15) + 4807.0, 4.2, math.random(11) -4689.5, math.random(360), 0)
+	spawnMobile("naboo", "sentry_specforce", 300, math.random(15) + 4807.0, 4.2, math.random(11) -4689.5, math.random(360), 0)
+	spawnMobile("naboo", "sentry_specforce", 300, math.random(15) + 4807.0, 4.2, math.random(11) -4689.5, math.random(360), 0)
+	spawnMobile("naboo", "sentry_specforce", 300, math.random(15) + 4807.0, 4.2, math.random(11) -4689.5, math.random(360), 0)
+	spawnMobile("naboo", "sentry_specforce", 300, math.random(15) + 4807.0, 4.2, math.random(11) -4689.5, math.random(360), 0)
+
+
+	-- Starport Guards
+
+	spawnMobile("naboo", "sentry_specforce", 300, 4801.5, 4.2, -4693.1, 124, 0)
+	spawnMobile("naboo", "sentry_specforce", 300, 4795.1, 4.2, -4702.2, 124, 0)
+	spawnMobile("naboo", "sentry_specforce", 300, 4715.4, 4.2, -4654.0, 176, 0)
+	spawnMobile("naboo", "sentry_specforce", 300, 4718.5, 4.2, -4653.7, 176, 0)
+	spawnMobile("naboo", "sentry_specforce", 300, 4722.1, 4.2, -4653.9, 176, 0)
+	spawnMobile("naboo", "sentry_specforce_sniper", 300, 4729.6, 4.2, -4685.8, -1, 0)
 
 end
 
