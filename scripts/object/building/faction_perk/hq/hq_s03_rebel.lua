@@ -151,7 +151,7 @@ object_building_faction_perk_hq_hq_s03_rebel = object_building_faction_perk_hq_s
 			{ mobile="gcw_specforce_marine", x=-3, z=0, y=27, cellid=-1, respawn=360, containmentType=-1, heading=.78},
 
 			{ mobile="gcw_rebel_specforce_pathfinder", x=5, z=0, y=18, cellid=-1, respawn=360, containmentType=-1, heading=0},
-			{ mobile="gcw_pecforce_heavy_weapons_specialist", x=-5, z=0, y=18, cellid=-1, respawn=360, containmentType=-1, heading=0},
+			{ mobile="gcw_specforce_heavy_weapons_specialist", x=-5, z=0, y=18, cellid=-1, respawn=360, containmentType=-1, heading=0},
 			{ mobile="gcw_specforce_heavy_weapons_specialist", x=0, z=0, y=53, cellid=-1, respawn=360, containmentType=-1, heading=0},
 			{ mobile="gcw_specforce_marine", x=2.5, z=0, y=50, cellid=-1, respawn=360, containmentType=-1, heading=0},
 			{ mobile="gcw_specforce_heavy_weapons_specialist", x=-2.5, z=0, y=50, cellid=-1, respawn=360, containmentType=-1, heading=0},
