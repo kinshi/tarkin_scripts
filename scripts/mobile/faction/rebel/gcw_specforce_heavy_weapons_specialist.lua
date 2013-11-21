@@ -1,6 +1,6 @@
 gcw_specforce_heavy_weapons_specialist = Creature:new {
 	objectName = "",
-	customName = "Specforce_Heavy Weapons Specialist",
+	customName = "Specforce Heavy Weapons Specialist",
 	socialGroup = "rebel",
 	pvpFaction = "rebel",
 	faction = "rebel",

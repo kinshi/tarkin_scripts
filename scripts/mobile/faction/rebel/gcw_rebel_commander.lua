@@ -46,7 +46,7 @@ gcw_rebel_commander = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "rebel_recruiter_convotemplate",
-	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(gcw_rebel_commander, "gcw_rebel_commander")

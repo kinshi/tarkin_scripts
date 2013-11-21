@@ -1,6 +1,6 @@
 gcw_specforce_major = Creature:new {
 	objectName = "",
-	cusromeName = "Specforce Major",
+	customName = "Specforce Major",
 	socialGroup = "rebel",
 	pvpFaction = "rebel",
 	faction = "rebel",

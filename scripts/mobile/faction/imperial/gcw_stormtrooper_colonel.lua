@@ -47,7 +47,7 @@ gcw_stormtrooper_colonel = Creature:new {
 	},
 	weapons = {"stormtrooper_weapons"},
 	conversationTemplate = "imperial_recruiter_convotemplate",
-	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
+	attacks = merge(riflemanmaster,carbineermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(gcw_stormtrooper_colonel, "gcw_stormtrooper_colonel")
