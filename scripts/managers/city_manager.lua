@@ -81,7 +81,7 @@ CitizensPerRank = {1, 2, 3, 5, 8}
 RadiusPerRank = {150, 200, 300, 400, 450}
 
 -- Maximum for each rank.  rank 1 = decorationsperrank * 1, rank 5 = decorationsperrank * 5	82
-DecorationsPerRank = 10
+DecorationsPerRank = 20
 
 -- Amount to discount city maintenance  float.  1 = 100%, .75 =75%, .5=50% etc
 maintenanceDiscount = .5
