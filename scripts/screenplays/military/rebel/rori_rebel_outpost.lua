@@ -17,19 +17,26 @@ end
 
 function RoriRebelOutpostScreenPlay:spawnSceneObjects()
 
-	local pCollector = spawnSceneObject("rori", "object/tangible/furniture/imperial/data_terminal_s1.iff", 3681.0, 96.0, -6409.0, 0, 0, 0, 1, 0)
+	local pCollector = spawnSceneObject("rori", "object/tangible/furniture/imperial/data_terminal_s1.iff", 3703, 96.0, -6411, 0, -0.707107, 0, 0.707107, 0)
 	local collector = LuaSceneObject(pCollector)
 	local col2creo = LuaCreatureObject(pCollector)
 	col2creo:setOptionsBitmask(264)
 	collector:setCustomObjectName("\\#ee3377Travel to Starbird Base - Rori")
 	createObserver(OBJECTRADIALUSED, "RoriRebelOutpostScreenPlay", "teleportStarbird", pCollector)
 
-	local pCollector2 = spawnSceneObject("rori", "object/tangible/furniture/imperial/data_terminal_s1.iff", 3675.0, 96.0, -6409.0, 0, 0, 0, 1, 0)
+	local pCollector2 = spawnSceneObject("rori", "object/tangible/furniture/imperial/data_terminal_s1.iff", 3703, 96.0, -6417, 0, -0.707107, 0, 0.707107, 0)
 	local collector2 = LuaSceneObject(pCollector2)
 	local col2creo = LuaCreatureObject(pCollector2)
 	col2creo:setOptionsBitmask(264)
 	collector2:setCustomObjectName("\\#ee3377Travel to Moenia Starport - Naboo")
 	createObserver(OBJECTRADIALUSED, "RoriRebelOutpostScreenPlay", "teleportMoenia", pCollector2)
+	
+	-- Turrets
+	local pTurret1 = spawnSceneObject("rori", "object/installation/turret/turret_block_med.iff", 3664.8, 96.0, -6448.1, 0, 0, 0, 1, 0)
+	setTurretFaction(pTurret1)
+
+	local pTurret2 = spawnSceneObject("rori", "object/installation/turret/turret_block_med.iff", 3682.1, 96.0, -6472.1, 0, -0.707107, 0, 0.707107, 0)
+	setTurretFaction(pTurret2)
 	
 	-- BLUEFROG
 	--No need to add blue frog here, it is already loaded as part of the planetmanager
@@ -149,16 +156,7 @@ function RoriRebelOutpostScreenPlay:spawnMobiles()
 	
 end
 
-function RoriRebelOutpostScreenPlay:spawnSceneObjects()
-	
-	-- Turrets
-	local pTurret1 = spawnSceneObject("rori", "object/installation/turret/turret_block_med.iff", 3664.8, 96.0, -6448.1, 0, 0, 0, 1, 0)
-	setTurretFaction(pTurret1)
-
-	local pTurret2 = spawnSceneObject("rori", "object/installation/turret/turret_block_med.iff", 3682.1, 96.0, -6472.1, 0, -0.707107, 0, 0.707107, 0)
-	setTurretFaction(pTurret2)
-
-end
+-- Set Turret faction
 
 function setTurretFaction(pTurret)
 	if pTurret ~= nil then
