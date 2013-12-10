@@ -154,7 +154,7 @@ object_building_faction_perk_hq_hq_s02_imp = object_building_faction_perk_hq_sha
 			{ mobile="gcw_stormtrooper", x=25, z=0, y=26, cellid=-1, respawn=360, containmentType=-1, heading=0},
 		 	{ mobile="gcw_stormtrooper", x=30, z=0, y=26, cellid=-1, respawn=360, containmentType=-1, heading=0},
 			{ mobile="gcw_stormtrooper_bombardier", x=27.5, z=0, y=28.5, cellid=-1, respawn=360, containmentType=-1, heading=0},
-			
+	
 			{ mobile="gcw_imperial_trooper", x=2.6, z=0, y=-4.1, cellid=3, respawn=300, containmentType=-1, heading=0},
 			{ mobile="gcw_dark_trooper", x=-6.7, z=-6.75, y=-0.8, cellid=5, respawn=300, containmentType=-1, heading=0},
 			{ mobile="gcw_dark_trooper", x=-0.1, z=-6.75, y=-6.3, cellid=5, respawn=300, containmentType=-1, heading=0},

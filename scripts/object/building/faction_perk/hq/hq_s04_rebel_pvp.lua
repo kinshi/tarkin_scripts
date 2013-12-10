@@ -165,7 +165,7 @@ object_building_faction_perk_hq_hq_s04_rebel_pvp = object_building_faction_perk_
 			{ mobile="gcw_specforce_technician", x=4.25, z=0, y=1.1, cellid=2, respawn=300, containmentType=-1, heading=1.57},
 		 	{ mobile="gcw_senior_specforce_technician", x=4.25, z=0, y=-1.8, cellid=2, respawn=300, containmentType=-1, heading=1.57},
 			
-		 	{ mobile="gcw_senior_specforce_lieutenant", x=-3.25, z=0, y=-3.7, cellid=3, respawn=300, containmentType=-1, heading=1.57},
+--		 	{ mobile="gcw_senior_specforce_lieutenant", x=-3.25, z=0, y=-3.7, cellid=3, respawn=300, containmentType=-1, heading=1.57},
 			
 			{ mobile="gcw_senior_specforce_heavy_weapons_specialist", x=4.75, z=-6.75, y=5.2, cellid=4, respawn=300, containmentType=-1, heading=4.71},
 			
