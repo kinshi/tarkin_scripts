@@ -147,7 +147,7 @@ includeFile("cities/tatooine_wayfar.lua")
 includeFile("cities/yavin4_labor_outpost.lua")
 includeFile("cities/yavin4_mining_outpost.lua")
 -- Theed Cantina
-includeFile("cities/naboo_theed_cantina.lua")
+--includeFile("cities/naboo_theed_cantina.lua")
 
 -- POIs
 includeFile("poi/corellia_crystal_fountain_bela_vistal.lua")
