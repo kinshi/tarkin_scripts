@@ -1,6 +1,6 @@
 gcw_rebel_commando = Creature:new {
 	objectName = "",
-	customeName = "Rebel Commando",
+	customName = "Rebel Commando",
 	socialGroup = "rebel",
 	pvpFaction = "rebel",
 	faction = "rebel",

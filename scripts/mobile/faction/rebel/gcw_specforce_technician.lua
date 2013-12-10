@@ -52,4 +52,4 @@ gcw_specforce_technician = Creature:new {
 	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 
-CreatureTemplates:addCreatureTemplate(gcw_specforce_technician, "gcw_pecforce_technician")
+CreatureTemplates:addCreatureTemplate(gcw_specforce_technician, "gcw_specforce_technician")
