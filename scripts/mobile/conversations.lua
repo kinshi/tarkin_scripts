@@ -40,7 +40,8 @@ includeFile("conversations/dungeon/warren/manx_try_conv.lua")
 
 -- Geonosian Lab
 includeFile("conversations/dungeon/geonosian_lab/biogenic_construction_convo.lua")
-
+includeFile("conversations/dungeon/geonosian_lab/biogenic_scientist_geonosian_convo.lua")
+includeFile("conversations/dungeon/geonosian_lab/biogenic_scientist_human_convo.lua")
 
 -- ** OTHER **
 
@@ -61,6 +62,7 @@ includeFile("conversations/tasks/dolac_legasi_escaped_prisoner_conv.lua")
 includeFile("conversations/tasks/hedon_istee_conv.lua")
 includeFile("conversations/tasks/serene_floater_conv.lua")
 includeFile("conversations/tasks/ris_armor_quest_conv.lua")
+includeFile("conversations/tasks/librarian_conv.lua")
 
 -- Village
 includeFile("conversations/village/old_man_conv.lua")
