@@ -140,7 +140,9 @@ object_building_faction_perk_hq_hq_s04_rebel = object_building_faction_perk_hq_s
 		},
 --Tarkin GCW NPCs
 		childCreatureObjects = {
-		
+			{ mobile="gcw_rebel_defence_droid", x=30, z=0, y=18, cellid=-1, respawn=720, containmentType=-1, heading=3.14},			
+			{ mobile="gcw_rebel_defence_droid", x=-30, z=0, y=18, cellid=-1, respawn=720, containmentType=-1, heading=0},
+			{ mobile="gcw_rebel_defence_droid", x=0, z=0, y=44, cellid=-1, respawn=720, containmentType=-1, heading=0},		
 		 	{ mobile="gcw_senior_specforce_marine", x=5, z=0, y=15, cellid=-1, respawn=360, containmentType=-1, heading=0},
 		 	{ mobile="gcw_senior_specforce_marine", x=-5, z=0, y=15, cellid=-1, respawn=360, containmentType=-1, heading=0},
 --		 	{ mobile="gcw_senior_specforce_lieutenant", x=0, z=0, y=16, cellid=-1, respawn=360, containmentType=-1, heading=0},
