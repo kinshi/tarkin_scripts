@@ -16,11 +16,15 @@ TalusAakuanCaveScreenPlay = ScreenPlay:new {
         lootGroups = {
                 {
                         groups = {
-                                {group = "color_crystals", chance = 160000},
-                                {group = "junk", chance = 8240000},
-                                {group = "melee_weapons", chance = 1000000},
-                                {group = "clothing_attachments", chance = 300000},
-                                {group = "armor_attachments", chance = 300000}
+                                {group = "aakuan_common", chance = 2500000},
+				{group = "junk", chance = 100000},
+                                {group = "pistols", chance = 1499999},
+				{group = "carbines", chance = 1499999},
+				(group = "rifles", chance = 1499999},
+                                {group = "melee_weapons", chance = 1499999},
+                                {group = "clothing_attachments", chance = 700000},
+                                {group = "armor_attachments", chance = 700000},
+				{group = "resource_deed", chance = 4},
                         },
                         lootChance = 8000000
                 }                                       
