@@ -29,7 +29,7 @@ function naboo_theed_cantinaScreenPlay:spawnMobiles()
 	--Gungan Roulette
 	spawnMobile("naboo", "commoner_naboo", 10, -6.9, -0.9, 8.2, -33, 91)
 	--Socialising #2
-	spawnMobile("naboo", "commoner_naboo", 10, -5.0, -0.9, -7.6, 42, 91)
+	spawnMobile("naboo", "commoner_naboo", 10, -5.3, -0.9, -7.7, 42, 91)
 	spawnMobile("naboo", "commoner_naboo", 10, -3.8, -0.9, -6.3, -145, 91)
 
 end
