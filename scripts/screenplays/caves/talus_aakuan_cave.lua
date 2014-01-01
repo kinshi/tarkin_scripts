@@ -84,7 +84,7 @@ function TalusAakuanCaveScreenPlay:spawnMobiles()
        spawnMobile("talus", "aakuan_warder", 300, 165.0, -66.7, -98.0, -96, 4255660)
 --Tarkin Specific Mobiles
        spawnMobile("talus", "aakuan_defender", 300, 84.6, -46.9, -107.5, -102, 4255656)
-       spawnMobile("talus", "aakuan_steward", 300, 53.8, -49.1, -19.0 -149, 4255653)
+       spawnMobile("talus", "aakuan_steward", 300, 53.8, -49.1, -19.0, -149, 4255653)
        spawnMobile("talus", "aakuan_sentinel", 300, 58.6, -50.7, -16.8, -144, 4255653)
        spawnMobile("talus", "aakuan_guardian", 300, 86.4, -66.9, -36.7, -22, 4255654)
        spawnMobile("talus", "aakuan_keeper", 300, 57.3, -68.5, -42.6, 64, 4255653)
