@@ -42,9 +42,9 @@ aakuan_defender = Creature:new {
 		    lootChance = 2200000
 		}
 	},
-	weapons = {"melee_weapons"},
+	weapons = {"pistols"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(pistoleermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(aakuan_defender, "aakuan_defender")
