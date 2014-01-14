@@ -7,9 +7,9 @@ aakuan_steward = Creature:new {
 	chanceHit = 0.3,
 	damageMin = 150,
 	damageMax = 160,
-	baseXp = 1000,
-	baseHAM = 2000,
-	baseHAMmax = 5000,
+	baseXp = 5000,
+	baseHAM = 20000,
+	baseHAMmax = 25000,
 	armor = 1,
 	resists = {20,20,50,40,20,50,30,10,-1},
 	meatType = "",
@@ -21,8 +21,8 @@ aakuan_steward = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
-	creatureBitmask = PACK + KILLER,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
+	creatureBitmask = PACK + STALKER,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
@@ -44,7 +44,7 @@ aakuan_steward = Creature:new {
 	},
 	weapons = {"melee_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(aakuan_steward, "aakuan_steward")

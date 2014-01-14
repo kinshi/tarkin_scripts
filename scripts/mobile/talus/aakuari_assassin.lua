@@ -8,9 +8,9 @@ aakuari_assassin = Creature:new {
 	chanceHit = 0.37,
 	damageMin = 270,
 	damageMax = 280,
-	baseXp = 5188,
-	baseHAM = 12000,
-	baseHAMmax = 18000,
+	baseXp = 8188,
+	baseHAM = 45000,
+	baseHAMmax = 58000,
 	armor = 2,
 	resists = {55,55,55,55,55,55,55,55,-1},
 	meatType = "",
@@ -22,8 +22,8 @@ aakuari_assassin = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
-	creatureBitmask = PACK + KILLER,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
+	creatureBitmask = PACK + KILLER + STALKER,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
@@ -33,19 +33,19 @@ aakuari_assassin = Creature:new {
 	lootGroups = {
 	    {
 		    groups = {
-				{group = "junk", chance = 6600000},
+				{group = "clothing_attachments", chance = 1300000},
 				{group = "aakuan_common", chance = 2300000},
-				{group = "armor_attachments", chance = 200000},
-				{group = "rifles", chance = 300000},
-				{group = "carbines", chance = 300000},
-				{group = "pistols", chance = 300000}				
+				{group = "armor_attachments", chance = 1300000},
+				{group = "rifles", chance = 1700000},
+				{group = "carbines", chance = 1700000},
+				{group = "pistols", chance = 1700000}				
 			},
 		    lootChance = 2200000
 		}
 	},
-	weapons = {"melee_weapons"},
+	weapons = {"aakuan_assassin_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,tkamaster)
 }
 
 CreatureTemplates:addCreatureTemplate(aakuari_assassin, "aakuari_assassin")

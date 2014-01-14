@@ -8,9 +8,9 @@ aakuan_anarchist = Creature:new {
 	chanceHit = 0.39,
 	damageMin = 290,
 	damageMax = 300,
-	baseXp = 4097,
-	baseHAM = 9000,
-	baseHAMmax = 11000,
+	baseXp = 8097,
+	baseHAM = 35000,
+	baseHAMmax = 48000,
 	armor = 1,
 	resists = {75,75,60,40,70,25,25,40,-1},
 	meatType = "",
@@ -22,8 +22,8 @@ aakuan_anarchist = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
-	creatureBitmask = PACK + KILLER,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
+	creatureBitmask = PACK + KILLER + STALKER,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
@@ -33,19 +33,24 @@ aakuan_anarchist = Creature:new {
 	lootGroups = {
 	    {
 		    groups = {
-				{group = "junk", chance = 6600000},
-				{group = "aakuan_common", chance = 2300000},
-				{group = "armor_attachments", chance = 200000},
-				{group = "rifles", chance = 300000},
-				{group = "carbines", chance = 300000},
-				{group = "pistols", chance = 300000}				
+				{group = "junk", chance = 1480000},
+				{group = "aakuan_common", chance = 2480000},
+				{group = "armor_attachments", chance = 1100000},
+				{group = "clothing_attachments", chance = 1100000},
+				{group = "rifles", chance = 1280000},
+				{group = "carbines", chance = 1280000},
+				{group = "pistols", chance = 1280000}				
 			},
 		    lootChance = 2200000
 		}
 	},
-	weapons = {"melee_weapons"},
+	weapons = {"aakuan_anarchist_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = {
+		{"defaultattack", ""},
+		{"dizzyattack","dizzyChance=25"},
+		{"knockdownattack","knockdownChance=25"}
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(aakuan_anarchist, "aakuan_anarchist")

@@ -7,9 +7,9 @@ aakuan_defender = Creature:new {
 	chanceHit = 0.33,
 	damageMin = 190,
 	damageMax = 200,
-	baseXp = 3443,
-	baseHAM = 6500,
-	baseHAMmax = 8000,
+	baseXp = 6443,
+	baseHAM = 35000,
+	baseHAMmax = 38000,
 	armor = 1,
 	resists = {30,30,60,70,35,30,30,10,-1},
 	meatType = "",
@@ -21,8 +21,8 @@ aakuan_defender = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
-	creatureBitmask = PACK + KILLER,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
+	creatureBitmask = PACK + KILLER + STALKER,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
@@ -42,9 +42,9 @@ aakuan_defender = Creature:new {
 		    lootChance = 2200000
 		}
 	},
-	weapons = {"melee_weapons"},
+	weapons = {"aakuan_pistol_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(pistoleermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(aakuan_defender, "aakuan_defender")

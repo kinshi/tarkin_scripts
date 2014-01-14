@@ -8,9 +8,9 @@ aakuan_spice_guard = Creature:new {
 	chanceHit = 0.36,
 	damageMin = 250,
 	damageMax = 260,
-	baseXp = 3822,
-	baseHAM = 8000,
-	baseHAMmax = 10000,
+	baseXp = 7822,
+	baseHAM = 38000,
+	baseHAMmax = 42000,
 	armor = 1,
 	resists = {70,70,40,10,60,10,10,25,-1},
 	meatType = "",
@@ -22,8 +22,8 @@ aakuan_spice_guard = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
-	creatureBitmask = PACK + KILLER,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
+	creatureBitmask = PACK + KILLER + STALKER,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
@@ -43,9 +43,9 @@ aakuan_spice_guard = Creature:new {
 		    lootChance = 2200000
 		}	
 	},
-	weapons = {"melee_weapons"},
+	weapons = {"aakuan_2h_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(swordsmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(aakuan_spice_guard, "aakuan_spice_guard")

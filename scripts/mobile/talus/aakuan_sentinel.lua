@@ -7,9 +7,9 @@ aakuan_sentinel = Creature:new {
 	chanceHit = 0.31,
 	damageMin = 170,
 	damageMax = 180,
-	baseXp = 1257,
-	baseHAM = 4100,
-	baseHAMmax = 5000,
+	baseXp = 5257,
+	baseHAM = 24100,
+	baseHAMmax = 30000,
 	armor = 1,
 	resists = {30,30,30,20,40,50,10,50,-1},
 	meatType = "",
@@ -21,8 +21,8 @@ aakuan_sentinel = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
-	creatureBitmask = PACK + KILLER,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
+	creatureBitmask = PACK + KILLER + STALKER,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
@@ -42,9 +42,9 @@ aakuan_sentinel = Creature:new {
 		    lootChance = 2200000
 		}	
 	},
-	weapons = {"melee_weapons"},
+	weapons = {"aakuan_carbine_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(carbineermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(aakuan_sentinel, "aakuan_sentinel")

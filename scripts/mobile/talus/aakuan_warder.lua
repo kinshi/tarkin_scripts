@@ -7,9 +7,9 @@ aakuan_warder = Creature:new {
 	chanceHit = 0.37,
 	damageMin = 260,
 	damageMax = 270,
-	baseXp = 5005,
-	baseHAM = 12000,
-	baseHAMmax = 18000,
+	baseXp = 8005,
+	baseHAM = 45000,
+	baseHAMmax = 55000,
 	armor = 2,
 	resists = {45,45,45,45,45,45,45,45,-1},
 	meatType = "",
@@ -21,8 +21,8 @@ aakuan_warder = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
-	creatureBitmask = PACK + KILLER,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
+	creatureBitmask = PACK + KILLER + STALKER,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
@@ -32,19 +32,19 @@ aakuan_warder = Creature:new {
 	lootGroups = {
 	    {
 		    groups = {
-				{group = "junk", chance = 6600000},
+				{group = "clothing_attachments", chance = 1300000},
 				{group = "aakuan_common", chance = 2300000},
-				{group = "armor_attachments", chance = 200000},
-				{group = "rifles", chance = 300000},
-				{group = "carbines", chance = 300000},
-				{group = "pistols", chance = 300000}				
+				{group = "armor_attachments", chance = 1300000},
+				{group = "rifles", chance = 1700000},
+				{group = "carbines", chance = 1700000},
+				{group = "pistols", chance = 1700000}				
 			},
 		    lootChance = 2200000
 		}	
 	},
-	weapons = {"melee_weapons"},
+	weapons = {"aakuan_warder_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(swordsmanmaster,carbineermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(aakuan_warder, "aakuan_warder")

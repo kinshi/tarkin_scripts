@@ -7,9 +7,9 @@ aakuan_follower = Creature:new {
 	chanceHit = 0.29,
 	damageMin = 120,
 	damageMax = 130,
-	baseXp = 1000,
-	baseHAM = 1500,
-	baseHAMmax = 2500,
+	baseXp = 5000,
+	baseHAM = 17500,
+	baseHAMmax = 22000,
 	armor = 1,
 	resists = {40,40,30,40,40,20,40,40,-1},
 	meatType = "",
@@ -21,7 +21,7 @@ aakuan_follower = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
 	creatureBitmask = PACK,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
@@ -44,7 +44,7 @@ aakuan_follower = Creature:new {
 	},
 	weapons = {"melee_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(aakuan_follower, "aakuan_follower")
