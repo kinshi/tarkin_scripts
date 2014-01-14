@@ -42,7 +42,7 @@ aakuan_sentinel = Creature:new {
 		    lootChance = 2200000
 		}	
 	},
-	weapons = {"carbines"},
+	weapons = {"aakuan_carbine_weapons"},
 	conversationTemplate = "",
 	attacks = merge(carbineermaster)
 }

@@ -43,7 +43,7 @@ aakuan_spice_guard = Creature:new {
 		    lootChance = 2200000
 		}	
 	},
-	weapons = {"melee_weapons"},
+	weapons = {"aakuan_2h_weapons"},
 	conversationTemplate = "",
 	attacks = merge(swordsmanmaster)
 }

@@ -42,7 +42,7 @@ aakuan_defender = Creature:new {
 		    lootChance = 2200000
 		}
 	},
-	weapons = {"pistols"},
+	weapons = {"aakuan_pistol_weapons"},
 	conversationTemplate = "",
 	attacks = merge(pistoleermaster)
 }

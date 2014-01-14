@@ -42,7 +42,7 @@ aakuan_warder = Creature:new {
 		    lootChance = 2200000
 		}	
 	},
-	weapons = {"melee_weapons"},
+	weapons = {"aakuan_warder_weapons"},
 	conversationTemplate = "",
 	attacks = merge(swordsmanmaster,carbineermaster)
 }

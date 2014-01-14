@@ -42,7 +42,7 @@ aakuan_champion = Creature:new {
 		    lootChance = 2200000
 		}
 	},
-	weapons = {"melee_weapons"},
+	weapons = {"aakuan_champion_weapons"},
 	conversationTemplate = "",
 	attacks = {
 		{"defaultattack", ""},

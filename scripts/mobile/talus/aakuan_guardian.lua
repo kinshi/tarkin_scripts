@@ -42,7 +42,7 @@ aakuan_guardian = Creature:new {
 		    lootChance = 2200000
 		}	
 	},
-	weapons = {"melee_weapons"},
+	weapons = {"aakuan_1h_weapons"},
 	conversationTemplate = "",
 	attacks = merge(fencermaster)
 }

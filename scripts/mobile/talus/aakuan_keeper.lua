@@ -42,7 +42,7 @@ aakuan_keeper = Creature:new {
 		    lootChance = 2200000
 		}	
 	},
-	weapons = {"rifles"},
+	weapons = {"aakuan_rifle_weapons"},
 	conversationTemplate = "",
 	attacks = merge(riflemanmaster)
 }

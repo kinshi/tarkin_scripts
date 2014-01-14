@@ -43,7 +43,7 @@ aakuari_assassin = Creature:new {
 		    lootChance = 2200000
 		}
 	},
-	weapons = {"melee_weapons"},
+	weapons = {"aakuan_assassin_weapons"},
 	conversationTemplate = "",
 	attacks = merge(riflemanmaster,tkamaster)
 }
