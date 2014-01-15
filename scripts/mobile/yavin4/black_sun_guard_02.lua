@@ -8,7 +8,7 @@ black_sun_guard_02 = Creature:new {
 	chanceHit = 15.5,
 	damageMin = 900,
 	damageMax = 1050,
-	baseXp = 25057,
+	baseXp = 10081,
 	baseHAM = 36000,
 	baseHAMmax = 40000,
 	armor = 2,
@@ -39,7 +39,7 @@ black_sun_guard_02 = Creature:new {
 				{group = "bounty_hunter_armor_looted", chance = 700000},
 				{group = "jetpack_base", chance = 50000},
 			},
-			lootChance = 5500000
+			lootChance = 4500000
 		}	
 	},
 	weapons = {"pirate_weapons_heavy"},
