@@ -51,10 +51,10 @@ performanceDuration = 7200 -- in seconds
 medicalDuration = 7200 -- in seconds
 
 --Sets the experience multiplier while grouped
-groupExpMultiplier = 1.2
+groupExpMultiplier = 2.0
 
 --Sets a global experience multiplier
-globalExpMultiplier = 1.0
+globalExpMultiplier = 1.5
 
 --Sets the base number of stored pets a player can have
 --A non-Creature Handler will have this number as limit

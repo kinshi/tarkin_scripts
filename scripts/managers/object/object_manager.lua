@@ -92,4 +92,28 @@ function ObjectManager.withCreatureAndPlayerObject(pCreatureObject, performThisF
 	end)
 end
 
+-- Perform the supplied function with the inventory pointer from the pointer to the creature object.
+-- @param pCreatureObject a pointer to a creature object.
+-- @param performThisFunction a function that takes a pointer to an inventory as its argument.
+-- @return whatever performThisFunction returns or nil if the pCreatureObject pointer is nil or does not have an inventory.
+function ObjectManager.withInventoryPointer(pCreatureObject, performThisFunction)
+	return ObjectManager.withCreatureObject(pCreatureObject, function(creatureObject)
+		local pInventory = creatureObject:getSlottedObject("inventory")
+
+		if pInventory ~= nil then
+			return performThisFunction(pInventory)
+		else
+			return nil
+		end
+	end)
+end
+
+-- Perform the supplied function with a scene object with the supplied object id.
+-- @param objectId the object id of the scene object to send to the function.
+-- @param performThisFunction a function that takes a scene object as argument.
+-- @return whatever performThisFunction returns or nil if no object with the specified id can be found.
+function ObjectManager.withSceneObjectFromId(objectId, performThisFunction)
+	return ObjectManager.withSceneObject(getSceneObject(objectId), performThisFunction)
+end
+
 return ObjectManager
