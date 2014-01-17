@@ -8,7 +8,7 @@ black_sun_assassin_02 = Creature:new {
 	chanceHit = 25.5,
 	damageMin = 1050,
 	damageMax = 1675,
-	baseXp = 10081,
+	baseXp = 25057,
 	baseHAM = 36000,
 	baseHAMmax = 49000,
 	armor = 3,
@@ -39,7 +39,7 @@ black_sun_assassin_02 = Creature:new {
 				{group = "bounty_hunter_armor_looted", chance = 700000},
 				{group = "jetpack_base", chance = 50000},
 			},
-			lootChance = 4500000
+			lootChance = 5500000
 		}	
 	},
 	weapons = {"pirate_weapons_heavy"},
