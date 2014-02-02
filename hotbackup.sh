@@ -43,11 +43,11 @@ PATH=$PATH:/usr/local/BerkeleyDB.5.0/bin
 export PATH
 
 # databases directory , used by bdb utils too
-DB_HOME=/home/swgemu/workspace/MMOCoreORB/bin/databases 
+DB_HOME=/home/swgemu/workspace/tarkin_scripts/databases 
 export DB_HOME
 
 # backup dir (should be on another filesystem)
-DB_BACKUP=/home/swgemu/workspace/MMOCoreORB/bin/backup
+DB_BACKUP=/home/swgemu/workspace/tarkin_scripts/backup
 export DB_BACKUP
 
 # how much backups will we keep
