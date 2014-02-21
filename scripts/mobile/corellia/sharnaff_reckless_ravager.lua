@@ -28,14 +28,7 @@ sharnaff_reckless_ravager = Creature:new {
 
 	templates = {"object/mobile/sharnaff_hue.iff"},
 	controlDeviceTemplate = "object/intangible/pet/sharnaff_hue.iff",
-	lootGroups = {
-		{
-			groups = {
-				{group = "sharnaff", chance = 10000000}
-			},
-			lootChance = 4500000
-		}
-	},
+	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {

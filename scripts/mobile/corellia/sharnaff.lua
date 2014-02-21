@@ -28,14 +28,7 @@ sharnaff = Creature:new {
 	diet = CARNIVORE,
 
 	templates = {"object/mobile/sharnaff.iff"},
-	lootGroups = {
-		{
-			groups = {
-				{group = "sharnaff", chance = 10000000}
-			},
-			lootChance = 2900000
-		}
-	},
+	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
