@@ -30,7 +30,7 @@ singing_mountain_clan_huntress = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "smc_slothing", chance = 1000000},
+				{group = "smc_clothing", chance = 1000000},
 				{group = "melee_weapons", chance = 2500000},
 				{group = "armor_attachments", chance = 550000},
 				{group = "clothing_attachments", chance = 550000},
