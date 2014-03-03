@@ -8,6 +8,8 @@ DirectorManagerMocks.playerObjects = {}
 DirectorManagerMocks.sceneObjects = {}
 DirectorManagerMocks.stringIds = {}
 
+WAYPOINTWHITE = 0
+
 -- Function to be called in the setup method for a test to prepare the mocks.
 function DirectorManagerMocks.mocks.setup()
 end
@@ -24,6 +26,7 @@ function DirectorManagerMocks.mocks.before_each()
 	getCityRegionAt = spy.new(function() return nil end)
 	getSceneObject = spy.new(function() return nil end)
 	getSpawnPoint = spy.new(function() return nil end)
+	getSpawnArea = spy.new(function() return nil end)
 	giveItem = spy.new(function() end)
 	readData = spy.new(function() return nil end)
 	registerScreenPlay = spy.new(function() end)

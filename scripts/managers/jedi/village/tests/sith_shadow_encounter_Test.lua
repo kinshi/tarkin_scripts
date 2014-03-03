@@ -1,8 +1,12 @@
 local SithShadowEncounter = require("managers.jedi.village.sith_shadow_encounter")
 local DirectorManagerMocks = require("screenplays.mocks.director_manager_mocks")
+local QuestManagerMocks = require("managers.quest.mocks.quest_manager_mocks")
 local SpawnMobilesMocks = require("utils.mocks.spawn_mobiles_mocks")
+local OldManEncounterMocks = require("managers.jedi.village.mocks.old_man_encounter_mocks")
 
 LOOTCREATURE = 53
+SITH_SHADOW_THREATEN_STRING = "@quest/force_sensitive/intro:military_threaten"
+SITH_SHADOW_MILITARY_TAKE_CRYSTAL = "@quest/force_sensitive/intro:military_take_crystal"
 
 describe("Sith Shadow Encounter", function()
 	local pCreatureObject = { "creatureObjectPointer" }
@@ -18,22 +22,32 @@ describe("Sith Shadow Encounter", function()
 	local pInventory = { "inventoryPointer" }
 	local firstSithShadowId = 12345
 	local secondSithShadowId = 23456
+	local pThreatenStringId = { "threatenPointer" }
+	local threatenStringId
+	local playerFirstName = "firstName"
 
 	setup(function()
 		DirectorManagerMocks.mocks.setup()
 		SpawnMobilesMocks.mocks.setup()
+		OldManEncounterMocks.mocks.setup()
+		QuestManagerMocks.mocks.setup()
 	end)
 
 	teardown(function()
 		DirectorManagerMocks.mocks.teardown()
 		SpawnMobilesMocks.mocks.teardown()
+		OldManEncounterMocks.mocks.teardown()
+		QuestManagerMocks.mocks.teardown()
 	end)
 
 	before_each(function()
 		DirectorManagerMocks.mocks.before_each()
 		SpawnMobilesMocks.mocks.before_each()
+		OldManEncounterMocks.mocks.before_each()
+		QuestManagerMocks.mocks.before_each()
 
 		creatureObject = {}
+		creatureObject.getFirstName = spy.new(function() return playerFirstName end)
 		DirectorManagerMocks.creatureObjects[pCreatureObject] = creatureObject
 
 		firstSithShadowObject = {}
@@ -44,6 +58,11 @@ describe("Sith Shadow Encounter", function()
 		secondSithShadowObject = {}
 		secondSithShadowObject.getObjectID = spy.new(function() return secondSithShadowId end)
 		DirectorManagerMocks.creatureObjects[pSecondSithShadow] = secondSithShadowObject
+
+		threatenStringId = {}
+		threatenStringId._getObject = spy.new(function() return pThreatenStringId end)
+		threatenStringId.setTT = spy.new(function() end)
+		DirectorManagerMocks.stringIds[SITH_SHADOW_THREATEN_STRING] = threatenStringId
 	end)
 
 	describe("onEncounterSpawned", function()
@@ -52,6 +71,18 @@ describe("Sith Shadow Encounter", function()
 				SithShadowEncounter:onEncounterSpawned(pCreatureObject, spawnedSithShadowList)
 
 				assert.spy(createObserver).was.called_with(LOOTCREATURE, SithShadowEncounter.taskName, "onLoot", pFirstSithShadow)
+			end)
+
+			it("Should register an observer for OBJECTDESTRUCTION on the player.", function()
+				SithShadowEncounter:onEncounterSpawned(pCreatureObject, spawnedSithShadowList)
+
+				assert.spy(createObserver).was.called_with(OBJECTDESTRUCTION, SithShadowEncounter.taskName, "onPlayerKilled", pCreatureObject)
+			end)
+
+			it("Should activate the sith shadow ambush quest.", function()
+				SithShadowEncounter:onEncounterSpawned(pCreatureObject, spawnedSithShadowList)
+
+				assert.spy(QuestManagerMocks.activateQuest).was.called_with(pCreatureObject, QuestManagerMocks.quests.TwO_MILITARY)
 			end)
 		end)
 	end)
@@ -87,6 +118,10 @@ describe("Sith Shadow Encounter", function()
 
 						assert.spy(createLoot).was.called_with(pInventory, "sith_shadow_encounter_datapad", 0, true)
 					end)
+
+					it("Should return 1 to remove the observer.", function()
+						assert.same(1, SithShadowEncounter:onLoot(pFirstSithShadow, pCreatureObject, 0))
+					end)
 				end)
 
 				describe("and both ids are not identical", function()
@@ -95,6 +130,16 @@ describe("Sith Shadow Encounter", function()
 
 						assert.spy(createLoot).was.not_called()
 					end)
+
+					it("Should return 0 to keep the observer.", function()
+						assert.same(0, SithShadowEncounter:onLoot(pSecondSithShadow, pCreatureObject, 0))
+					end)
+				end)
+
+				it("Should complete the sith shadow ambush quests.", function()
+					SithShadowEncounter:onLoot(pFirstSithShadow, pCreatureObject, 0)
+
+					assert.spy(QuestManagerMocks.completeQuest).was.called(2)
 				end)
 			end)
 
@@ -108,6 +153,148 @@ describe("Sith Shadow Encounter", function()
 
 					assert.spy(createLoot).was.not_called()
 				end)
+
+				it("Should return 0 to keep the observer.", function()
+					assert.same(0, SithShadowEncounter:onLoot(pFirstSithShadow, pCreatureObject, 0))
+				end)
+			end)
+		end)
+	end)
+
+	describe("onPlayerKilled", function()
+		local realFinish
+
+		setup(function()
+			realFinish = SithShadowEncounter.finish
+		end)
+
+		teardown(function()
+			SithShadowEncounter.finish = realFinish
+		end)
+
+		before_each(function()
+			SithShadowEncounter.finish = spy.new(function() end)
+		end)
+
+		it("Should check if the killer is from the sith shadow spawn of the player.", function()
+			SithShadowEncounter:onPlayerKilled(pCreatureObject, pFirstSithShadow, 0)
+
+			assert.spy(SpawnMobilesMocks.isFromSpawn).was.called_with(pCreatureObject, SithShadowEncounter.taskName, pFirstSithShadow)
+		end)
+
+		describe("and the killer is one of the sith shadows of the player", function()
+			before_each(function()
+				SpawnMobilesMocks.isFromSpawn = spy.new(function() return true end)
+			end)
+
+			it("Should remove the crystal from the player.", function()
+				SithShadowEncounter:onPlayerKilled(pCreatureObject, pFirstSithShadow, 0)
+
+				assert.spy(OldManEncounterMocks.removeForceCrystalFromPlayer).was.called_with(OldManEncounterMocks, pCreatureObject)
+			end)
+
+			it("Should restart the old man encounter.", function()
+				SithShadowEncounter:onPlayerKilled(pCreatureObject, pFirstSithShadow, 0)
+
+				assert.spy(OldManEncounterMocks.start).was.called_with(OldManEncounterMocks, pCreatureObject)
+			end)
+
+			it("Should reset the sith shadow ambush quests.", function()
+				SithShadowEncounter:onPlayerKilled(pCreatureObject, pFirstSithShadow, 0)
+
+				assert.spy(QuestManagerMocks.resetQuest).was.called(2)
+			end)
+
+			it("Should send spatial chat about returning the crystal.", function()
+				SithShadowEncounter:onPlayerKilled(pCreatureObject, pFirstSithShadow, 0)
+
+				assert.spy(spatialChat).was.called_with(pFirstSithShadow, SITH_SHADOW_MILITARY_TAKE_CRYSTAL)
+			end)
+
+			it("Should return 1 to remove the observer.", function()
+				assert.same(1, SithShadowEncounter:onPlayerKilled(pCreatureObject, pFirstSithShadow, 0))
+			end)
+		end)
+
+		describe("and the killer is not one of the sith shadows of the player", function()
+			it("Should not remove the crystal from the player.", function()
+				SithShadowEncounter:onPlayerKilled(pCreatureObject, pFirstSithShadow, 0)
+
+				assert.spy(OldManEncounterMocks.removeForceCrystalFromPlayer).was.not_called()
+			end)
+
+			it("Should not restart the old man encounter.", function()
+				SithShadowEncounter:onPlayerKilled(pCreatureObject, pFirstSithShadow, 0)
+
+				assert.spy(OldManEncounterMocks.start).was.not_called()
+			end)
+
+			it("Should reset the sith shadow ambush quests.", function()
+				SithShadowEncounter:onPlayerKilled(pCreatureObject, pFirstSithShadow, 0)
+
+				assert.spy(QuestManagerMocks.resetQuest).was.not_called()
+			end)
+
+			it("Should return 0 to keep the observer.", function()
+				assert.same(0, SithShadowEncounter:onPlayerKilled(pCreatureObject, pFirstSithShadow, 0))
+			end)
+		end)
+	end)
+
+	describe("isEncounterFinished", function()
+		describe("When called with a player object", function()
+			it("Should check if the player has the force crystal or not.", function()
+				SithShadowEncounter:isEncounterFinished(pCreatureObject)
+
+				assert.spy(QuestManagerMocks.hasCompletedQuest).was.called(1)
+			end)
+
+			describe("and the player has lost the force crystal", function()
+				before_each(function()
+					QuestManagerMocks.hasCompletedQuest = spy.new(function() return false end)
+				end)
+
+				it("Should return true", function()
+					assert.is_true(SithShadowEncounter:isEncounterFinished(pCreatureObject))
+				end)
+			end)
+
+			describe("and the player has not lost the force crystal", function()
+				before_each(function()
+					QuestManagerMocks.hasCompletedQuest = spy.new(function() return true end)
+				end)
+
+				it("Should return false", function()
+					assert.is_false(SithShadowEncounter:isEncounterFinished(pCreatureObject))
+				end)
+			end)
+		end)
+	end)
+
+	describe("onEncounterClosingIn", function()
+		describe("When called with a player and a list of spawned sith shadows", function()
+			it("Should get the first name of the player.", function()
+				SithShadowEncounter:onEncounterClosingIn(pCreatureObject, spawnedSithShadowList)
+
+				assert.spy(creatureObject.getFirstName).was.called_with(creatureObject)
+			end)
+
+			it("Should put the player name in the threaten string.", function()
+				SithShadowEncounter:onEncounterClosingIn(pCreatureObject, spawnedSithShadowList)
+
+				assert.spy(threatenStringId.setTT).was.called_with(threatenStringId, playerFirstName)
+			end)
+
+			it("Should send the threaten string to the player.", function()
+				SithShadowEncounter:onEncounterClosingIn(pCreatureObject, spawnedSithShadowList)
+
+				assert.spy(spatialChat).was.called_with(pFirstSithShadow, pThreatenStringId)
+			end)
+
+			it("Should activate the defeat the sith shadow ambush quest.", function()
+				SithShadowEncounter:onEncounterClosingIn(pCreatureObject, spawnedSithShadowList)
+
+				assert.spy(QuestManagerMocks.activateQuest).was.called_with(pCreatureObject, QuestManagerMocks.quests.LOOT_DATAPAD_1)
 			end)
 		end)
 	end)
