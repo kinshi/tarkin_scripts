@@ -4,7 +4,7 @@ aakuan_sentinel = Creature:new {
 	pvpFaction = "aakuans",
 	faction = "aakuans",
 	level = 35,
-	chanceHit = 0.31,
+	chanceHit = 0.37,
 	damageMin = 170,
 	damageMax = 180,
 	baseXp = 5257,
@@ -32,19 +32,20 @@ aakuan_sentinel = Creature:new {
 	lootGroups = {
 	    {
 		    groups = {
-				{group = "junk", chance = 6600000},
+				{group = "junk", chance = 3600000},
 				{group = "aakuan_common", chance = 2300000},
-				{group = "armor_attachments", chance = 200000},
-				{group = "rifles", chance = 300000},
-				{group = "carbines", chance = 300000},
-				{group = "pistols", chance = 300000}				
+				{group = "armor_attachments", chance = 800000},
+				{group = "clothing_attachments", chance = 800000},
+				{group = "rifles", chance = 900000},
+				{group = "carbines", chance = 900000},
+				{group = "pistols", chance = 900000}				
 			},
-		    lootChance = 2200000
+		    lootChance = 3000000
 		}	
 	},
 	weapons = {"aakuan_carbine_weapons"},
 	conversationTemplate = "",
-	attacks = merge(carbineermaster)
+	attacks = carbineermaster
 }
 
 CreatureTemplates:addCreatureTemplate(aakuan_sentinel, "aakuan_sentinel")
