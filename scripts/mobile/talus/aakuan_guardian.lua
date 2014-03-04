@@ -4,7 +4,7 @@ aakuan_guardian = Creature:new {
 	pvpFaction = "aakuans",
 	faction = "aakuans",
 	level = 50,
-	chanceHit = 0.35,
+	chanceHit = 0.42,
 	damageMin = 220,
 	damageMax = 230,
 	baseXp = 6637,
@@ -32,19 +32,20 @@ aakuan_guardian = Creature:new {
 	lootGroups = {
 	    {
 		    groups = {
-				{group = "junk", chance = 6600000},
+				{group = "junk", chance = 3600000},
 				{group = "aakuan_common", chance = 2300000},
-				{group = "armor_attachments", chance = 200000},
-				{group = "rifles", chance = 300000},
-				{group = "carbines", chance = 300000},
-				{group = "pistols", chance = 300000}				
+				{group = "armor_attachments", chance = 800000},
+				{group = "clothing_attachments", chance = 800000},
+				{group = "rifles", chance = 900000},
+				{group = "carbines", chance = 900000},
+				{group = "pistols", chance = 900000}				
 			},
-		    lootChance = 2200000
+		    lootChance = 3000000
 		}	
 	},
 	weapons = {"aakuan_1h_weapons"},
 	conversationTemplate = "",
-	attacks = merge(fencermaster)
+	attacks = fencermaster
 }
 
 CreatureTemplates:addCreatureTemplate(aakuan_guardian, "aakuan_guardian")

@@ -4,8 +4,8 @@ aakuan_anarchist = Creature:new {
 	socialGroup = "aakuans",
 	pvpFaction = "aakuans",
 	faction = "aakuans",
-	level = 60,
-	chanceHit = 0.39,
+	level = 80,
+	chanceHit = 0.45,
 	damageMin = 290,
 	damageMax = 300,
 	baseXp = 8097,
@@ -41,7 +41,7 @@ aakuan_anarchist = Creature:new {
 				{group = "carbines", chance = 1280000},
 				{group = "pistols", chance = 1280000}				
 			},
-		    lootChance = 2200000
+		    lootChance = 3000000
 		}
 	},
 	weapons = {"aakuan_anarchist_weapons"},

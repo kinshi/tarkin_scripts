@@ -20,5 +20,9 @@ function EndorStaticSpawnsScreenPlay:spawnMobiles()
 
 	--Donkuwah Hut 4031 -7668
 	spawnMobile("endor", "tainted_donkuwah_dark_shaman",300, 4031.5, 0.8, -7668.1, -34, 0)
+--Tarkin Specific
+	spawnMobile("endor", "gorax",3600, math.random(1000) + 4900, 13.7, math.random(1000) + 4526, math.random(360), 0)
+	spawnMobile("endor", "gorax",3600, math.random(1000) + 5223, 25, math.random(1000) + 4409, math.random(360), 0)
+	spawnMobile("endor", "gorax",3600, math.random(1000) + 5202, 64, math.random(1000) + 3985, math.random(360), 0)
 
 end
