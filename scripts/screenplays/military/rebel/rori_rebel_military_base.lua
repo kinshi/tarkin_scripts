@@ -133,6 +133,8 @@ function RoriRebelMilitaryBaseScreenPlay:spawnMobiles()
 	spawnMobile("rori", "sentry_specforce", 300, -5335.3, 76.0, 4998.3, 155, 0)
 	spawnMobile("rori", "sentry_specforce", 300, -5318.8, 76.0, 5016.2, 93, 0)
 	spawnMobile("rori", "sentry_specforce", 300, -5307.6, 76.0, 5020.3, 124, 0)
+	spawnMobile("rori", "gcw_rebel_defence_droid", 300, -5325.9, 76.0, 4995.6, 168, 0)
+	spawnMobile("rori", "gcw_rebel_defence_droid", 300, -5300.4, 75.9, 5011.6, 76, 0)
 
 	-- Building Sentries
 	
