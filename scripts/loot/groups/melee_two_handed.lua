@@ -8,6 +8,7 @@ melee_two_handed = {
 		{itemTemplate = "two_handed_sword_battleaxe", weight = 2500000},
 		{itemTemplate = "two_handed_sword_cleaver", weight = 2500000},
 		{itemTemplate = "two_handed_sword_katana", weight = 2500000},
+		{itemTemplate = "two_handed_sword_scythe", weight = 2500000},
 		{itemTemplate = "two_handed_sword_maul", weight = 2500000}
 	}
 }

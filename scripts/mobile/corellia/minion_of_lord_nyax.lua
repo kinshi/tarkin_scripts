@@ -3,15 +3,15 @@ minion_of_lord_nyax = Creature:new {
 	socialGroup = "followers_of_lord_nyax",
 	pvpFaction = "followers_of_lord_nyax",
 	faction = "followers_of_lord_nyax",
-	level = 12,
-	chanceHit = 0.29,
-	damageMin = 130,
-	damageMax = 140,
-	baseXp = 514,
-	baseHAM = 1200,
-	baseHAMmax = 1400,
-	armor = 0,
-	resists = {0,0,0,0,0,0,0,-1,-1},
+	level = 60,
+	chanceHit = 0.6,
+	damageMin = 230,
+	damageMax = 260,
+	baseXp = 7014,
+	baseHAM = 30000,
+	baseHAMmax = 31400,
+	armor = 1,
+	resists = {30,30,30,30,30,30,30,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -29,18 +29,21 @@ minion_of_lord_nyax = Creature:new {
 	templates = {"object/mobile/dressed_criminal_smuggler_human_male_01.iff"},
 	lootGroups = {
 		{
-			groups = {
-				{group = "junk", chance = 7000000},
-				{group = "pistols", chance = 1000000},
-				{group = "rifles", chance = 1000000},
-                		{group = "carbines", chance = 1000000}
+		groups = {
+				{group = "junk", chance = 1500000},
+				{group = "melee_two_handed", chance = 2500000},
+				{group = "armor_attachments", chance = 1500000},
+               			{group = "clothing_attachments", chance = 1500000},
+				{group = "force_color_crystal", chance = 1000000},
+				{group = "printer_parts", chance = 1500000},
+				{group = "holocron_splinters", chance = 500000}
 			},
-			lootChance = 3500000
+			lootChance = 2500000
 		}
 	},
-	weapons = {"pirate_weapons_medium"},
+	weapons = {"nyax_fanatic_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlernovice,marksmannovice)
+	attacks = merge(riflemanmaster, swordsmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(minion_of_lord_nyax, "minion_of_lord_nyax")
