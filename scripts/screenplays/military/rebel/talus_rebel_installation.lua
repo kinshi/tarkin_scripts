@@ -56,6 +56,7 @@ function TalusRebelInstallation:spawnMobiles()
 	spawnMobile("talus", "sentry_specforce", 300, 2336.9, 128.3, -4981.0, -90, 0)
 	spawnMobile("talus", "sentry_specforce", 300, 2337.9, 128.5, -4979.8, 0, 0)
 	spawnMobile("talus", "sentry_specforce", 300, 2370.2, 126.2, -4979.6, 0, 0)
+	spawnMobile("talus", "gcw_rebel_defence_droid", 300, 2379.9, 124.7, -5004.4, -176, 0)
 
 	-- Shuttle
 

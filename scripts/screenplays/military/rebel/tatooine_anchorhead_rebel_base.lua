@@ -71,6 +71,8 @@ function AnchorheadRebelBaseScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "sentry_specforce", 360, 158.0, 52.0, -5328.8, -40, 0)
 	spawnMobile("tatooine", "sentry_specforce_sniper", 360, 34.2, 51.2, -5351.3, -30, 0)
 	spawnMobile("tatooine", "sentry_specforce_sniper", 360, 36.6, 52.0, -5337.6, -155, 0)
+	spawnMobile("tatooine", "gcw_rebel_defence_droid", 360, 32.4, 51.7, -5344.4, -96, 0)
+	spawnMobile("tatooine", "gcw_rebel_defence_droid", 360, 154.9, 52.0, -5317.6, 16, 0)
 
 	-- Shuttleport
 
