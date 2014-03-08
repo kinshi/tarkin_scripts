@@ -47,9 +47,9 @@ object_building_player_city_garden_corellia_sml_05 = object_building_player_city
 	baseMaintenanceRate = 0,
 	allowedZones = {"corellia", "talus"},
 	
-	length = 3,
+	length = 1,
+	width = 1,
 	
-	width = 3,
 	cityRankRequired = 1,
 	cityMaintenanceBase = 10000,
 	abilityRequired = "place_small_garden",
