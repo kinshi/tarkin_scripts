@@ -4,11 +4,11 @@ aakuari_assassin = Creature:new {
 	socialGroup = "aakuans",
 	pvpFaction = "aakuans",
 	faction = "aakuans",
-	level = 80,
-	chanceHit = 0.37,
+	level = 100,
+	chanceHit = 0.5,
 	damageMin = 270,
 	damageMax = 280,
-	baseXp = 8188,
+	baseXp = 10188,
 	baseHAM = 45000,
 	baseHAMmax = 58000,
 	armor = 2,
@@ -33,14 +33,15 @@ aakuari_assassin = Creature:new {
 	lootGroups = {
 	    {
 		    groups = {
-				{group = "clothing_attachments", chance = 1300000},
-				{group = "aakuan_common", chance = 2300000},
-				{group = "armor_attachments", chance = 1300000},
-				{group = "rifles", chance = 1700000},
-				{group = "carbines", chance = 1700000},
-				{group = "pistols", chance = 1700000}				
+				{group = "junk", chance = 1000000},
+				{group = "aakuan_common", chance = 1000000},
+				{group = "armor_attachments", chance = 1150000},
+				{group = "clothing_attachments", chance = 1150000},
+				{group = "rifles", chance = 1900000},
+				{group = "carbines", chance = 1900000},
+				{group = "pistols", chance = 1900000}				
 			},
-		    lootChance = 2200000
+		    lootChance = 3000000
 		}
 	},
 	weapons = {"aakuan_assassin_weapons"},

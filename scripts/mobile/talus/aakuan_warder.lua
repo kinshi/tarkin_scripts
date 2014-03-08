@@ -3,11 +3,11 @@ aakuan_warder = Creature:new {
 	socialGroup = "aakuans",
 	pvpFaction = "aakuans",
 	faction = "aakuans",
-	level = 75,
-	chanceHit = 0.37,
+	level = 95,
+	chanceHit = 0.5,
 	damageMin = 260,
 	damageMax = 270,
-	baseXp = 8005,
+	baseXp = 10005,
 	baseHAM = 45000,
 	baseHAMmax = 55000,
 	armor = 2,
@@ -32,14 +32,15 @@ aakuan_warder = Creature:new {
 	lootGroups = {
 	    {
 		    groups = {
-				{group = "clothing_attachments", chance = 1300000},
-				{group = "aakuan_common", chance = 2300000},
-				{group = "armor_attachments", chance = 1300000},
-				{group = "rifles", chance = 1700000},
-				{group = "carbines", chance = 1700000},
-				{group = "pistols", chance = 1700000}				
+				{group = "junk", chance = 1600000},
+				{group = "aakuan_common", chance = 1300000},
+				{group = "armor_attachments", chance = 1400000},
+				{group = "clothing_attachments", chance = 1400000},
+				{group = "rifles", chance = 1500000},
+				{group = "carbines", chance = 1500000},
+				{group = "pistols", chance = 1500000}				
 			},
-		    lootChance = 2200000
+		    lootChance = 4000000
 		}	
 	},
 	weapons = {"aakuan_warder_weapons"},

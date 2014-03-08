@@ -3,11 +3,11 @@ aakuan_champion = Creature:new {
 	socialGroup = "aakuans",
 	pvpFaction = "aakuans",
 	faction = "aakuans",
-	level = 90,
-	chanceHit = 0.39,
+	level = 130,
+	chanceHit = 0.65,
 	damageMin = 290,
 	damageMax = 300,
-	baseXp = 9097,
+	baseXp = 15097,
 	baseHAM = 50000,
 	baseHAMmax = 65000,
 	armor = 3,
@@ -32,14 +32,14 @@ aakuan_champion = Creature:new {
 	lootGroups = {
 	    {
 		    groups = {
-				{group = "clothing_attachments", chance = 1330000},
-				{group = "aakuan_common", chance = 2390000},
-				{group = "armor_attachments", chance = 1330000},
-				{group = "rifles", chance = 1650000},
-				{group = "carbines", chance = 1650000},
-				{group = "pistols", chance = 1650000}				
+				{group = "clothing_attachments", chance = 1730000},
+				{group = "aakuan_common", chance = 390000},
+				{group = "armor_attachments", chance = 1730000},
+				{group = "rifles", chance = 2050000},
+				{group = "carbines", chance = 2050000},
+				{group = "pistols", chance = 2050000}				
 			},
-		    lootChance = 2200000
+		    lootChance = 5000000
 		}
 	},
 	weapons = {"aakuan_champion_weapons"},

@@ -142,6 +142,7 @@ function RoriRebelOutpostScreenPlay:spawnMobiles()
 	spawnMobile("rori", "sentry_specforce", 300, math.random(12) + 3658.7, 96.1, math.random(14) + -6494.3, 179, 0)
 	spawnMobile("rori", "sentry_specforce", 300, math.random(12) + 3658.7, 96.1, math.random(14) + -6494.3, 179, 0)
 	spawnMobile("rori", "sentry_specforce", 300, math.random(12) + 3658.7, 96.1, math.random(14) + -6494.3, 179, 0)
+	spawnMobile("rori", "gcw_rebel_defence_droid", 300, 3663.8, 96.0, 6488.4, 176, 0)
 
 	-- Building Entrance Sentries
 

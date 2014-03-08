@@ -48,6 +48,8 @@ function LokRebelSafehouseScreenPlay:spawnSceneObjects()
 	spawnMobile("lok", "rebel_scout", 300, -4741.2, 4.0, 3549.3, -136, 0)
 	spawnMobile("lok", "sentry_specforce", 300, -4743.4, 4.0, 3533.9, 135, 0)
 	spawnMobile("lok", "sentry_specforce", 300, -4747.2, 4.0, 3528.8, 90, 0)
+	spawnMobile("lok", "gcw_rebel_defence_droid", 300, -4749.1, 4.0, 3511.8, 116, 0)
+	spawnMobile("lok", "gcw_rebel_defence_droid", 300, -4739.7, 4.0, 3519.9, 130, 0)
 
 	-- Bridge Sentries
 

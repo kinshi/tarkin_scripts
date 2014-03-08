@@ -4,8 +4,8 @@ aakuan_spice_guard = Creature:new {
 	socialGroup = "aakuans",
 	pvpFaction = "aakuans",
 	faction = "aakuans",
-	level = 55,
-	chanceHit = 0.36,
+	level = 85,
+	chanceHit = 0.43,
 	damageMin = 250,
 	damageMax = 260,
 	baseXp = 7822,
@@ -33,19 +33,20 @@ aakuan_spice_guard = Creature:new {
 	lootGroups = {
 	    {
 		    groups = {
-				{group = "junk", chance = 6600000},
-				{group = "aakuan_common", chance = 2300000},
-				{group = "armor_attachments", chance = 200000},
-				{group = "rifles", chance = 300000},
-				{group = "carbines", chance = 300000},
-				{group = "pistols", chance = 300000}				
+				{group = "junk", chance = 1600000},
+				{group = "aakuan_common", chance = 1300001},
+				{group = "armor_attachments", chance = 1200000},
+				{group = "clothing_attachments", chance = 1200000},
+				{group = "rifles", chance = 1533333},
+				{group = "carbines", chance = 1533333},
+				{group = "pistols", chance = 1533333}				
 			},
-		    lootChance = 2200000
+		    lootChance = 3500000
 		}	
 	},
 	weapons = {"aakuan_2h_weapons"},
 	conversationTemplate = "",
-	attacks = merge(swordsmanmaster)
+	attacks = swordsmanmaster
 }
 
 CreatureTemplates:addCreatureTemplate(aakuan_spice_guard, "aakuan_spice_guard")
