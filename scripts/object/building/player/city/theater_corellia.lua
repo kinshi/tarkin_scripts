@@ -47,8 +47,8 @@ object_building_player_city_theater_corellia = object_building_player_city_share
 	gameObjectType = 524,
 	planetMapCategory = "theater",
 	allowedZones = {"corellia", "talus"},
-	length = 2,
-	width = 3,
+	length = 1,
+	width = 1,
 	abilityRequired = "place_theater",
 	skillMods = {
 		{"private_buff_mind", 100},
