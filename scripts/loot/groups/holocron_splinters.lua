@@ -1,4 +1,4 @@
-holocron_dark = {
+holocron_splinters = {
 	description = "",
 	minimumLevel = 0,
 	maximumLevel = 0,
