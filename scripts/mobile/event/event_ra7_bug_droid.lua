@@ -1,18 +1,18 @@
 event_ra7_bug_droid = Creature:new {
 	objectName = "@mob/creature_names:ra7_bug_droid",
-	customName = "an RA-7 \"Bug\" droid (event)",
+	customName = "an RA-7 \"Bug\" droid",
 	socialGroup = "",
 	pvpFaction = "",
 	faction = "",
-	level = 20,
-	chanceHit = 0.330000,
-	damageMin = 190,
-	damageMax = 200,
-	baseXp = 0,
-	baseHAM = 5000,
-	baseHAMmax = 6100,
-	armor = 0,
-	resists = {0,0,40,0,0,0,0,-1,-1},
+	level = 200,
+	chanceHit = 2,
+	damageMin = 500,
+	damageMax = 1300,
+	baseXp = 50000,
+	baseHAM = 35000,
+	baseHAMmax = 56100,
+	armor = 2,
+	resists = {45,30,40,20,20,5,60,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -25,11 +25,21 @@ event_ra7_bug_droid = Creature:new {
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = NONE,
 	diet = HERBIVORE,
+	scale = 1.5,
 
 	templates = {"object/mobile/ra7_bug_droid.iff"},
-	lootGroups = {},
+	lootGroups = {
+	 {
+	        groups = {
+				{group = "armor_attachments", chance = 3300000},
+				{group = "clothing_attachments", chance = 3300000},
+				{group = "resource_deed", chance = 3400000}
+			},
+			lootChance = 10000000
+		}
+	},
 	weapons = {},
-	attacks = {}
+	attacks = {"creatureareableeding",""}
 }
 
 CreatureTemplates:addCreatureTemplate(event_ra7_bug_droid, "event_ra7_bug_droid")

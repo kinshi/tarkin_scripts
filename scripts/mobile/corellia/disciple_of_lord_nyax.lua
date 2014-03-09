@@ -3,15 +3,15 @@ disciple_of_lord_nyax = Creature:new {
 	socialGroup = "followers_of_lord_nyax",
 	pvpFaction = "followers_of_lord_nyax",
 	faction = "followers_of_lord_nyax",
-	level = 16,
-	chanceHit = 0.31,
-	damageMin = 160,
-	damageMax = 170,
-	baseXp = 1102,
-	baseHAM = 2400,
-	baseHAMmax = 3000,
-	armor = 0,
-	resists = {5,15,5,5,-1,-1,5,-1,-1},
+	level = 80,
+	chanceHit = 0.75,
+	damageMin = 250,
+	damageMax = 300,
+	baseXp = 8102,
+	baseHAM = 33400,
+	baseHAMmax = 35000,
+	armor = 1,
+	resists = {5,15,60,5,40,50,5,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -29,18 +29,21 @@ disciple_of_lord_nyax = Creature:new {
 	templates = {"object/mobile/dressed_patron_nikto_01.iff"},
 	lootGroups = {
 		{
-			groups = {
-				{group = "junk", chance = 7000000},
-				{group = "pistols", chance = 1000000},
-				{group = "rifles", chance = 1000000},
-               			{group = "carbines", chance = 1000000}
+		groups = {
+				{group = "junk", chance = 1500000},
+				{group = "melee_two_handed", chance = 2500000},
+				{group = "armor_attachments", chance = 1500000},
+               			{group = "clothing_attachments", chance = 1500000},
+				{group = "force_color_crystal", chance = 1000000},
+				{group = "printer_parts", chance = 1500000},
+				{group = "holocron_splinters", chance = 500000}
 			},
-			lootChance = 3000000
+			lootChance = 2500000
 		}
 	},
-	weapons = {"ranged_weapons"},
+	weapons = {"aakuan_2h_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlernovice,marksmannovice)
+	attacks = swordsmanmaster
 }
 
 CreatureTemplates:addCreatureTemplate(disciple_of_lord_nyax, "disciple_of_lord_nyax")

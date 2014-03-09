@@ -1,18 +1,18 @@
 event_at_st = Creature:new {
 	objectName = "@mob/creature_names:at_st",
-	customName = "an AT-ST (event)",
+	customName = "an AT-ST",
 	socialGroup = "imperial",
 	pvpFaction = "imperial",
 	faction = "imperial",
-	level = 125,
-	chanceHit = 475,
-	damageMin = 770,
-	damageMax = 1250,
-	baseXp = 0,
-	baseHAM = 50000,
-	baseHAMmax = 61000,
-	armor = 2,
-	resists = {35,35,-1,100,100,15,15,100,-1},
+	level = 250,
+	chanceHit = 570,
+	damageMin = 1001,
+	damageMax = 1625,
+	baseXp = 15417,
+	baseHAM = 75000,
+	baseHAMmax = 99000,
+	armor = 3,
+	resists = {46,46,10,100,100,20,20,100,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -28,7 +28,16 @@ event_at_st = Creature:new {
 	diet = NONE,
 
 	templates = {"object/mobile/atst.iff"},
-	lootGroups = {},
+	lootGroups = {
+		{
+			groups = {
+				{group = "clothing_attachments", chance = 3300000},
+				{group = "armor_attachments", chance = 3300000},
+				{group = "resource_deed", chance = 3300000}
+			},
+			lootChance = 10000000
+		}
+	},
 	conversationTemplate = "",
 	defaultAttack = "defaultdroidattack",
 	defaultWeapon = "object/weapon/ranged/vehicle/vehicle_atst_ranged.iff",

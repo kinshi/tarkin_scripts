@@ -1,24 +1,24 @@
 event_reclusive_gurk_king = Creature:new {
 	objectName = "@mob/creature_names:recluse_gurk_king",
-	customName = "a reclusive gurk king (event)",
+	customName = "a reclusive gurk king",
 	socialGroup = "gurk",
 	pvpFaction = "",
 	faction = "",
-	level = 45,
-	chanceHit = 0.47,
-	damageMin = 370,
-	damageMax = 450,
-	baseXp = 0,
-	baseHAM = 9700,
-	baseHAMmax = 11900,
-	armor = 0,
+	level = 145,
+	chanceHit = 2,
+	damageMin = 450,
+	damageMax = 650,
+	baseXp = 50000,
+	baseHAM = 39700,
+	baseHAMmax = 51900,
+	armor = 2,
 	resists = {40,20,40,-1,40,40,-1,-1,-1},
 	meatType = "meat_herbivore",
-	meatAmount = 0,
+	meatAmount = 200,
 	hideType = "hide_leathery",
-	hideAmount = 0,
+	hideAmount = 200,
 	boneType = "bone_mammal",
-	boneAmount = 0,
+	boneAmount = 200,
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
@@ -26,14 +26,25 @@ event_reclusive_gurk_king = Creature:new {
 	creatureBitmask = PACK + HERD + KILLER,
 	optionsBitmask = 128,
 	diet = CARNIVORE,
+	scale = 1.3,
 
 	templates = {"object/mobile/recluse_gurk_king.iff"},
-	lootGroups = {},
+	lootGroups = {
+	 {
+	        groups = {
+				{group = "gurk_king_common", chance = 2500000},
+				{group = "armor_attachments", chance = 2500000},
+				{group = "clothing_attachments", chance = 2500000},
+				{group = "resource_deed", chance = 2500000}
+			},
+			lootChance = 10000000
+		}
+	},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"blindattack","blindChance=75"},
+		{"posturedownattack","postureDownChance=60"}
 	}
 }
 
