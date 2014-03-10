@@ -18,6 +18,11 @@ end
 
 function RebelHideoutScreenPlay:spawnMobiles()
 
+	--Rebel Defence Droid Placements
+	spawnMobile("corellia", "gcw_rebel_defence_droid", 300, -6559.9, 405.0, 5920.3, 168, 0)
+	spawnMobile("corellia", "gcw_rebel_defence_droid", 300, -6477.1, 405.0, 5906.9, 73, 0)
+	spawnMobile("corellia", "gcw_rebel_defence_droid", 300, 6428.3, 405.0, 6039.0, -34, 0)
+
 	-- South Entrance
 	spawnMobile("corellia", "sentry_specforce_squad_leader", 300, -6560.940, 405.000, 5927.760, 138.910, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6565.580, 405.006, 5923.700, 143.563, 0)

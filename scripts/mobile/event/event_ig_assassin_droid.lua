@@ -1,18 +1,18 @@
 event_ig_assassin_droid = Creature:new {
 	objectName = "@mob/creature_names:ig_assassin_droid",
-	customName = "an IG assassin droid (event)",
+	customName = "an IG assassin droid",
 	socialGroup = "",
 	pvpFaction = "",
 	faction = "",
-	level = 45,
-	chanceHit = 0.47,
+	level = 145,
+	chanceHit = 2,
 	damageMin = 395,
 	damageMax = 500,
-	baseXp = 0,
-	baseHAM = 9700,
-	baseHAMmax = 11900,
-	armor = 0,
-	resists = {25,25,5,5,5,5,5,-1,-1},
+	baseXp = 50000,
+	baseHAM = 69700,
+	baseHAMmax = 111900,
+	armor = 3,
+	resists = {45,45,15,15,15,15,15,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -26,9 +26,19 @@ event_ig_assassin_droid = Creature:new {
 	creatureBitmask = KILLER,
 	optionsBitmask = 0,
 	diet = NONE,
+	scale = 1.5,
 
 	templates = {"object/mobile/ig_assassin_droid.iff"},
-	lootGroups = {},
+	lootGroups = {
+       	{
+			groups = {
+				{group = "armor_attachments", chance = 3300000},
+				{group = "resource_deed", chance = 3400000},
+				{group = "clothing_attachments", chance = 3300000}
+			},
+			lootChance = 10000000
+		}	
+	},
 	conversationTemplate = "",
 	defaultWeapon = "object/weapon/ranged/droid/droid_droideka_ranged.iff",
 	defaultAttack = "creaturerangedattack"

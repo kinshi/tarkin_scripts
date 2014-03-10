@@ -3,15 +3,15 @@ visionary_of_lord_nyax = Creature:new {
 	socialGroup = "followers_of_lord_nyax",
 	pvpFaction = "followers_of_lord_nyax",
 	faction = "followers_of_lord_nyax",
-	level = 31,
-	chanceHit = 0.38,
+	level = 120,
+	chanceHit = 1,
 	damageMin = 280,
-	damageMax = 290,
-	baseXp = 3188,
-	baseHAM = 8300,
-	baseHAMmax = 10100,
-	armor = 0,
-	resists = {30,45,0,50,-1,-1,50,-1,-1},
+	damageMax = 500,
+	baseXp = 10188,
+	baseHAM = 45300,
+	baseHAMmax = 48100,
+	armor = 1,
+	resists = {30,45,10,50,40,10,50,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -32,17 +32,26 @@ visionary_of_lord_nyax = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 7000000},
-				{group = "pistols", chance = 1000000},
-				{group = "rifles", chance = 1000000},
-               			{group = "carbines", chance = 1000000}
+				{group = "junk", chance = 1500000},
+				{group = "melee_two_handed", chance = 2500000},
+				{group = "armor_attachments", chance = 1500000},
+               			{group = "clothing_attachments", chance = 1500000},
+				{group = "force_color_crystal", chance = 1000000},
+				{group = "printer_parts", chance = 1500000},
+				{group = "holocron_splinters", chance = 500000}
 			},
-			lootChance = 3200000
+			lootChance = 3000000
 		}	
 	},
-	weapons = {"ranged_weapons"},
+	weapons = {"aakuan_pistol_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlernovice,marksmannovice)
+	attacks = {
+		{"creatureareaknockdown","knockdownChance=50"},
+		{"creatureareacombo",""},
+		{"dizzyattack","dizzyChance=50"},
+		{"blindattack","blindChance=50"},
+
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(visionary_of_lord_nyax, "visionary_of_lord_nyax")
