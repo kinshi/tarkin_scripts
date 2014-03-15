@@ -41,19 +41,39 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_building_player_player_merchant_tent_style_01 = object_building_player_shared_player_merchant_tent_style_01:new {
-	lotSize = 1,
-	publicStructure = 1,
-	baseMaintenanceRate = 5,
-	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine"},
-	length = 1,
-	width = 1,
-	alwaysPublic = 1,
---	abilityRequired = "place_merchant_tent",
-	childObjects = {
-			{templateFile = "object/tangible/sign/player/shop_sign_s01.iff", x = 3.5, z = -0.3, y = 3.5, ox = 0, oy = 0, oz = 0, ow = 1, cellid = -1, containmentType = -1},
-			{templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = -0.15, z = 0.267105, y = -2.76, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 1, containmentType = -1}
-	}
-}
+object_draft_schematic_structure_yt1300_house_schem = object_draft_schematic_structure_shared_yt1300_house_schem:new {
 
-ObjectTemplates:addTemplate(object_building_player_player_merchant_tent_style_01, "object/building/player/player_merchant_tent_style_01.iff")
+   templateType = DRAFTSCHEMATIC,
+
+   customObjectName = "Deed for: YT-1300 Commerical Transport",
+
+   craftingToolTab = 1024, -- (See DraftSchemticImplementation.h)
+   complexity = 35, 
+   size = 14, 
+
+   xpType = "crafting_structure_general", 
+   xp = 10000, 
+
+   assemblySkill = "structure_assembly", 
+   experimentingSkill = "structure_experimentation", 
+   customizationSkill = "structure_customization", 
+
+   customizationOptions = {},
+   customizationStringNames = {},
+   customizationDefaults = {},
+
+   ingredientTemplateNames = {"craft_structure_ingredients_n", "craft_structure_ingredients_n", "craft_structure_ingredients_n", "craft_structure_ingredients_n", "craft_structure_ingredients_n", "craft_structure_ingredients_n"},
+   ingredientTitleNames = {"load_bearing_structure_and_shell", "insulation_and_covering", "foundation", "wall_sections", "power_supply_unit", "storage_space"},
+   ingredientSlotType = {0, 0, 0, 2, 1, 1},
+   resourceTypes = {"metal", "ore", "ore", "object/tangible/component/structure/shared_wall_module.iff", "object/tangible/component/structure/shared_power_core_unit.iff", "object/tangible/component/structure/shared_structure_storage_section.iff"},
+   resourceQuantities = {1500, 2500, 400, 10, 1, 2},
+   contribution = {100, 100, 100, 100, 100, 100},
+
+
+   targetTemplate = "object/tangible/deed/player_house_deed/yt1300_house_deed.iff",
+
+   additionalTemplates = {
+             }
+
+}
+ObjectTemplates:addTemplate(object_draft_schematic_structure_yt1300_house_schem, "object/draft_schematic/structure/yt1300_house_schem.iff")

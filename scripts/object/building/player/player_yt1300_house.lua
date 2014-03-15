@@ -41,19 +41,23 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_building_player_player_merchant_tent_style_01 = object_building_player_shared_player_merchant_tent_style_01:new {
-	lotSize = 1,
-	publicStructure = 1,
-	baseMaintenanceRate = 5,
+object_building_player_player_house_generic_large_style_01 = object_building_player_shared_player_house_generic_large_style_01:new {
+	lotSize = 4,
+	baseMaintenanceRate = 25,
 	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine"},
-	length = 1,
-	width = 1,
-	alwaysPublic = 1,
---	abilityRequired = "place_merchant_tent",
+	publicStructure = 0,
+	skillMods = {
+		{"private_medical_rating", 100},
+		{"private_buff_mind", 100},
+		{"private_med_battle_fatigue", 5}
+	},
 	childObjects = {
-			{templateFile = "object/tangible/sign/player/shop_sign_s01.iff", x = 3.5, z = -0.3, y = 3.5, ox = 0, oy = 0, oz = 0, ow = 1, cellid = -1, containmentType = -1},
-			{templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = -0.15, z = 0.267105, y = -2.76, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 1, containmentType = -1}
-	}
+			{templateFile = "object/tangible/sign/player/house_address.iff", x = 3.68, z = 2, y = 13.04, ox = 0, oy = 1, oz = 0, ow = 0, cellid = -1, containmentType = -1},
+			{templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = 3.17, z = 4.585, y = -4.4, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 8, containmentType = -1},
+	},
+	constructionMarker = "object/building/player/construction/construction_player_house_corellia_large_style_01.iff",
+	length = 1,
+	width = 1
 }
 
-ObjectTemplates:addTemplate(object_building_player_player_merchant_tent_style_01, "object/building/player/player_merchant_tent_style_01.iff")
+ObjectTemplates:addTemplate(object_building_player_yt1300_house, "object/building/player/yt1300_house.iff")

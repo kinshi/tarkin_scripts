@@ -41,19 +41,13 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_building_player_player_merchant_tent_style_01 = object_building_player_shared_player_merchant_tent_style_01:new {
-	lotSize = 1,
-	publicStructure = 1,
-	baseMaintenanceRate = 5,
-	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine"},
-	length = 1,
-	width = 1,
-	alwaysPublic = 1,
---	abilityRequired = "place_merchant_tent",
-	childObjects = {
-			{templateFile = "object/tangible/sign/player/shop_sign_s01.iff", x = 3.5, z = -0.3, y = 3.5, ox = 0, oy = 0, oz = 0, ow = 1, cellid = -1, containmentType = -1},
-			{templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = -0.15, z = 0.267105, y = -2.76, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 1, containmentType = -1}
-	}
+object_tangible_loot_loot_schematic_yt1300_house_loot_schem = object_tangible_loot_loot_schematic_shared_yt1300_house_loot_schem:new {
+	templateType = LOOTSCHEMATIC,
+	objectMenuComponent = {"cpp", "LootSchematicMenuComponent"},
+	attributeListComponent = "LootSchematicAttributeListComponent",
+	requiredSkill = "crafting_architect_master",
+	targetDraftSchematic = "object/draft_schematic/structure/yt1300_house_schem.iff",
+	targetUseCount = 5
 }
 
-ObjectTemplates:addTemplate(object_building_player_player_merchant_tent_style_01, "object/building/player/player_merchant_tent_style_01.iff")
+ObjectTemplates:addTemplate(object_tangible_loot_loot_schematic_yt1300_house_loot_schem, "object/tangible/loot/loot_schematic/yt1300_house_loot_schem.iff")

@@ -73,3 +73,7 @@ includeFile("tangible/deed/player_house_deed/tatooine_house_large_deed.lua")
 includeFile("tangible/deed/player_house_deed/tatooine_house_medium_deed.lua")
 includeFile("tangible/deed/player_house_deed/tatooine_house_small_deed.lua")
 includeFile("tangible/deed/player_house_deed/tatooine_house_small_style_02_deed.lua")
+
+-- NGE Housing
+
+includeFile("tangible/deed/player_house_deed/yt1300_house_deed.lua")

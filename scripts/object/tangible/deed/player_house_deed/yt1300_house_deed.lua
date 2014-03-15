@@ -41,19 +41,22 @@
 --this exception also makes it possible to release a modified version 
 
 
-object_building_player_player_merchant_tent_style_01 = object_building_player_shared_player_merchant_tent_style_01:new {
-	lotSize = 1,
-	publicStructure = 1,
-	baseMaintenanceRate = 5,
-	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine"},
-	length = 1,
-	width = 1,
-	alwaysPublic = 1,
---	abilityRequired = "place_merchant_tent",
-	childObjects = {
-			{templateFile = "object/tangible/sign/player/shop_sign_s01.iff", x = 3.5, z = -0.3, y = 3.5, ox = 0, oy = 0, oz = 0, ow = 1, cellid = -1, containmentType = -1},
-			{templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = -0.15, z = 0.267105, y = -2.76, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 1, containmentType = -1}
-	}
+object_tangible_deed_player_house_deed_generic_house_large_deed = object_tangible_deed_player_house_deed_shared_yt1300_house_deed:new {
+	templateType = STRUCTUREDEED,
+	placeStructureComponent = "PlaceStructureComponent",
+	generatedObjectTemplate = "object/building/player/yt1300_house.iff",
+
+
+
+	numberExperimentalProperties = {1, 1, 1},
+	experimentalProperties = {"XX", "XX", "DR"},
+	experimentalWeights = {1, 1, 1},
+	experimentalGroupTitles = {"null", "null", "exp_durability"},
+	experimentalSubGroupTitles = {"null", "null", "hitpoints"},
+	experimentalMin = {0, 0, 50000},
+	experimentalMax = {0, 0, 100000},
+	experimentalPrecision = {0, 0, 0},
+	experimentalCombineType = {0, 0, 4},
 }
 
-ObjectTemplates:addTemplate(object_building_player_player_merchant_tent_style_01, "object/building/player/player_merchant_tent_style_01.iff")
+ObjectTemplates:addTemplate(object_tangible_deed_player_house_deed_yt1300_house_deed, "object/tangible/deed/player_house_deed/yt1300_house_deed.iff")
