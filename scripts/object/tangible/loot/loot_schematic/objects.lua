@@ -4937,11 +4937,3 @@ object_tangible_loot_loot_schematic_shared_utensils_schematic = SharedTangibleOb
 }
 
 ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_utensils_schematic, "object/tangible/loot/loot_schematic/shared_utensils_schematic.iff")
-
---NGE Housing
-
-object_tangible_loot_loot_schematic_shared_yt1300_house_loot_schem = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/loot/loot_schematic/shared_yt1300_house_loot_schem.iff"
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_loot_loot_schematic_shared_yt1300_house_loot_schem, "object/tangible/loot/loot_schematic/shared_yt1300_house_loot_schem.iff")

@@ -128,7 +128,3 @@ includeFile("tangible/loot/loot_schematic/technical_console_s02_schematic.lua")
 includeFile("tangible/loot/loot_schematic/throwpillow_schematic.lua")
 includeFile("tangible/loot/loot_schematic/tumble_blender_schematic.lua")
 includeFile("tangible/loot/loot_schematic/utensils_schematic.lua")
-
--- NGE Housing
-
-includeFile("tangible/loot/loot_schematic/yt_1300_house_loot.lua")

@@ -2259,12 +2259,4 @@ object_building_player_shared_player_merchant_tent_style_03 = SharedBuildingObje
 ]]
 }
 
---NGE Housing
-
-ObjectTemplates:addClientTemplate(object_building_player_shared_yt1300_house, "object/building/player/shared_yt1300_house.iff")
-object_building_player_shared_yt1300_house = SharedBuildingObjectTemplate:new {
-	clientTemplateFileName = "object/building/player/shared_yt1300_house.iff"
-
-}
-
-ObjectTemplates:addClientTemplate(object_building_player_shared_yt1300_house, "object/building/player/yt1300_house.iff")
+ObjectTemplates:addClientTemplate(object_building_player_shared_player_merchant_tent_style_03, "object/building/player/shared_player_merchant_tent_style_03.iff")

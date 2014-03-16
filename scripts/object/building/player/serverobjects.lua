@@ -83,8 +83,3 @@ includeFile("building/player/player_house_tatooine_small_style_02.lua")
 includeFile("building/player/player_merchant_tent_style_01.lua")
 includeFile("building/player/player_merchant_tent_style_02.lua")
 includeFile("building/player/player_merchant_tent_style_03.lua")
-
---NGE Housing
-
-includeFile("building/player/player_yt1300_house.lua")
-
