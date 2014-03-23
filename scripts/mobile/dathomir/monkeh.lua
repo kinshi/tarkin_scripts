@@ -1,0 +1,37 @@
+monkeh = Creature:new {
+	objectName = "",
+	customName = "Monkeh Pooh",
+	socialGroup = "rebel",
+	pvpFaction = "rebel",
+	faction = "rebel",
+	level = 350,
+	chanceHit = 85,
+	damageMin = 1750,
+	damageMax = 4000,
+	baseXp = 500000,
+	baseHAM = 3500000,
+	baseHAMmax = 7500000,
+	armor = 3,
+	resists = {90,90,90,90,90,90,90,90,90},
+	meatType = "",
+	meatAmount = 0,
+	hideType = "",
+	hideAmount = 0,
+	boneType = "",
+	boneAmount = 0,
+	milk = 0,
+	tamingChance = 0,
+	ferocity = 25,
+	pvpBitmask = NONE,
+	creatureBitmask = PACK,
+	optionsBitmask = 264,
+	diet = CARNIVORE,
+
+	templates = {"object/mobile/dressed_ewok_m_04.iff"},
+	lootGroups = {},
+	weapons = {},
+	conversationTemplate = "",
+	attacks = merge(lightsabermaster,forcepowermaster)
+}
+
+CreatureTemplates:addCreatureTemplate(monkeh, "monkeh")

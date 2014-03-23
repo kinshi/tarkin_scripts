@@ -9,7 +9,7 @@ LordNyaxCultScreenPlay = ScreenPlay:new {
 		6036035
 	},
 	
-	lootLevel = 26,	
+	lootLevel = 95,	
 
 	lootGroups = {
 		{
