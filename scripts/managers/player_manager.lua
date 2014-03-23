@@ -56,9 +56,12 @@ groupExpMultiplier = 2.0
 --Sets a global experience multiplier
 globalExpMultiplier = 1.5
 
---Sets the base number of stored pets a player can have
---A non-Creature Handler will have this number as limit
---A Creature Handler will have this number + their stored pets mod as limit
-baseStoredPets = 2
+--Sets the base number of control devices of each type that a player can have in their datapad at once
+--For creature pets, A Creature Handler will have the base number + their stored pets skill mod as limit
+baseStoredCreaturePets = 2
+baseStoredFactionPets = 3
+baseStoredDroids = 5
+baseStoredVehicles = 3
+baseStoredShips = 3
 
 

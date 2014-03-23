@@ -15,6 +15,7 @@ recruiter_convo_handler = Object:new {
 	GIVEERROR = 7,
 	DATAPADFULL = 8,
 	DATAPADERROR = 9,
+	TOOMANYHIRELINGS = 10,
 }
 
 	
@@ -88,6 +89,12 @@ function recruiter_convo_handler:runScreenHandlers(conversationTemplate, convers
 		
 		createEvent(30000, "recruiter_convo_handler", "handleGoOvert", conversingPlayer)
 	elseif (screenID == "accepted_go_covert") then
+	
+      --printf("pew pew fired1\n")
+       if (player:hasSkill("force_title_jedi_rank_03")) then
+       		return
+       end	
+	
 		if (playerObjectPointer ~= nil) then
 			local playerObject = LuaPlayerObject(playerObjectPointer)
 			playerObject:setFactionStatus(3)
@@ -95,6 +102,12 @@ function recruiter_convo_handler:runScreenHandlers(conversationTemplate, convers
 		
 		createEvent(300000, "recruiter_convo_handler", "handleGoCovert", conversingPlayer)
 	elseif (screenID == "accepted_go_on_leave") then
+	
+      --printf("pew pew fired2\n")
+       if (player:hasSkill("force_title_jedi_rank_03")) then
+       		return
+       end	
+	
 		if (playerObjectPointer ~= nil) then
 			local playerObject = LuaPlayerObject(playerObjectPointer)
 			playerObject:setFactionStatus(3)
@@ -102,6 +115,12 @@ function recruiter_convo_handler:runScreenHandlers(conversationTemplate, convers
 		
 		createEvent(300000, "recruiter_convo_handler", "handleGoOnLeave", conversingPlayer)
 	elseif (screenID == "accepted_resign") then
+	
+      --printf("pew pew fired3\n")
+       if (player:hasSkill("force_title_jedi_rank_03")) then
+       		return
+       end
+	
 		if (playerObjectPointer ~= nil) then
 			local playerObject = LuaPlayerObject(playerObjectPointer)
 			
@@ -603,6 +622,8 @@ function recruiter_convo_handler:processPurchase(conversingPlayer, conversationT
 			conversationScreen = convoTemplate:getScreen("inventory_full") -- Your inventory is full.  YOu must make some room before you can purchase.
 		elseif (awardresult == self.DATAPADFULL) then
 			conversationScreen = convoTemplate:getScreen("datapad_full") -- Your datapad is full. You must first free some space.
+		elseif (awardresult == self.TOOMANYHIRELINGS) then
+			conversationScreen = convoTemplate:getScreen("too_many_hirelings") -- You already have too much under your command.
 		elseif ( awardresult == self.ITEMCOST ) then
 			spatialChat(conversingNPC, "I'm sorry.  We were unable to price this item " .. selectedOption)
 		elseif ( awardresult == self.INVENTORYERROR or awardresult == self.DATAPADERROR) then
@@ -748,7 +769,7 @@ function recruiter_convo_handler:awardData(player, itemstring)
 				if (slotsremaining < (1 + bonusItemCount)) then
 					return self.DATAPADFULL
 				end	
-			
+
 				local res =  self:transferData(player, pDatapad, itemstring)
 				if(res ~= self.SUCCESS) then
 					return res
@@ -862,6 +883,10 @@ function recruiter_convo_handler:transferData(player, pDatapad, itemstring)
 	end
 
 	if (self:isHireling(itemstring)) then
+		if (checkTooManyHirelings(pDatapad)) then
+			return self.TOOMANYHIRELINGS
+		end
+
 		pItem = giveControlDevice(pDatapad, templatePath, genPath, -1, true)
 	else
 		pItem = giveControlDevice(pDatapad, templatePath, genPath, -1, false)
