@@ -8,7 +8,7 @@ event_crazed_durni = Creature:new {
 	damageMin = 500,
 	damageMax = 900,
 	baseXp = 50092,
-	baseHAM = 700675,
+	baseHAM = 70675,
 	baseHAMmax = 150825,
 	armor = 3,
 	resists = {20,20,30,-1,-1,80,80,80,-1},
@@ -25,7 +25,7 @@ event_crazed_durni = Creature:new {
 	creatureBitmask = NONE,
 	optionsBitmask = 128,
 	diet = CARNIVORE,
-	scale = 3.0,
+	scale = 4.0,
 
 	templates = {"object/mobile/crazed_durni.iff"},
 	controlDeviceTemplate = "object/intangible/pet/durni_hue.iff",

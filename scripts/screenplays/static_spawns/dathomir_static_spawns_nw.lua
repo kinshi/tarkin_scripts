@@ -117,6 +117,11 @@ function DathomirStaticSpawnsNwScreenPlay:spawnMobiles()
 
 	--stone tower
 
+--Tarkin Specific
+	--Dath prison
+	spawnMobile("dathomir", "stuee", 1, -2.9, 0.1, -3.9, 89, 5335791)
+	spawnMobile("dathomir", "monkeh", 1, 2.8, 0.1, -3.7, -86, 5335790)
+
 
 
 end

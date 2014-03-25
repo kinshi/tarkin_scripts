@@ -11,7 +11,7 @@ TalusAakuanCaveScreenPlay = ScreenPlay:new {
 		6075903
         },
         
-        lootLevel = 25, 
+        lootLevel = 75, 
  
         lootGroups = {
                 {
