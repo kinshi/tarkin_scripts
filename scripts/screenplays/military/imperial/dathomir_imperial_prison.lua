@@ -37,8 +37,48 @@ registerScreenPlay("ImperialPrisonScreenPlay", true)
 function ImperialPrisonScreenPlay:start()
 	if (isZoneEnabled("dathomir")) then
                 self:spawnMobiles()
+		self:spawnSceneObjects()
                 self:initializeLootContainers()
         end
+end
+
+function ImperialPrisonScreenPlay:spawnSceneObjects()
+
+	-- Travel terminal
+
+--	local pCollector = spawnSceneObject("dathomir", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4610, 25, -5791, 0, 0, 0, 1, 0)
+--	local collector = LuaSceneObject(pCollector)
+--	local col2creo = LuaCreatureObject(pCollector)
+--	col2creo:setOptionsBitmask(128)
+--	collector:setCustomObjectName("\\#ee3377Travel to  Emperor's Retreat - (Naboo)")
+--	createObserver(OBJECTRADIALUSED, "StrongholdScreenPlay", "teleportImpRetreat", pCollector)
+	
+--	local pCollector2 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4617, 25, -5791, 0, 0, 0, 1, 0)
+--	local collector = LuaSceneObject(pCollector2)
+--	local col2creo = LuaCreatureObject(pCollector2)
+--	col2creo:setOptionsBitmask(128)
+--	collector:setCustomObjectName("\\#ee3377Travel to Imperial Detachment HQ - (Tatooine)")
+--	createObserver(OBJECTRADIALUSED, "StrongholdScreenPlay", "teleportTatHQ", pCollector2)
+	
+--	local pCollector3 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4617, 25, -5776, 0, 0, 0, 0, 0)
+--	local collector = LuaSceneObject(pCollector3)
+--	local col2creo = LuaCreatureObject(pCollector3)
+--	col2creo:setOptionsBitmask(128)
+--	collector:setCustomObjectName("\\#ee3377Travel to Imperial Outpost - (Talus)")
+--	createObserver(OBJECTRADIALUSED, "StrongholdScreenPlay", "teleportTalus", pCollector3)
+			
+	-- Terminals
+
+--	spawnSceneObject("corellia", "object/tangible/terminal/terminal_character_builder.iff", 4624, 25, -5759, 0, 0, 0, 1, 0)
+--	spawnSceneObject("corellia", "object/tangible/terminal/terminal_mission_imperial.iff", 4619, 25, -5759, 0, 0, 0, 1, 0)
+
+	-- Turrets
+	local pTurret1 = spawnSceneObject("dathomir", "object/installation/turret/turret_block_med.iff", -6172.8, 128.0, 973.9, 0, -0.707107, 0, -0.707107, 0)
+	setTurretFaction(pTurret1)
+
+--	local pTurret2 = spawnSceneObject("dathomir", "object/installation/turret/turret_block_med.iff", 3682.1, 96.0, -6472.1, 0, -0.707107, 0, 0.707107, 0)
+--	setTurretFaction(pTurret2)
+
 end
 
 function ImperialPrisonScreenPlay:spawnMobiles()
@@ -278,6 +318,11 @@ function ImperialPrisonScreenPlay:spawnMobiles()
 	spawnMobile("dathomir", "pirate", 30, 3.0, 0.1, -5.6, -60, 5335818)
 	spawnMobile("dathomir", "pirate_privateer", 30, 3.8, 0.1, 1.5, 0, 5335817)
 
+	-- Prison Cell Guards
+
+	spawnMobile("dathomir", "civilian_patrolman", 300, -6346.2, 128.0, 765.2, 89, 0)
+
+
 	--main building
 
 		--cellid 2665365 to 2665375
@@ -356,4 +401,23 @@ function ImperialPrisonScreenPlay:spawnMobiles()
 
 	spawnMobile("dathomir", "mutant_rancor", 300, -155.0, -113.0, -338.4, 75, 2635369)
 
+end
+
+--function ImperialPrisonPlay:teleportImpRetreat(pCollector, pPlayer)
+--	local playerfaction = LuaCreatureObject(pPlayer)
+--	if (playerfaction:isImperial() == true) then
+--		local player = LuaSceneObject(pPlayer)
+--		player:switchZone("naboo", 2437.8, 0, -3895.7, 0)
+--	else
+--		local playerm = LuaCreatureObject(pPlayer)
+--		playerm:sendSystemMessage("You are not authorized to use this terminal")
+--	end
+--end
+
+function setTurretFaction(pTurret)
+	if pTurret ~= nil then
+		local turret = LuaTangibleObject(pTurret)
+		turret:setFaction(FACTIONIMPERIAL)
+		turret:setPvpStatusBitmask(1)
+	end
 end
