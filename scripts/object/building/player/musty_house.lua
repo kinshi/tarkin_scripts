@@ -46,6 +46,9 @@ object_building_player_musty_house = object_building_player_shared_musty_house:n
 	baseMaintenanceRate = 30,
 	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine"},
 	publicStructure = 0,
+	constructionMarker = "object/building/player/construction/construction_player_house_corellia_large_style_01.iff",
+	length = 1,
+	width = 1,
 	skillMods = {
 		{"private_medical_rating", 300},
 		{"private_buff_mind", 300},
@@ -58,9 +61,7 @@ object_building_player_musty_house = object_building_player_shared_musty_house:n
 			{templateFile = "object/tangible/terminal/terminal_elevator_down.iff", x = 0, z = .5, y = -1.29, ow = 0, ox = 0, oy = 0, oz = 0, cellid = 10, containmentType = -1}, --floor1 down
 			{templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = 2.9, z = 0.5, y = 8.8, ox = 0, oy = 1, oz = 0, ow = 0, cellid = 1, containmentType = -1},
 	},
-	constructionMarker = "object/building/player/construction/construction_player_house_corellia_large_style_01.iff",
-	length = 5,
-	width = 7
+
 }
 
 ObjectTemplates:addTemplate(object_building_player_musty_house, "object/building/player/musty_house.iff")
