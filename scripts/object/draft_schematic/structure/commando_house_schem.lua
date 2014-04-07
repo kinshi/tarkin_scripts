@@ -56,7 +56,8 @@ object_draft_schematic_structure_commando_house_schem = object_draft_schematic_s
 
    assemblySkill = "structure_assembly", 
    experimentingSkill = "structure_experimentation", 
-   customizationSkill = "structure_customization", 
+   customizationSkill = "structure_customization",
+   disableFactoryRun = true, 
 
    customizationOptions = {},
    customizationStringNames = {},

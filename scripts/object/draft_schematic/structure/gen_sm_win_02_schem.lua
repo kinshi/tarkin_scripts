@@ -56,7 +56,8 @@ object_draft_schematic_structure_gen_sm_win_02_schem = object_draft_schematic_st
 
    assemblySkill = "structure_assembly", 
    experimentingSkill = "structure_experimentation", 
-   customizationSkill = "structure_customization", 
+   customizationSkill = "structure_customization",
+   disableFactoryRun = true, 
 
    customizationOptions = {},
    customizationStringNames = {},

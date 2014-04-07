@@ -57,6 +57,7 @@ object_draft_schematic_structure_yt1300_house_schem = object_draft_schematic_str
    assemblySkill = "structure_assembly", 
    experimentingSkill = "structure_experimentation", 
    customizationSkill = "structure_customization", 
+   disableFactoryRun = true,
 
    customizationOptions = {},
    customizationStringNames = {},
