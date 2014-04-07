@@ -6,24 +6,17 @@ bh_armor_belt = {
 	customObjectName = "",
 	directObjectTemplate = "object/tangible/wearables/armor/bounty_hunter/armor_bounty_hunter_belt.iff",
 	craftingValues = {
-		{"armor_integrity",35000,35000,0},
-		{"armor_rating",1,1,0},
-		{"armor_effectiveness",55,55,0},
---		{"kineticeffectiveness",0,0,0},
---		{"heateffectiveness",0,0,0},
---		{"coldeffectiveness",0,0,0},
---		{"acideffectiveness",0,0,0},
---		{"electrictyeffectiveness",0,0,0},
---		{"stuneffectiveness",0,0,0},
-		{"armor_health_encumbrance",1,1,0},
-		{"armor_action_encumbrance",1,1,0},
-		{"armor_mind_encumbrance",1,1,0},
+		{"armor_integrity", 1000, 1000,0},
+		{"armor_health_encumbrance",0,0,0,0},
+		{"armor_action_encumbrance",0,0,0,0},
+		{"armor_mind_encumbrance",0,0,0,0},
 	},
 	customizationStringNames = {},
 	customizationValues = {},
-	skillMods = {
 
-	}
+	junkDealerTypeNeeded = JUNKARMOUR,
+	junkMinValue = 55,
+	junkMaxValue = 110
 }
 
 addLootItemTemplate("bh_armor_belt", bh_armor_belt)

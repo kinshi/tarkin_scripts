@@ -19,7 +19,12 @@ chitin_armor_helmet = {
 	customizationValues = {
 			{0, 1},
 			{0, 1, 2, 3, 4, 5, 6, 7, 8, 9},
-			{0, 1, 2, 3, 4}},
+			{0, 1, 2, 3, 4, 5}
+	},
+
+	junkDealerTypeNeeded = JUNKARMOUR,
+	junkMinValue = 35,
+	junkMaxValue = 70
 }
 
 addLootItemTemplate("chitin_armor_helmet", chitin_armor_helmet)
