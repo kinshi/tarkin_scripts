@@ -1,5 +1,5 @@
 event_tusken_observer_easy = Creature:new {
-	objectName = "@mob/creature_names:tusken_observer",
+	objectName = "",
 	customName = "a Tusken Observer",
 	socialGroup = "tusken_raider",
 	pvpFaction = "tusken_raider",
