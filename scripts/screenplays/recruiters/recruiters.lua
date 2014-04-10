@@ -79,12 +79,12 @@ function recruiter_convo_handler:runScreenHandlers(conversationTemplate, convers
 		
 		if (playerObjectPointer ~= nil) then
 			local playerObject = LuaPlayerObject(playerObjectPointer)
-			playerObject:setFactionStatus(1)
+			playerObject:setFactionStatus(2)
 		end
 	elseif (screenID == "accepted_go_overt") then
 		if (playerObjectPointer ~= nil) then
 			local playerObject = LuaPlayerObject(playerObjectPointer)
-			playerObject:setFactionStatus(3)
+			playerObject:setFactionStatus(2)
 		end
 		
 		createEvent(30000, "recruiter_convo_handler", "handleGoOvert", conversingPlayer)
@@ -97,7 +97,7 @@ function recruiter_convo_handler:runScreenHandlers(conversationTemplate, convers
 	
 		if (playerObjectPointer ~= nil) then
 			local playerObject = LuaPlayerObject(playerObjectPointer)
-			playerObject:setFactionStatus(3)
+			playerObject:setFactionStatus(2)
 		end
 		
 		createEvent(300000, "recruiter_convo_handler", "handleGoCovert", conversingPlayer)
@@ -110,7 +110,7 @@ function recruiter_convo_handler:runScreenHandlers(conversationTemplate, convers
 	
 		if (playerObjectPointer ~= nil) then
 			local playerObject = LuaPlayerObject(playerObjectPointer)
-			playerObject:setFactionStatus(3)
+			playerObject:setFactionStatus(1)
 		end
 		
 		createEvent(300000, "recruiter_convo_handler", "handleGoOnLeave", conversingPlayer)
@@ -125,7 +125,7 @@ function recruiter_convo_handler:runScreenHandlers(conversationTemplate, convers
 			local playerObject = LuaPlayerObject(playerObjectPointer)
 			
 			if (playerObject:isOvert()) then
-				playerObject:setFactionStatus(3)
+				playerObject:setFactionStatus(1)
 				createEvent(300000, "recruiter_convo_handler", "handleResign", conversingPlayer)
 				return conversationScreen
 			end
@@ -135,7 +135,7 @@ function recruiter_convo_handler:runScreenHandlers(conversationTemplate, convers
 	elseif (screenID == "accepted_resume_duties") then
 		if (playerObjectPointer ~= nil) then
 		local playerObject = LuaPlayerObject(playerObjectPointer)
-			playerObject:setFactionStatus(3)
+			playerObject:setFactionStatus(2)
 		end
 		
 		createEvent(30000, "recruiter_convo_handler", "handleGoCovert", conversingPlayer)
