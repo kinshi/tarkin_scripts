@@ -75,7 +75,7 @@ object_tangible_wearables_armor_mandalorian_armor_mandalorian_gloves = object_ta
 					"object/mobile/vendor/moncal_male.iff",
 					"object/mobile/vendor/nikto_male.iff",
 					"object/mobile/vendor/quarren_male.iff",
-					"object/mobile/vendor/rodian_female.iff",oh icav..there is a package waiting for you in your c-net shop
+					"object/mobile/vendor/rodian_female.iff",
 					"object/mobile/vendor/rodian_male.iff",
 					"object/mobile/vendor/sullustan_female.iff",
 					"object/mobile/vendor/sullustan_male.iff",
