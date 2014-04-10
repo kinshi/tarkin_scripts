@@ -50,7 +50,7 @@ ActionShot2Command = {
 	actionCostMultiplier = 1.25,
 	mindCostMultiplier = 0.5,
 
-	coneAngle = 15,
+	coneAngle = 60,
 	coneAction = true,
 
 	poolsToDamage = ACTION_ATTRIBUTE,
