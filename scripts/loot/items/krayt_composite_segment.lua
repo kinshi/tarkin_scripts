@@ -9,7 +9,7 @@ krayt_composite_segment = {
 		{"armor_special_type",0,0,0},
 		{"armor_effectiveness",4,18,10},
 		{"armor_integrity",5000,10000,0},
-		{"useCount",1,10,0},
+		{"useCount",5,13,0},
 	},
 	customizationStringNames = {},
 	customizationValues = {}
