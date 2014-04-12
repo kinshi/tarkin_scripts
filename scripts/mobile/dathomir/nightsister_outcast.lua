@@ -32,13 +32,14 @@ nightsister_outcast = Creature:new {
 			groups = {
 				{group = "crystals_good", chance = 500000},
 				{group = "color_crystals", chance = 500000},
-				{group = "nightsister_common", chance = 2500000},
+				{group = "nightsister_common", chance = 1500000},
 				{group = "armor_attachments", chance = 250000},
 				{group = "clothing_attachments", chance = 250000},
 				{group = "melee_weapons", chance = 2700000},
 				{group = "rifles", chance = 1100000},
 				{group = "pistols", chance = 1100000},
-				{group = "carbines", chance = 1100000}
+				{group = "carbines", chance = 1100000},
+				{group = "ns_clothing", chance = 1000000}
 			},
 			lootChance = 2600000
 		}
