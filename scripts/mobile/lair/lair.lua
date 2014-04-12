@@ -8,6 +8,7 @@ Lair = {
 	buildingsMedium = {},
 	buildingsHard = {},
 	buildingsVeryHard = {},
+
 	faction = "neutral",
 	mobType = "creature"
 }

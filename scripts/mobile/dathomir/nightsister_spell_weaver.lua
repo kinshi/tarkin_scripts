@@ -30,17 +30,18 @@ nightsister_spell_weaver = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "nightsister_rare", chance = 50000},
-				{group = "crystals_premium", chance = 500000},
-				{group = "ns_clothing", chance = 1000000},
-				{group = "nightsister_common", chance = 5950000},
-				{group = "armor_attachments", chance = 550000},
-				{group = "clothing_attachments", chance = 550000},
-				{group = "pistols", chance = 700000},
-				{group = "rifles", chance = 700000},
-				{group = "resource_deed", chance = 500000}
+				{group = "nightsister_rare", chance = 10000},
+				{group = "crystals_quality", chance = 500000},
+				{group = "color_crystals", chance = 500000},
+				{group = "nightsister_common", chance = 2790000},
+				{group = "armor_attachments", chance = 300000},
+				{group = "clothing_attachments", chance = 300000},
+				{group = "melee_weapons", chance = 2600000},
+				{group = "rifles", chance = 1000000},
+				{group = "pistols", chance = 1000000},
+				{group = "carbines", chance = 1000000}
 			},
-			lootChance = 5700000
+			lootChance = 3100000
 		}
 	},
 	weapons = {},

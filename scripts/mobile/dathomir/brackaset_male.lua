@@ -28,7 +28,14 @@ brackaset_male = Creature:new {
 
 	templates = {"object/mobile/brackaset_hue.iff"},
 	controlDeviceTemplate = "object/intangible/pet/brackaset_hue.iff",
-	lootGroups = {},
+	lootGroups = {
+		 {
+	        groups = {
+				{group = "brackaset_common", chance = 10000000}
+			},
+			lootChance = 2300000
+		}
+	},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {

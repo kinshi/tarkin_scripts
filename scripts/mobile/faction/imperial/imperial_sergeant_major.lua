@@ -10,8 +10,8 @@ imperial_sergeant_major = Creature:new {
 	baseXp = 1609,
 	baseHAM = 4500,
 	baseHAMmax = 5500,
-	armor = 1,
-	resists = {65,75,45,45,30,30,80,65,-1},
+	armor = 0,
+	resists = {0,0,0,0,0,0,0,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -23,6 +23,7 @@ imperial_sergeant_major = Creature:new {
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
 	templates = {
@@ -49,6 +50,7 @@ imperial_sergeant_major = Creature:new {
 		}						
 	},
 	weapons = {"imperial_weapons_medium"},
+	conversationTemplate = "imperial_recruiter_convotemplate",
 	attacks = merge(riflemanmaster,carbineermaster)
 }
 

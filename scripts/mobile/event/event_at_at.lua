@@ -1,14 +1,14 @@
 event_at_at = Creature:new {
 	objectName = "@mob/creature_names:at_at",
-	customName = "an AT-AT",
+	customName = "an AT-AT (event)",
 	socialGroup = "imperial",
 	pvpFaction = "imperial",
 	faction = "imperial",
-	level = 300,
-	chanceHit = 190,
+	level = 228,
+	chanceHit = 197.5,
 	damageMin = 1270,
 	damageMax = 2250,
-	baseXp = 50000,
+	baseXp = 0,
 	baseHAM = 208000,
 	baseHAMmax = 254000,
 	armor = 3,
@@ -28,18 +28,9 @@ event_at_at = Creature:new {
 	diet = NONE,
 
 	templates = {"object/mobile/atat.iff"},
-	lootGroups = {
-		{
-			groups = {
-				{group = "clothing_attachments", chance = 3300000},
-				{group = "armor_attachments", chance = 3300000},
-				{group = "resource_deed", chance = 3400000}
-			},
-			lootChance = 10000000
-		}
-	},
 	conversationTemplate = "",
 	defaultAttack = "defaultdroidattack",
 	defaultWeapon = "object/weapon/ranged/vehicle/vehicle_atst_ranged.iff",
 }
+
 CreatureTemplates:addCreatureTemplate(event_at_at, "event_at_at")

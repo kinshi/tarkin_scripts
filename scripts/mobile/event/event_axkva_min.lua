@@ -1,18 +1,18 @@
 event_axkva_min = Creature:new {
 	objectName = "@mob/creature_names:axkva_min",
-	customName = "Axkva Min",
+	customName = "Axkva Min (event)",
 	socialGroup = "nightsister",
 	pvpFaction = "nightsister",
 	faction = "nightsister",
-	level = 300,
+	level = 302,
 	chanceHit = 300,
-	damageMin = 1300,
-	damageMax = 2500,
-	baseXp = 50000,
-	baseHAM = 340000,
-	baseHAMmax = 421000,
+	damageMin = 1645,
+	damageMax = 3000,
+	baseXp = 0,
+	baseHAM = 385000,
+	baseHAMmax = 471000,
 	armor = 3,
-	resists = {80,35,35,80,80,80,80,80,-1},
+	resists = {100,35,35,100,100,100,100,100,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -28,24 +28,7 @@ event_axkva_min = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/dressed_dathomir_nightsister_axkva.iff"},
-	lootGroups = {
-		{
-			groups = {
-				{group = "nightsister_rare", chance = 2000000},
-				{group = "ns_clothing", chance = 2000000},
-				{group = "armor_attachments", chance = 2000000},
-				{group = "resource_deed", chance = 2000000},
-				{group = "clothing_attachments", chance = 20000000}
-			},
-			lootChance = 10000000
-		},
-		{
-			groups = {
-				{group = "axkva_min", chance = 10000000},
-			},
-			lootChance = 10000000
-		}
-	},
+	lootGroups = {},
 	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",
 	attacks = merge(tkamaster,forcepowermaster)

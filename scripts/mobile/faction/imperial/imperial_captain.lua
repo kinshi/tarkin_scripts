@@ -10,8 +10,8 @@ imperial_captain = Creature:new {
 	baseXp = 2914,
 	baseHAM = 8400,
 	baseHAMmax = 10200,
-	armor = 1,
-	resists = {65,75,45,45,30,30,80,65,-1},
+	armor = 0,
+	resists = {0,45,0,-1,40,-1,40,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -30,21 +30,22 @@ imperial_captain = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 7650000},
+				{group = "junk", chance = 6650000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
                 {group = "melee_weapons", chance = 550000},
                 {group = "carbines", chance = 550000},
-				{group = "clothing_attachments", chance = 25000},
-				{group = "armor_attachments", chance = 25000}
+				{group = "clothing_attachments", chance = 300000},
+				{group = "armor_attachments", chance = 300000},
+				{group = "imperial_officer_common", chance = 450000}
 			},
-			lootChance = 2800000
+			lootChance = 2900000
 		}						
 	},
 	weapons = {"imperial_weapons_medium"},
-	attacks = {},
-	conversationTemplate = "",
-	optionsBitmask = 128
+	attacks = merge(riflemanmaster,carbineermaster,brawlermaster),
+	conversationTemplate = "imperial_recruiter_convotemplate",
+	optionsBitmask = 136
 }
 
 CreatureTemplates:addCreatureTemplate(imperial_captain, "imperial_captain")

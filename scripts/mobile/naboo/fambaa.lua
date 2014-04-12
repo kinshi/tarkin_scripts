@@ -29,7 +29,14 @@ fambaa = Creature:new {
 
 	templates = {"object/mobile/fambaa.iff"},
 	controlDeviceTemplate = "object/intangible/pet/fambaa_hue.iff",
-	lootGroups = {},
+	lootGroups = {
+	 {
+	        groups = {
+				{group = "fambaa_common", chance = 10000000}
+			},
+			lootChance = 2300000
+		}
+	},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {

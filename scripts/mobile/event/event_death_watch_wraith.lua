@@ -1,16 +1,16 @@
 event_death_watch_wraith = Creature:new {
 	objectName = "@mob/creature_names:mand_bunker_dthwatch_silver",
-	customName = "Death Watch Wraith",
+	customName = "Death Watch Wraith (event)",
 	socialGroup = "death_watch",
 	pvpFaction = "death_watch",
 	faction = "",
-	level = 270,
-	chanceHit = 100,
+	level = 178,
+	chanceHit = 122.5,
 	damageMin = 1020,
 	damageMax = 1750,
-	baseXp = 100000,
-	baseHAM = 220000,
-	baseHAMmax = 230000,
+	baseXp = 0,
+	baseHAM = 120000,
+	baseHAMmax = 120000,
 	armor = 2,
 	resists = {75,75,90,80,45,45,100,70,-1},
 	meatType = "",
@@ -26,29 +26,15 @@ event_death_watch_wraith = Creature:new {
 	creatureBitmask = KILLER,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
-	scale = 1.3,
 
 	templates = {"object/mobile/dressed_death_watch_silver.iff"},
-	lootGroups = {
-		{
-			groups = {
-				{group = "death_watch_bunker_commoners",   chance = 1400000},
-				{group = "death_watch_bunker_lieutenants", chance = 1400000},
-				{group = "death_watch_bunker_ingredient_protective",  chance = 1400000},
-				{group = "death_watch_bunker_ingredient_binary",  chance = 1400000},
-				{group = "armor_attachments", chance = 1400000},
-				{group = "resource_deed", chance = 1600000},
-				{group = "clothing_attachments", chance = 1400000}
-			},
-			lootChance = 10000000
-		}
-	},
+	lootGroups = {},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
 	attacks = {
 		{"defaultattack", ""},
-		{"intimidationattack","intimidationChance=60"},
-		{"knockdownattack","knockdownChance=70"}
+		{"intimidationattack","intimidationChance=50"},
+		{"knockdownattack","knockdownChance=50"}
 	}
 }
 

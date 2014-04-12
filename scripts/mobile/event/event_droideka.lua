@@ -4,14 +4,14 @@ event_droideka = Creature:new {
 	socialGroup = "droideka",
 	pvpFaction = "",
 	faction = "",
-	level = 160,
-	chanceHit = 1,
+	level = 45,
+	chanceHit = 0.47,
 	damageMin = 395,
-	damageMax = 700,
-	baseXp = 50000,
-	baseHAM = 30700,
-	baseHAMmax = 51900,
-	armor = 2,
+	damageMax = 500,
+	baseXp = 0,
+	baseHAM = 9700,
+	baseHAMmax = 11900,
+	armor = 0,
 	resists = {30,30,30,0,30,-1,30,-1,-1},
 	meatType = "",
 	meatAmount = 0,
@@ -26,20 +26,9 @@ event_droideka = Creature:new {
 	creatureBitmask = PACK + KILLER,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
-	scale = 1.3,
 
 	templates = {"object/mobile/droideka.iff"},
-	lootGroups = {
-         {
-			groups = {
-				{group = "geonosian_cubes", chance = 2500000},
-				{group = "armor_attachments", chance = 2500000},
-				{group = "resource_deed", chance = 2500000},
-				{group = "clothing_attachments", chance = 2500000}
-			},
-			lootChance = 10000000
-	    }	
-	},
+	lootGroups = {},
 	conversationTemplate = "",
 	defaultWeapon = "object/weapon/ranged/droid/droid_droideka_ranged.iff",
 	defaultAttack = "creaturerangedattack",

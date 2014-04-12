@@ -1,18 +1,18 @@
 event_death_watch_overlord = Creature:new {
 	objectName = "",
-	customName = "a Death Watch Overlord",
+	customName = "Drartih Oure (a Death Watch Overlord) (event)",
 	socialGroup = "death_watch",
 	pvpFaction = "death_watch",
 	faction = "",
-	level = 300,
-	chanceHit = 150,
+	level = 221,
+	chanceHit = 190,
 	damageMin = 1245,
 	damageMax = 2200,
-	baseXp = 100000,
-	baseHAM = 290000,
-	baseHAMmax = 420000,
+	baseXp = 0,
+	baseHAM = 350000,
+	baseHAMmax = 350000,
 	armor = 3,
-	resists = {70,70,80,70,40,40,90,60,5},
+	resists = {80,80,90,80,45,45,100,70,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -26,22 +26,9 @@ event_death_watch_overlord = Creature:new {
 	creatureBitmask = KILLER,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
-	scale = 1.2,
 
 	templates = {"object/mobile/dressed_death_watch_gold.iff"},
-	lootGroups = {
-		{
-			groups = {
-				{group = "death_watch_bunker_overlord_shared", chance =  1600000},
-				{group = "death_watch_bunker_overlord_shared", chance =  1600000},
-				{group = "death_watch_bunker_overlord_quest", chance  = 1600000},
-				{group = "armor_attachments", chance = 1600000},
-				{group = "resource_deed", chance = 2000000},
-				{group = "clothing_attachments", chance = 1600000}
-			},
-			lootChance = 10000000
-		},
-	},
+	lootGroups = {},
 	weapons = {"dark_trooper_weapons"},
 	conversationTemplate = "",
 	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)

@@ -4,47 +4,37 @@ event_peko_peko_albatross = Creature:new {
 	socialGroup = "peko",
 	pvpFaction = "",
 	faction = "",
-	level = 255,
-	chanceHit = 100,
+	level = 155,
+	chanceHit = 77.5,
 	damageMin = 945,
 	damageMax = 1600,
-	baseXp = 50000,
-	baseHAM = 174000,
-	baseHAMmax = 221000,
+	baseXp = 0,
+	baseHAM = 74000,
+	baseHAMmax = 91000,
 	armor = 2,
 	resists = {100,80,30,80,80,90,25,25,-1},
 	meatType = "meat_avian",
-	meatAmount = 2000,
+	meatAmount = 0,
 	hideType = "hide_wooly",
-	hideAmount = 1000,
+	hideAmount = 0,
 	boneType = "bone_avian",
-	boneAmount = 1500,
+	boneAmount = 0,
 	milk = 0,
 	tamingChance = 0,
-	ferocity = 15,
+	ferocity = 8,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + HERD + KILLER,
 	optionsBitmask = 128,
 	diet = CARNIVORE,
-	scale = 2.5,
+	scale = 2.0,
 
 	templates = {"object/mobile/peko_peko_hue.iff"},
-	lootGroups = {
-	 {
-	        groups = {
-				{group = "peko_albatross", chance = 2500000},
-				{group = "armor_attachments", chance = 2500000},
-				{group = "clothing_attachments", chance = 2500000},
-				{group = "resource_deed", chance = 2500000}
-			},
-			lootChance = 10000000
-		}
-	},
+	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
 		{"creatureareacombo",""},
-		{"creatureareaknockdown","knockdownChance=60"}
+		{"creatureareaknockdown","knockdownChance=30"}
 	}
 }
 

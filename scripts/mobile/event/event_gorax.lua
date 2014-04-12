@@ -1,16 +1,16 @@
 event_gorax = Creature:new {
 	objectName = "@mob/creature_names:gorax",
-	customName = "Gorax",
+	customName = "Gorax (event)",
 	socialGroup = "gorax",
 	pvpFaction = "",
 	faction = "",
-	level = 400,
-	chanceHit = 50,
+	level = 300,
+	chanceHit = 30,
 	damageMin = 1645,
-	damageMax = 2500,
-	baseXp = 100000,
-	baseHAM = 445000,
-	baseHAMmax = 5221000,
+	damageMax = 3000,
+	baseXp = 0,
+	baseHAM = 385000,
+	baseHAMmax = 471000,
 	armor = 3,
 	resists = {65,65,65,65,65,65,65,65,1},
 	meatType = "",
@@ -26,20 +26,9 @@ event_gorax = Creature:new {
 	creatureBitmask = PACK + KILLER,
 	optionsBitmask = 128,
 	diet = CARNIVORE,
-	scale = 1.1,
 
 	templates = {"object/mobile/gorax.iff"},
-	lootGroups = {
-	 {
-	        groups = {
-				{group = "gorax_common", chance = 2500000},
-				{group = "armor_attachments", chance = 2500000},
-				{group = "resource_deed", chance = 2500000},
-				{group = "clothing_attachments", chance = 2500000}
-			},
-			lootChance = 10000000
-		}
-	},
+	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {

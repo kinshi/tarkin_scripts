@@ -10,8 +10,8 @@ imperial_inquisitor = Creature:new {
 	baseXp = 11296,
 	baseHAM = 44000,
 	baseHAMmax = 54000,
-	armor = 1,
-	resists = {65,75,45,45,30,30,80,65,-1},
+	armor = 0,
+	resists = {50,50,50,0,50,0,50,50,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -22,7 +22,8 @@ imperial_inquisitor = Creature:new {
 	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
-	creatureBitmask = PACK,
+	creatureBitmask = PACK + KILLER,
+	optionsBitmask = 128,
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/dressed_imperial_inquisitor_human_male_01.iff"},
@@ -33,16 +34,17 @@ imperial_inquisitor = Creature:new {
 				{group = "junk", chance = 7650000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
-                {group = "melee_weapons", chance = 550000},
-                {group = "carbines", chance = 550000},
+				{group = "melee_weapons", chance = 550000},
+				{group = "carbines", chance = 550000},
 				{group = "clothing_attachments", chance = 25000},
 				{group = "armor_attachments", chance = 25000}
 			},
 			lootChance = 2800000
-		}						
+		}
 	},
-	weapons = {},
-	attacks = {}
+	weapons = {"imperial_weapons_heavy"},
+	conversationTemplate = "",
+	attacks = merge(riflemanmaster,carbineermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(imperial_inquisitor, "imperial_inquisitor")

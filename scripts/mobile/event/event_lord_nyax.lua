@@ -4,15 +4,15 @@ event_lord_nyax = Creature:new {
 	socialGroup = "followers_of_lord_nyax",
 	pvpFaction = "followers_of_lord_nyax",
 	faction = "followers_of_lord_nyax",
-	level = 200,
-	chanceHit = 10,
+	level = 129,
+	chanceHit = 4.9,
 	damageMin = 775,
 	damageMax = 1260,
-	baseXp = 55235,
-	baseHAM = 108000,
-	baseHAMmax = 131000,
+	baseXp = 0,
+	baseHAM = 51000,
+	baseHAMmax = 62000,
 	armor = 2,
-	resists = {80,45,40,20,50,100,10,15,5},
+	resists = {80,45,40,20,50,100,10,15,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -28,18 +28,7 @@ event_lord_nyax = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/dressed_lord_nyax.iff"},
-	lootGroups = {
-		{
-		groups = {
-				{group = "resource_deed", chance = 2000000},
-				{group = "crystals_quality", chance = 2000000},
-				{group = "nyax", chance = 2000000},
-				{group = "armor_attachments", chance = 2000000},
-				{group = "clothing_attachments", chance = 2000000}
-			},
-			lootChance = 10000000
-		}
-	},
+	lootGroups = {},
 	weapons = {"nyaxs_weapons"},
 	conversationTemplate = "",
 	attacks = merge(brawlermaster,swordsmanmaster)
