@@ -38,7 +38,7 @@ nightsister_stalker = Creature:new {
 				{group = "melee_weapons", chance = 2700000},
 				{group = "rifles", chance = 1100000},
 				{group = "pistols", chance = 1100000},
-				{group = "carbines", chance = 1100000}
+				{group = "carbines", chance = 1100000},
 				{group = "ns_clothing", chance = 1000000}
 			},
 			lootChance = 2900000
