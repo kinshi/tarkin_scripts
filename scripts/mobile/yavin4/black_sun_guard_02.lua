@@ -33,11 +33,11 @@ black_sun_guard_02 = Creature:new {
 			groups = {
 				{group = "junk", chance = 3500000},
 				{group = "pistols", chance = 1750000},
-				{group = "melee_blacksun_razor", chance = 750000},
+				{group = "blacksun_rare", chance = 750000},
 				{group = "carbines", chance = 2750000},
 				{group = "jetpack_parts", chance = 500000},				
 				{group = "bounty_hunter_armor_looted", chance = 700000},
-				{group = "jetpack_base", chance = 50000},
+				{group = "jetpack_base", chance = 50000}
 			},
 			lootChance = 4500000
 		}	
