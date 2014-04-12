@@ -11,7 +11,7 @@ kimogila_scales = {
 		{"coldeffectiveness",3,8,10},
 		{"armor_action_encumbrance",4,-2,0},
 		{"armor_mind_encumbrance",4,-2,0},
-		{"useCount",1,10,0},
+		{"useCount",5,13,0},
 	},
 	customizationStringNames = {},
 	customizationValues = {}
