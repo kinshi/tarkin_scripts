@@ -3,7 +3,7 @@ tusken_king = Creature:new {
 	socialGroup = "tusken_raider",
 	pvpFaction = "tusken_raider",
 	faction = "tusken_raider",
-	level = 100,
+	level = 120,
 	chanceHit = 1,
 	damageMin = 645,
 	damageMax = 1000,
@@ -11,7 +11,7 @@ tusken_king = Creature:new {
 	baseHAM = 24000,
 	baseHAMmax = 30000,
 	armor = 2,
-	resists = {45,35,5,80,-1,50,5,5,-1},
+	resists = {55,45,10,80,-1,60,10,10,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -30,14 +30,15 @@ tusken_king = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 1500000},
+				{group = "junk", chance = 500000},
 				{group = "tusken_common", chance = 5000000},
 				{group = "bone_armor", chance = 750000},
 				{group = "chitin_armor", chance = 750000},
 				{group = "armor_attachments", chance = 500000},
 				{group = "clothing_attachments", chance = 500000},
 				{group = "color_crystals", chance = 500000},
-				{group = "crystals_quality", chance = 500000}
+				{group = "crystals_quality", chance = 500000},
+				{group = "resource_deed", chance = 1000000}
 			},
 			lootChance = 4000000
 		}			
