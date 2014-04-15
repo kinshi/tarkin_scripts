@@ -28,7 +28,19 @@ gcw_at_st = Creature:new {
 	diet = NONE,
 
 	templates = {"object/mobile/atst.iff"},
-	lootGroups = {},
+	lootGroups = {
+			groups = {
+				{group = "av_21", chance = 10000000},
+			},
+			lootChance = 500000
+		},
+		{
+			groups = {
+				{group = "droid_loot", chance = 10000000},
+			},
+			lootChance = 5000000
+		},
+},
 	conversationTemplate = "",
 	defaultAttack = "defaultdroidattack",
 	defaultWeapon = "object/weapon/ranged/vehicle/vehicle_atst_ranged.iff",
