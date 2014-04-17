@@ -50,7 +50,7 @@ BurstShot2Command = {
 	actionCostMultiplier = 1.25,
 	mindCostMultiplier = 0.5,
         accuracyBonus = 25,
-	coneAngle = 15,
+	coneAngle = 60,
 	coneAction = true,
 
 	poolsToDamage = RANDOM_ATTRIBUTE,

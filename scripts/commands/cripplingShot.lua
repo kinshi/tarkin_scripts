@@ -49,7 +49,7 @@ CripplingShotCommand = {
 	healthCostMultiplier = 0.5,
 	actionCostMultiplier = 2.0,
 	mindCostMultiplier = 0.5,
-	accuracyBonus = 25,
+	accuracyBonus = 50,
 
 	poolsToDamage = RANDOM_ATTRIBUTE,
 
