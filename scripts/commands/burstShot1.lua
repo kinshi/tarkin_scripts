@@ -49,7 +49,7 @@ BurstShot1Command = {
 	healthCostMultiplier = 1.75,
 	actionCostMultiplier = 1.25,
 	mindCostMultiplier = 0.5,
-        accuracyBonus = 25,
+        accuracyBonus = 50,
 
 	poolsToDamage = RANDOM_ATTRIBUTE,
 

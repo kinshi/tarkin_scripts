@@ -49,7 +49,7 @@ LegShot3Command = {
 	healthCostMultiplier = 0.5,
 	actionCostMultiplier = 2.0,
 	mindCostMultiplier = 2.0,
-	accuracyBonus = 25,
+	accuracyBonus = 50,
 
 	stateEffects = {
 	  StateEffect( 

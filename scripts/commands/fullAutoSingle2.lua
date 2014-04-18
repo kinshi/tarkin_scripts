@@ -49,7 +49,7 @@ FullAutoSingle2Command = {
 	healthCostMultiplier = 2.0,
 	actionCostMultiplier = 2.5,
 	mindCostMultiplier = 0.5,
-	accuracyBonus = 25,
+	accuracyBonus = 50,
 
 	animationCRC = hashCode("fire_7_single_medium_face"),
 
