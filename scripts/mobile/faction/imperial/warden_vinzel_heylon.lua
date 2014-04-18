@@ -32,13 +32,13 @@ warden_vinzel_heylon = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 7000000},
+				{group = "junk", chance = 5000000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
 				{group = "melee_weapons", chance = 550000},
 				{group = "carbines", chance = 550000},
-				{group = "clothing_attachments", chance = 350000},
-				{group = "armor_attachments", chance = 350000}
+				{group = "clothing_attachments", chance = 1350000},
+				{group = "armor_attachments", chance = 1350000}
 			},
 			lootChance = 4800000
 		}

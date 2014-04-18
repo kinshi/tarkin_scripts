@@ -13,11 +13,11 @@ krayt_dragon_ancient = Creature:new {
 	armor = 3,
 	resists = {95,95,95,95,65,95,95,95,-1},
 	meatType = "meat_carnivore",
-	meatAmount = 1000,
+	meatAmount = 1500,
 	hideType = "hide_bristley",
-	hideAmount = 950,
+	hideAmount = 1500,
 	boneType = "bone_mammal",
-	boneAmount = 905,
+	boneAmount = 1500,
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 30,
@@ -34,7 +34,7 @@ krayt_dragon_ancient = Creature:new {
 				{group = "krayt_dragon_common", chance = 3300000},
 				{group = "pearls_flawless", chance = 3400000}				
 			},
-			lootChance = 6500000
+			lootChance = 8000000
 		},
 		{
 	        groups = {
@@ -43,7 +43,7 @@ krayt_dragon_ancient = Creature:new {
 				{group = "melee_two_handed", chance = 2500000},
 				{group = "rifles", chance = 2500000}				
 			},
-			lootChance = 3500000
+			lootChance = 9000000
 		}
 	},
 	weapons = {},

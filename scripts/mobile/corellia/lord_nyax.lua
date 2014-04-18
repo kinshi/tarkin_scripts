@@ -32,10 +32,9 @@ lord_nyax = Creature:new {
 		groups = {
 				{group = "resource_deed", chance = 500000},
 				{group = "crystals_quality", chance = 500000},
-				{group = "nyax", chance = 3000000},
-				{group = "melee_two_handed", chance = 3000000},
-				{group = "armor_attachments", chance = 1500000},
-				{group = "clothing_attachments", chance = 1500000}
+				{group = "nyax", chance = 5000000},
+				{group = "armor_attachments", chance = 2000000},
+				{group = "clothing_attachments", chance = 2000000}
 			},
 			lootChance = 7500000
 		}

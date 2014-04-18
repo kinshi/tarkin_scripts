@@ -9,18 +9,16 @@ LordNyaxCultScreenPlay = ScreenPlay:new {
 		6036035
 	},
 	
-	lootLevel = 95,	
+	lootLevel = 100,	
 
 	lootGroups = {
 		{
 			groups = {
-				{group = "color_crystals", chance = 1000000},
-				{group = "holocron_dark", chance = 250000},
-				{group = "holocron_light", chance = 250000},
-				{group = "holocron_splinters", chance = 400000},
-				{group = "resource_deed", chance = 600000},
-				{group = "rifles", chance = 2000000},
-				{group = "melee_two_handed", chance = 2500000},
+				{group = "holocron_dark", chance = 1000000},
+				{group = "holocron_light", chance = 1000000},
+				{group = "holocron_splinters", chance = 1000000},
+				{group = "resource_deed", chance = 1500000},
+				{group = "nyax", chance = 2500000},
 				{group = "clothing_attachments", chance = 1500000},
 				{group = "armor_attachments", chance = 1500000}
 			},

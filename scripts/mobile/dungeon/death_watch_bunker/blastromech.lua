@@ -27,7 +27,12 @@ blastromech = Creature:new {
 	diet = NONE,
 
 	templates = {"object/mobile/blastromech.iff"},
-	lootGroups = {},
+	lootGroups = {
+			groups = {
+				{group = "droid_loot", chance = 10000000},
+			},
+			lootChance = 2500000
+},
 	conversationTemplate = "",
 	defaultAttack = "creaturerangedattack",
 	defaultWeapon = "object/weapon/ranged/droid/droid_astromech_ranged.iff",

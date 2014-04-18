@@ -30,16 +30,12 @@ nightsister_protector = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "nightsister_rare", chance = 25000},
-				{group = "crystals_select", chance = 500000},
-				{group = "color_crystals", chance = 500000},
-				{group = "nightsister_common", chance = 1775000},
-				{group = "armor_attachments", chance = 350000},
-				{group = "clothing_attachments", chance = 350000},
-				{group = "melee_weapons", chance = 2500000},
-				{group = "rifles", chance = 1000000},
-				{group = "pistols", chance = 1000000},
-				{group = "carbines", chance = 1000000},
+				{group = "nightsister_rare", chance = 1000000},
+				{group = "crystals_select", chance = 750000},
+				{group = "color_crystals", chance = 750000},
+				{group = "nightsister_common", chance = 4000000},
+				{group = "armor_attachments", chance = 1250000},
+				{group = "clothing_attachments", chance = 1250000},
 				{group = "resource_deed", chance = 1000000}
 			},
 			lootChance = 3600000

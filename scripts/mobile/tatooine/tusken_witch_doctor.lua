@@ -30,14 +30,13 @@ tusken_witch_doctor = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 500000},
-				{group = "tusken_common", chance = 5000000},
+				{group = "tusken_common", chance = 4000000},
 				{group = "bone_armor", chance = 750000},
 				{group = "chitin_armor", chance = 750000},
-				{group = "armor_attachments", chance = 500000},
-				{group = "clothing_attachments", chance = 500000},
+				{group = "armor_attachments", chance = 1250000},
+				{group = "clothing_attachments", chance = 1250000},
 				{group = "color_crystals", chance = 500000},
-				{group = "crystals_premium", chance = 500000},
+				{group = "crystals_quality", chance = 500000},
 				{group = "resource_deed", chance = 1000000}
 			},
 			lootChance = 6000000

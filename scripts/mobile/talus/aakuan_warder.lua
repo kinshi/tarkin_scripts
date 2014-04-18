@@ -32,8 +32,7 @@ aakuan_warder = Creature:new {
 	lootGroups = {
 	    {
 		    groups = {
-				{group = "junk", chance = 1600000},
-				{group = "aakuan_common", chance = 1300000},
+				{group = "aakuan_common", chance = 2700000},
 				{group = "armor_attachments", chance = 1400000},
 				{group = "clothing_attachments", chance = 1400000},
 				{group = "rifles", chance = 1500000},
