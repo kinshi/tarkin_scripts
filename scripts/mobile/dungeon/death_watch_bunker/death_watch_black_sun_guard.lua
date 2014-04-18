@@ -30,7 +30,10 @@ death_watch_black_sun_guard = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "death_watch_bunker_commoners", chance = 10000000}
+				{group = "death_watch_bunker_commoners", chance = 5000000},
+				{group = "jetpack_parts", chance = 1000000},				
+				{group = "bounty_hunter_armor", chance = 3500000},
+				{group = "jetpack_base", chance = 500000}
 			},
 			lootChance = 1000000
 		}

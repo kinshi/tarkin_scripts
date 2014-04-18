@@ -31,13 +31,13 @@ assault_trooper = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 200000},
-				{group = "junk", chance = 5100000},
+				{group = "junk", chance = 3100000},
 				{group = "rifles", chance = 800000},
 				{group = "pistols", chance = 800000},
 				{group = "carbines", chance = 800000},
 				{group = "melee_weapons", chance = 1200000},
-				{group = "clothing_attachments", chance = 200000},
-				{group = "armor_attachments", chance = 200000},
+				{group = "clothing_attachments", chance = 1200000},
+				{group = "armor_attachments", chance = 1200000},
 				{group = "stormtrooper_common", chance = 700000}
 			},
 			lootChance = 2500000

@@ -30,13 +30,12 @@ black_sun_guard = Creature:new {
 	lootGroups = {
          {
 			groups = {
-				{group = "junk", chance = 6500000},
-				{group = "pistols", chance = 750000},
-				{group = "rifles", chance = 750000},
-				{group = "carbines", chance = 750000},
-				{group = "jetpack_parts", chance = 500000},				
-				{group = "bounty_hunter_armor", chance = 700000},
-				{group = "jetpack_base", chance = 50000},
+				{group = "pistols", chance = 1750000},
+				{group = "rifles", chance = 1750000},
+				{group = "carbines", chance = 1750000},
+				{group = "jetpack_parts", chance = 1000000},				
+				{group = "bounty_hunter_armor", chance = 3250000},
+				{group = "jetpack_base", chance = 500000}
 			},
 			lootChance = 3500000
 		}	

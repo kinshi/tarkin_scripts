@@ -33,8 +33,15 @@ acklay = Creature:new {
 			groups = {
 				{group = "acklay", chance = 10000000}
 			},
-			lootChance = 7500000
-		}
+			lootChance = 8000000
+		},
+		{
+			groups = {
+				{group = "clothing_attachment", chance = 5000000},
+				{group = "armor_attachment", chance = 5000000}
+			},
+			lootChance = 3500000
+		},
 	},
 	weapons = {},
 	conversationTemplate = "",
