@@ -29,6 +29,7 @@ gcw_rebel_defence_droid = Creature:new {
 
 	templates = {"object/mobile/droideka.iff"},
 	lootGroups = {
+		{
 			groups = {
 				{group = "av_21", chance = 10000000},
 			},

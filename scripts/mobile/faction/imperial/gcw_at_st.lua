@@ -29,6 +29,7 @@ gcw_at_st = Creature:new {
 
 	templates = {"object/mobile/atst.iff"},
 	lootGroups = {
+		{
 			groups = {
 				{group = "av_21", chance = 10000000},
 			},

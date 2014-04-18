@@ -44,7 +44,7 @@ gcw_senior_specforce_wilderness_scout = Creature:new {
                 		{group = "melee_weapons", chance = 1000000},
                 		{group = "carbines", chance = 1000000},
 				{group = "clothing_attachments", chance = 1100000},
-				{group = "armor_attachments", chance = `1100000}
+				{group = "armor_attachments", chance = 1100000}
 			},
 			lootChance = 3000000
 		}	

@@ -190,7 +190,9 @@ TreFiles = {
 	"data_sample_01.tre",
 	"data_sample_00.tre",
 	"data_music_00.tre",
-	"bottom.tre"
+	"bottom.tre",
+	"tarkin_post14.tre",
+	"tarkin_pre14.tre"
 }
 
 --Status Server Config
