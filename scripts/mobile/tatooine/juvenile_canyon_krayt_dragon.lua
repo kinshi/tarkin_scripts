@@ -3,13 +3,13 @@ juvenile_canyon_krayt_dragon = Creature:new {
 	socialGroup = "Krayt",
 	pvpFaction = "",
 	faction = "",
-	level = 122,
+	level = 150,
 	chanceHit = 4.0,
 	damageMin = 745,
 	damageMax = 1200,
-	baseXp = 11577,
-	baseHAM = 54000,
-	baseHAMmax = 64000,
+	baseXp = 21577,
+	baseHAM = 94000,
+	baseHAMmax = 112000,
 	armor = 2,
 	resists = {70,70,15,15,10,15,15,15,-1},
 	meatType = "meat_carnivore",
@@ -45,7 +45,7 @@ juvenile_canyon_krayt_dragon = Creature:new {
 				{group = "rifles", chance = 2000000},
 				{group = "wearables_all", chance = 2000000},				
 			},
-			lootChance = 2500000
+			lootChance = 4000000
 		}
 	},
 	weapons = {},

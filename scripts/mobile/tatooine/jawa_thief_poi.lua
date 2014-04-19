@@ -1,17 +1,17 @@
-jawa_thief = Creature:new {
+jawa_thief_poi = Creature:new {
 	objectName = "@mob/creature_names:jawa_thief",
 	socialGroup = "jawa",
 	pvpFaction = "jawa",
 	faction = "jawa",
-	level = 90,
-	chanceHit = 0.4,
-	damageMin = 300,
-	damageMax = 600,
-	baseXp = 16097,
-	baseHAM = 35000,
-	baseHAMmax = 45000,
+	level = 9,
+	chanceHit = 0.27,
+	damageMin = 80,
+	damageMax = 90,
+	baseXp = 235,
+	baseHAM = 675,
+	baseHAMmax = 825,
 	armor = 1,
-	resists = {25,25,-1,25,25,25,25,-1,-1},
+	resists = {0,0,0,0,0,0,0,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -30,14 +30,16 @@ jawa_thief = Creature:new {
 	lootGroups = {
 	    {
 			groups = {
-				{group = "junk", chance = 5000000},
-				{group = "jawa_common", chance = 1500000},
+				{group = "jawa_common", chance = 4100000},
 				{group = "armor_all", chance = 800000},
 				{group = "tailor_components", chance = 1000000},
-				{group = "loot_kit_parts", chance = 1500000},
+				{group = "loot_kit_parts", chance = 1000000},
+				{group = "nge_house_jabba", chance = 400000},
+				{group = "clothing_attachments", chance = 1250000},
+				{group = "clothing_attachments", chance = 1250000},
 				{group = "color_crystals", chance = 200000}
 			},
-			lootChance = 2900000
+			lootChance = 3500000
 		}					
 	},
 	weapons = {"jawa_warlord_weapons"},
@@ -45,4 +47,4 @@ jawa_thief = Creature:new {
 	attacks = merge(marksmanmaster,riflemannovice)
 }
 
-CreatureTemplates:addCreatureTemplate(jawa_thief, "jawa_thief")
+CreatureTemplates:addCreatureTemplate(jawa_thief_poi, "jawa_thief_poi")
