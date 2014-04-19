@@ -1,17 +1,17 @@
-jawa_protector = Creature:new {
+jawa_protector_poi = Creature:new {
 	objectName = "@mob/creature_names:jawa_protector",
 	socialGroup = "jawa",
 	pvpFaction = "jawa",
 	faction = "jawa",
-	level = 17,
-	chanceHit = 0.31,
-	damageMin = 170,
-	damageMax = 180,
-	baseXp = 1257,
-	baseHAM = 2900,
-	baseHAMmax = 3500,
+	level = 110,
+	chanceHit = 0.5,
+	damageMin = 400,
+	damageMax = 800,
+	baseXp = 20097,
+	baseHAM = 40000,
+	baseHAMmax = 55000,
 	armor = 2,
-	resists = {35,35,35,35,-1,35,35,-1,-1},
+	resists = {15,10,-1,0,0,-1,0,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -30,14 +30,17 @@ jawa_protector = Creature:new {
 	lootGroups = {
 	    {
 			groups = {
-				{group = "junk", chance = 5000000},
-				{group = "jawa_common", chance = 1500000},
+				{group = "jawa_common", chance = 3000000},
 				{group = "armor_all", chance = 800000},
 				{group = "tailor_components", chance = 1000000},
-				{group = "loot_kit_parts", chance = 1500000},
+				{group = "loot_kit_parts", chance = 1000000},
+				{group = "nge_house_jabba", chance = 1000000},
+				{group = "resource_deed", chance = 500000},
+				{group = "clothing_attachments", chance = 1250000},
+				{group = "clothing_attachments", chance = 1250000},
 				{group = "color_crystals", chance = 200000}
 			},
-			lootChance = 2900000
+			lootChance = 5900000
 		}				
 	},
 	weapons = {"jawa_warlord_weapons"},
@@ -45,4 +48,4 @@ jawa_protector = Creature:new {
 	attacks = merge(marksmanmaster,riflemannovice)
 }
 
-CreatureTemplates:addCreatureTemplate(jawa_protector, "jawa_protector")
+CreatureTemplates:addCreatureTemplate(jawa_protector_poi, "jawa_protector_poi")

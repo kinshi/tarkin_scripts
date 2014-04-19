@@ -3,15 +3,15 @@ jawa = Creature:new {
 	socialGroup = "jawa",
 	pvpFaction = "jawa",
 	faction = "jawa",
-	level = 6,
+	level = 40,
 	chanceHit = 0.25,
-	damageMin = 50,
-	damageMax = 55,
-	baseXp = 147,
-	baseHAM = 180,
-	baseHAMmax = 220,
+	damageMin = 150,
+	damageMax = 270,
+	baseXp = 9097,
+	baseHAM = 22000,
+	baseHAMmax = 29000,
 	armor = 0,
-	resists = {-1,25,25,25,25,25,25,-1,-1},
+	resists = {15,15,15,15,15,15,15,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -30,14 +30,17 @@ jawa = Creature:new {
 	lootGroups = {
 	    {
 			groups = {
-				{group = "junk", chance = 5000000},
+				{group = "junk", chance = 2400000},
 				{group = "jawa_common", chance = 1500000},
 				{group = "armor_all", chance = 800000},
 				{group = "tailor_components", chance = 1000000},
 				{group = "loot_kit_parts", chance = 1500000},
+				{group = "nge_house_jabba", chance = 100000},
+				{group = "clothing_attachments", chance = 1250000},
+				{group = "armor_attachments", chance = 1250000},
 				{group = "color_crystals", chance = 200000}
 			},
-			lootChance = 2900000
+			lootChance = 2500000
 		}						
 	},
 	weapons = {"novice_weapons"},
