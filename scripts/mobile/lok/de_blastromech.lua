@@ -28,11 +28,11 @@ de_blastromech = Creature:new {
 
 	templates = {"object/mobile/blastromech.iff"},
 	lootGroups = {
-				{group = "droid_loot", chance = 1500000},
-				{group = "nyms_common", chance = 2000000},
+				{group = "droid_loot", chance = 2000000},
+				{group = "nyms_common", chance = 2500000},
 				{group = "pistols", chance = 1000000},
 				{group = "carbines", chance = 1000000},
-				{group = "tailor_components", chance = 1500000},
+				{group = "nge_house_mustafar", chance = 500000},
 				{group = "clothing_attachments", chance = 1500000},
 				{group = "armor_attachments", chance = 1500000}
 },

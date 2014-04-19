@@ -31,14 +31,15 @@ tusken_warlord = Creature:new {
 		{
 			groups = {
 				{group = "junk", chance = 1500000},
-				{group = "tusken_common", chance = 3500000},
+				{group = "tusken_common", chance = 3000000},
 				{group = "wearables_common", chance = 1000000},
 				{group = "wearables_uncommon", chance = 500000},
-				{group = "bone_armor", chance = 750000},
-				{group = "chitin_armor", chance = 750000},
+				{group = "bone_armor", chance = 500000},
+				{group = "chitin_armor", chance = 500000},
 				{group = "armor_attachments", chance = 500000},
 				{group = "clothing_attachments", chance = 500000},
 				{group = "color_crystals", chance = 500000},
+				{group = "nge_house_sand_crawler", chance = 1000000},
 				{group = "crystals_good", chance = 500000}
 			},
 			lootChance = 3200000

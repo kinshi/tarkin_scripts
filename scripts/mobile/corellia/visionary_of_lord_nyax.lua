@@ -32,12 +32,13 @@ visionary_of_lord_nyax = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 1700000},
-				{group = "melee_two_handed", chance = 2700000},
-				{group = "armor_attachments", chance = 1000000},
-               			{group = "clothing_attachments", chance = 1000000},
+				{group = "junk", chance = 1200000},
+				{group = "melee_two_handed", chance = 1200000},
+				{group = "armor_attachments", chance = 1500000},
+               	{group = "clothing_attachments", chance = 1500000},
 				{group = "force_color_crystal", chance = 1200000},
 				{group = "printer_parts", chance = 1700000},
+				{group = "nge_house_bespin", chance = 1000000},
 				{group = "holocron_splinters", chance = 700000}
 			},
 			lootChance = 3000000

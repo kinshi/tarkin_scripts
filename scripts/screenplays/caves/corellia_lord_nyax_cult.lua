@@ -18,11 +18,12 @@ LordNyaxCultScreenPlay = ScreenPlay:new {
 				{group = "holocron_light", chance = 1000000},
 				{group = "holocron_splinters", chance = 1000000},
 				{group = "resource_deed", chance = 1500000},
-				{group = "nyax", chance = 2500000},
+				{group = "nyax", chance = 1500000},
+				{group = "nge_house_bespin", chance = 1000000},
 				{group = "clothing_attachments", chance = 1500000},
 				{group = "armor_attachments", chance = 1500000}
 			},
-			lootChance = 8000000
+			lootChance = 10000000
 		}					
 	},
 	

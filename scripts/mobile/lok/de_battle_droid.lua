@@ -37,7 +37,7 @@ de_battle_droid = Creature:new {
 				{group = "nyms_common", chance = 2000000},
 				{group = "pistols", chance = 1000000},
 				{group = "carbines", chance = 1000000},
-				{group = "tailor_components", chance = 1500000},
+				{group = "nge_house_mustafar", chance = 1500000},
 				{group = "clothing_attachments", chance = 1500000},
 				{group = "armor_attachments", chance = 1500000}
 			},

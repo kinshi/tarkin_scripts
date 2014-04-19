@@ -1,8 +1,8 @@
-nge_hut_house_deed = {
+nge_hut_house_scheme = {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	customObjectName = "",
-	directObjectTemplate = "object/tangible/deed/player_house_deed/sm_hut_deed.iff",
+	directObjectTemplate = "object/draft_schematic/structure/sm_hut_schem.iff",
 	craftingValues = {
 	},
 	customizationStringNames = {},
@@ -12,4 +12,4 @@ nge_hut_house_deed = {
 	}
 }
 
-addLootItemTemplate("nge_hut_house_deed", nge_hut_house_deed)
+addLootItemTemplate("nge_hut_house_scheme", nge_hut_house_scheme)

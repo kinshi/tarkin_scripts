@@ -3,7 +3,7 @@ nge_house_bespin = {
 	minimumLevel = 0,
 	maximumLevel = 0,	
 	lootItems = {
-		{itemTemplate = "nge_bespin_house_deed", weight = 10000000},	
+		{itemTemplate = "nge_bespin_house_scheme", weight = 10000000},	
 	}
 }
 
