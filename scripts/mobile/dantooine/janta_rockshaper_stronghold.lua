@@ -32,12 +32,13 @@ janta_rockshaper_stronghold = Creature:new {
 	lootGroups = {
 	    {
 			groups = {
-				{group = "janta_common", chance = 3000000},
-				{group = "loot_kit_parts", chance = 1500000},
+				{group = "janta_common", chance = 2800000},
+				{group = "loot_kit_parts", chance = 1000000},
 				{group = "clothing_attachments", chance = 1250000},
 				{group = "armor_attachments", chance = 1250000},
-				{group = "binayre_common", chance = 1300000},
+				{group = "binayre_common", chance = 1000000},
 				{group = "forage_medical_component", chance = 1500000},
+				{group = "nge_house_hut", chance = 1000000},
 				{group = "forage_rare", chance = 200000}
 			},
 			lootChance = 75000000

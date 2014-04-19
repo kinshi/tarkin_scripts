@@ -19,8 +19,9 @@ JantaCaveScreenPlay = ScreenPlay:new {
 				{group = "janta_common", chance = 2500000},
 				{group = "resource_deed", chance = 1000000},
 				{group = "forage_medical_component", chance = 1500000},
-				{group = "clothing_attachments", chance = 2500000},
-				{group = "armor_attachments", chance = 2500000}
+				{group = "clothing_attachments", chance = 2000000},
+				{group = "nge_house_hut", chance = 1000000},
+				{group = "armor_attachments", chance = 2000000}
 			},
 			lootChance = 8000000
 		}					
