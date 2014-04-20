@@ -1,4 +1,4 @@
-nge_bespin_house_scheme = {
+nge_commando_house_scheme = {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	customObjectName = "",
