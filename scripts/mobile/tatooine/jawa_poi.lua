@@ -1,4 +1,4 @@
-jawa_poi = Creature:new {
+jawa = Creature:new {
 	objectName = "@mob/creature_names:jawa",
 	socialGroup = "jawa",
 	pvpFaction = "jawa",
@@ -48,4 +48,4 @@ jawa_poi = Creature:new {
 	attacks = merge(marksmannovice)
 }
 
-CreatureTemplates:addCreatureTemplate(jawa_poi, "jawa_poi")
+CreatureTemplates:addCreatureTemplate(jawa, "jawa")
