@@ -432,7 +432,7 @@ includeFile("tatooine/young_mountain_squill.lua")
 includeFile("tatooine/zucca_boar.lua")
 --Tarkin Specific
 includeFile("tatooine/jawa_engineer_poi.lua")
-includeFile("tatooine/jawa_jawa_poi.lua")
+includeFile("tatooine/jawa_poi.lua")
 includeFile("tatooine/jawa_protector_poi.lua")
 includeFile("tatooine/jawa_leader_poi.lua")
 includeFile("tatooine/jawa_thief_poi.lua")
