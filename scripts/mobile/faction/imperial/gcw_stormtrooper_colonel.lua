@@ -32,15 +32,14 @@ gcw_stormtrooper_colonel = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 6050000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
 				{group = "melee_weapons", chance = 550000},
 				{group = "carbines", chance = 550000},
-				{group = "clothing_attachments", chance = 350000},
-				{group = "armor_attachments", chance = 350000},
-				{group = "imperial_officer_common", chance = 450000},
-				{group = "stormtrooper_common", chance = 500000}
+				{group = "clothing_attachments", chance = 1350000},
+				{group = "armor_attachments", chance = 1350000},
+				{group = "imperial_officer_common", chance = 1450000},
+				{group = "stormtrooper_common", chance = 3550000}
 			},
 			lootChance = 3500000
 		}

@@ -4,12 +4,12 @@ giant_canyon_krayt_dragon = Creature:new {
 	pvpFaction = "",
 	faction = "",
 	level = 300,
-	chanceHit = 30.0,
-	damageMin = 1645,
-	damageMax = 3000,
+	chanceHit = 25.0,
+	damageMin = 1100,
+	damageMax = 2200,
 	baseXp = 28549,
-	baseHAM = 385000,
-	baseHAMmax = 471000,
+	baseHAM = 300000,
+	baseHAMmax = 371000,
 	armor = 3,
 	resists = {70,70,70,70,30,70,70,70,-1},
 	meatType = "meat_carnivore",
@@ -36,7 +36,7 @@ giant_canyon_krayt_dragon = Creature:new {
 				{group = "krayt_tissue_uncommon", chance = 3300000},
 				{group = "pearls_premium", chance = 3300000}					
 			},
-			lootChance = 6500000
+			lootChance = 7000000
 		},
 		{
 	        groups = {
@@ -45,7 +45,7 @@ giant_canyon_krayt_dragon = Creature:new {
 				{group = "melee_two_handed", chance = 2500000},
 				{group = "rifles", chance = 2500000}				
 			},
-			lootChance = 2500000
+			lootChance = 4000000
 		}
 	},
 	weapons = {},

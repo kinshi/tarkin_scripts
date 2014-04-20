@@ -32,14 +32,13 @@ gcw_stormtrooper_squad_leader = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 6500000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
                 		{group = "melee_weapons", chance = 550000},
                 		{group = "carbines", chance = 550000},
-				{group = "clothing_attachments", chance = 250000},
-				{group = "armor_attachments", chance = 250000},
-				{group = "stormtrooper_common", chance = 700000}
+				{group = "clothing_attachments", chance = 1250000},
+				{group = "armor_attachments", chance = 1250000},
+				{group = "stormtrooper_common", chance = 5200000}
 			},
 			lootChance = 2800000
 		}						

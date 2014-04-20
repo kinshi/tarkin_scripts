@@ -7,12 +7,12 @@ NightSisterStrongholdScreenPlay = ScreenPlay:new {
 		5035775
 	},
 
-	lootLevel = 38,
+	lootLevel = 95,
 
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 2500000},
+				{group = "nightsister_common", chance = 2500000},
 				{group = "rifles", chance = 2000000},
 				{group = "pistols", chance = 2000000},
 				{group = "clothing_attachments", chance = 1500000},

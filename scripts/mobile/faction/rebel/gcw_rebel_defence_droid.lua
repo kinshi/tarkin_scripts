@@ -28,7 +28,20 @@ gcw_rebel_defence_droid = Creature:new {
 	diet = NONE,
 
 	templates = {"object/mobile/droideka.iff"},
-	lootGroups = {},
+	lootGroups = {
+		{
+			groups = {
+				{group = "av_21", chance = 10000000},
+			},
+			lootChance = 1000000
+		},
+		{
+			groups = {
+				{group = "droid_loot", chance = 10000000},
+			},
+			lootChance = 8000000
+		},
+},
 	conversationTemplate = "",
 	defaultAttack = "defaultdroidattack",
 	defaultWeapon = "object/weapon/ranged/droid/droid_droideka_ranged.iff",

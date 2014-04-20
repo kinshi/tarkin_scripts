@@ -6,11 +6,11 @@ nyax_sword = {
 	customObjectName = "",
 	directObjectTemplate = "object/weapon/melee/sword/sword_curved_nyax.iff",
 	craftingValues = {
-		{"mindamage",25,50,0},
-		{"maxdamage",105,200,0},
+		{"mindamage",150,300,0},
+		{"maxdamage",300,450,0},
 		{"attackspeed",4.3,3,1},
 		{"woundchance",15,29,0},
-		{"hitpoints",750,1500,0},
+		{"hitpoints",1000,1500,0},
 		{"zerorangemod",-20,-10,0},
 		{"maxrangemod",-20,-10,0},
 		{"midrange",3,3,0},
@@ -36,9 +36,9 @@ nyax_sword = {
 	-- staticDotValues: Object map that can randomly or statically generate a dot (used for weapon objects.)
 	staticDotValues = {
 		{"attribute", 0, 0}, -- See CreatureAttributes.h in src for numbers.
-		{"strength", 110, 110},
-		{"duration", 30, 240},
-		{"potency", 1, 100},
+		{"mind", 110, 400},
+		{"duration", 30, 500},
+		{"potency", 20, 100},
 		{"uses", 250, 9999}
 	},
 	junkDealerTypeNeeded = JUNKWEAPONS,

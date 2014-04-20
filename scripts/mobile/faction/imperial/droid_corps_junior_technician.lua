@@ -31,13 +31,13 @@ droid_corps_junior_technician = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 7050000},
+				{group = "junk", chance = 5050000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
 				{group = "melee_weapons", chance = 550000},
 				{group = "carbines", chance = 550000},
-				{group = "clothing_attachments", chance = 325000},
-				{group = "armor_attachments", chance = 325000}
+				{group = "clothing_attachments", chance = 1325000},
+				{group = "armor_attachments", chance = 1325000}
 			},
 			lootChance = 2800000
 		}

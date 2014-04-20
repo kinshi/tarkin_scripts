@@ -69,10 +69,10 @@ object_weapon_melee_sword_sword_nyax = object_weapon_melee_sword_shared_sword_ny
 	attackType = MELEEATTACK,
 
 	-- ENERGY, KINETIC, ELECTRICITY, STUN, BLAST, HEAT, COLD, ACID, FORCE, LIGHTSABER
-	damageType = KINETIC,
+	damageType = COLD,
 
 	-- NONE, LIGHT, MEDIUM, HEAVY
-	armorPiercing = NONE,
+	armorPiercing = LIGHT,
 
 	-- combat_rangedspecialize_bactarifle, combat_rangedspecialize_rifle, combat_rangedspecialize_pistol, combat_rangedspecialize_heavy, combat_rangedspecialize_carbine
 	-- combat_meleespecialize_unarmed, combat_meleespecialize_twohand, combat_meleespecialize_polearm, combat_meleespecialize_onehand, combat_general,
@@ -80,20 +80,20 @@ object_weapon_melee_sword_sword_nyax = object_weapon_melee_sword_shared_sword_ny
 	xpType = "combat_meleespecialize_onehand",
 	
 	-- See http://www.ocdsoft.com/files/certifications.xls
-	certificationsRequired = { "cert_sword_01" },
+	certificationsRequired = { "cert_sword_2h_katana" },
 	-- See http://www.ocdsoft.com/files/accuracy.xls
-	creatureAccuracyModifiers = { "onehandmelee_accuracy" },
+	creatureAccuracyModifiers = { "twohandmelee_accuracy" },
 
 	-- See http://www.ocdsoft.com/files/defense.xls
 	defenderDefenseModifiers = { "melee_defense" },
 
 	-- Leave as "dodge" for now, may have additions later
-	defenderSecondaryDefenseModifiers = { "dodge" },
+	defenderSecondaryDefenseModifiers = { "counterattack" },
 
-	defenderToughnessModifiers = { "onehandmelee_toughness" },
+	defenderToughnessModifiers = { "twohandmelee_toughness" },
 
 	-- See http://www.ocdsoft.com/files/speed.xls
-	speedModifiers = { "onehandmelee_speed" },
+	speedModifiers = { "twohandmelee_speed" },
 
 	-- Leave blank for now
 	damageModifiers = { },
@@ -114,10 +114,10 @@ object_weapon_melee_sword_sword_nyax = object_weapon_melee_sword_shared_sword_ny
 	maxRange = 7,
 	maxRangeAccuracy = 4,
 
-	minDamage = 25,
-	maxDamage = 70,
+	minDamage = 250,
+	maxDamage = 450,
 
-	attackSpeed = 4.5
+	attackSpeed = 3.5
 }
 
-ObjectTemplates:addTemplate(object_weapon_melee_sword_sword_nyax, "object/weapon/melee/sword/sword_nyax.iff")
+ObjectTemplates:addTemplate(object_weapon_melee_sword_sword_nyax, "object/weapon/melee/2h_sword/2h_sword_scythe.iff")

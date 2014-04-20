@@ -11,20 +11,15 @@ TalusAakuanCaveScreenPlay = ScreenPlay:new {
 		6075903
         },
         
-        lootLevel = 75, 
+        lootLevel = 80, 
  
         lootGroups = {
                 {
                         groups = {
-                                {group = "aakuan_common", chance = 1000000},
-				{group = "junk", chance = 100000},
-                                {group = "pistols", chance = 1499999},
-				{group = "carbines", chance = 1499999},
-				{group = "rifles", chance = 1499999},
-                                {group = "melee_weapons", chance = 1499999},
-                                {group = "clothing_attachments", chance = 1200000},
-                                {group = "armor_attachments", chance = 1200000},
-				{group = "resource_deed", chance = 500004},
+                                {group = "aakuan_common", chance = 3000000},
+                                {group = "clothing_attachments", chance = 3000000},
+                                {group = "armor_attachments", chance = 3000000},
+				{group = "resource_deed", chance = 1000000},
 						},
                         lootChance = 8000000
                 }                                       
