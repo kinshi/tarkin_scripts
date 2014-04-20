@@ -2,7 +2,7 @@ nge_bespin_house_scheme = {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	customObjectName = "",
-	directObjectTemplate = "object/draft_schematic/structure/bespin_house_schem.iff",
+	directObjectTemplate = "object/draft_schematic/structure/commando_house_schem.iff",
 	craftingValues = {
 	},
 	customizationStringNames = {},
@@ -12,4 +12,4 @@ nge_bespin_house_scheme = {
 	}
 }
 
-addLootItemTemplate("nge_bespin_house_scheme", nge_bespin_house_scheme)
+addLootItemTemplate("nge_commando_house_scheme", nge_commando_house_scheme)

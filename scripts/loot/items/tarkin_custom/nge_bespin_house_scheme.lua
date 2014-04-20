@@ -12,4 +12,4 @@ nge_commando_house_scheme = {
 	}
 }
 
-addLootItemTemplate("nge_commando_house_scheme", nge_commando_house_scheme)
+addLootItemTemplate("nge_bespin_house_scheme", nge_bespin_house_scheme)
