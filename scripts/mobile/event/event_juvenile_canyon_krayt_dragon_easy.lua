@@ -1,6 +1,6 @@
 event_juvenile_canyon_krayt_dragon_easy = Creature:new {
 	objectName = "@mob/creature_names:juvenile_canyon_krayt",
-	customName = "a juvenile canyon krayt dragon (event)",
+	customName = "a juvenile canyon krayt dragon",
 	socialGroup = "Krayt",
 	pvpFaction = "",
 	faction = "",

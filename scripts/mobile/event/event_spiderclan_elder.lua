@@ -1,6 +1,6 @@
 event_spiderclan_elder = Creature:new {
 	objectName = "@mob/creature_names:spider_nightsister_elder",
-	customName = "a Spiderclan elder (event)",
+	customName = "a Spiderclan elder",
 	socialGroup = "spider_nightsister",
 	pvpFaction = "spider_nightsister",
 	faction = "spider_nightsister",
@@ -28,7 +28,16 @@ event_spiderclan_elder = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/dressed_dathomir_spider_nightsister_elder.iff"},
-	lootGroups = {},
+	lootGroups = {
+	 {
+	        groups = {
+				{group = "armor_attachments", chance = 3300000},
+				{group = "clothing_attachments", chance = 3300000},
+				{group = "resource_deed", chance = 3400000}
+			},
+			lootChance = 10000000
+		}
+	},
 	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",
 	attacks = merge(brawlermaster,pikemanmaster,forcewielder)

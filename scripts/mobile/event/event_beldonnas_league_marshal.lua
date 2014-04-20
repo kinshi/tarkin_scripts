@@ -45,12 +45,12 @@ event_beldonnas_league_marshal = Creature:new {
 	lootGroups = {
        	{
 			groups = {
-				{group = "armor_attachments", chance = 3300000},
-				{group = "resource_deed", chance = 3300000},
-				{group = "clothing_attachments", chance = 34000000},
-				{group = "beldonnas_common", chance = 2000000}
+				{group = "armor_attachments", chance = 2500000},
+				{group = "resource_deed", chance = 2500000},
+				{group = "clothing_attachments", chance = 25000000},
+				{group = "beldonnas_common", chance = 2500000}
 			},
-			lootChance = 3000000
+			lootChance = 10000000
 		}
 	},
 	weapons = {"pirate_weapons_heavy"},

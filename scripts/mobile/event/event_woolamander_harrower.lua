@@ -1,6 +1,6 @@
 event_woolamander_harrower = Creature:new {
 	objectName = "@mob/creature_names:woolamander_harrower",
-	customName = "a woolamander harrower (event)",
+	customName = "a woolamander harrower",
 	socialGroup = "woolamander",
 	pvpFaction = "",
 	faction = "",
@@ -14,11 +14,11 @@ event_woolamander_harrower = Creature:new {
 	armor = 1,
 	resists = {55,55,-1,80,80,80,-1,-1,-1},
 	meatType = "meat_carnivore",
-	meatAmount = 0,
+	meatAmount = 1000,
 	hideType = "hide_wooly",
-	hideAmount = 0,
+	hideAmount = 750,
 	boneType = "bone_mammal",
-	boneAmount = 0,
+	boneAmount = 500,
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
@@ -28,7 +28,17 @@ event_woolamander_harrower = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/woolamander.iff"},
-	lootGroups = {},
+	lootGroups = {
+	 {
+	        groups = {
+				{group = "harrower_bone", chance = 2500000},
+				{group = "resource_deed", chance = 2500000},
+				{group = "clothing_attachments", chance = 2500000},
+				{group = "armor_attachments", chance = 2500000}
+			},
+			lootChance = 4650000
+		}
+	},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {

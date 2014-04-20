@@ -1,6 +1,6 @@
 event_droideka = Creature:new {
 	objectName = "@mob/creature_names:droideka",
-	customName = "a droideka (event)",
+	customName = "a droideka",
 	socialGroup = "droideka",
 	pvpFaction = "",
 	faction = "",
@@ -28,8 +28,16 @@ event_droideka = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/droideka.iff"},
-	lootGroups = {},
-	conversationTemplate = "",
+	lootGroups = {
+		{
+			groups = {
+				{group = "armor_attachments", chance = 3300000},
+				{group = "resource_deed", chance = 3400000},
+				{group = "clothing_attachments", chance = 3300000}
+			},
+			lootChance = 10000000
+		}
+	},	conversationTemplate = "",
 	defaultWeapon = "object/weapon/ranged/droid/droid_droideka_ranged.iff",
 	defaultAttack = "creaturerangedattack",
 }

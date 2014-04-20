@@ -1,10 +1,10 @@
 event_nightsister_elder_easy = Creature:new {
 	objectName = "@mob/creature_names:nightsister_elder",
-	customName = "a Nightsister elder (event)",
+	customName = "a Nightsister elder",
 	socialGroup = "nightsister",
 	pvpFaction = "nightsister",
 	faction = "nightsister",
-	level = 200,
+	level = 300,
 	chanceHit = 120,
 	damageMin = 1520,
 	damageMax = 1800,

@@ -1,6 +1,6 @@
 event_krayt_dragon_ancient = Creature:new {
 	objectName = "@mob/creature_names:krayt_dragon_ancient",
-	customName = "a krayt dragon ancient (event)",
+	customName = "a krayt dragon ancient",
 	socialGroup = "Krayt",
 	pvpFaction = "",
 	faction = "",
@@ -8,17 +8,17 @@ event_krayt_dragon_ancient = Creature:new {
 	chanceHit = 300,
 	damageMin = 2270,
 	damageMax = 4250,
-	baseXp = 0,
+	baseXp = 50000,
 	baseHAM = 410000,
 	baseHAMmax = 501000,
 	armor = 3,
 	resists = {95,95,95,100,65,95,95,95,-1},
 	meatType = "meat_carnivore",
-	meatAmount = 0,
+	meatAmount = 5000,
 	hideType = "hide_bristley",
-	hideAmount = 0,
+	hideAmount = 5000,
 	boneType = "bone_mammal",
-	boneAmount = 0,
+	boneAmount = 3000,
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 30,
@@ -28,7 +28,19 @@ event_krayt_dragon_ancient = Creature:new {
 	diet = CARNIVORE,
 
 	templates = {"object/mobile/krayt_dragon.iff"},
-	lootGroups = {},
+	lootGroups = {
+		{
+	        groups = {
+				{group = "krayt_tissue_rare", chance = 1600000},
+				{group = "krayt_dragon_common", chance = 1600000},
+				{group = "pearls_flawless", chance = 1600000},
+				{group = "armor_attachments", chance = 1600000},
+				{group = "resource_deed", chance = 2000000},
+				{group = "clothing_attachments", chance = 1600000}				
+			},
+			lootChance = 10000000
+		},
+	},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {

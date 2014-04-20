@@ -1,5 +1,6 @@
 event_kunga_clan_leader = Creature:new {
 	objectName = "@mob/creature_names:kunga_clan_leader",
+	customName = "Kunga Clan Leader",
 	socialGroup = "kunga_tribe",
 	pvpFaction = "kunga_tribe",
 	faction = "kunga_tribe",
