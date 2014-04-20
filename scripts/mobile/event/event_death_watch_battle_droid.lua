@@ -1,6 +1,6 @@
 event_death_watch_battle_droid = Creature:new {
 	objectName = "@mob/creature_names:mand_bunker_battle_droid",
-	customName = "Battle Droid (event)",
+	customName = "Battle Droid",
 	socialGroup = "death_watch",
 	pvpFaction = "death_watch",
 	faction = "",

@@ -1,10 +1,10 @@
-event_tusken_witch_doctor = Creature:new {
+event_tusken_witch_doctor_easy = Creature:new {
 	objectName = "@mob/creature_names:tusken_witch_doctor",
 	customName = "a Tusken Witch Doctor",
 	socialGroup = "tusken_raider",
 	pvpFaction = "tusken_raider",
 	faction = "tusken_raider",
-	level = 202,
+	level = 302,
 	chanceHit = 80,
 	damageMin = 900,
 	damageMax = 1600,
@@ -43,4 +43,4 @@ event_tusken_witch_doctor = Creature:new {
 	attacks = merge(brawlernovice,marksmannovice)
 }
 
-CreatureTemplates:addCreatureTemplate(event_tusken_witch_doctor, "event_tusken_witch_doctor")
+CreatureTemplates:addCreatureTemplate(event_tusken_witch_doctor_easy, "event_tusken_witch_doctor_easy")
