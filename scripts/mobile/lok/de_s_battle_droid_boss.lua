@@ -35,7 +35,8 @@ de_s_battle_droid_boss = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "av_21", chance = 10000000},
+				{group = "av_21_pp", chance = 2000000},
+				{group = "av_21_scheme", chance = 8000000}
 			},
 			lootChance = 2000000
 		},
