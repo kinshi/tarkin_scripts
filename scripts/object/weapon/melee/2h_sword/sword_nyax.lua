@@ -120,4 +120,4 @@ object_weapon_melee_sword_sword_nyax = object_weapon_melee_sword_shared_sword_ny
 	attackSpeed = 3.5
 }
 
-ObjectTemplates:addTemplate(object_weapon_melee_sword_sword_nyax, "object/weapon/melee/2h_sword/2h_sword_scythe.iff")
+ObjectTemplates:addTemplate(object_weapon_melee_sword_sword_nyax, "object/weapon/melee/sword/nyax_sword.iff")

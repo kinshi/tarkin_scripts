@@ -2,7 +2,7 @@ nge_mustafar_house_scheme = {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	customObjectName = "",
-	directObjectTemplate = "object/draft_schematic/structure/musty_house_schem.iff",
+	directObjectTemplate = "object/tangible/loot/loot_schematic/musty_house_loot_schem.iff",
 	craftingValues = {
 	},
 	customizationStringNames = {},

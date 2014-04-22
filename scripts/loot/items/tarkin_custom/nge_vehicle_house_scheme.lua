@@ -2,7 +2,7 @@ nge_vehicle_house_scheme = {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	customObjectName = "",
-	directObjectTemplate = "object/draft_schematic/structure/vehicle_house_schem.iff",
+	directObjectTemplate = "object/tangible/loot/loot_schematic/vehicle_house_loot_schem.iff",
 	craftingValues = {
 	},
 	customizationStringNames = {},

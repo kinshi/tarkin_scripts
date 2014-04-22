@@ -2,7 +2,7 @@ nge_tree_house_scheme = {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	customObjectName = "",
-	directObjectTemplate = "object/draft_schematic/structure/tree_house_schem.iff",
+	directObjectTemplate = "object/tangible/loot/loot_schematic/tree_house_loot_schem.iff",
 	craftingValues = {
 	},
 	customizationStringNames = {},
