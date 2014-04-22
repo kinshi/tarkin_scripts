@@ -31,9 +31,9 @@ gcw_at_st = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "av_21", chance = 10000000},
+				{group = "av_21_pp", chance = 10000000},
 			},
-			lootChance = 1000000
+			lootChance = 2000000
 		},
 		{
 			groups = {

@@ -20,7 +20,7 @@ DroidEngineerCaveScreenPlay = ScreenPlay:new {
 				{group = "nyms_common", chance = 3500000},
 				{group = "rifles", chance = 500000},
 				{group = "pistols", chance = 500000},
-				{group = "av_21", chance = 1000000},
+				{group = "av_21_scheme", chance = 1000000},
 				{group = "nge_house_mustafar", chance = 1000000},
 				{group = "clothing_attachments", chance = 1100000},
 				{group = "armor_attachments", chance = 1100000}
