@@ -1056,7 +1056,7 @@ includeFile("items/tarkin_custom/ns_shirt_type_03.lua")
 
 includeFile("items/tarkin_custom/nge_bespin_house_scheme.lua")
 includeFile("items/tarkin_custom/nge_commando_house_scheme.lua")
-includeFile("items/tarkin_custom/nge_hut_house_scheme.lua")
+includeFile("items/tarkin_custom/nge_hut_house_deed.lua")
 includeFile("items/tarkin_custom/nge_jabba_house_scheme.lua")
 includeFile("items/tarkin_custom/nge_mustafar_house_scheme.lua")
 includeFile("items/tarkin_custom/nge_sand_crawler_house_scheme.lua")
