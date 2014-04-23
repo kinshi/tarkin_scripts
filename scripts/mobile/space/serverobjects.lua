@@ -44,3 +44,7 @@ includeFile("space/vrovel.lua")
 includeFile("space/warvog_arkon.lua")
 includeFile("space/wlinc_tchrr.lua")
 includeFile("space/zhanks.lua")
+
+--Tarkin Custom
+
+includeFile("space/corellian_corvette_neutral.lua")
