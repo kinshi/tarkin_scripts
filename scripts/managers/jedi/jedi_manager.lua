@@ -10,7 +10,7 @@ if _TEST then
 	ITEMWAYPOINTDATAPAD = 1
 end
 
-jediProgressionType = HOLGRINDJEDIPROGRESSION
+jediProgressionType = HOLOGRINDJEDIPROGRESSION
 
 jediManagerName = "JediManager"
 
