@@ -8,8 +8,20 @@ registerScreenPlay("DantooineImperialOutpostScreenPlay", true)
 
 function DantooineImperialOutpostScreenPlay:start()
 	if (isZoneEnabled("dantooine")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
+end
+
+function DantooineImperialOutpostScreenPlay:spawnSceneObjects()
+
+	local pCollector = spawnSceneObject("yavin4", "object/tangible/furniture/imperial/data_terminal_s1.iff", -4217.6, 3.0, -2355.5 -1, 0, 0, 1, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(264)
+	collector:setCustomObjectName("\\#ee3377Travel to Imperial Stronghold - Corellia")
+	createObserver(OBJECTRADIALUSED, "DantooineImperialOutpostScreenPlay", "teleportImpStronghold", pCollector)
+	
 end
 
 function DantooineImperialOutpostScreenPlay:spawnMobiles()
@@ -63,5 +75,30 @@ function DantooineImperialOutpostScreenPlay:spawnMobiles()
 	--{"insurgent",60,0,0,-5.7,0,1365878, "npc_imperial", ""},
 	--{"dantooine", "r5", 60,-4228.33,3,-2367.11,48.8478,0, "calm", "R5-L5"},
 	--{"dantooine", "insurgent" ,60,0,0,-5.7,0,1365878, "npc_imperial", ""},
+	
+	-- Outpost Entrance Sentries
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4276.7, 3.0, -2410.6, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4276.7, 3.0, -2405.6, 180)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4286.3, 3.0, -2411.7, 180)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4291.3, 3.0, -2416.1, 180)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4291.3, 3.0, -2400.4, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4286.3, 3.0, -2404.4, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4158.3, 3.0, -2399.9, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4163.3, 3.0, -2403.7, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4158.3, 3.0, -2416.0, 180)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4163.3, 3.0, -2412.0, 180)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4172.7, 3.0, -2410.0, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4172.8, 3.0, -2405.7, 180)
 
+end
+
+function StrongholdScreenPlay:teleportImpStronghold(pCollector, pPlayer)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isImperial() == true) then
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("corellia", 4621.7, 0, -5792.2, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
 end
