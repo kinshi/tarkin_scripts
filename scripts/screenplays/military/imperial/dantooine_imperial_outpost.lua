@@ -15,13 +15,13 @@ end
 
 function DantooineImperialOutpostScreenPlay:spawnSceneObjects()
 
-	local pCollector = spawnSceneObject("yavin4", "object/tangible/furniture/imperial/data_terminal_s1.iff", -4217.6, 3.0, -2355.5 -1, 0, 0, 1, 0)
+	local pCollector = spawnSceneObject("dantooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -4217.6, 3.0, -2355.5, -1, 0, 0, 1, 0)
 	local collector = LuaSceneObject(pCollector)
 	local col2creo = LuaCreatureObject(pCollector)
 	col2creo:setOptionsBitmask(264)
 	collector:setCustomObjectName("\\#ee3377Travel to Imperial Stronghold - Corellia")
 	createObserver(OBJECTRADIALUSED, "DantooineImperialOutpostScreenPlay", "teleportImpStronghold", pCollector)
-	
+
 end
 
 function DantooineImperialOutpostScreenPlay:spawnMobiles()
@@ -77,18 +77,18 @@ function DantooineImperialOutpostScreenPlay:spawnMobiles()
 	--{"dantooine", "insurgent" ,60,0,0,-5.7,0,1365878, "npc_imperial", ""},
 	
 	-- Outpost Entrance Sentries
-	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4276.7, 3.0, -2410.6, 0)
-	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4276.7, 3.0, -2405.6, 180)
-	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4286.3, 3.0, -2411.7, 180)
-	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4291.3, 3.0, -2416.1, 180)
-	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4291.3, 3.0, -2400.4, 0)
-	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4286.3, 3.0, -2404.4, 0)
-	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4158.3, 3.0, -2399.9, 0)
-	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4163.3, 3.0, -2403.7, 0)
-	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4158.3, 3.0, -2416.0, 180)
-	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4163.3, 3.0, -2412.0, 180)
-	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4172.7, 3.0, -2410.0, 0)
-	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4172.8, 3.0, -2405.7, 180)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4276.7, 3.0, -2410.6, 0, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4276.7, 3.0, -2405.6, 180, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4286.3, 3.0, -2411.7, 180, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4291.3, 3.0, -2416.1, 180, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4291.3, 3.0, -2400.4, 0, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4286.3, 3.0, -2404.4, 0, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4158.3, 3.0, -2399.9, 0, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4163.3, 3.0, -2403.7, 0, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4158.3, 3.0, -2416.0, 180, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4163.3, 3.0, -2412.0, 180, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4172.7, 3.0, -2410.0, 0, 0)
+	spawnMobile("dantooine", "sentry_stormtrooper", 300, -4172.8, 3.0, -2405.7, 180, 0)
 
 end
 
