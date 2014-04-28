@@ -42,6 +42,7 @@
 
 
 object_tangible_jedi_no_drop_jedi_holocron_light = object_tangible_jedi_shared_no_drop_jedi_holocron_light:new {
+	objectMenuComponent = {"cpp", "HolocronMenuComponent"},
 }
 
 ObjectTemplates:addTemplate(object_tangible_jedi_no_drop_jedi_holocron_light, "object/tangible/jedi/no_drop_jedi_holocron_light.iff")
