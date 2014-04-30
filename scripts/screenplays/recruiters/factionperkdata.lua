@@ -125,7 +125,6 @@ faction_reward_data = {
 
 
 	imperial_installations_list = {
-		"at_st_house",
 		"hq_s01_pvp_imperial",
 		"hq_s01_imperial",
 		"hq_s02_pvp_imperial",
@@ -149,8 +148,7 @@ faction_reward_data = {
 	},
 
 	imperial_installations = {
-		at_st_house = {type=faction_reward_type.installation, display="AT-AT House Schematic", item="object/tangible/loot/loot_schematic/atat_house_loot_schem.iff", cost=10000},
-	
+
 		hq_s01_pvp_imperial = {type=faction_reward_type.installation, display="@deed:hq_s01_pvp_imperial", item="object/tangible/deed/faction_perk/hq/hq_s01_pvp.iff",
 			generatedObjectTemplate="object/building/faction_perk/hq/hq_s01_imp_pvp.iff", cost=14000, bonus={"hq_s01_imperial","hq_s01_imperial"} },
 		
@@ -213,7 +211,6 @@ faction_reward_data = {
 	},
 	
 	rebel_installations_list = {
-		"rebel_spire_house",
 		"hq_s01_pvp_rebel",
 		"hq_s01_rebel",
 		"hq_s02_pvp_rebel",
@@ -236,8 +233,8 @@ faction_reward_data = {
 	}, 
 	
 	rebel_installations = {
-		rebel_spire_house = {type=faction_reward_type.installation, display="Rebel Spire House Schematic", item="object/tangible/loot/loot_schematic/rebel_house_loot_schem.iff", cost=10000},
-	
+		rebel_spire_house = {type=faction_reward_type.installation, display="Rebel Spire House Deed", item="object/tangible/deed/player_house_deed/rebel_house_deed.iff", cost=10000},
+
 		hq_s01_pvp_rebel = {type=faction_reward_type.installation, display="@deed:hq_s01_pvp_rebel", item="object/tangible/deed/faction_perk/hq/hq_s01_pvp.iff",
 			generatedObjectTemplate="object/building/faction_perk/hq/hq_s01_rebel_pvp.iff", cost=20000, bonus={"hq_s01_rebel","hq_s01_rebel"} },
 		
