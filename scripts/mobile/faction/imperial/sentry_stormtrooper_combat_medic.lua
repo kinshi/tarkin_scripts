@@ -32,11 +32,12 @@ sentry_stormtrooper_combat_medic = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 5650000},
+				{group = "junk", chance = 4650000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
-                		{group = "melee_weapons", chance = 550000},
-                		{group = "carbines", chance = 550000},
+                {group = "melee_weapons", chance = 550000},
+                {group = "carbines", chance = 550000},
+				{group = "nge_house_rebel", chance = 1000000},
 				{group = "clothing_attachments", chance = 1025000},
 				{group = "armor_attachments", chance = 1025000}
 			},

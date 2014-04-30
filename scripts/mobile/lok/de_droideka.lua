@@ -34,7 +34,8 @@ de_droideka = Creature:new {
 				{group = "nyms_common", chance = 2000000},
 				{group = "pistols", chance = 1000000},
 				{group = "carbines", chance = 1000000},
-				{group = "nge_house_mustafar", chance = 1250000},
+				{group = "nge_house_mustafar", chance = 625000},
+				{group = "nge_house_yt1300", chance = 625000},
 				{group = "clothing_attachments", chance = 1250000},
 				{group = "av_21_scheme", chance = 1000000},
 				{group = "armor_attachments", chance = 1250000}

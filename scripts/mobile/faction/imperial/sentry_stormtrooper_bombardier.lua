@@ -32,11 +32,12 @@ sentry_stormtrooper_bombardier = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 2600000},
+				{group = "junk", chance = 1850000},
 				{group = "rifles", chance = 1200000},
 				{group = "pistols", chance = 1200000},
 				{group = "melee_weapons", chance = 1200000},
 				{group = "carbines", chance = 1200000},
+				{group = "nge_house_rebel", chance = 750000},
 				{group = "clothing_attachments", chance = 1250000},
 				{group = "armor_attachments", chance = 1250000}
 			},
