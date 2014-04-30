@@ -28,6 +28,8 @@ de_blastromech = Creature:new {
 
 	templates = {"object/mobile/blastromech.iff"},
 	lootGroups = {
+			groups = {
+			{
 				{group = "droid_loot", chance = 2000000},
 				{group = "nyms_common", chance = 2500000},
 				{group = "pistols", chance = 1000000},
@@ -36,6 +38,9 @@ de_blastromech = Creature:new {
 				{group = "nge_house_yt1300", chance = 250000},
 				{group = "clothing_attachments", chance = 1500000},
 				{group = "armor_attachments", chance = 1500000}
+			},
+			lootChance = 2500000
+		},
 },
 	conversationTemplate = "",
 	defaultAttack = "creaturerangedattack",
