@@ -49,7 +49,7 @@ mountSpeedData = {
 	{"appearance/brackaset_hue.sat", 7.5, 2.266, 300, 780},
 	{"appearance/carrion_spat_hue.sat", 7.5, 3.066, 120, 600},
 	{"appearance/cu_pa_hue.sat", 6.8, 3.088, 125, 600},
-	{"appearance/dewback_hue.sat", 7.5, 1.3, 180, 660},
+	{"appearance/dewback_hue.sat", 7.5, 2.6, 180, 660},
 	{"appearance/falumpaset_hue.sat", 7.5, 2.6, 300, 780},
 	{"appearance/kaadu_hue.sat", 7.5, 3.066, 120, 600},
 }
