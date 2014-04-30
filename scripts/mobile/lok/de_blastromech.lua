@@ -32,7 +32,8 @@ de_blastromech = Creature:new {
 				{group = "nyms_common", chance = 2500000},
 				{group = "pistols", chance = 1000000},
 				{group = "carbines", chance = 1000000},
-				{group = "nge_house_mustafar", chance = 500000},
+				{group = "nge_house_mustafar", chance = 250000},
+				{group = "nge_house_yt1300", chance = 250000},
 				{group = "clothing_attachments", chance = 1500000},
 				{group = "armor_attachments", chance = 1500000}
 },

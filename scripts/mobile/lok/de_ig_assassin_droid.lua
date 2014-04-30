@@ -34,7 +34,8 @@ de_ig_assassin_droid = Creature:new {
 				{group = "nyms_common", chance = 2250000},
 				{group = "pistols", chance = 1000000},
 				{group = "carbines", chance = 1000000},
-				{group = "nge_house_mustafar", chance = 1000000},
+				{group = "nge_house_mustafar", chance = 500000},
+				{group = "nge_house_yt1300", chance = 500000},
 				{group = "clothing_attachments", chance = 1500000},
 				{group = "armor_attachments", chance = 1500000}
 			},

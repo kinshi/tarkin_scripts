@@ -43,7 +43,8 @@ de_s_battle_droid = Creature:new {
 		{
 			groups = {
 				{group = "droid_loot", chance = 80000000},
-				{group = "nge_house_mustafar", chance = 2000000}
+				{group = "nge_house_yt1300", chance = 1000000},
+				{group = "nge_house_mustafar", chance = 1000000}
 			},
 			lootChance = 35000000
 		},
