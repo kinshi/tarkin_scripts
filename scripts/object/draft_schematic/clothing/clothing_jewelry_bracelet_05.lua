@@ -45,7 +45,7 @@ object_draft_schematic_clothing_clothing_jewelry_bracelet_05 = object_draft_sche
 
    templateType = DRAFTSCHEMATIC,
 
-   customObjectName = "Bangles",
+   customObjectName = "Entertainer's Bangles 'o Buffs",
 
    craftingToolTab = 8, -- (See DraftSchemticImplementation.h)
    complexity = 19, 
@@ -72,8 +72,12 @@ object_draft_schematic_clothing_clothing_jewelry_bracelet_05 = object_draft_sche
 
    targetTemplate = "object/tangible/wearables/bracelet/bracelet_s05_r.iff",
 
-   additionalTemplates = {
-             }
+   additionalTemplates = {},
+
+	skillMods = {
+		{"private_med_wound_mind", 100},
+		{"private_buff_mind", 100}
+	}
 
 }
 ObjectTemplates:addTemplate(object_draft_schematic_clothing_clothing_jewelry_bracelet_05, "object/draft_schematic/clothing/clothing_jewelry_bracelet_05.iff")
