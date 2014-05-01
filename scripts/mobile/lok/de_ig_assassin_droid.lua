@@ -28,8 +28,8 @@ de_ig_assassin_droid = Creature:new {
 
 	templates = {"object/mobile/ig_assassin_droid.iff"},
 	lootGroups = {
+		{
 			groups = {
-			{
 				{group = "droid_loot", chance = 1750000},
 				{group = "nyms_common", chance = 2250000},
 				{group = "pistols", chance = 1000000},
@@ -40,7 +40,7 @@ de_ig_assassin_droid = Creature:new {
 				{group = "armor_attachments", chance = 1500000}
 			},
 			lootChance = 3500000
-		},
+		}
 	},
 	conversationTemplate = "",
 	defaultWeapon = "object/weapon/ranged/droid/droid_droideka_ranged.iff",

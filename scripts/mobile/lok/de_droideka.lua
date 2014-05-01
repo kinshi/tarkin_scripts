@@ -28,8 +28,8 @@ de_droideka = Creature:new {
 
 	templates = {"object/mobile/droideka.iff"},
 	lootGroups = {
+		{
 			groups = {
-			{
 				{group = "droid_loot", chance = 1250000},
 				{group = "nyms_common", chance = 2000000},
 				{group = "pistols", chance = 1000000},
@@ -41,7 +41,7 @@ de_droideka = Creature:new {
 				{group = "armor_attachments", chance = 1250000}
 			},
 			lootChance = 3500000
-		},
+		}
 	},
 	conversationTemplate = "",
 	defaultWeapon = "object/weapon/ranged/droid/droid_droideka_ranged.iff",

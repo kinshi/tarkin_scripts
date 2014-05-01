@@ -31,8 +31,8 @@ de_battle_droid = Creature:new {
 		"object/mobile/death_watch_battle_droid_02.iff",
 		"object/mobile/death_watch_battle_droid_03.iff"},
 	lootGroups = {
+		{
 			groups = {
-			{
 				{group = "droid_loot", chance = 1500000},
 				{group = "nyms_common", chance = 2000000},
 				{group = "pistols", chance = 1000000},
@@ -43,7 +43,7 @@ de_battle_droid = Creature:new {
 				{group = "armor_attachments", chance = 1500000}
 			},
 			lootChance = 3500000
-		},
+		}
 	},
 	weapons = {"battle_droid_weapons"},
 	conversationTemplate = "",
