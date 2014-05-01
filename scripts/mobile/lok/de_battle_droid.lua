@@ -42,7 +42,7 @@ de_battle_droid = Creature:new {
 				{group = "clothing_attachments", chance = 1500000},
 				{group = "armor_attachments", chance = 1500000}
 			},
-			lootChance = 2500000
+			lootChance = 3500000
 		},
 	},
 	weapons = {"battle_droid_weapons"},

@@ -40,7 +40,7 @@ de_droideka = Creature:new {
 				{group = "av_21_scheme", chance = 1000000},
 				{group = "armor_attachments", chance = 1250000}
 			},
-			lootChance = 2500000
+			lootChance = 3500000
 		},
 	},
 	conversationTemplate = "",
