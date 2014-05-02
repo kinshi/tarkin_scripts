@@ -8,7 +8,7 @@ registerScreenPlay("CorelliaCoronetScreenPlay", true)
 
 function CorelliaCoronetScreenPlay:start()
 	if (isZoneEnabled("corellia")) then
-		self:spawnSceneObjects()		
+--		self:spawnSceneObjects()		
 		self:spawnMobiles()
 	end
 end

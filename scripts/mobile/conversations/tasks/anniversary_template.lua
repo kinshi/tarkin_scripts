@@ -8,18 +8,18 @@ anniversary_template = ConvoTemplate:new {
 anniversary_first_screen = ConvoScreen:new {
 	id = "first_screen",
 	leftDialog = "",
-	customDialogText = "Hello, I am C-3PO 'human-cyborg relations'. Welcome to the Tarkin Galaxy! Before you ask - No, I don't know any Luke Skywalker. I am here to dispense DOT-Day rewards! Please choose one. Keep in mind you only get ONE chance!",
+	customDialogText = "Hello, I am C-3PO 'human-cyborg relations'. Welcome to the Tarkin Galaxy! Before you ask - No, I don't know any Luke Skywalker. I am here to dispense Episode III rewards! Please choose one. Keep in mind you only get ONE chance!",
 	stopConversation = "false",
 	options = {
-		{"Dark Jedi Chair", "vader_victory"},
-		{"Light Jedi Chair", "falcon_chair"},
-		{"Flash Speeder", "flash_speeder"},
+		{"Hangar House", "hangar_house"},
+		{"Relaxation House", "relaxation_house"},
+		{"BARC Speeder", "barc_speeder"},
 	}
 }
 anniversary_template:addScreen(anniversary_first_screen);
 
-anniversary_vader_victory = ConvoScreen:new {
-	id = "vader_victory",
+anniversary_hangar_house = ConvoScreen:new {
+	id = "hangar_house",
 	leftDialog = "",
 	customDialogText = "Here you are!",
 	stopConversation = "true",
@@ -27,7 +27,7 @@ anniversary_vader_victory = ConvoScreen:new {
 	
 	}
 }
-anniversary_template:addScreen(anniversary_vader_victory);
+anniversary_template:addScreen(anniversary_hangar_house);
 
 anniversary_completed = ConvoScreen:new {
 	id = "completed",
@@ -43,7 +43,7 @@ anniversary_template:addScreen(anniversary_completed);
 
 
 anniversary_falcon_chair= ConvoScreen:new {
-	id = "falcon_chair",
+	id = "relaxation_house",
 	leftDialog = "",
 	customDialogText = "Here you are!",
 	stopConversation = "true",
@@ -51,10 +51,10 @@ anniversary_falcon_chair= ConvoScreen:new {
 	
 	}
 }
-anniversary_template:addScreen(anniversary_falcon_chair);
+anniversary_template:addScreen(anniversary_relaxation_house);
 
 anniversary_falcon_chair= ConvoScreen:new {
-	id = "falcon_chair",
+	id = "relaxation_house",
 	leftDialog = "",
 	customDialogText = "Here you are!",
 	stopConversation = "true",
@@ -62,10 +62,10 @@ anniversary_falcon_chair= ConvoScreen:new {
 	
 	}
 }
-anniversary_template:addScreen(anniversary_falcon_chair);
+anniversary_template:addScreen(anniversary_relaxation_house);
 
 anniversary_flash_speeder= ConvoScreen:new {
-	id = "flash_speeder",
+	id = "barc_speeder",
 	leftDialog = "",
 	customDialogText = "Here you are!",
 	stopConversation = "true",
@@ -73,7 +73,7 @@ anniversary_flash_speeder= ConvoScreen:new {
 	
 	}
 }
-anniversary_template:addScreen(anniversary_flash_speeder);
+anniversary_template:addScreen(anniversary_barc_speeder);
 
 anniversary_fireworks= ConvoScreen:new {
 	id = "fireworks",
