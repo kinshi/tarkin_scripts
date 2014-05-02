@@ -8,8 +8,15 @@ registerScreenPlay("CorelliaCoronetScreenPlay", true)
 
 function CorelliaCoronetScreenPlay:start()
 	if (isZoneEnabled("corellia")) then
+		self:spawnSceneObjects()		
 		self:spawnMobiles()
 	end
+end
+
+function CorelliaCoronetScreenPlay:spawnSceneObjects()
+
+spawnSceneObject("corellia","object/ship/corvette.iff", -48, 60, -4722, 0, 0, 0, 0, 0)
+
 end
 
 function CorelliaCoronetScreenPlay:spawnMobiles()
