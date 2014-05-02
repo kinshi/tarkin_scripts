@@ -64,7 +64,7 @@ anniversary_falcon_chair= ConvoScreen:new {
 }
 anniversary_template:addScreen(anniversary_relaxation_house);
 
-anniversary_flash_speeder= ConvoScreen:new {
+anniversary_barc_speeder= ConvoScreen:new {
 	id = "barc_speeder",
 	leftDialog = "",
 	customDialogText = "Here you are!",
