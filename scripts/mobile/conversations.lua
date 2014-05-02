@@ -74,3 +74,7 @@ includeFile("conversations/racetracks/mosespaconversation.lua")
 includeFile("conversations/racetracks/narmleconversation.lua")
 includeFile("conversations/racetracks/lokconversation.lua")
 includeFile("conversations/racetracks/nashalconversation.lua")
+
+--Tarkin Custom
+
+includeFile("conversations/tasks/anniversary_template.lua")

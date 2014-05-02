@@ -132,3 +132,7 @@ includeFile("misc/mosesparacecoordinator.lua")
 includeFile("misc/narmleracecoordinator.lua")
 includeFile("misc/lokracecoordinator.lua")
 includeFile("misc/nashalracecoordinator.lua")
+
+--Tarkin Custom
+
+includeFile("misc/intro.lua")
