@@ -42,7 +42,7 @@ anniversary_completed = ConvoScreen:new {
 anniversary_template:addScreen(anniversary_completed);
 
 
-anniversary_falcon_chair= ConvoScreen:new {
+anniversary_relaxation_house= ConvoScreen:new {
 	id = "relaxation_house",
 	leftDialog = "",
 	customDialogText = "Here you are!",
@@ -53,7 +53,7 @@ anniversary_falcon_chair= ConvoScreen:new {
 }
 anniversary_template:addScreen(anniversary_relaxation_house);
 
-anniversary_falcon_chair= ConvoScreen:new {
+anniversary_relaxation_house= ConvoScreen:new {
 	id = "relaxation_house",
 	leftDialog = "",
 	customDialogText = "Here you are!",
