@@ -1069,6 +1069,6 @@ includeFile("items/tarkin_custom/nge_gen_md_win_02_scheme.lua")
 includeFile("items/tarkin_custom/nge_gen_sm_win_01_scheme.lua")
 includeFile("items/tarkin_custom/nge_gen_sm_win_02_scheme.lua")
 includeFile("items/tarkin_custom/nge_yt1300_house_scheme.lua")
-includeFile("items/tarkin_custom/nge_tat_sm_win_01_house_scheme.lua")
-includeFile("items/tarkin_custom/nge_nab_sm_win_01_house_scheme.lua")
+includeFile("items/tarkin_custom/nge_tat_sm_win_01_scheme.lua")
+includeFile("items/tarkin_custom/nge_nab_sm_win_01_scheme.lua")
 
