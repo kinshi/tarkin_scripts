@@ -44,7 +44,7 @@
 
 --Children folder includes
 includeFile("building/player/city/serverobjects.lua")
-includeFile("building/player/idhouses/serverobjects.lua")
+--includeFile("building/player/idhouses/serverobjects.lua")
 includeFile("building/player/construction/serverobjects.lua")
 
 -- Server Objects
