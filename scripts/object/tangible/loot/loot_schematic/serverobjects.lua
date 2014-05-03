@@ -44,7 +44,6 @@
 
 --Children folder includes
 
---includeFile("tangible/loot/loot_schematic/idlootschem/idserverobjects.lua")
 -- Server Objects
 includeFile("tangible/loot/loot_schematic/agitator_motor_schematic.lua")
 includeFile("tangible/loot/loot_schematic/assorted_fruit_schematic.lua")
@@ -129,3 +128,31 @@ includeFile("tangible/loot/loot_schematic/technical_console_s02_schematic.lua")
 includeFile("tangible/loot/loot_schematic/throwpillow_schematic.lua")
 includeFile("tangible/loot/loot_schematic/tumble_blender_schematic.lua")
 includeFile("tangible/loot/loot_schematic/utensils_schematic.lua")
+
+--Tarkin NGE houses
+
+includeFile("tangible/loot/loot_schematic/atat_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/bespin_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/commando_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/emperors_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/jabbas_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/hangar_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/jedi_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/musty_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/rebel_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/relaxation_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/sandcrawler_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/sith_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/tree_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/vehicle_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/vipbunker_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/yoda_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/yt1300_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/gen_lg_win_01_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/gen_lg_win_02_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/gen_md_win_01_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/gen_md_win_02_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/gen_sm_win_01_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/gen_sm_win_02_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/nab_sm_win_01_house_loot_schem.lua")
+includeFile("tangible/loot/loot_schematic/tat_sm_win_01_house_loot_schem.lua")
