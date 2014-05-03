@@ -5,9 +5,9 @@ janta_common = {
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
-		{itemTemplate = "janta_blood", weight = 3000000},
+		{itemTemplate = "janta_blood", weight = 4500000},
 		{itemTemplate = "knife_janta", weight = 1500000},
-		{itemTemplate = "janta_hides", weight = 5500000}
+		{itemTemplate = "janta_hides", weight = 4000000}
 	}
 }
 
