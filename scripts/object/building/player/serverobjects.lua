@@ -84,10 +84,12 @@ includeFile("building/player/player_house_tatooine_small_style_02.lua")
 includeFile("building/player/player_merchant_tent_style_01.lua")
 includeFile("building/player/player_merchant_tent_style_02.lua")
 includeFile("building/player/player_merchant_tent_style_03.lua")
+
+-- Tarkin NGE houses
+
 includeFile("building/player/musty_house.lua")
 includeFile("building/player/jedi_house.lua")
 includeFile("building/player/vipbunker_house.lua")
-
 includeFile("building/player/atat_house.lua")
 includeFile("building/player/bespin_house.lua")
 includeFile("building/player/commando_house.lua")
