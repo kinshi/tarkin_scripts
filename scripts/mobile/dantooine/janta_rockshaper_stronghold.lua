@@ -41,7 +41,7 @@ janta_rockshaper_stronghold = Creature:new {
 				{group = "nge_house_hut", chance = 1000000},
 				{group = "forage_rare", chance = 200000}
 			},
-			lootChance = 75000000
+			lootChance = 65000000
 		}	
 	},
 	weapons = {"primitive_weapons"},

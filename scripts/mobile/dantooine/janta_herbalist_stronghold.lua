@@ -40,7 +40,7 @@ janta_herbalist_stronghold = Creature:new {
 				{group = "forage_medical_component", chance = 1500000},
 				{group = "forage_rare", chance = 200000}
 			},
-			lootChance = 70000000
+			lootChance = 65000000
 		}	
 	},
 	weapons = {"primitive_weapons"},
