@@ -15,7 +15,6 @@ includeFile("trainer/trainer_dancer.lua")
 includeFile("trainer/trainer_doctor.lua")
 includeFile("trainer/trainer_droidengineer.lua")
 includeFile("trainer/trainer_entertainer.lua")
-includeFile("trainer/trainer_fs.lua")
 includeFile("trainer/trainer_imagedesigner.lua")
 --includeFile("trainer/trainer_industrialist.lua")
 includeFile("trainer/trainer_marksman.lua")
@@ -36,3 +35,13 @@ includeFile("trainer/trainer_starfighter_engineer.lua")
 includeFile("trainer/trainer_tailor.lua")
 includeFile("trainer/trainer_unarmed.lua")
 includeFile("trainer/trainer_weaponsmith.lua")
+
+-- Tarkin FS/Jedi Trainers
+
+includeFile("trainer/trainer_fs.lua")
+includeFile("trainer/trainer_enhancer.lua")
+includeFile("trainer/trainer_healer.lua")
+includeFile("trainer/trainer_defender.lua")
+includeFile("trainer/trainer_lightsaber.lua")
+includeFile("trainer/trainer_powers.lua")
+
