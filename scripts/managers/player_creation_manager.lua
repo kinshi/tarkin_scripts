@@ -13,7 +13,7 @@ professions = {
 	"combat_brawler",
 	"combat_marksman",
 	"crafting_artisan",
-	"jedi",
+--	"jedi",
 	"outdoors_scout",
 	"science_medic",
 	"social_entertainer"
