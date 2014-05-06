@@ -47,8 +47,8 @@ object_building_player_sith_house = object_building_player_shared_sith_house:new
 	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine"},
 	publicStructure = 0,
 	skillMods = {
-		{"private_medical_rating", 300},
-		{"private_buff_mind", 300},
+		{"private_medical_rating", 100},
+		{"private_buff_mind", 100},
 		{"private_med_battle_fatigue", 15}
 	},
 	childObjects = {

@@ -47,8 +47,8 @@ object_building_player_bespin_house = object_building_player_shared_bespin_house
 	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine"},
 	publicStructure = 0,
 	skillMods = {
-		{"private_medical_rating", 300},
-		{"private_buff_mind", 300},
+		{"private_medical_rating", 100},
+		{"private_buff_mind", 100},
 		{"private_med_battle_fatigue", 15}
 	},
 	childObjects = {
