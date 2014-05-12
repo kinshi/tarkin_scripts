@@ -5,8 +5,8 @@ bh_dark_jedi_knight = Creature:new {
 	faction = "",
 	level = 165,
 	chanceHit = 165,
-	damageMin = 1345,
-	damageMax = 2000,
+	damageMin = 900,
+	damageMax = 1345,
 	baseXp = 25266,
 	baseHAM = 121000,
 	baseHAMmax = 210000,
@@ -32,14 +32,12 @@ bh_dark_jedi_knight = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "holocron_dark", chance = 600000},
-				{group = "holocron_light", chance = 600000},
 				{group = "crystals_premium", chance = 600000},
 				{group = "rifles", chance = 1500000},
 				{group = "pistols", chance = 1500000},
 				{group = "melee_weapons", chance = 1500000},
-				{group = "armor_attachments", chance = 1100000},
-				{group = "clothing_attachments", chance = 1100000},
+				{group = "armor_attachments", chance = 1700000},
+				{group = "clothing_attachments", chance = 1700000},
 				{group = "carbines", chance = 1500000}			
 			},
 			lootChance = 3000000
