@@ -36,15 +36,14 @@ bh_canyon_corsair_cutthroat = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 4150000},
 				{group = "tailor_components", chance = 1000000},
 				{group = "color_crystals", chance = 400000},
 				{group = "crystals_good", chance = 400000},
 				{group = "melee_two_handed", chance = 600000},
 				{group = "carbines", chance = 600000},
 				{group = "pistols", chance = 600000},
-				{group = "clothing_attachments", chance = 450000},
-				{group = "armor_attachments", chance = 450000},
+				{group = "clothing_attachments", chance = 1487500},
+				{group = "armor_attachments", chance = 1487500},
 				{group = "canyon_corsair_common", chance = 1350000}
 			},
 			lootChance = 4500000

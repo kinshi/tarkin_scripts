@@ -41,9 +41,8 @@ bh_sennex_guard = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 7000000},
-				{group = "tailor_components", chance = 1500000},
-				{group = "loot_kit_parts", chance = 1500000}
+				{group = "tailor_components", chance = 5000000},
+				{group = "loot_kit_parts", chance = 5000000}
 			},
 			lootChance = 4500000
 		},

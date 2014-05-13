@@ -34,7 +34,6 @@ bh_mercenary_warlord = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 4600000},
 				{group = "tailor_components", chance = 1000000},
 				{group = "color_crystals", chance = 400000},
 				{group = "crystals_okay", chance = 400000},
@@ -43,8 +42,8 @@ bh_mercenary_warlord = Creature:new {
 				{group = "pistols", chance = 600000},
 				{group = "carbines", chance = 600000},
 				{group = "rifles", chance = 600000},
-				{group = "clothing_attachments", chance = 300000},
-				{group = "armor_attachments", chance = 300000}
+				{group = "clothing_attachments", chance = 2600000},
+				{group = "armor_attachments", chance = 2600000}
 			},
 			lootChance = 3500000
 		},
