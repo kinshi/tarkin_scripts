@@ -31,14 +31,14 @@ black_sun_guard_02 = Creature:new {
 	lootGroups = {
          {
 			groups = {
-				{group = "pistols", chance = 2750000},
-				{group = "blacksun_rare", chance = 1500000},
-				{group = "carbines", chance = 2750000},
+				{group = "armor_attachments", chance = 2500000},
+				{group = "clothing_attachments", chance = 2500000},
+				{group = "blacksun_rare", chance = 1000000},
 				{group = "jetpack_parts", chance = 1000000},				
-				{group = "bounty_hunter_armor", chance = 1750000},
+				{group = "bounty_hunter_armor", chance = 2750000},
 				{group = "jetpack_base", chance = 250000}
 			},
-			lootChance = 4500000
+			lootChance = 7500000
 		}	
 	},
 	weapons = {"pirate_weapons_heavy"},
