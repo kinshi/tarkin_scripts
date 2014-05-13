@@ -5,7 +5,8 @@ nightsister_rare = {
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
-		{itemTemplate = "nightsister_bicep_r", weight = 10000000}
+		{itemTemplate = "nightsister_bicep_r", weight = 4000000},
+		{itemTemplate = "nightsister_vibro_unit", weight = 6000000}
 	}
 }
 
