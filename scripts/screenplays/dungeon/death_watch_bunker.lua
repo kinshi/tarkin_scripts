@@ -3,7 +3,7 @@ DWB = ScreenPlay:new {
 }
 
 --   Set to 1 for debug messages  -
-TEST = 1
+TEST = 0
 
 --------------------------------------------------------------
 --   TODO List                                               -
