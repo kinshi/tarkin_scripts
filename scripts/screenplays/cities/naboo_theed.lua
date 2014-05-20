@@ -157,8 +157,8 @@ function NabooTheedScreenPlay:spawnMobiles()
 	--{"commoner",60,-5778.43,6,4397.54,180.005,0, "conversation", ""},
 	spawnMobile("naboo", "explorer",60,-5127.71,6,4336.34,0,0)
 	spawnMobile("naboo", "explorer",60,-4870.86,6,4179.63,0,0)
-	spawnMobile("naboo", "gungan_hunter",60,-5138.49,6,4229.36,180.005,0)
-	--{"gungan_outcast",60,-5827.81,6,4172.98,0,0, "conversation", ""},
+	spawnMobile("naboo", "gungan_hunter",300,-5138.49,6,4229.36,180.005,0)
+	--{"gungan_outcast",300,-5827.81,6,4172.98,0,0, "conversation", ""},
 	spawnMobile("naboo", "imperial_recruiter",0,-4928,6,4231,174,0)
 	spawnMobile("naboo", "imperial_recruiter",0,-4936,6,4231,174,0)
 	spawnMobile("naboo", "informant_npc_lvl_1",0,-4833,6,4134,0,0)
@@ -174,11 +174,11 @@ function NabooTheedScreenPlay:spawnMobiles()
 	--{"junk_dealer",0,-5885.3,6,4214.7,83,0, "", "",JUNKGENERIC,JUNKCONVGENERIC},
 	spawnMobile("naboo", "miner",60,-4965.4,6,4194.15,180.005,0)
 	--{"miner",60,-5886.59,6,4369.23,180.005,0, "conversation", ""},
-	spawnMobile("naboo", "naboo_police",60,-5138.49,6,4228.36,0,0)
-	spawnMobile("naboo", "naboo_police",60,-4911.53,6,4089.7,127.784,0)
-	--{"official",60,-5886.59,6,4368.23,0,0, "conversation", ""},
+	spawnMobile("naboo", "naboo_police",300,-5138.49,6,4228.36,0,0)
+	spawnMobile("naboo", "naboo_police",300,-4911.53,6,4089.7,127.784,0)
+	--{"official",300,-5886.59,6,4368.23,0,0, "conversation", ""},
 	spawnMobile("naboo", "patron",60,-5538,6,4365.1,103.215,0)
-	spawnMobile("naboo", "rsf_security_guard",60,-5032.08,6,4091.71,67.385,0)
+	spawnMobile("naboo", "rsf_security_guard",300,-5032.08,6,4091.71,67.385,0)
 	spawnMobile("naboo", "stormtrooper",400,-5206.32,6,4182.8,329.254,0)
 	spawnMobile("naboo", "stormtrooper",400,-4800,6,4113,121.097,0)
 	spawnMobile("naboo", "stormtrooper",400,-5126.48,6.52214,4130.79,184.164,0)
@@ -286,9 +286,6 @@ function NabooTheedScreenPlay:spawnMobiles()
 	spawnMobile("naboo", "mott_calf", 300, math.random(10) + -4946.78, 6, math.random(10) + 3650.67, math.random(360), 0)
 	spawnMobile("naboo", "mott_calf", 300, math.random(10) + -4943.30, 6, math.random(10) + 3652.44, math.random(360), 0)
 	spawnMobile("naboo", "mott_calf", 300, math.random(10) + -4939.35, 6, math.random(10) + 3653.82, math.random(360), 0)
-
-	--ID Tent
-	spawnMobile("naboo", "trainer_merchant",0,-4.4,0.6,-4.0,82,189545)
 
 	--Med Center
 	spawnMobile("naboo", "trainer_combatmedic",0,-16.4871,0.26,10.7738,176,1697364)
