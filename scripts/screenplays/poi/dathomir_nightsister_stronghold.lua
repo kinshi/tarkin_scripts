@@ -7,7 +7,7 @@ NightSisterStrongholdScreenPlay = ScreenPlay:new {
 		5035775
 	},
 
-	lootLevel = 80,
+	lootLevel = 38,
 
 	lootGroups = {
 		{
