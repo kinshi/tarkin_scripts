@@ -31,7 +31,7 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "sentry_specforce", 300, -6564.2, 405.0, 5928.9, 136, 0)
 	spawnMobile("corellia", "sentry_specforce_bombardier", 300, -6566.3, 405.0, 5936.8, 176, 0)
 	
-	-- South Barricade
+	--South Barricade
 	spawnMobile("corellia", "rebel_first_lieutenant", 300, -6548.290, 405.000, 5926.740, -103.284, 0)
 	spawnMobile("corellia", "rebel_commander", 300, -6548.200, 405.000, 5928.340, -129.786, 0)
 	spawnMobile("corellia", "rebel_commando", 300, -6502.670, 405.000, 5909.410, 175.100, 0)
@@ -56,12 +56,12 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "sentry_specforce", 300, -6482.8, 405.2, 5901.8, 76, 0)
 	spawnMobile("corellia", "sentry_specforce_bombardier", 300, -6491.8, 405.0, 5907.6, 110, 0)
 	
-	-- Wall Patrol #1
+	--Wall Patrol #1
 	spawnMobile("corellia", "rebel_commando", 300, -6447.450, 405.000, 5929.710, 38.208, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6445.180, 405.000, 5928.150, 35.316, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6444.260, 405.000, 5930.650, 19.903, 0)
 	
-	-- Wall Patrol #2
+	--Wall Patrol #2
 	spawnMobile("corellia", "rebel_trooper", 300, -6423.140, 405.000, 6001.140, 7.939, 0)
 	spawnMobile("corellia", "rebel_commando", 300, -6419.490, 405.000, 6001.510, 90.132, 0)
 	
@@ -70,19 +70,19 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "rebel_first_lieutenant", 300, -6423.450, 405.002, 6036.610, 25.600, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6425.940, 405.000, 6034.360, 50.529, 0)
 	
-	-- Wall Patrol #3
+	--Wall Patrol #3
 	spawnMobile("corellia", "rebel_trooper", 300, -6463.840, 405.000, 6066.600, 59.420, 0)
 	spawnMobile("corellia", "rebel_master_sergeant", 300, -6462.740, 405.000, 6071.330, 53.659, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6466.890, 405.000, 6073.040, 63.546, 0)
 	spawnMobile("corellia", "rebel_corporal", 300, -6470.990, 405.000, 6069.880, 70.154, 0)
 	
-	-- Wall Patrol #4
+	--Wall Patrol #4
 	spawnMobile("corellia", "rebel_commando", 300, -6551.150, 405.000, 6066.900, -128.616, 0)
 	spawnMobile("corellia", "rebel_corporal", 300, -6551.660, 405.000, 6066.480, -128.647, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6555.700, 405.000, 6063.690, 39.408, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6561.750, 405.000, 6059.500, -142.099, 0)
 	
-	-- Wall Patrol #5
+	--Wall Patrol #5
 	spawnMobile("corellia", "rebel_commando", 300, -6592.180, 405.000, 5977.550, 171.341, 0)
 	spawnMobile("corellia", "rebel_corporal", 300, -6598.610, 404.396, 5975.050, -172.328, 0)
 	spawnMobile("corellia", "rebel_corporal", 300, -6594.390, 404.997, 5970.980, 154.120, 0)
@@ -102,7 +102,7 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "sentry_specforce_bombardier", 300, -6443.2, 403.2, 6018.2, 68, 0)
 --	spawnMobile("corellia", "sentry_specforce_rebel_major", 300, -6446.6, 403.2, 6021.5, 68, 0)
 	
-	-- South Stairs
+	--South Stairs
 	spawnMobile("corellia", "rebel_corporal", 300, -6546.770, 398.000, 5956.870, 52.042, 0)
 	spawnMobile("corellia", "rebel_commando", 300, -6541.760, 398.000, 5953.480, 35.992, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6454.1, 398.0, 6011.7, -114, 0)
@@ -118,7 +118,7 @@ function RebelHideoutScreenPlay:spawnMobiles()
 --	spawnMobile("corellia", "sentry_specforce_sniper", 300, -6494.0 403.0, 5926.7, 171, 0)
 	spawnMobile("corellia", "sentry_specforce_combat_medic", 300, -6491.8, 403.0, 5926.9, 171, 0)
 	
-	-- Main Building Entrance
+	--Main Building Entrance
 	spawnMobile("corellia", "rebel_major", 300, -6530.480, 398.000, 5973.650, -136.004, 0)
 	spawnMobile("corellia", "rebel_commando", 300, -6522.890, 398.000, 5965.850, 133.708, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6517.160, 398.000, 5963.470, 12.022, 0)
@@ -131,11 +131,11 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "rebel_trooper", 300, -6498.560, 398.000, 5951.120, 66.456, 0)
 	spawnMobile("corellia", "rebel_commando", 300, -6489.680, 398.000, 5969.860, 81.557, 0)
 	
-	-- East Building
+	--East Building
 	spawnMobile("corellia", "rebel_trooper", 300, -6472.870, 398.000, 5967.040, 21.978, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6475.130, 398.000, 5967.190, 62.918, 0)
 	
-	-- East Shuttle Pad
+	--East Shuttle Pad
 	spawnMobile("corellia", "rebel_pilot", 300, -6463.900, 398.000, 5959.650, -171.915, 0)
 	spawnMobile("corellia", "rebel_pilot", 300, -6460.170, 398.000, 5948.910, 43.707, 0)
 	spawnMobile("corellia", "rebel_commander", 300, -6444.160, 398.000, 5970.670, -147.901, 0)
@@ -144,50 +144,50 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "sentry_specforce", 300, -6464.1, 398.0, 5963.1, 43, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6464.5, 398.0, 5960.8, -136, 0)
 	
-	-- North Stairs
+	--North Stairs
 	spawnMobile("corellia", "rebel_trooper", 300, -6455.630, 398.000, 6015.340, 153.865, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6454.1, 398.0, 6011.7, -114, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6456.8, 398.0, 6017.6, -114, 0)
 	
-	-- North Ramp
+	--North Ramp
 	spawnMobile("corellia", "rebel_commando", 300, -6435.710, 405.000, 6025.170, 60.815, 0)
 	spawnMobile("corellia", "rebel_corporal", 300, -6434.130, 405.000, 6021.730, 132.782, 0)
 	
-	-- North Terminal
+	--North Terminal
 	spawnMobile("corellia", "rebel_corporal", 300, -6481.820, 398.000, 6012.120, 40.388, 0)
 	
 	--North Building
 	spawnMobile("corellia", "rebel_trooper", 300, -6482.900, 398.000, 6030.100, 137.700, 0)
 	spawnMobile("corellia", "rebel_major", 300, -6482.670, 398.000, 6032.300, -20.057, 0)
 	
-	-- North West Building
+	--North West Building
 	spawnMobile("corellia", "rebel_trooper", 300, -6495.350, 398.000, 6037.590, 64.533, 0)
 	
-	-- West Shuttle Pad
+	--West Shuttle Pad
 	spawnMobile("corellia", "rebel_pilot", 300, -6520.390, 398.000, 6040.800, 39.000, 0)
 	spawnMobile("corellia", "rebel_commando", 300, -6518.020, 398.000, 6041.320, -140.642, 0)
 	spawnMobile("corellia", "rebel_major_general", 300, -6508.990, 398.000, 6049.510, 84.004, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6533.2, 398.0, 6039.5, 164, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6520.1, 398.0, 6044.0, 167, 0)
 	
-	-- West Building
+	--West Building
 	spawnMobile("corellia", "rebel_trooper", 300, -6555.870, 398.000, 6024.350, 132.165, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6554.090, 398.000, 6021.700, 143.914, 0)
 	
-	-- South West Building
+	--South West Building
 	spawnMobile("corellia", "rebel_trooper", 300, -6553.450, 398.000, 5997.370, -130.451, 0)
 	spawnMobile("corellia", "rebel_sergeant", 300, -6551.510, 398.000, 6006.530, 104.969, 0)
 	spawnMobile("corellia", "rebel_commando", 300, -6553.990, 398.000, 6014.380, 108.643, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6552.290, 398.000, 6013.850, 108.056, 0)
 	
-	-- Power Generators
+	--Power Generator
 	spawnMobile("corellia", "rebel_scout", 300, -6533.410, 398.000, 6002.590, 98.259, 0)
 	spawnMobile("corellia", "rebel_commander", 300, -6537.930, 398.000, 5997.470, -177.213, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6509.8, 398.0, 6022.2, -5, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6514.4, 398.0, 6021.8, -45, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6521.8, 398.0, 6014.0, -45, 0)
 	
-	-- Stairs to Roof
+	--Stairs to Roof
 	spawnMobile("corellia", "rebel_trooper", 300, -6495.300, 398.000, 6023.640, 60.714, 0)
 	spawnMobile("corellia", "rebel_warrant_officer_i", 300, -6497.560, 398.000, 6021.480, 58.871, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6496.5, 398.0, 6022.4, -59, 0)
@@ -202,20 +202,20 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "sentry_specforce", 300, -6489.9, 398.0, 6010.8, -45, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6485.7, 398.0, 6011.0, -131, 0)
 	
-	-- Roof Patrol #1
+	--Roof Patrol #1
 	spawnMobile("corellia", "rebel_trooper", 300, -6483.280, 405.000, 5997.160, 43.988, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6481.750, 405.001, 5998.750, 53.122, 0)
 	spawnMobile("corellia", "rebel_sergeant", 300, -6510.910, 405.000, 6015.780, -134.845, 0)
 	spawnMobile("corellia", "rebel_commando", 300, -6508.950, 405.000, 6013.350, -136.068, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6511.240, 405.000, 6012.820, -139.432, 0)
 	
-	-- Roof Office Entrance
+	--Roof Office Entrance
 	spawnMobile("corellia", "rebel_commando", 300, -6528.640, 405.000, 5985.940, -132.847, 0)
 	spawnMobile("corellia", "rebel_commando", 300, -6523.550, 405.000, 5980.830, -146.243, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6529.1, 405.0, 5979.6, 132, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6531.9, 405.0, 5982.4, -44, 0)
 	
-	-- Roof Patrol #2
+	--Roof Patrol #2
 	spawnMobile("corellia", "rebel_trooper", 300, -6496.670, 405.001, 5969.600, 45.137, 0)
 	spawnMobile("corellia", "rebel_first_lieutenant", 300, -6498.130, 405.001, 5970.740, 50.765, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6495.280, 405.001, 5971.140, 52.500, 0)
@@ -235,7 +235,7 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "sentry_specforce", 300, -6477.5, 398.0, 5974.7, -134, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6474.7, 398.0, 5971.8, -135, 0)
 	
-	-- Drill
+	--Drill
 	spawnMobile("corellia", "rebel_trooper", 300, -6560.5, 398.000, 5987.1, 90.000, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6560.5, 398.000, 5988.1, 90.000, 0)
 	spawnMobile("corellia", "rebel_trooper", 300, -6560.5, 398.000, 5989.1, 90.000, 0)

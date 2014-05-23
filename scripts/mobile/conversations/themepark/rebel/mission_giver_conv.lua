@@ -210,12 +210,14 @@ createMissionGiverConvoTemplate("jatrian_lytus_mission_giver_convotemplate", "ja
 createMissionGiverConvoTemplate("kelvus_naria_mission_giver_convotemplate", "kelvus_naria_mission_giver_conv_handler")
 createMissionGiverConvoTemplate("luthik_uwyr_mission_giver_convotemplate","luthik_uwyr_mission_giver_conv_handler")
 createMissionGiverConvoTemplate("lx_466_mission_giver_convotemplate", "lx_466_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("stoos_olko_mission_giver_convotemplate", "stoos_olko_mission_giver_conv_handler")
 createMissionGiverConvoTemplate("sg_567_mission_giver_convotemplate", "sg_567_mission_giver_conv_handler")
 createMissionGiverConvoTemplate("xaan_talmaron_mission_giver_convotemplate","xaan_talmaron_mission_giver_conv_handler")
 
 
 --Dathomir
 createMissionGiverConvoTemplate("singular_nak_mission_giver_convotemplate", "singular_nak_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("wallaw_loowobbli_mission_giver_convotemplate", "wallaw_loowobbli_mission_giver_conv_handler")
 
 
 --Rori
