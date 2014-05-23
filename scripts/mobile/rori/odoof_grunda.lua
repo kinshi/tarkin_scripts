@@ -1,6 +1,6 @@
-oxil_sarban = Creature:new {
+odoof_grunda = Creature:new {
   objectName = "",
-  customName = "Oxil Sarban",
+  customName = "Odoof Grunda",
   socialGroup = "townsperson",
   pvpFaction = "townsperson",
   faction = "townsperson",
@@ -27,12 +27,12 @@ oxil_sarban = Creature:new {
   optionsBitmask = 136,
   diet = HERBIVORE,
 
-  templates = {"object/mobile/dressed_oxil_sarban.iff"},
+  templates = {"object/mobile/gungan_male.iff"},
   lootGroups = {},
   weapons = {},
-  conversationTemplate = "oxil_sarban_mission_giver_convotemplate",
+  conversationTemplate = "jaleela_bindoo_mission_target_convotemplate",
   attacks = {
   }
 }
 
-CreatureTemplates:addCreatureTemplate(oxil_sarban, "oxil_sarban")
+CreatureTemplates:addCreatureTemplate(odoof_grunda, "odoof_grunda")
