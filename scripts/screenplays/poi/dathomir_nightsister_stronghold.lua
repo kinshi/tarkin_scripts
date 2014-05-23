@@ -7,7 +7,7 @@ NightSisterStrongholdScreenPlay = ScreenPlay:new {
 		5035775
 	},
 
-	lootLevel = 95,
+	lootLevel = 38,
 
 	lootGroups = {
 		{
@@ -31,7 +31,7 @@ registerScreenPlay("NightSisterStrongholdScreenPlay", true)
 function NightSisterStrongholdScreenPlay:start()
 	if (isZoneEnabled("dathomir")) then
 		self:spawnMobiles()
-		self:initializeLootContainers()
+--		self:initializeLootContainers()
 	end
 end
 
