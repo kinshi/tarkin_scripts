@@ -35,8 +35,21 @@ GoToTheater = Task:new {
 	despawnTime = 0,
 	activeAreaRadius = 0,
 	onFailedSpawn = nil,
-	onSuccessfulSpawn = nil
+	onSuccessfulSpawn = nil,
+	onEnteredActiveArea = nil
 }
+
+-- Get the spawned mobile list for the theater.
+-- @param pCreatureObject pointer to the creature object of the player.
+-- @return the spawned mobile list for the theater.
+function GoToTheater:getSpawnedMobileList(pCreatureObject)
+	return ObjectManager.withCreatureObject(pCreatureObject, function(creatureObject)
+		Logger:log("Getting the spawned mobile list for " .. self.taskName .. " theater.", LT_INFO)
+		local theaterId = readData(creatureObject:getObjectID() .. self.taskName .. THEATER_ID_STRING)
+		local pTheater = getSceneObject(theaterId)
+		return SpawnMobiles.getSpawnedMobiles(pTheater, self.taskName)
+	end)
+end
 
 -- Setup the active area around the theater.
 -- @param pCreatureObject pointer to the creature object for whom the theater is created for.
@@ -66,7 +79,8 @@ function GoToTheater:handleEnteredAreaEvent(pActiveArea, pCreatureObject, nothin
 		local storedActiveAreaId = readData(creatureObject:getObjectID() .. self.taskName .. ACTIVE_AREA_ID_STRING)
 		ObjectManager.withSceneObject(pActiveArea, function(activeArea)
 			if storedActiveAreaId == activeArea:getObjectID() then
-				local spawnedObjects = SpawnMobiles.getSpawnedMobiles(pCreatureObject, self.taskName)
+				Logger:log("Player entered active area of " .. self.taskName .. " theater.", LT_INFO)
+				local spawnedObjects = self:getSpawnedMobileList(pCreatureObject)
 				self:callFunctionIfNotNil(self.onEnteredActiveArea, nil, pCreatureObject, spawnedObjects)
 			end
 		end)
@@ -93,13 +107,13 @@ function GoToTheater:taskStart(pCreatureObject)
 				if spawnedMobilesList ~= nil then
 					if self:setupActiveArea(pCreatureObject, spawnPoint) then
 						local waypointId = ObjectManager.withPlayerObject(creatureObject:getPlayerObject(), function(playerObject)
-							return playerObject:addWaypoint(creatureObject:getZoneName(), self.waypointDescription, "", spawnPoint[1], spawnPoint[3], WAYPOINTWHITE, true, true)
+							return playerObject:addWaypoint(creatureObject:getZoneName(), self.waypointDescription, "", spawnPoint[1], spawnPoint[3], WAYPOINTWHITE, true, true, 0)
 						end)
 
 						if waypointId ~= nil then
 							writeData(creatureObject:getObjectID() .. self.taskName .. WAYPOINT_ID_STRING, waypointId)
 							createEvent(self.despawnTime, "handleDespawnTheater", self.taskName, pCreatureObject)
-							self:callFunctionIfNotNil(self.onSuccessfulSpawn, nil, pCreatureObject)
+							self:callFunctionIfNotNil(self.onSuccessfulSpawn, nil, pCreatureObject, spawnedMobilesList)
 							return true
 						end
 					end

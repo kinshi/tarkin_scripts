@@ -218,7 +218,7 @@ describe("GoToTheater", function()
 							it("Should generate an active waypoint for the player to the theater.", function()
 								testGoToTheater:start(pCreatureObject)
 
-								assert.spy(playerObject.addWaypoint).was.called_with(playerObject, zoneName, testGoToTheater.waypointDescription, "", spawnAreaPosition[1], spawnAreaPosition[3], WAYPOINTWHITE, true, true)
+								assert.spy(playerObject.addWaypoint).was.called_with(playerObject, zoneName, testGoToTheater.waypointDescription, "", spawnAreaPosition[1], spawnAreaPosition[3], WAYPOINTWHITE, true, true, 0)
 							end)
 
 							it("Should store the id of the waypoint on the player", function()
@@ -236,7 +236,7 @@ describe("GoToTheater", function()
 							it("Should call the onSuccessfulSpawn function.", function()
 								testGoToTheater:start(pCreatureObject)
 
-								assert.spy(testGoToTheater.onSuccessfulSpawn).was.called_with(testGoToTheater, pCreatureObject)
+								assert.spy(testGoToTheater.onSuccessfulSpawn).was.called_with(testGoToTheater, pCreatureObject, spawnedMobilesList)
 							end)
 
 							it("Should not finish the task.", function()
