@@ -1,6 +1,6 @@
-vana_sage = Creature:new {
+arven_wendik = Creature:new {
 	objectName = "",
-	customName = "Vana Sage",
+	customName = "Arven Wendik",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -24,15 +24,15 @@ vana_sage = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_lt_vana_sage.iff"},
+	templates = {"object/mobile/dressed_arven_wendik.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "arven_wendik_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(vana_sage, "vana_sage")
+CreatureTemplates:addCreatureTemplate(arven_wendik, "arven_wendik")

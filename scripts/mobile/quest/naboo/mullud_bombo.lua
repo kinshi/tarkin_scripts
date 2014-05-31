@@ -1,6 +1,6 @@
-arven_wendik = Creature:new {
+mullud_bombo = Creature:new {
 	objectName = "",
-	customName = "Arven Wendik",
+	customName = "Mullud Bombo",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -24,15 +24,15 @@ arven_wendik = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_arven_wendik.iff"},
+	templates = {"object/mobile/dressed_mullud_bombo.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "mullud_bombo_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(arven_wendik, "arven_wendik")
+CreatureTemplates:addCreatureTemplate(mullud_bombo, "mullud_bombo")

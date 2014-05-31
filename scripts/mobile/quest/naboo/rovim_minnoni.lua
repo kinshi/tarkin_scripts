@@ -1,6 +1,6 @@
-mullud_bombo = Creature:new {
+rovim_minnoni = Creature:new {
 	objectName = "",
-	customName = "Mullud Bombo",
+	customName = "Rovim Minnoni",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -24,15 +24,15 @@ mullud_bombo = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_mullud_bombo.iff"},
+	templates = {"object/mobile/dressed_noble_human_male_02.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "rovim_minnoni_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(mullud_bombo, "mullud_bombo")
+CreatureTemplates:addCreatureTemplate(rovim_minnoni, "rovim_minnoni")

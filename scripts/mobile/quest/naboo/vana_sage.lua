@@ -1,6 +1,6 @@
-rovim_minnoni = Creature:new {
+vana_sage = Creature:new {
 	objectName = "",
-	customName = "Rovim Minnoni",
+	customName = "Vana Sage",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -24,15 +24,15 @@ rovim_minnoni = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_noble_human_male_02.iff"},
+	templates = {"object/mobile/dressed_lt_vana_sage.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "vana_sage_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(rovim_minnoni, "rovim_minnoni")
+CreatureTemplates:addCreatureTemplate(vana_sage, "vana_sage")
