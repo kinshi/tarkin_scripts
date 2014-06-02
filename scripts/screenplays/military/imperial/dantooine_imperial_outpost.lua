@@ -92,7 +92,7 @@ function DantooineImperialOutpostScreenPlay:spawnMobiles()
 
 end
 
-function StrongholdScreenPlay:teleportImpStronghold(pCollector, pPlayer)
+function DantooineImperialOutpostScreenPlay:teleportImpStronghold(pCollector, pPlayer)
 	local playerfaction = LuaCreatureObject(pPlayer)
 	if (playerfaction:isImperial() == true) then
 		local player = LuaSceneObject(pPlayer)
