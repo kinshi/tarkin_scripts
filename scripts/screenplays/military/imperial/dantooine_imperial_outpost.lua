@@ -15,7 +15,7 @@ end
 
 function DantooineImperialOutpostScreenPlay:spawnSceneObjects()
 
-	local pCollector = spawnSceneObject("dantooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -4217.6, 3.0, -2355.5, -1, 0, 0, 1, 0)
+	local pCollector = spawnSceneObject("dantooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -4206.0, 3.0, -2346.0, -1, 0, 0, 1, 0)
 	local collector = LuaSceneObject(pCollector)
 	local col2creo = LuaCreatureObject(pCollector)
 	col2creo:setOptionsBitmask(264)
