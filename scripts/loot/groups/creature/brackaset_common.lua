@@ -6,7 +6,7 @@ brackaset_common = {
 	maximumLevel = 0,
 	lootItems = {
 --		{itemTemplate = "brackaset_plates", weight = 5000000},
---		{itemTemplate = "brackaset_plating_segment", weight = 5000000}
+		{itemTemplate = "krayt_composite_segment", weight = 10000000}
 	}
 }
 

@@ -27,7 +27,14 @@ vexed_voritor_lizard = Creature:new {
 	diet = CARNIVORE,
 
 	templates = {"object/mobile/vexed_voritor_lizard.iff"},
-	lootGroups = {},
+	lootGroups = {
+	 {
+	        groups = {
+				{group = "voritor_lizard_common", chance = 10000000}
+			},
+			lootChance = 2000000
+		}
+	},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {

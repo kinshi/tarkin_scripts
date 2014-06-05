@@ -27,7 +27,14 @@ voritor_dasher = Creature:new {
 	diet = NONE,
 
 	templates = {"object/mobile/voritor_dasher.iff"},
-	lootGroups = {},
+	lootGroups = {
+	 {
+	        groups = {
+				{group = "voritor_lizard_common", chance = 10000000}
+			},
+			lootChance = 2000000
+		}
+	},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
