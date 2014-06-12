@@ -121,6 +121,7 @@ faction_reward_data = {
 		"table_s1",
 		"data_terminal_s1",
 		"data_terminal_s2",
+		"rebel_banner",
 	},
 
 
@@ -145,6 +146,7 @@ faction_reward_data = {
 		"turret_tower_lg",
 		--"covert_detector_32m",
 		"minefield_1x1",
+		"emperors_spire",
 	},
 
 	imperial_installations = {
@@ -208,6 +210,10 @@ faction_reward_data = {
 		
 		minefield_1x1 = { type=faction_reward_type.installation, display="@deed:minefield_1x1", item="object/tangible/deed/faction_perk/minefield/field_1x1_deed.iff",
 			generatedObjectTemplate="object/installation/faction_perk/minefield/field_1x1.iff", cost=350 },
+
+		emperors_spire = {type=faction_reward_type.installation, display="Emperor's Spire Schematic", item="object/tangible/loot/loot_schematic/emperors_house_loot_schem.iff",
+			generatedObjectTemplate="object/building/player/emperors_house.iff", cost=10000 },
+
 	},
 	
 	rebel_installations_list = {
@@ -230,6 +236,7 @@ faction_reward_data = {
 		"turret_tower_med",
 		"turret_tower_lg",
 		"minefield_1x1",
+		"rebel_spire",
 	}, 
 	
 	rebel_installations = {
@@ -293,6 +300,9 @@ faction_reward_data = {
 		
 		minefield_1x1 = { type=faction_reward_type.installation, display="@deed:minefield_1x1", item="object/tangible/deed/faction_perk/minefield/field_1x1_deed.iff",
 			generatedObjectTemplate="object/installation/faction_perk/minefield/field_1x1.iff", cost=5000 },
+
+		rebel_spire = {type=faction_reward_type.installation, display="Rebel Spire Schematic", item="object/tangible/loot/loot_schematic/rebel_house_loot_schem.iff",
+			generatedObjectTemplate="object/building/player/rebel_house.iff", cost=10000 },
 	},
 	
 	rebel_furniture = {
@@ -308,6 +318,7 @@ faction_reward_data = {
 		frn_coffee_table = { type=faction_reward_type.furniture, display="@frn_d:frn_coffee_table", item="object/tangible/furniture/technical/coffee_table_s01.iff", cost=1200},
 		frn_couch = { type=faction_reward_type.furniture, display="@frn_d:frn_couch", item="object/tangible/furniture/technical/couch_s01.iff", cost=1200},
 		frn_end_table = { type=faction_reward_type.furniture, display="@frn_d:frn_end_table", item="object/tangible/furniture/technical/end_table_s01.iff", cost=1000},
+		rebel_banner = { type=faction_reward_type.furniture, display="Alliance Banner", item="object/tangible/furniture/all/frn_all_banner_rebel.iff", cost=1000},
 
 	},
 
@@ -326,6 +337,7 @@ faction_reward_data = {
 		"data_terminal_s2",
 		"data_terminal_s3",
 		"data_terminal_s4",
+		"imperial_banner",
 	},
 
 	imperial_furniture = {
@@ -343,7 +355,7 @@ faction_reward_data = {
 		frn_coffee_table = { type=faction_reward_type.furniture, display="@frn_d:frn_coffee_table", item="object/tangible/furniture/technical/coffee_table_s01.iff", cost=700},
 		frn_couch = { type=faction_reward_type.furniture, display="@frn_d:frn_couch", item="object/tangible/furniture/technical/couch_s01.iff", cost=1050},
 		frn_end_table = { type=faction_reward_type.furniture, display="@frn_d:frn_end_table", item="object/tangible/furniture/technical/end_table_s01.iff", cost=700},
-
+		imperial_banner = { type=faction_reward_type.furniture, display="Imperial Banner", item="object/tangible/furniture/all/bestine_quest_imp_banner.iff
 	},
 
 imperial_racial_penalty = {
