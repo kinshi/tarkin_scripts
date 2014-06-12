@@ -1,8 +1,5 @@
 dantooine_world_npc = {
-	wanderRadius = 10,
-	commandLevel = 0,
 
-	type = LAIR,
 	maxSpawnLimit = 256,
 
 	lairSpawns = {
@@ -99,4 +96,4 @@ dantooine_world_npc = {
 	}
 }
 
-addLairGroup("dantooine_world_npc", dantooine_world_npc);
+addSpawnGroup("dantooine_world_npc", dantooine_world_npc);

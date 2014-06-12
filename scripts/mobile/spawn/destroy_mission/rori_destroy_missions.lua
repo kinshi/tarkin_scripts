@@ -1,10 +1,6 @@
 rori_destroy_missions = {
-	wanderRadius = 10,
-	commandLevel = 0,
 
-	type = LAIR,
-
-	destroyMissionSpawns = {
+	lairSpawns = {
 		{
 			lairTemplateName = "rori_squall_warren_neutral_medium",
 			minDifficulty = 5,

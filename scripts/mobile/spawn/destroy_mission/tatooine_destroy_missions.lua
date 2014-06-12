@@ -1,10 +1,6 @@
 tatooine_destroy_missions = {
-	wanderRadius = 10,
-	commandLevel = 0,
 
-	type = LAIR,
-
-	destroyMissionSpawns = {
+	lairSpawns = {
 		{
 			lairTemplateName = "tatooine_kreetle_lair_neutral_small",
 			minDifficulty = 3,

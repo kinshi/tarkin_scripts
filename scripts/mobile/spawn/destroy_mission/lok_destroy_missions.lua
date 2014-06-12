@@ -1,10 +1,6 @@
 lok_destroy_missions = {
-	wanderRadius = 10,
-	commandLevel = 0,
 
-	type = LAIR,
-
-	destroyMissionSpawns = {
+	lairSpawns = {
 		{
 			lairTemplateName = "lok_pharple_lair_neutral_medium",
 			minDifficulty = 4,

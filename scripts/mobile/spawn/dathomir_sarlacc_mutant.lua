@@ -1,8 +1,5 @@
 dathomir_sarlacc_mutant = {
-	wanderRadius = 10,
-	commandLevel = 0,
 
-	type = LAIR,
 	maxSpawnLimit = 256,
 
 	lairSpawns = {
@@ -72,4 +69,4 @@ dathomir_sarlacc_mutant = {
 	}
 }
 
-addLairGroup("dathomir_sarlacc_mutant", dathomir_sarlacc_mutant);
+addSpawnGroup("dathomir_sarlacc_mutant", dathomir_sarlacc_mutant);

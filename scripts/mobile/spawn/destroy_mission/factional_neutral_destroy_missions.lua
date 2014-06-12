@@ -1,10 +1,6 @@
 factional_neutral_destroy_missions = {
-	wanderRadius = 10,
-	commandLevel = 0,
 
-	type = LAIR,
-
-	destroyMissionSpawns = {
+	lairSpawns = {
 		{
 			lairTemplateName = "global_criminal_neutral_none",
 			minDifficulty = 7,
