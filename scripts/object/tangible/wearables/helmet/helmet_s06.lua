@@ -46,6 +46,8 @@ object_tangible_wearables_helmet_helmet_s06 = object_tangible_wearables_helmet_s
 
 	faction = "Rebel",
 
+	customName = "Rebel Commando Helmet",
+
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
 				"object/creature/player/human_male.iff",
