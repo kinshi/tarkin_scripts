@@ -355,7 +355,7 @@ faction_reward_data = {
 		frn_coffee_table = { type=faction_reward_type.furniture, display="@frn_d:frn_coffee_table", item="object/tangible/furniture/technical/coffee_table_s01.iff", cost=700},
 		frn_couch = { type=faction_reward_type.furniture, display="@frn_d:frn_couch", item="object/tangible/furniture/technical/couch_s01.iff", cost=1050},
 		frn_end_table = { type=faction_reward_type.furniture, display="@frn_d:frn_end_table", item="object/tangible/furniture/technical/end_table_s01.iff", cost=700},
-		imperial_banner = { type=faction_reward_type.furniture, display="Imperial Banner", item="object/tangible/furniture/all/bestine_quest_imp_banner.iff
+		imperial_banner = { type=faction_reward_type.furniture, display="Imperial Banner", item="object/tangible/furniture/all/bestine_quest_imp_banner.iff", cost=1000},
 	},
 
 imperial_racial_penalty = {
