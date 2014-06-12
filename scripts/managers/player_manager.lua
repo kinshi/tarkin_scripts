@@ -83,11 +83,10 @@ veteranRewards = {
 
 	-- 180 Day Rewards
 
-	{templateFile = "object/tangible/veteran_reward/resource.iff", milestone=180, oneTime=true, description="@veteran_new:resourcecrate"},
+	{templateFile = "object/tangible/veteran_reward/resource.iff", milestone=180, oneTime=true, description="A Crate of Free Resources (5K Units)"},
 	{templateFile = "object/tangible/veteran_reward/frn_couch_falcon_corner_s01.iff", milestone=180, oneTime=false, description="@veteran_new:falconcouch"},
 	{templateFile = "object/tangible/veteran_reward/frn_couch_falcon_section_s01.iff", milestone=180, oneTime=false, description="@veteran_new:falconchair"},
 	{templateFile = "object/tangible/veteran_reward/frn_vet_tie_fighter_toy.iff", milestone=180, oneTime=false, description="@veteran_new:mini_tiefighter"},
-	{templateFile = "object/tangible/veteran_reward/frn_vet_x_wing_toy.iff", milestone=180, oneTime=false, description="@veteran_new:mini_xwing"},
 	{templateFile = "object/tangible/veteran_reward/frn_vet_x_wing_toy.iff", milestone=180, oneTime=false, description="@veteran_new:mini_xwing"},
 	{templateFile = "object/tangible/deed/player_house_deed/atat_house_deed.iff", milestone=180, oneTime=true, description="A Fallen AT-AT"},	
 
@@ -112,7 +111,7 @@ veteranRewards = {
 	{templateFile = "object/tangible/veteran_reward/frn_vet_jabba_toy.iff", milestone=360, oneTime=false, description="@veteran_new:mini_jabba"},
 	{templateFile = "object/tangible/veteran_reward/frn_vet_stormtrooper_toy.iff", milestone=360, oneTime=false, description="@veteran_new:mini_stormtrooper"},
 	{templateFile = "object/tangible/deed/vehicle_deed/barc_speeder_deed.iff", milestone=360, oneTime=true, description="A BARC Speeder"},
-	{templateFile = "object/tangible/deed/player_house_deed/vipbunker_house_deed.iff", milestone=360, oneTime=false, description="VIP Bunker"},
+	{templateFile = "object/tangible/deed/player_house_deed/vipbunker_house_deed.iff", milestone=360, oneTime=true, description="VIP Bunker"},
 	--Disabled until kits are functional {templateFile = "object/tangible/veteran_reward/antidecay.iff", milestone=360, oneTime=true, description="@veteran_new:antidecay"},
 	
 }
