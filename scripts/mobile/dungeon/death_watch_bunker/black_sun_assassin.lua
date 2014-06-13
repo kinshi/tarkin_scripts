@@ -38,7 +38,7 @@ black_sun_assassin = Creature:new {
 				{group = "nge_house_commando", chance = 1500000},
 				{group = "jetpack_base", chance = 500000}
 			},
-			lootChance = 3500000
+			lootChance = 4500000
 		}	
 	},
 	weapons = {"pirate_weapons_heavy"},

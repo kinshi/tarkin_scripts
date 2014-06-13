@@ -36,7 +36,7 @@ nyax_sword = {
 	-- staticDotValues: Object map that can randomly or statically generate a dot (used for weapon objects.)
 	staticDotValues = {
 		{"attribute", 0, 0}, -- See CreatureAttributes.h in src for numbers.
-		{"mind", 110, 400},
+		{"strength", 110, 400},
 		{"duration", 30, 500},
 		{"potency", 20, 100},
 		{"uses", 250, 9999}

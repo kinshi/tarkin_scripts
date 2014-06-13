@@ -37,7 +37,7 @@ black_sun_henchman = Creature:new {
 				{group = "bounty_hunter_armor", chance = 3250000},
 				{group = "jetpack_base", chance = 500000}
 			},
-			lootChance = 3500000
+			lootChance = 4500000
 		}	
 	},
 	weapons = {"pirate_weapons_heavy"},

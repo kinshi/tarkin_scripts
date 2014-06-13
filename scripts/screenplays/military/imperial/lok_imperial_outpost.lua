@@ -60,7 +60,7 @@ end
 
 function LokImperialOutpostScreenPlay:spawnMobiles()
 
-	-- Perimeter mobs
+	--Perimeter mobs
 
 	spawnMobile("lok", "at_st", 720, -1762.0, 11.9, -3087.3, 90, 0)
 	spawnMobile("lok", "at_st", 720, -1939.5, 11.8, -2945.9, 0, 0)
@@ -150,7 +150,7 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "dark_trooper", 300, -1913.5, 11.9, -3239.1, 180, 0)
 	spawnMobile("lok", "dark_trooper", 300, -1923.5, 11.9, -3239.1, 180, 0)
 
-	-- Powerplant
+	--powerplant
 
 	spawnMobile("lok", "elite_sand_trooper", 300, -2084.8, 11.9, -2624.5, 175, 0)
 	spawnMobile("lok", "imperial_second_lieutenant", 300, -2087.0, 11.9, -2625.0, 175, 0)
@@ -172,7 +172,7 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "stormtrooper", 300, -2083.5, 11.9, -2821.1, 155, 0)
 	spawnMobile("lok", "stormtrooper", 300, -2082.0, 11.9, -2824.3, 155, 0)
 
-	-- Inside the walls (not in buildings)
+	--inside the walls (not in buildings)
 
 	spawnMobile("lok", "imperial_recruiter", 20, -1843.75, 12.1, -3069.1, 123, 0)
 	spawnMobile("lok", "junk_dealer", 20, -2000.5, 11.9, -3143.6, -34, 0)
@@ -186,9 +186,9 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "commoner_technician", 300, -2002.1, 11.9, -3129.0, 0, 0)
 	spawnMobile("lok", "commoner_technician", 300, -1999.0, 11.9, -3112.0, -90, 0)
 	spawnMobile("lok", "commoner", 300, -2018.3, 11.9, -3051.0, 180, 0)
-	spawnMobile("lok", "thug", 30, -2018.3, 11.9, -3040.6, 180, 0)
-	spawnMobile("lok", "thug", 30, -2012.3, 11.9, -3034.8, 90, 0)
-	spawnMobile("lok", "thug", 30, -2012.3, 11.9, -3029.8, 90, 0)
+	spawnMobile("lok", "thug", 300, -2018.3, 11.9, -3040.6, 180, 0)
+	spawnMobile("lok", "thug", 300, -2012.3, 11.9, -3034.8, 90, 0)
+	spawnMobile("lok", "thug", 300, -2012.3, 11.9, -3029.8, 90, 0)
 	spawnMobile("lok", "commoner", 300, -1986.4, 11.9, -3073.4, 45, 0)
 	spawnMobile("lok", "commoner", 300, -1986.4, 11.9, -3077.9, -90, 0)
 
@@ -267,7 +267,7 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "dark_trooper", 300, -1905.7, 11.9, -3059.0, 180, 0)
 	spawnMobile("lok", "dark_trooper", 300, -1905.7, 11.9, -3075.7, 180, 0)
 
-	-- In the Buildings (NOT main building)
+	--in the buildings (not main building)
 
 	spawnMobile("lok", "imperial_first_lieutenant", 300, 4.3, 0, 1.68, -90, 8615442)
 	spawnMobile("lok", "imperial_medic", 300, 3.1, 0, -3.68, 90, 8615443)
@@ -308,7 +308,7 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "stormtrooper", 300, -0.8, 0, -5.4, 0, 8615448)
 	spawnMobile("lok", "stormtrooper", 300, 0.8, 0, -5.4, 0, 8615448)
 
-	-- Main Building
+	--main building
 
 	spawnMobile("lok", "commoner", 300, -1902.0, 18.9, -3081.5, -95, 0)
 	spawnMobile("lok", "commoner", 300, -1902.0, 18.9, -3084.5, -150, 0)
@@ -354,7 +354,7 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 
 	spawnMobile("lok", "imperial_recruiter", 300, 14.4, 1.0, -21.5, 0, 8615424)
 
-	spawnMobile("lok", "stormtrooper_medic", 60, -3.0, 1.0, -21.1, -120, 8615425)
+	spawnMobile("lok", "stormtrooper_medic", 300, -3.0, 1.0, -21.1, -120, 8615425)
 
 	spawnMobile("lok", "imperial_warrant_officer_i", 300, -18.1, 1.0, 21.1, 0, 8615422)
 
@@ -369,7 +369,7 @@ function LokImperialOutpostScreenPlay:spawnMobiles()
 	spawnMobile("lok", "imperial_trooper", 300, 0.0, 1.0, -4.2, -90, 8615420)
 	spawnMobile("lok", "imperial_trooper", 300, 0.0, 1.0, -7.3, -90, 8615420)
 
-	-- General_Otto & imperial_commander
+	--General_Otto & imperial_commander
 
 	local pOtto = spawnMobile("lok", "general_otto", 900, 18.7, 1.0, 21.1, -90, 8615421)
         createObserver(OBJECTDESTRUCTION, "LokImperialOutpostScreenPlay", "notifyOttoDead", pOtto)

@@ -1,4 +1,5 @@
 require("screenplays.screenplay")
+local ObjectManager = require("managers.object.object_manager")
 
 WAYPOINT_COLOR_PURPLE = 5
 SIT = 1
@@ -9,7 +10,9 @@ FACTIONREBEL = 0x16148850
 ThemeParkLogic = ScreenPlay:new {
 	numberOfActs = 1,
 	npcMap = {},
+	waypointMap = {},
 	permissionMap = {},
+	sceneObjectMap = {},
 	className = "ThemeParkLogic",
 	screenPlayState = "theme_park_general",
 	distance = 1000,
@@ -20,6 +23,7 @@ ThemeParkLogic = ScreenPlay:new {
 
 function ThemeParkLogic:start()
 	self:spawnNpcs()
+	self:spawnSceneObjects()
 	self:permissionObservers()
 end
 
@@ -36,12 +40,31 @@ function ThemeParkLogic:spawnNpcs()
 	end
 end
 
+function ThemeParkLogic:spawnSceneObjects()
+	if self.sceneObjectMap ~= nil then
+		for i = 1, # self.sceneObjectMap do
+			local objectSpawnData = self.sceneObjectMap[i].spawnData
+			if isZoneEnabled(objectSpawnData.planetName) then
+				local pObject = spawnSceneObject(objectSpawnData.planetName, objectSpawnData.objectTemplate, objectSpawnData.x, objectSpawnData.z, objectSpawnData.y, objectSpawnData.cellID, objectSpawnData.dw, objectSpawnData.dx, objectSpawnData.dy, objectSpawnData.dz)
+				ObjectManager.withSceneObject(pObject, function(luaObject)
+					if self.sceneObjectMap[i].customObjectName ~= nil and self.sceneObjectMap[i].customObjectName ~= "" then
+						luaObject:setCustomObjectName(self.sceneObjectMap[i].customObjectName)
+					end
+					if self.sceneObjectMap[i].objectIdLabel ~= nil and self.sceneObjectMap[i].objectIdLabel ~= "" then
+						objectId = luaObject:getObjectID()
+						writeData(self.sceneObjectMap[i].objectIdLabel, objectId)
+					end
+				end)
+			end
+		end
+	end
+end
+
 function ThemeParkLogic:permissionObservers()
 	for i = 1, # self.permissionMap, 1 do
 		local permission = self.permissionMap[i]
 		self:setupPermissionGroups(permission)
 		local pRegion = getRegion(permission.planetName, permission.regionName)
-
 		if pRegion ~= nil then
 			createObserver(ENTEREDAREA, self.className, "cellPermissionsObserver", pRegion)
 		end
@@ -118,6 +141,10 @@ function ThemeParkLogic:hasPermission(conditions, pCreature)
 			if self:hasMissionState(conditions[i].mission, conditions[i].missionState, pCreature) == false then
 				hasPermission = false
 			end
+		elseif conditions[i].permissionType == "npcState" then
+			if self:hasNpcMissionState(conditions[i].npcState, conditions[i].state, pCreature) == false then
+				hasPermission = false
+			end
 		end
 	end
 	return hasPermission
@@ -167,6 +194,16 @@ function ThemeParkLogic:hasMissionState(mission, missionState, pCreature)
 	else
 		return false
 	end
+end
+
+function ThemeParkLogic:hasNpcMissionState(npcState, state, pCreature)
+	return ObjectManager.withCreatureObject(pCreature, function(creature)
+		if creature:hasScreenPlayState(state, npcState) == 1 then
+			return true
+		else
+		  return false
+		end
+	end)
 end
 
 function ThemeParkLogic:getNpcNumber(pNpc)
@@ -633,8 +670,8 @@ function ThemeParkLogic:getMissionDescription(pConversingPlayer, direction)
 	if self.missionDescriptionStf == "" then
 		local wpNames = self:getHasWaypointNames(activeNpcNumber)
 		local currentMissionNumber = self:getCurrentMissionNumber(activeNpcNumber, pConversingPlayer)
-
-		if wpNames == "no" then
+		local curMission = self:getMission(activeNpcNumber, currentMissionNumber)
+		if wpNames == "no" or curMission.hasWaypointName == "no" then
 			return self:getDefaultWaypointName(pConversingPlayer, direction)
 		else
 			local stfFile = self:getStfFile(activeNpcNumber)
@@ -685,28 +722,14 @@ function ThemeParkLogic:getDefaultWaypointName(pConversingPlayer, direction)
 	end
 end
 
-function ThemeParkLogic:removeWaypoint(pConversingPlayer)
-	if pConversingPlayer ~= nil then
-		local creature = LuaCreatureObject(pConversingPlayer)
-		local pGhost = creature:getPlayerObject()
-		if pGhost ~= nil then
-			local ghost = LuaPlayerObject(pGhost)
-			local waypointID = readData(creature:getObjectID() .. "themePark:waypointID")
-			ghost:removeWaypoint(waypointID, true)
-		end
-	end
-end
-
 function ThemeParkLogic:updateWaypoint(pConversingPlayer, planetName, x, y, direction)
-	self:removeWaypoint(pConversingPlayer)
 	if pConversingPlayer ~= nil then
 		local creature = LuaCreatureObject(pConversingPlayer)
 		local pGhost = creature:getPlayerObject()
 		if pGhost ~= nil then
 			local ghost = LuaPlayerObject(pGhost)
 
-			waypointID = ghost:addWaypoint(planetName, self:getMissionDescription(pConversingPlayer, direction), "", x, y, WAYPOINT_COLOR_PURPLE, true, true)
-			writeData(creature:getObjectID() .. "themePark:waypointID", waypointID)
+			waypointID = ghost:addWaypoint(planetName, self:getMissionDescription(pConversingPlayer, direction), "", x, y, WAYPOINT_COLOR_PURPLE, true, true, WAYPOINTTHEMEPARK)
 		end
 	end
 end
@@ -966,7 +989,9 @@ function ThemeParkLogic:cleanUpMission(pConversingPlayer)
 		return false
 	end
 
-	self:removeWaypoint(pConversingPlayer)
+	ObjectManager.withCreaturePlayerObject(pConversingPlayer, function(playerObject)
+		playerObject:removeWaypointBySpecialType(WAYPOINTTHEMEPARK)
+	end)
 
 	local creature = LuaCreatureObject(pConversingPlayer)
 

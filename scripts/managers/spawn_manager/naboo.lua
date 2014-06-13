@@ -227,6 +227,12 @@ naboo_static_spawns = {
 	{"trainer_shipwright",0,5.1,0.6,66.6,119,1741539, "", "a shipwright trainer"},
 	{"vendor",60,-11.5446,2.12878,76.8966,179.996,5475487, "conversation", ""},
 	{"ysnide_omewror",60,4.2931,1.00001,-6.52435,180.012,1677394, "conversation", ""},
+
+-- Kadaara IHA Junk Dealers
+
+	{"junk_dealer",0, 5069.0,-191.9,6203,179,0, "", "",JUNKGENERIC+JUNKWEAPONS+JUNKGUNGAN,JUNKCONVGENERIC},
+	{"junk_dealer",0, 5089.0,-192.0,6562,179,0, "", "",JUNKGENERIC+JUNKWEAPONS+JUNKCLOTHESANDJEWELLERY,JUNKCONVGENERIC},
+
 }
 
 naboo_badges = {
