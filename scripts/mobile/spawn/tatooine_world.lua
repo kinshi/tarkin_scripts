@@ -13,7 +13,7 @@ tatooine_world = {
 			size = 25
 		},
 		{
-			lairTemplateName = "tatooine_rockmite_swarm_neutral_none",
+			lairTemplateName = "tatooine_rockmite_click_neutral_small",
 			spawnLimit = -1,
 			minDifficulty = 4,
 			maxDifficulty = 4,
@@ -40,7 +40,7 @@ tatooine_world = {
 			size = 25
 		},
 		{
-			lairTemplateName = "tatooine_gorg_herd_neutral_none",
+			lairTemplateName = "tatooine_gorg_lair_neutral_small",
 			spawnLimit = -1,
 			minDifficulty = 6,
 			maxDifficulty = 6,
@@ -59,15 +59,6 @@ tatooine_world = {
 		},
 		{
 			lairTemplateName = "tatooine_sevorrt_lair_neutral_medium",
-			spawnLimit = -1,
-			minDifficulty = 7,
-			maxDifficulty = 7,
-			numberToSpawn = 0,
-			weighting = 15,
-			size = 25
-		},
-		{
-			lairTemplateName = "tatooine_gorg_glutton_neutral_none",
 			spawnLimit = -1,
 			minDifficulty = 7,
 			maxDifficulty = 7,
@@ -184,7 +175,7 @@ tatooine_world = {
 			size = 25
 		},
 		{
-			lairTemplateName = "tatooine_cannibal_dewback_herd_neutral_none",
+			lairTemplateName = "tatooine_cannibal_dewback_lair_neutral_large",
 			spawnLimit = -1,
 			minDifficulty = 21,
 			maxDifficulty = 21,

@@ -29,11 +29,11 @@ sharnaff_reckless_ravager = Creature:new {
 	templates = {"object/mobile/sharnaff_hue.iff"},
 	controlDeviceTemplate = "object/intangible/pet/sharnaff_hue.iff",
 	lootGroups = {
-	 {
-	        groups = {
+		{
+			groups = {
 				{group = "sharnaff_common", chance = 10000000}
 			},
-			lootChance = 2000000
+			lootChance = 4500000
 		}
 	},
 	weapons = {},

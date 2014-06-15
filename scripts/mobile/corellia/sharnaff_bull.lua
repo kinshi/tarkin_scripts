@@ -28,11 +28,11 @@ sharnaff_bull = Creature:new {
 
 	templates = {"object/mobile/sharnaff_bull.iff"},
 	lootGroups = {
-	 {
-	        groups = {
+		{
+			groups = {
 				{group = "sharnaff_common", chance = 10000000}
 			},
-			lootChance = 2000000
+			lootChance = 3300000
 		}
 	},
 	weapons = {},
