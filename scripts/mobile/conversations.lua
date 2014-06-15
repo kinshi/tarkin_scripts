@@ -22,9 +22,10 @@ includeFile("conversations/themepark/nym/lok_hacker_conv.lua")
 includeFile("conversations/themepark/nym/nym_conv.lua")
 includeFile("conversations/themepark/nym/sergeant_moore_conv.lua")
 includeFile("conversations/themepark/nym/kole_conv.lua")
--- Rebel Themepark
-includeFile("conversations/themepark/rebel/mission_giver_conv.lua")
-includeFile("conversations/themepark/rebel/mission_target_conv.lua")
+
+-- Themepark Logic Convos
+includeFile("conversations/themepark/logic/mission_giver_conv.lua")
+includeFile("conversations/themepark/logic/mission_target_conv.lua")
 
 -- ** DUNGEONS **
 
@@ -54,7 +55,6 @@ includeFile("conversations/dungeon/geonosian_lab/biogenic_scientist_human_convo.
 -- ** OTHER **
 
 includeFile("conversations/trainer/trainers_conv.lua")
-includeFile("conversations/trainer/trainer_fs_conv.lua")
 
 -- Missions
 includeFile("conversations/mission/deliver_npc.lua")
@@ -83,7 +83,3 @@ includeFile("conversations/racetracks/mosespaconversation.lua")
 includeFile("conversations/racetracks/narmleconversation.lua")
 includeFile("conversations/racetracks/lokconversation.lua")
 includeFile("conversations/racetracks/nashalconversation.lua")
-
---Tarkin Custom
-
-includeFile("conversations/tasks/anniversary_template.lua")

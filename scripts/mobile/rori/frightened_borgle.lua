@@ -1,17 +1,17 @@
-borgle_harvester = Creature:new {
-	objectName = "@mob/creature_names:borgle_harvester",
+frightened_borgle = Creature:new {
+	objectName = "@mob/creature_names:frightened_borgle",
 	socialGroup = "borgle",
 	pvpFaction = "",
 	faction = "",
-	level = 13,
-	chanceHit = 0.29,
-	damageMin = 130,
-	damageMax = 140,
-	baseXp = 609,
-	baseHAM = 1200,
-	baseHAMmax = 1400,
+	level = 8,
+	chanceHit = 0.27,
+	damageMin = 80,
+	damageMax = 90,
+	baseXp = 187,
+	baseHAM = 405,
+	baseHAMmax = 495,
 	armor = 0,
-	resists = {10,10,0,0,0,0,0,-1,-1},
+	resists = {0,0,0,0,0,0,0,-1,-1},
 	meatType = "meat_carnivore",
 	meatAmount = 5,
 	hideType = "hide_leathery",
@@ -22,19 +22,19 @@ borgle_harvester = Creature:new {
 	tamingChance = 0.25,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
-	creatureBitmask = PACK,
+	creatureBitmask = HERD,
 	optionsBitmask = 128,
-	diet = CARNIVORE,
+	diet = HERBIVORE,
 
 	templates = {"object/mobile/borgle_hue.iff"},
 	controlDeviceTemplate = "object/intangible/pet/borgle_hue.iff",
-	scale = 1.05,
+	scale = 0.95,
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"intimidationattack","intimidationChance=50"}
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(borgle_harvester, "borgle_harvester")
+CreatureTemplates:addCreatureTemplate(frightened_borgle, "frightened_borgle")
