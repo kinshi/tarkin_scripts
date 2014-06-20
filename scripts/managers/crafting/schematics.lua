@@ -1799,5 +1799,16 @@ schematics = {
 {path="object/draft_schematic/structure/vehicle_house_schem.iff"},
 {path="object/draft_schematic/structure/yoda_house_schem.iff"},
 {path="object/draft_schematic/structure/yt1300_house_schem.iff"},
-{path="object/draft_schematic/structure/vipbunker_house_schem.iff"}
+{path="object/draft_schematic/structure/vipbunker_house_schem.iff"},
+--BH
+{path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_belt.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_bracer_l.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_bracer_r.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_bicep_l.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_bicep_r.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_boots.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_chest_plate.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_leggings.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_gloves.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_helmet.iff"}
 };
