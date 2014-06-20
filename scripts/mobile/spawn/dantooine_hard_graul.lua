@@ -1,8 +1,5 @@
 dantooine_hard_graul = {
-	wanderRadius = 10,
-	commandLevel = 0,
 
-	type = LAIR,
 	maxSpawnLimit = 32,
 
 	lairSpawns = {
@@ -27,4 +24,4 @@ dantooine_hard_graul = {
 	}
 }
 
-addLairGroup("dantooine_hard_graul", dantooine_hard_graul);
+addSpawnGroup("dantooine_hard_graul", dantooine_hard_graul);

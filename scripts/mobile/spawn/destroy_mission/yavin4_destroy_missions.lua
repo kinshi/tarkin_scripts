@@ -1,10 +1,6 @@
 yavin4_destroy_missions = {
-	wanderRadius = 10,
-	commandLevel = 0,
 
-	type = LAIR,
-
-	destroyMissionSpawns = {
+	lairSpawns = {
 		{
 			lairTemplateName = "yavin4_tanc_mite_lair_neutral_medium",
 			minDifficulty = 8,
@@ -93,12 +89,6 @@ yavin4_destroy_missions = {
 			lairTemplateName = "yavin4_mawgax_lair_neutral_medium",
 			minDifficulty = 28,
 			maxDifficulty = 36,
-			size = 25,
-		},
-		{
-			lairTemplateName = "yavin4_hutt_expedition_force_camp_hutt_medium_theater",
-			minDifficulty = 14,
-			maxDifficulty = 22,
 			size = 25,
 		},
 	}

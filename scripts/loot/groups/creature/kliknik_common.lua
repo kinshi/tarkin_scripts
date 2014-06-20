@@ -5,8 +5,8 @@ kliknik_common = {
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
---		{itemTemplate = "kliknik_chitin_armor_segment", weight = 6000000},
-		{itemTemplate = "kliknik_gland", weight = 10000000}
+		{itemTemplate = "krayt_composite_segment", weight = 5000000},
+		{itemTemplate = "kliknik_gland", weight = 5000000}
 	}
 }
 

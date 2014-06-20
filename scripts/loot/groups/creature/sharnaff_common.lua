@@ -6,7 +6,7 @@ sharnaff_common = {
 	maximumLevel = 0,
 	lootItems = {
 --		{itemTemplate = "sharnaff_plating", weight = 5000000},
---		{itemTemplate = "sharnaff_plating_segment", weight = 5000000}
+		{itemTemplate = "krayt_composite_segment", weight = 10000000}
 	}
 }
 

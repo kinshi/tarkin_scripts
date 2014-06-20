@@ -64,4 +64,54 @@ baseStoredDroids = 5
 baseStoredVehicles = 6
 baseStoredShips = 3
 
+-----------------------------------
+--VETERAN REWARDS CONFIG
+-----------------------------------
 
+veteranRewardMilestones = {90, 180, 270, 360} --days, must be sorted low to high
+
+veteranRewards = {
+
+	-- 90 Day Rewards
+	
+	-- Disabled until harvester is functional {templateFile = "object/tangible/veteran_reward/harvester.iff", milestone=90, oneTime=true, description="@veteran_new:poweredharvester"},
+	{templateFile = "object/tangible/veteran_reward/data_terminal_s1.iff", milestone=90, oneTime=false, description="@veteran_new:dataterminal1"},
+	{templateFile = "object/tangible/veteran_reward/data_terminal_s2.iff", milestone=90, oneTime=false, description="@veteran_new:dataterminal2"},
+	{templateFile = "object/tangible/veteran_reward/data_terminal_s3.iff", milestone=90, oneTime=false, description="@veteran_new:dataterminal3"},
+	{templateFile = "object/tangible/veteran_reward/data_terminal_s4.iff", milestone=90, oneTime=false, description="@veteran_new:dataterminal4"},
+	{templateFile = "object/tangible/veteran_reward/frn_vet_protocol_droid_toy.iff", milestone=90, oneTime=false, description="@veteran_new:mini_protocoldroid"},
+
+	-- 180 Day Rewards
+
+	{templateFile = "object/tangible/veteran_reward/resource.iff", milestone=180, oneTime=true, description="A Crate of Free Resources (5K Units)"},
+	{templateFile = "object/tangible/veteran_reward/frn_couch_falcon_corner_s01.iff", milestone=180, oneTime=false, description="@veteran_new:falconcouch"},
+	{templateFile = "object/tangible/veteran_reward/frn_couch_falcon_section_s01.iff", milestone=180, oneTime=false, description="@veteran_new:falconchair"},
+	{templateFile = "object/tangible/veteran_reward/frn_vet_tie_fighter_toy.iff", milestone=180, oneTime=false, description="@veteran_new:mini_tiefighter"},
+	{templateFile = "object/tangible/veteran_reward/frn_vet_x_wing_toy.iff", milestone=180, oneTime=false, description="@veteran_new:mini_xwing"},
+	{templateFile = "object/tangible/deed/player_house_deed/atat_house_deed.iff", milestone=180, oneTime=true, description="A Fallen AT-AT"},	
+
+	-- 270 Day Rewards
+
+	{templateFile = "object/tangible/deed/vehicle_deed/speederbike_flash_deed.iff", milestone=270, oneTime=true},
+	{templateFile = "object/tangible/wearables/goggles/goggles_s01.iff", milestone=270, oneTime=false, description="Special Edition Goggles Style 1"},
+	{templateFile = "object/tangible/wearables/goggles/goggles_s02.iff", milestone=270, oneTime=false, description="Special Edition Goggles Style 2"},
+	{templateFile = "object/tangible/wearables/goggles/goggles_s03.iff", milestone=270, oneTime=false, description="Special Edition Goggles Style 3"},
+	{templateFile = "object/tangible/wearables/goggles/goggles_s04.iff", milestone=270, oneTime=false, description="Special Edition Goggles Style 4"},
+	{templateFile = "object/tangible/wearables/goggles/goggles_s05.iff", milestone=270, oneTime=false, description="Special Edition Goggles Style 5"},
+	{templateFile = "object/tangible/wearables/goggles/goggles_s06.iff", milestone=270, oneTime=false, description="Special Edition Goggles Style 6"},
+	{templateFile = "object/tangible/veteran_reward/frn_vet_darth_vader_toy.iff", milestone=270, oneTime=false, description="@veteran_new:mini_darthvader"},
+	{templateFile = "object/tangible/deed/player_house_deed/vehicle_house_deed.iff", milestone=270, oneTime=true, description="Vehicle Barn"},
+
+	-- 360 Day Rewards
+
+	{templateFile = "object/tangible/veteran_reward/frn_tech_console_sectional_a.iff", milestone=360, oneTime=false, description="@veteran_new:techconsole_a"},
+	{templateFile = "object/tangible/veteran_reward/frn_tech_console_sectional_b.iff", milestone=360, oneTime=false, description="@veteran_new:techconsole_b"},
+	{templateFile = "object/tangible/veteran_reward/frn_tech_console_sectional_c.iff", milestone=360, oneTime=false, description="@veteran_new:techconsole_c"},
+	{templateFile = "object/tangible/veteran_reward/frn_tech_console_sectional_d.iff", milestone=360, oneTime=false, description="@veteran_new:techconsole_d"},
+	{templateFile = "object/tangible/veteran_reward/frn_vet_jabba_toy.iff", milestone=360, oneTime=false, description="@veteran_new:mini_jabba"},
+	{templateFile = "object/tangible/veteran_reward/frn_vet_stormtrooper_toy.iff", milestone=360, oneTime=false, description="@veteran_new:mini_stormtrooper"},
+	{templateFile = "object/tangible/deed/vehicle_deed/barc_speeder_deed.iff", milestone=360, oneTime=true, description="A BARC Speeder"},
+	{templateFile = "object/tangible/deed/player_house_deed/vipbunker_house_deed.iff", milestone=360, oneTime=true, description="VIP Bunker"},
+	--Disabled until kits are functional {templateFile = "object/tangible/veteran_reward/antidecay.iff", milestone=360, oneTime=true, description="@veteran_new:antidecay"},
+	
+}

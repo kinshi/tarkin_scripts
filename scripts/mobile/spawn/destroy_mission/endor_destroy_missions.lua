@@ -1,10 +1,6 @@
 endor_destroy_missions = {
-	wanderRadius = 10,
-	commandLevel = 0,
 
-	type = LAIR,
-
-	destroyMissionSpawns = {
+	lairSpawns = {
 		{
 			lairTemplateName = "endor_squall_rabid_neutral_small",
 			minDifficulty = 8,

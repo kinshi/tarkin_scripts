@@ -23,6 +23,11 @@ faction_reward_data = {
 		"carbine_laser",
 		"pistol_scout_blaster",
 		"lance_staff_metal",
+		"armor_kashyyykian_hunting_bracer_l",
+		"armor_kashyyykian_hunting_bracer_r",
+		"armor_kashyyykian_hunting_chest_plate",
+		"armor_kashyyykian_hunting_leggings",
+		"armor_rebel_commando_helmet",
 		"rocket_launcher",
 		"mine_drx",
 		"mine_xg",
@@ -44,6 +49,12 @@ faction_reward_data = {
 		metal_staff = { index=9, type=faction_reward_type.weapon, display="@weapon_name:sword_02", item="object/weapon/ranged/melee/sword/sword_02.iff", cost=1000},
 		rocket_launcher = { index=10, type=faction_reward_type.weapon, display="@weapon_name:rocket_launcher", item="object/weapon/ranged/heavy/heavy_rocket_launcher.iff", cost=5000},
 		lance_staff_metal = { index=11, type=faction_reward_type.weapon, display="@weapon_name:lance_staff_metal", item="object/weapon/melee/polearm/lance_staff_metal.iff", cost=1000},
+		armor_kashyyykian_hunting_bracer_l = { index=12, type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_bracer_l", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_l.iff",cost=2000},
+		armor_kashyyykian_hunting_bracer_r = { index=13, type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_bracer_r", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_r.iff",cost=2000},
+		armor_kashyyykian_hunting_chest_plate = { index=14, type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_chest_plate", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_chest_plate.iff",cost=4000},
+		armor_kashyyykian_hunting_leggings = { index=15, type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_leggings", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_leggings.iff",cost=3000},
+		armor_rebel_commando_helmet = { index=16, type=faction_reward_type.armor, display="Rebel Commando Helmet", item="object/tangible/wearables/helmet/helmet_s06.iff",cost=3000},		
+		mine_drx = { type=faction_reward_type.weapon, display="@weapon_name:mine_drx", item="object/weapon/mine/wp_mine_drx55.iff", cost=350},
 		mine_drx = { type=faction_reward_type.weapon, display="@weapon_name:mine_drx", item="object/weapon/mine/wp_mine_drx55.iff", cost=350},
 		mine_xg = { type=faction_reward_type.weapon, display="@weapon_name:mine_xg", item="object/weapon/mine/wp_mine_xg.iff", cost=350},
 		
@@ -61,6 +72,10 @@ faction_reward_data = {
 		"armor_stormtrooper_bracer_r",
 		"armor_stormtrooper_gloves",
 		"armor_stormtrooper_utility_belt",
+		"armor_kashyyykian_hunting_bracer_l",
+		"armor_kashyyykian_hunting_bracer_r",
+		"armor_kashyyykian_hunting_chest_plate",
+		"armor_kashyyykian_hunting_leggings",
 		"carbine_e11",
 		"pistol_power5",
 		"sword_02",
@@ -88,6 +103,10 @@ faction_reward_data = {
 		pistol_power5 = { type=faction_reward_type.weapon, display="@weapon_name:pistol_power5", item="object/weapon/ranged/pistol/pistol_power5.iff", cost=700},
 		carbine_e11 = { type=faction_reward_type.weapon, display="@weapon_name:carbine_e11", item="object/weapon/ranged/carbine/carbine_e11.iff", cost=1050},
 		sword_02 = { type=faction_reward_type.weapon, display="@weapon_name:sword_02", item="object/weapon/melee/sword/sword_02.iff", cost=600},
+		armor_kashyyykian_hunting_bracer_l = { type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_bracer_l", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_l.iff",cost=2000},
+		armor_kashyyykian_hunting_bracer_r = { type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_bracer_r", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_r.iff",cost=2000},
+		armor_kashyyykian_hunting_chest_plate = { type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_chest_plate", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_chest_plate.iff",cost=4000},
+		armor_kashyyykian_hunting_leggings = { type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_leggings", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_leggings.iff",cost=3000},
 		rocket_launcher = { type=faction_reward_type.weapon, display="@weapon_name:rocket_launcher", item="object/weapon/ranged/heavy/heavy_rocket_launcher.iff", cost=3500},
 		mine_drx = { type=faction_reward_type.weapon, display="@weapon_name:mine_drx", item="object/weapon/mine/wp_mine_drx55.iff", cost=350},
 		mine_xg = { type=faction_reward_type.weapon, display="@weapon_name:mine_xg", item="object/weapon/mine/wp_mine_xg.iff", cost=350},
@@ -121,6 +140,7 @@ faction_reward_data = {
 		"table_s1",
 		"data_terminal_s1",
 		"data_terminal_s2",
+		"rebel_banner",
 	},
 
 
@@ -145,6 +165,7 @@ faction_reward_data = {
 		"turret_tower_lg",
 		--"covert_detector_32m",
 		"minefield_1x1",
+		"emperors_spire",
 	},
 
 	imperial_installations = {
@@ -208,6 +229,10 @@ faction_reward_data = {
 		
 		minefield_1x1 = { type=faction_reward_type.installation, display="@deed:minefield_1x1", item="object/tangible/deed/faction_perk/minefield/field_1x1_deed.iff",
 			generatedObjectTemplate="object/installation/faction_perk/minefield/field_1x1.iff", cost=350 },
+
+		emperors_spire = {type=faction_reward_type.installation, display="Emperor's Spire Schematic", item="object/tangible/loot/loot_schematic/emperors_house_loot_schem.iff",
+			generatedObjectTemplate="object/building/player/emperors_house.iff", cost=10000 },
+
 	},
 	
 	rebel_installations_list = {
@@ -230,6 +255,7 @@ faction_reward_data = {
 		"turret_tower_med",
 		"turret_tower_lg",
 		"minefield_1x1",
+		"rebel_spire",
 	}, 
 	
 	rebel_installations = {
@@ -293,6 +319,9 @@ faction_reward_data = {
 		
 		minefield_1x1 = { type=faction_reward_type.installation, display="@deed:minefield_1x1", item="object/tangible/deed/faction_perk/minefield/field_1x1_deed.iff",
 			generatedObjectTemplate="object/installation/faction_perk/minefield/field_1x1.iff", cost=5000 },
+
+		rebel_spire = {type=faction_reward_type.installation, display="Rebel Spire Schematic", item="object/tangible/loot/loot_schematic/rebel_house_loot_schem.iff",
+			generatedObjectTemplate="object/building/player/rebel_house.iff", cost=10000 },
 	},
 	
 	rebel_furniture = {
@@ -308,6 +337,7 @@ faction_reward_data = {
 		frn_coffee_table = { type=faction_reward_type.furniture, display="@frn_d:frn_coffee_table", item="object/tangible/furniture/technical/coffee_table_s01.iff", cost=1200},
 		frn_couch = { type=faction_reward_type.furniture, display="@frn_d:frn_couch", item="object/tangible/furniture/technical/couch_s01.iff", cost=1200},
 		frn_end_table = { type=faction_reward_type.furniture, display="@frn_d:frn_end_table", item="object/tangible/furniture/technical/end_table_s01.iff", cost=1000},
+		rebel_banner = { type=faction_reward_type.furniture, display="Alliance Banner", item="object/tangible/furniture/all/frn_all_banner_rebel.iff", cost=1000},
 
 	},
 
@@ -326,6 +356,7 @@ faction_reward_data = {
 		"data_terminal_s2",
 		"data_terminal_s3",
 		"data_terminal_s4",
+		"imperial_banner",
 	},
 
 	imperial_furniture = {
@@ -343,7 +374,7 @@ faction_reward_data = {
 		frn_coffee_table = { type=faction_reward_type.furniture, display="@frn_d:frn_coffee_table", item="object/tangible/furniture/technical/coffee_table_s01.iff", cost=700},
 		frn_couch = { type=faction_reward_type.furniture, display="@frn_d:frn_couch", item="object/tangible/furniture/technical/couch_s01.iff", cost=1050},
 		frn_end_table = { type=faction_reward_type.furniture, display="@frn_d:frn_end_table", item="object/tangible/furniture/technical/end_table_s01.iff", cost=700},
-
+		imperial_banner = { type=faction_reward_type.furniture, display="Imperial Banner", item="object/tangible/furniture/all/bestine_quest_imp_banner.iff", cost=1000},
 	},
 
 imperial_racial_penalty = {

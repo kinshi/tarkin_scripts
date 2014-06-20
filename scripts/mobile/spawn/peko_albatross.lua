@@ -1,8 +1,5 @@
 peko_albatross = {
-	wanderRadius = 10,
-	commandLevel = 0,
 
-	type = LAIR,
 	maxSpawnLimit = 5,
 
 	lairSpawns = {
@@ -18,4 +15,4 @@ peko_albatross = {
 	}
 }
 
-addLairGroup("peko_albatross", peko_albatross);
+addSpawnGroup("peko_albatross", peko_albatross);

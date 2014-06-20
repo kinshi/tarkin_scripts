@@ -5,7 +5,7 @@ fambaa_common = {
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
---		{itemTemplate = "fambaa_hide_segment", weight = 5000000},
+		{itemTemplate = "krayt_composite_segment", weight = 10000000}
 --		{itemTemplate = "fambaa_plates", weight = 5000000}
 	}
 }

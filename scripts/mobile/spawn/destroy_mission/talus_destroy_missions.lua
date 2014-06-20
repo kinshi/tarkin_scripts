@@ -1,10 +1,6 @@
 talus_destroy_missions = {
-	wanderRadius = 10,
-	commandLevel = 0,
 
-	type = LAIR,
-
-	destroyMissionSpawns = {
+	lairSpawns = {
 		{
 			lairTemplateName = "talus_dalyrake_nest_neutral_medium",		
 			minDifficulty = 6,

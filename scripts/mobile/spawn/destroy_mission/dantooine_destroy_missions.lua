@@ -1,10 +1,6 @@
 dantooine_destroy_missions = {
-	wanderRadius = 10,
-	commandLevel = 0,
 
-	type = LAIR,
-
-	destroyMissionSpawns = {
+	lairSpawns = {
 		{
 			lairTemplateName = "dantooine_bol_herd_neutral_none",
 			minDifficulty = 8,
