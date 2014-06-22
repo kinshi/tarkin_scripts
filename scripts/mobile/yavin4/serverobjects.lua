@@ -138,5 +138,5 @@ includeFile("yavin4/yith_seenath.lua")
 
 --Tarkin NPCs
 
-includeFile("yavin4/black_sun_assassin_02")
-includeFile("yavin4/black_sun_guard_02")
+includeFile("yavin4/black_sun_assassin_02.lua")
+includeFile("yavin4/black_sun_guard_02.lua")
