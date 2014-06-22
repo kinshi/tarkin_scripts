@@ -135,3 +135,8 @@ includeFile("yavin4/woolamander_harvester.lua")
 includeFile("yavin4/woolamander.lua")
 includeFile("yavin4/woolamander_reaper.lua")
 includeFile("yavin4/yith_seenath.lua")
+
+--Tarkin NPCs
+
+includeFile("yavin4/black_sun_assassin_02")
+includeFile("yavin4/black_sun_guard_02")
