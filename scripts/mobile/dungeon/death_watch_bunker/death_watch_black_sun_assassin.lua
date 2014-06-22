@@ -35,7 +35,7 @@ death_watch_black_sun_assassin = Creature:new {
 				{group = "bounty_hunter_armor", chance = 3500000},
 				{group = "jetpack_base", chance = 500000}
 			},
-			lootChance = 1000000
+			lootChance = 4000000
 		}
 	},
 	weapons = {"battle_droid_weapons"},
