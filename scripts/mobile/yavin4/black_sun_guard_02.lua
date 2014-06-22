@@ -12,7 +12,7 @@ black_sun_guard_02 = Creature:new {
 	baseHAM = 36000,
 	baseHAMmax = 40000,
 	armor = 2,
-	resists = {45,45,65,40,60,75,40,45,-1},
+	resists = {45,45,65,40,60,75,40,45,55},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -38,7 +38,7 @@ black_sun_guard_02 = Creature:new {
 				{group = "bounty_hunter_armor", chance = 2750000},
 				{group = "jetpack_base", chance = 250000}
 			},
-			lootChance = 7500000
+			lootChance = 5500000
 		}	
 	},
 	weapons = {"pirate_weapons_heavy"},
