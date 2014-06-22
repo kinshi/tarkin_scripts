@@ -1,6 +1,5 @@
-palu_zerk = Creature:new {
-	objectName = "",
-	customName = "Palu Zerk",
+champhra_biahin = Creature:new {
+	objectName = "@mob/creature_names:champhra_biahin",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -23,16 +22,16 @@ palu_zerk = Creature:new {
 	tamingChance = 0,
 	ferocity = 0,
 	pvpBitmask = NONE,
-	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	creatureBitmask = NONE,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_palu_zerk.iff"},
+	templates = {"object/mobile/dressed_champhra_biahin.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "champhra_biahin_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(palu_zerk, "palu_zerk")
+CreatureTemplates:addCreatureTemplate(champhra_biahin, "champhra_biahin")

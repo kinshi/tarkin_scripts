@@ -1,35 +1,9 @@
 package.path = package.path .. ";scripts/screenplays/themepark/?.lua;scripts/screenplays/?.lua"
 require("screenplay")
-
---Military POIs
-
---Imperial
-
-includeFile("military/imperial/corellia_stronghold.lua")
-includeFile("military/imperial/dathomir_imperial_prison.lua")
-includeFile("military/imperial/dantooine_imperial_outpost.lua")
-includeFile("military/imperial/lok_imperial_outpost.lua")
-includeFile("military/imperial/talus_imperial_outpost.lua")
-includeFile("military/imperial/tatooine_imperial_detachment_hq.lua")
-includeFile("military/imperial/tatooine_imperial_oasis_outpost.lua")
-includeFile("military/imperial/naboo_kaadra_outpost.lua")
-includeFile("military/imperial/naboo_imperial_emp_retreat.lua")
-includeFile("military/imperial/yavin4_imperial_base.lua")
-includeFile("military/imperial/rori_imperial_encampment.lua")
-includeFile("military/imperial/bestine_imperial_outpost.lua")
-
---Rebel
-
-includeFile("military/rebel/rori_rebel_outpost.lua")
-includeFile("military/rebel/corellia_rebel_hideout.lua")
-includeFile("military/rebel/rori_rebel_military_base.lua")
-includeFile("military/rebel/tatooine_anchorhead_rebel_base.lua")
-includeFile("military/rebel/lok_rebel_safehouse.lua")
-includeFile("military/rebel/talus_rebel_installation.lua")
+require("themeParkLogic")
 
 -- Theme parks
-require("themeParkLogic")
---includeFile("themepark/themeParkLogic.lua")
+includeFile("themepark/conversations/goru_conv_handler.lua")
 includeFile("themepark/conversations/mission_giver_conv_handler.lua")
 includeFile("themepark/conversations/mission_target_conv_handler.lua")
 includeFile("themepark/conversations/nym_conv_handler.lua")
@@ -67,6 +41,7 @@ includeFile("tasks/dathomir/dolac_legasi.lua")
 includeFile("tasks/dathomir/singular_nak.lua")
 includeFile("tasks/dathomir/wallaw_loowobbli.lua")
 includeFile("tasks/dathomir/xarot_korlin.lua")
+includeFile("tasks/epic_quests/zicxBugBomb.lua")
 includeFile("tasks/naboo/arven_wendik.lua")
 includeFile("tasks/naboo/boss_nass.lua")
 includeFile("tasks/naboo/captain_gavyn_sykes.lua")
@@ -94,7 +69,13 @@ includeFile("tasks/rori/sindra_lintikoor.lua")
 includeFile("tasks/rori/sloan_rusper.lua")
 includeFile("tasks/rori/vordin_sildor.lua")
 includeFile("tasks/rori/zeelius_kraymunder.lua")
+includeFile("tasks/talus/champhra_biahin.lua")
+includeFile("tasks/talus/hagrin_zeed.lua")
+includeFile("tasks/talus/haleen_snowline.lua")
 includeFile("tasks/talus/kathikiis_ruwahurr.lua")
+includeFile("tasks/talus/mourno_draver.lua")
+includeFile("tasks/talus/nurla_slinthiss.lua")
+includeFile("tasks/talus/xalox_guul.lua")
 includeFile("tasks/tatooine/aaph_koden.lua")
 includeFile("tasks/tatooine/hedon_istee.lua")
 includeFile("tasks/tatooine/kitster_banai.lua")
@@ -121,6 +102,8 @@ includeFile("caves/dathomir_spider_clan_cave.lua")
 includeFile("caves/endor_korga_cave.lua")
 includeFile("caves/endor_orphaned_marauder_cave.lua")
 includeFile("caves/lok_droid_engineer_cave.lua")
+includeFile("caves/lok_gas_mine.lua")
+includeFile("caves/lok_imperial_research_facility.lua")
 includeFile("caves/lok_nym_pirate_cave.lua")
 includeFile("caves/naboo_narglatch_cave.lua")
 includeFile("caves/naboo_pirate_bunker.lua")
@@ -263,3 +246,29 @@ includeFile("static_spawns/yavin4_static_spawns.lua")
 
 --Race Tracks
 includeFile("racetracks/racetracks.lua")
+
+--Military POIs
+
+--Imperial
+
+includeFile("military/imperial/corellia_stronghold.lua")
+includeFile("military/imperial/dathomir_imperial_prison.lua")
+includeFile("military/imperial/dantooine_imperial_outpost.lua")
+includeFile("military/imperial/lok_imperial_outpost.lua")
+includeFile("military/imperial/talus_imperial_outpost.lua")
+includeFile("military/imperial/tatooine_imperial_detachment_hq.lua")
+includeFile("military/imperial/tatooine_imperial_oasis_outpost.lua")
+includeFile("military/imperial/naboo_kaadra_outpost.lua")
+includeFile("military/imperial/naboo_imperial_emp_retreat.lua")
+includeFile("military/imperial/yavin4_imperial_base.lua")
+includeFile("military/imperial/rori_imperial_encampment.lua")
+includeFile("military/imperial/bestine_imperial_outpost.lua")
+
+--Rebel
+
+includeFile("military/rebel/rori_rebel_outpost.lua")
+includeFile("military/rebel/corellia_rebel_hideout.lua")
+includeFile("military/rebel/rori_rebel_military_base.lua")
+includeFile("military/rebel/tatooine_anchorhead_rebel_base.lua")
+includeFile("military/rebel/lok_rebel_safehouse.lua")
+includeFile("military/rebel/talus_rebel_installation.lua")

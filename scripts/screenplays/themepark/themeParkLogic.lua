@@ -371,7 +371,7 @@ end
 
 function ThemeParkLogic:handleRetrieveMissionAccept(mission, pConversingPlayer, missionNumber)
 	if self:spawnMissionNpcs(mission, pConversingPlayer) == true then
-		self:writeData(pConversingPlayer, ":activeMission", 0)
+		self:writeData(pConversingPlayer, ":activeMission", 1)
 		return true
 	else
 		return false
@@ -411,6 +411,11 @@ function ThemeParkLogic:spawnMissionNpcs(mission, pConversingPlayer)
 	if pConversingPlayer == nil then
 		return false
 	end
+	
+	local npcNumber = self:getActiveNpcNumber(pConversingPlayer)
+	local missionNumber = self:getCurrentMissionNumber(npcNumber, pConversingPlayer)
+	local stfFile = self:getStfFile(npcNumber)
+			
 	local creature = LuaCreatureObject(pConversingPlayer)
 	local numberOfSpawns = table.getn(mission.primarySpawns) + table.getn(mission.secondarySpawns)
 
@@ -426,7 +431,7 @@ function ThemeParkLogic:spawnMissionNpcs(mission, pConversingPlayer)
 		local pNpc = self:spawnNpc(mainNpcs[i], spawnPoints[i], pConversingPlayer, i)
 		if pNpc ~= nil then
 			if i == 1 then
-				if (mission.silentTarget ~= "yes") then
+				if (self:isValidConvoString(stfFile, ":npc_breech_" .. missionNumber)) then
 					local pBreechArea = spawnSceneObject(mainNpcs[i].planetName, "object/active_area.iff", spawnPoints[i][1], spawnPoints[i][2], spawnPoints[i][3], 0, 0, 0, 0, 0)
 					ObjectManager.withActiveArea(pBreechArea, function(activeArea)
 						activeArea:setRadius(50)
@@ -549,6 +554,18 @@ function ThemeParkLogic:getMissionLootCount(pLooter)
 	end
 end
 
+function ThemeParkLogic:getMissionPreReqItem(pPlayer)
+	local npcNumber = self:getActiveNpcNumber(pPlayer)
+	local missionNumber = self:getCurrentMissionNumber(npcNumber, pPlayer)
+	local mission = self:getMission(npcNumber, missionNumber)
+
+	if mission.preReqItem == nil or mission.preReqItem == 0 then
+		return 0
+	else
+		return mission.preReqItem	
+	end
+end
+
 function ThemeParkLogic:notifyEnteredBreechArea(pActiveArea, pPlayer)
 	ObjectManager.withCreatureObject(pPlayer, function(player)
 		local playerID = player:getObjectID()
@@ -643,7 +660,15 @@ function ThemeParkLogic:giveMissionItems(mission, pConversingPlayer)
 	end
 
 	local creature = LuaCreatureObject(pConversingPlayer)
-	writeData(creature:getObjectID() .. ":activeMission", 1)
+	
+	local activeNpcNumber = self:getActiveNpcNumber(pConversingPlayer)
+	local currentMissionType = self:getMissionType(activeNpcNumber, pConversingPlayer)
+	
+	if (currentMissionType == "retrieve") then
+		writeData(creature:getObjectID() .. ":activeMission", 2)
+	else
+		writeData(creature:getObjectID() .. ":activeMission", 1)
+	end
 
 	local itemsToGive = mission.itemSpawns
 
@@ -790,6 +815,26 @@ function ThemeParkLogic:hasRequiredItem(pConversingPlayer)
 	end
 
 	return true
+end
+
+function ThemeParkLogic:doPreReqItemCheck(pPlayer, itemIff)
+	return ObjectManager.withCreatureObject(pPlayer, function(player)
+		local pInventory = player:getSlottedObject("inventory")
+		if pInventory == nil then
+			return false
+		end
+		local pItem = getContainerObjectByTemplate(pInventory, itemIff, true)
+		if pItem ~= nil then
+			return ObjectManager.withSceneObject(pItem, function(item)
+				item:destroyObjectFromWorld()
+				item:destroyObjectFromDatabase()
+				writeData(player:getObjectID() .. ":hasPreReqItem", 1)
+				return true
+			end)
+		else
+			return false
+		end
+	end)
 end
 
 function ThemeParkLogic:hasLootedRequiredItem(activeNpcNumber, pConversingPlayer)
@@ -1060,6 +1105,7 @@ function ThemeParkLogic:goToNextMission(pConversingPlayer)
 
 	local creature = LuaCreatureObject(pConversingPlayer)
 	writeData(creature:getObjectID() .. ":activeMission", 0)
+	writeData(creature:getObjectID() .. ":hasPreReqItem", 0)
 	writeStringData(creature:getObjectID() .. ":activeScreenPlay", "")
 	creature:setScreenPlayState(math.pow(2, missionNumber - 1), self.screenPlayState .. "_mission_" .. npcName)
 
@@ -1115,6 +1161,7 @@ function ThemeParkLogic:resetCurrentMission(pConversingPlayer)
 	local creature = LuaCreatureObject(pConversingPlayer)
 	writeData(creature:getObjectID() .. ":activeMission", 0)
 	writeData(creature:getObjectID() .. ":breechNpcID", 0)
+	writeData(creature:getObjectID() .. ":hasPreReqItem", 0)
 	writeStringData(creature:getObjectID() .. ":activeScreenPlay", "")
 
 	self:cleanUpMission(pConversingPlayer)
