@@ -29,10 +29,9 @@ mountain_vesp = Creature:new {
 	templates = {"object/mobile/vesp_hue.iff"},
 	controlDeviceTemplate = "object/intangible/pet/vesp_hue.iff",
 	lootGroups = {},
-	weapons = {},
-	conversationTemplate = "",
+	weapons = {"creature_spit_small_yellow"},
 	attacks = {
-		{"blindattack",""},
+		{"blindattack","blindChance=50"},
 		{"dizzyattack","dizzyChance=50"}
 	}
 }

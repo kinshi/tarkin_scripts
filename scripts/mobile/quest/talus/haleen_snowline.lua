@@ -1,6 +1,6 @@
-feinu_zerk = Creature:new {
+haleen_snowline = Creature:new {
 	objectName = "",
-	customName = "Feinu Zerk",
+	customName = "Haleen Snowline",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -24,15 +24,15 @@ feinu_zerk = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_feinu_zerk.iff"},
+	templates = {"object/mobile/dressed_haline_snowline.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "haleen_snowline_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(feinu_zerk, "feinu_zerk")
+CreatureTemplates:addCreatureTemplate(haleen_snowline, "haleen_snowline")

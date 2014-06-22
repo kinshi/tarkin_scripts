@@ -44,7 +44,7 @@ function mission_giver_conv_handler:runScreenHandlers(pConversationTemplate, pCo
 	local screen = LuaConversationScreen(pConversationScreen)
 
 	local screenID = screen:getScreenID()
-
+	
 	if screenID == "init" then
 		pConversationScreen = self:handleScreenInit(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
 	elseif screenID == "accept" then
@@ -84,7 +84,6 @@ function mission_giver_conv_handler:handleScreenInit(pConversationTemplate, pCon
 	local nextScreenName
 	local creature = LuaCreatureObject(pConversingPlayer)
 	local activeScreenPlay = readStringData(creature:getObjectID() .. ":activeScreenPlay")
-
 	if activeScreenPlay == self.themePark.className or activeScreenPlay == "" then
 		local activeNpcNumber = self.themePark:getActiveNpcNumber(pConversingPlayer)
 		local thisNpcNumber = self.themePark:getNpcNumber(pConversingNpc)
@@ -92,7 +91,6 @@ function mission_giver_conv_handler:handleScreenInit(pConversationTemplate, pCon
 		local globalFaction = self.themePark:getGlobalFaction()
 		local currentMissionNumber = self.themePark:getCurrentMissionNumber(activeNpcNumber, pConversingPlayer)
 		local missionFaction
-
 		if currentMissionNumber > 0 then
 			missionFaction = self.themePark:getMissionFaction(activeNpcNumber, currentMissionNumber)
 		else
@@ -109,20 +107,30 @@ function mission_giver_conv_handler:handleScreenInit(pConversationTemplate, pCon
 			if self.themePark:missionStatus(pConversingPlayer) == 1 then
 				if self.themePark:getMissionType(activeNpcNumber, pConversingPlayer) == "escort" and self.themePark:escortedNpcCloseEnough(pConversingPlayer) == true then
 					nextScreenName = "npc_reward_n"
-				elseif self.themePark:getMissionType(activeNpcNumber, pConversingPlayer) == "retrieve" and self.themePark:hasRequiredItem(pConversingPlayer) == true then
-					self.themePark:removeDeliverItem(pConversingPlayer)
-					nextScreenName = "npc_reward_n"
 				else
 					nextScreenName = "npc_work_n"
 				end
 			elseif self.themePark:missionStatus(pConversingPlayer) == 2 then
 				if self.themePark:getMissionType(activeNpcNumber, pConversingPlayer) == "confiscate" and not self.themePark:hasLootedRequiredItem(activeNpcNumber, pConversingPlayer) == true then
 					nextScreenName = "npc_work_n"
+				elseif self.themePark:getMissionType(activeNpcNumber, pConversingPlayer) == "retrieve" and self.themePark:hasRequiredItem(pConversingPlayer) == true then
+					self.themePark:removeDeliverItem(pConversingPlayer)
+					nextScreenName = "npc_reward_n"
+				elseif self.themePark:getMissionType(activeNpcNumber, pConversingPlayer) == "retrieve" and self.themePark:hasRequiredItem(pConversingPlayer) == false then
+					nextScreenName = "npc_work_n"
 				else
 					nextScreenName = "npc_reward_n"
 				end
 			else
-				nextScreenName = "npc_1_n"
+				if self.themePark:getMissionPreReqItem(pConversingPlayer) ~= 0 then
+					if readData(creature:getObjectID() .. ":hasPreReqItem") == 1 or self.themePark:doPreReqItemCheck(pConversingPlayer, missionPreReqItem) == true then
+						nextScreenName = "npc_1_n"
+					else
+						nextScreenName = "notyet"
+					end
+				else
+					nextScreenName = "npc_1_n"
+				end
 			end
 		elseif npcCompare < 0 then
 			nextScreenName = "next"
@@ -170,7 +178,10 @@ function mission_giver_conv_handler:handleScreenNpc1(pConversationTemplate, pCon
 
 	clonedScreen:addOption(stfFile .. ":player_1_" .. missionNumber, "accept")
 	clonedScreen:addOption(stfFile .. ":player_2_" .. missionNumber, "npc_3_n")
-	clonedScreen:addOption(stfFile .. ":player_3_" .. missionNumber, "npc_4_n")
+	
+	if (self.themePark:isValidConvoString(stfFile, ":player_3_" .. missionNumber)) then
+		clonedScreen:addOption(stfFile .. ":player_3_" .. missionNumber, "npc_4_n")
+	end
 
 	return pConversationScreen
 end
@@ -310,7 +321,7 @@ function mission_giver_conv_handler:handleScreenBackToWork(pConversationTemplate
 	local npcNumber = self.themePark:getNpcNumber(pConversingNpc)
 	local missionNumber = self.themePark:getCurrentMissionNumber(npcNumber, pConversingPlayer)
 	local stfFile = self.themePark:getStfFile(npcNumber)
-	
+
 	if (self.themePark:isValidConvoString(stfFile, ":npc_backtowork_" .. missionNumber)) then
 		clonedScreen:setDialogTextStringId(stfFile .. ":npc_backtowork_" .. missionNumber)
 	else

@@ -45,9 +45,7 @@ function mission_target_conv_handler:runScreenHandlers(pConversationTemplate, pC
 
 	local screenID = screen:getScreenID()
 
-	if screenID == "npc_breech_n" then
-		pConversationScreen = self:handleScreenBreech(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
-	elseif screenID == "missiontype" then
+	if screenID == "missiontype" then
 		pConversationScreen = self:handleScreenMissionType(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
 	elseif screenID == "npc_smuggle_n" then
 		pConversationScreen = self:handleScreenSmuggle(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
@@ -64,30 +62,11 @@ function mission_target_conv_handler:handleScreenNotIt(pConversationTemplate, pC
 	pConversationScreen = screen:cloneScreen()
 	local clonedScreen = LuaConversationScreen(pConversationScreen)
 
-	local npcNumber = self.themePark:getNpcNumber(pConversingNpc)
+	local npcNumber = self.themePark:getActiveNpcNumber(pConversingNpc)
 	local missionNumber = self.themePark:getCurrentMissionNumber(npcNumber, pConversingPlayer)
 	local stfFile = self.themePark:getStfFile(npcNumber)
 
 	clonedScreen:setDialogTextStringId(stfFile .. ":notit_" .. missionNumber)
-
-	return pConversationScreen
-end
-
-function mission_target_conv_handler:handleScreenBreech(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
-	local screen = LuaConversationScreen(pConversationScreen)
-	pConversationScreen = screen:cloneScreen()
-	local clonedScreen = LuaConversationScreen(pConversationScreen)
-
-	if (pConversingNpc == nil) then
-		return nil
-	end
-	local npc = LuaCreatureObject(pConversingNpc)
-
-	local npcNumber = self.themePark:getActiveNpcNumber(pConversingPlayer)
-	local missionNumber = self.themePark:getCurrentMissionNumber(npcNumber, pConversingPlayer)
-	local stfFile = self.themePark:getStfFile(npcNumber)
-
-	clonedScreen:setDialogTextStringId(stfFile .. ":npc_breech_" .. missionNumber)
 
 	return pConversationScreen
 end
@@ -180,7 +159,7 @@ function mission_target_conv_handler:handleScreenMissionType(pConversationTempla
 		end
 	elseif mission.missionType == "retrieve" then
 		if correctNpc == true then
-			if activeMission ~= 1 then
+			if activeMission ~= 2 then
 				self.themePark:giveMissionItems(mission, pConversingPlayer)
 				self.themePark:updateWaypoint(pConversingPlayer, npcData.spawnData.planetName, worldPosition.x, worldPosition.y, "return")
 			end

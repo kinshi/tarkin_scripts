@@ -222,6 +222,8 @@ createMissionGiverConvoTemplate("theme_park_jabba_mission_giver_convotemplate", 
 createMissionGiverConvoTemplate("theme_park_marauder_mission_giver_convotemplate", "theme_park_marauder_mission_giver_conv_handler")
 createMissionGiverConvoTemplate("theme_park_imperial_mission_giver_convotemplate", "theme_park_imperial_mission_giver_conv_handler")
 
+-- Epic Quest Chains
+createMissionGiverConvoTemplate("zicx_bug_bomb_mission_giver_convotemplate", "zicx_bug_bomb_mission_giver_conv_handler")
 
 -- Tatooine
 createMissionGiverConvoTemplate("hedon_istee_mission_giver_convotemplate", "hedon_istee_mission_giver_conv_handler")
@@ -249,8 +251,13 @@ createMissionGiverConvoTemplate("tamvar_senzen_mission_giver_convotemplate", "ta
 createMissionGiverConvoTemplate("vana_sage_mission_giver_convotemplate", "vana_sage_mission_giver_conv_handler")
 
 -- Talus
+createMissionGiverConvoTemplate("champhra_biahin_mission_giver_convotemplate", "champhra_biahin_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("mourno_draver_mission_giver_convotemplate", "mourno_draver_mission_giver_conv_handler")
 createMissionGiverConvoTemplate("kathikiis_ruwahurr_mission_giver_convotemplate", "kathikiis_ruwahurr_mission_giver_conv_handler")
-
+createMissionGiverConvoTemplate("xalox_guul_mission_giver_convotemplate", "xalox_guul_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("hagrin_zeed_mission_giver_convotemplate", "hagrin_zeed_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("haleen_snowline_mission_giver_convotemplate", "haleen_snowline_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("nurla_slinthiss_mission_giver_convotemplate", "nurla_slinthiss_mission_giver_conv_handler")
 
 -- Dantooine
 createMissionGiverConvoTemplate("drakka_judarrl_mission_giver_convotemplate", "drakka_judarrl_mission_giver_conv_handler")
