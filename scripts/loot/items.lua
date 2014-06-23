@@ -1031,7 +1031,7 @@ includeFile("items/tarkin_custom/goggles_s05.lua")
 
 --Loot
 
-includeFile("items/tarkin_custom/resource_deed.lua")
+--includeFile("items/tarkin_custom/resource_deed.lua")
 includeFile("items/tarkin_custom/av_21_schematic.lua")
 includeFile("items/tarkin_custom/av_21_powerplant.lua")
 
