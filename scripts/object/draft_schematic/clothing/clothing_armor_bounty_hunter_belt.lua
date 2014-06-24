@@ -59,7 +59,6 @@ templateType = DRAFTSCHEMATIC,
    customizationSkill = "armor_customization", 
    disableFactoryRun = true, 
 
-
    customizationOptions = {},
    customizationStringNames = {},
    customizationDefaults = {},
