@@ -275,7 +275,7 @@ includeFile("groups/wearables/wearables_uncommon.lua")
 
 -- Tarkin Custom
 
-includeFile("groups/tarkin_custom/resource_deed.lua")
+--includeFile("groups/tarkin_custom/resource_deed.lua")
 includeFile("groups/tarkin_custom/smc_armor.lua")
 includeFile("groups/tarkin_custom/smc_clothing.lua")
 includeFile("groups/tarkin_custom/ns_clothing.lua")
