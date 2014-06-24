@@ -43,6 +43,7 @@
 
 object_tangible_loot_loot_schematic_death_watch_bounty_hunter_gloves_schematic = object_tangible_loot_loot_schematic_shared_death_watch_bounty_hunter_gloves_schematic:new {
 	templateType = LOOTSCHEMATIC,
+	customName = "Bounty Hunter Armor Gloves Schematic",
 	objectMenuComponent = {"cpp", "LootSchematicMenuComponent"},
 	attributeListComponent = "LootSchematicAttributeListComponent",
 	requiredSkill = "crafting_armorsmith_master",
