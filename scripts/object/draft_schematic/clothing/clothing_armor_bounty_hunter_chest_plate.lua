@@ -59,9 +59,9 @@ object_draft_schematic_clothing_clothing_armor_bounty_hunter_chest_plate = objec
    customizationSkill = "armor_customization",
    disableFactoryRun = true, 
 
-   customizationOptions = {2},
-   customizationStringNames = {"/private/index_color_1"},
-   customizationDefaults = {0},
+   customizationOptions = {2, 1},
+   customizationStringNames = {"/private/index_color_1", "/private/index_color_2"},
+   customizationDefaults = {0, 0},
 
    ingredientTemplateNames = {"craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n", "craft_clothing_ingredients_n"},
    ingredientTitleNames = {"auxilary_coverage", "body", "liner", "hardware_and_attachments", "binding_and_reinforcement", "padding", "armor", "load_bearing_harness", "reinforcement"},
