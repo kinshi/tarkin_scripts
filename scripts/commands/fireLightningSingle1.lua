@@ -45,10 +45,11 @@ FireLightningSingle1Command = {
         name = "firelightningsingle1",
 
 	damageMultiplier = 3.0,
-	speedMultiplier = 2.0,
+	speedMultiplier = 1.0,
 	healthCostMultiplier = 1,
 	actionCostMultiplier = 1,
 	mindCostMultiplier = 1,
+	accuracyBonus = 50,
 
 	animationCRC = hashCode("fire_1_special_single_medium_face"),
 
