@@ -56,7 +56,8 @@ object_draft_schematic_clothing_clothing_armor_bounty_hunter_chest_plate = objec
 
    assemblySkill = "armor_assembly", 
    experimentingSkill = "armor_experimentation", 
-   customizationSkill = "armor_customization", 
+   customizationSkill = "armor_customization",
+   disableFactoryRun = true, 
 
    customizationOptions = {2},
    customizationStringNames = {"/private/index_color_1"},

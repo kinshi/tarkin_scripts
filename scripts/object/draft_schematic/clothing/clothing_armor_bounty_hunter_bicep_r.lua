@@ -56,7 +56,8 @@ templateType = DRAFTSCHEMATIC,
 
    assemblySkill = "armor_assembly", 
    experimentingSkill = "armor_experimentation", 
-   customizationSkill = "armor_customization", 
+   customizationSkill = "armor_customization",
+   disableFactoryRun = true, 
 
    customizationOptions = {2},
    customizationStringNames = {"/private/index_color_1"},
