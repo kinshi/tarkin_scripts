@@ -96,6 +96,9 @@ function TatooineMosEisleyScreenPlay:spawnMobiles()
 	--{"hunter",300,-2.46731,0.408271,-0.572452,180.01,1187893, "conversation", ""},
 	--{"rancher",60,-2.46731,0.408271,-1.67245,0,1187893, "conversation", ""},
 
+	--Guild Hall 3429 -4730
+	spawnMobile("tatooine", "trainer_artisan",0,-0.0585386,1.13306,-13.9039,0,1279964)
+
 	--Guild Hall 3479 -4684
 	spawnMobile("tatooine", "trainer_2hsword",0,11,1.1,-11,0,1189637)
 	spawnMobile("tatooine", "trainer_brawler",0,-11,1.1,-14,0,1189639)
@@ -353,7 +356,6 @@ function TatooineMosEisleyScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "worrt",300,3580.5,5,-4544.8,34,0)
 
 	--Trainers Outside
-	spawnMobile("tatooine", "trainer_artisan",0,3432.7,5.0,-4750.6,-149,0)
 	spawnMobile("tatooine", "trainer_artisan",0,3503,5,-4809,42,0)
 	--{"trainer_bountyhunter",0,3357.1,5,-4839.6,64,0, "npc_sitting_chair", ""},
 	spawnMobile("tatooine", "trainer_brawler",0,3496,5,-4765,91,0)

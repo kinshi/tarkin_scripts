@@ -21,7 +21,7 @@ gorax = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 20,
-	pvpBitmask = AGGRESSIVE + ATTACKABLE,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
 	creatureBitmask = PACK + KILLER,
 	optionsBitmask = 128,
 	diet = CARNIVORE,
@@ -34,7 +34,7 @@ gorax = Creature:new {
 				{group = "armor_attachments", chance = 2500000},
 				{group = "clothing_attachments", chance = 2500000}
 			},
-			lootChance = 70000000
+			lootChance = 4000000
 		}
 	},
 	weapons = {},
