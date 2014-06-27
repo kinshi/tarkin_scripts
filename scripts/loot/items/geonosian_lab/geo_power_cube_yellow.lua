@@ -6,8 +6,6 @@ geo_power_cube_yellow = {
 	customObjectName = "",
 	directObjectTemplate = "object/tangible/component/weapon/geonosian_power_cube_yellow.iff",
 	craftingValues = {
-		{"mindamage",10,20,0},
-		{"maxdamage",10,20,0},
 		{"armor_effectiveness",3,8,10},
 		{"useCount",5,13,0},
 	},
