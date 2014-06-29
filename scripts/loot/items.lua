@@ -436,6 +436,7 @@ includeFile("items/painting/party_poster.lua")
 includeFile("items/painting/RIS_diagram.lua")
 includeFile("items/painting/spitting_rawl_poster.lua")
 includeFile("items/painting/valley_view_painting.lua")
+
 --quest sub-folder
 includeFile("items/quest/waypoint_datapad.lua")
 includeFile("items/quest/theater_datapad.lua")
@@ -495,6 +496,7 @@ includeFile("items/task_loot/gins_darone_stranded_rebels_weapon.lua")
 includeFile("items/task_loot/lian_byrne_rebel_spy_report.lua")
 includeFile("items/task_loot/grizzled_dewback_hide.lua")
 includeFile("items/task_loot/haleen_snowline_evidence.lua")
+includeFile("items/task_loot/igbi_freemo_spice.lua")
 includeFile("items/task_loot/mozo_bondog_bondogs_backpack.lua")
 includeFile("items/task_loot/nightsister_force_crystal.lua")
 includeFile("items/task_loot/nurla_slinthiss_datadisc.lua")
@@ -520,6 +522,8 @@ includeFile("items/task_reward/painting_endor_style_01.lua")
 includeFile("items/task_reward/schematic_shellfish_harvester.lua")
 includeFile("items/task_reward/shield_generator_personal_imperial_test_schematic.lua")
 includeFile("items/task_reward/skull_bol.lua")
+includeFile("items/task_reward/treated_protective_coverall.lua")
+includeFile("items/task_reward/zicx_bug_jar.lua")
 
 --themepark_loot sub-folder
 includeFile("items/themepark_loot/big_creature_cage.lua")
@@ -548,6 +552,7 @@ includeFile("items/themepark_loot/themepark_loot_rantok.lua")
 includeFile("items/themepark_loot/themepark_loot_rocket.lua")
 includeFile("items/themepark_loot/themepark_loot_shipping_manifest.lua")
 includeFile("items/themepark_loot/themepark_loot_transponder.lua")
+
 --themepark_reward sub-folder
 includeFile("items/themepark_reward/armor_marauder_bicep_l.lua")
 includeFile("items/themepark_reward/armor_marauder_bicep_r.lua")

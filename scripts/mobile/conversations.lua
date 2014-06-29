@@ -25,6 +25,7 @@ includeFile("conversations/themepark/nym/kole_conv.lua")
 
 -- Epic Quests
 includeFile("conversations/themepark/epic_quests/goru_conv.lua")
+
 -- Themepark Logic Convos
 includeFile("conversations/themepark/logic/mission_giver_conv.lua")
 includeFile("conversations/themepark/logic/mission_target_conv.lua")

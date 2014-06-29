@@ -21,18 +21,19 @@ voritor_dasher = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = AGGRESSIVE + ATTACKABLE,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
 	creatureBitmask = PACK,
 	optionsBitmask = 0,
 	diet = NONE,
 
 	templates = {"object/mobile/voritor_dasher.iff"},
+	scale = 1.05,
 	lootGroups = {
-	 {
-	        groups = {
+		{
+			groups = {
 				{group = "voritor_lizard_common", chance = 10000000}
 			},
-			lootChance = 2000000
+			lootChance = 2100000
 		}
 	},
 	weapons = {},

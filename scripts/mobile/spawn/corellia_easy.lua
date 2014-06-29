@@ -4,15 +4,6 @@ corellia_easy = {
 
 	lairSpawns = {
 		{
-			lairTemplateName = "corellia_gubbur_herd_neutral_none",
-			spawnLimit = -1,
-			minDifficulty = 2,
-			maxDifficulty = 4,
-			numberToSpawn = 0,
-			weighting = 15,
-			size = 25
-		},
-		{
 			lairTemplateName = "corellia_gubbur_lair_neutral_small",
 			spawnLimit = -1,
 			minDifficulty = 4,
@@ -53,15 +44,6 @@ corellia_easy = {
 			spawnLimit = -1,
 			minDifficulty = 5,
 			maxDifficulty = 7,
-			numberToSpawn = 0,
-			weighting = 15,
-			size = 25
-		},
-		{
-			lairTemplateName = "corellia_scavenger_rat_neutral_small",
-			spawnLimit = -1,
-			minDifficulty = 6,
-			maxDifficulty = 9,
 			numberToSpawn = 0,
 			weighting = 15,
 			size = 25
@@ -122,15 +104,6 @@ corellia_easy = {
 		},
 		{
 			lairTemplateName = "corellia_krahbu_lair_neutral_medium",
-			spawnLimit = -1,
-			minDifficulty = 7,
-			maxDifficulty = 10,
-			numberToSpawn = 0,
-			weighting = 15,
-			size = 25
-		},
-		{
-			lairTemplateName = "corellia_murra_lair_neutral_none",
 			spawnLimit = -1,
 			minDifficulty = 7,
 			maxDifficulty = 10,

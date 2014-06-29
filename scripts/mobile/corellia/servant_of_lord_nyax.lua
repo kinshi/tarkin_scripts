@@ -3,15 +3,15 @@ servant_of_lord_nyax = Creature:new {
 	socialGroup = "followers_of_lord_nyax",
 	pvpFaction = "followers_of_lord_nyax",
 	faction = "followers_of_lord_nyax",
-	level = 60,
-	chanceHit = 0.6,
-	damageMin = 250,
-	damageMax = 265,
-	baseXp = 7235,
-	baseHAM = 30405,
-	baseHAMmax = 31495,
-	armor = 1,
-	resists = {40,20,40,20,50,10,-1,-1,-1},
+	level = 8,
+	chanceHit = 0.27,
+	damageMin = 70,
+	damageMax = 75,
+	baseXp = 235,
+	baseHAM = 405,
+	baseHAMmax = 495,
+	armor = 0,
+	resists = {0,0,0,0,0,0,0,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -31,26 +31,17 @@ servant_of_lord_nyax = Creature:new {
 		"object/mobile/dressed_emperors_hand_zabrak_male_01.iff"},
 	lootGroups = {
 		{
-		groups = {
-				{group = "junk", chance = 1700000},
-				{group = "melee_two_handed", chance = 2700000},
-				{group = "armor_attachments", chance = 1000000},
-               			{group = "clothing_attachments", chance = 1000000},
-				{group = "force_color_crystal", chance = 1200000},
-				{group = "printer_parts", chance = 1700000},
-				{group = "holocron_splinters", chance = 700000}
+			groups = {
+				{group = "nyax", chance = 2000000},
+				{group = "pistols", chance = 4000000},
+				{group = "rifles", chance = 4000000},
 			},
-			lootChance = 2500000
+			lootChance = 3300000
 		}
 	},
-	weapons = {"aakuan_polearm_weapons"},
+	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareaknockdown","knockdownChance=20"},
-		{"creatureareacombo",""},
-		{"dizzyattack","dizzyChance=20"},
-		{"blindattack","blindChance=20"},
-
 	}
 }
 

@@ -28,6 +28,7 @@ rifle_jawa_ion = {
 	junkDealerTypeNeeded = JUNKWEAPONS+JUNKJAWA,
 	junkMinValue = 25,
 	junkMaxValue = 45
+
 }
 
 addLootItemTemplate("rifle_jawa_ion", rifle_jawa_ion)
