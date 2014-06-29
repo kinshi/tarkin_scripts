@@ -1434,6 +1434,7 @@ schematics = {
 {path="object/draft_schematic/vehicle/civilian/speeder_bike_swoop.iff"},
 {path="object/draft_schematic/vehicle/civilian/speeder_bike.iff"},
 {path="object/draft_schematic/vehicle/vehicle_customization_kit.iff"},
+{path="object/draft_schematic/vehicle/civilian/jetpack.iff"},
 {path="object/draft_schematic/space/chassis/z95.iff"},
 {path="object/draft_schematic/space/chassis/tie_light_duty.iff"},
 {path="object/draft_schematic/space/chassis/hutt_light_s01.iff"},
