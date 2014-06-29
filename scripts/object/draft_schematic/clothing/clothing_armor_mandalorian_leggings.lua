@@ -69,7 +69,7 @@ object_draft_schematic_clothing_clothing_armor_mandalorian_leggings = object_dra
    contribution = {100, 100, 100, 100, 100, 100, 100, 100, 100},
 
 
-   targetTemplate = "object/tangible/wearables/armor/mandolorian/armor_mandolorian_leggings.iff",
+   targetTemplate = "object/tangible/wearables/armor/mandalorian/armor_mandalorian_leggings.iff",
 
    additionalTemplates = {
              }

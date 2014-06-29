@@ -69,7 +69,7 @@ object_draft_schematic_clothing_clothing_armor_mandalorian_bicep_l = object_draf
    contribution = {100, 100, 100, 100, 100, 100, 100, 100, 100},
 
 
-   targetTemplate = "object/tangible/wearables/armor/mandolorian/armor_mandolorian_bicep_l.iff",
+   targetTemplate = "object/tangible/wearables/armor/mandalorian/armor_mandalorian_bicep_l.iff",
 
    additionalTemplates = {
              }
