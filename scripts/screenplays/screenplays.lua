@@ -153,7 +153,6 @@ includeFile("cities/talus_dearic.lua")
 includeFile("cities/talus_nashal.lua")
 includeFile("cities/tatooine_anchorhead.lua")
 includeFile("cities/tatooine_bestine.lua")
-includeFile("cities/tatooine_bestine_travel.lua")
 includeFile("cities/tatooine_mos_eisley.lua")
 includeFile("cities/tatooine_mos_entha.lua")
 includeFile("cities/tatooine_mos_espa.lua")
@@ -161,8 +160,6 @@ includeFile("cities/tatooine_mos_taike.lua")
 includeFile("cities/tatooine_wayfar.lua")
 includeFile("cities/yavin4_labor_outpost.lua")
 includeFile("cities/yavin4_mining_outpost.lua")
--- Theed Cantina
-includeFile("cities/naboo_theed_cantina.lua")
 
 -- POIs
 includeFile("poi/corellia_crystal_fountain_bela_vistal.lua")
@@ -170,14 +167,12 @@ includeFile("poi/corellia_grand_theater_vreni_island.lua")
 includeFile("poi/corellia_rogue_corsec_base.lua")
 includeFile("poi/dantooine_dantari_village.lua")
 includeFile("poi/dantooine_mokk_stronghold.lua")
-includeFile("poi/dantooine_jedi_trainers.lua")
 includeFile("poi/dathomir_crash_site.lua")
 includeFile("poi/dathomir_nightsister_stronghold.lua")
 includeFile("poi/dathomir_nightsister_labor_camp.lua")
 includeFile("poi/dathomir_nightsister_vs_singing_mountain.lua")
 includeFile("poi/dathomir_sarlacc.lua")
 includeFile("poi/dathomir_singing_mountain_clan.lua")
-includeFile("poi/endor_donkuwah_static.lua")
 includeFile("poi/endor_dulok_village_north.lua")
 includeFile("poi/endor_dulok_village_south.lua")
 includeFile("poi/endor_ewok_lake_village_01.lua")
@@ -185,7 +180,6 @@ includeFile("poi/endor_ewok_lake_village_02.lua")
 includeFile("poi/endor_ewok_outcast_tree.lua")
 includeFile("poi/endor_ewok_tree_village_01.lua")
 includeFile("poi/endor_ewok_tree_village_02.lua")
-includeFile("poi/endor_gondula_tree_village.lua")
 includeFile("poi/endor_jinda_ritualist_cave.lua")
 includeFile("poi/endor_jinda_static.lua")
 includeFile("poi/endor_korga_static.lua")
@@ -246,12 +240,27 @@ includeFile("static_spawns/yavin4_static_spawns.lua")
 --Tests
 --includeFile("tests/options_bitmask_test.lua")
 --includeFile("event/stresstest_20120128.lua")
---includeFile("tests/ep3.lua")
+
 
 --Race Tracks
 includeFile("racetracks/racetracks.lua")
 
---Military POIs
+--Tarkin Custom
+
+--includeFile("tests/ep3.lua")
+
+--Jedi trainers on Dantooine
+
+includeFile("poi/dantooine_jedi_trainers.lua")
+
+--_Bestine Travel terms
+
+includeFile("cities/tatooine_bestine_travel.lua")
+
+-- Theed Cantina
+includeFile("cities/naboo_theed_cantina.lua")
+
+
 
 --Imperial
 
