@@ -24,7 +24,7 @@ function CorelliaCoronetScreenPlay:spawnSceneObjects()
 	collector:setCustomObjectName("\\#ee3377 One-Way Travel to the Death Watch Bunker - (Endor)")
 	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportDWB", pCollector)
 	
-	local pCollector2 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -18.882, 28, -5791, 0, 0, 0, 0.870857, 0)
+	local pCollector2 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -18.882, 28, -4718.96, -0.491536, 0, 0, 0.870857, 0)
 	local collector = LuaSceneObject(pCollector2)
 	local col2creo = LuaCreatureObject(pCollector2)
 	col2creo:setOptionsBitmask(128)
