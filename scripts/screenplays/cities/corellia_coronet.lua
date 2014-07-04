@@ -424,56 +424,26 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 end
 
 function CorelliaCoronetScreenPlay:teleportDWB(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("endor", 2437.8, 0, -3895.7, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("endor", -4706, 0, 4334, 0)
 end
 
-function CorelliaCoronetScreenPlay:teleportGeo(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("yavin4", -2583, 0, 2072, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
+function CorelliaCoronetScreenPlay:teleportGeo(pColl
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("yavin4", -6513, 0, -426, 0)
 end
 
 function CorelliaCoronetScreenPlay:teleportNyax(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("corellia", -2212, 0, 2325, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("corellia", 1282, 0, -302, 0)
 end
 
 function CorelliaCoronetScreenPlay:teleportTusken(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("tatooine", -4222.4, 3.0, -2360.9, -90)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("tatooine", -4017, 0, 6322, -90)
 end
 
 function CorelliaCoronetScreenPlay:teleportJanta(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("dantooine", 4042.2, 3.0, -6228.3, -90)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("dantooine", 7035, 0, -4078, -90)
 end
