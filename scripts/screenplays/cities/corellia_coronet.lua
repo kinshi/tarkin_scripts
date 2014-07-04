@@ -52,6 +52,8 @@ function CorelliaCoronetScreenPlay:spawnSceneObjects()
 	collector:setCustomObjectName("\\#ee3377One-Way Travel to the Janta Cave - (Dantooine)")
 	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportJanta", pCollector5)
 
+end
+
 function CorelliaCoronetScreenPlay:spawnMobiles()
 
 	--Anything dashed out will need to be added here and removed from spawn manager once the spawnMobiles command is extended.
