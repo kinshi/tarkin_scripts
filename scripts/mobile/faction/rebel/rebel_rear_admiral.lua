@@ -11,7 +11,7 @@ rebel_rear_admiral = Creature:new {
 	baseHAM = 160000,
 	baseHAMmax = 195000,
 	armor = 3,
-	resists = {65,75,45,45,30,30,80,65,-1},
+	resists = {70,75,0,0,30,30,80,65,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -26,7 +26,12 @@ rebel_rear_admiral = Creature:new {
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
-	templates = {},
+	templates = {"object/mobile/dressed_rebel_high_general_sullustan_male_01.iff",
+				 "object/mobile/dressed_rebel_high_general_old_twilek_female_01.iff",
+				 "object/mobile/dressed_rebel_high_general_human_male_02.iff",
+				 "object/mobile/dressed_rebel_high_general_human_female_01.iff",
+				 "object/mobile/dressed_rebel_high_general_moncal_male_01.iff"				 
+	},
 	lootGroups = {},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "",

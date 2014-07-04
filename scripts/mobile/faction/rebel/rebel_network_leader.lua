@@ -10,8 +10,8 @@ rebel_network_leader = Creature:new {
 	baseXp = 514,
 	baseHAM = 1200,
 	baseHAMmax = 1400,
-	armor = 1,
-	resists = {65,75,45,45,30,30,80,65,-1},
+	armor = 0,
+	resists = {0,0,0,0,0,0,0,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -26,7 +26,14 @@ rebel_network_leader = Creature:new {
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
-	templates = {},
+	templates = {
+		"object/mobile/selonian_female.iff",
+		"object/mobile/selonian_male.iff",
+		"object/mobile/bothan_female.iff",
+		"object/mobile/bothan_male.iff",
+		"object/mobile/aqualish_female.iff",
+		"object/mobile/aqualish_male.iff"
+	},
 	lootGroups = {},
 	weapons = {"rebel_weapons_light"},
 	conversationTemplate = "",

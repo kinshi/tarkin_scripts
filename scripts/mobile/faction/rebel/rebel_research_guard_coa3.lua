@@ -11,8 +11,8 @@ rebel_research_guard_coa3 = Creature:new {
 	baseXp = 1257,
 	baseHAM = 4100,
 	baseHAMmax = 5000,
-	armor = 1,
-	resists = {65,75,45,45,30,30,80,65,-1},
+	armor = 0,
+	resists = {0,0,0,0,0,0,0,0,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -27,7 +27,14 @@ rebel_research_guard_coa3 = Creature:new {
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
-	templates = {},
+	templates = {
+		"object/mobile/dressed_rebel_trooper_bith_m_01.iff",
+		"object/mobile/dressed_rebel_trooper_human_female_01.iff",
+		"object/mobile/dressed_rebel_trooper_human_male_01.iff",
+		"object/mobile/dressed_rebel_trooper_sullustan_male_01.iff",
+		"object/mobile/dressed_rebel_trooper_twk_female_01.iff",
+		"object/mobile/dressed_rebel_trooper_twk_male_01.iff"
+	},
 	lootGroups = {},
 	weapons = {"rebel_weapons_light"},
 	conversationTemplate = "",

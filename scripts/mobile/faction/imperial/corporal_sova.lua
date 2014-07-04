@@ -26,18 +26,18 @@ corporal_sova = Creature:new {
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
-	templates = {},
+	templates = {"object/mobile/dressed_imperial_major_m.iff"},
 	lootGroups = {
 		{
 			groups = {
 				{group = "color_crystals", chance = 200000},
-				{group = "junk", chance = 3900000},
+				{group = "junk", chance = 5900000},
 				{group = "rifles", chance = 800000},
 				{group = "pistols", chance = 800000},
 				{group = "carbines", chance = 800000},
 				{group = "melee_weapons", chance = 1200000},
-				{group = "clothing_attachments", chance = 1150000},
-				{group = "armor_attachments", chance = 1150000}
+				{group = "clothing_attachments", chance = 150000},
+				{group = "armor_attachments", chance = 150000}
 			},
 			lootChance = 2300000
 		}		
