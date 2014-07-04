@@ -8,9 +8,49 @@ registerScreenPlay("CorelliaCoronetScreenPlay", true)
 
 function CorelliaCoronetScreenPlay:start()
 	if (isZoneEnabled("corellia")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
 end
+
+function CorelliaCoronetScreenPlay:spawnSceneObjects()
+
+	-- Travel terminal
+
+	local pCollector = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -39.2332, 28, -4700.81, -0.215735, 0, 0, 0.976452, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 One-Way Travel to the Death Watch Bunker - (Endor)")
+	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportDWB", pCollector)
+	
+	local pCollector2 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -18.882, 28, -5791, 0, 0, 0, 0.870857, 0)
+	local collector = LuaSceneObject(pCollector2)
+	local col2creo = LuaCreatureObject(pCollector2)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 One-Way Travel to The Geonosian Lab - (Yavin 4)")
+	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportGeo", pCollector2)
+	
+	local pCollector3 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -17.2687, 28, -4746.79, 0.848836, 0, 0, -0.528656, 0)
+	local collector = LuaSceneObject(pCollector3)
+	local col2creo = LuaCreatureObject(pCollector3)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 One-Way Travel to Lord Nyax Compound - (Corellia)")
+	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportNyax", pCollector3)
+
+	local pCollector4 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -35.8925, 28, -4767.42, 0.9564, 0, 0, -0.292058, 0)
+	local collector = LuaSceneObject(pCollector4)
+	local col2creo = LuaCreatureObject(pCollector4)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377One-Way Travel to Fort Tusken - (Tatooine)")
+	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportTusken", pCollector4)
+
+	local pCollector5 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -63.2629, 28, -4768.83, 0.999535, 0, 0, 0.0305036, 0)
+	local collector = LuaSceneObject(pCollector5)
+	local col2creo = LuaCreatureObject(pCollector5)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377One-Way Travel to the Janta Cave - (Dantooine)")
+	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportJanta", pCollector5)
 
 function CorelliaCoronetScreenPlay:spawnMobiles()
 
@@ -379,4 +419,59 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "trainer_ranger",0,-505,28,-4633,180,0)
 	spawnMobile("corellia", "trainer_scout",0,-169.45,28,-4712.58,134,0)
 
+end
+
+function CorelliaCoronetScreenPlay:teleportDWB(pCollector, pPlayer)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isImperial() == true) then
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("endor", 2437.8, 0, -3895.7, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
+end
+
+function CorelliaCoronetScreenPlay:teleportGeo(pCollector, pPlayer)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isImperial() == true) then
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("yavin4", -2583, 0, 2072, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
+end
+
+function CorelliaCoronetScreenPlay:teleportNyax(pCollector, pPlayer)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isImperial() == true) then
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("corellia", -2212, 0, 2325, 0)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
+end
+
+function CorelliaCoronetScreenPlay:teleportTusken(pCollector, pPlayer)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isImperial() == true) then
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("tatooine", -4222.4, 3.0, -2360.9, -90)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
+end
+
+function CorelliaCoronetScreenPlay:teleportJanta(pCollector, pPlayer)
+	local playerfaction = LuaCreatureObject(pPlayer)
+	if (playerfaction:isImperial() == true) then
+		local player = LuaSceneObject(pPlayer)
+		player:switchZone("dantooine", 4042.2, 3.0, -6228.3, -90)
+	else
+		local playerm = LuaCreatureObject(pPlayer)
+		playerm:sendSystemMessage("You are not authorized to use this terminal")
+	end
 end
