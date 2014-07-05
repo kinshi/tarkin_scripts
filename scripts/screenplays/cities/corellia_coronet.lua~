@@ -428,7 +428,7 @@ function CorelliaCoronetScreenPlay:teleportDWB(pCollector, pPlayer)
 	player:switchZone("endor", -4706, 0, 4334, 0)
 end
 
-function CorelliaCoronetScreenPlay:teleportGeo(pColl
+function CorelliaCoronetScreenPlay:teleportGeo(pCollector, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("yavin4", -6513, 0, -426, 0)
 end
