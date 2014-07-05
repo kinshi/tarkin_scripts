@@ -1,7 +1,7 @@
 light_jedi_sentinel = Creature:new {
 	objectName = "@mob/creature_names:light_jedi_sentinel",
 	socialGroup = "self",
-	pvpFaction = "self",
+	pvpFaction = "",
 	faction = "",
 	level = 301,
 	chanceHit = 300,
@@ -38,7 +38,7 @@ light_jedi_sentinel = Creature:new {
 			groups = {
 				{group = "holocron_light", chance = 10000000}
 			},
-			lootChance = 2500000
+			lootChance = 500000
 		}
 	},
 	weapons = {"light_jedi_weapons"},
