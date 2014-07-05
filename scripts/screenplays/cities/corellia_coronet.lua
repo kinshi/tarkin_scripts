@@ -297,7 +297,7 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "corsec_trooper",400,-221.1,28,-4798.1,237.007,0)
 	spawnMobile("corellia", "corsec_trooper",400,-531.8,28,-4628.7,-165,0)
 	--{"crackdown_stormtrooper_bombardier",400,-547.026,28,-4669.14,331.925,0, "npc_imperial", ""},
-	spawnMobile("corellia", "corsec_trooper_captain",400,19.7,28,-4282.5,-4,0)
+	spawnMobile("corellia", "corsec_captain",400,19.7,28,-4282.5,-4,0)
 	--{"crackdown_stormtrooper_captain",400,-338.2,28,-4791.5,110,0, "npc_imperial", ""},
 	spawnMobile("corellia", "corsec_soldier",400,-118.7,28,-4204.6,16.0005,0)
 	spawnMobile("corellia", "corsec_soldier",400,-526.1,28,-4670.1,290.009,0)
