@@ -191,3 +191,5 @@ veteranRewards = {
 	{templateFile = "object/tangible/veteran_reward/one_year_anniversary/painting_07.iff", milestone=36, oneTime=false, description="Painting: Smuggler's Run"},
 	{templateFile = "object/tangible/veteran_reward/one_year_anniversary/painting_08.iff", milestone=36, oneTime=false, description="Painting: Imperial Oppression (TIE Oppressor)"},
 	{templateFile = "object/tangible/veteran_reward/one_year_anniversary/painting_09.iff", milestone=36, oneTime=false, description="Painting: Emperor's Eyes (TIE Sentinel)"},
+
+}
