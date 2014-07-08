@@ -21,7 +21,7 @@ TuskenBunkerScreenPlay = ScreenPlay:new {
 				{group = "pistols", chance = 2500000},
 				{group = "clothing_attachments", chance = 750000},
 				{group = "armor_attachments", chance = 750000},
-				{group = "resource_deed", chance = 500000}
+				{group = "deed_voucher", chance = 500000}
 			},
 			lootChance = 8000000
 		}

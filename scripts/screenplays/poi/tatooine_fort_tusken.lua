@@ -23,7 +23,7 @@ FortTuskenScreenPlay = ScreenPlay:new {
 				{group = "nge_house_sand_crawler", chance = 1000000},
 				{group = "clothing_attachments", chance = 1700000},
 				{group = "armor_attachments", chance = 1700000},
-				{group = "resource_deed", chance = 600000}
+				{group = "deed_voucher", chance = 600000}
 			},
 			lootChance = 8000000
 		}					

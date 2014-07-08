@@ -36,7 +36,7 @@ singing_mountain_clan_dragoon = Creature:new {
 				{group = "color_crystals", chance = 750000},
 				{group = "armor_attachments", chance = 1250000},
 				{group = "clothing_attachments", chance = 1250000},
-				{group = "resource_deed", chance = 1000000}
+				{group = "deed_voucher", chance = 1000000}
 			},
 			lootChance = 2800000
 		}			

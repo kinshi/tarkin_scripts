@@ -38,7 +38,7 @@ tusken_executioner = Creature:new {
 				{group = "color_crystals", chance = 500000},
 				{group = "crystals_select", chance = 500000},
 				{group = "nge_house_sand_crawler", chance = 1000000},
-				{group = "resource_deed", chance = 1000000}
+				{group = "deed_voucher", chance = 1000000}
 			},
 			lootChance = 7000000
 		}		

@@ -35,7 +35,7 @@ nightsister_elder = Creature:new {
 				{group = "nightsister_common", chance = 3500000},
 				{group = "armor_attachments", chance = 1750000},
 				{group = "clothing_attachments", chance = 1750000},
-				{group = "resource_deed", chance = 1000000}
+				{group = "deed_voucher", chance = 1000000}
 			},
 			lootChance = 6500000
 		}
