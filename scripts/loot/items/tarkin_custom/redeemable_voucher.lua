@@ -3,10 +3,9 @@
 redeemable_voucher = {
 	minimumLevel = 0,
 	maximumLevel = -1,
-	customObjectName = "",
-	directObjectTemplate = "object/tangible/veteran_reward/resource.iff",
-	craftingValues = {
-	},
+	customObjectName = "Redeemable for One (1) Free Crate of Resources",
+	directObjectTemplate = "object/tangible/loot/misc/ticket_collectors_item_s01.iff",
+	craftingValues = {},
 	customizationStringNames = {},
 	customizationValues = {},
 	junkDealerTypeNeeded = JUNKGENERIC,
