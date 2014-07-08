@@ -1,4 +1,4 @@
-resource_deed = {
+free_crate = {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	customObjectName = "Redeemable for one(1) Crate of Free Resources",
@@ -9,4 +9,4 @@ resource_deed = {
 	customizationValues = {},
 }
 
-addLootItemTemplate("resource_deed", resource_deed)
+addLootItemTemplate("free_crate", free_crate)

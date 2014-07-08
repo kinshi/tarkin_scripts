@@ -1,10 +1,10 @@
-resource_deed = {
+free_crate = {
 	description = "",
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
-		{itemTemplate = "resource_deed", weight = 10000000}
+		{itemTemplate = "free_crate", weight = 10000000}
 	}
 }
 
-addLootGroupTemplate("resource_deed", resource_deed)
+addLootGroupTemplate("free_crate", free_crate)
