@@ -1049,7 +1049,7 @@ includeFile("items/tarkin_custom/goggles_s05.lua")
 
 --Loot
 
-includeFile("items/tarkin_custom/free_crate.lua")
+includeFile("items/tarkin_custom/deed_voucher.lua")
 includeFile("items/tarkin_custom/av_21_schematic.lua")
 includeFile("items/tarkin_custom/av_21_powerplant.lua")
 
