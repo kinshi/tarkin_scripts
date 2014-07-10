@@ -785,7 +785,6 @@ tatooine_static_spawns = {
 	{"viconya_tili",60,-1001.04,10,-3550.02,271.672,0, "calm", "Vi`conya T`ili"},
 	{"victor_visalis",60,-26.4873,3.22324,20.2943,140.257,926480, "neutral", "Victor Visalis"},
 	{"watto_leg_syndil",60,-2841.1,5,1896.2,70,0, "calm", "Syndil"},
-	{"willhalm_skrim",60,28.8936,1.29568,-5.97518,39.8127,926482, "npc_imperial", "Wilhalm Skrim"},
 	{"wlinc_tchrr",60,-1288.15,12,-3588.42,276.296,0, "neutral", ""},
 	{"wuher",60,-14,-0.9,0,90,1082877, "worried", "Wuher"},
 	{"yondalla",60,20.1921,-0.894996,-19.0778,25.109,1134561, "calm", "Yondalla"},
