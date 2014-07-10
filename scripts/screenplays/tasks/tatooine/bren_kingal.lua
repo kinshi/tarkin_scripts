@@ -62,6 +62,10 @@ bren_kingal_missions =
 			{
 				{ itemTemplate = "object/tangible/mission/quest_item/bren_kingal_q4_needed.iff", itemName = "AT-ST pilot's helmet" }
 			},
+			staticObjects =
+			{
+				{ objectTemplate = "object/static/vehicle/static_speeder_bike.iff", planetName = "tatooine" }
+			},
 			rewards =
 			{
 				{ rewardType = "credits", amount = 30 },
@@ -88,8 +92,6 @@ BrenKingal = ThemeParkLogic:new {
 	className = "BrenKingal",
 	screenPlayState = "bren_kingal_quest",
 	distance = 800,
-	missionDescriptionStf = "",
-	missionCompletionMessageStf = "@theme_park/messages:static_completion_message",
 	faction = FACTIONREBEL
 
 }

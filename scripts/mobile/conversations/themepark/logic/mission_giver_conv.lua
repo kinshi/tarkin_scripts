@@ -46,6 +46,16 @@ function createMissionGiverConvoTemplate(templateName, convoHandler)
 
 	mission_giver_convotemplate:addScreen(mission_giver_cantwork);
 
+	mission_giver_invfull = ConvoScreen:new {
+		id = "inv_full",
+		leftDialog = "",
+		stopConversation = "true",
+		options = {
+		}
+	}
+
+	mission_giver_convotemplate:addScreen(mission_giver_invfull);
+
 	mission_giver_next = ConvoScreen:new {
 		id = "next",
 		leftDialog = ":next",
@@ -239,7 +249,14 @@ createMissionGiverConvoTemplate("blerx_tango_mission_giver_convotemplate", "bler
 createMissionGiverConvoTemplate("bren_kingal_mission_giver_convotemplate", "bren_kingal_mission_giver_conv_handler")
 createMissionGiverConvoTemplate("farious_gletch_mission_giver_convotemplate", "farious_gletch_mission_giver_conv_handler")
 createMissionGiverConvoTemplate("lt_harburik_mission_giver_convotemplate", "lt_harburik_mission_giver_conv_handler")
-
+createMissionGiverConvoTemplate("ikka_gesul_mission_giver_convotemplate", "ikka_gesul_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("jilljoo_jab_mission_giver_convotemplate", "jilljoo_jab_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("kaeline_ungasan_mission_giver_convotemplate", "kaeline_ungasan_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("kormund_thrylle_mission_giver_convotemplate", "kormund_thrylle_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("lorne_prestar_mission_giver_convotemplate", "lorne_prestar_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("phinea_shantee_mission_giver_convotemplate", "phinea_shantee_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("prefect_talmont_mission_giver_convotemplate", "prefect_talmont_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("gramm_rile_mission_giver_convotemplate", "gramm_rile_mission_giver_conv_handler")
 
 -- Naboo
 createMissionGiverConvoTemplate("arven_wendik_mission_giver_convotemplate", "arven_wendik_mission_giver_conv_handler")

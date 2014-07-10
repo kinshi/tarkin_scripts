@@ -18,7 +18,8 @@ dim_u_bantha = Creature:new {
 	hideAmount = 325,
 	boneType = "bone_mammal",
 	boneAmount = 250,
-	milk = 1,
+	milkType = "milk_wild",
+	milk = 250,
 	tamingChance = 0,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
@@ -27,6 +28,7 @@ dim_u_bantha = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/bantha.iff"},
+	scale = 0.95,
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",

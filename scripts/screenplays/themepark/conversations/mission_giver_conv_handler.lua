@@ -44,9 +44,11 @@ function mission_giver_conv_handler:runScreenHandlers(pConversationTemplate, pCo
 	local screen = LuaConversationScreen(pConversationScreen)
 
 	local screenID = screen:getScreenID()
-	
+
 	if screenID == "init" then
 		pConversationScreen = self:handleScreenInit(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
+	elseif screenID == "inv_full" then
+		pConversationScreen = self:handleScreenInvFull(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
 	elseif screenID == "accept" then
 		pConversationScreen = self:handleScreenAccept(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
 	elseif screenID == "npc_1_n" then
@@ -87,6 +89,7 @@ function mission_giver_conv_handler:handleScreenInit(pConversationTemplate, pCon
 	if activeScreenPlay == self.themePark.className or activeScreenPlay == "" then
 		local activeNpcNumber = self.themePark:getActiveNpcNumber(pConversingPlayer)
 		local thisNpcNumber = self.themePark:getNpcNumber(pConversingNpc)
+		local stfFile = self.themePark:getStfFile(thisNpcNumber)
 		local npcCompare = thisNpcNumber - activeNpcNumber
 		local globalFaction = self.themePark:getGlobalFaction()
 		local currentMissionNumber = self.themePark:getCurrentMissionNumber(activeNpcNumber, pConversingPlayer)
@@ -103,6 +106,18 @@ function mission_giver_conv_handler:handleScreenInit(pConversationTemplate, pCon
 		elseif globalFaction ~= 0 and self.themePark:isInFaction(globalFaction, pConversingPlayer) ~= true then
 			nextScreenName = "no_faction"
 
+		elseif missionFaction ~= 0 and self.themePark:isInFaction(missionFaction, pConversingPlayer) and self.themePark:isOnLeave(pConversingPlayer) then
+			if self.themePark:isValidConvoString(stfFile, ":notyet") then
+				nextScreenName = "notyet"
+			else
+				nextScreenName = "no_faction"
+			end
+		elseif globalFaction ~= 0 and self.themePark:isInFaction(globalFaction, pConversingPlayer) and self.themePark:isOnLeave(pConversingPlayer) then
+			if self.themePark:isValidConvoString(stfFile, ":notyet") then
+				nextScreenName = "notyet"
+			else
+				nextScreenName = "no_faction"
+			end
 		elseif npcCompare == 0 then
 			if self.themePark:missionStatus(pConversingPlayer) == 1 then
 				if self.themePark:getMissionType(activeNpcNumber, pConversingPlayer) == "escort" and self.themePark:escortedNpcCloseEnough(pConversingPlayer) == true then
@@ -140,19 +155,29 @@ function mission_giver_conv_handler:handleScreenInit(pConversationTemplate, pCon
 	else
 		nextScreenName = "cant_work"
 	end
-
 	return self:runScreenHandlers(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, conversationTemplate:getScreen(nextScreenName))
+end
+
+function mission_giver_conv_handler:handleScreenInvFull(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
+	local screen = LuaConversationScreen(pConversationScreen)
+	pConversationScreen = screen:cloneScreen()
+	local clonedScreen = LuaConversationScreen(pConversationScreen)
+
+	clonedScreen:setDialogTextStringId("@conversation/crafting_contractor:s_82c3e20a") -- It looks like your inventory is full. Talk to me again when you free up some space.
+
+	return pConversationScreen
 end
 
 function mission_giver_conv_handler:handleScreenAccept(pConversationTemplate, pConversingPlayer, pConversingNpc, selectedOption, pConversationScreen)
 	local conversationTemplate = LuaConversationTemplate(pConversationTemplate)
-	-- TODO verify that mission items can be spawned, spawn them, update screen play state etc.
-	--Test
+
 	local npcNumber = self.themePark:getNpcNumber(pConversingNpc)
 	local missionNumber = self.themePark:getCurrentMissionNumber(npcNumber, pConversingPlayer)
 
 	local nextScreenName = "npc_noloc_n"
-	if self.themePark:handleMissionAccept(npcNumber, missionNumber, pConversingPlayer) == true then
+	if self.themePark:getMissionType(npcNumber, pConversingPlayer) == "deliver" and self.themePark:hasFullInventory(pConversingPlayer) == true then
+		nextScreenName = "inv_full"
+	elseif self.themePark:handleMissionAccept(npcNumber, missionNumber, pConversingPlayer) == true then
 		nextScreenName = "npc_2_n"
 	else
 		self.themePark:resetCurrentMission(pConversingPlayer)
@@ -178,7 +203,7 @@ function mission_giver_conv_handler:handleScreenNpc1(pConversationTemplate, pCon
 
 	clonedScreen:addOption(stfFile .. ":player_1_" .. missionNumber, "accept")
 	clonedScreen:addOption(stfFile .. ":player_2_" .. missionNumber, "npc_3_n")
-	
+
 	if (self.themePark:isValidConvoString(stfFile, ":player_3_" .. missionNumber)) then
 		clonedScreen:addOption(stfFile .. ":player_3_" .. missionNumber, "npc_4_n")
 	end
