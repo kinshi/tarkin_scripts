@@ -1,6 +1,6 @@
-denell_kelvannon = Creature:new {
-	objectName = "@npc_name:human_base_male",
-	customName = "Denell Kel'Vannon",
+didina_lippinoss = Creature:new {
+	objectName = "@npc_name:human_base_female",
+	customName = "Didina Lippinoss",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -24,15 +24,15 @@ denell_kelvannon = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_denell_kelvannon.iff"},
+	templates = {"object/mobile/dressed_noble_human_female_03.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "didina_lippinoss_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(denell_kelvannon, "denell_kelvannon")
+CreatureTemplates:addCreatureTemplate(didina_lippinoss, "didina_lippinoss")
