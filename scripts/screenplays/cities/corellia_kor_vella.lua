@@ -441,7 +441,6 @@ function CorelliaKorVellaScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "eryk_chinn", 60, -3145.32, 31, 2803.95, 208.286, 0)
 	spawnMobile("corellia", "gilker_budz", 60, -3336.21, 72.4231, 2926.19, 277.144, 0)
 	spawnMobile("corellia", "logro_elsin", 60, -3144.67, 31, 2806.06, 174, 0)
-	spawnMobile("corellia", "denell_kelvannon", 60, -3414.11, 74, 3336.52, 28, 0)
 
 	--Building Interriors
 		--Starport
@@ -460,7 +459,6 @@ function CorelliaKorVellaScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "commoner", 1, 20.5, 1.28, 10, 135, 3005671)
 	spawnMobile("corellia", "miner", 60, 21.6, 1.28, 8.94, 0, 3005671)
 	spawnMobile("corellia", "farmer_rancher", 60, 21.6, 1.28, 10.04, 180, 3005671)
-	spawnMobile("corellia", "chertyl_ruluwoor", 60, -8.54, 1.6, -11.59, 98.8, 3005674)
 		--left in corellia.lua because of custom name
 	--spawnMobile("corellia", "commoner", 1,-24,1.6,-4,124.701,3005676, "calm", "An Event Promoter"},
 
