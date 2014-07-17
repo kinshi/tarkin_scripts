@@ -65,4 +65,13 @@ includeFile("tangible/wearables/armor/tantel/serverobjects.lua")
 includeFile("tangible/wearables/armor/ubese/serverobjects.lua")
 includeFile("tangible/wearables/armor/zam/serverobjects.lua")
 
+--tarkin CU armor
+
+includeFile("tangible/wearables/armor/assault_trooper/serverobjects.lua")
+includeFile("tangible/wearables/armor/clone_trooper/serverobjects.lua")
+includeFile("tangible/wearables/armor/rebel_assault/serverobjects.lua")
+includeFile("tangible/wearables/armor/scout_trooper/serverobjects.lua")
+
+
+
 -- Server Objects
