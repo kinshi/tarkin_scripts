@@ -30,9 +30,10 @@ death_watch_wraith = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "death_watch_bunker_commoners",   chance = 6300000},
+				{group = "death_watch_bunker_commoners",   chance = 5800000},
 				{group = "death_watch_bunker_lieutenants", chance = 3500000},
 				{group = "death_watch_bunker_ingredient_protective",  chance = 100000},
+				{group = "mandalorian_schemes", chance = 500000},
 				{group = "death_watch_bunker_ingredient_binary",  chance = 100000}
 			},
 			lootChance = 3000000

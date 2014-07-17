@@ -30,8 +30,9 @@ death_watch_bloodguard = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "death_watch_bunker_commoners", chance = 40000000},
-				{group = "death_watch_bunker_lieutenants", chance = 4000000},
+				{group = "death_watch_bunker_commoners", chance = 3750000},
+				{group = "death_watch_bunker_lieutenants", chance = 3750000},
+				{group = "mandalorian_schemes", chance = 500000},
 				{group = "nge_house_commando", chance = 2000000}
 			},
 			lootChance = 4000000
