@@ -1366,8 +1366,6 @@ schematics = {
 {path="object/draft_schematic/spices/spice_yarrock.iff"},
 {path="object/draft_schematic/spices/spice_giggledust.iff"},
 {path="object/draft_schematic/spices/spice_sweetblossom.iff"},
-
-
 {path="object/draft_schematic/spices/spice_droid_lube.iff"},
 {path="object/draft_schematic/spices/spice_pyrepenol.iff"},
 {path="object/draft_schematic/spices/spice_sedative_h4b.iff"},
@@ -1785,7 +1783,9 @@ schematics = {
 {path="object/draft_schematic/droid/component/struct_maint_module_1.iff"},
 {path="object/draft_schematic/droid/component/module_socket_bank.iff"},
 {path="object/draft_schematic/droid/component/data_storage_module_3.iff"},
---ID Schematics
+
+
+--tarkin NGE House Schematics
 {path="object/draft_schematic/structure/atat_house_schem.iff"},
 {path="object/draft_schematic/structure/bespin_house_schem.iff"},
 {path="object/draft_schematic/structure/commando_house_schem.iff"},
@@ -1811,7 +1811,9 @@ schematics = {
 {path="object/draft_schematic/structure/yoda_house_schem.iff"},
 {path="object/draft_schematic/structure/yt1300_house_schem.iff"},
 {path="object/draft_schematic/structure/vipbunker_house_schem.iff"},
---BH
+
+--Tarkin BH/Mando armor schematics
+
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_belt.iff"},
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_bracer_l.iff"},
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_bracer_r.iff"},
@@ -1821,5 +1823,65 @@ schematics = {
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_chest_plate.iff"},
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_leggings.iff"},
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_gloves.iff"},
-{path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_helmet.iff"}
+{path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_helmet.iff"},
+
+
+--Wol were are the entries for the Mando schemes?
+
+
+--tarkin CU armor schematics
+
+--Imperial Assault Armor
+
+{path="object/draft_schematic/armor/armor_appearance_assault_trooper_bicep_l.iff},
+{path="object/draft_schematic/armor/armor_appearance_assault_trooper_bicep_r.iff},
+{path="object/draft_schematic/armor/armor_appearance_assault_trooper_boots.iff},
+{path="object/draft_schematic/armor/armor_appearance_assault_trooper_bracer_l.iff},
+{path="object/draft_schematic/armor/armor_appearance_assault_trooper_bracer_r.iff},
+{path="object/draft_schematic/armor/armor_appearance_assault_trooper_chest.iff},
+{path="object/draft_schematic/armor/armor_appearance_assault_trooper_bicep_l.iff},
+{path="object/draft_schematic/armor/armor_appearance_assault_trooper_gloves.iff},
+{path="object/draft_schematic/armor/armor_appearance_assault_trooper_helmet.iff},
+{path="object/draft_schematic/armor/armor_appearance_assault_trooper_leggings.iff},
+{path="object/draft_schematic/armor/armor_appearance_assault_trooper_utility_belt.iff},
+
+--Rebel Assault armor
+
+{path="object/draft_schematic/armor/armor_appearance_rebel_assault_bicep_l.iff},
+{path="object/draft_schematic/armor/armor_appearance_rebel_assault_bicep_r.iff},
+{path="object/draft_schematic/armor/armor_appearance_rebel_assault_boots.iff},
+{path="object/draft_schematic/armor/armor_appearance_rebel_assault_bracer_l.iff},
+{path="object/draft_schematic/armor/armor_appearance_rebel_assault_bracer_r.iff},
+{path="object/draft_schematic/armor/armor_appearance_rebel_assault_chest.iff},
+{path="object/draft_schematic/armor/armor_appearance_rebel_assault_gloves.iff},
+{path="object/draft_schematic/armor/armor_appearance_rebel_assault_helmet.iff},
+{path="object/draft_schematic/armor/armor_appearance_rebel_assault_leggings.iff},
+
+--Imperial Scout Trooper Armor
+
+{path="object/draft_schematic/armor/armor_appearance_scout_trooper_bicep_l.iff},
+{path="object/draft_schematic/armor/armor_appearance_scout_trooper_bicep_r.iff},
+{path="object/draft_schematic/armor/armor_appearance_scout_trooper_boots.iff},
+{path="object/draft_schematic/armor/armor_appearance_scout_trooper_bracer_l.iff},
+{path="object/draft_schematic/armor/armor_appearance_scout_trooper_bracer_r.iff},
+{path="object/draft_schematic/armor/armor_appearance_scout_trooper_chest.iff},
+{path="object/draft_schematic/armor/armor_appearance_scout_trooper_gloves.iff},
+{path="object/draft_schematic/armor/armor_appearance_scout_trooper_helmet.iff},
+{path="object/draft_schematic/armor/armor_appearance_scout_trooper_leggings.iff},
+{path="object/draft_schematic/armor/armor_appearance_scout_trooper_utility_belt.iff},
+
+--Imperial Stormtrooper Armor
+
+{path="object/draft_schematic/armor/armor_appearance_storm_trooper_bicep_l.iff},
+{path="object/draft_schematic/armor/armor_appearance_storm_trooper_bicep_r.iff},
+{path="object/draft_schematic/armor/armor_appearance_storm_trooper_boots.iff},
+{path="object/draft_schematic/armor/armor_appearance_storm_trooper_bracer_l.iff},
+{path="object/draft_schematic/armor/armor_appearance_storm_trooper_bicep_r.iff},
+{path="object/draft_schematic/armor/armor_appearance_storm_trooper_chest.iff},
+{path="object/draft_schematic/armor/armor_appearance_storm_trooper_gloves.iff},
+{path="object/draft_schematic/armor/armor_appearance_storm_trooper_helmet.iff},
+{path="object/draft_schematic/armor/armor_appearance_storm_trooper_leggings.iff},
+{path="object/draft_schematic/armor/armor_appearance_storm_trooper_bicep_l.iff},
+{path="object/draft_schematic/armor/armor_appearance_storm_trooper_utility_belt.iff}
+
 };
