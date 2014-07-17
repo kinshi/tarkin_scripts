@@ -34,7 +34,13 @@ rageon_vart = Creature:new {
 				{group = "rageon_vart_drop", chance = 10000000}
 			},
 			lootChance = 10000000
-		} 
+		},
+		{
+			groups = {
+				{group = "mandalorian_schemes", chance = 10000000}
+			},
+			lootChance = 500000
+		}
 	},
 	weapons = {"death_watch_commander_weapons"},
 	conversationTemplate = "",
