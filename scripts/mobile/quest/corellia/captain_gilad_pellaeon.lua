@@ -1,6 +1,6 @@
-hal_horn = Creature:new {
-	objectName = "@npc_name:human_base_male",
-	customName = "Hal Horn",
+captain_gilad_pellaeon = Creature:new {
+	objectName = "",
+	customName = "Captain Gilad Pellaeon",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -24,15 +24,15 @@ hal_horn = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_corellia_hal_horn.iff"},
+	templates = {"object/mobile/dressed_captain_gilad_pellaeon.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "gilad_pellaeon_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(hal_horn, "hal_horn")
+CreatureTemplates:addCreatureTemplate(captain_gilad_pellaeon, "captain_gilad_pellaeon")

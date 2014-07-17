@@ -1,6 +1,6 @@
-garm_bel_iblis = Creature:new {
-	objectName = "",
-	customName = "Garm Bel Iblis",
+gilker_budz = Creature:new {
+	objectName = "@npc_name:human_base_male",
+	customName = "Gilker Budz",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -24,15 +24,15 @@ garm_bel_iblis = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_garm_bel_iblis.iff"},
+	templates = {"object/mobile/dressed_giker_budz.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "gilker_budz_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(garm_bel_iblis, "garm_bel_iblis")
+CreatureTemplates:addCreatureTemplate(gilker_budz, "gilker_budz")

@@ -24,13 +24,13 @@ sergeant_tarl = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/dressed_sargeant_tarl.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "gilad_pellaeon_mission_giver_convotemplate",
 	attacks = {
 	}
 }

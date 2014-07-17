@@ -1,6 +1,6 @@
-captain_gilad_pellaeon = Creature:new {
+irenez = Creature:new {
 	objectName = "",
-	customName = "Captain Gilad Pellaeon",
+	customName = "Irenez",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -24,15 +24,15 @@ captain_gilad_pellaeon = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_captain_gilad_pellaeon.iff"},
+	templates = {"object/mobile/dressed_noble_old_human_female_02.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "garm_bel_iblis_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(captain_gilad_pellaeon, "captain_gilad_pellaeon")
+CreatureTemplates:addCreatureTemplate(irenez, "irenez")
