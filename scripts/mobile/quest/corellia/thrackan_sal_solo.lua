@@ -1,5 +1,6 @@
-talon_karrde = Creature:new {
-	objectName = "@npc_spawner_n:talon_karrde",
+thrackan_sal_solo = Creature:new {
+	objectName = "",
+	customName = "Thrackan Sal Solo",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -23,15 +24,16 @@ talon_karrde = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_talon_karrde.iff"},
+	templates = {"object/mobile/mos_taike_mayor.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "thrackan_sal_solo_mission_giver_convotemplate",
+	outfit = "thracken_sal_solo_outfit",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(talon_karrde, "talon_karrde")
+CreatureTemplates:addCreatureTemplate(thrackan_sal_solo, "thrackan_sal_solo")

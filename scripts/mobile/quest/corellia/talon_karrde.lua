@@ -1,6 +1,5 @@
-palejo_reshad = Creature:new {
-	objectName = "",
-	customName = "Palejo Reshad",
+talon_karrde = Creature:new {
+	objectName = "@mob/creature_names:talon_karrde",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -24,15 +23,15 @@ palejo_reshad = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_palejo_reshad.iff"},
+	templates = {"object/mobile/dressed_talon_karrde.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "talon_karrde_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(palejo_reshad, "palejo_reshad")
+CreatureTemplates:addCreatureTemplate(talon_karrde, "talon_karrde")

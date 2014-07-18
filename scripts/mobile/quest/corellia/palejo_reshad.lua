@@ -1,6 +1,6 @@
-thracken_sal_solo = Creature:new {
+palejo_reshad = Creature:new {
 	objectName = "",
-	customName = "Thracken Sal Solo",
+	customName = "Palejo Reshad",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -24,16 +24,15 @@ thracken_sal_solo = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/mos_taike_mayor.iff"},
+	templates = {"object/mobile/dressed_palejo_reshad.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
-	outfit = "thracken_sal_solo_outfit",
+	conversationTemplate = "palejo_reshad_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(thracken_sal_solo, "thracken_sal_solo")
+CreatureTemplates:addCreatureTemplate(palejo_reshad, "palejo_reshad")
