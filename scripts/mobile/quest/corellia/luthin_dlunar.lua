@@ -1,6 +1,6 @@
-jadam_questrel = Creature:new {
-	objectName = "@npc_name:human_base_male",
-	customName = "Jadam Questrel",
+luthin_dlunar = Creature:new {
+	objectName = "",
+	customName = "Luthin Dlunar",
 	socialGroup = "townsperson",
 	pvpFaction = "townsperson",
 	faction = "townsperson",
@@ -24,15 +24,15 @@ jadam_questrel = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_jadam_questrel.iff"},
+	templates = {"object/mobile/dressed_luthin_dlunar.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "luthin_dlunar_mission_giver_convotemplate",
 	attacks = {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(jadam_questrel, "jadam_questrel")
+CreatureTemplates:addCreatureTemplate(luthin_dlunar, "luthin_dlunar")
