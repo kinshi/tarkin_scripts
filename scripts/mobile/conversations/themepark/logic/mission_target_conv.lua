@@ -122,7 +122,6 @@ createMissionTargetConvoTemplate("prefect_talmont_mission_target_convotemplate",
 createMissionTargetConvoTemplate("gramm_rile_mission_target_convotemplate","gramm_rile_mission_target_conv_handler")
 
 
-
 -- Naboo
 createMissionTargetConvoTemplate("arven_wendik_mission_target_convotemplate","arven_wendik_mission_target_conv_handler")
 createMissionTargetConvoTemplate("boss_nass_mission_target_convotemplate","boss_nass_mission_target_conv_handler")
@@ -202,4 +201,5 @@ createMissionTargetConvoTemplate("luthin_dlunar_mission_target_convotemplate","l
 createMissionTargetConvoTemplate("noren_krast_mission_target_convotemplate","noren_krast_mission_target_conv_handler")
 createMissionTargetConvoTemplate("talon_karrde_mission_target_convotemplate","talon_karrde_mission_target_conv_handler")
 createMissionTargetConvoTemplate("thrackan_sal_solo_mission_target_convotemplate","thrackan_sal_solo_mission_target_conv_handler")
+createMissionTargetConvoTemplate("lady_hutt_mission_target_convotemplate","lady_hutt_mission_target_conv_handler")
 

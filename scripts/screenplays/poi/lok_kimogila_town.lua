@@ -34,4 +34,3 @@ function LokKimogilaTownScreenPlay:spawnMobiles()
 	spawnMobile("lok", "kimo_commoner", 300, -37.9, 12.0, 2716.7, 133, 0)
 	spawnMobile("lok", "kimo_commoner", 300, -38.7, 12.0, 2729.2, 14, 0)
 end
-

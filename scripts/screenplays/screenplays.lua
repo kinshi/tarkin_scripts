@@ -41,7 +41,12 @@ includeFile("tasks/corellia/ging_darjeek.lua")
 includeFile("tasks/corellia/hal_horn.lua")
 includeFile("tasks/corellia/jadam_questrel.lua")
 includeFile("tasks/corellia/kirkin_liawoon.lua")
+includeFile("tasks/corellia/lady_hutt.lua")
 includeFile("tasks/corellia/luthin_dlunar.lua")
+includeFile("tasks/corellia/noren_krast.lua")
+includeFile("tasks/corellia/palejo_reshad.lua")
+includeFile("tasks/corellia/talon_karrde.lua")
+includeFile("tasks/corellia/thrackan_sal_solo.lua")
 includeFile("tasks/dantooine/drakka_judarrl.lua")
 includeFile("tasks/dantooine/jatrian_lytus.lua")
 includeFile("tasks/dantooine/kelvus_naria.lua")
@@ -266,7 +271,6 @@ includeFile("static_spawns/yavin4_static_spawns.lua")
 --Tests
 --includeFile("tests/options_bitmask_test.lua")
 --includeFile("event/stresstest_20120128.lua")
-
 
 --Race Tracks
 includeFile("racetracks/racetracks.lua")

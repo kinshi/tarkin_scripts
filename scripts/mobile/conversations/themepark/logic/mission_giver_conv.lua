@@ -280,6 +280,7 @@ createMissionGiverConvoTemplate("phinea_shantee_mission_giver_convotemplate", "p
 createMissionGiverConvoTemplate("prefect_talmont_mission_giver_convotemplate", "prefect_talmont_mission_giver_conv_handler")
 createMissionGiverConvoTemplate("gramm_rile_mission_giver_convotemplate", "gramm_rile_mission_giver_conv_handler")
 
+
 -- Naboo
 createMissionGiverConvoTemplate("arven_wendik_mission_giver_convotemplate", "arven_wendik_mission_giver_conv_handler")
 createMissionGiverConvoTemplate("boss_nass_mission_giver_convotemplate", "boss_nass_mission_giver_conv_handler")
@@ -364,4 +365,5 @@ createMissionGiverConvoTemplate("noren_krast_mission_giver_convotemplate","noren
 createMissionGiverConvoTemplate("palejo_reshad_mission_giver_convotemplate","palejo_reshad_mission_giver_conv_handler")
 createMissionGiverConvoTemplate("talon_karrde_mission_giver_convotemplate","talon_karrde_mission_giver_conv_handler")
 createMissionGiverConvoTemplate("thrackan_sal_solo_mission_giver_convotemplate","thrackan_sal_solo_mission_giver_conv_handler")
+createMissionGiverConvoTemplate("lady_hutt_mission_giver_convotemplate","lady_hutt_mission_giver_conv_handler")
 
