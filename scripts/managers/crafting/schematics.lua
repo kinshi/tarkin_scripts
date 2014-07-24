@@ -1812,8 +1812,9 @@ schematics = {
 {path="object/draft_schematic/structure/yt1300_house_schem.iff"},
 {path="object/draft_schematic/structure/vipbunker_house_schem.iff"},
 
---Tarkin BH/Mando armor schematics
+--Tarkin 
 
+--BH Armor
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_belt.iff"},
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_bracer_l.iff"},
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_bracer_r.iff"},
@@ -1825,8 +1826,18 @@ schematics = {
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_gloves.iff"},
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_helmet.iff"},
 
+--Mando
 
---Wol were are the entries for the Mando schemes?
+{path="object/draft_schematic/clothing/clothing_armor_mandalorian_belt.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_mandalorian_bracer_l.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_mandalorian_bracer_r.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_mandalorian_bicep_l.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_mandalorian_bicep_r.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_mandalorian_boots.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_mandalorian_chest_plate.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_mandalorian_leggings.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_mandalorian_gloves.iff"},
+{path="object/draft_schematic/clothing/clothing_armor_mandalorian_helmet.iff"},
 
 
 --tarkin CU armor schematics

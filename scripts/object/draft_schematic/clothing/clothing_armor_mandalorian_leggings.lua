@@ -1,4 +1,4 @@
-c--Copyright (C) 2010 <SWGEmu>
+--Copyright (C) 2010 <SWGEmu>
 
 
 --This File is part of Core3.
@@ -42,7 +42,7 @@ c--Copyright (C) 2010 <SWGEmu>
 
 
 object_draft_schematic_clothing_clothing_armor_mandalorian_leggings = object_draft_schematic_clothing_shared_clothing_armor_mandalorian_leggings:new {
-   templateType = DRAFTSCHEMATIC,
+templateType = DRAFTSCHEMATIC,
 
    customObjectName = "Mandalorian Armor Leggings",
 
@@ -73,6 +73,7 @@ object_draft_schematic_clothing_clothing_armor_mandalorian_leggings = object_dra
 
    additionalTemplates = {
              }
+
 }
 
 ObjectTemplates:addTemplate(object_draft_schematic_clothing_clothing_armor_mandalorian_leggings, "object/draft_schematic/clothing/clothing_armor_mandalorian_leggings.iff")
