@@ -278,3 +278,43 @@ includeFile("racetracks/racetracks.lua")
 
 -- Space
 includeFile("space/space_chassis_dealer_conv_handler.lua")
+
+--Tarkin Custom
+
+--includeFile("tests/ep3.lua")
+
+--Jedi trainers on Dantooine
+
+includeFile("poi/dantooine_jedi_trainers.lua")
+
+--_Bestine Travel terms
+
+includeFile("cities/tatooine_bestine_travel.lua")
+
+-- Theed Cantina
+includeFile("cities/naboo_theed_cantina.lua")
+
+
+--Imperial
+
+includeFile("military/imperial/corellia_stronghold.lua")
+includeFile("military/imperial/dathomir_imperial_prison.lua")
+includeFile("military/imperial/dantooine_imperial_outpost.lua")
+includeFile("military/imperial/lok_imperial_outpost.lua")
+includeFile("military/imperial/talus_imperial_outpost.lua")
+includeFile("military/imperial/tatooine_imperial_detachment_hq.lua")
+includeFile("military/imperial/tatooine_imperial_oasis_outpost.lua")
+includeFile("military/imperial/naboo_kaadra_outpost.lua")
+includeFile("military/imperial/naboo_imperial_emp_retreat.lua")
+includeFile("military/imperial/yavin4_imperial_base.lua")
+includeFile("military/imperial/rori_imperial_encampment.lua")
+includeFile("military/imperial/bestine_imperial_outpost.lua")
+
+--Rebel
+
+includeFile("military/rebel/rori_rebel_outpost.lua")
+includeFile("military/rebel/corellia_rebel_hideout.lua")
+includeFile("military/rebel/rori_rebel_military_base.lua")
+includeFile("military/rebel/tatooine_anchorhead_rebel_base.lua")
+includeFile("military/rebel/lok_rebel_safehouse.lua")
+includeFile("military/rebel/talus_rebel_installation.lua")
