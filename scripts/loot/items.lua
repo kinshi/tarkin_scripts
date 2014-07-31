@@ -49,6 +49,9 @@ includeFile("items/treasure_map.lua")
 includeFile("items/viewscreen_printer.lua")
 includeFile("items/viewscreen_reader.lua")
 
+--Socome's Custom Crap
+includeFile("items/tarkin_award.lua")
+
 --armor sub-folder
 includeFile("items/armor/bh_armor_belt.lua")
 includeFile("items/armor/bh_armor_bicep_l.lua")
