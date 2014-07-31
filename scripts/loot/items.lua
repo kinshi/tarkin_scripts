@@ -1132,3 +1132,7 @@ includeFile("items/tarkin_custom/mandalorian_gloves_scheme.lua")
 includeFile("items/tarkin_custom/mandalorian_helmet_scheme.lua")
 includeFile("items/tarkin_custom/mandalorian_jetpack_scheme.lua")
 includeFile("items/tarkin_custom/mandalorian_leggings_scheme.lua")
+
+--Socome's Custom Crap
+includeFile("items/tarkin_custom/tarkin_award.lua")
+
