@@ -49,9 +49,6 @@ includeFile("items/treasure_map.lua")
 includeFile("items/viewscreen_printer.lua")
 includeFile("items/viewscreen_reader.lua")
 
---Socome's Custom Crap
-includeFile("items/tarkin_award.lua")
-
 --armor sub-folder
 includeFile("items/armor/bh_armor_belt.lua")
 includeFile("items/armor/bh_armor_bicep_l.lua")
@@ -1135,3 +1132,7 @@ includeFile("items/tarkin_custom/mandalorian_gloves_scheme.lua")
 includeFile("items/tarkin_custom/mandalorian_helmet_scheme.lua")
 includeFile("items/tarkin_custom/mandalorian_jetpack_scheme.lua")
 includeFile("items/tarkin_custom/mandalorian_leggings_scheme.lua")
+
+--Socome's Custom Crap
+includeFile("items/tarkin_custom/tarkin_award.lua")
+
