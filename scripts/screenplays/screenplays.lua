@@ -125,6 +125,7 @@ includeFile("tasks/tatooine/vardias_tyne.lua")
 includeFile("tasks/yavin4/gins_darone.lua")
 includeFile("tasks/yavin4/lian_byrne.lua")
 includeFile("tasks/yavin4/ruwan_tokai.lua")
+includeFile("tasks/theater_manager.lua")
 
 -- Caves
 includeFile("caves/corellia_afarathu_cave.lua")
@@ -273,6 +274,7 @@ includeFile("static_spawns/yavin4_static_spawns.lua")
 --Tests
 --includeFile("tests/options_bitmask_test.lua")
 --includeFile("event/stresstest_20120128.lua")
+
 
 --Race Tracks
 includeFile("racetracks/racetracks.lua")

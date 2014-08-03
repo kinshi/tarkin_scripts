@@ -5,11 +5,11 @@ krayt_dragon_adolescent = Creature:new {
 	faction = "",
 	level = 200,
 	chanceHit = 27.25,
-	damageMin = 990,
-	damageMax = 1750,
+	damageMin = 1220,
+	damageMax = 2150,
 	baseXp = 26356,
-	baseHAM = 200000,
-	baseHAMmax = 290000,
+	baseHAM = 268000,
+	baseHAMmax = 312000,
 	armor = 3,
 	resists = {60,60,60,60,50,60,60,60,-1},
 	meatType = "meat_carnivore",
@@ -51,7 +51,7 @@ krayt_dragon_adolescent = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareattack",""},
+		{"creatureareaattack",""},
 		{"posturedownattack","postureDownChance=50"},
 		{"stunattack","stunChance=50"}
 	}
