@@ -58,7 +58,7 @@ object_building_poi_scout_camp_s4 = object_building_poi_shared_scout_camp_s4:new
 	
 	duration = 3600,
 	radius = 20,
-	experience = 1100,
+	experience = 3300,
 	skillRequired = 0,
 
 	childObjects = {
