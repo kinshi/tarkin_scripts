@@ -91,7 +91,7 @@ function DefaultInterrupt:startAwarenessInterrupt(pAgent, pObject)
 	local radius = 32 - levelDiff
 	if radius < 0 then radius = 0 end
 	if radius > 64 then radius = 64 end
-	local inRange = ObjectManager.withSceneObject(pAgent, function(scno) return scno:isInRangeWithObject(pObject, radius) end)
+	local inRange = scno:isInRangeWithObject(pAgent, radius)
 
 	if agent:isInCombat() then return end -- TODO: the "peace out" checks should go here
 	
@@ -100,22 +100,25 @@ function DefaultInterrupt:startAwarenessInterrupt(pAgent, pObject)
 	if agent:isStalker() and agent:isAggressiveTo(pObject) then
 		--agent:info("1")
 		if pFollow == nil and not inRange then
-			agent:setStalkObject(pObject);
-		elseif agent:getAvgSpeed() <= (target:getWalkSpeed() * target:getWalkSpeed()) and not inRange then
-			agent:addDefender(target)
-		elseif inRange then
+			--agent:info("1a")
+			agent:setStalkObject(pObject)
+			-- TODO (dannuic): is there a skill check associated with this message?
+			target:sendSystemMessageWithTO("@skill_use:notify_stalked", ObjectManager.withSceneObject(pAgent, function(agentObj) return agentObj:getDisplayedName() end))
+		elseif agent:getAvgSpeed() <= (target:getWalkSpeed() * target:getWalkSpeed()) or inRange then
+			--agent:info("1b")
 			agent:addDefender(pObject) -- TODO (dannuic): do stalkers also agro when the target starts to move towards them?
 		else
+			--agent:info("1c")
 			agent:setOblivious()
 		end
 	elseif agent:isAggressiveTo(pObject) and inRange then
 		--agent:info("2")
 		--if scno:isAiAgent() then ObjectManager.withCreatureAiAgent(pObject, function(ai) ai:info("attacking me!") end) end
 		agent:addDefender(pObject)
-	elseif agent:getAvgSpeed() <= (target:getWalkSpeed() * target:getWalkSpeed()) and scno:isPlayerCreature() and inRange then
+	elseif agent:getAvgSpeed() <= (target:getWalkSpeed() * target:getWalkSpeed()) or not inRange then
 		--agent:info("3")
 		agent:setOblivious() -- if we're "standing still" (and they aren't aggressive) forget about us
-	elseif pFollow == nil and scno:isPlayerCreature() and inRange then
+	elseif pFollow == nil and inRange then
 		--agent:info("4")
 		agent:setWatchObject(pObject)
 		ObjectManager.withSceneObject(pAgent, function(scno) scno:showFlyText("npc_reaction/flytext", "alert", 255, 0, 0) end)
