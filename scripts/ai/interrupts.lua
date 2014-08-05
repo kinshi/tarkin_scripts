@@ -20,6 +20,119 @@ function DefaultInterrupt:startCombatInterrupt(pAgent, pObject)
 	end
 end
 
+<<<<<<< HEAD
+=======
+function DefaultInterrupt:doAwarenessCheck(pAgent, pObject)
+	if (pAgent == pObject) then return false end
+	if (pAgent == nil or pObject == nil) then return false end
+	
+	local agent = LuaAiAgent(pAgent)
+	if ObjectManager.withTangibleObject(pAgent, function(tano) return tano:getPvpStatusBitmask() == NONE end) or ObjectManager.withCreatureObject(pAgent, function(creo) return creo:isDead() or creo:isIncapacitated() end) then return false end
+	if agent:getNumberOfPlayersInRange() <= 0  or agent:isRetreating() or agent:isFleeing() or agent:isInCombat() then return false end
+	if agent:getFollowObject() ~= nil and agent:getFollowObject() ~= pObject then return false end
+	
+	-- TODO (dannuic): factor in level difference here
+	local radius = 32
+	if ObjectManager.withCreatureObject(pAgent, function(creo) return creo:getInCellNumber() end) == -1 then radius = 12 end
+	radius = radius + agent:getFerocity()
+	if not ObjectManager.withSceneObject(pAgent, function(scno) return scno:isInRangeWithObject(pObject, radius) end) then return false end
+	
+	local scno = LuaSceneObject(pObject)
+	if not scno:isCreatureObject() then return false end -- don't aggro TANOs (lairs, turrets, etc)
+	local target = LuaCreatureObject(pObject)
+	if ObjectManager.withTangibleObject(pObject, function(tano) return tano:getPvpStatusBitmask() == NONE end) or target:isDead() or target:isIncapacitated() then return false end
+	
+	-- if not in combat, ignore creatures in different cells
+	local agentParentID = ObjectManager.withSceneObject(pAgent, function(scno) return scno:getParentID() end)
+	local targetParentID = ObjectManager.withSceneObject(pObject, function(scno) return scno:getParentID() end)
+	if not agent:isInCombat() and agentParentID ~= targetParentID then return false end
+	
+	if agent:isCamouflaged(pObject) or not agent:isAttackableBy(pObject) or not target:isAttackableBy(pAgent) then return false end
+	
+	--TODO (dannuic): this seems wrong
+	if scno:isAiAgent() then
+		local agentTarget = LuaAiAgent(pObject)
+		local creature = LuaCreatureObject(pAgent)
+		local creatureTarget = LuaCreatureObject(pObject)
+		if not agentTarget:isAttackableBy(pAgent) then return false end
+		if ((agentTarget:getFerocity() <= 0 or agent:getFerocity() <= 0) and creatureTarget:getLevel() >= creature:getLevel()) or (creature:getFaction() ~= 0 and creatureTarget:getFaction() == 0) or (creature:getFaction() == 0 and creatureTarget:getFaction() ~= 0) then return false end
+	end
+	
+	-- All the checks are out of the way, now we know we want to aggro
+	return true
+end
+
+-- put this in a different function so that the generic checks are re-usable
+function DefaultInterrupt:startAwarenessInterrupt(pAgent, pObject)
+	if (pAgent == pObject) then return end
+	if (pAgent == nil or pObject == nil) then return end
+	
+	local agent = LuaAiAgent(pAgent)
+	local scno = LuaSceneObject(pObject)
+	if not scno:isCreatureObject() then return false end -- don't aggro TANOs (lairs, turrets, etc)
+	local target = LuaCreatureObject(pObject)
+	
+	if ObjectManager.withCreatureObject(pAgent, function(creo) return creo:isDead() or creo:isIncapacitated() end) then return end
+	if ObjectManager.withCreatureObject(pObject, function(creo) return creo:isDead() or creo:isIncapacitated() end) then return end
+	if not agent:checkLineOfSight(pObject) then return end
+	
+	if agent:isCamouflaged(pObject) then return end
+	
+	-- TODO (dannuic): tweak these formulae based on feedback
+	local effectiveLevel = agent:getFerocity() * ObjectManager.withCreatureObject(pAgent, function(creo) return creo:getLevel() end) / 4
+	local levelDiff = effectiveLevel - target:getLevel()
+	local radius = 32 - levelDiff
+	if radius < 0 then radius = 0 end
+	if radius > 64 then radius = 64 end
+	local inRange = scno:isInRangeWithObject(pAgent, radius)
+
+	if agent:isInCombat() then return end -- TODO: the "peace out" checks should go here
+	
+	local pFollow = agent:getFollowObject();
+	
+	if agent:isStalker() and agent:isAggressiveTo(pObject) then
+		--agent:info("1")
+		if pFollow == nil and not inRange then
+			--agent:info("1a")
+			agent:setStalkObject(pObject)
+			-- TODO (dannuic): is there a skill check associated with this message?
+			target:sendSystemMessageWithTO("@skill_use:notify_stalked", ObjectManager.withSceneObject(pAgent, function(agentObj) return agentObj:getDisplayedName() end))
+		elseif agent:getAvgSpeed() <= (target:getWalkSpeed() * target:getWalkSpeed()) or inRange then
+			--agent:info("1b")
+			agent:addDefender(pObject) -- TODO (dannuic): do stalkers also agro when the target starts to move towards them?
+		else
+			--agent:info("1c")
+			agent:setOblivious()
+		end
+	elseif agent:isAggressiveTo(pObject) and inRange then
+		--agent:info("2")
+		--if scno:isAiAgent() then ObjectManager.withCreatureAiAgent(pObject, function(ai) ai:info("attacking me!") end) end
+		agent:addDefender(pObject)
+	elseif agent:getAvgSpeed() <= (target:getWalkSpeed() * target:getWalkSpeed()) or not inRange then
+		--agent:info("3")
+		agent:setOblivious() -- if we're "standing still" (and they aren't aggressive) forget about us
+	elseif pFollow == nil and inRange then
+		--agent:info("4")
+		agent:setWatchObject(pObject)
+		ObjectManager.withSceneObject(pAgent, function(scno) scno:showFlyText("npc_reaction/flytext", "alert", 255, 0, 0) end)
+	elseif pObject == pFollow and inRange then
+		--agent:info("5")
+		ObjectManager.withCreatureObject(pFollow, function(creo)
+			if effectiveLevel < creo:getLevel() then
+				agent:runAway(pFollow)
+			else
+				agent:addDefender(pFollow)
+			end
+		end)
+	end
+
+	agent:activateRecovery();
+	agent:stopWaiting();
+	agent:executeBehavior();
+end
+
+
+>>>>>>> 512edcea613c9a7a4575a074afe6558cb5db8b7c
 PackInterrupt = createClass(DefaultInterrupt)
 function PackInterrupt:startCombatInterrupt(pAgent, pObject)
 	if (pAgent ~= pObject) then
