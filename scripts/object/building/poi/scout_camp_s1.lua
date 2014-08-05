@@ -53,7 +53,7 @@ object_building_poi_scout_camp_s1 = object_building_poi_shared_scout_camp_s1:new
 	aggroMod = 0,
 	duration = 3600,
 	radius = 15,
-	experience = 1920,
+	experience = 640,
 	skillRequired = 0,
 
 	childObjects = {

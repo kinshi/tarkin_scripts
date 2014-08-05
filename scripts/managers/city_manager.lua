@@ -61,6 +61,7 @@ CityVotingCycles = 3
 CityVotingCyclesUntilLocked = 2
 
 --The amount of time in minutes before the city performs an update.
+--CityUpdateInterval = 10080
 CityUpdateInterval = 10080
 
 --The amount of time in minutes a new city has to gain enough citizens to remain a city.
@@ -83,7 +84,7 @@ RadiusPerRank = {150, 200, 300, 400, 450}
 DecorationsPerRank = 20
 
 -- Amount to discount city maintenance  float.  1 = 100%, .75 =75%, .5=50% etc
-maintenanceDiscount = 1.0
+maintenanceDiscount = .5
 
 --[[
 	CITIES ALLOWED PER PLANET
