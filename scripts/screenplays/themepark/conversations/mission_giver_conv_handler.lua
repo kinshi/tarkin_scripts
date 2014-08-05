@@ -112,18 +112,10 @@ function mission_giver_conv_handler:handleScreenInit(pConversationTemplate, pCon
 			nextScreenName = "failure"
 
 		elseif missionFaction ~= 0 and self.themePark:isInFaction(missionFaction, pConversingPlayer) ~= true then
-			if self.themePark:isValidConvoString(stfFile, ":notyet") then
-				nextScreenName = "notyet"
-			else
-				nextScreenName = "no_faction"
-			end
+			nextScreenName = "no_faction"
 
 		elseif globalFaction ~= 0 and self.themePark:isInFaction(globalFaction, pConversingPlayer) ~= true then
-			if self.themePark:isValidConvoString(stfFile, ":notyet") then
-				nextScreenName = "notyet"
-			else
-				nextScreenName = "no_faction"
-			end
+			nextScreenName = "no_faction"
 
 		elseif self.themePark:requiresEliteCombatProfession() == true and self.themePark:hasEliteCombatProfession(pConversingPlayer) == false then
 			nextScreenName = "too_weak"

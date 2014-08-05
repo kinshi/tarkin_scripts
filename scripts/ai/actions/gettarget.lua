@@ -26,9 +26,7 @@ function GetTargetBase:doAction(pAgent)
 		local ranLevel = math.random(creature:getLevel())
 
 		local pTarget = agent:getTargetFromMap()
-		--print(pTarget)
 		if (pTarget ~= agent:getFollowObject()) then
-		--print("1")
 			agent:setFollowObject(pTarget)
 			if (pTarget ~= nil) then agent:setDefender(pTarget) end
 			if (agent:validateTarget()) then
@@ -37,7 +35,6 @@ function GetTargetBase:doAction(pAgent)
 				agent:removeDefender()
 			end
 		elseif pTarget ~= nil and agent:validateTarget() then
-		--print("2")
 			if agent:followHasState(PEACE) and ranLevel == 1 then
 				agent:clearCombatState(true)
 				agent:setOblivious()
@@ -48,9 +45,7 @@ function GetTargetBase:doAction(pAgent)
 		end
 
 		pTarget = agent:getTargetFromDefenders()
-		--print(pTarget)
 		if (pTarget ~= agent:getFollowObject()) then
-		--print("3")
 			agent:setFollowObject(pTarget)
 			if (pTarget ~= nil) then agent:setDefender(pTarget) end
 			if (agent:validateTarget()) then
@@ -59,7 +54,6 @@ function GetTargetBase:doAction(pAgent)
 				agent:removeDefender()
 			end
 		elseif pTarget ~= nil and agent:validateTarget() then
-		--print("4")
 			if agent:followHasState(PEACE) and ranLevel == 1 then
 				agent:clearCombatState(true)
 				agent:setOblivious()
