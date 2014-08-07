@@ -84,7 +84,7 @@ RadiusPerRank = {150, 200, 300, 400, 450}
 DecorationsPerRank = 20
 
 -- Amount to discount city maintenance  float.  1 = 100%, .75 =75%, .5=50% etc
-maintenanceDiscount = .5
+maintenanceDiscount = 1.0
 
 --[[
 	CITIES ALLOWED PER PLANET

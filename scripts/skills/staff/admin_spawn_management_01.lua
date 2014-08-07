@@ -1,5 +1,5 @@
-admin_debug_01 = {
-	skillName = "admin_debug_01",
+admin_spawn_management_01 = {
+	skillName = "admin_spawn_management_01",
 	parentName = "",
 	graphType = 4,
 	godOnly = 1,
@@ -21,17 +21,12 @@ admin_debug_01 = {
 	jediStateRequired = 0,
 	skillAbility = {},
 	commands = {
-		"aiIgnore",
-		"combat",
-		"craft",
-		"findObject",
-		"forceCommand",
-		"generateCraftedItem",
-		"getObjVars",
-		"gmCreateClassResource",
-		"gmCreateSpecificResource",
-		"manufacture",
-		"showFactionInformation"
+		"createCreature",
+		"createNPC",
+		"createMissionElement",
+		"createSpawningElement",
+		"createSpawningElementWithDifficulty",
+		"spawnStatus",
 	},
 	skillModifiers = {},
 	schematicsGranted = {},
@@ -39,4 +34,4 @@ admin_debug_01 = {
 	searchable = 0
 }
 
-addSkill(admin_debug_01)
+addSkill(admin_spawn_management_01)

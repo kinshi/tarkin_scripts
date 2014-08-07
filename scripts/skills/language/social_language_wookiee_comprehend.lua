@@ -1,12 +1,12 @@
-admin_spawn_management_01 = {
-	skillName = "admin_spawn_management_01",
-	parentName = "",
+social_language_wookiee_comprehend = {
+	skillName = "social_language_wookiee_comprehend",
+	parentName = "social_language",
 	graphType = 4,
-	godOnly = 1,
+	godOnly = 0,
 	title = 0,
 	profession = 0,
-	hidden = 1,
-	moneyRequired = 0,
+	hidden = 0,
+	moneyRequired = 1000,
 	pointsRequired = 0,
 	skillsRequiredCount = 0,
 	skillsRequired = {},
@@ -20,17 +20,13 @@ admin_spawn_management_01 = {
 	speciesRequired = {},
 	jediStateRequired = 0,
 	skillAbility = {},
-	commands = {
-		"createCreature",
-		"createNPC",
-		"createMissionElement",
-		"createSpawningElement",
-		"createSpawningElementWithDifficulty",
+	commands = {},
+	skillModifiers = {
+		{ "language_wookiee_comprehend", 100 }
 	},
-	skillModifiers = {},
 	schematicsGranted = {},
 	schematicsRevoked = {},
-	searchable = 0
+	searchable = 1
 }
 
-addSkill(admin_spawn_management_01)
+addSkill(social_language_wookiee_comprehend)

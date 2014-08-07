@@ -1,12 +1,12 @@
-admin_general_admin_01 = {
-	skillName = "admin_general_admin_01",
-	parentName = "",
+social_language_trandoshan_comprehend = {
+	skillName = "social_language_trandoshan_comprehend",
+	parentName = "social_language",
 	graphType = 4,
-	godOnly = 1,
+	godOnly = 0,
 	title = 0,
 	profession = 0,
-	hidden = 1,
-	moneyRequired = 0,
+	hidden = 0,
+	moneyRequired = 1000,
 	pointsRequired = 0,
 	skillsRequiredCount = 0,
 	skillsRequired = {},
@@ -20,19 +20,13 @@ admin_general_admin_01 = {
 	speciesRequired = {},
 	jediStateRequired = 0,
 	skillAbility = {},
-	commands = {
-		"goto",
-		"teleport",
-		"teleportto",
-		"invulnerable",
-		"kill",
-		"setSpeed",
-		"planetWarp"
+	commands = {},
+	skillModifiers = {
+		{ "language_trandoshan_comprehend", 100 }
 	},
-	skillModifiers = {},
 	schematicsGranted = {},
 	schematicsRevoked = {},
-	searchable = 0
+	searchable = 1
 }
 
-addSkill(admin_general_admin_01)
+addSkill(social_language_trandoshan_comprehend)
