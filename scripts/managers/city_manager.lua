@@ -78,13 +78,13 @@ CitizensPerRank = {1, 2, 3, 5, 8}
 --CitizensPerRank = {10, 20, 35, 55, 85}
 
 --The radius in meters of the city at each city rank. (Outpost, Village, Township, City, Metropolis)
-RadiusPerRank = {150, 200, 300, 400, 450}
+RadiusPerRank = {250, 300, 400, 500, 550}
 
 -- Maximum for each rank.  rank 1 = decorationsperrank * 1, rank 5 = decorationsperrank * 5	82
 DecorationsPerRank = 20
 
 -- Amount to discount city maintenance  float.  1 = 100%, .75 =75%, .5=50% etc
-maintenanceDiscount = .5
+maintenanceDiscount = 1.0
 
 --[[
 	CITIES ALLOWED PER PLANET

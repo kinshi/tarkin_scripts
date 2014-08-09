@@ -47,11 +47,11 @@ DB_HOME=/home/swgemu/workspace/tarkin_scripts/databases
 export DB_HOME
 
 # backup dir (should be on another filesystem)
-DB_BACKUP=/home/swgemu/workspace/tarkin_scripts/backup
+DB_BACKUP=/mnt/hgfs/backup
 export DB_BACKUP
 
 # how much backups will we keep
-DB_CYCLE=5
+DB_CYCLE=14
 export DB_CYCLE
 
 # how much space must be left on backup volume
