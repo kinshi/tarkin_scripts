@@ -52,7 +52,7 @@ object_draft_schematic_scout_item_camp_basic = object_draft_schematic_scout_shar
    size = 1, 
 
    xpType = "camp", 
-   xp = 90, 
+   xp = 30, 
 
    assemblySkill = "general_assembly", 
    experimentingSkill = "general_experimentation", 

@@ -28,6 +28,9 @@ includeFile("dungeon/geonosian_lab/geonosian_lab.lua")
 includeFile("dungeon/warren/warren.lua")
 includeFile("dungeon/death_watch_bunker_conv_handles.lua")
 
+-- Village
+includeFile("village/fs_experience_converter_conv_handler.lua")
+
 -- Task/Quest
 includeFile("tasks/corellia/chertyl_ruluwoor.lua")
 includeFile("tasks/corellia/coraline_dynes.lua")
@@ -274,7 +277,6 @@ includeFile("static_spawns/yavin4_static_spawns.lua")
 --Tests
 --includeFile("tests/options_bitmask_test.lua")
 --includeFile("event/stresstest_20120128.lua")
-
 
 --Race Tracks
 includeFile("racetracks/racetracks.lua")
