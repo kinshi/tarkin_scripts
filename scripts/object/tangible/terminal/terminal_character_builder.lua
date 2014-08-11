@@ -160,52 +160,52 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 					},
 					"Master", "crafting_artisan_master"
 				},
-				"Bio-Engineer",
-				{
-					"Novice", "outdoors_bio_engineer_novice",
-
-					"Engineering Techniques",
-					{
-						"Engineering Techniques I", "outdoors_bio_engineer_production_01",
-						"Engineering Techniques II", "outdoors_bio_engineer_production_02",
-						"Engineering Techniques III", "outdoors_bio_engineer_production_03",
-						"Engineering Techniques IV", "outdoors_bio_engineer_production_04"
-					},
-					--"Master", "outdoors_bio_engineer_master"
-				},
-				"Brawler",
-				{
-					"Novice", "combat_brawler_novice",
-					"Unarmed",
-					{
-						"Unarmed I", "combat_brawler_unarmed_01",
-						"Unarmed II", "combat_brawler_unarmed_02",
-						"Unarmed III", "combat_brawler_unarmed_03",
-						"Unarmed IV", "combat_brawler_unarmed_04"
-					},	
-					"Fencer",
-					{
-						"One Handed I", "combat_brawler_1handmelee_01",
-						"One Handed II", "combat_brawler_1handmelee_02",
-						"One Handed III", "combat_brawler_1handmelee_03",
-						"One Handed IV", "combat_brawler_1handmelee_04"
-					},
-					"Swordsman",
-					{
-						"Two Handed I", "combat_brawler_2handmelee_01",
-						"Two Handed II", "combat_brawler_2handmelee_02",
-						"Two Handed III", "combat_brawler_2handmelee_03",
-						"Two Handed IV", "combat_brawler_2handmelee_04"
-					},
-					"Pikeman",
-					{
-						"Polearms I", "combat_brawler_polearm_01",
-						"Polearms II", "combat_brawler_polearm_02",
-						"Polearms III", "combat_brawler_polearm_03",
-						"Polearms IV", "combat_brawler_polearm_04"
-					},
-					--"Master", "combat_brawler_master"
-				},
+--				"Bio-Engineer",
+--				{
+--					"Novice", "outdoors_bio_engineer_novice",
+--
+--					"Engineering Techniques",
+--					{
+--						"Engineering Techniques I", "outdoors_bio_engineer_production_01",
+--						"Engineering Techniques II", "outdoors_bio_engineer_production_02",
+--						"Engineering Techniques III", "outdoors_bio_engineer_production_03",
+--						"Engineering Techniques IV", "outdoors_bio_engineer_production_04"
+--					},
+--					--"Master", "outdoors_bio_engineer_master"
+--				},
+--				"Brawler",
+--				{
+--					"Novice", "combat_brawler_novice",
+--					"Unarmed",
+--					{
+--						"Unarmed I", "combat_brawler_unarmed_01",
+--						"Unarmed II", "combat_brawler_unarmed_02",
+--						"Unarmed III", "combat_brawler_unarmed_03",
+--						"Unarmed IV", "combat_brawler_unarmed_04"
+--					},	
+--					"Fencer",
+--					{
+--						"One Handed I", "combat_brawler_1handmelee_01",
+--						"One Handed II", "combat_brawler_1handmelee_02",
+--						"One Handed III", "combat_brawler_1handmelee_03",
+--						"One Handed IV", "combat_brawler_1handmelee_04"
+--					},
+--					"Swordsman",
+--					{
+--						"Two Handed I", "combat_brawler_2handmelee_01",
+--						"Two Handed II", "combat_brawler_2handmelee_02",
+--						"Two Handed III", "combat_brawler_2handmelee_03",
+--						"Two Handed IV", "combat_brawler_2handmelee_04"
+--					},
+--					"Pikeman",
+--					{
+--						"Polearms I", "combat_brawler_polearm_01",
+--						"Polearms II", "combat_brawler_polearm_02",
+--						"Polearms III", "combat_brawler_polearm_03",
+--						"Polearms IV", "combat_brawler_polearm_04"
+--					},
+--					--"Master", "combat_brawler_master"
+--				},
 				"Chef",
 				{
 					"Novice", "crafting_chef_novice",
@@ -239,18 +239,18 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 					},
 					"Master", "crafting_chef_master"
 				},
-				"Combat Medic",
-				{
-					"Novice", "science_combatmedic_novice",
-
-					"Crafting",
-					{
-						"Intermediate Combat Medicine Crafting", "science_combatmedic_medicine_01",
-						"Advanced Combat Medicine Crafting", "science_combatmedic_medicine_02",
-						"Expert Combat Medicine Crafting", "science_combatmedic_medicine_03",
-						"Master Combat Medicine Crafting", "science_combatmedic_medicine_04"
-					},
-				},
+--				"Combat Medic",
+--				{
+--					"Novice", "science_combatmedic_novice",
+--
+--					"Crafting",
+--					{
+--						"Intermediate Combat Medicine Crafting", "science_combatmedic_medicine_01",
+--						"Advanced Combat Medicine Crafting", "science_combatmedic_medicine_02",
+--						"Expert Combat Medicine Crafting", "science_combatmedic_medicine_03",
+--						"Master Combat Medicine Crafting", "science_combatmedic_medicine_04"
+--					},
+--				},
 				"Dancer",
 				{
 					"Novice", "social_dancer_novice",
@@ -396,39 +396,39 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 					},
 					"Master", "social_imagedesigner_master"
 				},
-				"Marksman",
-				{
-					"Novice", "combat_marksman_novice",
-					"Rifles",
-					{
-						"Rifles I", "combat_marksman_rifle_01",
-						"Rifles II", "combat_marksman_rifle_02",
-						"Rifles III", "combat_marksman_rifle_03",
-						"Rifles IV", "combat_marksman_rifle_04"
-					},
-					"Pistols",
-					{
-						"Pistols I", "combat_marksman_pistol_01",
-						"Pistols II", "combat_marksman_pistol_02",
-						"Pistols III", "combat_marksman_pistol_03",
-						"Pistols IV", "combat_marksman_pistol_04"
-					},
-					"Carbines",
-					{
-						"Carbines I", "combat_marksman_carbine_01",
-						"Carbines II", "combat_marksman_carbine_02",
-						"Carbines III", "combat_marksman_carbine_03",
-						"Carbines IV", "combat_marksman_carbine_04"
-					},
-					"Ranged Support",
-					{
-						"Ranged Support I", "combat_marksman_support_01",
-						"Ranged Support II", "combat_marksman_support_02",
-						"Ranged Support III", "combat_marksman_support_03",
-						"Ranged Support IV", "combat_marksman_support_04"
-					},
-					--"Master", "combat_marksman_master"
-				},
+--				"Marksman",
+--				{
+--					"Novice", "combat_marksman_novice",
+--					"Rifles",
+--					{
+--						"Rifles I", "combat_marksman_rifle_01",
+--						"Rifles II", "combat_marksman_rifle_02",
+--						"Rifles III", "combat_marksman_rifle_03",
+--						"Rifles IV", "combat_marksman_rifle_04"
+--					},
+--					"Pistols",
+--					{
+--						"Pistols I", "combat_marksman_pistol_01",
+--						"Pistols II", "combat_marksman_pistol_02",
+--						"Pistols III", "combat_marksman_pistol_03",
+--						"Pistols IV", "combat_marksman_pistol_04"
+--					},
+--					"Carbines",
+--					{
+--						"Carbines I", "combat_marksman_carbine_01",
+--						"Carbines II", "combat_marksman_carbine_02",
+--						"Carbines III", "combat_marksman_carbine_03",
+--						"Carbines IV", "combat_marksman_carbine_04"
+--					},
+--					"Ranged Support",
+--					{
+--						"Ranged Support I", "combat_marksman_support_01",
+--						"Ranged Support II", "combat_marksman_support_02",
+--						"Ranged Support III", "combat_marksman_support_03",
+--						"Ranged Support IV", "combat_marksman_support_04"
+--					},
+--					--"Master", "combat_marksman_master"
+--				},
 				"Medic",
 				{
 					"Novice", "science_medic_novice",
@@ -528,50 +528,50 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 					},
 					"Master", "social_musician_master"
 				},
-				"Ranger",
-				{
-					"Novice", "outdoors_ranger_novice",
-					"Frontiering",
-					{
-						"Frontiering I", "outdoors_ranger_tracking_01",
-						"Frontiering II", "outdoors_ranger_tracking_02",
-						"Frontiering III", "outdoors_ranger_tracking_03",
-						"Frontiering IV", "outdoors_ranger_tracking_04"
-					},
-				},
-				"Scout",
-				{
-					"Novice", "outdoors_scout_novice",
-					"Exploration",
-					{
-						"Exploration I", "outdoors_scout_movement_01",
-						"Exploration II", "outdoors_scout_movement_02",
-						"Exploration III", "outdoors_scout_movement_03",
-						"Exploration IV", "outdoors_scout_movement_04"
-					},
-					"Trapping",
-					{
-						"Trapping I", "outdoors_scout_tools_01",
-						"Trapping II", "outdoors_scout_tools_02",
-						"Trapping III", "outdoors_scout_tools_03",
-						"Trapping IV", "outdoors_scout_tools_04"
-					},
-					"Hunting",
-					{
-						"Hunting I", "outdoors_scout_harvest_01",
-						"Hunting II", "outdoors_scout_harvest_02",
-						"Hunting III", "outdoors_scout_harvest_03",
-						"Hunting IV", "outdoors_scout_harvest_04"
-					},
-					"Survival",
-					{
-						"Survival I", "outdoors_scout_camp_01",
-						"Survival II", "outdoors_scout_camp_02",
-						"Survival III", "outdoors_scout_camp_03",
-						"Survival IV", "outdoors_scout_camp_04"
-					},
-					--"Master", "outdoors_scout_master"
-				},
+--				"Ranger",
+--				{
+--					"Novice", "outdoors_ranger_novice",
+--					"Frontiering",
+--					{
+--						"Frontiering I", "outdoors_ranger_tracking_01",
+--						"Frontiering II", "outdoors_ranger_tracking_02",
+--						"Frontiering III", "outdoors_ranger_tracking_03",
+--						"Frontiering IV", "outdoors_ranger_tracking_04"
+--					},
+--				},
+--				"Scout",
+--				{
+--					"Novice", "outdoors_scout_novice",
+--					"Exploration",
+--					{
+--						"Exploration I", "outdoors_scout_movement_01",
+--						"Exploration II", "outdoors_scout_movement_02",
+--						"Exploration III", "outdoors_scout_movement_03",
+--						"Exploration IV", "outdoors_scout_movement_04"
+--					},
+--					"Trapping",
+--					{
+--						"Trapping I", "outdoors_scout_tools_01",
+--						"Trapping II", "outdoors_scout_tools_02",
+--						"Trapping III", "outdoors_scout_tools_03",
+--						"Trapping IV", "outdoors_scout_tools_04"
+--					},
+--					"Hunting",
+--					{
+--						"Hunting I", "outdoors_scout_harvest_01",
+--						"Hunting II", "outdoors_scout_harvest_02",
+--						"Hunting III", "outdoors_scout_harvest_03",
+--						"Hunting IV", "outdoors_scout_harvest_04"
+--					},
+--					"Survival",
+--					{
+--						"Survival I", "outdoors_scout_camp_01",
+--						"Survival II", "outdoors_scout_camp_02",
+--						"Survival III", "outdoors_scout_camp_03",
+--						"Survival IV", "outdoors_scout_camp_04"
+--					},
+--					--"Master", "outdoors_scout_master"
+--				},
 				"Shipwright",
 				{
 					"Novice", "crafting_shipwright_novice",
@@ -605,19 +605,19 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 					},
 					"Master", "crafting_shipwright_master"
 				},
-				"Smuggler",
-				{
-					"Novice", "combat_smuggler_novice",
-
-					"Spices",
-					{
-						"Spices I", "combat_smuggler_spice_01",
-						"Spices II", "combat_smuggler_spice_02",
-						"Spices III", "combat_smuggler_spice_03",
-						"Spices IV", "combat_smuggler_spice_04"
-					},
-					--"Master", "combat_smuggler_master"
-				},
+--				"Smuggler",
+--				{
+--					"Novice", "combat_smuggler_novice",
+--
+--					"Spices",
+--					{
+--						"Spices I", "combat_smuggler_spice_01",
+--						"Spices II", "combat_smuggler_spice_02",
+--						"Spices III", "combat_smuggler_spice_03",
+--						"Spices IV", "combat_smuggler_spice_04"
+--					},
+--					--"Master", "combat_smuggler_master"
+--				},
 				"Tailor",
 				{
 					"Novice", "crafting_tailor_novice",
@@ -687,7 +687,8 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 			},
 			--"Unlearn All Skills", "unlearn_all_skills",
 			"Heal Battle Fatigue", "cleanse_character",
-			"Buff Health, Action & Mind (2 hour)", "enhance_character"
+			"Basic Health, Action & Mind Buffs (2 hour)", "enhance_character",
+			"Remove Buffs and Empty Stomach (ralph)", "reset_buffs"
 			--"Learn Languages", "language"
 			--"Credits", "credits",
 			--"Apply DOTs", "apply_dots",
