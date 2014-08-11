@@ -1,4 +1,4 @@
-acklay = Creature:new {
+acklay_youngling = Creature:new {
 	objectName = "@mob/creature_names:",
 	customName = "Acklay Youngling",
 	socialGroup = "geonosian_creature",
@@ -52,4 +52,4 @@ acklay = Creature:new {
 	}
 }
 
-CreatureTemplates:addCreatureTemplate(acklay, "acklay")
+CreatureTemplates:addCreatureTemplate(acklay_youngling, "acklay_youngling")
