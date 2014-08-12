@@ -7,6 +7,7 @@ includeFile("themepark/conversations/goru_conv_handler.lua")
 includeFile("themepark/conversations/mission_giver_conv_handler.lua")
 includeFile("themepark/conversations/mission_target_conv_handler.lua")
 includeFile("themepark/conversations/nym_conv_handler.lua")
+includeFile("themepark/conversations/theater_manager_conv_handler.lua")
 includeFile("themepark/imperial/themeParkImperial.lua")
 includeFile("themepark/imperial/emperors_retreat.lua")
 includeFile("themepark/nym/themeParkNym.lua")
@@ -26,6 +27,9 @@ includeFile("dungeon/death_watch_bunker.lua")
 includeFile("dungeon/geonosian_lab/geonosian_lab.lua")
 includeFile("dungeon/warren/warren.lua")
 includeFile("dungeon/death_watch_bunker_conv_handles.lua")
+
+-- Village
+includeFile("village/fs_experience_converter_conv_handler.lua")
 
 -- Task/Quest
 includeFile("tasks/corellia/chertyl_ruluwoor.lua")
@@ -124,6 +128,7 @@ includeFile("tasks/tatooine/vardias_tyne.lua")
 includeFile("tasks/yavin4/gins_darone.lua")
 includeFile("tasks/yavin4/lian_byrne.lua")
 includeFile("tasks/yavin4/ruwan_tokai.lua")
+includeFile("tasks/theater_manager.lua")
 
 -- Caves
 includeFile("caves/corellia_afarathu_cave.lua")
@@ -268,14 +273,58 @@ includeFile("static_spawns/tatooine_static_spawns_south.lua")
 --Yavin4
 includeFile("static_spawns/yavin4_static_spawns.lua")
 
+--Treasure Maps
+includeFile("treasure_map/EncodedDiskMenuComponent.lua")
+includeFile("treasure_map/TreasureMapMenuComponent.lua")
 
 --Tests
 --includeFile("tests/options_bitmask_test.lua")
 --includeFile("event/stresstest_20120128.lua")
 includeFile("tests/painting_vendor.lua")
 
+
 --Race Tracks
 includeFile("racetracks/racetracks.lua")
 
 -- Space
 includeFile("space/space_chassis_dealer_conv_handler.lua")
+
+--Tarkin Custom
+
+--includeFile("tests/ep3.lua")
+
+--Jedi trainers on Dantooine
+
+includeFile("poi/dantooine_jedi_trainers.lua")
+
+--_Bestine Travel terms
+
+includeFile("cities/tatooine_bestine_travel.lua")
+
+-- Theed Cantina
+includeFile("cities/naboo_theed_cantina.lua")
+
+
+--Imperial
+
+includeFile("military/imperial/corellia_stronghold.lua")
+includeFile("military/imperial/dathomir_imperial_prison.lua")
+includeFile("military/imperial/dantooine_imperial_outpost.lua")
+includeFile("military/imperial/lok_imperial_outpost.lua")
+includeFile("military/imperial/talus_imperial_outpost.lua")
+includeFile("military/imperial/tatooine_imperial_detachment_hq.lua")
+includeFile("military/imperial/tatooine_imperial_oasis_outpost.lua")
+includeFile("military/imperial/naboo_kaadra_outpost.lua")
+includeFile("military/imperial/naboo_imperial_emp_retreat.lua")
+includeFile("military/imperial/yavin4_imperial_base.lua")
+includeFile("military/imperial/rori_imperial_encampment.lua")
+includeFile("military/imperial/bestine_imperial_outpost.lua")
+
+--Rebel
+
+includeFile("military/rebel/rori_rebel_outpost.lua")
+includeFile("military/rebel/corellia_rebel_hideout.lua")
+includeFile("military/rebel/rori_rebel_military_base.lua")
+includeFile("military/rebel/tatooine_anchorhead_rebel_base.lua")
+includeFile("military/rebel/lok_rebel_safehouse.lua")
+includeFile("military/rebel/talus_rebel_installation.lua")

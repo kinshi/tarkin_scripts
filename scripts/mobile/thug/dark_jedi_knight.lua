@@ -1,10 +1,10 @@
 dark_jedi_knight = Creature:new {
 	objectName = "@mob/creature_names:dark_jedi_knight",
-	socialGroup = "Dark Jedi",
+	socialGroup = "dark_jedi",
 	pvpFaction = "",
 	faction = "",
 	level = 265,
-	chanceHit = 235,
+	chanceHit = 23.5,
 	damageMin = 1645,
 	damageMax = 3000,
 	baseXp = 25266,

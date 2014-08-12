@@ -4,7 +4,7 @@ minor_gorax = Creature:new {
 	pvpFaction = "",
 	faction = "",
 	level = 131,
-	chanceHit = 40,
+	chanceHit = 4,
 	damageMin = 745,
 	damageMax = 1200,
 	baseXp = 12424,
@@ -41,7 +41,7 @@ minor_gorax = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareattack",""}
+		{"creatureareaattack",""}
 	}
 }
 

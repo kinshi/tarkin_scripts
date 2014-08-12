@@ -1,7 +1,7 @@
 require("ai.actions.move")
 require("ai.interrupts")
 
-CombatMoveBase = createClass(Move)
+CombatMoveBase = createClass(MoveBase)
 
 function CombatMoveBase:doAction(pAgent)
 	if (pAgent ~= nil) then
@@ -30,4 +30,12 @@ function CombatMovePet:checkConditions(pAgent)
 		end
 	end
 	return false
+end
+
+function CombatMovePet:terminate(pAgent)
+	if pAgent ~= nil then
+		local agent = LuaAiAgent(pAgent)
+		if agent:getBehaviorStatus() == BEHAVIOR_FAILURE then agent:restoreFollowObject() end
+	end
+	return 0
 end

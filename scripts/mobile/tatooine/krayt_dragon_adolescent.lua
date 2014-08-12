@@ -1,10 +1,10 @@
 krayt_dragon_adolescent = Creature:new {
 	objectName = "@mob/creature_names:krayt_dragon_adolescent",
-	socialGroup = "Krayt",
+	socialGroup = "krayt",
 	pvpFaction = "",
 	faction = "",
 	level = 200,
-	chanceHit = 15,
+	chanceHit = 27.25,
 	damageMin = 990,
 	damageMax = 1750,
 	baseXp = 26356,

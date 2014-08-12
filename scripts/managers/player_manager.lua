@@ -67,13 +67,11 @@ baseStoredShips = 3
 -----------------------------------
 --VETERAN REWARDS CONFIG
 -----------------------------------
-
 veteranRewardMilestones = {90, 180, 270, 360, 450, 540, 630, 720, 810, 900, 990, 1080} --days, must be sorted low to high
 
 veteranRewards = {
 
 	-- 90 Day Rewards
-	
 	-- Disabled until harvester is functional {templateFile = "object/tangible/veteran_reward/harvester.iff", milestone=90, oneTime=true, description="@veteran_new:poweredharvester"},
 	{templateFile = "object/tangible/veteran_reward/data_terminal_s1.iff", milestone=90, oneTime=false, description="@veteran_new:dataterminal1"},
 	{templateFile = "object/tangible/veteran_reward/data_terminal_s2.iff", milestone=90, oneTime=false, description="@veteran_new:dataterminal2"},
@@ -82,7 +80,6 @@ veteranRewards = {
 	{templateFile = "object/tangible/veteran_reward/frn_vet_protocol_droid_toy.iff", milestone=90, oneTime=false, description="@veteran_new:mini_protocoldroid"},
 
 	-- 180 Day Rewards
-
 	{templateFile = "object/tangible/veteran_reward/resource.iff", milestone=180, oneTime=true, description="A Crate of Free Resources (5K Units)"},
 	{templateFile = "object/tangible/veteran_reward/frn_couch_falcon_corner_s01.iff", milestone=180, oneTime=false, description="@veteran_new:falconcouch"},
 	{templateFile = "object/tangible/veteran_reward/frn_couch_falcon_section_s01.iff", milestone=180, oneTime=false, description="@veteran_new:falconchair"},
@@ -91,7 +88,6 @@ veteranRewards = {
 	{templateFile = "object/tangible/deed/player_house_deed/atat_house_deed.iff", milestone=180, oneTime=true, description="A Fallen AT-AT"},	
 
 	-- 270 Day Rewards
-
 	{templateFile = "object/tangible/deed/vehicle_deed/speederbike_flash_deed.iff", milestone=270, oneTime=true},
 	{templateFile = "object/tangible/wearables/goggles/goggles_s01.iff", milestone=270, oneTime=false, description="Special Edition Goggles Style 1"},
 	{templateFile = "object/tangible/wearables/goggles/goggles_s02.iff", milestone=270, oneTime=false, description="Special Edition Goggles Style 2"},
@@ -103,7 +99,6 @@ veteranRewards = {
 	{templateFile = "object/tangible/deed/player_house_deed/vehicle_house_deed.iff", milestone=270, oneTime=true, description="Vehicle Barn"},
 
 	-- 360 Day Rewards
-
 	{templateFile = "object/tangible/veteran_reward/frn_tech_console_sectional_a.iff", milestone=360, oneTime=false, description="@veteran_new:techconsole_a"},
 	{templateFile = "object/tangible/veteran_reward/frn_tech_console_sectional_b.iff", milestone=360, oneTime=false, description="@veteran_new:techconsole_b"},
 	{templateFile = "object/tangible/veteran_reward/frn_tech_console_sectional_c.iff", milestone=360, oneTime=false, description="@veteran_new:techconsole_c"},
@@ -130,11 +125,11 @@ veteranRewards = {
 	{templateFile = "object/tangible/loot/quest/lifeday_orb.iff", milestone=540, oneTime=false, description="Lifeday Orb"},
 		
 	-- 630 Day Rewards
-	{templateFile = "object/tangible/furniture/modern/bar_counter_s1.iff", milestone=540, oneTime=false, description="Bar Countertop"},
-	{templateFile = "object/tangible/furniture/modern/bar_piece_curve_s1.iff", milestone=540, oneTime=false, description="Bar Countertop (Curved, Style 1)"},
-	{templateFile = "object/tangible/furniture/modern/bar_piece_curve_s2.iff", milestone=540, oneTime=false, description="Bar Countertop (Curved, Style 2)"},
-	{templateFile = "object/tangible/furniture/modern/bar_piece_straight_s1.iff", milestone=540, oneTime=false, description="Bar Countertop (Straight, Style 1)"},
-	{templateFile = "object/tangible/furniture/modern/bar_piece_straight_s2.iff", milestone=540, oneTime=false, description="Bar Countertop (Straight, Style 2)"},
+	{templateFile = "object/tangible/furniture/modern/bar_counter_s1.iff", milestone=630, oneTime=false, description="Bar Countertop"},
+	{templateFile = "object/tangible/furniture/modern/bar_piece_curve_s1.iff", milestone=630, oneTime=false, description="Bar Countertop (Curved, Style 1)"},
+	{templateFile = "object/tangible/furniture/modern/bar_piece_curve_s2.iff", milestone=630, oneTime=false, description="Bar Countertop (Curved, Style 2)"},
+	{templateFile = "object/tangible/furniture/modern/bar_piece_straight_s1.iff", milestone=630, oneTime=false, description="Bar Countertop (Straight, Style 1)"},
+	{templateFile = "object/tangible/furniture/modern/bar_piece_straight_s2.iff", milestone=630, oneTime=false, description="Bar Countertop (Straight, Style 2)"},
 			
 	-- 720 Day Rewards
 	{templateFile = "object/tangible/furniture/all/frn_all_table_s01.iff", milestone=720, oneTime=false, description="Round Cantina Table (Style 1)"},
@@ -154,7 +149,7 @@ veteranRewards = {
 	{templateFile = "object/tangible/furniture/modern/rug_rnd_m_s01.iff", milestone=810, oneTime=false, description="Medium Round Rug"},
 	{templateFile = "object/tangible/furniture/modern/rug_rnd_sml_s01.iff", milestone=810, oneTime=false, description="Small Round Rug"},
 	
-	-- 990 Day Rewards
+	-- 900 Day Rewards
 	{templateFile = "object/tangible/loot/misc/loot_skull_bith.iff", milestone=900, oneTime=false, description="A Bith Skull"},
 	{templateFile = "object/tangible/loot/misc/loot_skull_human.iff", milestone=900, oneTime=false, description="A Human Skull"},
 	{templateFile = "object/tangible/loot/misc/loot_skull_ithorian.iff", milestone=900, oneTime=false, description="A Ithorian Skull"},
