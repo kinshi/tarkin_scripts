@@ -36,6 +36,11 @@ function ThemeParkLogic:spawnNpcs()
 				local npc = LuaCreatureObject(pNpc)
 				npc:setState(STATESITTINGONCHAIR)
 			end
+			if (npcSpawnData.mood ~= nil and npcSpawnData.mood ~= "") then
+				ObjectManager.withCreatureObject(pNpc, function(npc)
+					npc:setMoodString(npcSpawnData.mood)
+				end)
+			end
 		end
 	end
 end
@@ -1215,7 +1220,7 @@ function ThemeParkLogic:updateWaypoint(pConversingPlayer, planetName, x, y, dire
 		if pGhost ~= nil then
 			local ghost = LuaPlayerObject(pGhost)
 
-			waypointID = ghost:addWaypoint(planetName, self:getMissionDescription(pConversingPlayer, direction), "", x, y, WAYPOINT_COLOR_PURPLE, true, true, WAYPOINTTHEMEPARK)
+			waypointID = ghost:addWaypoint(planetName, self:getMissionDescription(pConversingPlayer, direction), "", x, y, WAYPOINT_COLOR_PURPLE, true, true, WAYPOINTTHEMEPARK, 0)
 		end
 	end
 end
@@ -1642,6 +1647,7 @@ function ThemeParkLogic:goToNextMission(pConversingPlayer)
 	local creature = LuaCreatureObject(pConversingPlayer)
 	writeData(creature:getObjectID() .. ":activeMission", 0)
 	writeData(creature:getObjectID() .. ":hasPreReqItem", 0)
+	writeData(creature:getObjectID() .. ":breechTriggered", 0)
 	writeStringData(creature:getObjectID() .. ":activeScreenPlay", "")
 	creature:setScreenPlayState(math.pow(2, missionNumber - 1), self.screenPlayState .. "_mission_" .. npcName)
 
