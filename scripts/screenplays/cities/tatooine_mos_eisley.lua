@@ -96,7 +96,7 @@ function TatooineMosEisleyScreenPlay:spawnMobiles()
 	--{"rancher",60,-2.46731,0.408271,-1.67245,0,1187893, "conversation", ""},
 
 	--Guild Hall 3429 -4730
-	spawnMobile("tatooine", "trainer_artisan",0,-0.0585386,1.13306,-13.9039,0,1279964)
+--	spawnMobile("tatooine", "trainer_artisan",0,-0.0585386,1.13306,-13.9039,0,1279964)
 
 	--Guild Hall 3479 -4684
 	spawnMobile("tatooine", "trainer_2hsword",0,11,1.1,-11,0,1189637)
@@ -106,11 +106,11 @@ function TatooineMosEisleyScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "trainer_scout",0,-13,1.1,4.8,180,1189636)
 
 	--Guild Hall 3355 -4713
-	spawnMobile("tatooine", "trainer_droidengineer",0,-10.9183,1.13306,-14.2845,5,1189580)
-	spawnMobile("tatooine", "trainer_architect",0,11,1.133,-14.5,0,1189578)
-	spawnMobile("tatooine", "trainer_armorsmith",0,-12.2888,1.13306,3.6161,171,1189577)
-	spawnMobile("tatooine", "trainer_merchant",0,12,1.13306,6,180,1189576)
-	spawnMobile("tatooine", "trainer_weaponsmith",0,-2.87328,1.13306,-8.72939,122,1189579)
+--	spawnMobile("tatooine", "trainer_droidengineer",0,-10.9183,1.13306,-14.2845,5,1189580)
+--	spawnMobile("tatooine", "trainer_architect",0,11,1.133,-14.5,0,1189578)
+--	spawnMobile("tatooine", "trainer_armorsmith",0,-12.2888,1.13306,3.6161,171,1189577)
+--	spawnMobile("tatooine", "trainer_merchant",0,12,1.13306,6,180,1189576)
+--	spawnMobile("tatooine", "trainer_weaponsmith",0,-2.87328,1.13306,-8.72939,122,1189579)
 
 	--Med Center
 	spawnMobile("tatooine", "trainer_1hsword",0,4.4,0.2,-7.8,36,9655496)
@@ -210,26 +210,26 @@ function TatooineMosEisleyScreenPlay:spawnMobiles()
 	--{"commoner_tatooine",60,3268.7,5,-4851.2,194,0, "npc_sitting_chair", ""},
 
 	--Imperial Npc's Outside
-	spawnMobile("tatooine", "crackdown_comm_operator",400,3410.5,5,-4735.8,-154,0)
-	spawnMobile("tatooine", "crackdown_elite_sand_trooper",400,3500.8,8,-4683.9,143,0)
+--	spawnMobile("tatooine", "crackdown_comm_operator",400,3410.5,5,-4735.8,-154,0)
+--	spawnMobile("tatooine", "crackdown_elite_sand_trooper",400,3500.8,8,-4683.9,143,0)
 	--{"crackdown_elite_sand_trooper",400,3496.81,5.52789,-4923.13,352.589,0, "neutral", ""},
-	spawnMobile("tatooine", "crackdown_imperial_noncom",400,3760.6,5,-4802,68,0)
-	spawnMobile("tatooine", "crackdown_sand_trooper",400,3322.23,4.77649,-4623.57,331.647,0)
-	spawnMobile("tatooine", "crackdown_sand_trooper",400,3304.54,5,-4602.49,86.0652,0)
-	spawnMobile("tatooine", "crackdown_sand_trooper",400,3288.68,4.72215,-4636.09,61.7463,0)
-	spawnMobile("tatooine", "crackdown_sand_trooper",400,3278.49,4.75246,-4676.19,22.0117,0)
-	spawnMobile("tatooine", "crackdown_sand_trooper",400,3290.4,5,-4696.4,137,0)
-	spawnMobile("tatooine", "crackdown_sand_trooper",400,3427.14,5,-4952.92,91.6772,0)
-	spawnMobile("tatooine", "crackdown_sand_trooper",400,3417.99,5,-4974.46,-54,0)
-	spawnMobile("tatooine", "crackdown_sand_trooper",400,3538.04,5.12541,-4806.46,312.721,0)
+--	spawnMobile("tatooine", "crackdown_imperial_noncom",400,3760.6,5,-4802,68,0)
+--	spawnMobile("tatooine", "crackdown_sand_trooper",400,3322.23,4.77649,-4623.57,331.647,0)
+--	spawnMobile("tatooine", "crackdown_sand_trooper",400,3304.54,5,-4602.49,86.0652,0)
+--	spawnMobile("tatooine", "crackdown_sand_trooper",400,3288.68,4.72215,-4636.09,61.7463,0)
+--	spawnMobile("tatooine", "crackdown_sand_trooper",400,3278.49,4.75246,-4676.19,22.0117,0)
+--	spawnMobile("tatooine", "crackdown_sand_trooper",400,3290.4,5,-4696.4,137,0)
+--	spawnMobile("tatooine", "crackdown_sand_trooper",400,3427.14,5,-4952.92,91.6772,0)
+--	spawnMobile("tatooine", "crackdown_sand_trooper",400,3417.99,5,-4974.46,-54,0)
+--	spawnMobile("tatooine", "crackdown_sand_trooper",400,3538.04,5.12541,-4806.46,312.721,0)
 	--{"crackdown_sand_trooper",400,3516.17,5,-4879.7,80,0, "neutral", ""},
-	spawnMobile("tatooine", "crackdown_sand_trooper_hard",400,3279.95,5,-4835.74,40,0)
-	spawnMobile("tatooine", "crackdown_sand_trooper_hard",400,3341.8,5,-4750.9,124,0)
-	spawnMobile("tatooine", "crackdown_scout_trooper",400,3585.84,5,-4719.95,281.969,0)
-	spawnMobile("tatooine", "crackdown_scout_trooper_hard",400,3288.12,4.9981,-4842.11,27.4222,0)
-	spawnMobile("tatooine", "crackdown_scout_trooper_hard",400,3377.5,0,-4709,156,0)
+--	spawnMobile("tatooine", "crackdown_sand_trooper_hard",400,3279.95,5,-4835.74,40,0)
+--	spawnMobile("tatooine", "crackdown_sand_trooper_hard",400,3341.8,5,-4750.9,124,0)
+--	spawnMobile("tatooine", "crackdown_scout_trooper",400,3585.84,5,-4719.95,281.969,0)
+--	spawnMobile("tatooine", "crackdown_scout_trooper_hard",400,3288.12,4.9981,-4842.11,27.4222,0)
+--	spawnMobile("tatooine", "crackdown_scout_trooper_hard",400,3377.5,0,-4709,156,0)
 	--{"crackdown_stormtrooper",400,3242.3,5,-4532.3,151,0, "npc_imperial", ""},
-	spawnMobile("tatooine", "crackdown_stormtrooper_rifleman",400,3756.71,5,-4845.03,78.2181,0)
+--	spawnMobile("tatooine", "crackdown_stormtrooper_rifleman",400,3756.71,5,-4845.03,78.2181,0)
 	--{"imperial_colonel",400,3490.5,5,-4733.94,305,0, "npc_imperial", ""},
 
 	--More Misc Outside
@@ -350,15 +350,15 @@ function TatooineMosEisleyScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "worrt",300,3580.5,5,-4544.8,34,0)
 
 	--Trainers Outside
-	spawnMobile("tatooine", "trainer_artisan",0,3503,5,-4809,42,0)
+--	spawnMobile("tatooine", "trainer_artisan",0,3503,5,-4809,42,0)
 	--{"trainer_bountyhunter",0,3357.1,5,-4839.6,64,0, "npc_sitting_chair", ""},
 	spawnMobile("tatooine", "trainer_brawler",0,3496,5,-4765,91,0)
 	--{"trainer_carbine",0,3538.3,5,-4692.7,218,0, "npc_sitting_chair", ""},
-	spawnMobile("tatooine", "trainer_entertainer",0,3477.89,5,-4791.6,215,0)
+--	spawnMobile("tatooine", "trainer_entertainer",0,3477.89,5,-4791.6,215,0)
 	spawnMobile("tatooine", "trainer_marksman",0,3506,5,-4760,180,0)
 	spawnMobile("tatooine", "trainer_marksman",0,3552,5,-4710,215,0)
-	spawnMobile("tatooine", "trainer_medic",0,3522,5,-4774,200,0)
-	spawnMobile("tatooine", "trainer_musician",0,3393,5,-4791,300,0)
+--	spawnMobile("tatooine", "trainer_medic",0,3522,5,-4774,200,0)
+--	spawnMobile("tatooine", "trainer_musician",0,3393,5,-4791,300,0)
 	--{"trainer_pistol",0,3358.6,5,-4841.3,36,0, "npc_sitting_chair", ""},
 	spawnMobile("tatooine", "trainer_rifleman",0,3426,5,-4917,0,0)
 	spawnMobile("tatooine", "trainer_scout",0,3519.76,5,-4786.9,77,0)
