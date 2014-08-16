@@ -49,10 +49,10 @@ function CorelliaDoabaGuerfelScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "noble", 60,19.26,2.12847,56.13,266.008,4395403)
 	--{"corsec_trooper",300,3.96145,2.12878,75.4149,0,4395403, "conversation", ""},
 	--{"farmer",60,3.96145,2.12878,76.4149,180.002,4395403, "conversation", ""},
-	spawnMobile("corellia", "trainer_dancer", 0,17.7541,2.12875,53.6699,1,4395403)
-	spawnMobile("corellia", "trainer_entertainer", 0,30.358,2.12878,73.5895,265,4395403)
-	spawnMobile("corellia", "trainer_imagedesigner", 0,-2.51106,2.12878,70.8023,2,4395403)
-	spawnMobile("corellia", "trainer_musician", 0,22.0995,2.12823,63.5054,0,4395403)
+--	spawnMobile("corellia", "trainer_dancer", 0,17.7541,2.12875,53.6699,1,4395403)
+--	spawnMobile("corellia", "trainer_entertainer", 0,30.358,2.12878,73.5895,265,4395403)
+--	spawnMobile("corellia", "trainer_imagedesigner", 0,-2.51106,2.12878,70.8023,2,4395403)
+--	spawnMobile("corellia", "trainer_musician", 0,22.0995,2.12823,63.5054,0,4395403)
 	--{"artisan",60,-20.4229,2.12878,65.9439,180.013,4395404, "conversation", ""},
 	--{"bodyguard",300,-20.4229,2.12878,64.9439,0,4395404, "conversation", ""},
 	--{"fringer",300,-21.8263,2.12878,74.8963,179.999,4395404, "conversation", ""},
@@ -80,11 +80,11 @@ function CorelliaDoabaGuerfelScreenPlay:spawnMobiles()
 	--{"slicer",60,40.8822,0.104999,3.32819,180.003,3075427, "conversation", ""},
 	
 		--Guild Hall 3122 5268
-	spawnMobile("corellia", "trainer_architect", 0,11,1.13306,-14,0,3075412)
-	spawnMobile("corellia", "trainer_armorsmith", 0,-12,1.1,5,180,3075411)
-	spawnMobile("corellia", "trainer_droidengineer", 0,-11,1.13306,-14,0,3075414)
-	spawnMobile("corellia", "trainer_merchant", 0,12,1.13306,6,180,3075410)
-	spawnMobile("corellia", "trainer_weaponsmith", 0,-2.5,1.13306,-8.4,91,3075413)
+--	spawnMobile("corellia", "trainer_architect", 0,11,1.13306,-14,0,3075412)
+--	spawnMobile("corellia", "trainer_armorsmith", 0,-12,1.1,5,180,3075411)
+--	spawnMobile("corellia", "trainer_droidengineer", 0,-11,1.13306,-14,0,3075414)
+--	spawnMobile("corellia", "trainer_merchant", 0,12,1.13306,6,180,3075410)
+--	spawnMobile("corellia", "trainer_weaponsmith", 0,-2.5,1.13306,-8.4,91,3075413)
 
 		--Guild Hall 3182 5240
 	spawnMobile("corellia", "businessman", 60,3.32,1.13306,-8.49,228.007,3075360)
@@ -172,14 +172,14 @@ function CorelliaDoabaGuerfelScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "noble", 60,3158.95,300,5352.24,80.7765,0)
 	--{"pilot",60,3202.28,290,4988.06,0,0, "conversation", ""},
 	spawnMobile("corellia", "scolex_grath", 60,3347.39,308,5490.74,251.277,0)
-	spawnMobile("corellia", "trainer_artisan", 0,3311,308,5530,83,0)
+--	spawnMobile("corellia", "trainer_artisan", 0,3311,308,5530,83,0)
 	spawnMobile("corellia", "trainer_brawler", 0,3334,308,5517,0,0)
-	spawnMobile("corellia", "trainer_chef", 0,3070,300,5260,180,0)
+--	spawnMobile("corellia", "trainer_chef", 0,3070,300,5260,180,0)
 	spawnMobile("corellia", "trainer_creaturehandler",0,3162,300,5191,0,0)
-	spawnMobile("corellia", "trainer_entertainer", 0,3305,308,5525,151,0)
+--	spawnMobile("corellia", "trainer_entertainer", 0,3305,308,5525,151,0)
 	spawnMobile("corellia", "trainer_marksman", 0,3338,308,5516,0,0)
-	spawnMobile("corellia", "trainer_medic", 0,3341,308,5517,47,0)
+--	spawnMobile("corellia", "trainer_medic", 0,3341,308,5517,47,0)
 	spawnMobile("corellia", "trainer_scout", 0,3330.01,308,5512.46,204,0)
-	spawnMobile("corellia", "trainer_tailor", 0,3077,300,5251,0,0)
+--	spawnMobile("corellia", "trainer_tailor", 0,3077,300,5251,0,0)
 
 end

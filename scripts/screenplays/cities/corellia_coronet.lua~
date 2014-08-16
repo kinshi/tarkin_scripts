@@ -98,7 +98,7 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	--{"bodyguard",300,2.80432,-0.894991,10.6543,180.012,8105496, "conversation", ""}
 	--{"businessman",60,-7.91375,-0.894992,-4.88587,179.995,8105496, "conversation", ""},
 	--{"corsec_major",300,-7.91375,-0.894992,-5.88587,0,8105496, "conversation", ""},
-	--{"corsec_rogue",300,4.71201,-0.894992,-8.73417,180.01,8105496, "conversation", ""},
+	--{"rogue_corsec_trooper",300,4.71201,-0.894992,-8.73417,180.01,8105496, "conversation", ""},
 	--{"entertainer",60,2.80432,-0.894991,9.55434,360.011,8105496, "conversation", ""},
 	--{"farmer_rancher",60,4.71201,-0.894992,-9.83418,360.011,8105496, "conversation", ""},
 	--{"criminal",60,-5.02826,-0.894991,-21.3375,60.6357,8105501, "calm", ""},
@@ -148,7 +148,6 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	--{"noble",60,4.12842,0.3,4.01677,134.998,1855463, "conversation", ""},
 	--{"scientist",60,-1.72746,7.9,-31.075,180.005,1855463, "conversation", ""},
 	--{"slicer",60,-18.6014,1.30292,-10.2146,180.006,1855463, "conversation", ""},
-	spawnMobile("corellia", "thale_dustrunner",60,-0.052739,3.0782,-10.9388,187.319,1855463)
 	--{"corsec_detective",300,-20.2743,3.22324,22.781,180.005,1855468, "conversation", ""},
 	--{"farmer",60,-20.2743,3.22324,21.681,0,1855468, "conversation", ""},
 	--{"info_broker",60,21.8079,3.22324,26.617,180.006,1855469, "conversation", ""},
@@ -231,7 +230,7 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "corsec_deserter",300,-671.712,6.15933,-4169.03,37.6923,0)
 	spawnMobile("corellia", "corsec_detective",300,-526.1,28,-4702,-41,0)
 	spawnMobile("corellia", "corsec_master_sergeant",300,-172.8,28,-4167.1,0,0)
-	spawnMobile("corellia", "corsec_renegade",300,-662.805,9.26289,-4182.05,196.426,0)
+	spawnMobile("corellia", "renegade_corsec_trooper",300,-662.805,9.26289,-4182.05,196.426,0)
 	spawnMobile("corellia", "corsec_traitor",300,-672.123,5.60327,-4164.83,340.354,0)
 	spawnMobile("corellia", "corsec_trooper",300,-240.2,28,-4450.9,94,0)
 	spawnMobile("corellia", "corsec_trooper",300,-172.8,28.0929,-4165.5,179,0)
@@ -297,7 +296,7 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "corsec_trooper",400,-221.1,28,-4798.1,237.007,0)
 	spawnMobile("corellia", "corsec_trooper",400,-531.8,28,-4628.7,-165,0)
 	--{"crackdown_stormtrooper_bombardier",400,-547.026,28,-4669.14,331.925,0, "npc_imperial", ""},
-	spawnMobile("corellia", "corsec_trooper_captain",400,19.7,28,-4282.5,-4,0)
+	spawnMobile("corellia", "corsec_captain",400,19.7,28,-4282.5,-4,0)
 	--{"crackdown_stormtrooper_captain",400,-338.2,28,-4791.5,110,0, "npc_imperial", ""},
 	spawnMobile("corellia", "corsec_soldier",400,-118.7,28,-4204.6,16.0005,0)
 	spawnMobile("corellia", "corsec_soldier",400,-526.1,28,-4670.1,290.009,0)
@@ -420,6 +419,9 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "trainer_politician",0,-218,28,-4500,0,0)
 	spawnMobile("corellia", "trainer_ranger",0,-505,28,-4633,180,0)
 	spawnMobile("corellia", "trainer_scout",0,-169.45,28,-4712.58,134,0)
+	
+	-- Chassis dealer.
+	spawnMobile("corellia", "chassis_dealer", 0, 0.1, 0.6, 72.9, -4, 1855672)
 
 end
 

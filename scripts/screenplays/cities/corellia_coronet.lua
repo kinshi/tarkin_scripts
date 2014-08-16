@@ -112,24 +112,24 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	--{"junk_dealer",0,-14.5,1.1,2.5,88,1855505, "", "",JUNKWEAPONS,JUNKCONVARMS},
 
 	--Guilg Hall -177 -4390
-	spawnMobile("corellia", "trainer_artisan",0,0,1.13306,-14,0,1855517)
+--	spawnMobile("corellia", "trainer_artisan",0,0,1.13306,-14,0,1855517)
 
 	--Med Center
 	spawnMobile("corellia", "surgical_droid_21b",60,-25.52,0.26,-3.48,357.849,1855535)
 	spawnMobile("corellia", "trainer_combatmedic",0,26.676,0.26,5.41823,85,1855531)
 	spawnMobile("corellia", "trainer_doctor",0,-25.2731,0.26,-5,13,1855535)
-	spawnMobile("corellia", "trainer_medic",0,-17.7359,0.26,-0.58142,137,1855535)
-	spawnMobile("corellia", "trainer_medic",0,14.2688,0.26,4.66124,159,1855531)
+--	spawnMobile("corellia", "trainer_medic",0,-17.7359,0.26,-0.58142,137,1855535)
+--	spawnMobile("corellia", "trainer_medic",0,14.2688,0.26,4.66124,159,1855531)
 	--3rd floor
 	--{"corellia_times_investigator",60,21.5803,14.26,-8.84205,360.011,1855541, "conversation", ""},
 	--{"artisan",60,21.5803,14.26,-7.84205,180.006,1855541, "conversation", ""},
 
 	--Guild Hall 24 -4400
-	spawnMobile("corellia", "trainer_architect",0,11,1.13306,-14,0,1855526)
-	spawnMobile("corellia", "trainer_armorsmith",0,-12,1.1,5,180,1855525)
-	spawnMobile("corellia", "trainer_droidengineer",0,-11,1.13306,-14,0,1855528)
-	spawnMobile("corellia", "trainer_merchant",0,12.1,1.1,5.8,177,1855524)
-	spawnMobile("corellia", "trainer_weaponsmith",0,-2.5,1.13306,-8.4,91,1855527)
+--	spawnMobile("corellia", "trainer_architect",0,11,1.13306,-14,0,1855526)
+--	spawnMobile("corellia", "trainer_armorsmith",0,-12,1.1,5,180,1855525)
+--	spawnMobile("corellia", "trainer_droidengineer",0,-11,1.13306,-14,0,1855528)
+--	spawnMobile("corellia", "trainer_merchant",0,12.1,1.1,5.8,177,1855524)
+--	spawnMobile("corellia", "trainer_weaponsmith",0,-2.5,1.13306,-8.4,91,1855527)
 
 	--Capitol
 	--{"bothan_diplomat",60,5.22842,0.3,2.91677,0,1855463, "conversation", ""},
@@ -170,10 +170,10 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "noble",60,19.26,2.12847,56.13,266.008,2365399)
 	--{"explorer",60,26.5189,2.12846,71.9319,0,2365399, "conversation", ""},
 	--{"slicer",60,26.5189,2.12858,73.0319,180.005,2365399, "conversation", ""},
-	spawnMobile("corellia", "trainer_dancer",0,18.5885,2.12869,53.9366,0,2365399)
-	spawnMobile("corellia", "trainer_musician",0,21.8947,2.12814,63.5,0,2365399)
+--	spawnMobile("corellia", "trainer_dancer",0,18.5885,2.12869,53.9366,0,2365399)
+--	spawnMobile("corellia", "trainer_musician",0,21.8947,2.12814,63.5,0,2365399)
 	--{"farmer_rancher",60,-20.3488,2.12878,65.9854,180.006,2365400, "conversation", ""},
-	spawnMobile("corellia", "trainer_imagedesigner",0,-21.4483,2.12878,74.4461,185,2365400)
+--	spawnMobile("corellia", "trainer_imagedesigner",0,-21.4483,2.12878,74.4461,185,2365400)
 
 
 
