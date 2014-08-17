@@ -17,7 +17,8 @@ csr = {
 		"admin_skill_management_01",
 		"admin_spawn_management_01",
 		"admin_spawn_management_02",
-		"admin_veteran_rewards_01"
+		"admin_veteran_rewards_01",
+		"admin_jedi_management_01"
 	}
 }
 
