@@ -40,7 +40,7 @@ bh_ig_assassin_droid = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 1500000},
-				{group = "crystals_poor", chance = 1000000},
+				{group = "bounty_hunter_schemes", chance = 1000000},
 				{group = "crystals_okay", chance = 1000000},
 				{group = "rifles", chance = 1500000},
 				{group = "carbines", chance = 1500000},

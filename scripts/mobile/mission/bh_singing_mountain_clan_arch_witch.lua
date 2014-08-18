@@ -43,7 +43,7 @@ bh_singing_mountain_clan_arch_witch = Creature:new {
 		},
 		{
 			groups = {
-				{group = "crystals_poor", chance = 1500000},
+				{group = "bounty_hunter_schemes", chance = 1500000},
 				{group = "crystals_good", chance = 500000},
 				{group = "crystals_okay", chance = 500000},
 				{group = "color_crystals", chance = 2500000},
