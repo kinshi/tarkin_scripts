@@ -96,6 +96,12 @@ function Yavin4StaticSpawnsScreenPlay:spawnMobiles()
 	spawnMobile("yavin4", "black_sun_guard_02", 1200, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
 	spawnMobile("yavin4", "black_sun_guard_02", 1200, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
 	spawnMobile("yavin4", "black_sun_guard_02", 1200, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)
-	spawnMobile("yavin4", "black_sun_guard_02", 1200, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)			
+	spawnMobile("yavin4", "black_sun_guard_02", 1200, math.random(2000) + 4000, 9.7, math.random(2000) + 2000, math.random(360), 0)	
+
+	--Acklays
+	
+	spawnMobile("yavin4", "acklay", 1800, math.random(3000) + -6450, 9.7, math.random(3000) + -360, math.random(360), 0)
+	spawnMobile("yavin4", "acklay", 1800, math.random(3000) + -6450, 9.7, math.random(3000) + -360, math.random(360), 0)
+	spawnMobile("yavin4", "acklay", 1800, math.random(3000) + -6450, 9.7, math.random(3000) + -360, math.random(360), 0)
 
 end

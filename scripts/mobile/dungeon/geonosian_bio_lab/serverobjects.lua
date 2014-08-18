@@ -1,4 +1,5 @@
-includeFile("dungeon/geonosian_bio_lab/acklay.lua")
+includeFile("dungeon/geonosian_bio_lab/acklay_elder.lua")
+includeFile("dungeon/geonosian_bio_lab/acklay_youngling.lua")
 includeFile("dungeon/geonosian_bio_lab/alert_droideka.lua")
 includeFile("dungeon/geonosian_bio_lab/biogenic_assistant.lua")
 includeFile("dungeon/geonosian_bio_lab/biogenic_construction.lua")
