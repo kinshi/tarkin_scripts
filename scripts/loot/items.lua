@@ -1120,7 +1120,7 @@ includeFile("items/tarkin_custom/nge_yt1300_house_scheme.lua")
 includeFile("items/tarkin_custom/nge_tat_sm_win_01_scheme.lua")
 includeFile("items/tarkin_custom/nge_nab_sm_win_01_scheme.lua")
 
---mandalorian_rebreather
+--mandalorian_armor
 includeFile("items/tarkin_custom/mandalorian_belt_scheme.lua")
 includeFile("items/tarkin_custom/mandalorian_bicep_l_scheme.lua")
 includeFile("items/tarkin_custom/mandalorian_bicep_r_scheme.lua")
@@ -1132,3 +1132,16 @@ includeFile("items/tarkin_custom/mandalorian_gloves_scheme.lua")
 includeFile("items/tarkin_custom/mandalorian_helmet_scheme.lua")
 includeFile("items/tarkin_custom/mandalorian_jetpack_scheme.lua")
 includeFile("items/tarkin_custom/mandalorian_leggings_scheme.lua")
+
+--BH armor
+
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_belt_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_bicep_l_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_bicep_r_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_boots_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_bracer_l_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_bracer_r_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_chest_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_gloves_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_helmet_scheme.lua")
+includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_leggings_scheme.lua")
