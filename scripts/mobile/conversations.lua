@@ -77,6 +77,7 @@ includeFile("conversations/tasks/serene_floater_conv.lua")
 includeFile("conversations/tasks/ris_armor_quest_conv.lua")
 includeFile("conversations/tasks/librarian_conv.lua")
 includeFile("conversations/tasks/theater_manager_conv.lua")
+includeFile("conversations/tasks/anniversary2_template.lua")
 
 -- Village
 includeFile("conversations/village/old_man_conv.lua")
