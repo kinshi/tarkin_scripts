@@ -1,6 +1,5 @@
-lx_466_rebel_commander = Creature:new {
-	objectName = "",
-	customName = "(a Stranded Rebel Commander)",	
+coa3_tactical_rebel = Creature:new {
+	objectName = "@mob/creature_names:coa3_tactical_rebel",
 	socialGroup = "rebel",
 	pvpFaction = "rebel",
 	faction = "rebel",
@@ -8,11 +7,11 @@ lx_466_rebel_commander = Creature:new {
 	chanceHit = 0.36,
 	damageMin = 240,
 	damageMax = 250,
-	baseXp = 2637,
+	baseXp = 2443,
 	baseHAM = 7200,
 	baseHAMmax = 8800,
 	armor = 0,
-	resists = {20,20,40,0,0,-1,0,-1,-1},
+	resists = {0,0,0,0,0,0,0,0,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -22,12 +21,12 @@ lx_466_rebel_commander = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE,
-	creatureBitmask = PACK + STALKER + KILLER,
+	pvpBitmask = NONE,
+	creatureBitmask = NONE,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_rebel_commando_zabrak_female_01.iff"},
+	templates = {"object/mobile/dressed_rebel_brigadier_general_moncal_female.iff"},
 	lootGroups = {
 		{
 	        groups = {
@@ -43,9 +42,9 @@ lx_466_rebel_commander = Creature:new {
 			lootChance = 3000000
 		}	
 	},
-	weapons = {"rebel_weapons_heavy"},
+	weapons = {"imperial_weapons_heavy"},
 	conversationTemplate = "",
 	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
-CreatureTemplates:addCreatureTemplate(lx_466_rebel_commander, "lx_466_rebel_commander")
+CreatureTemplates:addCreatureTemplate(coa3_tactical_rebel, "coa3_tactical_rebel")
