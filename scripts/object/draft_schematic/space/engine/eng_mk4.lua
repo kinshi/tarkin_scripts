@@ -56,8 +56,7 @@ object_draft_schematic_space_engine_eng_mk4 = object_draft_schematic_space_engin
 
    assemblySkill = "engine_assembly", 
    experimentingSkill = "engine_experimentation", 
-   customizationSkill = "medicine_customization",
-   disableFactoryRun = true, 
+   customizationSkill = "medicine_customization", 
 
    customizationOptions = {},
    customizationStringNames = {},

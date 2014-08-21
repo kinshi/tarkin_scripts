@@ -56,8 +56,7 @@ object_draft_schematic_space_droid_interface_ddi_mk4 = object_draft_schematic_sp
 
    assemblySkill = "advanced_assembly", 
    experimentingSkill = "advanced_ship_experimentation", 
-   customizationSkill = "advanced_customization",
-   disableFactoryRun = true, 
+   customizationSkill = "advanced_customization", 
 
    customizationOptions = {},
    customizationStringNames = {},
