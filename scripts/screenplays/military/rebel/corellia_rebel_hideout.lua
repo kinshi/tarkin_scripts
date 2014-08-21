@@ -182,7 +182,7 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	
 	--Power Generator
 	spawnMobile("corellia", "rebel_scout", 300, -6533.410, 398.000, 6002.590, 98.259, 0)
-	spawnMobile("corellia", "rebel_army_captain", 300, -6537.930, 398.000, 5997.470, -177.213, 0)
+	spawnMobile("corellia", "rebel_commander", 300, -6537.930, 398.000, 5997.470, -177.213, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6509.8, 398.0, 6022.2, -5, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6514.4, 398.0, 6021.8, -45, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6521.8, 398.0, 6014.0, -45, 0)
