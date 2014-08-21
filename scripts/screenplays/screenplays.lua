@@ -31,13 +31,6 @@ includeFile("dungeon/death_watch_bunker_conv_handles.lua")
 -- Village
 includeFile("village/fs_experience_converter_conv_handler.lua")
 
--- Events
-includeFile("events/conversations/bestine_artist_conv_handler.lua")
-includeFile("events/conversations/museum_curator_conv_handler.lua")
-includeFile("events/bestineMuseum.lua")
-
-
-
 -- Task/Quest
 includeFile("tasks/corellia/chertyl_ruluwoor.lua")
 includeFile("tasks/corellia/coraline_dynes.lua")
@@ -114,7 +107,6 @@ includeFile("tasks/tatooine/aaph_koden.lua")
 includeFile("tasks/tatooine/blerx_tango.lua")
 includeFile("tasks/tatooine/bren_kingal.lua")
 includeFile("tasks/tatooine/farious_gletch.lua")
-includeFile("tasks/tatooine/fixer.lua")
 includeFile("tasks/tatooine/gramm_rile.lua")
 includeFile("tasks/tatooine/hedon_istee.lua")
 includeFile("tasks/tatooine/ikka_gesul.lua")

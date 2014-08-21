@@ -56,8 +56,7 @@ object_draft_schematic_space_shields_heavy_deflector_shields = object_draft_sche
 
    assemblySkill = "shields_assembly", 
    experimentingSkill = "shields_experimentation", 
-   customizationSkill = "medicine_customization",
-   disableFactoryRun = true, 
+   customizationSkill = "medicine_customization", 
 
    customizationOptions = {},
    customizationStringNames = {},
@@ -66,7 +65,7 @@ object_draft_schematic_space_shields_heavy_deflector_shields = object_draft_sche
    ingredientTemplateNames = {"craft_item_ingredients_n", "craft_item_ingredients_n", "craft_item_ingredients_n", "craft_item_ingredients_n", "craft_item_ingredients_n"},
    ingredientTitleNames = {"casing", "generator_core", "shield_upgrade", "projector_unit", "shock_absorptive_material"},
    ingredientSlotType = {0, 0, 3, 0, 0},
-   resourceTypes = {"steel", "gas_reactive", "object/tangible/ship/crafted/shields/shared_base_shields_subcomponent_mk3.iff", "aluminum", "ore_siliclastic"},
+   resourceTypes = {"steel", "radioactive", "object/tangible/ship/crafted/shields/shared_base_shields_subcomponent_mk3.iff", "aluminum", "ore_siliclastic"},
    resourceQuantities = {250, 250, 1, 250, 250},
    contribution = {100, 100, 100, 100, 100},
 

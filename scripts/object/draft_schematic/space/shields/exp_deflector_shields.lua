@@ -56,8 +56,7 @@ object_draft_schematic_space_shields_exp_deflector_shields = object_draft_schema
 
    assemblySkill = "shields_assembly", 
    experimentingSkill = "shields_experimentation", 
-   customizationSkill = "medicine_customization",
-   disableFactoryRun = true, 
+   customizationSkill = "medicine_customization", 
 
    customizationOptions = {},
    customizationStringNames = {},
