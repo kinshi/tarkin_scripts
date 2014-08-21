@@ -1783,7 +1783,6 @@ schematics = {
 {path="object/draft_schematic/droid/component/struct_maint_module_1.iff"},
 {path="object/draft_schematic/droid/component/module_socket_bank.iff"},
 {path="object/draft_schematic/droid/component/data_storage_module_3.iff"},
-<<<<<<< HEAD
 {path="object/draft_schematic/furniture/bestine/painting_bestine_blueleaf_temple.iff"},
 {path="object/draft_schematic/furniture/bestine/painting_bestine_blumbush.iff"},
 {path="object/draft_schematic/furniture/bestine/painting_bestine_boffa.iff"},
@@ -1799,9 +1798,6 @@ schematics = {
 {path="object/draft_schematic/furniture/bestine/painting_bestine_rainbow_berry_bush.iff"},
 {path="object/draft_schematic/furniture/bestine/painting_bestine_raventhorn.iff"},
 {path="object/draft_schematic/furniture/bestine/painting_bestine_ronka.iff"},
-=======
->>>>>>> parent of b936849... [merge] SWGEmu unstable branch 18AUG14
-
 
 --tarkin NGE House Schematics
 {path="object/draft_schematic/structure/atat_house_schem.iff"},
