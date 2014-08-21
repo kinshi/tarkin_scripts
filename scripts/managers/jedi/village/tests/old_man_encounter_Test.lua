@@ -58,7 +58,6 @@ describe("OldManEncounter", function()
 		creatureObjectPlayer.removeScreenPlayState = spy.new(function() end)
 		creatureObjectPlayer.setScreenPlayState = spy.new(function() end)
 		creatureObjectPlayer.getScreenPlayState = spy.new(function() end)
-		creatureObjectPlayer.sendSystemMessage = spy.new(function() end)
 		DirectorManagerMocks.creatureObjects[pCreatureObject] = creatureObjectPlayer
 
 		creatureObjectConversingOldMan = {}
