@@ -35,7 +35,7 @@ bh_dark_jedi_knight = Creature:new {
 				{group = "crystals_premium", chance = 600000},
 				{group = "rifles", chance = 1500000},
 				{group = "pistols", chance = 1500000},
-				{group = "melee_weapons", chance = 1500000},
+				{group = "bounty_hunter_schemes", chance = 1500000},
 				{group = "armor_attachments", chance = 1700000},
 				{group = "clothing_attachments", chance = 1700000},
 				{group = "carbines", chance = 1500000}			

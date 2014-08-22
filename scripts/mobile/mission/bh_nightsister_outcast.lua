@@ -35,7 +35,7 @@ bh_nightsister_outcast = Creature:new {
 				{group = "nightsister_common", chance = 5500000},
 				{group = "armor_attachments", chance = 550000},
 				{group = "clothing_attachments", chance = 550000},
-				{group = "melee_baton", chance = 700000},
+				{group = "bounty_hunter_schemes", chance = 700000},
 				{group = "melee_two_handed", chance = 700000},
 				{group = "wearables_common", chance = 500000},
 				{group = "wearables_uncommon", chance = 500000}

@@ -236,8 +236,11 @@ function geonosian_labscreenplay:spawnMobiles()
         spawnMobile("yavin4", "biogenic_scientist_generic_01", 1, -72.0, -34, -272.9, 0, 1627812)--biogen_gen01
 	spawnMobile("yavin4", "biogenic_scientist_generic_02", 1, -127.2, -34, -189.0, -93, 1627815)--biogen_gen02
         spawnMobile("yavin4", "biogenic_scientist_geonosian", 1, 7.4, -22, -333, 180, 1627822) -- biogen_geo
-	spawnMobileRandom("yavin4", "acklay",self.timers.acklay,101.1,-34.3,-321.6,-136,1627823)
-        spawnMobileRandom("yavin4", "enhanced_gaping_spider",self.timers.fbspider,-130,-22.1,-85,-180,1627794)
+		spawnMobile("yavin4", "acklay_elder",900,101.1,-34.3,-321.6,-136,1627823)
+        spawnMobile("yavin4", "enhanced_gaping_spider",600,-130,-22.1,-85,-180,1627794)
+		spawnMobile("yavin4", "acklay_youngling", 600,105.0,-33.7,-325.0,-94,1627823)
+		spawnMobile("yavin4", "acklay_youngling", 600,100.6,-33.8,-315.4,-157,1627823)
+		spawnMobile("yavin4", "acklay_youngling", 600,98.2,-34.4,-324.7,-133,1627823)
         spawnMobile("yavin4", "imperial_observer",300,-23,-22,-116,-90,1627802)
         spawnMobile("yavin4", "imperial_observer",300,-16.4,-22,-114.5,-150,1627802)
         spawnMobile("yavin4", "crazed_geonosian_guard",300,1.2,9.1,-8.1,63,1627781)

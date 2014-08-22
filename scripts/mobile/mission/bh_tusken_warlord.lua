@@ -33,7 +33,7 @@ bh_tusken_warlord = Creature:new {
 				{group = "tusken_common", chance = 3500000},
 				{group = "wearables_common", chance = 1500000},
 				{group = "wearables_uncommon", chance = 500000},
-				{group = "bone_armor", chance = 750000},
+				{group = "bounty_hunter_schemes", chance = 750000},
 				{group = "chitin_armor", chance = 750000},
 				{group = "armor_attachments", chance = 500000},
 				{group = "clothing_attachments", chance = 1500000},

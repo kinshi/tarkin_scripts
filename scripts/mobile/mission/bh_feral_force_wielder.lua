@@ -32,7 +32,7 @@ bh_feral_force_wielder = Creature:new {
 			groups = {
 				{group = "holocron_dark", chance = 500000},
 				{group = "holocron_light", chance = 500000},
-				{group = "melee_weapons", chance = 1500000},
+				{group = "bounty_hunter_schemes", chance = 1500000},
 				{group = "armor_attachments", chance = 1500000},
 				{group = "clothing_attachments", chance = 1500000}
 			},
