@@ -10,8 +10,8 @@ rebel_recruiter = Creature:new {
 	baseXp = 1426,
 	baseHAM = 5000,
 	baseHAMmax = 6100,
-	armor = 1,
-	resists = {65,75,45,45,30,30,80,65,-1},
+	armor = 0,
+	resists = {0,0,0,40,-1,40,-1,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -34,6 +34,7 @@ rebel_recruiter = Creature:new {
 	weapons = {},
 	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster),
 	conversationTemplate = "rebel_recruiter_convotemplate",
+	containerComponentTemplate = "FactionRecruiterContainerComponent",
 	optionsBitmask = 264
 
 }
