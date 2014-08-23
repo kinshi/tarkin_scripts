@@ -21,7 +21,7 @@ spawnSceneObject("naboo", "object/creature/npc/theme_park/player_transport_theed
 -- Shuttle C
 spawnSceneObject("naboo", "object/creature/npc/theme_park/player_shuttle.iff", -5410, 6.0, 4306, 0, 0, 0, 1, 0)
 
-//ox = 0, oy = 1, oz = 0, ow = 0
+--ox = 0, oy = 1, oz = 0, ow = 0
 		
 end
 
