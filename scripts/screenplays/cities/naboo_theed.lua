@@ -15,8 +15,13 @@ end
 
 function NabooTheedScreenPlay:spawnSceneObjects()
 
+--Theed SP
 spawnSceneObject("naboo", "object/creature/npc/theme_park/player_transport_theed_hangar.iff", -0.6, 7.9, 7.5, 1692104, 0, 0, 0, 0)
-spawnSceneObject("naboo", "object/creature/npc/theme_park/player_shuttle.iff", -5410, 6.0, 4306, 0, 0, 0, 0, 0)
+
+-- Shuttle C
+spawnSceneObject("naboo", "object/creature/npc/theme_park/player_shuttle.iff", -5410, 6.0, 4306, 0, 0, 0, 1, 0)
+
+//ox = 0, oy = 1, oz = 0, ow = 0
 		
 end
 
