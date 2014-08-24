@@ -52,6 +52,16 @@ function CorelliaCoronetScreenPlay:spawnSceneObjects()
 	collector:setCustomObjectName("\\#ee3377One-Way Travel to the Janta Cave - (Dantooine)")
 	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportJanta", pCollector5)
 
+--Coronet SP
+spawnSceneObject("corellia", "object/creature/npc/theme_park/player_transport.iff", -47.0, 28.0, -4733.0, 0, 90)
+
+--Shuttle A
+spawnSceneObject("corellia", "object/creature/npc/theme_park/player_shuttle.iff", -24.0, 28.0, -4389, 0, -90)
+
+--Shuttle B
+spawnSceneObject("corellia", "object/creature/npc/theme_park/player_shuttle.iff", -327.0, 28.0, -4620.0, 0, 90)
+
+
 end
 
 function CorelliaCoronetScreenPlay:spawnMobiles()

@@ -26,6 +26,14 @@ spawnSceneObject("naboo", "object/tangible/terminal/terminal_bazaar.iff", 5050.6
 -- (along the north wall of the mayor-placed shuttleport).
 spawnSceneObject("naboo", "object/tangible/terminal/terminal_bazaar.iff", 5081.0, -193.3, 6236.7, 0, 0)
 
+
+--Kadaara SP
+spawnSceneObject("naboo", "object/creature/npc/theme_park/player_transport.iff", 5302, -192.0, 6667, 0, 90)
+
+--Shuttle A
+spawnSceneObject("naboo", "object/creature/npc/theme_park/player_shuttle.iff", 5137, -191.0, 6601, 0, 132)
+
+
 end
 
 function NabooKadaaraScreenPlay:spawnMobiles()

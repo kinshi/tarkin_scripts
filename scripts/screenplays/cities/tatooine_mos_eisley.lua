@@ -27,6 +27,14 @@ function TatooineMosEisleyScreenPlay:spawnSceneObjects()
 	--Upper Floor
 	spawnSceneObject("tatooine", "object/tangible/terminal/terminal_elevator_up.iff", 13.5, 7, -17.95, 1076972, 1, 0, 0, 0)
 	spawnSceneObject("tatooine", "object/tangible/terminal/terminal_elevator_down.iff", 13.5, 15, -17.95, 1076972, 1, 0, 0, 0)
+
+--ME SP
+spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_transport.iff", 3629, 5.0, -4798, 0, 90)
+
+--ME Shuttle
+spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_shuttle.iff", 3434, 5.0, -4657, 0, -150)
+
+
 end
 
 function TatooineMosEisleyScreenPlay:spawnMobiles()

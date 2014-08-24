@@ -35,6 +35,14 @@ function BestineScreenPlay:spawnSceneObjects()
 	col2creo:setOptionsBitmask(264)
 	collector3:setCustomObjectName("\\#ee3377Travel to Nyms Stronghold - Lok")
 	createObserver(OBJECTRADIALUSED, "BestineScreenPlay", "teleportNyms", pCollector3)
+
+--Bestine SP
+spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_transport.iff", -1381, 12.0, -3572, 0, -90)
+
+--Bestine Shuttle
+spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_shuttle.iff", -1078, 12.0, -3564, 0, 180)
+
+
 end
 
 --function BestineScreenPlay:spawnMobiles()
