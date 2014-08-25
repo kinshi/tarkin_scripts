@@ -8,8 +8,17 @@ registerScreenPlay("EndorSmugglerOutpostScreenPlay", true)
 
 function EndorSmugglerOutpostScreenPlay:start()
 	if (isZoneEnabled("endor")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
+end
+
+function EndorSmugglerOutpostScreenPlay:spawnSceneObjects()
+
+--Smuggler Outpost SP
+
+spawnSceneObject("endor", "object/creature/npc/theme_park/player_transport.iff", -975.0, 86.0, 1554.0, 0, 125)
+
 end
 
 function EndorSmugglerOutpostScreenPlay:spawnMobiles()

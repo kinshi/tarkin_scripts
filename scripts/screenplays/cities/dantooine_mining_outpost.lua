@@ -8,8 +8,17 @@ registerScreenPlay("DantooineMiningOutpostScreenPlay", true)
 
 function DantooineMiningOutpostScreenPlay:start()
 	if (isZoneEnabled("dantooine")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
+end
+
+function DantooineMiningOutpostScreenPlay:spawnSceneObjects()
+
+--Mining Outpost SP
+
+spawnSceneObject("dantooine", "object/creature/npc/theme_park/player_transport.iff", -638.0, 16.0, 2483.0, 0, 40)
+
 end
 
 function DantooineMiningOutpostScreenPlay:spawnMobiles()

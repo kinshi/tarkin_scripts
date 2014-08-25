@@ -8,8 +8,16 @@ registerScreenPlay("TalusDearicScreenPlay", true)
 
 function TalusDearicScreenPlay:start()
 	if (isZoneEnabled("talus")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
+end
+
+function TalusDearicScreenPlay:spawnSceneObjects()
+
+--Dearic SP
+spawnSceneObject("talus", "object/creature/npc/theme_park/player_transport.iff", 246.0, 6.0, -2930.0, 0, 90)
+
 end
 
 function TalusDearicScreenPlay:spawnMobiles()
