@@ -8,8 +8,16 @@ registerScreenPlay("DathomirTradeOutpostScreenPlay", true)
 
 function DathomirTradeOutpostScreenPlay:start()
 	if (isZoneEnabled("dathomir")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
+end
+
+function DathomirTradeOutpostScreenPlay:spawnSceneObjects()
+
+--Trade Outpost SP
+spawnSceneObject("dathomir", "object/creature/npc/theme_park/player_transport.iff", 591.0, 6.0, 3070.0, 0, -70)
+
 end
 
 function DathomirTradeOutpostScreenPlay:spawnMobiles()
