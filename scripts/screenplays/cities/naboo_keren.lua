@@ -8,8 +8,16 @@ registerScreenPlay("NabooKerenScreenPlay", true)
 
 function NabooKerenScreenPlay:start()
 	if (isZoneEnabled("naboo")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
+end
+
+function NabooKerenScreenPlay:spawnSceneObjects()
+
+--Keren SP
+spawnSceneObject("naboo", "object/creature/npc/theme_park/player_transport.iff", 1356.0, 13.0, 2766.0, 0, 90)
+
 end
 
 function NabooKerenScreenPlay:spawnMobiles()

@@ -8,9 +8,18 @@ registerScreenPlay("CorelliaKorVellaScreenPlay", true)
 
 function CorelliaKorVellaScreenPlay:start()
 	if (isZoneEnabled("corellia")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
 end
+
+function CorelliaKorVellaScreenPlay:spawnSceneObjects()
+
+--Kor Vella SP
+spawnSceneObject("corellia", "object/creature/npc/theme_park/player_transport.iff", -3139.0, 31.0, 2893.0, 0, 0)
+
+end
+
 
 function CorelliaKorVellaScreenPlay:spawnMobiles()
 

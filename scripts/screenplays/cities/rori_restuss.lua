@@ -8,8 +8,16 @@ registerScreenPlay("RoriRestussScreenPlay",  true)
 
 function RoriRestussScreenPlay:start()
 	if (isZoneEnabled("rori")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
+end
+
+function RoriRestussScreenPlay:spawnSceneObjects()
+
+--Restuss SP
+spawnSceneObject("rori", "object/creature/npc/theme_park/player_transport.iff", 5362.0, 80.0, 5750.0, 0, 0)
+
 end
 
 function RoriRestussScreenPlay:spawnMobiles()

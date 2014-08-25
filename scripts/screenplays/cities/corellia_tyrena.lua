@@ -8,9 +8,18 @@ registerScreenPlay("CorelliaTyrenaScreenPlay", true)
 
 function CorelliaTyrenaScreenPlay:start()
 	if (isZoneEnabled("corellia")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
 end
+
+function CorelliaTyrenaScreenPlay:spawnSceneObjects()
+
+--Tyrena SP
+spawnSceneObject("corellia", "object/creature/npc/theme_park/player_transport.iff", -4975.0, 21.0, -2230.0, 0, 45)
+
+end
+
 
 function CorelliaTyrenaScreenPlay:spawnMobiles()
 

@@ -30,6 +30,10 @@ function MoeniaScreenPlay:spawnSceneObjects()
 	col2creo:setOptionsBitmask(264)
 	collector:setCustomObjectName("\\#ee3377Travel to Rebel Hideout - Corellia")
 	createObserver(OBJECTRADIALUSED, "MoeniaScreenPlay", "teleportHideout", pCollector2)
+
+--Moenia SP
+spawnSceneObject("naboo", "object/creature/npc/theme_park/player_transport.iff", 4729.0, 4.0, -4646.0, 0, -90)
+
 end
 
 function MoeniaScreenPlay:spawnMobiles()
