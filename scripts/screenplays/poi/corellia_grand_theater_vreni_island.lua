@@ -9,8 +9,16 @@ registerScreenPlay("GrandTheaterVreniScreenPlay", true)
 
 function GrandTheaterVreniScreenPlay:start()
 	if (isZoneEnabled("corellia")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
+end
+
+function GrandTheaterVreniScreenPlay:spawnSceneObjects()
+
+--Vreni Island Shuttle
+spawnSceneObject("corellia", "object/creature/npc/theme_park/player_shuttle.iff", -5550.0, 16.0, -6040.0, 0, -90)
+
 end
 
 function GrandTheaterVreniScreenPlay:spawnMobiles()
