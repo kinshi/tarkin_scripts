@@ -8,8 +8,16 @@ registerScreenPlay("RoriNarmleScreenPlay", true)
 
 function RoriNarmleScreenPlay:start()
 	if (isZoneEnabled("rori")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
+end
+
+function RoriNarmleScreenPlay:spawnSceneObjects()
+
+--Rori SP
+spawnSceneObject("rori", "object/creature/npc/theme_park/player_transport.iff", -5368.0, 80.0, -2160.0, 0, 35)
+
 end
 
 function RoriNarmleScreenPlay:spawnMobiles()
