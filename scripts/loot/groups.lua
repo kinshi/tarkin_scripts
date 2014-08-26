@@ -322,3 +322,10 @@ includeFile("groups/tarkin_custom/window_houses.lua")
 includeFile("groups/tarkin_custom/nge_house_yt1300.lua")
 --includeFile("groups/tarkin_custom/mandalorian_schemes.lua")
 includeFile("groups/tarkin_custom/bounty_hunter_schemes.lua")
+
+--test
+includeFile("groups/tarkin_custom/comp_kin.lua")
+includeFile("groups/tarkin_custom/comp_nrg.lua")
+includeFile("groups/tarkin_custom/comp_cold.lua")
+
+
