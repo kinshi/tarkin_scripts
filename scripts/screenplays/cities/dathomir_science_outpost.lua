@@ -16,7 +16,7 @@ end
 function DathomirScienceOutpostScreenPlay:spawnSceneObjects()
 
 --Science Outpost SP
-spawnSceneObject("dathomir", "object/creature/npc/theme_park/player_transport.iff", -78.0, 18.0, -1602.0, 0, -52)
+spawnSceneObject("dathomir", "object/creature/npc/theme_park/player_transport.iff", -96.0, 18.0, -1616.0, 0, -52)
 
 end
 

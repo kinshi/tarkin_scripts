@@ -8,8 +8,17 @@ registerScreenPlay("DantooineAgroOutpostScreenPlay", true)
 
 function DantooineAgroOutpostScreenPlay:start()
 	if (isZoneEnabled("dantooine")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
+end
+
+function DantooineAgroOutpostScreenPlay:spawnSceneObjects()
+
+--Pirate Outpost SP
+
+spawnSceneObject("dantooine", "object/creature/npc/theme_park/player_transport.iff", 1583.0, -6378.0, -6378.0, 0, 90)
+
 end
 
 function DantooineAgroOutpostScreenPlay:spawnMobiles()

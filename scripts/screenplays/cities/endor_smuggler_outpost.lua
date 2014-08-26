@@ -17,7 +17,7 @@ function EndorSmugglerOutpostScreenPlay:spawnSceneObjects()
 
 --Smuggler Outpost SP
 
-spawnSceneObject("endor", "object/creature/npc/theme_park/player_transport.iff", -975.0, 86.0, 1554.0, 0, 125)
+spawnSceneObject("endor", "object/creature/npc/theme_park/player_transport.iff", -943.0, 73.0, 1514.0, 0, 125)
 
 end
 
