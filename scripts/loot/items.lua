@@ -1145,3 +1145,10 @@ includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_chest_schem
 includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_gloves_scheme.lua")
 includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_helmet_scheme.lua")
 includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_leggings_scheme.lua")
+
+--test
+
+includeFile("items/tarkin_custom/icav_comp_nrg.lua")
+includeFile("items/tarkin_custom/icav_comp_kin.lua")
+includeFile("items/tarkin_custom/icav_comp_cold.lua")
+
