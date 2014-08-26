@@ -21,8 +21,6 @@ spawnSceneObject("endor", "object/creature/npc/theme_park/player_transport.iff",
 
 end
 
-function EndorSmugglerOutpostScreenPlay:spawnMobiles()
-
 function EndorResearchOutpostScreenPlay:spawnMobiles()
 
 	spawnMobile("endor", "businessman", 60, 3175.37, 24, -3490.78, 156.98, 0)
