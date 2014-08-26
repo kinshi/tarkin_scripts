@@ -17,7 +17,7 @@ function DantooineMiningOutpostScreenPlay:spawnSceneObjects()
 
 --Mining Outpost SP
 
-spawnSceneObject("dantooine", "object/creature/npc/theme_park/player_transport.iff", -625.0, 3.0, 2474.0, 0, 143)
+spawnSceneObject("dantooine", "object/creature/npc/theme_park/player_transport.iff", -625.0, 3.0, 2474.0, 0, -143)
 
 end
 

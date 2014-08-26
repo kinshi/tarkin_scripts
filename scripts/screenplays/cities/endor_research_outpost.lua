@@ -17,7 +17,7 @@ function EndorResearchOutpostScreenPlay:spawnSceneObjects()
 
 --Research Outpost SP
 
-spawnSceneObject("endor", "object/creature/npc/theme_park/player_transport.iff", 3216.0, 24.0, -3463.0, 0, 90)
+spawnSceneObject("endor", "object/creature/npc/theme_park/player_transport.iff", 3216.0, 24.0, -3463.0, 0, 62)
 
 end
 
