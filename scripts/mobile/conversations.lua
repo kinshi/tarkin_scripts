@@ -23,6 +23,15 @@ includeFile("conversations/themepark/nym/nym_conv.lua")
 includeFile("conversations/themepark/nym/sergeant_moore_conv.lua")
 includeFile("conversations/themepark/nym/kole_conv.lua")
 
+-- Bestine Museum
+includeFile("conversations/events/bestine_museum/bestine_artist01_conv.lua")
+includeFile("conversations/events/bestine_museum/bestine_artist02_conv.lua")
+includeFile("conversations/events/bestine_museum/bestine_artist03_conv.lua")
+includeFile("conversations/events/bestine_museum/bestine_artist04_conv.lua")
+includeFile("conversations/events/bestine_museum/bestine_artist05_conv.lua")
+includeFile("conversations/events/bestine_museum/bestine_artist06_conv.lua")
+includeFile("conversations/events/bestine_museum/museum_curator_conv.lua")
+
 -- Epic Quests
 includeFile("conversations/themepark/epic_quests/goru_conv.lua")
 
@@ -51,9 +60,16 @@ includeFile("conversations/dungeon/warren/captain_heff_conv.lua")
 includeFile("conversations/dungeon/warren/manx_try_conv.lua")
 
 -- Geonosian Lab
+includeFile("conversations/dungeon/geonosian_lab/biogenic_assistant_convo.lua")
 includeFile("conversations/dungeon/geonosian_lab/biogenic_construction_convo.lua")
+includeFile("conversations/dungeon/geonosian_lab/biogenic_crazyguy_convo.lua")
+includeFile("conversations/dungeon/geonosian_lab/biogenic_engineer_tech_convo.lua")
+includeFile("conversations/dungeon/geonosian_lab/biogenic_scientist_generic_01_convo.lua")
+includeFile("conversations/dungeon/geonosian_lab/biogenic_scientist_generic_02_convo.lua")
+includeFile("conversations/dungeon/geonosian_lab/biogenic_scientist_generic_03_convo.lua")
 includeFile("conversations/dungeon/geonosian_lab/biogenic_scientist_geonosian_convo.lua")
 includeFile("conversations/dungeon/geonosian_lab/biogenic_scientist_human_convo.lua")
+includeFile("conversations/dungeon/geonosian_lab/biogenic_security_tech_convo.lua")
 
 -- ** OTHER **
 

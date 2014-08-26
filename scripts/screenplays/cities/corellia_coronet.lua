@@ -113,7 +113,7 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 	--{"farmer_rancher",60,4.71201,-0.894992,-9.83418,360.011,8105496, "conversation", ""},
 	--{"criminal",60,-5.02826,-0.894991,-21.3375,60.6357,8105501, "calm", ""},
 	spawnMobile("corellia", "businessman",60,0.978477,-0.894992,21.4841,311.517,8105500)
---	spawnMobile("corellia", "rebel_recruiter",60,-28.3633,-0.894984,0.335875,171.796,8105504)
+	spawnMobile("corellia", "rebel_recruiter",60,-28.3633,-0.894984,0.335875,171.796,8105504)
 
 	--Guild Hall -243 -4389
 	spawnMobile("corellia", "trainer_brawler",0,-11,1.13306,-14,0,1855508)

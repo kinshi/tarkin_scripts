@@ -62,7 +62,7 @@ function LordNyaxCultScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "fiend_of_lord_nyax", 900, -5.53416, -13.75, -8.46985, 0, 6036001)
 	spawnMobile("corellia", "fiend_of_lord_nyax", 900, 16.6905, -13.7584, 4.76515, 0, 6036003)
 	spawnMobile("corellia", "visionary_of_lord_nyax", 900, 14.4694, -13.7584, 2.8743, 0, 6036003)
-	spawnMobileRandom("corellia", "lord_nyax", 1800, 19.4, -11.4, -21.1, 0, 6036004)
+	spawnMobileRandom("corellia", "lord_nyax", 1800, 19.4, -11.4, -21.1, 0, 6036004, true)
 --Tarkin Specific
 	--Outside Gates
 	spawnMobile("corellia", "zealot_of_lord_nyax" , 900, 1384.6, 31.0, -320.7, 58, 0)
