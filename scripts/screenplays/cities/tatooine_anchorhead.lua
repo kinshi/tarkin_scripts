@@ -8,9 +8,18 @@ registerScreenPlay("TatooineAnchorheadScreenPlay", true)
 
 function TatooineAnchorheadScreenPlay:start()
 	if (isZoneEnabled("tatooine")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
 end
+
+function TatooineAnchorheadScreenPlay:spawnSceneObjects()
+
+--AH Shuttle
+spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_shuttle.iff", 44.0, 52.0, -5320.0, 0, -90)
+
+end
+
 
 function TatooineAnchorheadScreenPlay:spawnMobiles()
 
