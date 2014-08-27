@@ -56,6 +56,7 @@ object_draft_schematic_clothing_clothing_armor_mandalorian_helmet = object_draft
    assemblySkill = "armor_assembly", 
    experimentingSkill = "armor_experimentation", 
    customizationSkill = "armor_customization", 
+   disableFactoryRun = true,
 
    customizationOptions = {},
    customizationStringNames = {},
