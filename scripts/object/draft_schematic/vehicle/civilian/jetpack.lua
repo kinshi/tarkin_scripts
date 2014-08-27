@@ -64,7 +64,7 @@ object_draft_schematic_vehicle_civilian_jetpack = object_draft_schematic_vehicle
 
    ingredientTemplateNames = {"craft_vehicle_ingredients_n",  "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_vehicle_ingredients_n", "craft_item_ingredients_n", "craft_vehicle_ingredients_n","craft_item_ingredients_n", "craft_item_ingredients_n"},
    ingredientTitleNames = {"vehicle_body", "structural_frame", "reactor_unit", "reactor_unit", "fuel_dispersion_unit", "launcher", "fuel_injector_tank", "jetpack_base"},
-   ingredientSlotType = {0, 0, 0, 0, 1, 1, 1},
+   ingredientSlotType = {0, 0, 0, 0, 1, 1, 1, 1},
    resourceTypes = {"metal_ferrous", "mineral", "petrochem_inert_polymer", "copper", "object/tangible/loot/dungeon/death_watch_bunker/shared_fuel_dispersion_unit.iff", "object/tangible/loot/dungeon/death_watch_bunker/shared_ducted_fan.iff", "object/tangible/loot/dungeon/death_watch_bunker/shared_fuel_injector_tank.iff", "object/tangible/loot/dungeon/death_watch_bunker/shared_jetpack_base.iff},
    resourceQuantities = {1050, 715, 235, 135, 1, 1, 1, 1},
    contribution = {100, 100, 100, 100, 100, 100, 100, 100},
