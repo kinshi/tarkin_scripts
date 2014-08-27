@@ -34,6 +34,12 @@ klin_nif = Creature:new {
 				{group = "klin_nif_drop", chance = 10000000}
 			},
 			lootChance = 10000000
+		},
+		{
+			groups = {
+				{group = "mandalorian_schemes", chance = 10000000}
+			},
+			lootChance = 500000
 		}
 	},
 	weapons = {"death_watch_commander_weapons"},
