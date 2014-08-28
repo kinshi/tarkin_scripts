@@ -8,8 +8,15 @@ registerScreenPlay("TatooineMosEspaScreenPlay", true)
 
 function TatooineMosEspaScreenPlay:start()
 	if (isZoneEnabled("tatooine")) then
+		self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
+end
+
+function TatooineMosEspaScreenPlay:spawnSceneObjects()
+--Mos Espa SP
+spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_transport.iff", -2831.0, 5.0, 2091, 0, 140)
+
 end
 
 function TatooineMosEspaScreenPlay:spawnMobiles()
