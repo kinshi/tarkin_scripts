@@ -22,7 +22,7 @@ spawnSceneObject("naboo", "object/creature/npc/theme_park/player_shuttle.iff", 5
 
 end
 
-function NabooDeejaPeakWaterfallScreenPlay:spawnMobiles()
+function NabooDeejaPeakScreenPlay:spawnMobiles()
 
 	--Screenplay needs more added.
 

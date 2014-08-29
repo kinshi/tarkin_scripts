@@ -21,7 +21,7 @@ spawnSceneObject("corellia", "object/creature/npc/theme_park/player_shuttle.iff"
 
 end
 
-function GrandTheaterVreniScreenPlay:spawnMobiles()
+function VreniScreenPlay:spawnMobiles()
 
 	spawnMobile("corellia", "businessman",60,-5428.59,24.1812,-6228.31,140.458,0)
 	spawnMobile("corellia", "cll8_binary_load_lifter",60,-5696,14.6,-6154.2,75,0)
