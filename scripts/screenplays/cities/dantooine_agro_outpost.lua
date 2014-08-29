@@ -17,7 +17,7 @@ function DantooineAgroOutpostScreenPlay:spawnSceneObjects()
 
 --Pirate Outpost SP
 
-spawnSceneObject("dantooine", "object/creature/npc/theme_park/player_transport.iff", 1583.0, -6378.0, -6378.0, 0, 90)
+spawnSceneObject("dantooine", "object/creature/npc/theme_park/player_transport.iff", 1557.0, 4.0, -6405.0, 0, -13)
 
 end
 

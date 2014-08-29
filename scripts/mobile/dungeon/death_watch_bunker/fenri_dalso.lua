@@ -34,7 +34,14 @@ fenri_dalso = Creature:new {
 				{group = "fenri_dalso_drop", chance = 10000000}
 			},
 			lootChance = 10000000
+		},
+		{
+			groups = {
+				{group = "mandalorian_schemes", chance = 10000000}
+			},
+			lootChance = 500000
 		}
+
 	},
 	weapons = {"death_watch_commander_weapons"},
 	conversationTemplate = "",
