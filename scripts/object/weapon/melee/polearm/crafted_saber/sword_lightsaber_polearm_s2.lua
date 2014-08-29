@@ -111,18 +111,21 @@ object_weapon_melee_polearm_crafted_saber_sword_lightsaber_polearm_s2 = object_w
 
 	maxRange = 5,
 	maxRangeAccuracy = 5,
-	
 
 	minDamage = 105,
 	maxDamage = 195,
 
 	attackSpeed = 5.1,
-	
+
+	woundsRatio = 15,
+
+	defenderToughnessModifiers = { "lightsaber_toughness" },
+
+	noTrade = 1,
+
 	childObjects = {
 		{templateFile = "object/tangible/inventory/lightsaber_inventory_1.iff", x = 0, z = 0, y = 0, ox = 0, oy = 0, oz = 0, ow = 0, cellid = -1, containmentType = 4}
 	},
-	
-	defenderToughnessModifiers = { "lightsaber_toughness" },
 
 	numberExperimentalProperties = {1, 1, 2, 2, 2, 2, 2, 1, 1, 1},
 	experimentalProperties = {"XX", "XX", "CD", "OQ", "CD", "OQ", "CD", "OQ", "SR", "UT", "CD", "OQ", "OQ", "OQ", "OQ"},

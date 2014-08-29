@@ -96,7 +96,9 @@ object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_gen5 = objec
 	-- Leave blank for now
 	damageModifiers = { },
 	
-    	defenderToughnessModifiers = { "lightsaber_toughness" },
+	defenderToughnessModifiers = { "lightsaber_toughness" },
+  	
+	noTrade = 1,
    
 	-- The values below are the default values.  To be used for blue frog objects primarily
 	healthAttackCost = 0,
@@ -113,7 +115,9 @@ object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_gen5 = objec
 	maxRange = 5,
 	maxRangeAccuracy = 5,
 
-	attackSpeed = 4.5
+	attackSpeed = 4.5,
+
+	woundsRatio = 45,
 }
 
 ObjectTemplates:addTemplate(object_weapon_melee_sword_crafted_saber_sword_lightsaber_one_handed_gen5, "object/weapon/melee/sword/crafted_saber/sword_lightsaber_one_handed_gen5.iff")
