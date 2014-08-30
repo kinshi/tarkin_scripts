@@ -41,33 +41,69 @@
 --which carries forward this exception.
 
 
---Left Bicep
+--biceps
 
 object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_bicep_l = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_bicep_l.iff"
-
 }
 
 ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_bicep_l, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_bicep_l.iff")
 
---Right Bicep
-
 object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_bicep_r = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_bicep_r.iff"
-
 }
 
 ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_bicep_r, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_bicep_r.iff")
 
---Boots
+--boots
 
 object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_boots = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_boots.iff"
-
 }
 
 ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_boots, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_boots.iff")
 
+--chest
 
+object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_chest_plate = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_chest_plate.iff"
+}
 
+ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_chest_plate, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_chest_plate.iff")
 
+object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_chest_plate_rebel = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_chest_plate_rebel.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_chest_plate_rebel, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_chest_plate_rebel.iff")
+
+--helmet
+
+object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_helmet = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_helmet.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_helmet, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_helmet.iff")
+
+--leggings
+
+object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_leggings = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_leggings.iff"
+
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_leggings, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_leggings.iff")
+
+--bracers
+
+object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_bracer_l = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_bracer_l.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_bracer_l, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_bracer_l.iff")
+
+object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_bracer_r = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_bracer_r.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_bracer_r, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_bracer_r.iff")
