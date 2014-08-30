@@ -43,8 +43,8 @@
 
 --biceps
 
-object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_bicep_l = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_bicep_l.iff"
+object_tangible_wearables_armor_marine_shared_armor_rebel_battle_bicep_l = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_bicep_l.iff"
 }
 
 ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_bicep_l, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_bicep_l.iff")
@@ -57,7 +57,7 @@ ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_s
 
 --boots
 
-object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_boots = SharedTangibleObjectTemplate:new {
+object_tangible_wearables_armor_marine_shared_armor_rebel_battle_boots = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_boots.iff"
 }
 
@@ -65,17 +65,11 @@ ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_s
 
 --chest
 
-object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_chest_plate = SharedTangibleObjectTemplate:new {
+object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_bettle_chest_plate = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_chest_plate.iff"
 }
 
 ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_chest_plate, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_chest_plate.iff")
-
-object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_chest_plate_rebel = SharedTangibleObjectTemplate:new {
-	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_chest_plate_rebel.iff"
-}
-
-ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_chest_plate_rebel, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_chest_plate_rebel.iff")
 
 --helmet
 
