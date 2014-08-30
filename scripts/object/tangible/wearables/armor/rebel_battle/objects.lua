@@ -101,3 +101,11 @@ object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_bracer_r 
 }
 
 ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_bracer_r, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_bracer_r.iff")
+
+--gloves
+
+object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_gloves = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_gloves.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_rebel_battle_shared_armor_rebel_battle_gloves, "object/tangible/wearables/armor/rebel_battle/shared_armor_rebel_battle_gloves.iff")
