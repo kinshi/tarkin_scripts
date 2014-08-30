@@ -839,8 +839,8 @@ includeFile("weapon/objects.lua")
 --tarkin CU armor
 
 includeFile("tangible/loot/factional_schematic/objects.lua")
+includeFile("tangible/wearables/armor/rebel_assault/objects.lua")
+includeFile("tangible/wearables/armor/rebel_battle/objects.lua")
+includeFile("tangible/wearables/armor/scout_trooper/objects.lua")
 includeFile("tangible/wearables/armor/assault_trooper/objects.lua")
 includeFile("tangible/wearables/armor/clone_trooper/objects.lua")
-includeFile("tangible/wearables/armor/rebel_assault/objects.lua")
-includeFile("tangible/wearables/armor/scout_trooper/objects.lua")
-
