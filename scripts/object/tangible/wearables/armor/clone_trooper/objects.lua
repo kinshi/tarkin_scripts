@@ -114,7 +114,7 @@ ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_clone_trooper_
 
 --belt
 
-object_tangible_wearables_armor_clone_trooper_rebel_s01_shared_armor_clone_trooper_rebel_s01_belt = SharedTangibleObjectTemplate:new {
+object_tangible_wearables_armor_clone_trooper_shared_armor_clone_trooper_rebel_s01_belt = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/wearables/armor/clone_trooper/shared_armor_clone_trooper_rebel_s01_belt.iff"
 }
 
@@ -194,7 +194,7 @@ ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_clone_trooper_
 
 --belt
 
-object_tangible_wearables_armor_clone_trooper_neutral_s01_shared_armor_clone_trooper_neutral_s01_belt = SharedTangibleObjectTemplate:new {
+object_tangible_wearables_armor_clone_trooper_shared_armor_clone_trooper_neutral_s01_belt = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/wearables/armor/clone_trooper/shared_armor_clone_trooper_neutral_s01_belt.iff"
 }
 
@@ -273,10 +273,9 @@ ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_clone_trooper_
 
 --belt
 
-object_tangible_wearables_armor_clone_trooper_imperial_s01_shared_armor_clone_trooper_imperial_s01_belt = SharedTangibleObjectTemplate:new {
+object_tangible_wearables_armor_clone_trooper_shared_armor_clone_trooper_imperial_s01_belt = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/wearables/armor/clone_trooper/shared_armor_clone_trooper_imperial_s01_belt.iff"
 }
 
 ObjectTemplates:addClientTemplate(object_tangible_wearables_armor_clone_trooper_shared_armor_clone_trooper_imperial_s01_belt, "object/tangible/wearables/armor/clone_trooper/shared_armor_clone_trooper_imperial_s01_belt.iff")
-
 
