@@ -16,7 +16,7 @@ end
 function DathomirTradeOutpostScreenPlay:spawnSceneObjects()
 
 --Trade Outpost SP
-spawnSceneObject("dathomir", "object/creature/npc/theme_park/player_transport.iff", 559.0, 6.0, 30820.0, 0, 113)
+spawnSceneObject("dathomir", "object/creature/npc/theme_park/player_transport.iff", 559.0, 6.0, 3082.0, 0, 113)
 
 end
 
