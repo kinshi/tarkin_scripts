@@ -44,7 +44,7 @@
 object_tangible_wearables_armor_ubese_armor_ubese_gloves = object_tangible_wearables_armor_ubese_shared_armor_ubese_gloves:new {
 	templateType = ARMOROBJECT,
 
-	objectMenuComponent = {"cpp", "ArmorObjectMenuComponent"},	
+--	objectMenuComponent = {"cpp", "ArmorObjectMenuComponent"},	--disabled as Ubese gloves have no color palette
 	
 	playerRaces = { "object/creature/player/bothan_male.iff",
 				"object/creature/player/bothan_female.iff",
