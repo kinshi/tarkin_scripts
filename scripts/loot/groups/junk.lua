@@ -6,7 +6,7 @@ junk = {
 	maximumLevel = 0,
 	lootItems = {
 		{itemTemplate = "broken_binoculars_s1", weight = 320000},
-		{itemTemplate = "broken_binoculars_s2", weight = 320000},
+--		{itemTemplate = "broken_binoculars_s2", weight = 320000},
 		{itemTemplate = "broken_decryptor", weight = 320000},
 		{itemTemplate = "broken_viewscreen_grey", weight = 320000},
 		{itemTemplate = "broken_viewscreen_tan", weight = 320000},
@@ -26,7 +26,7 @@ junk = {
 		{itemTemplate = "hyperdrive_part", weight = 320000},
 		{itemTemplate = "ledger", weight = 320000},
 		{itemTemplate = "locked_briefcase", weight = 320000},
-		{itemTemplate = "locked_container", weight = 320000},
+		{itemTemplate = "locked_container", weight = 640000},
 		{itemTemplate = "loudspeaker", weight = 320000},
 		{itemTemplate = "palm_frond", weight = 320000},
 		{itemTemplate = "photographic_image", weight = 320000},

@@ -46,8 +46,9 @@ looted_container = {
 		-- Armors (25% chance)
 		{groupTemplate = "armor_all", weight = 2500000},
 
-		-- Clothing (25% chance)
-		{groupTemplate = "wearables_all", weight = 2500000},
+		-- Windowed Generic NGE houses + Naboo/Tat NGE windowed houses (25% chance)
+		{groupTemplate = "window_houses", weight = 2500000},
+
 	}
 }
 
