@@ -30,7 +30,7 @@
        templates = {"object/mobile/dressed_merchant_trainer_01.iff"},
        lootGroups = {},
        weapons = {},
-       conversationTemplate = "anniversary2_template",
+       conversationTemplate = "painting_template",
        attacks = {
        }
     }
