@@ -18,7 +18,8 @@ murra = Creature:new {
 	hideAmount = 35,
 	boneType = "bone_mammal",
 	boneAmount = 32,
-	milk = 0,
+	milkType = "milk_wild",
+	milk = 20,
 	tamingChance = 0.25,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
@@ -28,7 +29,15 @@ murra = Creature:new {
 
 	templates = {"object/mobile/murra.iff"},
 	controlDeviceTemplate = "object/intangible/pet/murra_hue.iff",
-	lootGroups = {},
+	lootGroups = {
+		{
+			groups = {
+				{group = "junk", chance = 7000000},
+				{group = "wearables_common", chance = 3000000},
+				},
+			lootChance = 3000000
+		}
+	},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
