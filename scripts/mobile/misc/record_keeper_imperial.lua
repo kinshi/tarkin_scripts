@@ -1,6 +1,6 @@
 record_keeper_imperial = Creature:new {
 	objectName = "",
-	customName = "Lt. Nilsson (Planetary Record Keeper)",
+	customName = "Wurson Harro",
 	socialGroup = "imperial",
 	pvpFaction = "imperial",
 	faction = "imperial",
@@ -24,13 +24,13 @@ record_keeper_imperial = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 264,
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/theme_park_record_keeper_imperial.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "rk_record_keeper_imperialConversationTemplate",
 	attacks = {
 	}
 }

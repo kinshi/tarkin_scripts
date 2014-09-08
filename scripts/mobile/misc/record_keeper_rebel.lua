@@ -1,6 +1,6 @@
 record_keeper_rebel = Creature:new {
 	objectName = "",
-	customName = "Lt. Ogo (Planetary Record Keeper)",
+	customName = "Falton Molard",
 	socialGroup = "rebel",
 	pvpFaction = "rebel",
 	faction = "rebel",
@@ -24,13 +24,13 @@ record_keeper_rebel = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 264,
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/theme_park_record_keeper_rebel.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "",
+	conversationTemplate = "rk_record_keeper_rebelConversationTemplate",
 	attacks = {
 	}
 }

@@ -42,7 +42,8 @@
 
 
 object_tangible_event_perk_banner_imperial_style_01 = object_tangible_event_perk_shared_banner_imperial_style_01:new {
-
+	objectMenuComponent = {"cpp", "EventPerkMenuComponent"},
+	dataObjectComponent = "EventPerkDataComponent",
 }
 
 ObjectTemplates:addTemplate(object_tangible_event_perk_banner_imperial_style_01, "object/tangible/event_perk/banner_imperial_style_01.iff")

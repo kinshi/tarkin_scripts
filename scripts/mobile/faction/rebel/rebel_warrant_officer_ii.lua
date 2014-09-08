@@ -37,19 +37,20 @@ rebel_warrant_officer_ii = Creature:new {
 		{
 	        groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 3700000},
+				{group = "junk", chance = 4700000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
-                		{group = "melee_weapons", chance = 1000000},
-                		{group = "carbines", chance = 1000000},
-				{group = "clothing_attachments", chance = 1100000},
-				{group = "armor_attachments", chance = 1100000}
+                {group = "melee_weapons", chance = 1000000},
+                {group = "carbines", chance = 1000000},
+				{group = "clothing_attachments", chance = 100000},
+				{group = "armor_attachments", chance = 100000},
+				{group = "wearables_common", chance = 1000000}
 			},
 			lootChance = 3000000
 		}	
 	},
 	weapons = {"rebel_weapons_medium"},
-	conversationTemplate = "rebel_recruiter_convotemplate",
+	conversationTemplate = "rebelRecruiterConvoTemplate",
 	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
