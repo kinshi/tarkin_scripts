@@ -2,7 +2,7 @@ local ObjectManager = require("managers.object.object_manager")
 includeFile("recruiters/factionPerkData.lua")
 
 recruiterScreenplay = Object:new {
-	minimumFactionStanding = 200,
+	minimumFactionStanding = 0,
 
 	factionHashCode = { rebel = 370444368, imperial = 3679112276 },
 
@@ -542,7 +542,7 @@ end
 
 function recruiterScreenplay:handleGoCovert(pPlayer)
 	ObjectManager.withCreaturePlayerObject(pPlayer, function(playerObject)
-		playerObject:setFactionStatus(1)
+		playerObject:setFactionStatus(2)
 	end)
 end
 
