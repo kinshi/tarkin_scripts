@@ -27,7 +27,7 @@ rebelRewardData = {
 		"armor_kashyyykian_hunting_bracer_r",
 		"armor_kashyyykian_hunting_chest_plate",
 		"armor_kashyyykian_hunting_leggings",
-		"armor_rebel_commando_helmet",
+--		"armor_rebel_commando_helmet",
 		"rocket_launcher",
 		"mine_drx",
 		"mine_xg",
@@ -50,7 +50,7 @@ rebelRewardData = {
 		armor_kashyyykian_hunting_bracer_r = { index=13, type=factionRewardType.armor, display="@wearables_name:armor_kashyyykian_hunting_bracer_r", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_r.iff",cost=2000},
 		armor_kashyyykian_hunting_chest_plate = { index=14, type=factionRewardType.armor, display="@wearables_name:armor_kashyyykian_hunting_chest_plate", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_chest_plate.iff",cost=4000},
 		armor_kashyyykian_hunting_leggings = { index=15, type=factionRewardType.armor, display="@wearables_name:armor_kashyyykian_hunting_leggings", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_leggings.iff",cost=3000},
-		armor_rebel_commando_helmet = { index=16, type=factionRewardType.armor, display="Rebel Commando Helmet", item="object/tangible/wearables/helmet/helmet_s06.iff",cost=3000},		
+--		armor_rebel_commando_helmet = { index=16, type=factionRewardType.armor, display="Rebel Commando Helmet", item="object/tangible/wearables/helmet/helmet_s06.iff",cost=3000},		
 		mine_drx = { type=factionRewardType.weapon, display="@weapon_name:mine_drx", item="object/weapon/mine/wp_mine_drx55.iff", cost=350},
 		mine_xg = { type=factionRewardType.weapon, display="@weapon_name:mine_xg", item="object/weapon/mine/wp_mine_xg.iff", cost=350},
 
@@ -100,8 +100,8 @@ rebelRewardData = {
 		turret_tower_lg = { type=factionRewardType.installation, display="@deed:turret_tower_lg", item="object/tangible/deed/faction_perk/turret/tower_lg_deed.iff", generatedObjectTemplate="object/installation/faction_perk/turret/tower_lg.iff", cost=6300 },
 		covert_detector_32m = { type=factionRewardType.installation, display="@deed:covert_detector_32m", item="object/tangible/deed/faction_perk/covert_detector/detector_32m_deed.iff", generatedObjectTemplate="object/installation/faction_perk/covert_detector/detector_base.iff", cost=3000 },
 		minefield_1x1 = { type=factionRewardType.installation, display="@deed:minefield_1x1", item="object/tangible/deed/faction_perk/minefield/field_1x1_deed.iff", generatedObjectTemplate="object/installation/faction_perk/minefield/field_1x1.iff", cost=5000 },
-		rebel_spire = { type=factionRewardType.installation, display="Rebel Spire Schematic", item="object/tangible/loot/loot_schematic/rebel_house_loot_schem.iff",
-			generatedObjectTemplate="object/building/player/rebel_house.iff", cost=10000 },
+--		rebel_spire = { type=factionRewardType.installation, display="Rebel Spire Schematic", item="object/tangible/loot/loot_schematic/rebel_house_loot_schem.iff",
+--			generatedObjectTemplate="object/building/player/rebel_house.iff", cost=10000 },
 	},
 
 	furnitureList = {
@@ -273,8 +273,8 @@ imperialRewardData = {
 		turret_tower_lg = { type=factionRewardType.installation, display="@deed:turret_tower_lg", item="object/tangible/deed/faction_perk/turret/tower_lg_deed.iff", generatedObjectTemplate="object/installation/faction_perk/turret/tower_lg.iff", cost=6300 },
 		covert_detector_32m = { type=factionRewardType.installation, display="@deed:covert_detector_32m", item="object/tangible/deed/faction_perk/covert_detector/detector_32m_deed.iff", generatedObjectTemplate="object/installation/faction_perk/covert_detector/detector_base.iff", cost=3000 },
 		minefield_1x1 = { type=factionRewardType.installation, display="@deed:minefield_1x1", item="object/tangible/deed/faction_perk/minefield/field_1x1_deed.iff", generatedObjectTemplate="object/installation/faction_perk/minefield/field_1x1.iff", cost=350 },
-		emperors_spire = { type=factionRewardType.armor, display="Emperor's Spire Schematic", item="object/tangible/loot/loot_schematic/emperors_house_loot_schem.iff",
-			generatedObjectTemplate="object/building/player/emperors_house.iff", cost=10000 },
+--		emperors_spire = { type=factionRewardType.armor, display="Emperor's Spire Schematic", item="object/tangible/loot/loot_schematic/emperors_house_loot_schem.iff",
+--			generatedObjectTemplate="object/building/player/emperors_house.iff", cost=10000 },
 
 	},
 
