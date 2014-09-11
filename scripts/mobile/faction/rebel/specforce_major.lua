@@ -37,20 +37,21 @@ lootGroups = {
 		{
 	        groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 2250000},
+				{group = "junk", chance = 4250000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
-                		{group = "melee_weapons", chance = 1000000},
-                		{group = "carbines", chance = 1000000},
-				{group = "clothing_attachments", chance = 1100000},
-				{group = "armor_attachments", chance = 1100000},
-				{group = "rebel_officer_common", chance = 1450000}
+                {group = "melee_weapons", chance = 1000000},
+                {group = "carbines", chance = 1000000},
+				{group = "clothing_attachments", chance = 100000},
+				{group = "armor_attachments", chance = 100000},
+				{group = "rebel_officer_common", chance = 450000},
+				{group = "wearables_common", chance = 1000000}
 			},
 			lootChance = 3000000
 		}	
 	},
 	weapons = {"imperial_weapons_medium"},
-	conversationTemplate = "rebel_recruiter_convotemplate",
+	conversationTemplate = "rebelRecruiterConvoTemplate",
 	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 

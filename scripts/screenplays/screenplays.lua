@@ -8,6 +8,7 @@ includeFile("themepark/conversations/mission_giver_conv_handler.lua")
 includeFile("themepark/conversations/mission_target_conv_handler.lua")
 includeFile("themepark/conversations/nym_conv_handler.lua")
 includeFile("themepark/conversations/theater_manager_conv_handler.lua")
+includeFile("themepark/conversations/record_keeper_conv_handler.lua")
 includeFile("themepark/imperial/themeParkImperial.lua")
 includeFile("themepark/imperial/emperors_retreat.lua")
 includeFile("themepark/nym/themeParkNym.lua")
@@ -18,9 +19,8 @@ includeFile("themepark/marauder/themeParkMarauder.lua")
 includeFile("themepark/tutorial.lua")
 
 -- Recruiters
-includeFile("recruiters/recruiters.lua")
-includeFile("recruiters/imperialrecruiter.lua")
-includeFile("recruiters/rebelrecruiter.lua")
+includeFile("recruiters/recruiterConvoHandler.lua")
+includeFile("recruiters/recruiterScreenplay.lua")
 
 -- Dungeons
 includeFile("dungeon/death_watch_bunker.lua")
@@ -35,7 +35,7 @@ includeFile("village/fs_experience_converter_conv_handler.lua")
 includeFile("events/conversations/bestine_artist_conv_handler.lua")
 includeFile("events/conversations/museum_curator_conv_handler.lua")
 includeFile("events/bestineMuseum.lua")
-
+includeFile("events/eventPromoter.lua")
 
 
 -- Task/Quest
@@ -290,6 +290,9 @@ includeFile("racetracks/racetracks.lua")
 
 -- Space
 includeFile("space/space_chassis_dealer_conv_handler.lua")
+
+-- Record Keepers
+includeFile("record_keepers/record_keepers.lua")
 
 --Tarkin Custom
 

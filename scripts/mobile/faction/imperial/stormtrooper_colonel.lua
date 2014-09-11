@@ -31,21 +31,22 @@ stormtrooper_colonel = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 2050000},
+				{group = "junk", chance = 5050000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
 				{group = "melee_weapons", chance = 550000},
 				{group = "carbines", chance = 550000},
-				{group = "clothing_attachments", chance = 1250000},
-				{group = "armor_attachments", chance = 1250000},
-				{group = "imperial_officer_common", chance = 1450000},
-				{group = "stormtrooper_common", chance = 1700000}
+				{group = "clothing_attachments", chance = 250000},
+				{group = "armor_attachments", chance = 250000},
+				{group = "imperial_officer_common", chance = 450000},
+				{group = "stormtrooper_common", chance = 700000},
+				{group = "wearables_common", chance = 1000000}
 			},
-			lootChance = 3000000
+			lootChance = 2800000
 		}
 	},
 	weapons = {"stormtrooper_weapons"},
-	conversationTemplate = "imperial_recruiter_convotemplate",
+	conversationTemplate = "imperialRecruiterConvoTemplate",
 	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 

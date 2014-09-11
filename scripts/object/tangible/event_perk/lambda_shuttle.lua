@@ -42,7 +42,8 @@
 
 
 object_tangible_event_perk_lambda_shuttle = object_tangible_event_perk_shared_lambda_shuttle:new {
-
+	objectMenuComponent = {"cpp", "EventPerkMenuComponent"},
+	dataObjectComponent = "EventPerkDataComponent",
 }
 
 ObjectTemplates:addTemplate(object_tangible_event_perk_lambda_shuttle, "object/tangible/event_perk/lambda_shuttle.iff")
