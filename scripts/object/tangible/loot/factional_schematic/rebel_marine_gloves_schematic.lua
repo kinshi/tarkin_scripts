@@ -45,8 +45,8 @@ object_tangible_loot_factional_schematic_rebel_marine_gloves_schematic = object_
 	templateType = LOOTSCHEMATIC,
 	objectMenuComponent = {"cpp", "LootSchematicMenuComponent"},
 	attributeListComponent = "LootSchematicAttributeListComponent",
-	requiredSkill = "crafting_artisan_master",
-	targetDraftSchematic = "object/draft_schematic/vehicle/civilian/landspeeder_ab1.iff",
+	requiredSkill = "crafting_armorsmith_master",
+	targetDraftSchematic = "object/draft_schematic/armor/armor_appearance_rebel_marine_gloves.iff",
 	targetUseCount = 1
 }
 
