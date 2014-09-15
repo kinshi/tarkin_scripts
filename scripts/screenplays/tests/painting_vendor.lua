@@ -1,6 +1,6 @@
 painting_vendor = ScreenPlay:new { 
 	numberOfActs = 1,
-	questString = "painting01", 
+	questString = "painting02", 
 	states = {
 		accepted = 2,	
 	}, 
@@ -14,7 +14,7 @@ registerScreenPlay("painting_vendor", true)
 
 function painting_vendor:start() 
 
-	local pNpc = spawnMobile("corellia", "painting_artist", 1, 6288.5, 169, -3950.2, 40, 0 )
+	local pNpc = spawnMobile("rori", "painting_artist", 1, 3378.0, 90.0, 5860.4, -135, 40, 0 )
 end
 
 function painting_vendor:getActivePlayerName()
@@ -84,7 +84,7 @@ function painting_convo_handler:getNextConversationScreen(conversationTemplate, 
 			local credits = creature:getCashCredits()
 			local pInventory = creature:getSlottedObject("inventory")
 			local inventory = LuaSceneObject(pInventory)
-			local reward = "object/tangible/painting/painting_rodian_f.iff"
+			local reward = "object/tangible/painting/painting_trandoshan_m_01.iff"
 			-- Take action when the player makes a purchase.
 			if (inventory:hasFullContainerObjects() == true) then
 				-- Bail if the player doesn't have enough space in their inventory.
