@@ -49,7 +49,7 @@ function RecruiterConvoHandler:runScreenHandlers(conversationTemplate, conversin
 
 		elseif (screenID == "accept_join") then
 			player:setFaction(recruiterScreenplay:getRecruiterFactionHashCode(conversingNPC))
-			playerObject:setFactionStatus(3)
+			playerObject:setFactionStatus(1)
 
 		elseif (screenID == "accepted_go_overt") then
 			playerObject:setFactionStatus(3)
