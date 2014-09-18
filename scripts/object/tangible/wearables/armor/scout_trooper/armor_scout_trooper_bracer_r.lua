@@ -107,7 +107,7 @@ object_tangible_wearables_armor_scout_trooper_armor_scout_trooper_bracer_r = obj
 	heat = 55,
 	cold = 55,
 	acid = 55,
-	lightSaber = 0
+	lightSaber = 0,
 	
 	numberExperimentalProperties = {1, 1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1},
 	experimentalProperties = {"XX", "XX", "XX", "OQ", "SR", "OQ", "SR", "OQ", "UT", "MA", "OQ", "MA", "OQ", "MA", "OQ", "XX", "XX", "OQ", "SR", "XX"},

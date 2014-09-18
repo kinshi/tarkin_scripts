@@ -116,7 +116,7 @@ object_tangible_wearables_armor_marine_armor_marine_backpack = object_tangible_w
 	heat = 30,
 	cold = 30,
 	acid = 30,
-	lightSaber = 0
+	lightSaber = 0,
 	
 	numberExperimentalProperties = {1, 1, 1, 2, 2, 2, 2, 2, 2, 1, 1, 2, 1},
 	experimentalProperties = {"XX", "XX", "XX", "OQ", "SR", "OQ", "SR", "OQ", "UT", "MA", "OQ", "MA", "OQ", "MA", "OQ", "XX", "XX", "OQ", "SR", "XX"},
