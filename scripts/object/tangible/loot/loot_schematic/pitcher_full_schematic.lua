@@ -42,7 +42,12 @@
 
 
 object_tangible_loot_loot_schematic_pitcher_full_schematic = object_tangible_loot_loot_schematic_shared_pitcher_full_schematic:new {
-
+	templateType = LOOTSCHEMATIC,
+	objectMenuComponent = {"cpp", "LootSchematicMenuComponent"},
+	attributeListComponent = "LootSchematicAttributeListComponent",
+	requiredSkill = "crafting_chef_novice",
+	targetDraftSchematic = "object/draft_schematic/furniture/furniture_pitcher_full.iff",
+	targetUseCount = 1,
 }
 
 ObjectTemplates:addTemplate(object_tangible_loot_loot_schematic_pitcher_full_schematic, "object/tangible/loot/loot_schematic/pitcher_full_schematic.iff")

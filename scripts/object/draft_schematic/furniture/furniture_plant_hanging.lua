@@ -43,6 +43,40 @@
 
 object_draft_schematic_furniture_furniture_plant_hanging = object_draft_schematic_furniture_shared_furniture_plant_hanging:new {
 
+   templateType = DRAFTSCHEMATIC,
+
+   customObjectName = "Hanging Planter",
+
+   craftingToolTab = 512, -- (See DraftSchemticImplementation.h)
+   complexity = 9, 
+   size = 1, 
+
+   xpType = "crafting_structure_general", 
+   xp = 140, 
+
+   disableFactoryRun = true,
+
+   assemblySkill = "structure_assembly", 
+   experimentingSkill = "structure_experimentation", 
+   customizationSkill = "structure_customization", 
+
+   customizationOptions = {},
+   customizationStringNames = {},
+   customizationDefaults = {},
+
+   ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_furniture_ingredients_n", "craft_furniture_ingredients_n", "craft_furniture_ingredients_n"},
+   ingredientTitleNames = {"pot", "tree", "greenery", "hanger"},
+   ingredientSlotType = {0, 0, 0, 0},
+   resourceTypes = {"mineral", "wood", "vegetable", "metal"},
+   resourceQuantities = {30, 30, 20, 15},
+   contribution = {100, 100, 100, 100},
+
+
+   targetTemplate = "object/tangible/furniture/decorative/hanging_planter.iff",
+
+   additionalTemplates = {
+             }
+
 }
 
 ObjectTemplates:addTemplate(object_draft_schematic_furniture_furniture_plant_hanging, "object/draft_schematic/furniture/furniture_plant_hanging.iff")

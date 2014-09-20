@@ -73,6 +73,13 @@ object_draft_schematic_furniture_furniture_chair_modern = object_draft_schematic
    targetTemplate = "object/tangible/furniture/modern/chair_modern_style_01.iff",
 
    additionalTemplates = {
+		"object/tangible/furniture/all/shared_frn_all_jedi_council_seat.iff",
+		"object/tangible/furniture/jedi/shared_frn_all_light_chair_s01.iff",
+		"object/tangible/furniture/jedi/shared_frn_all_light_chair_s02.iff",
+		"object/tangible/furniture/jedi/shared_frn_all_light_throne.iff",
+		"object/tangible/furniture/jedi/shared_frn_all_dark_chair_s01.iff",
+		"object/tangible/furniture/jedi/shared_frn_all_dark_chair_s02.iff",
+		"object/tangible/furniture/jedi/shared_frn_all_dark_throne.iff",
              }
 
 }

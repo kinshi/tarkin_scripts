@@ -75,6 +75,8 @@ object_draft_schematic_furniture_furniture_couch_blue = object_draft_schematic_f
    targetTemplate = "object/tangible/furniture/all/frn_all_couch_lg_s2.iff",
 
    additionalTemplates = {
+		"object/tangible/furniture/all/shared_frn_all_couch_love_seat_s2.iff",
+		"object/tangible/furniture/modern/shared_couch_modern_style_02.iff",
              }
 }
 

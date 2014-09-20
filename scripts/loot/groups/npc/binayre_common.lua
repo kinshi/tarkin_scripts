@@ -5,7 +5,7 @@ binayre_common = {
 	lootItems = {
 		{itemTemplate = "heating_element", weight = 2000000},
 		{itemTemplate = "blue_wiring", weight = 2000000},
-		{groupTemplate = "wearables_common", weight = 2000000},
+		{groupTemplate = "misc_decoloot_schemes", weight = 2000000},
 		{itemTemplate = "skill_buff_polearm_accuracy", weight = 1000000},
 		{itemTemplate = "skill_buff_polearm_speed", weight = 1000000},		
 		{itemTemplate = "skill_buff_twohandmelee_accuracy", weight = 1000000},

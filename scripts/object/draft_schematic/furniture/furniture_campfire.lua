@@ -43,6 +43,40 @@
 
 object_draft_schematic_furniture_furniture_campfire = object_draft_schematic_furniture_shared_furniture_campfire:new {
 
+   templateType = DRAFTSCHEMATIC,
+
+   customObjectName = "Campfire",
+
+   craftingToolTab = 512, -- (See DraftSchemticImplementation.h)
+   complexity = 2, 
+   size = 1, 
+
+   xpType = "camp", 
+   xp = 100, 
+
+   disableFactoryRun = true,
+
+   assemblySkill = "general_assembly", 
+   experimentingSkill = "general_experimentation", 
+   customizationSkill = "clothing_customization", 
+
+   customizationOptions = {},
+   customizationStringNames = {},
+   customizationDefaults = {},
+
+   ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_furniture_ingredients_n"},
+   ingredientTitleNames = {"fuel", "base"},
+   ingredientSlotType = {0, 0},
+   resourceTypes = {"wood", "wood"},
+   resourceQuantities = {75, 10},
+   contribution = {100, 100},
+
+
+   targetTemplate = "object/tangible/furniture/decorative/campfire.iff",
+
+   additionalTemplates = {
+             }
+
 }
 
 ObjectTemplates:addTemplate(object_draft_schematic_furniture_furniture_campfire, "object/draft_schematic/furniture/furniture_campfire.iff")

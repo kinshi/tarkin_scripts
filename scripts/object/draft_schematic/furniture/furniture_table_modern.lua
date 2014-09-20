@@ -73,6 +73,9 @@ object_draft_schematic_furniture_furniture_table_modern = object_draft_schematic
    targetTemplate = "object/tangible/furniture/modern/table_modern_style_01.iff",
 
    additionalTemplates = {
+		"object/tangible/furniture/tatooine/shared_frn_tatt_table_cantina_table_1.iff",
+		"object/tangible/furniture/tatooine/shared_frn_tatt_table_cantina_table_2.iff",
+		"object/tangible/furniture/tatooine/shared_frn_tatt_table_cantina_table_3.iff",
              }
 
 }

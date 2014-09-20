@@ -47,7 +47,7 @@ object_tangible_loot_loot_schematic_cantina_chair_schematic = object_tangible_lo
 	attributeListComponent = "LootSchematicAttributeListComponent",
 	requiredSkill = "crafting_artisan_master",
 	targetDraftSchematic = "object/draft_schematic/furniture/furniture_chair_cantina.iff",
-	targetUseCount = 1,
+	targetUseCount = 5,
 }
 
 ObjectTemplates:addTemplate(object_tangible_loot_loot_schematic_cantina_chair_schematic, "object/tangible/loot/loot_schematic/cantina_chair_schematic.iff")

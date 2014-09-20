@@ -1851,7 +1851,7 @@ schematics = {
 {path="object/draft_schematic/clothing/clothing_armor_mandalorian_chest_plate.iff"},
 {path="object/draft_schematic/clothing/clothing_armor_mandalorian_leggings.iff"},
 {path="object/draft_schematic/clothing/clothing_armor_mandalorian_gloves.iff"},
-{path="object/draft_schematic/clothing/clothing_armor_mandalorian_helmet.iff"}
+{path="object/draft_schematic/clothing/clothing_armor_mandalorian_helmet.iff"},
 
 
 --tarkin CU armor schematics
@@ -1908,5 +1908,20 @@ schematics = {
 --{path="object/draft_schematic/armor/armor_appearance_storm_trooper_leggings.iff},
 --{path="object/draft_schematic/armor/armor_appearance_storm_trooper_bicep_l.iff},
 --{path="object/draft_schematic/armor/armor_appearance_storm_trooper_utility_belt.iff}
+
+--Furniture Draft Schematics
+{path="object/draft_schematic/furniture/furniture_assorted_fruit.iff"},
+{path="object/draft_schematic/furniture/furniture_bench_park.iff"},
+{path="object/draft_schematic/furniture/furniture_campfire.iff"},
+{path="object/draft_schematic/furniture/furniture_command_console.iff"},
+{path="object/draft_schematic/furniture/furniture_corellia_flagpole.iff"},
+{path="object/draft_schematic/furniture/furniture_diagnostic_screen.iff"},
+{path="object/draft_schematic/furniture/furniture_display_fish.iff"},
+{path="object/draft_schematic/furniture/furniture_food_cart.iff"},
+{path="object/draft_schematic/furniture/furniture_microphone_s01.iff"},
+{path="object/draft_schematic/furniture/furniture_microphone_s02.iff"},
+{path="object/draft_schematic/furniture/furniture_pitcher_full.iff"},
+{path="object/draft_schematic/furniture/furniture_plant_hanging.iff"},
+{path="object/draft_schematic/furniture/furniture_professors_desk.iff"}
 
 };

@@ -73,6 +73,9 @@ object_draft_schematic_furniture_furniture_chair_cheap = object_draft_schematic_
    targetTemplate = "object/tangible/furniture/cheap/chair_s01.iff",
 
    additionalTemplates = {
+		"object/tangible/furniture/plain/shared_plain_chair_s01.iff",
+		"object/tangible/furniture/plain/shared_plain_couch_s01.iff",
+		"object/tangible/furniture/plain/shared_plain_love_seat_s01.iff",
              }
 
 }

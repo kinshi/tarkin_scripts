@@ -54,6 +54,8 @@ object_draft_schematic_furniture_furniture_bubble_tank = object_draft_schematic_
    xpType = "crafting_spice", 
    xp = 250, 
 
+   disableFactoryRun = true,
+
    assemblySkill = "spice_assembly", 
    experimentingSkill = "spice_experimentation", 
    customizationSkill = "spice_customization", 

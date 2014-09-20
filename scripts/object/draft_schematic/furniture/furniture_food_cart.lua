@@ -43,6 +43,40 @@
 
 object_draft_schematic_furniture_furniture_food_cart = object_draft_schematic_furniture_shared_furniture_food_cart:new {
 
+   templateType = DRAFTSCHEMATIC,
+
+   customObjectName = "Food Cart",
+
+   craftingToolTab = 512, -- (See DraftSchemticImplementation.h)
+   complexity = 9, 
+   size = 1, 
+
+   xpType = "crafting_structure_general", 
+   xp = 140, 
+
+   disableFactoryRun = true,
+
+   assemblySkill = "structure_assembly", 
+   experimentingSkill = "structure_experimentation", 
+   customizationSkill = "structure_customization", 
+
+   customizationOptions = {},
+   customizationStringNames = {},
+   customizationDefaults = {},
+
+   ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_furniture_ingredients_n", "craft_furniture_ingredients_n"},
+   ingredientTitleNames = {"frame", "fruit", "preservative"},
+   ingredientSlotType = {0, 0, 0},
+   resourceTypes = {"metal", "fruit_fruits", "petrochem_inert_polymer"},
+   resourceQuantities = {250, 50, 20},
+   contribution = {100, 100, 100},
+
+
+   targetTemplate = "object/tangible/furniture/decorative/foodcart.iff",
+
+   additionalTemplates = {
+             }
+
 }
 
 ObjectTemplates:addTemplate(object_draft_schematic_furniture_furniture_food_cart, "object/draft_schematic/furniture/furniture_food_cart.iff")

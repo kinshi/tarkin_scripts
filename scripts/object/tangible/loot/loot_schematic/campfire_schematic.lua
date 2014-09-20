@@ -42,7 +42,12 @@
 
 
 object_tangible_loot_loot_schematic_campfire_schematic = object_tangible_loot_loot_schematic_shared_campfire_schematic:new {
-
+	templateType = LOOTSCHEMATIC,
+	objectMenuComponent = {"cpp", "LootSchematicMenuComponent"},
+	attributeListComponent = "LootSchematicAttributeListComponent",
+	requiredSkill = "outdoors_scout_novice",
+	targetDraftSchematic = "object/draft_schematic/furniture/furniture_campfire.iff",
+	targetUseCount = 1,
 }
 
 ObjectTemplates:addTemplate(object_tangible_loot_loot_schematic_campfire_schematic, "object/tangible/loot/loot_schematic/campfire_schematic.iff")

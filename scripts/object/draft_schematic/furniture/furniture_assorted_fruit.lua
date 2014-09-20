@@ -43,6 +43,40 @@
 
 object_draft_schematic_furniture_furniture_assorted_fruit = object_draft_schematic_furniture_shared_furniture_assorted_fruit:new {
 
+   templateType = DRAFTSCHEMATIC,
+
+   customObjectName = "Assorted Fruit",
+
+   craftingToolTab = 512, -- (See DraftSchemticImplementation.h)
+   complexity = 15, 
+   size = 1, 
+
+   xpType = "crafting_general", 
+   xp = 250, 
+   
+  disableFactoryRun = true,
+
+   assemblySkill = "general_assembly", 
+   experimentingSkill = "general_experimentation", 
+   customizationSkill = "general_customization", 
+
+   customizationOptions = {},
+   customizationStringNames = {},
+   customizationDefaults = {},
+
+   ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_item_ingredients_n"},
+   ingredientTitleNames = {"fruit", "preservative"},
+   ingredientSlotType = {0, 0},
+   resourceTypes = {"fruit_fruits", "petrochem_inert_polymer"},
+   resourceQuantities = {50, 20},
+   contribution = {100, 100},
+
+
+   targetTemplate = "object/tangible/furniture/decorative/fruit_assorted.iff",
+
+   additionalTemplates = {
+             }
+
 }
 
 ObjectTemplates:addTemplate(object_draft_schematic_furniture_furniture_assorted_fruit, "object/draft_schematic/furniture/furniture_assorted_fruit.iff")
