@@ -10,7 +10,7 @@ kobola_common = {
 		{itemTemplate = "packaged_flash_powder", weight = 1500000},
 		{itemTemplate = "skill_buff_onehandmelee_accuracy", weight = 1000000},
 		{itemTemplate = "skill_buff_onehandmelee_speed", weight = 1000000},
-		{groupTemplate = "wearables_common", weight = 2000000},		
+		{groupTemplate = "misc_decoloot_schemes", weight = 2000000},		
 	}
 }
 

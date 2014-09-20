@@ -42,7 +42,12 @@
 
 
 object_tangible_loot_loot_schematic_assorted_fruit_schematic = object_tangible_loot_loot_schematic_shared_assorted_fruit_schematic:new {
-
+	templateType = LOOTSCHEMATIC,
+	objectMenuComponent = {"cpp", "LootSchematicMenuComponent"},
+	attributeListComponent = "LootSchematicAttributeListComponent",
+	requiredSkill = "crafting_chef_novice",
+	targetDraftSchematic = "object/draft_schematic/furniture/furniture_assorted_fruit.iff",
+	targetUseCount = 1,
 }
 
 ObjectTemplates:addTemplate(object_tangible_loot_loot_schematic_assorted_fruit_schematic, "object/tangible/loot/loot_schematic/assorted_fruit_schematic.iff")

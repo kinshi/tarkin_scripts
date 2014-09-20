@@ -5,7 +5,7 @@ gungan_common = {
 	lootItems = {
 		{itemTemplate = "gungan_signet", weight = 3333333},
 		{itemTemplate = "gungan_lance", weight =  3333333},
-		{groupTemplate = "wearables_common", weight = 3333334},
+		{groupTemplate = "misc_decoloot_schemes", weight = 3333334},
 	}
 }
 

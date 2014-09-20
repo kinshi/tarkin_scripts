@@ -4,7 +4,7 @@ meatlump_common = {
 	maximumLevel = 0,
 	lootItems = {
 		{itemTemplate = "cheap_copper_battery", weight = 1000000},
-		{groupTemplate = "wearables_common", weight = 1000000},
+		{groupTemplate = "misc_decoloot_schemes", weight = 1000000},
 		{itemTemplate = "droid_body_schematic", weight = 800000},
 		{itemTemplate = "radio_schematic", weight = 800000},
 		{itemTemplate = "streetlamp_schematic", weight = 800000},

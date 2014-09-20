@@ -6,7 +6,7 @@ chunker_common = {
 		{itemTemplate = "red_wiring", weight = 2810000},
 		{itemTemplate = "pulverizer", weight = 4710000},
 		{itemTemplate = "processor_attachment", weight = 480000},
-		{groupTemplate = "wearables_common", weight = 2000000},
+		{groupTemplate = "misc_decoloot_schemes", weight = 2000000},
 	}
 }
 

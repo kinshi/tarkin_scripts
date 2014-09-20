@@ -43,6 +43,39 @@
 
 object_draft_schematic_furniture_furniture_diagnostic_screen = object_draft_schematic_furniture_shared_furniture_diagnostic_screen:new {
 
+   templateType = DRAFTSCHEMATIC,
+
+   customObjectName = "Diagnostic Screen",
+
+   craftingToolTab = 512, -- (See DraftSchemticImplementation.h)
+   complexity = 9, 
+   size = 1, 
+
+   xpType = "crafting_structure_general", 
+   xp = 140, 
+
+   disableFactoryRun = true,
+
+   assemblySkill = "structure_assembly", 
+   experimentingSkill = "structure_experimentation", 
+   customizationSkill = "structure_customization", 
+
+   customizationOptions = {},
+   customizationStringNames = {},
+   customizationDefaults = {},
+
+   ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_furniture_ingredients_n", "craft_furniture_ingredients_n", "craft_furniture_ingredients_n"},
+   ingredientTitleNames = {"base", "circuit_boards", "wiring", "screens"},
+   ingredientSlotType = {0, 0, 0, 0},
+   resourceTypes = {"mineral", "fiberplast", "copper", "petrochem_inert_polymer"},
+   resourceQuantities = {60, 50, 30, 50},
+   contribution = {100, 100, 100, 100},
+
+
+   targetTemplate = "object/tangible/furniture/decorative/diagnostic_screen.iff",
+
+   additionalTemplates = {
+             }
 }
 
 ObjectTemplates:addTemplate(object_draft_schematic_furniture_furniture_diagnostic_screen, "object/draft_schematic/furniture/furniture_diagnostic_screen.iff")

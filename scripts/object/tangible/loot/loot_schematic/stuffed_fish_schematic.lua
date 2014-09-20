@@ -42,7 +42,12 @@
 
 
 object_tangible_loot_loot_schematic_stuffed_fish_schematic = object_tangible_loot_loot_schematic_shared_stuffed_fish_schematic:new {
-
+	templateType = LOOTSCHEMATIC,
+	objectMenuComponent = {"cpp", "LootSchematicMenuComponent"},
+	attributeListComponent = "LootSchematicAttributeListComponent",
+	requiredSkill = "crafting_chef_novice",
+	targetDraftSchematic = "object/draft_schematic/furniture/furniture_display_fish.iff",
+	targetUseCount = 5,
 }
 
 ObjectTemplates:addTemplate(object_tangible_loot_loot_schematic_stuffed_fish_schematic, "object/tangible/loot/loot_schematic/stuffed_fish_schematic.iff")

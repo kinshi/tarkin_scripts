@@ -43,6 +43,40 @@
 
 object_draft_schematic_furniture_furniture_bench_park = object_draft_schematic_furniture_shared_furniture_bench_park:new {
 
+   templateType = DRAFTSCHEMATIC,
+
+   customObjectName = "Park Bench",
+
+   craftingToolTab = 512, -- (See DraftSchemticImplementation.h)
+   complexity = 9, 
+   size = 1, 
+
+   xpType = "crafting_structure_general", 
+   xp = 140, 
+
+   disableFactoryRun = true,
+
+   assemblySkill = "structure_assembly", 
+   experimentingSkill = "structure_experimentation", 
+   customizationSkill = "structure_customization", 
+
+   customizationOptions = {},
+   customizationStringNames = {},
+   customizationDefaults = {},
+
+   ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_furniture_ingredients_n"},
+   ingredientTitleNames = {"frame", "bench"},
+   ingredientSlotType = {0, 0},
+   resourceTypes = {"mineral", "metal"},
+   resourceQuantities = {60, 75},
+   contribution = {100, 100},
+
+
+   targetTemplate = "object/tangible/furniture/decorative/park_bench.iff",
+
+   additionalTemplates = {
+             }
+
 }
 
 ObjectTemplates:addTemplate(object_draft_schematic_furniture_furniture_bench_park, "object/draft_schematic/furniture/furniture_bench_park.iff")

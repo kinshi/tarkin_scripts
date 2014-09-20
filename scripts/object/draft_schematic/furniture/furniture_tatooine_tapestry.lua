@@ -74,7 +74,17 @@ object_draft_schematic_furniture_furniture_tatooine_tapestry = object_draft_sche
 
    targetTemplate = "object/tangible/furniture/decorative/tatooine_tapestry.iff",
 
-   additionalTemplates = {
+   additionalTemplates = {	
+		"object/tangible/furniture/modern/shared_rug_rect_sml_s01.iff",
+		"object/tangible/furniture/modern/shared_rug_rect_m_s01.iff",
+		"object/tangible/furniture/modern/shared_rug_rect_lg_s02.iff", 
+		"object/tangible/furniture/all/shared_frn_all_rug_rectangle_large_style_05.iff",
+		"object/tangible/loot/misc/shared_green_rug.iff",
+		"object/tangible/furniture/all/shared_frn_all_rug_rectangle_large_style_03.iff",
+		"object/tangible/loot/misc/shared_brown_rug.iff",
+		"object/tangible/furniture/modern/shared_rug_rect_lg_s01.iff",
+		"object/tangible/furniture/modern/shared_rug_rnd_lg_s01.iff",
+		"object/tangible/furniture/modern/shared_rug_sqr_m_s01.iff",
              }
 
 }

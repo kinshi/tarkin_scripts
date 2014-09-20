@@ -43,6 +43,40 @@
 
 object_draft_schematic_furniture_furniture_command_console = object_draft_schematic_furniture_shared_furniture_command_console:new {
 
+   templateType = DRAFTSCHEMATIC,
+
+   customObjectName = "Command Console",
+
+   craftingToolTab = 512, -- (See DraftSchemticImplementation.h)
+   complexity = 9, 
+   size = 1, 
+
+   xpType = "crafting_structure_general", 
+   xp = 140, 
+
+   disableFactoryRun = true,
+
+   assemblySkill = "structure_assembly", 
+   experimentingSkill = "structure_experimentation", 
+   customizationSkill = "structure_customization", 
+
+   customizationOptions = {},
+   customizationStringNames = {},
+   customizationDefaults = {},
+
+   ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_furniture_ingredients_n", "craft_furniture_ingredients_n", "craft_furniture_ingredients_n"},
+   ingredientTitleNames = {"frame", "table_top", "electronics", "display"},
+   ingredientSlotType = {0, 0, 0, 0},
+   resourceTypes = {"metal", "mineral", "aluminum", "gemstone_crystalline"},
+   resourceQuantities = {50, 60, 50, 45},
+   contribution = {100, 100, 100, 100},
+
+
+   targetTemplate = "object/tangible/furniture/all/frn_all_command_console.iff",
+
+   additionalTemplates = {
+             }
+
 }
 
 ObjectTemplates:addTemplate(object_draft_schematic_furniture_furniture_command_console, "object/draft_schematic/furniture/furniture_command_console.iff")

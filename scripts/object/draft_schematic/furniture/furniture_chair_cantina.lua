@@ -75,6 +75,8 @@ object_draft_schematic_furniture_furniture_chair_cantina = object_draft_schemati
    targetTemplate = "object/tangible/furniture/tatooine/frn_tatt_chair_cantina_seat.iff",
 
    additionalTemplates = {
+		"object/tangible/furniture/tatooine/shared_frn_tatt_chair_cantina_seat_2.iff",
+		"object/tangible/furniture/tatooine/shared_frn_tatt_chair_cantina_seat_3.iff",
              }
 
 }

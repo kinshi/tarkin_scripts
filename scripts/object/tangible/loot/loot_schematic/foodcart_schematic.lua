@@ -42,7 +42,12 @@
 
 
 object_tangible_loot_loot_schematic_foodcart_schematic = object_tangible_loot_loot_schematic_shared_foodcart_schematic:new {
-
+	templateType = LOOTSCHEMATIC,
+	objectMenuComponent = {"cpp", "LootSchematicMenuComponent"},
+	attributeListComponent = "LootSchematicAttributeListComponent",
+	requiredSkill = "crafting_architect_production_04",
+	targetDraftSchematic = "object/draft_schematic/furniture/furniture_food_cart.iff",
+	targetUseCount = 1,
 }
 
 ObjectTemplates:addTemplate(object_tangible_loot_loot_schematic_foodcart_schematic, "object/tangible/loot/loot_schematic/foodcart_schematic.iff")

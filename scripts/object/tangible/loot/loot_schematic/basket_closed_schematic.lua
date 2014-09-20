@@ -47,7 +47,7 @@ object_tangible_loot_loot_schematic_basket_closed_schematic = object_tangible_lo
 	attributeListComponent = "LootSchematicAttributeListComponent",
 	requiredSkill = "crafting_architect_novice",
 	targetDraftSchematic = "object/draft_schematic/furniture/furniture_basket_closed.iff",
-	targetUseCount = 1,
+	targetUseCount = 5,
 }
 
 ObjectTemplates:addTemplate(object_tangible_loot_loot_schematic_basket_closed_schematic, "object/tangible/loot/loot_schematic/basket_closed_schematic.iff")
