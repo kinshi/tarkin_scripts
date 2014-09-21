@@ -6,7 +6,7 @@ hidden_dagger_common = {
 		{itemTemplate = "spinner_blade", weight = 2500000},
 		{itemTemplate = "skill_buff_carbine_accuracy", weight = 2500000},
 		{itemTemplate = "skill_buff_carbine_speed", weight = 2500000},
-		{groupTemplate = "wearables_common", weight = 2500000},
+		{groupTemplate = "misc_decoloot_schemes", weight = 2500000},
 	}
 }
 

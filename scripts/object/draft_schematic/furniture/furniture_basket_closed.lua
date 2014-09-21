@@ -75,6 +75,12 @@ object_draft_schematic_furniture_furniture_basket_closed = object_draft_schemati
    targetTemplate = "object/tangible/furniture/decorative/basket_closed.iff",
 
    additionalTemplates = {
+		"object/tangible/container/drum/shared_large_plain_crate_s01.iff",
+		"object/tangible/container/drum/shared_large_plain_crate_s02.iff",
+		"object/tangible/container/drum/shared_large_plain_crate_s04.iff",
+		"object/tangible/container/drum/shared_tatt_drum_1.iff",
+		"object/tangible/container/drum/shared_warren_drum_loot.iff",
+		"object/tangible/dungeon/shared_coal_bin_container.iff",
              }
 
 }

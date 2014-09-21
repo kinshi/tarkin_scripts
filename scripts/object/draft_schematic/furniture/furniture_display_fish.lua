@@ -43,6 +43,45 @@
 
 object_draft_schematic_furniture_furniture_display_fish = object_draft_schematic_furniture_shared_furniture_display_fish:new {
 
+   templateType = DRAFTSCHEMATIC,
+
+   customObjectName = "Stuffed Fish",
+
+   craftingToolTab = 512, -- (See DraftSchemticImplementation.h)
+   complexity = 15, 
+   size = 1, 
+
+   xpType = "crafting_general", 
+   xp = 250, 
+   
+  disableFactoryRun = true,
+
+   assemblySkill = "general_assembly", 
+   experimentingSkill = "general_experimentation", 
+   customizationSkill = "general_customization", 
+
+   customizationOptions = {},
+   customizationStringNames = {},
+   customizationDefaults = {},
+
+   ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_item_ingredients_n"},
+   ingredientTitleNames = {"fish", "preservative"},
+   ingredientSlotType = {0, 0},
+   resourceTypes = {"meat", "petrochem_inert_polymer"},
+   resourceQuantities = {25, 20},
+   contribution = {100, 100},
+
+
+   targetTemplate = "object/tangible/furniture/decorative/stuffed_fish.iff",
+
+   additionalTemplates = {
+		"object/tangible/food/shared_meat_object.iff",
+		"object/tangible/mission/quest_item/shared_brass_marshoo_q2_needed.iff",
+		"object/tangible/food/crafted/shared_dish_fried_endwa.iff",
+		"object/tangible/food/crafted/shared_dish_meatlump.iff",
+		"object/tangible/food/crafted/shared_dessert_corellian_fried_icecream.iff",
+             }
+
 }
 
 ObjectTemplates:addTemplate(object_draft_schematic_furniture_furniture_display_fish, "object/draft_schematic/furniture/furniture_display_fish.iff")

@@ -43,6 +43,39 @@
 
 object_draft_schematic_furniture_furniture_microphone_s01 = object_draft_schematic_furniture_shared_furniture_microphone_s01:new {
 
+   templateType = DRAFTSCHEMATIC,
+
+   customObjectName = "Microphone, Style 1",
+
+   craftingToolTab = 512, -- (See DraftSchemticImplementation.h)
+   complexity = 9, 
+   size = 1, 
+
+   xpType = "crafting_structure_general", 
+   xp = 140, 
+
+   disableFactoryRun = true,
+
+   assemblySkill = "structure_assembly", 
+   experimentingSkill = "structure_experimentation", 
+   customizationSkill = "structure_customization", 
+
+   customizationOptions = {},
+   customizationStringNames = {},
+   customizationDefaults = {},
+
+   ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_furniture_ingredients_n", "craft_furniture_ingredients_n", "craft_furniture_ingredients_n"},
+   ingredientTitleNames = {"base", "microphone_head", "microphone_handle", "wiring"},
+   ingredientSlotType = {0, 0, 0, 0},
+   resourceTypes = {"mineral", "petrochem_inert_polymer", "mineral", "copper"},
+   resourceQuantities = {30, 15, 45, 15},
+   contribution = {100, 100, 100, 100},
+
+
+   targetTemplate = "object/tangible/furniture/decorative/microphone_s01.iff",
+
+   additionalTemplates = {
+             }
 }
 
 ObjectTemplates:addTemplate(object_draft_schematic_furniture_furniture_microphone_s01, "object/draft_schematic/furniture/furniture_microphone_s01.iff")

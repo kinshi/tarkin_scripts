@@ -47,7 +47,7 @@ object_tangible_loot_loot_schematic_couch_blue_schematic = object_tangible_loot_
 	attributeListComponent = "LootSchematicAttributeListComponent",
 	requiredSkill = "crafting_architect_production_03",
 	targetDraftSchematic = "object/draft_schematic/furniture/furniture_couch_blue.iff",
-	targetUseCount = 1,
+	targetUseCount = 5,
 }
 
 ObjectTemplates:addTemplate(object_tangible_loot_loot_schematic_couch_blue_schematic, "object/tangible/loot/loot_schematic/couch_blue_schematic.iff")

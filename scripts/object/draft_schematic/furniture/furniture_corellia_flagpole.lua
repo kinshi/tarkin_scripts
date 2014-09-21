@@ -43,6 +43,50 @@
 
 object_draft_schematic_furniture_furniture_corellia_flagpole = object_draft_schematic_furniture_shared_furniture_corellia_flagpole:new {
 
+   templateType = DRAFTSCHEMATIC,
+
+   customObjectName = "Corellia Flagpole",
+
+   craftingToolTab = 512, -- (See DraftSchemticImplementation.h)
+   complexity = 18, 
+   size = 1, 
+
+   xpType = "crafting_clothing_general", 
+   xp = 340, 
+   
+   disableFactoryRun = true,
+
+   assemblySkill = "clothing_assembly", 
+   experimentingSkill = "clothing_experimentation", 
+   customizationSkill = "clothing_customization", 
+
+   customizationOptions = {},
+   customizationStringNames = {},
+   customizationDefaults = {},
+
+   ingredientTemplateNames = {"craft_furniture_ingredients_n", "craft_furniture_ingredients_n", "craft_furniture_ingredients_n", "craft_item_ingredients_n"},
+   ingredientTitleNames = {"flag_base", "flag", "paints", "flagpole"},
+   ingredientSlotType = {0, 0, 0, 0},
+   resourceTypes = {"metal", "fiberplast", "petrochem_inert_polymer", "metal"},
+   resourceQuantities = {30, 80, 25, 30},
+   contribution = {100, 100, 100, 100},
+
+
+   targetTemplate = "object/tangible/lair/base/objective_banner_corellia.iff",
+
+   additionalTemplates = {
+		"object/tangible/furniture/modern/shared_rug_rnd_sml_s01.iff",
+		"object/tangible/furniture/modern/shared_rug_rnd_m_s01.iff",
+		"object/tangible/furniture/modern/shared_rug_oval_sml_s01.iff",
+		"object/tangible/furniture/modern/shared_rug_oval_m_s02.iff",
+		"object/tangible/furniture/modern/shared_rug_oval_lg_s01.iff",
+		"object/tangible/loot/misc/shared_majestic_rug.iff",
+		"object/tangible/loot/misc/shared_casual_rug.iff",
+		"object/tangible/furniture/all/shared_frn_all_rug_rectangle_large_style_01.iff",
+		"object/tangible/furniture/all/shared_frn_all_rug_rectangle_large_style_02.iff",
+		"object/tangible/furniture/all/shared_frn_all_rug_rectangle_large_style_04.iff",
+             }
+
 }
 
 ObjectTemplates:addTemplate(object_draft_schematic_furniture_furniture_corellia_flagpole, "object/draft_schematic/furniture/furniture_corellia_flagpole.iff")
