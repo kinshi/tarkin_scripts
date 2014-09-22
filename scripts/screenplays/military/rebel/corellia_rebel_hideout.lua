@@ -1,18 +1,9 @@
-local ObjectManager = require("managers.object.object_manager")
 
 RebelHideoutScreenPlay = ScreenPlay:new {
 	numberOfActs = 1,
 
 	screenplayName = "RebelHideoutScreenPlay",
 
-	turrets = {
-		{ template = "object/installation/turret/turret_tower_large.iff", x = -6559.3, z = 404, y = 5965.1 },
-		{ template = "object/installation/turret/turret_tower_large.iff", x = -6536.3, z = 404, y = 5942.1 },
-		{ template = "object/installation/turret/turret_tower_large.iff", x = -6510.0, z = 404, y = 5931.7 },
-		{ template = "object/installation/turret/turret_tower_large.iff", x = -6474.8, z = 404, y = 5938.6 },
-		{ template = "object/installation/turret/turret_tower_large.iff", x = -6443.1, z = 404, y = 5999.0 },
-		{ template = "object/installation/turret/turret_tower_large.iff", x = -6457.1, z = 404, y = 6031.5 },
-	},
 
 }
 
@@ -23,40 +14,6 @@ function RebelHideoutScreenPlay:start()
 		self:spawnMobiles()
 		self:spawnSceneObjects()
 	end
-end
-
-function RebelHideoutScreenPlay:spawnSceneObjects()
-	for i = 1, 6, 1 do
-		local turretData = self.turrets[i]
-		local pTurret = spawnSceneObject("corellia", turretData.template, turretData.x, turretData.z, turretData.y, 0, 0.707107, 0, 0.707107, 0)
-
-		if pTurret ~= nil then
-			local turret = TangibleObject(pTurret)
-			turret:setFaction(FACTIONREBEL)
-			turret:setPvpStatusBitmask(1)
-		end
-
-		writeData(SceneObject(pTurret):getObjectID() .. ":rebel_hideout:turret_index", i)
-		createObserver(OBJECTDESTRUCTION, "RebelHideoutScreenPlay", "notifyTurretDestroyed", pTurret)
-	end
-	
-end
-
-function RebelHideoutScreenPlay:notifyTurretDestroyed(pTurret, pPlayer)
-	ObjectManager.withSceneObject(pTurret, function(turret)
-		local turretData = self.turrets[readData(turret:getObjectID() .. ":rebel_hideout:turret_index")]
-		turret:destroyObjectFromWorld()
-		createEvent(1800000, "RebelHideoutScreenPlay", "respawnTurret", pTurret)
-	end)
-	CreatureObject(pPlayer):clearCombatState(1)
-	return 0
-end
-
-function RebelHideoutScreenPlay:respawnTurret(pTurret)
-	TangibleObject(pTurret):setConditionDamage(0, false)
-	local turretData = self.turrets[readData(SceneObject(pTurret):getObjectID() .. ":rebel_hideout:turret_index")]
-	local pZone = getZoneByName("corellia")
-	SceneObject(pZone):transferObject(pTurret, -1, true)
 end
 
 function RebelHideoutScreenPlay:spawnMobiles()
@@ -76,7 +33,7 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	
 	--South Barricade
 	spawnMobile("corellia", "rebel_first_lieutenant", 300, -6548.290, 405.000, 5926.740, -103.284, 0)
-	spawnMobile("corellia", "rebel_army_captain", 300, -6548.200, 405.000, 5928.340, -129.786, 0)
+	spawnMobile("corellia", "rebel_commander", 300, -6548.200, 405.000, 5928.340, -129.786, 0)
 	spawnMobile("corellia", "rebel_commando", 300, -6502.670, 405.000, 5909.410, 175.100, 0)
 	spawnMobile("corellia", "rebel_corporal", 300, -6503.990, 405.000, 5911.760, 27.118, 0)
 	spawnMobile("corellia", "rebel_medic", 300, -6503.130, 405.000, 5912.200, 68.721, 0)
@@ -181,7 +138,7 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	--East Shuttle Pad
 	spawnMobile("corellia", "rebel_pilot", 300, -6463.900, 398.000, 5959.650, -171.915, 0)
 	spawnMobile("corellia", "rebel_pilot", 300, -6460.170, 398.000, 5948.910, 43.707, 0)
-	spawnMobile("corellia", "rebel_army_captain", 300, -6444.160, 398.000, 5970.670, -147.901, 0)
+	spawnMobile("corellia", "rebel_commander", 300, -6444.160, 398.000, 5970.670, -147.901, 0)
 	spawnMobile("corellia", "rebel_medic", 300, -6447.130, 398.000, 5973.380, 46.885, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6451.3, 398.0, 5975.9, -45, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6464.1, 398.0, 5963.1, 43, 0)
@@ -225,7 +182,7 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	
 	--Power Generator
 	spawnMobile("corellia", "rebel_scout", 300, -6533.410, 398.000, 6002.590, 98.259, 0)
-	spawnMobile("corellia", "rebel_army_captain", 300, -6537.930, 398.000, 5997.470, -177.213, 0)
+	spawnMobile("corellia", "rebel_commander", 300, -6537.930, 398.000, 5997.470, -177.213, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6509.8, 398.0, 6022.2, -5, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6514.4, 398.0, 6021.8, -45, 0)
 	spawnMobile("corellia", "sentry_specforce", 300, -6521.8, 398.0, 6014.0, -45, 0)
@@ -365,7 +322,56 @@ function RebelHideoutScreenPlay:spawnMobiles()
 	spawnMobile("corellia", "rebel_trooper", 300, 17.39, 1.01, -11.38, 0, 8555472)
 end
 
+function RebelHideoutScreenPlay:spawnSceneObjects()
+	
+	-- Turrets
+	local pTurret1 = spawnSceneObject("corellia", "object/installation/turret/turret_block_med.iff", -6559.3, 404, 5965.1, 0, -0.707107, 0, 0.707107, 0)
+	setTurretFaction(pTurret1)
 
+	local pTurret2 = spawnSceneObject("corellia", "object/installation/turret/turret_block_med.iff", -6536.3, 404, 5942.1, 0, -0.707107, 0, 0.707107, 0)
+	setTurretFaction(pTurret2)
+
+	local pTurret3 = spawnSceneObject("corellia", "object/installation/turret/turret_block_med.iff", -6510.0, 404, 5931.7, 0, -0.707107, 0, 0.707107, 0)
+	setTurretFaction(pTurret3)
+
+	local pTurret4 = spawnSceneObject("corellia", "object/installation/turret/turret_block_med.iff", -6474.8, 404, 5938.6, 0, 0.707107, 0, 0.707107, 0)
+	setTurretFaction(pTurret4)
+
+	local pTurret5 = spawnSceneObject("corellia", "object/installation/turret/turret_block_med.iff", -6443.1, 404, 5999.0, 0, 0.707107, 0, 0.707107, 0)
+	setTurretFaction(pTurret5)
+
+	local pTurret6 = spawnSceneObject("corellia", "object/installation/turret/turret_block_med.iff", -6457.1, 404, 6031.5, 0, 0.707107, 0, 0.707107, 0)
+	setTurretFaction(pTurret6)
+	
+	local pCollector = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -6528, 398.0, 6042, 0, 0, 0, 1, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(264)
+	collector:setCustomObjectName("\\#ee3377Travel to Anchorhead - Tatooine")
+	createObserver(OBJECTRADIALUSED, "RebelHideoutScreenPlay", "teleportAH", pCollector)
+
+	local pCollector2 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -6522, 398.0, 6043, 0, 0, 0, 1, 0)
+	local collector = LuaSceneObject(pCollector2)
+	local col2creo = LuaCreatureObject(pCollector2)
+	col2creo:setOptionsBitmask(264)
+	collector:setCustomObjectName("\\#ee3377Travel to Moenia Starport - Naboo")
+	createObserver(OBJECTRADIALUSED, "RebelHideoutScreenPlay", "teleportMoenia", pCollector2)
+	
+	local pCollector3 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -6532, 398.0, 6041, 0, 0, 0, 1, 0)
+	local collector = LuaSceneObject(pCollector3)
+	local col2creo = LuaCreatureObject(pCollector3)
+	col2creo:setOptionsBitmask(264)
+	collector:setCustomObjectName("\\#ee3377Travel to Talus Installation - Talus")
+	createObserver(OBJECTRADIALUSED, "RebelHideoutScreenPlay", "teleportTalus", pCollector3)
+end
+
+function setTurretFaction(pTurret)
+	if pTurret ~= nil then
+		local turret = LuaTangibleObject(pTurret)
+		turret:setFaction(FACTIONREBEL)
+		turret:setPvpStatusBitmask(1)
+	end
+end
 
 --travel functions
 
