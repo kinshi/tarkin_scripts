@@ -67,3 +67,10 @@ includeFile("lair/npc_mission/valarian_camp.lua")
 includeFile("lair/npc_mission/valarian_swooper_camp.lua")
 includeFile("lair/npc_mission/weequay_tribe_camp.lua")
 
+--Tarkin Specific, Re-adding Missing Lairs
+includeFile("lair/npc_mission/corellia_hidden_daggers_camp.lua")
+includeFile("lair/npc_mission/corellia_meatlump_camp.lua")
+includeFile("lair/npc_mission/corellia_drall_patriot_camp.lua")
+includeFile("lair/npc_mission/dantooine_kunga_scout.lua")
+includeFile("lair/npc_mission/dantooine_janta_scout.lua")
+includeFile("lair/npc_mission/dantooine_mokk_scout.lua")

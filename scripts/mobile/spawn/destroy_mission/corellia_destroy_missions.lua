@@ -1,5 +1,5 @@
 corellia_destroy_missions = {
-
+	
 	lairSpawns = {
 		{
 			lairTemplateName = "corellia_gubbur_lair_neutral_small",
@@ -78,7 +78,7 @@ corellia_destroy_missions = {
 			minDifficulty = 9,
 			maxDifficulty = 12,
 			size = 25,
-		},		
+		},	
 		{
 			lairTemplateName = "corellia_gulginaw_nest_neutral_medium",
 			minDifficulty = 11,
@@ -97,6 +97,68 @@ corellia_destroy_missions = {
 			maxDifficulty = 21,
 			size = 25,
 		},
+
+--Tarkin Specific, Re-Adding Missing Lairs
+		{
+			lairTemplateName = "corellia_murra_lair_neutral_medium",
+			minDifficulty = 9,
+			maxDifficulty = 12,
+			size = 25,
+		},
+		{
+			lairTemplateName = "corellia_gurrcat_lair_neutral_medium",
+			minDifficulty = 9,
+			maxDifficulty = 13,
+			size = 25,
+		},
+		{
+			lairTemplateName = "corellia_drall_patriot_camp",
+			minDifficulty = 10,
+			maxDifficulty = 16,
+			size = 25,
+		},	
+		{
+			lairTemplateName = "corellia_dire_cat_pack_neutral_none",
+			minDifficulty = 12,
+			maxDifficulty = 16,
+			size = 25,
+		},
+		{
+			lairTemplateName = "corellia_giant_carrion_spat_flock_neutral_none",
+			minDifficulty = 15,
+			maxDifficulty = 21,
+			size = 25,
+		},
+		{
+			lairTemplateName = "corellia_deranged_wrix_pack_neutral_none",
+			minDifficulty = 16,
+			maxDifficulty = 21,
+			size = 25,
+		},
+		{
+			lairTemplateName = "corellia_humbaba_herd_neutral_none",
+			minDifficulty = 16,
+			maxDifficulty = 21,
+			size = 25,
+		},
+		{
+			lairTemplateName = "corellia_sharnaff_lair_neutral_large",
+			minDifficulty = 28,
+			maxDifficulty = 34,
+			size = 25,
+		},
+		{
+			lairTemplateName = "corellia_hidden_daggers_camp",
+			minDifficulty = 9,
+			maxDifficulty = 15,
+			size = 25,
+		},
+		{
+			lairTemplateName = "corellia_meatlump_camp",
+			minDifficulty = 8,
+			maxDifficulty = 11,
+			size = 25,
+		},	
 	}
 }
 

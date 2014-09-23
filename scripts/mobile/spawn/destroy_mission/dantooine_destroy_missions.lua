@@ -1,7 +1,7 @@
 dantooine_destroy_missions = {
 
 	lairSpawns = {
-		{
+--[[		{
 			lairTemplateName = "dantooine_bol_lair_neutral_medium_boss_01",
 			minDifficulty = 24,
 			maxDifficulty = 32,
@@ -59,6 +59,26 @@ dantooine_destroy_missions = {
 			lairTemplateName = "dantooine_voritor_tracker_lair_neutral_medium",
 			minDifficulty = 40,
 			maxDifficulty = 50,
+			size = 25,
+		},
+
+--Tarkin Specific, Re-Adding Missing Lairs
+--]]		{
+			lairTemplateName = "dantooine_mokk_scout",
+			minDifficulty = 24,
+			maxDifficulty = 32,
+			size = 25,
+		},
+		{
+			lairTemplateName = "dantooine_kunga_scout",
+			minDifficulty = 24,
+			maxDifficulty = 32,
+			size = 25,
+		},
+		{
+			lairTemplateName = "dantooine_janta_scout",
+			minDifficulty = 24,
+			maxDifficulty = 32,
 			size = 25,
 		},
 	}
