@@ -110,7 +110,7 @@ end
 function ThemeParkLogic:setCellPermissions(permissions, pCreature)
 	ObjectManager.withCreaturePlayerObject(pCreature, function(ghost)
 		for i = 1, # permissions.permissions, 1 do
-			if self:hasPermission(permissions.permissions[i].conditions, pCreature) == true then
+			if self:hasPermission(permissions.permissions[i].conditions, pCreature) == true or ghost:isPrivileged() then
 				ghost:addPermissionGroup(permissions.regionName .. i, true)
 			else
 				ghost:removePermissionGroup(permissions.regionName .. i, true)
@@ -128,6 +128,7 @@ end
 
 function ThemeParkLogic:hasPermission(conditions, pCreature)
 	local hasPermission = true
+
 	for i = 1, # conditions, 1 do
 		if conditions[i].permissionType == "faction" then
 			if conditions[i].faction ~= nil then
@@ -362,6 +363,7 @@ function ThemeParkLogic:getMission(npcNumber, missionNumber)
 
 	if (npcData == nil) then
 		printf("null npcData in ThemeParkLogic:getMission for %s", self.className);
+		return nil
 	end
 
 	local missions = npcData.missions
@@ -1474,9 +1476,13 @@ function ThemeParkLogic:getMissionType(activeNpcNumber, pConversingPlayer)
 		return
 	end
 
-	local npcNumber = self:getActiveNpcNumber(pConversingPlayer)
-	local missionNumber = self:getCurrentMissionNumber(npcNumber, pConversingPlayer)
-	local mission = self:getMission(npcNumber, missionNumber)
+	local missionNumber = self:getCurrentMissionNumber(activeNpcNumber, pConversingPlayer)
+
+	if missionNumber == 0 then
+		return ""
+	end
+
+	local mission = self:getMission(activeNpcNumber, missionNumber)
 
 	return mission.missionType
 end
@@ -1495,13 +1501,15 @@ function ThemeParkLogic:resetThemePark(pConversingPlayer)
 	-- reset currnt missions
 	self:resetCurrentMission(pConversingPlayer)
 	-- wipe all missions out
-	ObjectManager.withCreatureAndPlayerObject(pConversingPlayer, function(creature, player)
+	ObjectManager.withCreatureObject(pConversingPlayer, function(creature)
 		-- clear the root state
-		clearScreenPlayData(player,self.screenPlayState)
+		local state = creature:getScreenPlayState(self.screenPlayState)
+		creature:removeScreenPlayState(state, self.screenPlayState)
 		-- clear all missions	
 		for i = 1, #self.npcMap do
 			local name = self.npcMap[i].spawnData.npcTemplate
-			clearScreenPlayData(player,self.screenPlayState .. "_mission_" .. npcName)
+			local npcState = creature:getScreenPlayState(self.screenPlayState .. "_mission_" .. name)
+			creature:removeScreenPlayState(npcState, self.screenPlayState .. "_mission_" .. name)
 		end
 	end)
 end
