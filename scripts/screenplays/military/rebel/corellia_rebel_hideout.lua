@@ -26,6 +26,28 @@ function RebelHideoutScreenPlay:start()
 end
 
 function RebelHideoutScreenPlay:spawnSceneObjects()
+
+	local pCollector = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -6528, 398.0, 6042, 0, 0, 0, 1, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(264)
+	collector:setCustomObjectName("\\#ee3377Travel to Anchorhead - Tatooine")
+	createObserver(OBJECTRADIALUSED, "RebelHideoutScreenPlay", "teleportAH", pCollector)
+
+	local pCollector2 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -6522, 398.0, 6043, 0, 0, 0, 1, 0)
+	local collector = LuaSceneObject(pCollector2)
+	local col2creo = LuaCreatureObject(pCollector2)
+	col2creo:setOptionsBitmask(264)
+	collector:setCustomObjectName("\\#ee3377Travel to Moenia Starport - Naboo")
+	createObserver(OBJECTRADIALUSED, "RebelHideoutScreenPlay", "teleportMoenia", pCollector2)
+	
+	local pCollector3 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -6532, 398.0, 6041, 0, 0, 0, 1, 0)
+	local collector = LuaSceneObject(pCollector3)
+	local col2creo = LuaCreatureObject(pCollector3)
+	col2creo:setOptionsBitmask(264)
+	collector:setCustomObjectName("\\#ee3377Travel to Talus Installation - Talus")
+	createObserver(OBJECTRADIALUSED, "RebelHideoutScreenPlay", "teleportTalus", pCollector3)
+
 	for i = 1, 6, 1 do
 		local turretData = self.turrets[i]
 		local pTurret = spawnSceneObject("corellia", turretData.template, turretData.x, turretData.z, turretData.y, 0, 0.707107, 0, 0.707107, 0)
@@ -39,7 +61,8 @@ function RebelHideoutScreenPlay:spawnSceneObjects()
 		writeData(SceneObject(pTurret):getObjectID() .. ":rebel_hideout:turret_index", i)
 		createObserver(OBJECTDESTRUCTION, "RebelHideoutScreenPlay", "notifyTurretDestroyed", pTurret)
 	end
-	
+
+
 end
 
 function RebelHideoutScreenPlay:notifyTurretDestroyed(pTurret, pPlayer)
