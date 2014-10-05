@@ -2,7 +2,7 @@ local ObjectManager = require("managers.object.object_manager")
 includeFile("recruiters/factionPerkData.lua")
 
 recruiterScreenplay = Object:new {
-	minimumFactionStanding = 0,
+	minimumFactionStanding = 200,
 
 	factionHashCode = { rebel = 370444368, imperial = 3679112276 },
 
@@ -44,6 +44,10 @@ function recruiterScreenplay:getRecruiterFactionHashCode(pNpc)
 end
 
 function recruiterScreenplay:getRecruiterFaction(pNpc)
+	if pNpc == nil then
+		return nil
+	end
+
 	return self:getFactionFromHashCode(TangibleObject(pNpc):getFaction())
 end
 
@@ -181,9 +185,10 @@ function recruiterScreenplay:getUniformsOptions(faction, gcwDiscount, smugglerDi
 	local factionRewardData = self:getFactionDataTable(faction)
 	for k,v in pairs(factionRewardData.uniformList) do
 		if ( factionRewardData.uniforms[v] ~= nil and factionRewardData.uniforms[v].display ~= nil and factionRewardData.uniforms[v].cost ~= nil ) then
-			table.insert(optionsTable, self:generateSuiString(factionRewardData.imperialUniforms[v].display, math.ceil(factionRewardData.imperialUniforms[v].cost * gcwDiscount * smugglerDiscount)))
+			table.insert(optionsTable, self:generateSuiString(factionRewardData.uniforms[v].display, math.ceil(factionRewardData.uniforms[v].cost * gcwDiscount * smugglerDiscount)))
 		end
 	end
+	return optionsTable
 end
 
 function recruiterScreenplay:generateSuiString(item, cost)
@@ -218,6 +223,22 @@ function recruiterScreenplay:getTemplatePath(faction, itemString)
 		return factionRewardData.installations[itemString].item
 	elseif self:isHireling(faction, itemString) then
 		return factionRewardData.hirelings[itemString].item
+	end
+	return nil
+end
+
+function recruiterScreenplay:getDisplayName(faction, itemString)
+	local factionRewardData = self:getFactionDataTable(faction)
+	if self:isWeapon(faction, itemString) or self:isArmor(faction, itemString) then
+		return factionRewardData.weaponsArmor[itemString].display
+	elseif self:isUniform(faction, itemString) then
+		return factionRewardData.uniforms[itemString].display
+	elseif self:isFurniture(faction, itemString) then
+		return factionRewardData.furniture[itemString].display
+	elseif self:isInstallation(faction, itemString) then
+		return factionRewardData.installations[itemString].display
+	elseif self:isHireling(faction, itemString) then
+		return factionRewardData.hirelings[itemString].display
 	end
 	return nil
 end
@@ -259,6 +280,7 @@ function recruiterScreenplay:sendPurchaseSui(pNpc, pPlayer, screenID)
 	local faction = self:getRecruiterFaction(pNpc)
 	local gcwDiscount = getGCWDiscount(pPlayer)
 	local smugglerDiscount = self:getSmugglerDiscount(pPlayer)
+
 	writeStringData(CreatureObject(pPlayer):getObjectID() .. ":faction_purchase", screenID)
 	local suiManager = LuaSuiManager()
 	local options = { }
@@ -306,22 +328,7 @@ function recruiterScreenplay:handleSuiPurchase(pCreature, pSui, cancelPressed, a
 			messageString = LuaStringIdChatParameter("@faction_recruiter:item_purchase_complete")
 		end
 
-		if self:isArmor(faction, itemString) or self:isUniform(faction, itemString) then
-			messageString:setTT("@wearables_name:" .. itemString)
-		elseif self:isWeapon(faction, itemString) then
-			messageString:setTT("@weapon_name:" .. itemString)
-		elseif self:isFurniture(faction, itemString) and self:isContainer(faction, itemString) then
-			messageString:setTT("container_name",itemString)
-		elseif self:isFurniture(faction, itemString) and not self:isContainer(faction, itemString) then
-			if self:isTerminal(faction, itemString) then
-				itemString = "frn_data_terminal"
-			end
-			messageString:setTT("@frn_n:"  .. itemString)
-		elseif self:isInstallation(faction, itemString) then
-			messageString:setTT("@deed:" .. itemString)
-		elseif self:isHireling(faction, itemString) then
-			messageString:setTT("@mob/creature_names:" .. itemString)
-		end
+		messageString:setTT(self:getDisplayName(faction, itemString))
 		CreatureObject(pCreature):sendSystemMessage(messageString:_getObject())
 	elseif (awardResult == self.errorCodes.INVENTORYFULL) then
 		CreatureObject(pCreature):sendSystemMessage("@dispenser:inventory_full") -- Your inventory is full. You must make some room before you can purchase.
@@ -329,6 +336,11 @@ function recruiterScreenplay:handleSuiPurchase(pCreature, pSui, cancelPressed, a
 		CreatureObject(pCreature):sendSystemMessage("@faction_recruiter:datapad_full") -- Your datapad is full. You must first free some space.
 	elseif (awardResult == self.errorCodes.TOOMANYHIRELINGS) then
 		CreatureObject(pCreature):sendSystemMessage("@faction_recruiter:too_many_hirelings") -- You already have too much under your command.
+	elseif (awardResult == self.errorCodes.NOTENOUGHFACTION) then
+		local messageString = LuaStringIdChatParameter("@faction_recruiter:not_enough_standing_spend")
+		messageString:setDI(self.minimumFactionStanding)
+		messageString:setTO(self:toTitleCase(faction))
+		CreatureObject(pCreature):sendSystemMessage(messageString:_getObject()) -- You do not have enough faction standing to spend. You must maintain at least %DI to remain part of the %TO faction.
 	elseif ( awardResult == self.errorCodes.ITEMCOST ) then
 		CreatureObject(pCreature):sendSystemMessage("Error determining cost of item. Please post a bug report regarding the item you attempted to purchase.")
 	elseif ( awardResult == self.errorCodes.INVENTORYERROR or awardResult == self.DATAPADERROR) then
@@ -343,7 +355,6 @@ function recruiterScreenplay:awardItem(pPlayer, faction, itemString)
 		local pInventory = SceneObject(pPlayer):getSlottedObject("inventory")
 
 		local factionStanding = playerObject:getFactionStanding(faction)
-
 		local itemCost = self:getItemCost(faction, itemString)
 
 		if itemCost == nil then
@@ -354,7 +365,7 @@ function recruiterScreenplay:awardItem(pPlayer, faction, itemString)
 		
 		itemCost  = math.ceil(itemCost *  getGCWDiscount(pPlayer) * self:getSmugglerDiscount(pPlayer))
 
-		if (factionStanding  < (itemCost + 200)) then
+		if (factionStanding < (itemCost + self.minimumFactionStanding)) then
 			return self.errorCodes.NOTENOUGHFACTION
 		end
 
@@ -390,6 +401,15 @@ function recruiterScreenplay:awardItem(pPlayer, faction, itemString)
 	end)
 end
 
+function recruiterScreenplay:toTitleCase(str)
+	local buf = {}
+	for word in string.gfind(str, "%S+") do
+		local first, rest = string.sub(word, 1, 1), string.sub(word, 2)
+		table.insert(buf, string.upper(first) .. string.lower(rest))
+	end
+	return table.concat(buf, " ")
+end
+
 function recruiterScreenplay:awardData(pPlayer, faction, itemString)
 	return ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
 		local pDatapad = SceneObject(pPlayer):getSlottedObject("datapad")
@@ -401,11 +421,14 @@ function recruiterScreenplay:awardData(pPlayer, faction, itemString)
 			return self.errorCodes.DATAPADERROR
 		elseif itemCost == nil then
 			return self.errorCodes.ITEMCOST
-		elseif factionStanding  < (itemCost + 200) then
-			return self.errorCodes.NOTENOUGHFACTION
 		end
 
 		itemCost  = math.ceil(itemCost *  getGCWDiscount(pPlayer) * self:getSmugglerDiscount(pPlayer))
+
+		if factionStanding < (itemCost + self.minimumFactionStanding) then
+			return self.errorCodes.NOTENOUGHFACTION
+		end
+
 		local slotsRemaining = SceneObject(pDatapad):getContainerVolumeLimit() - SceneObject(pDatapad):getContainerObjectsSize()
 		local bonusItemCount = self:getBonusItemCount(faction, itemString)
 
@@ -519,7 +542,7 @@ function recruiterScreenplay:getItemListTable(faction, screenID)
 	elseif screenID == "fp_installations" then
 		return dataTable.installationsList
 	elseif screenID == "fp_uniforms" then
-		return dataTable.uniformsList
+		return dataTable.uniformList
 	elseif screenID == "fp_hirelings" then
 		return dataTable.hirelingList
 	end

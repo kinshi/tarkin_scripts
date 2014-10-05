@@ -11,26 +11,8 @@ factionRewardType = {
 
 rebelRewardData = {
 	weaponsArmorList = {
-
-		"armor_marine_backpack",
-		"armor_marine_helmet",
-		"armor_marine_chest_plate",
-		"armor_marine_leggings",
-		"armor_rebel_commando_helmet",
-		"armor_marine_boots",
-		"armor_marine_bicep_l",
-		"armor_marine_bicep_r",
-		"carbine_laser",
-		"pistol_scout_blaster",
-		"lance_staff_metal",
-		"armor_kashyyykian_hunting_bracer_l",
-		"armor_kashyyykian_hunting_bracer_r",
-		"armor_kashyyykian_hunting_chest_plate",
-		"armor_kashyyykian_hunting_leggings",
---		"armor_rebel_commando_helmet",
-		"rocket_launcher",
-		"mine_drx",
-		"mine_xg",
+		"armor_marine_backpack", "armor_marine_helmet", "armor_marine_chest_plate", "armor_marine_leggings", "armor_marine_boots", "armor_marine_bicep_l",
+		"armor_marine_bicep_r", "carbine_laser", "pistol_scout_blaster", "lance_staff_metal", "rocket_launcher", "mine_drx", "mine_xg",
 	},
 
 	weaponsArmor = {
@@ -46,37 +28,14 @@ rebelRewardData = {
 		metal_staff = { index=9, type=factionRewardType.weapon, display="@weapon_name:sword_02", item="object/weapon/ranged/melee/sword/sword_02.iff", cost=1000},
 		rocket_launcher = { index=10, type=factionRewardType.weapon, display="@weapon_name:rocket_launcher", item="object/weapon/ranged/heavy/heavy_rocket_launcher.iff", cost=5000},
 		lance_staff_metal = { index=11, type=factionRewardType.weapon, display="@weapon_name:lance_staff_metal", item="object/weapon/melee/polearm/lance_staff_metal.iff", cost=1000},
-		armor_kashyyykian_hunting_bracer_l = { index=12, type=c, display="@wearables_name:armor_kashyyykian_hunting_bracer_l", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_l.iff",cost=2000},
-		armor_kashyyykian_hunting_bracer_r = { index=13, type=factionRewardType.armor, display="@wearables_name:armor_kashyyykian_hunting_bracer_r", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_r.iff",cost=2000},
-		armor_kashyyykian_hunting_chest_plate = { index=14, type=factionRewardType.armor, display="@wearables_name:armor_kashyyykian_hunting_chest_plate", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_chest_plate.iff",cost=4000},
-		armor_kashyyykian_hunting_leggings = { index=15, type=factionRewardType.armor, display="@wearables_name:armor_kashyyykian_hunting_leggings", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_leggings.iff",cost=3000},
---		armor_rebel_commando_helmet = { index=16, type=factionRewardType.armor, display="Rebel Commando Helmet", item="object/tangible/wearables/helmet/helmet_s06.iff",cost=3000},		
 		mine_drx = { type=factionRewardType.weapon, display="@weapon_name:mine_drx", item="object/weapon/mine/wp_mine_drx55.iff", cost=350},
 		mine_xg = { type=factionRewardType.weapon, display="@weapon_name:mine_xg", item="object/weapon/mine/wp_mine_xg.iff", cost=350},
-
 	},
 
 	installationsList = {
-		"hq_s01_pvp_rebel",
-		"hq_s01_rebel",
-		"hq_s02_pvp_rebel",
-		"hq_s02_rebel",
-		"hq_s03_pvp_rebel",
-		"hq_s03_rebel",
-		"hq_s04_pvp_rebel",
-		"hq_s04_rebel",
-		 --"hq_s05_pvp_rebel",
-		"turret_block_lg",
-		"turret_block_med",
-		"turret_block_sm",
-		"turret_dish_sm",
-		"turret_dish_med",
-		"turret_dish_lg",
-		"turret_tower_sm",
-		"turret_tower_med",
-		"turret_tower_lg",
+		"hq_s01_pvp_rebel", "hq_s01_rebel", "hq_s02_pvp_rebel", "hq_s02_rebel", "hq_s03_pvp_rebel", "hq_s03_rebel", "hq_s04_pvp_rebel", "hq_s04_rebel", --"hq_s05_pvp_rebel",
+		"turret_block_lg", "turret_block_med", "turret_block_sm", "turret_dish_sm", "turret_dish_med", "turret_dish_lg", "turret_tower_sm", "turret_tower_med", "turret_tower_lg",
 		"minefield_1x1",
-		"rebel_spire",
 	},
 
 	installations = {
@@ -100,22 +59,10 @@ rebelRewardData = {
 		turret_tower_lg = { type=factionRewardType.installation, display="@deed:turret_tower_lg", item="object/tangible/deed/faction_perk/turret/tower_lg_deed.iff", generatedObjectTemplate="object/installation/faction_perk/turret/tower_lg.iff", cost=6300 },
 		covert_detector_32m = { type=factionRewardType.installation, display="@deed:covert_detector_32m", item="object/tangible/deed/faction_perk/covert_detector/detector_32m_deed.iff", generatedObjectTemplate="object/installation/faction_perk/covert_detector/detector_base.iff", cost=3000 },
 		minefield_1x1 = { type=factionRewardType.installation, display="@deed:minefield_1x1", item="object/tangible/deed/faction_perk/minefield/field_1x1_deed.iff", generatedObjectTemplate="object/installation/faction_perk/minefield/field_1x1.iff", cost=5000 },
---		rebel_spire = { type=factionRewardType.installation, display="Rebel Spire Schematic", item="object/tangible/loot/loot_schematic/rebel_house_loot_schem.iff",
---			generatedObjectTemplate="object/building/player/rebel_house.iff", cost=10000 },
 	},
 
 	furnitureList = {
-		"tech_armoire",
-		"tech_bookcase",
-		"frn_cabinet",
-		"chair_s01",
-		"tech_chest",
-		"frn_coffee_table",
-		"frn_couch",
-		"frn_end_table",
-		"table_s1",
-		"data_terminal_s1",
-		"data_terminal_s2",
+		"data_terminal_s1", "data_terminal_s2", "tech_armoire", "tech_bookcase", "frn_cabinet", "tech_chair", "tech_chest", "frn_coffee_table", "frn_couch", "frn_end_table"
 	},
 
 	furniture = {
@@ -133,22 +80,9 @@ rebelRewardData = {
 	},
 
 	hirelingList = {
-		"rebel_trooper",
-		"senior_specforce_heavy_weapons_specialist",
-		"senior_specforce_infiltrator",
-		"senior_specforce_marine",
-		"senior_specforce_pathfinder",
-		"senior_specforce_technician",
-		"senior_specforce_urban_guerrilla",
-		"senior_specforce_wilderness_fighter",
-		"specforce_heavy_weapons_specialist",
-		"specforce_infiltrator",
-		"specforce_interrogator",
-		"specforce_marine",
-		"specforce_procurement_specialist",
-		"specforce_technician",
-		"specforce_wilderness_operative",
-		"rebel_specforce_guerrilla",
+		"rebel_trooper", "senior_specforce_heavy_weapons_specialist", "senior_specforce_infiltrator", "senior_specforce_marine", "senior_specforce_pathfinder", "senior_specforce_technician",
+		"senior_specforce_urban_guerrilla", "senior_specforce_wilderness_fighter", "specforce_heavy_weapons_specialist", "specforce_infiltrator", "specforce_interrogator", "specforce_marine",
+		"specforce_procurement_specialist", "specforce_technician",	"specforce_wilderness_operative", "rebel_specforce_guerrilla",
 	},
 
 	hirelings = {
@@ -173,22 +107,9 @@ rebelRewardData = {
 
 imperialRewardData = {
 	weaponsArmorList = {
-		"armor_stormtrooper_helmet",
-		"armor_stormtrooper_chest_plate",
-		"armor_stormtrooper_leggings",
-		"armor_stormtrooper_boots",
-		"armor_stormtrooper_bicep_l",
-		"armor_stormtrooper_bicep_r",
-		"armor_stormtrooper_bracer_l",
-		"armor_stormtrooper_bracer_r",
-		"armor_stormtrooper_gloves",
-		"armor_stormtrooper_utility_belt",
-		"carbine_e11",
-		"pistol_power5",
-		"sword_02",
-		"rocket_launcher",
-		"mine_drx",
-		"mine_xg",
+		"armor_stormtrooper_helmet", "armor_stormtrooper_chest_plate", "armor_stormtrooper_leggings", "armor_stormtrooper_boots", "armor_stormtrooper_bicep_l", "armor_stormtrooper_bicep_r",
+		"armor_stormtrooper_bracer_l", "armor_stormtrooper_bracer_r", "armor_stormtrooper_gloves", "armor_stormtrooper_utility_belt", "carbine_e11", "pistol_power5", "sword_02",
+		"rocket_launcher", "mine_drx", "mine_xg",
 	},
 
 	weaponsArmor = {
@@ -203,10 +124,6 @@ imperialRewardData = {
 		armor_stormtrooper_bracer_r = { type=factionRewardType.armor, display="@wearables_name:armor_stormtrooper_bracer_r", item="object/tangible/wearables/armor/stormtrooper/armor_stormtrooper_bracer_r.iff",cost=1400},
 		armor_stormtrooper_gloves = { type=factionRewardType.armor, display="@wearables_name:armor_stormtrooper_gloves", item="object/tangible/wearables/armor/stormtrooper/armor_stormtrooper_gloves.iff",cost=1400},
 		armor_stormtrooper_utility_belt = { type=factionRewardType.armor, display="@wearables_name:armor_stormtrooper_utility_belt", item="object/tangible/wearables/armor/stormtrooper/armor_stormtrooper_utility_belt.iff",cost=1400},
-		armor_kashyyykian_hunting_bracer_l = { type=factionRewardType.armor, display="@wearables_name:armor_kashyyykian_hunting_bracer_l", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_l.iff",cost=2000},
-		armor_kashyyykian_hunting_bracer_r = { type=factionRewardType.armor, display="@wearables_name:armor_kashyyykian_hunting_bracer_r", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_r.iff",cost=2000},
-		armor_kashyyykian_hunting_chest_plate = { type=factionRewardType.armor, display="@wearables_name:armor_kashyyykian_hunting_chest_plate", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_chest_plate.iff",cost=4000},
-		armor_kashyyykian_hunting_leggings = { type=factionRewardType.armor, display="@wearables_name:armor_kashyyykian_hunting_leggings", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_leggings.iff",cost=3000},
 		pistol_power5 = { type=factionRewardType.weapon, display="@weapon_name:pistol_power5", item="object/weapon/ranged/pistol/pistol_power5.iff", cost=700},
 		carbine_e11 = { type=factionRewardType.weapon, display="@weapon_name:carbine_e11", item="object/weapon/ranged/carbine/carbine_e11.iff", cost=1050},
 		sword_02 = { type=factionRewardType.weapon, display="@weapon_name:sword_02", item="object/weapon/melee/sword/sword_02.iff", cost=600},
@@ -216,38 +133,20 @@ imperialRewardData = {
 	},
 
 	uniformList = {
-		"boots_s14",
-		"hat_imp_s01",
-		"jacket_s03",
-		"pants_s15",
+		"boots_s14", "hat_imp_s01", "jacket_s03", "pants_s15",
 	},
 
 	uniforms = {
-		boots_s14 = { type=factionRewardType.uniform, display="Boots", item="object/tangible/wearables/boots/boots_s14.iff", cost=140 },
+		boots_s14 = { type=factionRewardType.uniform, display="@wearables_name:boots_s14", item="object/tangible/wearables/boots/boots_s14.iff", cost=140 },
 		hat_imp_s01 = { type=factionRewardType.uniform, display="@wearables_name:hat_imp_s01", item="object/tangible/wearables/hat/hat_imp_s01.iff", cost=140 },
-		jacket_s03 = { type=factionRewardType.uniform, display="Jacket", item="object/tangible/wearables/jacket/jacket_s03.iff", cost=140 },
-		pants_s15  = { type=factionRewardType.uniform, display="Pants", item="object/tangible/wearables/pants/pants_s15.iff", cost=140 },
+		jacket_s03 = { type=factionRewardType.uniform, display="@wearables_name:jacket_s03", item="object/tangible/wearables/jacket/jacket_s03.iff", cost=140 },
+		pants_s15  = { type=factionRewardType.uniform, display="@wearables_name:pants_s15", item="object/tangible/wearables/pants/pants_s15.iff", cost=140 },
 	},
 
 	installationsList = {
-		"hq_s01_pvp_imperial",
-		"hq_s01_imperial",
-		"hq_s02_pvp_imperial",
-		"hq_s02_imperial",
-		"hq_s03_pvp_imperial",
-		"hq_s03_imperial",
-		"hq_s04_pvp_imperial",
-		"hq_s04_imperial",
+		"hq_s01_pvp_imperial", "hq_s01_imperial", "hq_s02_pvp_imperial", "hq_s02_imperial", "hq_s03_pvp_imperial", "hq_s03_imperial", "hq_s04_pvp_imperial", "hq_s04_imperial",
 		--"hq_s05_pvp_imperial",
-		"turret_block_lg",
-		"turret_block_med",
-		"turret_block_sm",
-		"turret_dish_sm",
-		"turret_dish_med",
-		"turret_dish_lg",
-		"turret_tower_sm",
-		"turret_tower_med",
-		"turret_tower_lg",
+		"turret_block_lg", "turret_block_med", "turret_block_sm", "turret_dish_sm", "turret_dish_med", "turret_dish_lg", "turret_tower_sm", "turret_tower_med", "turret_tower_lg",
 		--"covert_detector_32m",
 		"minefield_1x1",
 	},
@@ -273,25 +172,11 @@ imperialRewardData = {
 		turret_tower_lg = { type=factionRewardType.installation, display="@deed:turret_tower_lg", item="object/tangible/deed/faction_perk/turret/tower_lg_deed.iff", generatedObjectTemplate="object/installation/faction_perk/turret/tower_lg.iff", cost=6300 },
 		covert_detector_32m = { type=factionRewardType.installation, display="@deed:covert_detector_32m", item="object/tangible/deed/faction_perk/covert_detector/detector_32m_deed.iff", generatedObjectTemplate="object/installation/faction_perk/covert_detector/detector_base.iff", cost=3000 },
 		minefield_1x1 = { type=factionRewardType.installation, display="@deed:minefield_1x1", item="object/tangible/deed/faction_perk/minefield/field_1x1_deed.iff", generatedObjectTemplate="object/installation/faction_perk/minefield/field_1x1.iff", cost=350 },
---		emperors_spire = { type=factionRewardType.armor, display="Emperor's Spire Schematic", item="object/tangible/loot/loot_schematic/emperors_house_loot_schem.iff",
---			generatedObjectTemplate="object/building/player/emperors_house.iff", cost=10000 },
-
 	},
 
 	furnitureList = {
-		"frn_table",
-		"tech_armoire",
-		"tech_bookcase",
-		"frn_cabinet",
-		"chair_s01",
-		"tech_chest",
-		"frn_coffee_table",
-		"frn_couch","frn_end_table",
-		"table_s1",
-		"data_terminal_s1",
-		"data_terminal_s2",
-		"data_terminal_s3",
-		"data_terminal_s4",
+		"data_terminal_s1", "data_terminal_s2", "data_terminal_s3", "data_terminal_s4", "frn_table", "tech_armoire", "tech_bookcase", "frn_cabinet", "tech_chair",
+		"tech_chest", "frn_coffee_table", "frn_couch", "frn_end_table"
 	},
 
 	furniture = {
@@ -303,7 +188,7 @@ imperialRewardData = {
 		tech_armoire = { type=factionRewardType.container, display="@container_name:tech_armoire", item="object/tangible/furniture/technical/armoire_s01.iff", cost=980},
 		tech_bookcase = { type=factionRewardType.container, display="@container_name:tech_bookcase", item="object/tangible/furniture/technical/bookcase_s01.iff", cost=980},
 		frn_cabinet = { type=factionRewardType.furniture, display="@frn_d:frn_cabinet", item="object/tangible/furniture/technical/cabinet_s01.iff", cost=200},
-		tech_chair = { type=factionRewardType.furniture, display="@frn_d:frn_chair", item="object/tangible/furniture/technical/chair_s01.iff", 700},
+		tech_chair = { type=factionRewardType.furniture, display="@frn_d:frn_chair", item="object/tangible/furniture/technical/chair_s01.iff", cost=700},
 		tech_chest =  { type=factionRewardType.container, display="@container_name:tech_chest", item="object/tangible/furniture/technical/chest_s01.iff", cost=700},
 		frn_coffee_table = { type=factionRewardType.furniture, display="@frn_d:frn_coffee_table", item="object/tangible/furniture/technical/coffee_table_s01.iff", cost=700},
 		frn_couch = { type=factionRewardType.furniture, display="@frn_d:frn_couch", item="object/tangible/furniture/technical/couch_s01.iff", cost=1050},
@@ -311,23 +196,8 @@ imperialRewardData = {
 	},
 
 	hirelingList = {
-		"assault_trooper",
-		"bombardier",
-		"command_security_guard",
-		"compforce_trooper",
-		"gunner",
-		"imperial_private",
-		"imperial_trooper",
-		"sand_trooper",
-		"scout_trooper",
-		"storm_commando",
-		"stormtrooper",
-		"stormtrooper_bombardier",
-		"stormtrooper_medic",
-		"stormtrooper_rifleman",
-		"stormtrooper_sniper",
-		"swamp_trooper",
-		"at_st"
+		"assault_trooper", "bombardier", "command_security_guard", "compforce_trooper", "dark_trooper", "gunner", "imperial_private", "imperial_trooper", "sand_trooper", "scout_trooper",
+		"storm_commando", "stormtrooper", "stormtrooper_bombardier", "stormtrooper_medic", "stormtrooper_rifleman", "stormtrooper_sniper", "swamp_trooper", "at_st"
 	},
 
 	hirelings = {
@@ -335,6 +205,7 @@ imperialRewardData = {
 		bombardier = { type=factionRewardType.hireling, display="@mob/creature_names:bombardier", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="bombardier", cost=105},
 		command_security_guard = { type=factionRewardType.hireling, display="@mob/creature_names:command_security_guard", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="command_security_guard", cost=105},
 		compforce_trooper = { type=factionRewardType.hireling, display="@mob/creature_names:compforce_trooper", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="compforce_trooper", cost=367},
+		dark_trooper = { type=factionRewardType.hireling, display="@mob/creature_names:dark_trooper", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="dark_trooper", cost=2100},
 		gunner = { type=factionRewardType.hireling, display="@mob/creature_names:gunner", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="gunner", cost=105},
 		imperial_private = { type=factionRewardType.hireling, display="@mob/creature_names:imperial_private", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="imperial_private", cost=105},
 		imperial_trooper = { type=factionRewardType.hireling, display="@mob/creature_names:imperial_trooper", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="imperial_trooper", cost=105},
@@ -347,6 +218,6 @@ imperialRewardData = {
 		stormtrooper_rifleman = { type=factionRewardType.hireling, display="@mob/creature_names:stormtrooper_rifleman", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="stormtrooper_rifleman", cost=420},
 		stormtrooper_sniper = { type=factionRewardType.hireling, display="@mob/creature_names:stormtrooper_sniper", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="stormtrooper_sniper", cost=420},
 		swamp_trooper = { type=factionRewardType.hireling, display="@mob/creature_names:swamp_trooper", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="swamp_trooper", cost=420},
-		at_st = { type=factionRewardType.hireling, display="@mob/creature_names:at_st", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="at_st", cost=20000},
+		at_st = { type=factionRewardType.hireling, display="@mob/creature_names:at_st", item="object/intangible/pet/pet_control.iff", controlledObjectTemplate="at_st", cost=9450},
 	},
 }

@@ -33,9 +33,15 @@ includeFile("village/fs_experience_converter_conv_handler.lua")
 
 -- Events
 includeFile("events/conversations/bestine_artist_conv_handler.lua")
+includeFile("events/conversations/life_day_anarra_conv_handler.lua")
+includeFile("events/conversations/life_day_kkatamk_conv_handler.lua")
+includeFile("events/conversations/life_day_oraalarri_conv_handler.lua")
+includeFile("events/conversations/life_day_radrrl_conv_handler.lua")
+includeFile("events/conversations/life_day_tebeurra_conv_handler.lua")
 includeFile("events/conversations/museum_curator_conv_handler.lua")
 includeFile("events/bestineMuseum.lua")
 includeFile("events/eventPromoter.lua")
+--includeFile("events/lifeDay.lua")
 
 
 -- Task/Quest
@@ -126,10 +132,12 @@ includeFile("tasks/tatooine/lorne_prestar.lua")
 includeFile("tasks/tatooine/lt_harburik.lua")
 includeFile("tasks/tatooine/mat_rags.lua")
 includeFile("tasks/tatooine/nitra_vendallan.lua")
+includeFile("tasks/tatooine/om_aynat.lua")
 includeFile("tasks/tatooine/pfilbee_jhorn.lua")
 includeFile("tasks/tatooine/phinea_shantee.lua")
 includeFile("tasks/tatooine/prefect_talmont.lua")
 includeFile("tasks/tatooine/rakir_banai.lua")
+includeFile("tasks/tatooine/stella.lua")
 includeFile("tasks/tatooine/tekil_barje.lua")
 includeFile("tasks/tatooine/tolan_nokkar.lua")
 includeFile("tasks/tatooine/vardias_tyne.lua")

@@ -113,10 +113,13 @@ function JawaTradersScreenPlay:spawnMobiles()
 
  	-- Placeholder for Clothing & Apparel Junk Dealer
 	--(now spawned in statics) spawnMobile("tatooine", "jawa", 300, -6228.01, 23.63, 1868.02, 120, 0)
+	
 	-- Placeholder for Misc Items Junk Dealer
 	--(now spawned in statics) spawnMobile("tatooine", "jawa", 300, -6223.90, 23.70, 1887.03, -85, 0)
+	
 	-- Placeholder for Weapons Junk Dealer
 	--(now spawned in statics) spawnMobile("tatooine", "jawa", 300, -6204.08, 23.63, 1846.91, -85, 0)
+	
 	-- Placeholder for Tusken Equipment Junk Dealer
 	--(now spawned in statics) spawnMobile("tatooine", "jawa", 300, -6113.37, 23.97, 1870.82, -140, 0)
 	
