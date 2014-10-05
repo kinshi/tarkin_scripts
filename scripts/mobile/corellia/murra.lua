@@ -29,15 +29,7 @@ murra = Creature:new {
 
 	templates = {"object/mobile/murra.iff"},
 	controlDeviceTemplate = "object/intangible/pet/murra_hue.iff",
-	lootGroups = {
-		{
-			groups = {
-				{group = "junk", chance = 7000000},
-				{group = "wearables_common", chance = 3000000},
-				},
-			lootChance = 3000000
-		}
-	},
+	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
