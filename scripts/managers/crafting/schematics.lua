@@ -1842,7 +1842,7 @@ schematics = {
 -{path="object/draft_schematic/furniture/furniture_microphone_s02.iff"}, 	
 -{path="object/draft_schematic/furniture/furniture_pitcher_full.iff"}, 	
 -{path="object/draft_schematic/furniture/furniture_plant_hanging.iff"}, 	
--{path="object/draft_schematic/furniture/furniture_professors_desk.iff"}
+-{path="object/draft_schematic/furniture/furniture_professors_desk.iff"},
 
 --BH Armor
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_belt.iff"},
