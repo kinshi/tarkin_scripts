@@ -1828,6 +1828,22 @@ schematics = {
 
 --Tarkin 
 
+--Furniture Draft Schematics 	
+
+-{path="object/draft_schematic/furniture/furniture_assorted_fruit.iff"}, 	
+-{path="object/draft_schematic/furniture/furniture_bench_park.iff"}, 	
+-{path="object/draft_schematic/furniture/furniture_campfire.iff"}, 	
+-{path="object/draft_schematic/furniture/furniture_command_console.iff"}, 	
+-{path="object/draft_schematic/furniture/furniture_corellia_flagpole.iff"}, 	
+-{path="object/draft_schematic/furniture/furniture_diagnostic_screen.iff"}, 	
+-{path="object/draft_schematic/furniture/furniture_display_fish.iff"}, 	
+-{path="object/draft_schematic/furniture/furniture_food_cart.iff"}, 	
+-{path="object/draft_schematic/furniture/furniture_microphone_s01.iff"}, 	
+-{path="object/draft_schematic/furniture/furniture_microphone_s02.iff"}, 	
+-{path="object/draft_schematic/furniture/furniture_pitcher_full.iff"}, 	
+-{path="object/draft_schematic/furniture/furniture_plant_hanging.iff"}, 	
+-{path="object/draft_schematic/furniture/furniture_professors_desk.iff"}
+
 --BH Armor
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_belt.iff"},
 {path="object/draft_schematic/clothing/clothing_armor_bounty_hunter_bracer_l.iff"},
