@@ -44,8 +44,8 @@
 object_building_naboo_hospital_naboo = object_building_naboo_shared_hospital_naboo:new {
 	skillMods = {
 		{"private_medical_rating", 100},
-		{"private_med_wound_health", 300},
-		{"private_med_wound_action", 300}
+		{"private_med_wound_health", 100},
+		{"private_med_wound_action", 100}
 	},
 
 	planetMapCategory = "medicalcenter",

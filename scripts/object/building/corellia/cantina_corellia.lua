@@ -43,9 +43,9 @@
 
 object_building_corellia_cantina_corellia = object_building_corellia_shared_cantina_corellia:new {
 	skillMods = {
-		{"private_med_wound_mind", 300}, -- changed to 300, was 20
+		{"private_med_wound_mind", 20},
 		{"private_buff_mind", 100}, 
-		{"private_med_battle_fatigue", 300} -- changed to 300, was 5
+		{"private_med_battle_fatigue", 5}
 	},
 	planetMapCategory = "cantina"
 }

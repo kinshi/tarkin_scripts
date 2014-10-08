@@ -35,7 +35,7 @@ sentry_imperial_major = Creature:new {
 				{group = "junk", chance = 5650000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
-                		{group = "melee_weapons", chance = 550000},
+                		{group = "rebel_spire", chance = 550000},
                 		{group = "carbines", chance = 550000},
 				{group = "clothing_attachments", chance = 1025000},
 				{group = "armor_attachments", chance = 1025000}

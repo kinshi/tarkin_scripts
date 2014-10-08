@@ -1175,6 +1175,11 @@ includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_gloves_sche
 includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_helmet_scheme.lua")
 includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_leggings_scheme.lua")
 
+--Factional Houses
+
+includeFile("items/tarkin_custom/rebel_spire.lua")
+includeFile("items/tarkin_custom/imperial_spire.lua")
+
 --test
 
 --includeFile("items/tarkin_custom/icav_comp_nrg.lua")

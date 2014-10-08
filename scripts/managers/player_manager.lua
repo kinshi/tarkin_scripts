@@ -78,6 +78,7 @@ veteranRewards = {
 	{templateFile = "object/tangible/veteran_reward/data_terminal_s3.iff", milestone=90, oneTime=false, description="@veteran_new:dataterminal3"},
 	{templateFile = "object/tangible/veteran_reward/data_terminal_s4.iff", milestone=90, oneTime=false, description="@veteran_new:dataterminal4"},
 	{templateFile = "object/tangible/veteran_reward/frn_vet_protocol_droid_toy.iff", milestone=90, oneTime=false, description="@veteran_new:mini_protocoldroid"},
+	{templateFile = "object/tangible/veteran_reward/frn_vet_r2_toy.iff", milestone=90, oneTime=false, description="@veteran_new:mini_r2"},
 
 	-- 180 Day Rewards
 	{templateFile = "object/tangible/veteran_reward/resource.iff", milestone=180, oneTime=true, description="A Crate of Free Resources (5K Units)"},
@@ -119,10 +120,11 @@ veteranRewards = {
 	{templateFile = "object/tangible/furniture/all/frn_bench_generic.iff", milestone=450, oneTime=false, description="Park Bench"},
 	
 	-- 540 Day Rewards
-	{templateFile = "object/tangible/painting/painting_wookiee_m.iff", milestone=540, oneTime=false, description="@frn_n:painting_wookiee_m"},
-	{templateFile = "object/tangible/painting/painting_wookiee_f.iff", milestone=540, oneTime=false, description="@frn_n:painting_wookiee_f"},
-	{templateFile = "object/tangible/painting/painting_trees_s01.iff", milestone=540, oneTime=false, description="@frn_n:painting_trees_s01"},
-	{templateFile = "object/tangible/loot/quest/lifeday_orb.iff", milestone=540, oneTime=false, description="Lifeday Orb"},
+	{templateFile = "object/tangible/furniture/decorative/professor_desk.iff", milestone=540, oneTime=false, description="Professor Desk"},
+	{templateFile = "object/tangible/furniture/decorative/diagnostic_screen.iff", milestone=540, oneTime=false, description="@frn_n:diagnostic_screen"},
+	{templateFile = "object/tangible/furniture/all/frn_all_plant_potted_lg_s2.iff", milestone=540, oneTime=false, description="Large Potted Plant (Style 2)"},
+	{templateFile = "object/tangible/furniture/all/frn_all_plant_potted_lg_s3.iff", milestone=540, oneTime=false, description="Large Potted Plant (Style 3)"},
+	{templateFile = "object/tangible/furniture/all/frn_all_plant_potted_lg_s4.iff", milestone=540, oneTime=false, description="Large Potted Plant (Style 4)"},
 		
 	-- 630 Day Rewards
 	{templateFile = "object/tangible/furniture/modern/bar_counter_s1.iff", milestone=630, oneTime=false, description="Bar Countertop"},
@@ -160,13 +162,11 @@ veteranRewards = {
 	{templateFile = "object/tangible/furniture/all/event_flag_game_reb_banner.iff", milestone=900, oneTime=false, description="Rebel Banner"},
 		
 	-- 990 Day Rewards
-	{templateFile = "object/tangible/furniture/modern/rug_oval_lg_s01.iff", milestone=990, oneTime=false, description="Large Rectangular Rug (Style 1)"},
+	{templateFile = "object/tangible/furniture/modern/rug_rect_lg_s01.iff", milestone=990, oneTime=false, description="Large Rectangular Rug (Style 1)"},
 	{templateFile = "object/tangible/furniture/modern/rug_rect_lg_s02.iff", milestone=990, oneTime=false, description="Large Rectangular Rug (Style 2)"},
 	{templateFile = "object/tangible/furniture/modern/rug_oval_lg_s01.iff", milestone=990, oneTime=false, description="Large Oval Rug"},
 	{templateFile = "object/tangible/furniture/modern/rug_rnd_lg_s01.iff", milestone=990, oneTime=false, description="Large Round Rug"},
-	{templateFile = "object/tangible/furniture/all/frn_all_plant_potted_lg_s2.iff", milestone=990, oneTime=false, description="Large Potted Plant (Style 2)"},
-	{templateFile = "object/tangible/furniture/all/frn_all_plant_potted_lg_s3.iff", milestone=990, oneTime=false, description="Large Potted Plant (Style 3)"},
-	{templateFile = "object/tangible/furniture/all/frn_all_plant_potted_lg_s4.iff", milestone=990, oneTime=false, description="Large Potted Plant (Style 4)"},
+	{templateFile = "object/tangible/furniture/all/frn_all_desk_map_table.iff", milestone=990, oneTime=false, description="Round Data Terminal"},
 		
 	-- 1080 Day Rewards
 	{templateFile = "object/tangible/veteran_reward/one_year_anniversary/painting_01.iff", milestone=1080, oneTime=false, description="Painting: Cast Wing in Flight"},

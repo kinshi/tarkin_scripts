@@ -43,7 +43,7 @@ sentry_specforce_bombardier = Creature:new {
 				{group = "pistols", chance = 1200000},
 				{group = "melee_weapons", chance = 1200000},
 				{group = "carbines", chance = 1200000},
-				{group = "nge_house_atst", chance = 750000},
+				{group = "imperial_spire", chance = 750000},
 				{group = "clothing_attachments", chance = 1250000},
 				{group = "armor_attachments", chance = 1250000}
 			},

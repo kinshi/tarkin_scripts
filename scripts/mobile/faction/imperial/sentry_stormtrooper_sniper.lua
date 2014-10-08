@@ -35,9 +35,9 @@ sentry_stormtrooper_sniper = Creature:new {
 				{group = "junk", chance = 4900000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
-                {group = "melee_weapons", chance = 550000},
-                {group = "carbines", chance = 550000},
-				{group = "nge_house_rebel", chance = 750000},
+                		{group = "melee_weapons", chance = 550000},
+		                {group = "carbines", chance = 550000},
+				{group = "rebel_spire", chance = 750000},
 				{group = "clothing_attachments", chance = 1025000},
 				{group = "armor_attachments", chance = 1025000}
 			},

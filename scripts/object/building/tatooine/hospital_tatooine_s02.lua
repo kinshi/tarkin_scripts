@@ -44,11 +44,12 @@
 object_building_tatooine_hospital_tatooine_s02 = object_building_tatooine_shared_hospital_tatooine_s02:new {
 	skillMods = {
 		{"private_medical_rating", 100},
-		{"private_med_wound_health", 300},
-		{"private_med_wound_action", 300}
+		{"private_med_wound_health", 100},
+		{"private_med_wound_action", 100}
 	},
 
 	planetMapCategory = "medicalcenter",
+	ejectionPoint = {4, 24}
 }
 
 ObjectTemplates:addTemplate(object_building_tatooine_hospital_tatooine_s02, "object/building/tatooine/hospital_tatooine_s02.iff")

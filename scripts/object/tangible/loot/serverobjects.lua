@@ -51,7 +51,6 @@ includeFile("tangible/loot/misc/serverobjects.lua")
 includeFile("tangible/loot/plant_grow/serverobjects.lua")
 includeFile("tangible/loot/quest/serverobjects.lua")
 includeFile("tangible/loot/simple_kit/serverobjects.lua")
-includeFile("tangible/loot/factional_schematic/serverobjects.lua")
 includeFile("tangible/loot/tool/serverobjects.lua")
 
 -- Server Objects

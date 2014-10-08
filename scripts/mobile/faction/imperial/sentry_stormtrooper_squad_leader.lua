@@ -35,9 +35,9 @@ sentry_stormtrooper_squad_leader = Creature:new {
 				{group = "junk", chance = 4400000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
-                {group = "melee_weapons", chance = 550000},
-                {group = "carbines", chance = 550000},
-				{group = "nge_house_rebel", chance = 1250000},
+                		{group = "melee_weapons", chance = 550000},
+                		{group = "carbines", chance = 550000},
+				{group = "rebel_spire", chance = 1250000},
 				{group = "clothing_attachments", chance = 1025000},
 				{group = "armor_attachments", chance = 1025000}
 			},

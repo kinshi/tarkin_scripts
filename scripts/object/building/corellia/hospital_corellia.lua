@@ -44,8 +44,8 @@
 object_building_corellia_hospital_corellia = object_building_corellia_shared_hospital_corellia:new {
 	skillMods = {
 		{"private_medical_rating", 100},
-		{"private_med_wound_health", 300}, --changed to 300, was 100
-		{"private_med_wound_action", 300} -- changed to 300, was 100
+		{"private_med_wound_health", 100},
+		{"private_med_wound_action", 100}
 	},
 
 	planetMapCategory = "medicalcenter",

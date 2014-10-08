@@ -43,9 +43,7 @@
 
 object_building_player_city_hospital_tatooine = object_building_player_city_shared_hospital_tatooine:new {
 	skillMods = {
-		{"private_medical_rating", 100},
-		{"private_med_wound_health", 500}, --changed to 300, was 100
-		{"private_med_wound_action", 500} -- changed to 300, was 100
+		{"private_medical_rating", 100}
 	},
 	lotSize = 3,
 	baseMaintenanceRate = 50,
@@ -53,13 +51,20 @@ object_building_player_city_hospital_tatooine = object_building_player_city_shar
 	length = 1,
 	width = 1,
 	planetMapCategory = "medicalcenter",
-	cityRankRequired = 1,
+	cityRankRequired = 3,
 	abilityRequired = "place_hospital",
 	zoneComponent = "StructureZoneComponent",
 	childObjects = {
 			{templateFile = "object/tangible/sign/player/house_address_tatooine.iff", x = 9.4, z = 2, y = 10.32, ox = 0, oy = 0.707107, oz = 0, ow = -0.707107, cellid = -1, containmentType = -1},
 			{templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = 7.48, z = 0.188325, y = 1.5, ox = 0, oy = 0.707107, oz = 0, ow = -0.707107, cellid = 3, containmentType = -1}
-	}
+	},
+	shopSigns = {
+			{templateFile = "object/tangible/sign/player/house_address_tatooine.iff", x = 9.4, z = 2, y = 10.32, ox = 0, oy = 0.707107, oz = 0, ow = -0.707107, cellid = -1, containmentType = -1, requiredSkill = "", suiItem = "@player_structure:house_address"},	
+			{templateFile = "object/tangible/sign/player/shop_sign_s01.iff", x = 11.00, z = 1.0, y = 10.50, ox = 0, oy = 0.707107, oz = 0, ow =  0.707107, cellid = -1, containmentType = -1, requiredSkill = "crafting_merchant_management_01", suiItem = "@player_structure:shop_sign1"},
+			{templateFile = "object/tangible/sign/player/shop_sign_s02.iff", x = 11.00, z = 1.0, y = 10.50, ox = 0, oy = 0.707107, oz = 0, ow =  0.707107, cellid = -1, containmentType = -1, requiredSkill = "crafting_merchant_management_02", suiItem = "@player_structure:shop_sign2"},
+			{templateFile = "object/tangible/sign/player/shop_sign_s03.iff", x = 11.00, z = 1.0, y = 10.50, ox = 0, oy = 0.707107, oz = 0, ow =  0.707107, cellid = -1, containmentType = -1, requiredSkill = "crafting_merchant_management_03", suiItem = "@player_structure:shop_sign3"},
+			{templateFile = "object/tangible/sign/player/shop_sign_s04.iff", x = 11.00, z = 1.0, y = 10.50, ox = 0, oy = 0.707107, oz = 0, ow =  0.707107, cellid = -1, containmentType = -1, requiredSkill = "crafting_merchant_management_04", suiItem = "@player_structure:shop_sign4"},			
+	},	
 }
 
 ObjectTemplates:addTemplate(object_building_player_city_hospital_tatooine, "object/building/player/city/hospital_tatooine.iff")
