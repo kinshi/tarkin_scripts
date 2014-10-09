@@ -331,10 +331,3 @@ includeFile("groups/tarkin_custom/bounty_hunter_schemes.lua")
 includeFile("groups/tarkin_custom/misc_decoloot_schemes.lua")
 includeFile("groups/tarkin_custom/rebel_spire.lua")
 includeFile("groups/tarkin_custom/imperial_spire.lua")
-
---test
---includeFile("groups/tarkin_custom/comp_kin.lua")
---includeFile("groups/tarkin_custom/comp_nrg.lua")
---includeFile("groups/tarkin_custom/comp_cold.lua")
-
-
