@@ -1,4 +1,4 @@
-imperial_spire = {
+imperial_spire_scheme = {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	customObjectName = "",
@@ -12,4 +12,4 @@ imperial_spire = {
 	}
 }
 
-addLootItemTemplate("imperial_spire", imperial_spire)
+addLootItemTemplate("imperial_spire_scheme", imperial_spire_scheme)

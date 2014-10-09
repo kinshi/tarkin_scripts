@@ -1,4 +1,4 @@
-rebel_spire = {
+rebel_spire_scheme = {
 	minimumLevel = 0,
 	maximumLevel = -1,
 	customObjectName = "",
@@ -12,4 +12,4 @@ rebel_spire = {
 	}
 }
 
-addLootItemTemplate("rebel_spire", rebel_spire)
+addLootItemTemplate("rebel_spire_scheme", rebel_spire_scheme)
