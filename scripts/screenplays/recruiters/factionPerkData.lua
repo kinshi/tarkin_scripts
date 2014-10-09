@@ -12,7 +12,7 @@ factionRewardType = {
 rebelRewardData = {
 	weaponsArmorList = {
 		"armor_marine_backpack", "armor_marine_helmet", "armor_marine_chest_plate", "armor_marine_leggings", "armor_marine_boots", "armor_marine_bicep_l",
-		"armor_marine_bicep_r", "carbine_laser", "pistol_scout_blaster", "lance_staff_metal", "rocket_launcher", "mine_drx", "mine_xg",
+		"armor_marine_bicep_r", "carbine_laser", "pistol_scout_blaster", "lance_staff_metal", "rocket_launcher", "mine_drx", "mine_xg", "armor_kashyyykian_hunting_bracer_l", "armor_kashyyykian_hunting_bracer_r", "armor_kashyyykian_hunting_chest_plate", "armor_kashyyykian_hunting_leggings", "armor_rebel_commando_helmet",
 	},
 
 	weaponsArmor = {
@@ -30,6 +30,11 @@ rebelRewardData = {
 		lance_staff_metal = { index=11, type=factionRewardType.weapon, display="@weapon_name:lance_staff_metal", item="object/weapon/melee/polearm/lance_staff_metal.iff", cost=1000},
 		mine_drx = { type=factionRewardType.weapon, display="@weapon_name:mine_drx", item="object/weapon/mine/wp_mine_drx55.iff", cost=350},
 		mine_xg = { type=factionRewardType.weapon, display="@weapon_name:mine_xg", item="object/weapon/mine/wp_mine_xg.iff", cost=350},
+		armor_kashyyykian_hunting_bracer_l = { index=12, type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_bracer_l", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_l.iff",cost=2000},
+		armor_kashyyykian_hunting_bracer_r = { index=13, type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_bracer_r", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_r.iff",cost=2000},
+		armor_kashyyykian_hunting_chest_plate = { index=14, type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_chest_plate", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_chest_plate.iff",cost=4000},
+		armor_kashyyykian_hunting_leggings = { index=15, type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_leggings", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_leggings.iff",cost=3000},
+		armor_rebel_commando_helmet = { index=16, type=faction_reward_type.armor, display="@wearables_name:Rebel Commando Helmet", item="object/tangible/wearables/helmet/helmet_s06.iff",cost=3000},
 	},
 
 	installationsList = {
@@ -109,7 +114,7 @@ imperialRewardData = {
 	weaponsArmorList = {
 		"armor_stormtrooper_helmet", "armor_stormtrooper_chest_plate", "armor_stormtrooper_leggings", "armor_stormtrooper_boots", "armor_stormtrooper_bicep_l", "armor_stormtrooper_bicep_r",
 		"armor_stormtrooper_bracer_l", "armor_stormtrooper_bracer_r", "armor_stormtrooper_gloves", "armor_stormtrooper_utility_belt", "carbine_e11", "pistol_power5", "sword_02",
-		"rocket_launcher", "mine_drx", "mine_xg",
+		"rocket_launcher", "mine_drx", "mine_xg", "armor_kashyyykian_hunting_bracer_l", "armor_kashyyykian_hunting_bracer_r", "armor_kashyyykian_hunting_chest_plate", "armor_kashyyykian_hunting_leggings",
 	},
 
 	weaponsArmor = {
@@ -130,6 +135,10 @@ imperialRewardData = {
 		rocket_launcher = { type=factionRewardType.weapon, display="@weapon_name:rocket_launcher", item="object/weapon/ranged/heavy/heavy_rocket_launcher.iff", cost=3500},
 		mine_drx = { type=factionRewardType.weapon, display="@weapon_name:mine_drx", item="object/weapon/mine/wp_mine_drx55.iff", cost=350},
 		mine_xg = { type=factionRewardType.weapon, display="@weapon_name:mine_xg", item="object/weapon/mine/wp_mine_xg.iff", cost=350},
+		armor_kashyyykian_hunting_bracer_l = { type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_bracer_l", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_l.iff",cost=2000},
+		armor_kashyyykian_hunting_bracer_r = { type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_bracer_r", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_r.iff",cost=2000},
+		armor_kashyyykian_hunting_chest_plate = { type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_chest_plate", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_chest_plate.iff",cost=4000},
+		armor_kashyyykian_hunting_leggings = { type=faction_reward_type.armor, display="@wearables_name:armor_kashyyykian_hunting_leggings", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_leggings.iff",cost=3000},
 	},
 
 	uniformList = {
