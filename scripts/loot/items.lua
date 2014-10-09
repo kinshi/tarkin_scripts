@@ -1177,8 +1177,8 @@ includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_leggings_sc
 
 --Factional Houses
 
-includeFile("items/tarkin_custom/rebel_spire.lua")
-includeFile("items/tarkin_custom/imperial_spire.lua")
+includeFile("items/tarkin_custom/rebel_spire_scheme.lua")
+includeFile("items/tarkin_custom/imperial_spire_scheme.lua")
 
 --test
 
