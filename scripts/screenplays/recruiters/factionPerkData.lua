@@ -50,7 +50,7 @@ rebelRewardData = {
 		armor_kashyyykian_hunting_bracer_r = { type=factionRewardType.armor, display="@wearables_name:armor_kashyyykian_hunting_bracer_r", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_bracer_r.iff", cost=2000},
 		armor_kashyyykian_hunting_chest_plate = { type=factionRewardType.armor, display="@wearables_name:armor_kashyyykian_hunting_chest_plate", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_chest_plate.iff",cost=4000},
 		armor_kashyyykian_hunting_leggings = { type=factionRewardType.armor, display="@wearables_name:armor_kashyyykian_hunting_leggings", item="object/tangible/wearables/armor/kashyyykian_hunting/armor_kashyyykian_hunting_leggings.iff", cost=3000},
-		armor_rebel_commando_helmet = { type=factionRewardType.armor, display="@wearables_name:helmet_s06.iff", item="object/tangible/wearables/helmet/helmet_s06.iff", cost=3000},
+		armor_rebel_commando_helmet = { type=factionRewardType.armor, display="@wearables_name:helmet_s06", item="object/tangible/wearables/helmet/helmet_s06.iff", cost=3000},
 	},
 
 	installationsList = {
