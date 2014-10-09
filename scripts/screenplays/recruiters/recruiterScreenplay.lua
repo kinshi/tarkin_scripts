@@ -140,8 +140,8 @@ function recruiterScreenplay:getWeaponsArmorOptions(faction, gcwDiscount, smuggl
 	local optionsTable = { }
 	local factionRewardData = self:getFactionDataTable(faction)
 	for k,v in pairs(factionRewardData.weaponsArmorList) do
-		if ( factionRewardData.weaponsArmor[strItem] ~= nil and 	factionRewardData.weaponsArmor[strItem].display ~= nil and factionRewardData.weaponsArmor[strItem].cost ~= nil ) then
-			table.insert(optionsTable, self:generateSuiString(factionRewardData.weaponsArmor[strItem].display, math.ceil(factionRewardData.weaponsArmor[strItem].cost * gcwDiscount * smugglerDiscount)))
+		if ( factionRewardData.weaponsArmor[v] ~= nil and 	factionRewardData.weaponsArmor[v].display ~= nil and factionRewardData.weaponsArmor[v].cost ~= nil ) then
+			table.insert(optionsTable, self:generateSuiString(factionRewardData.weaponsArmor[v].display, math.ceil(factionRewardData.weaponsArmor[v].cost * gcwDiscount * smugglerDiscount)))
 		end
 	end
 	return optionsTable
