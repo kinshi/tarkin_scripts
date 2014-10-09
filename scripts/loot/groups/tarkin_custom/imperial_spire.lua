@@ -3,7 +3,7 @@ imperial_spire = {
 	minimumLevel = 0,
 	maximumLevel = 0,	
 	lootItems = {
-		{itemTemplate = "imperial_spire", weight = 10000000},	
+		{itemTemplate = "imperial_spire_scheme", weight = 10000000},	
 	}
 }
 
