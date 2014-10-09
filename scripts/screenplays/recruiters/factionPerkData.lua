@@ -11,8 +11,24 @@ factionRewardType = {
 
 rebelRewardData = {
 	weaponsArmorList = {
-		"armor_marine_backpack", "armor_marine_helmet", "armor_marine_chest_plate", "armor_marine_leggings", "armor_marine_boots", "armor_marine_bicep_l",
-		"armor_marine_bicep_r", "carbine_laser", "pistol_scout_blaster", "lance_staff_metal", "rocket_launcher", "mine_drx", "mine_xg", "armor_kashyyykian_hunting_bracer_l", "armor_kashyyykian_hunting_bracer_r", "armor_kashyyykian_hunting_chest_plate", "armor_kashyyykian_hunting_leggings", "armor_rebel_commando_helmet",
+		"armor_marine_backpack",
+		"armor_marine_helmet",
+		"armor_marine_chest_plate",
+		"armor_marine_leggings",
+		"armor_marine_boots",
+		"armor_marine_bicep_l",
+		"armor_marine_bicep_r",
+		"carbine_laser",
+		"pistol_scout_blaster",
+		"lance_staff_metal",
+		"rocket_launcher",
+		"mine_drx",
+		"mine_xg",
+		"armor_kashyyykian_hunting_bracer_l",
+		"armor_kashyyykian_hunting_bracer_r",
+		"armor_kashyyykian_hunting_chest_plate",
+		"armor_kashyyykian_hunting_leggings",
+		"armor_rebel_commando_helmet",
 	},
 
 	weaponsArmor = {
@@ -112,9 +128,26 @@ rebelRewardData = {
 
 imperialRewardData = {
 	weaponsArmorList = {
-		"armor_stormtrooper_helmet", "armor_stormtrooper_chest_plate", "armor_stormtrooper_leggings", "armor_stormtrooper_boots", "armor_stormtrooper_bicep_l", "armor_stormtrooper_bicep_r",
-		"armor_stormtrooper_bracer_l", "armor_stormtrooper_bracer_r", "armor_stormtrooper_gloves", "armor_stormtrooper_utility_belt", "carbine_e11", "pistol_power5", "sword_02",
-		"rocket_launcher", "mine_drx", "mine_xg", "armor_kashyyykian_hunting_bracer_l", "armor_kashyyykian_hunting_bracer_r", "armor_kashyyykian_hunting_chest_plate", "armor_kashyyykian_hunting_leggings",
+		"armor_stormtrooper_helmet",
+		"armor_stormtrooper_chest_plate",
+		"armor_stormtrooper_leggings",
+		"armor_stormtrooper_boots",
+		"armor_stormtrooper_bicep_l",
+		"armor_stormtrooper_bicep_r",
+		"armor_stormtrooper_bracer_l",
+		"armor_stormtrooper_bracer_r",
+		"armor_stormtrooper_gloves",
+		"armor_stormtrooper_utility_belt",
+		"carbine_e11",
+		"pistol_power5",
+		"sword_02",
+		"rocket_launcher",
+		"mine_drx",
+		"mine_xg",
+		"armor_kashyyykian_hunting_bracer_l",
+		"armor_kashyyykian_hunting_bracer_r",
+		"armor_kashyyykian_hunting_chest_plate",
+		"armor_kashyyykian_hunting_leggings",
 	},
 
 	weaponsArmor = {
