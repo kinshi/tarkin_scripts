@@ -287,6 +287,7 @@ includeFile("tests/painting_vendor.lua")
 
 --City Updates
 includeFile("cities/tatooine_mos_eisley_hive_scum_villany.lua")
+includeFile("cities/tatooine_mos_entha_hive_scum_villany.lua")
 
 --Race Tracks
 includeFile("racetracks/racetracks.lua")
