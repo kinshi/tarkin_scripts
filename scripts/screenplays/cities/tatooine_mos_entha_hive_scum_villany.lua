@@ -62,7 +62,20 @@ function TatooineMosEnthaHiveScumVillanyScreenPlay:spawnMobiles()
 	
 
 	-- Bounty Hunters
-	-- section to add new non agressive (for the most part) BH mobiles
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1766.1, 7.0, 3153.6, -27, 0)
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1763.1, 7.0, 3156.2, -27, 0)
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1395.9, 7.0, 3241.4, 0, 0)
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1389.4, 7.0, 3241.2, 0, 0)
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1383.1, 7.0, 3241.6, 0, 0)
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1370.0, 11.0, 3191.6, 78, 0)
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1368.8, 11.0, 3220,7, 148, 0)
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1370.4, 11.0, 3156.1, 109, 0)
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1390.6, 13.0, 3138.7, 0, 0)
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1407.0, 11.0, 3156.0, -31, 0)
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1406.1, 11.0, 3185.4, -148, 0)
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1406.2, 11.0, 3213.1, -81, 0)
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1322.9, 7.0, 3180.6, -130, 0)
+	spawnMobile("tatooine", "mando_bounty_hunter", 300, 1322.3, 7.0, 3176.1, -166, 0)
 
 	-- Encroaching Rebel Squads
 	spawnMobile("tatooine", "rebel_colonel", 300, 1432.4, 7.0, 3466.4, 20, 0)
