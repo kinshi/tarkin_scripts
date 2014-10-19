@@ -21,7 +21,7 @@ painting_template:addScreen(painting_first_screen);
 painting_mystery_painting = ConvoScreen:new {
 	id = "mystery_painting",
 	leftDialog = "",
-	customDialogText = "Enjoy that painting!  Maybe I'll see you again next week, somewhere else.",
+	customDialogText = "Enjoy that painting!  Maybe I'll see you again in a couple weeks, somewhere else.",
 	stopConversation = "true",
 	options = {
 	
@@ -32,7 +32,7 @@ painting_template:addScreen(painting_mystery_painting);
 painting_done = ConvoScreen:new {
 	id = "done",
 	leftDialog = "",
-	customDialogText = "Pleasure doing business with you.  Hope to see you next week!",
+	customDialogText = "Pleasure doing business with you.  Hope to see you in a couple weeks!",
 	stopConversation = "true",
 	options = {
 	}
