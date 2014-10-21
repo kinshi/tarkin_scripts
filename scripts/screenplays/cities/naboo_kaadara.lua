@@ -15,18 +15,6 @@ end
 
 function NabooKadaaraScreenPlay:spawnSceneObjects()
 	
--- IHA Bazaar Terminal Placements for Player City of Kadaara
-
---(the blank spot on the "bump" on the opposite-the-starport-entrance side of the wall-of-terminals next to the Kaadara Starport).
-spawnSceneObject("naboo", "object/tangible/terminal/terminal_bazaar.iff", 5189.3, -192.0, 6672.1, 0, 0.707107, 0, -0.707106, 0)
--- (on the side of the base wall near the Imperial Zephyr terminals in Kaadara).
-spawnSceneObject("naboo", "object/tangible/terminal/terminal_bazaar.iff", 5335.0, -197.3, 6433.6, 0, 0.66262, 0, -0.748956, 0)
--- (up against the outer wall of the City Hall).
-spawnSceneObject("naboo", "object/tangible/terminal/terminal_bazaar.iff", 5050.6, -193.1, 6545.2, 0, -90)
--- (along the north wall of the mayor-placed shuttleport).
-spawnSceneObject("naboo", "object/tangible/terminal/terminal_bazaar.iff", 5081.0, -193.3, 6236.7, 0, 0)
-
-
 --Kadaara SP
 spawnSceneObject("naboo", "object/creature/npc/theme_park/player_transport.iff", 5302, -192.0, 6667, 0, 90)
 
