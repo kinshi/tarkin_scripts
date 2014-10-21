@@ -329,3 +329,5 @@ includeFile("tatooine/jawa_leader_poi.lua")
 includeFile("tatooine/jawa_thief_poi.lua")
 includeFile("tatooine/jawa_healer_poi.lua")
 includeFile("tatooine/jawa_warlord_poi.lua")
+includeFile("tatooine/mando_bounty_hunter.lua")		-- includeFile for non agressive Bounty Hunters in Mos Entha Scum & Villany Screenplay
+
