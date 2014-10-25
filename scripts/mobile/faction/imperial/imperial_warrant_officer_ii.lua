@@ -52,7 +52,7 @@ imperial_warrant_officer_ii = Creature:new {
 	},
 	weapons = {"imperial_weapons_medium"},
 	conversationTemplate = "imperialRecruiterConvoTemplate",
-	attacks = merge(riflemanmaster,carbineermaster)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(imperial_warrant_officer_ii, "imperial_warrant_officer_ii")

@@ -4,7 +4,7 @@ imperial_private = Creature:new {
 	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 15,
-	chanceHit = 0.310000,
+	chanceHit = 0.31,
 	damageMin = 160,
 	damageMax = 170,
 	baseXp = 831,
@@ -19,7 +19,7 @@ imperial_private = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0.000000,
+	tamingChance = 0,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
@@ -49,7 +49,7 @@ imperial_private = Creature:new {
 		}						
 	},
 	weapons = {"imperial_weapons_light"},
-	attacks = merge(riflemanmaster,carbineermaster)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(imperial_private, "imperial_private")

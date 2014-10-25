@@ -4,7 +4,7 @@ imperial_senior_cadet = Creature:new {
 	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 10,
-	chanceHit = 0.280000,
+	chanceHit = 0.28,
 	damageMin = 90,
 	damageMax = 110,
 	baseXp = 356,
@@ -19,7 +19,7 @@ imperial_senior_cadet = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0.000000,
+	tamingChance = 0,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
@@ -49,7 +49,7 @@ imperial_senior_cadet = Creature:new {
 		}						
 	},
 	weapons = {"ranged_weapons"},
-	attacks = merge(riflemanmaster,carbineermaster)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(imperial_senior_cadet, "imperial_senior_cadet")

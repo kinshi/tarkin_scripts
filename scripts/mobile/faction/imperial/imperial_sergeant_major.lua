@@ -4,7 +4,7 @@ imperial_sergeant_major = Creature:new {
 	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 19,
-	chanceHit = 0.330000,
+	chanceHit = 0.33,
 	damageMin = 180,
 	damageMax = 190,
 	baseXp = 1609,
@@ -19,7 +19,7 @@ imperial_sergeant_major = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0.000000,
+	tamingChance = 0,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
@@ -52,7 +52,7 @@ imperial_sergeant_major = Creature:new {
 	},
 	weapons = {"imperial_weapons_medium"},
 	conversationTemplate = "imperialRecruiterConvoTemplate",
-	attacks = merge(riflemanmaster,carbineermaster)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(imperial_sergeant_major, "imperial_sergeant_major")

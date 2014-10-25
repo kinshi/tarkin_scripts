@@ -3,15 +3,15 @@ jawa_thief = Creature:new {
 	socialGroup = "jawa",
 	pvpFaction = "jawa",
 	faction = "jawa",
-	level = 90,
-	chanceHit = 0.4,
-	damageMin = 300,
-	damageMax = 600,
-	baseXp = 16097,
-	baseHAM = 35000,
-	baseHAMmax = 45000,
-	armor = 1,
-	resists = {25,25,-1,25,25,25,25,-1,-1},
+	level = 9,
+	chanceHit = 0.27,
+	damageMin = 80,
+	damageMax = 90,
+	baseXp = 235,
+	baseHAM = 675,
+	baseHAMmax = 825,
+	armor = 0,
+	resists = {0,0,0,0,0,0,0,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -42,7 +42,7 @@ jawa_thief = Creature:new {
 	},
 	weapons = {"jawa_warlord_weapons"},
 	conversationTemplate = "",
-	attacks = merge(marksmanmaster,riflemannovice)
+	attacks = merge(marksmannovice,brawlernovice)
 }
 
 CreatureTemplates:addCreatureTemplate(jawa_thief, "jawa_thief")

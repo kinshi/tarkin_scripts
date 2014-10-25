@@ -4,7 +4,7 @@ senior_specforce_heavy_weapons_specialist = Creature:new {
 	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 20,
-	chanceHit = 0.330000,
+	chanceHit = 0.33,
 	damageMin = 190,
 	damageMax = 210,
 	baseXp = 1803,
@@ -19,7 +19,7 @@ senior_specforce_heavy_weapons_specialist = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0.000000,
+	tamingChance = 0,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + KILLER,
@@ -47,7 +47,7 @@ senior_specforce_heavy_weapons_specialist = Creature:new {
 		}	
 	},
 	weapons = {"rebel_weapons_heavy"},
-	attacks = merge(commandomaster,carbineermaster,brawlermaster)
+	attacks = merge(commandomaster,marksmanmaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(senior_specforce_heavy_weapons_specialist, "senior_specforce_heavy_weapons_specialist")

@@ -26,23 +26,24 @@ command_security_guard = Creature:new {
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/dressed_stormtrooper_m.iff"},
+	templates = {"object/mobile/dressed_imperial_soldier_m.iff"},
 	lootGroups = {
 		{
 			groups = {
 				{group = "color_crystals", chance = 200000},
-				{group = "junk", chance = 5900000},
+				{group = "junk", chance = 6900000},
 				{group = "rifles", chance = 800000},
 				{group = "pistols", chance = 800000},
-				{group = "clothing_attachments", chance = 1150000},
-				{group = "armor_attachments", chance = 1150000}
+				{group = "clothing_attachments", chance = 150000},
+				{group = "armor_attachments", chance = 150000},
+				{group = "wearables_common", chance = 1000000}
 			},
 			lootChance = 2300000
-		}		
+		}
 	},
 	weapons = {"imperial_weapons_light"},
 	conversationTemplate = "",
-	attacks = merge(riflemanmaster,carbineermaster)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(command_security_guard, "command_security_guard")

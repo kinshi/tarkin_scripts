@@ -45,7 +45,7 @@ elite_sand_trooper = Creature:new {
 	},
 	weapons = {"sandtrooper_weapons"},
 	conversationTemplate = "",
-	attacks = merge(riflemanmaster)
+	attacks = merge(riflemanmaster,marksmanmaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(elite_sand_trooper, "elite_sand_trooper")

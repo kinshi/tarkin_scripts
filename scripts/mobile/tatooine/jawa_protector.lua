@@ -10,8 +10,8 @@ jawa_protector = Creature:new {
 	baseXp = 1257,
 	baseHAM = 2900,
 	baseHAMmax = 3500,
-	armor = 2,
-	resists = {35,35,35,35,-1,35,35,-1,-1},
+	armor = 0,
+	resists = {15,10,-1,0,0,-1,0,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -42,7 +42,7 @@ jawa_protector = Creature:new {
 	},
 	weapons = {"jawa_warlord_weapons"},
 	conversationTemplate = "",
-	attacks = merge(marksmanmaster,riflemannovice)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(jawa_protector, "jawa_protector")

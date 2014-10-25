@@ -3,8 +3,6 @@ player = {
 	name = "player",
 	tag = "",
 	skills = {
-		"admin_base",
-		"admin_general_admin_01"
 	}
 }
 
