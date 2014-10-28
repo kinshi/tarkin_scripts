@@ -40,7 +40,7 @@ nwilla_tharlyat = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_light"},
-	attacks = merge(marksmanmaster,brawlermaster)
+	attacks = merge(marksmannovice,brawlernovice)
 }
 
 CreatureTemplates:addCreatureTemplate(nwilla_tharlyat, "nwilla_tharlyat")

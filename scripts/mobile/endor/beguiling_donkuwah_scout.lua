@@ -39,7 +39,7 @@ beguiling_donkuwah_scout = Creature:new {
 	},
 	weapons = {"donkuwah_weapons"},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = merge(brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(beguiling_donkuwah_scout, "beguiling_donkuwah_scout")

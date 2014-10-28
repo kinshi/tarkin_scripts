@@ -40,7 +40,7 @@ brigand = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 	--outfit = "testoutfit"
 }
 

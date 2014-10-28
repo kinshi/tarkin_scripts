@@ -27,11 +27,14 @@ slym_shudee = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {	"object/mobile/dressed_commoner_naboo_twilek_male_01.iff",
-			"object/mobile/dressed_commoner_naboo_twilek_male_02.iff" },
+		"object/mobile/dressed_commoner_naboo_twilek_male_02.iff"
+	},
+
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "lergo_brazee_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(slym_shudee, "slym_shudee")

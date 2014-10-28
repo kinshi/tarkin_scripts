@@ -29,7 +29,7 @@ naboo_nomad = Creature:new {
 	templates = {"object/mobile/dressed_naboo_nomad.iff",
 				"object/mobile/dressed_commoner_fat_zabrak_male_01.iff"},
 	lootGroups = {
-		{
+	    {
 			groups = {
 				{group = "junk", chance = 4000000},
 				{group = "wearables_common", chance = 2000000},
@@ -37,11 +37,11 @@ naboo_nomad = Creature:new {
 				{group = "loot_kit_parts", chance = 2000000}
 			},
 			lootChance = 3200000
-		}
+		}				
 	},
-	weapons = {"pirate_weapons_light"},
+	weapons = {},
 	conversationTemplate = "",
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(naboo_nomad, "naboo_nomad")

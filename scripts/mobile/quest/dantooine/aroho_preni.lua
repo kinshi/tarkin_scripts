@@ -31,7 +31,7 @@ aroho_preni = Creature:new {
 	lootGroups = {},
 	weapons = {"primitive_weapons"},
 	conversationTemplate = "drakka_judarrl_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(aroho_preni, "aroho_preni")

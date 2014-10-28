@@ -33,7 +33,8 @@ teras_kasi_master = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(teras_kasi_master, "teras_kasi_master")

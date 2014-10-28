@@ -31,7 +31,7 @@ rodian_sif = Creature:new {
 	lootGroups = {},
 	weapons = {"sif_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,fencermaster,swordsmanmaster)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(rodian_sif, "rodian_sif")

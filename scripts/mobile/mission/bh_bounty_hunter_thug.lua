@@ -54,7 +54,7 @@ bh_bounty_hunter_thug = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_heavy"},
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(bh_bounty_hunter_thug, "bh_bounty_hunter_thug")

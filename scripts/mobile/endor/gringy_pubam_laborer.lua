@@ -32,7 +32,8 @@ grungy_pubam_laborer = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(grungy_pubam_laborer, "grungy_pubam_laborer")

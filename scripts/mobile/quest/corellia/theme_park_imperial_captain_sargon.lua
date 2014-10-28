@@ -36,7 +36,7 @@ theme_park_imperial_captain_sargon = Creature:new {
 		}						
 	},
 	weapons = {"imperial_weapons_medium"},
-	attacks = merge(brawlermaster,marksmanmaster,riflemanmaster,carbineermaster),
+	attacks = {},
 	conversationTemplate = "",
 	optionsBitmask = 128
 }

@@ -40,7 +40,7 @@ theme_park_imperial_mattias_aggro = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(brawlermaster,marksmanmaster,bountyhuntermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(theme_park_imperial_mattias_aggro, "theme_park_imperial_mattias_aggro")

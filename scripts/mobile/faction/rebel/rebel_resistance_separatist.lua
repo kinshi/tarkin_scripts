@@ -4,7 +4,7 @@ rebel_resistance_separatist = Creature:new {
 	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 8,
-	chanceHit = 0.27,
+	chanceHit = 0.270000,
 	damageMin = 70,
 	damageMax = 75,
 	baseXp = 235,
@@ -19,7 +19,7 @@ rebel_resistance_separatist = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
@@ -35,7 +35,7 @@ rebel_resistance_separatist = Creature:new {
 	},
 	lootGroups = {},
 	weapons = {"rebel_weapons_light"},
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(rebel_resistance_separatist, "rebel_resistance_separatist")

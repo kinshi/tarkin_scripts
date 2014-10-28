@@ -33,7 +33,7 @@ huff_niece = Creature:new {
 	conversationTemplate = "krayt_dragon_skull_mission_target_convotemplate",
 	lootGroups = {},
 	weapons = {},
-	attacks = brawlermaster
+	attacks = {}
 }
 
 CreatureTemplates:addCreatureTemplate(huff_niece, "huff_niece")

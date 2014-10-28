@@ -4,7 +4,7 @@ specops_agent = Creature:new {
 	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 24,
-	chanceHit = 0.35,
+	chanceHit = 0.350000,
 	damageMin = 230,
 	damageMax = 240,
 	baseXp = 2543,
@@ -19,7 +19,7 @@ specops_agent = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + KILLER,
@@ -49,7 +49,7 @@ lootGroups = {
 	},
 	weapons = {"rebel_weapons_light"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(pistoleermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(specops_agent, "specops_agent")

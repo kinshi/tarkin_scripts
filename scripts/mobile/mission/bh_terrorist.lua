@@ -4,7 +4,7 @@ bh_terrorist = Creature:new {
 	pvpFaction = "thug",
 	faction = "thug",
 	level = 17,
-	chanceHit = 0.32,
+	chanceHit = 0.320000,
 	damageMin = 180,
 	damageMax = 190,
 	baseXp = 1102,
@@ -19,7 +19,7 @@ bh_terrorist = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + KILLER,
@@ -38,7 +38,7 @@ bh_terrorist = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_heavy"},
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(bh_terrorist, "bh_terrorist")

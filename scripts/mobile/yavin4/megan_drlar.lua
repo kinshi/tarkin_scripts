@@ -28,7 +28,7 @@ megan_drlar = Creature:new {
 	templates = {"object/mobile/megan_drlar.iff"},
 	lootGroups = {},
 	weapons = {},
-	attacks = brawlermaster
+	attacks = {}
 }
 
 CreatureTemplates:addCreatureTemplate(megan_drlar, "megan_drlar")

@@ -37,9 +37,10 @@ grungy_donkuwah_laborer = Creature:new {
 			lootChance = 2300000
 		}
 	},
-	weapons = {"donkuwah_weapons"},
+	weapons = {},
 	conversationTemplate = "",
-	attacks = merge(fencermaster,brawlermaster)
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(grungy_donkuwah_laborer, "grungy_donkuwah_laborer")

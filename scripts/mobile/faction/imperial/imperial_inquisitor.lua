@@ -41,9 +41,8 @@ imperial_inquisitor = Creature:new {
 			lootChance = 2800000
 		}						
 	},
-	weapons = {"imperial_weapons_heavy"},
-	conversationTemplate = "",
-	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
+	weapons = {},
+	attacks = {}
 }
 
 CreatureTemplates:addCreatureTemplate(imperial_inquisitor, "imperial_inquisitor")

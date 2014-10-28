@@ -47,7 +47,7 @@ mercenary_elite = Creature:new {
 	},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "",
-	attacks = merge(commandomaster,marksmanmaster,brawlermaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(mercenary_elite, "mercenary_elite")

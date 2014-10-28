@@ -30,7 +30,8 @@ theme_park_rebel_altapi_tmman = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "theme_park_rebel_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(theme_park_rebel_altapi_tmman, "theme_park_rebel_altapi_tmman")

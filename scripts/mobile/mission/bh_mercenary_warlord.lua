@@ -63,7 +63,7 @@ bh_mercenary_warlord = Creature:new {
 	},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "",
-	attacks = merge(commandomaster,marksmanmaster,brawlermaster)
+	attacks = merge(riflemanmaster,commandomaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(bh_mercenary_warlord, "bh_mercenary_warlord")

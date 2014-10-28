@@ -33,7 +33,7 @@ gambler = Creature:new {
 					},
 	lootGroups = {},
 	weapons = {"pirate_weapons_light"},
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(gambler, "gambler")

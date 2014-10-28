@@ -35,10 +35,12 @@ security_guards_wife = Creature:new {
 			"object/mobile/dressed_commoner_naboo_human_female_07.iff",
 			"object/mobile/dressed_commoner_naboo_human_female_08.iff",
 			},
+				
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "biribas_tarun_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(security_guards_wife, "security_guards_wife")

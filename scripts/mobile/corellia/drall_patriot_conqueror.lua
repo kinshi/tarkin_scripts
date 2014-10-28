@@ -41,7 +41,7 @@ drall_patriot_conqueror = Creature:new {
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(brawlernovice,marksmannovice)
 }
 
 CreatureTemplates:addCreatureTemplate(drall_patriot_conqueror, "drall_patriot_conqueror")

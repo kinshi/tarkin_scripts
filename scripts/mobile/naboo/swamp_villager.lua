@@ -28,7 +28,7 @@ swamp_villager = Creature:new {
 
 	templates = {"object/mobile/dressed_swamp_villager.iff"},
 	lootGroups = {
-		{
+	    {
 			groups = {
 				{group = "junk", chance = 2000000},
 				{group = "wearables_common", chance = 2000000},
@@ -37,11 +37,12 @@ swamp_villager = Creature:new {
 				{group = "loot_kit_parts", chance = 2000000}
 			},
 			lootChance = 3200000
-		}
+		}					
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(swamp_villager, "swamp_villager")

@@ -40,7 +40,8 @@ pubam_battlelord = Creature:new {
 	},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(pubam_battlelord, "pubam_battlelord")

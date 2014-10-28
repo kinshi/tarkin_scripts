@@ -30,7 +30,8 @@ kylaena_haley = Creature:new {
 	lootGroups = {},
 	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,pikemanmaster)
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(kylaena_haley, "kylaena_haley")

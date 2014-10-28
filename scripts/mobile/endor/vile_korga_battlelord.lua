@@ -40,7 +40,8 @@ vile_korga_battlelord = Creature:new {
 	},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(vile_korga_battlelord, "vile_korga_battlelord")

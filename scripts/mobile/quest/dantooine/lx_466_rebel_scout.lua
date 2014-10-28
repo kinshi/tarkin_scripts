@@ -36,7 +36,7 @@ lx_466_rebel_scout = Creature:new {
 		"object/mobile/dressed_rebel_scout_zabrak_female_01.iff"},
 	lootGroups = {},
 	weapons = {"rebel_weapons_light"},
-	attacks = merge(pistoleermaster,marksmanmaster,brawlermaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(lx_466_rebel_scout, "lx_466_rebel_scout")

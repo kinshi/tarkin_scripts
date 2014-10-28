@@ -26,10 +26,10 @@ pilot = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/dressed_mercenary_messanger_hum_f.iff",
-			"object/mobile/dressed_mercenary_weak_hum_m.iff"},
+					"object/mobile/dressed_mercenary_weak_hum_m.iff"},
 	lootGroups = {},
 	weapons = {"rebel_weapons_light"},
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = {}
 }
 
 CreatureTemplates:addCreatureTemplate(pilot, "pilot")

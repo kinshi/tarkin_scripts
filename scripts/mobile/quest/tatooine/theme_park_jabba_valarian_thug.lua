@@ -37,11 +37,12 @@ theme_park_jabba_valarian_thug = Creature:new {
 				{group = "theme_park_loot_jabba_valarian_thug", chance = 10000000},
 			},
 			lootChance = 10000000
-		}
+		}				
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(theme_park_jabba_valarian_thug, "theme_park_jabba_valarian_thug")

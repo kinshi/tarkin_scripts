@@ -60,7 +60,8 @@ hlaano_dunlix = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "garm_bel_iblis_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(hlaano_dunlix, "hlaano_dunlix")

@@ -41,9 +41,7 @@ lifeDayScreenplay = ScreenPlay:new {
 registerScreenPlay("lifeDayScreenplay", true)
 
 function lifeDayScreenplay:start()
-	if getFormattedTime():find("Dec") ~= nil then
-		self:spawnMobiles()
-	end
+	self:spawnMobiles()
 end
 
 function lifeDayScreenplay:spawnMobiles()

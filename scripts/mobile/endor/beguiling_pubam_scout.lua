@@ -32,7 +32,8 @@ beguiling_pubam_scout = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(beguiling_pubam_scout, "beguiling_pubam_scout")

@@ -37,7 +37,7 @@ donkuwah_shaman = Creature:new {
 	},
 	weapons = {"donkuwah_weapons"},
 	conversationTemplate = "",
-	attacks = merge(fencermaster,brawlermaster)
+	attacks = merge(brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(donkuwah_shaman, "donkuwah_shaman")

@@ -4,7 +4,7 @@ imperial_noncom = Creature:new {
 	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 14,
-	chanceHit = 0.3,
+	chanceHit = 0.300000,
 	damageMin = 150,
 	damageMax = 160,
 	baseXp = 714,
@@ -19,7 +19,7 @@ imperial_noncom = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + STALKER,
@@ -44,7 +44,7 @@ imperial_noncom = Creature:new {
 		}						
 	},
 	weapons = {"imperial_weapons_light"},
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,carbineermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(imperial_noncom, "imperial_noncom")

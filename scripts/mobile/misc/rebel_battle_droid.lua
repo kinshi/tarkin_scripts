@@ -30,7 +30,8 @@ rebel_battle_droid = Creature:new {
 	lootGroups = {},
 	weapons = {"battle_droid_weapons"},
 	conversationTemplate = "",
-	attacks = merge(pistoleermaster,carbineermaster,marksmanmaster)
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(rebel_battle_droid, "rebel_battle_droid")

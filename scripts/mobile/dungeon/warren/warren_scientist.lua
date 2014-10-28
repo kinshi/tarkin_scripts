@@ -42,7 +42,7 @@ warren_scientist = Creature:new {
 		}			
 	},
 	weapons = {},
-	attacks = brawlermaster
+	attacks = {}
 }
 
 CreatureTemplates:addCreatureTemplate(warren_scientist, "warren_scientist")

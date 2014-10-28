@@ -4,7 +4,7 @@ rebel_scout = Creature:new {
 	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 15,
-	chanceHit = 0.31,
+	chanceHit = 0.310000,
 	damageMin = 160,
 	damageMax = 170,
 	baseXp = 831,
@@ -19,7 +19,7 @@ rebel_scout = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + STALKER,
@@ -34,7 +34,7 @@ rebel_scout = Creature:new {
 		"object/mobile/dressed_rebel_scout_zabrak_female_01.iff"},
 	lootGroups = {},
 	weapons = {"rebel_weapons_light"},
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(rebel_scout, "rebel_scout")

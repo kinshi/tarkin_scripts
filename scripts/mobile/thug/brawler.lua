@@ -27,15 +27,16 @@ brawler = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/dressed_brawler_trainer_02.iff",
-			"object/mobile/dressed_hoodlum_zabrak_male_01.iff",
-			"object/mobile/dressed_criminal_thug_human_female_01.iff",
-			"object/mobile/dressed_criminal_thug_bothan_male_01.iff",
-			"object/mobile/dressed_criminal_thug_zabrak_female_01.iff",
-			"object/mobile/dressed_desperado_bith_male_01.iff" },
+					"object/mobile/dressed_hoodlum_zabrak_male_01.iff",
+					"object/mobile/dressed_criminal_thug_human_female_01.iff",
+					"object/mobile/dressed_criminal_thug_bothan_male_01.iff",
+					"object/mobile/dressed_criminal_thug_zabrak_female_01.iff",
+					"object/mobile/dressed_desperado_bith_male_01.iff"
+					},
 	lootGroups = {},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(brawler, "brawler")

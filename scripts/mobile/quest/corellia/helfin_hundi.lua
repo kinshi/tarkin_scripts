@@ -30,7 +30,7 @@ helfin_hundi = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "gilad_pellaeon_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {}
 }
 
 CreatureTemplates:addCreatureTemplate(helfin_hundi, "helfin_hundi")

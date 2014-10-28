@@ -42,7 +42,7 @@ death_watch_battle_droid = Creature:new {
 	},
 	weapons = {"battle_droid_weapons"},
 	conversationTemplate = "",
-	attacks = merge(pistoleermaster,carbineermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(death_watch_battle_droid, "death_watch_battle_droid")

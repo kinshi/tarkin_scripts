@@ -28,11 +28,12 @@ caravan_leader_coa3 = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/dressed_gran_thug_male_01.iff",
-			"object/mobile/dressed_gran_thug_male_02.iff"},
+				 "object/mobile/dressed_gran_thug_male_02.iff"
+	},
 	lootGroups = {},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,carbineermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(caravan_leader_coa3, "caravan_leader_coa3")

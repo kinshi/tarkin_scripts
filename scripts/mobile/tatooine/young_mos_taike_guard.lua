@@ -40,7 +40,7 @@ young_mos_taike_guard = Creature:new {
 	weapons = {},
 	outfit = "mos_taike_guard_outfit",
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(brawlernovice,marksmannovice)
 }
 
 CreatureTemplates:addCreatureTemplate(young_mos_taike_guard, "young_mos_taike_guard")

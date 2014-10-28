@@ -44,7 +44,7 @@ rageon_vart = Creature:new {
 	},
 	weapons = {"death_watch_commander_weapons"},
 	conversationTemplate = "",
-	attacks = merge(carbineermaster,marksmanmaster,brawlermaster)
+	attacks = merge(carbineermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(rageon_vart, "rageon_vart")

@@ -40,9 +40,10 @@ corsec_investigator = Creature:new {
 			lootChance = 3000000
 		}
 	},
-	weapons = {"corsec_police_weapons"},
+	weapons = {},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(corsec_investigator, "corsec_investigator")

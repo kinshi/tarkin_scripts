@@ -4,7 +4,7 @@ specforce_procurement_specialist = Creature:new {
 	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 13,
-	chanceHit = 0.3,
+	chanceHit = 0.300000,
 	damageMin = 140,
 	damageMax = 150,
 	baseXp = 609,
@@ -19,7 +19,7 @@ specforce_procurement_specialist = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
@@ -48,7 +48,7 @@ specforce_procurement_specialist = Creature:new {
 		}	
 	},
 	weapons = {"imperial_weapons_light"},
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(specforce_procurement_specialist, "specforce_procurement_specialist")

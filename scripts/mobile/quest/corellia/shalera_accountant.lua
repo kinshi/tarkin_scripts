@@ -54,7 +54,7 @@ shalera_accountant = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "lady_hutt_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {}
 }
 
 CreatureTemplates:addCreatureTemplate(shalera_accountant, "shalera_accountant")

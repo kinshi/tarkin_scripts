@@ -26,7 +26,7 @@ slavemaster = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/dressed_tatooine_trandoshan_slaver.iff",
-			"object/mobile/dressed_tatooine_slaver.iff"},
+				 "object/mobile/dressed_tatooine_slaver.iff"},
 	lootGroups = {
       	{
 			groups = {
@@ -39,7 +39,7 @@ slavemaster = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_light"},
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(slavemaster, "slavemaster")

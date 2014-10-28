@@ -37,9 +37,10 @@ shaggy_donkuwah_youth = Creature:new {
 			lootChance = 2300000
 		}
 	},
-	weapons = {"donkuwah_weapons"},
+	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(shaggy_donkuwah_youth, "shaggy_donkuwah_youth")

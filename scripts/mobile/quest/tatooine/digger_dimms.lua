@@ -27,11 +27,12 @@ digger_dimms = Creature:new {
 	diet = HERBIVORE,
 
 	templates = { "object/mobile/dressed_commoner_tatooine_bith_male_05.iff" },
-
+				
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "tekil_barje_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(digger_dimms, "digger_dimms")

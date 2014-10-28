@@ -34,9 +34,9 @@ elite_canyon_corsair = Creature:new {
 		"object/mobile/dressed_corsair_pirate_elite_wee_m.iff",
 		"object/mobile/dressed_corsair_pirate_elite_zab_m.iff"},
 	lootGroups = {},
-	weapons = {"canyon_corsair_weapons"},
+	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
-	attacks = merge(swordsmanmaster,carbineermaster,tkamaster,brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(elite_canyon_corsair, "elite_canyon_corsair")

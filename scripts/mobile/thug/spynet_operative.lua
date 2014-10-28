@@ -4,7 +4,7 @@ spynet_operative = Creature:new {
 	pvpFaction = "",
 	faction = "",
 	level = 17,
-	chanceHit = 0.32,
+	chanceHit = 0.320000,
 	damageMin = 160,
 	damageMax = 170,
 	baseXp = 1257,
@@ -19,7 +19,7 @@ spynet_operative = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + KILLER,
@@ -40,7 +40,7 @@ spynet_operative = Creature:new {
 		}
 	},
 	weapons = {"rebel_weapons_heavy"},
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(spynet_operative, "spynet_operative")

@@ -68,7 +68,8 @@ nurla_businessman = Creature:new {
 	},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(nurla_businessman, "nurla_businessman")

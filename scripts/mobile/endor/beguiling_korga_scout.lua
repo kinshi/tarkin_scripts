@@ -32,7 +32,8 @@ beguiling_korga_scout = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(beguiling_korga_scout, "beguiling_korga_scout")

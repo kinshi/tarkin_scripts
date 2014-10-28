@@ -4,7 +4,7 @@ specforce_technician = Creature:new {
 	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 18,
-	chanceHit = 0.32,
+	chanceHit = 0.320000,
 	damageMin = 170,
 	damageMax = 180,
 	baseXp = 1257,
@@ -19,7 +19,7 @@ specforce_technician = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
@@ -48,7 +48,7 @@ specforce_technician = Creature:new {
 		}	
 	},
 	weapons = {"imperial_weapons_medium"},
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(specforce_technician, "specforce_technician")

@@ -40,7 +40,8 @@ korga_chieftain = Creature:new {
 	},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(korga_chieftain, "korga_chieftain")

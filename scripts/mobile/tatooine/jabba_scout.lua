@@ -48,7 +48,8 @@ jabba_scout = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(jabba_scout, "jabba_scout")

@@ -11,10 +11,7 @@ pfilbee_jhorn_missions =
 				{ npcTemplate = "greater_desert_womp_rat", planetName = "tatooine", npcName = "a greater desert womp rat" }
 		},
 		itemSpawns = {}, 
-		rewards = {
-			{ rewardType = "faction", faction = "imperial", amount = 50 },
-			{ rewardType = "credits", amount = 2000 },
-		}
+		rewards = {}
 	},
 	{
 		missionType = "assassinate",
@@ -27,10 +24,7 @@ pfilbee_jhorn_missions =
 				{ npcTemplate = "tatooine_mynock", planetName = "tatooine", npcName = "a tatooine mynock" }
 		},
 		itemSpawns = {}, 
-		rewards = {
-			{ rewardType = "faction", faction = "imperial", amount = 100 },
-			{ rewardType = "credits", amount = 3000 },
-		}
+		rewards = {}
 	},
 	{
 		missionType = "assassinate",
@@ -44,10 +38,7 @@ pfilbee_jhorn_missions =
 				{ npcTemplate = "dragonet", planetName = "tatooine", npcName = "a dragonet" }
 		},
 		itemSpawns = {}, 
-		rewards = {
-			{ rewardType = "faction", faction = "imperial", amount = 150 },
-			{ rewardType = "credits", amount = 4000 },
-		}
+		rewards = {}
 	},	
 	{
 		missionType = "assassinate",
@@ -62,9 +53,8 @@ pfilbee_jhorn_missions =
 				{ npcTemplate = "dune_lizard", planetName = "tatooine", npcName = "a dune lizard" }				
 		},
 		itemSpawns = {}, 
-		rewards = {
-			{ rewardType = "faction", faction = "imperial", amount = 150 },
-			{ rewardType = "credits", amount = 6000 },
+		rewards = 
+		{ 
 			{ rewardType = "loot", lootGroup = "task_reward_pfilbee_jhorn" },
 		}
 	}	

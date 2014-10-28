@@ -42,11 +42,11 @@ force_trained_archaist = Creature:new {
 				{group = "wearables_uncommon", chance = 750000}
 			},
 			lootChance = 4500000
-		}
+		}	
 	},
 	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",
-	attacks = merge(pikemanmaster,brawlermaster)
+	attacks = merge(pikemanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(force_trained_archaist, "force_trained_archaist")

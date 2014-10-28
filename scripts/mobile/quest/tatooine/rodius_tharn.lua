@@ -30,7 +30,7 @@ rodius_tharn = Creature:new {
 	lootGroups = {	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "kormund_thrylle_mission_target_convotemplate",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = {}
 }
 
 CreatureTemplates:addCreatureTemplate(rodius_tharn, "rodius_tharn")

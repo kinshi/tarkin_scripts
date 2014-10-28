@@ -39,7 +39,7 @@ enraged_donkuwah = Creature:new {
 	},
 	weapons = {"donkuwah_weapons"},
 	conversationTemplate = "",
-	attacks = merge(fencermaster,brawlermaster)
+	attacks = merge(brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(enraged_donkuwah, "enraged_donkuwah")

@@ -27,8 +27,8 @@ nurla_corsec_rogue = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {
-			"object/mobile/dressed_mercenary_weak_hum_m.iff",
-			"object/mobile/dressed_mercenary_weak_rod_m.iff"
+					"object/mobile/dressed_mercenary_weak_hum_m.iff",
+					"object/mobile/dressed_mercenary_weak_rod_m.iff"
 		},
 	lootGroups = {
 	    {
@@ -41,9 +41,10 @@ nurla_corsec_rogue = Creature:new {
 			lootChance = 3000000
 		}
 	},
-	weapons = {"ranged_weapons"},
+	weapons = {},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(nurla_corsec_rogue, "nurla_corsec_rogue")

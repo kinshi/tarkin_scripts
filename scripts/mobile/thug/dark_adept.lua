@@ -47,7 +47,7 @@ dark_adept = Creature:new {
 	},
 	weapons = {"dark_jedi_weapons_gen2"},
 	conversationTemplate = "",
-	attacks = merge(lightsabermaster,forcewielder)
+	attacks = merge(lightsabermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(dark_adept, "dark_adept")

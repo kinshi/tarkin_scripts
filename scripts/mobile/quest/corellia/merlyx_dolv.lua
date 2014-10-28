@@ -29,7 +29,8 @@ merlyx_dolv = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "diktatTargetConvo",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(merlyx_dolv, "merlyx_dolv")

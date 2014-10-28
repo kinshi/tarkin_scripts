@@ -32,7 +32,8 @@ lesser_prophet_of_the_dark_side = Creature:new {
 	lootGroups = {},
 	weapons = {"dark_jedi_weapons_gen2"},
 	conversationTemplate = "",
-	attacks = merge(lightsabermaster,forcewielder)
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(lesser_prophet_of_the_dark_side, "lesser_prophet_of_the_dark_side")

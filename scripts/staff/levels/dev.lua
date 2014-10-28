@@ -1,7 +1,7 @@
 dev = {
 	level = 14,
 	name = "dev",
-	tag = "Tarkin-Dev",
+	tag = "SWGCanon-Dev",
 	skills = {
 		"admin_base",
 		"admin_debug_01",

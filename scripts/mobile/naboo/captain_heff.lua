@@ -30,7 +30,8 @@ captain_heff = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "CaptainHeffConversationTemplate",
-	attacks = {}
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(captain_heff, "captain_heff")

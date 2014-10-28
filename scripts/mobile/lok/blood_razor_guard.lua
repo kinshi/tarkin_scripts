@@ -52,7 +52,7 @@ blood_razor_guard = Creature:new {
 	},
 	weapons = {"blood_razer_weapons"},
 	conversationTemplate = "",
-	attacks = merge(pistoleermaster,pikemanmaster,tkamaster,brawlermaster,marksmanmaster)
+	attacks = merge(pistoleermaster,pikemanmaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(blood_razor_guard, "blood_razor_guard")

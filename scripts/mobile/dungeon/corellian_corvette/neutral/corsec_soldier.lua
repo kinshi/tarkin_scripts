@@ -21,13 +21,14 @@ corsec_soldier = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
+	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + KILLER,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
-	templates = { "object/mobile/dressed_corsec_officer_human_male_01.iff",
-			"object/mobile/dressed_corsec_officer_human_female_01.iff"
+	templates = {
+					"object/mobile/dressed_corsec_officer_human_male_01.iff",
+					"object/mobile/dressed_corsec_officer_human_female_01.iff"
 		},
 	lootGroups = {
 	    {
@@ -42,7 +43,7 @@ corsec_soldier = Creature:new {
 	},
 	weapons = {"corsec_police_weapons"},
 	conversationTemplate = "",
-	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
+	attacks = merge(brawlernovice,marksmannovice)
 }
 
 CreatureTemplates:addCreatureTemplate(corsec_soldier, "corsec_soldier")

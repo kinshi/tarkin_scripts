@@ -39,7 +39,7 @@ haggard_donkuwah_battlelord = Creature:new {
 	},
 	weapons = {"donkuwah_weapons"},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = merge(brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(haggard_donkuwah_battlelord, "haggard_donkuwah_battlelord")

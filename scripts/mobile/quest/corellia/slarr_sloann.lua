@@ -44,9 +44,9 @@ slarr_sloann = Creature:new {
 			lootChance = 10000000
 		}
 	},
-	weapons = {"ranged_weapons"},
+	weapons = {},
 	conversationTemplate = "",
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = {}
 }
 
 CreatureTemplates:addCreatureTemplate(slarr_sloann, "slarr_sloann")

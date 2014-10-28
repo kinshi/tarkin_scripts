@@ -39,7 +39,8 @@ gnarled_pubam_spiritmaster = Creature:new {
 	},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(gnarled_pubam_spiritmaster, "gnarled_pubam_spiritmaster")

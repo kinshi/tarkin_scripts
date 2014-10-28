@@ -47,9 +47,9 @@ bh_feral_force_wielder = Creature:new {
 			lootChance = 6000000
 		},			
 	},
-	weapons = {"mixed_force_weapons"},
+	weapons = {"light_jedi_weapons"},
 	conversationTemplate = "",
-	attacks = merge(pikemanmaster,brawlermaster)
+	attacks = merge(swordsmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(bh_feral_force_wielder, "bh_feral_force_wielder")

@@ -30,7 +30,7 @@ lerat_zom = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = merge(brawlernovice)
 }
 
 CreatureTemplates:addCreatureTemplate(lerat_zom, "lerat_zom")

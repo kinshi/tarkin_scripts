@@ -30,7 +30,7 @@ erran_sif = Creature:new {
 	lootGroups = {},
 	weapons = {"sif_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,fencermaster,swordsmanmaster)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(erran_sif, "erran_sif")

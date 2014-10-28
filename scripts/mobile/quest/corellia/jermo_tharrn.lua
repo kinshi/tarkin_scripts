@@ -39,7 +39,7 @@ jermo_tharrn = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "thrackan_sal_solo_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {}
 }
 
 CreatureTemplates:addCreatureTemplate(jermo_tharrn, "jermo_tharrn")

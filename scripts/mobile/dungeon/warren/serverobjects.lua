@@ -1,5 +1,4 @@
 includeFile("dungeon/warren/bors_teraud.lua")
-includeFile("dungeon/warren/captain_heff.lua")
 includeFile("dungeon/warren/computer_scientist.lua")
 includeFile("dungeon/warren/crazed_scientist.lua")
 includeFile("dungeon/warren/cyborg_bol.lua")

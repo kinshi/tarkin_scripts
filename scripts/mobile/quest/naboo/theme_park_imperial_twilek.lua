@@ -30,7 +30,8 @@ theme_park_imperial_twilek = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(theme_park_imperial_twilek, "theme_park_imperial_twilek")

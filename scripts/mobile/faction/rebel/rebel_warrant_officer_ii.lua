@@ -4,7 +4,7 @@ rebel_warrant_officer_ii = Creature:new {
 	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 16,
-	chanceHit = 0.31,
+	chanceHit = 0.310000,
 	damageMin = 170,
 	damageMax = 180,
 	baseXp = 960,
@@ -19,7 +19,7 @@ rebel_warrant_officer_ii = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
@@ -51,7 +51,7 @@ rebel_warrant_officer_ii = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "rebelRecruiterConvoTemplate",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(rebel_warrant_officer_ii, "rebel_warrant_officer_ii")

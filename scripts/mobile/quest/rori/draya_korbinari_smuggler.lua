@@ -22,7 +22,7 @@ draya_korbinari_smuggler = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = ATTACKABLE + AGGRESSIVE + ENEMY,
+	pvpBitmask = ATTACKABLE + AGGRESSIVE,
 	creatureBitmask = PACK + STALKER,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
@@ -38,7 +38,7 @@ draya_korbinari_smuggler = Creature:new {
 		},
 	},
 	outfit = "",
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = merge(marksmannovice)
 }
 
 CreatureTemplates:addCreatureTemplate(draya_korbinari_smuggler, "draya_korbinari_smuggler")

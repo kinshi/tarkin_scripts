@@ -33,6 +33,7 @@ dr_kaum = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "theme_park_valarian_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 CreatureTemplates:addCreatureTemplate(dr_kaum,"dr_kaum")

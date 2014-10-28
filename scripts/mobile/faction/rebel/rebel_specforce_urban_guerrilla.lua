@@ -50,7 +50,7 @@ rebel_specforce_urban_guerrilla = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(rebel_specforce_urban_guerrilla, "rebel_specforce_urban_guerrilla")

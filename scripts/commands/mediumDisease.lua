@@ -50,11 +50,10 @@ MediumDiseaseCommand = {
 		{ "resistance_disease", "poison_disease_resist" },
 		HEALTH,
 		true,
-		100,
-		40,
+		125,
+		80,
 		50, 
-		205,
-		30
+		205
 	  )
 	},
 }

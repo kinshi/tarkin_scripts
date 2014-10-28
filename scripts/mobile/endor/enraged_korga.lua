@@ -39,7 +39,8 @@ enraged_korga = Creature:new {
 	},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(enraged_korga, "enraged_korga")

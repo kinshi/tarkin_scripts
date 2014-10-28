@@ -31,7 +31,8 @@ theme_park_imperial_escort_moff = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "theme_park_imperial_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(theme_park_imperial_escort_moff, "theme_park_imperial_escort_moff")

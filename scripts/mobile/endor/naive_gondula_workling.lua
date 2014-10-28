@@ -39,7 +39,7 @@ naive_gondula_workling = Creature:new {
 	},
 	weapons = {"ewok_weapons"},
 	conversationTemplate = "",
-	attacks = merge(brawlernovice,marksmannovice)
+	attacks = merge(riflemanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(naive_gondula_workling, "naive_gondula_workling")

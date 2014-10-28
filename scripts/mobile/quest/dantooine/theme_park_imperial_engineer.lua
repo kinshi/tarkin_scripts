@@ -36,7 +36,7 @@ theme_park_imperial_engineer = Creature:new {
 		"object/mobile/dressed_imperial_officer_m_6.iff"},
 	lootGroups = {},
 	weapons = {"imperial_weapons_medium"},
-	attacks = merge(brawlermaster,marksmanmaster),
+	attacks = {},
 	conversationTemplate = "theme_park_rebel_mission_target_convotemplate"
 }
 

@@ -30,16 +30,14 @@ theme_park_marauder_ewok_holy = Creature:new {
 	templates = {"object/mobile/dressed_ewok_m_07.iff"},
 	lootGroups =
 	{
-		{
-			groups = {
-				{group = "theme_park_loot_marauder_ewok_staff", chance = 10000000}
-			},
+		{ groups =
+			{ {group = "theme_park_loot_marauder_ewok_staff", chance = 10000000} },
 			lootChance = 10000000
 		}
 	},
 	weapons = {"ewok_weapons"},
 	conversationTemplate = "",
-	attacks = merge(riflemanmaster,brawlermaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(theme_park_marauder_ewok_holy, "theme_park_marauder_ewok_holy")

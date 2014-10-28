@@ -45,7 +45,7 @@ fenri_dalso = Creature:new {
 	},
 	weapons = {"death_watch_commander_weapons"},
 	conversationTemplate = "",
-	attacks = merge(carbineermaster,marksmanmaster,brawlermaster)
+	attacks = merge(carbineermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(fenri_dalso, "fenri_dalso")

@@ -37,7 +37,8 @@ ind_jabba_henchman = Creature:new {
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
-	attacks = merge(brawlernovice,marksmannovice)
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(ind_jabba_henchman, "ind_jabba_henchman")

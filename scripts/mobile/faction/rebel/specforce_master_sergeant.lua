@@ -4,7 +4,7 @@ specforce_master_sergeant = Creature:new {
 	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 22,
-	chanceHit = 0.35,
+	chanceHit = 0.350000,
 	damageMin = 210,
 	damageMax = 220,
 	baseXp = 2219,
@@ -19,7 +19,7 @@ specforce_master_sergeant = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + KILLER,
@@ -49,7 +49,7 @@ specforce_master_sergeant = Creature:new {
 	},
 			
 	weapons = {"imperial_weapons_heavy"},
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(specforce_master_sergeant, "specforce_master_sergeant")

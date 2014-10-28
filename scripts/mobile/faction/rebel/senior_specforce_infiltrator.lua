@@ -4,7 +4,7 @@ senior_specforce_infiltrator = Creature:new {
 	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 20,
-	chanceHit = 0.33,
+	chanceHit = 0.330000,
 	damageMin = 190,
 	damageMax = 200,
 	baseXp = 1803,
@@ -19,7 +19,7 @@ senior_specforce_infiltrator = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + KILLER,
@@ -48,7 +48,7 @@ senior_specforce_infiltrator = Creature:new {
 		}
 	},
 	weapons = {"imperial_weapons_medium"},
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(senior_specforce_infiltrator, "senior_specforce_infiltrator")

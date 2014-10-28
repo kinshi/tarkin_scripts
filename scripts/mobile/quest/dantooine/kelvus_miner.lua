@@ -150,7 +150,8 @@ kelvus_miner = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "kelvus_naria_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(kelvus_miner, "kelvus_miner")

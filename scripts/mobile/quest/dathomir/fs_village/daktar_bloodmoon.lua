@@ -30,7 +30,8 @@ daktar_bloodmoon = Creature:new {
 	lootGroups = {},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(daktar_bloodmoon, "daktar_bloodmoon")

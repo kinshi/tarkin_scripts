@@ -30,9 +30,14 @@ draya_korbinari_thief = Creature:new {
 	templates = {"object/mobile/dressed_kobola_thief_rodian_male_01.iff"},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "draya_korbinari_mission_target_convotemplate",
-	lootGroups = {},
+	lootGroups = {
+		{
+			groups = {			},
+ 			lootChance = 0
+		},
+	},
 	outfit = "",
-	attacks = merge(marksmannovice,brawlernovice)
+	attacks = merge(marksmannovice)
 }
 
 CreatureTemplates:addCreatureTemplate(draya_korbinari_thief, "draya_korbinari_thief")

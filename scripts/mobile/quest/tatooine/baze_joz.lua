@@ -35,6 +35,7 @@ baze_joz = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "blerx_tango_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 CreatureTemplates:addCreatureTemplate(baze_joz, "baze_joz")

@@ -37,7 +37,7 @@ moisture_farmer = Creature:new {
 			lootChance = 3000000
 		}
 	},
-	weapons = {"rebel_weapons_light"},
+	weapons = {},
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

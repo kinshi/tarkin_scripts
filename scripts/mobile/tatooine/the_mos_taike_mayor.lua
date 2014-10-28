@@ -37,9 +37,9 @@ the_mos_taike_mayor = Creature:new {
 			lootChance = 2400000
 		}			
 	},
-	weapons = {"pirate_weapons_light"},
+	weapons = {},
 	conversationTemplate = "",
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(brawlernovice,marksmannovice)
 }
 
 CreatureTemplates:addCreatureTemplate(the_mos_taike_mayor, "the_mos_taike_mayor")

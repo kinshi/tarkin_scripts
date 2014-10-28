@@ -77,7 +77,8 @@ naboo_kidnapped_noble_01 = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(naboo_kidnapped_noble_01, "naboo_kidnapped_noble_01")

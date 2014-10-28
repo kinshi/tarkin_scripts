@@ -4,7 +4,7 @@ hand_of_solitude = Creature:new {
 	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 15,
-	chanceHit = 0.31,
+	chanceHit = 0.310000,
 	damageMin = 160,
 	damageMax = 170,
 	baseXp = 960,
@@ -19,7 +19,7 @@ hand_of_solitude = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + KILLER,
@@ -28,7 +28,7 @@ hand_of_solitude = Creature:new {
 	templates = {"object/mobile/human_male.iff"},
 	lootGroups = {},
 	weapons = {"pirate_weapons_medium"},
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(brawlernovice,marksmannovice)
 }
 
 CreatureTemplates:addCreatureTemplate(hand_of_solitude, "hand_of_solitude")

@@ -40,7 +40,8 @@ tricky_korga_scout = Creature:new {
 	},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(tricky_korga_scout, "tricky_korga_scout")

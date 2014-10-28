@@ -39,7 +39,8 @@ dispatcher = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "biribas_tarun_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(dispatcher, "dispatcher")

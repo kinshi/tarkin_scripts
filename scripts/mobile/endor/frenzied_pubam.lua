@@ -40,7 +40,8 @@ frenzied_pubam = Creature:new {
 	},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(frenzied_pubam, "frenzied_pubam")

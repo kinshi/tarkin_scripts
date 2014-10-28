@@ -30,7 +30,7 @@ janta_rockshaper = Creature:new {
 		"object/mobile/dantari_male.iff",
 		"object/mobile/dantari_female.iff"},
 	lootGroups = {
-		{
+	    {
 			groups = {
 				{group = "junk", chance = 5000000},
 				{group = "janta_common", chance = 1500000},
@@ -38,11 +38,11 @@ janta_rockshaper = Creature:new {
 				{group = "wearables_all", chance = 500000}
 			},
 			lootChance = 2000000
-		}
+		}	
 	},
 	weapons = {"primitive_weapons"},
 	conversationTemplate = "",
-	attacks = merge(pikemanmaster,fencermaster,brawlermaster)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(janta_rockshaper, "janta_rockshaper")

@@ -4,7 +4,7 @@ specialist_noncom = Creature:new {
 	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 13,
-	chanceHit = 0.3,
+	chanceHit = 0.300000,
 	damageMin = 140,
 	damageMax = 150,
 	baseXp = 609,
@@ -19,7 +19,7 @@ specialist_noncom = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
@@ -28,7 +28,7 @@ specialist_noncom = Creature:new {
 	templates = {"object/mobile/dressed_imperial_lieutenant_m.iff"},
 	lootGroups = {},
 	weapons = {"imperial_weapons_light"},
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(specialist_noncom, "specialist_noncom")

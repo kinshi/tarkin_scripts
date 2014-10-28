@@ -40,7 +40,7 @@ cannibal = Creature:new {
 	},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlernovice
+	attacks = merge(brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(cannibal, "cannibal")

@@ -37,7 +37,8 @@ nethlekvaa = Creature:new {
 	},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = brawlernovice
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(nethlekvaa, "nethlekvaa")

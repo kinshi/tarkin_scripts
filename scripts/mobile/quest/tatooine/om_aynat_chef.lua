@@ -33,7 +33,7 @@ om_aynat_chef = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "om_aynat_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {}
 }
 
 CreatureTemplates:addCreatureTemplate(om_aynat_chef, "om_aynat_chef")

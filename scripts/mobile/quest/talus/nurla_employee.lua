@@ -61,7 +61,8 @@ nurla_employee = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "nurla_slinthiss_mission_target_convotemplate",
-	attacks = brawlermaster
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(nurla_employee, "nurla_employee")

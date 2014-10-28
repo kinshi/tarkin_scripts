@@ -4,7 +4,7 @@ imperial_staff_sergeant = Creature:new {
 	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 17,
-	chanceHit = 0.32,
+	chanceHit = 0.320000,
 	damageMin = 160,
 	damageMax = 170,
 	baseXp = 112,
@@ -19,7 +19,7 @@ imperial_staff_sergeant = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
@@ -42,7 +42,7 @@ imperial_staff_sergeant = Creature:new {
 		}						
 	},
 	weapons = {"imperial_weapons_medium"},
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,carbineermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(imperial_staff_sergeant, "imperial_staff_sergeant")

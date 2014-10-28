@@ -22,7 +22,7 @@ gravin_attal = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = NONE,
+	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
@@ -31,7 +31,8 @@ gravin_attal = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = {}
+	attacks = {
+	}
 }
 
 CreatureTemplates:addCreatureTemplate(gravin_attal, "gravin_attal")

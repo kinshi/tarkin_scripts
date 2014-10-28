@@ -31,7 +31,6 @@ scrib_leras = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "theme_park_jabba_mission_target_convotemplate",
-	attacks = brawlermaster
 }
 
 CreatureTemplates:addCreatureTemplate(scrib_leras, "scrib_leras")

@@ -51,10 +51,9 @@ StrongDiseaseCommand = {
 		HEALTH,
 		true,
 		125,
-		60,
+		100,
 		80, 
-		405,
-		45
+		405
 	  )
 	}
 }

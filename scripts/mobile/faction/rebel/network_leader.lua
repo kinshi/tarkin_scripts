@@ -4,7 +4,7 @@ network_leader = Creature:new {
 	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 12,
-	chanceHit = 0.29,
+	chanceHit = 0.290000,
 	damageMin = 130,
 	damageMax = 140,
 	baseXp = 514,
@@ -19,7 +19,7 @@ network_leader = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0,
+	tamingChance = 0.000000,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
@@ -35,7 +35,7 @@ network_leader = Creature:new {
 	},
 	lootGroups = {},
 	weapons = {"rebel_weapons_light"},
-	attacks = merge(brawlermaster,marksmanmaster)
+	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(network_leader, "network_leader")
