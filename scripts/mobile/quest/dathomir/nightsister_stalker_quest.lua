@@ -28,9 +28,9 @@ nightsister_stalker_quest = Creature:new {
 
 	templates = {"object/mobile/dressed_dathomir_nightsister_stalker.iff"},
 	lootGroups = {},
-	weapons = {},
+	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",
-	attacks = {}
+	attacks = merge(brawlermaster,pikemanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(nightsister_stalker_quest, "nightsister_stalker_quest")

@@ -4,7 +4,7 @@ imperial_second_lieutenant = Creature:new {
 	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 20,
-	chanceHit = 0.330000,
+	chanceHit = 0.33,
 	damageMin = 190,
 	damageMax = 200,
 	baseXp = 1805,
@@ -19,7 +19,7 @@ imperial_second_lieutenant = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0.000000,
+	tamingChance = 0,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + KILLER,
@@ -42,7 +42,7 @@ imperial_second_lieutenant = Creature:new {
 		}						
 	},
 	weapons = {"imperial_weapons_medium"},
-	attacks = merge(riflemanmaster,carbineermaster)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(imperial_second_lieutenant, "imperial_second_lieutenant")

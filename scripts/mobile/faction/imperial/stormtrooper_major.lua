@@ -48,7 +48,7 @@ stormtrooper_major = Creature:new {
 	},
 	weapons = {"stormtrooper_weapons"},
 	conversationTemplate = "imperialRecruiterConvoTemplate",
-	attacks = merge(riflemanmaster,carbineermaster)
+	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(stormtrooper_major, "stormtrooper_major")

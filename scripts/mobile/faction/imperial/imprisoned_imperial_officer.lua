@@ -51,8 +51,7 @@ imprisoned_imperial_officer = Creature:new {
 	},
 	weapons = {},
 	conversationTemplate = "",
-	attacks = {
-	}
+	attacks = brawlermaster
 }
 
 CreatureTemplates:addCreatureTemplate(imprisoned_imperial_officer, "imprisoned_imperial_officer")

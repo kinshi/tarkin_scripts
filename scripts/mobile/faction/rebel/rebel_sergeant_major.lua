@@ -52,7 +52,7 @@ rebel_sergeant_major = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "rebelRecruiterConvoTemplate",
-	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(rebel_sergeant_major, "rebel_sergeant_major")

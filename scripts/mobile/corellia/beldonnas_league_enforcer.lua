@@ -54,7 +54,7 @@ beldonnas_league_enforcer = Creature:new {
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
-	attacks = merge(brawlernovice,marksmannovice)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(beldonnas_league_enforcer, "beldonnas_league_enforcer")

@@ -21,7 +21,7 @@ old_man = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = NONE,
+	pvpBitmask = ATTACKABLE,
 	creatureBitmask = NONE,
 	optionsBitmask = 264,
 	diet = HERBIVORE,
@@ -30,8 +30,7 @@ old_man = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "old_man_convotemplate",
-	attacks = {
-	}
+	attacks = brawlermaster
 }
 
 CreatureTemplates:addCreatureTemplate(old_man, "old_man")

@@ -26,10 +26,8 @@ corsec_sergeant = Creature:new {
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
-	templates = {
-					"object/mobile/dressed_corsec_officer_human_male_01.iff",
-					"object/mobile/dressed_corsec_officer_human_female_01.iff"
-		},
+	templates = { "object/mobile/dressed_corsec_officer_human_male_01.iff",
+			"object/mobile/dressed_corsec_officer_human_female_01.iff" },
 	lootGroups = {
 	    {
 			groups = {
@@ -41,10 +39,9 @@ corsec_sergeant = Creature:new {
 			lootChance = 3000000
 		}
 	},
-	weapons = {},
+	weapons = {"corsec_police_weapons"},
 	conversationTemplate = "",
-	attacks = {
-	}
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(corsec_sergeant, "corsec_sergeant")

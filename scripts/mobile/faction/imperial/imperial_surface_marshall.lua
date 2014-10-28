@@ -52,7 +52,7 @@ imperial_surface_marshall = Creature:new {
 	},
 	weapons = {"imperial_weapons_heavy"},
 	conversationTemplate = "",
-	attacks = merge(riflemanmaster,carbineermaster)
+	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 
 CreatureTemplates:addCreatureTemplate(imperial_surface_marshall, "imperial_surface_marshall")

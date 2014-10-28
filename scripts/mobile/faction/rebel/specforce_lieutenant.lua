@@ -4,7 +4,7 @@ specforce_lieutenant = Creature:new {
 	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 23,
-	chanceHit = 0.350000,
+	chanceHit = 0.35,
 	damageMin = 220,
 	damageMax = 230,
 	baseXp = 2443,
@@ -19,7 +19,7 @@ specforce_lieutenant = Creature:new {
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
-	tamingChance = 0.000000,
+	tamingChance = 0,
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK + KILLER,
@@ -49,7 +49,7 @@ lootGroups = {
 		}	
 	},
 	weapons = {"imperial_weapons_medium"},
-	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(specforce_lieutenant, "specforce_lieutenant")

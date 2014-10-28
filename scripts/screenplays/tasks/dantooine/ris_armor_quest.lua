@@ -83,6 +83,7 @@ function risArmorQuestConvoHandler:runScreenHandlers(conversationTemplate, conve
 		local clonedConversation = LuaConversationScreen(conversationScreen)
 
 		if (screenID == "quest_1_start") then
+			clonedConversation:setDialogTextDI("50000")
 			if (player:getCashCredits() < 50000) then
 				clonedConversation:addOption("@quest_armorsmith:yes_to_quest_1_start", "not_enough_money")
 			else
@@ -90,6 +91,7 @@ function risArmorQuestConvoHandler:runScreenHandlers(conversationTemplate, conve
 			end
 			clonedConversation:addOption("@quest_armorsmith:no_to_quest_1_start", "quest_1_start_no")
 		elseif (screenID == "quest_1_start_yes") then
+			player:subtractCashCredits(50000)
 			player:setScreenPlayState(1, "ris_armor_quest")
 		elseif (screenID == "quest_1_description") then
 			self:teachSchematic(conversingPlayer, risArmorQuest.questSchematics.quest1)
