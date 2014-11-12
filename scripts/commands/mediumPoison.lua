@@ -52,7 +52,7 @@ MediumPoisonCommand = {
 		true,
 		100,
 		40,
-		50,
+		50, 
 		45,
 		60
 	  )

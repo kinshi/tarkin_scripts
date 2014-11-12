@@ -570,7 +570,9 @@ function ThemeParkLogic:spawnMissionNpcs(mission, pConversingPlayer)
 						end)
 					end)
 				end
-				self:updateWaypoint(pConversingPlayer, mainNpcs[i].planetName, spawnPoints[i][1], spawnPoints[i][3], "target")
+				if (currentMissionType ~= "destroy") then
+					self:updateWaypoint(pConversingPlayer, mainNpcs[i].planetName, spawnPoints[i][1], spawnPoints[i][3], "target")
+				end
 				if (mission.staticObjects ~= nil and table.getn(mission.staticObjects) > 0) then
 					self:spawnMissionStaticObjects(mission, pConversingPlayer, spawnPoints[i][1], spawnPoints[i][3])
 				end
@@ -1138,7 +1140,7 @@ function ThemeParkLogic:getSpawnPoints(numberOfSpawns, x, y, pConversingPlayer)
 	local spawnDistance = self.distance
 
 	if currentMissionType == "destroy" then
-		firstSpawnPoint = getSpawnPoint(pConversingPlayer, x, y, 10, 20)
+		firstSpawnPoint = getSpawnPoint(pConversingPlayer, x, y, 15, 25, true)
 	else
 		firstSpawnPoint = getSpawnPoint(pConversingPlayer, x, y, spawnDistance, (spawnDistance/2)*3)
 	end
@@ -1148,7 +1150,7 @@ function ThemeParkLogic:getSpawnPoints(numberOfSpawns, x, y, pConversingPlayer)
 		for i = 2, numberOfSpawns, 1 do
 			local nextSpawnPoint
 			if currentMissionType == "destroy" then
-				nextSpawnPoint = getSpawnPoint(pConversingPlayer, firstSpawnPoint[1], firstSpawnPoint[3], 10, 20)
+				nextSpawnPoint = getSpawnPoint(pConversingPlayer, firstSpawnPoint[1], firstSpawnPoint[3], 10, 20, true)
 			else
 				nextSpawnPoint = getSpawnPoint(pConversingPlayer, firstSpawnPoint[1], firstSpawnPoint[3], 5, 15)
 			end

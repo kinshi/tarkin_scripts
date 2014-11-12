@@ -52,8 +52,8 @@ MildPoisonCommand = {
 		true,
 		75,
 		20,
-		30,
 		30, 
+		30,
 		40
 	  )
 	}

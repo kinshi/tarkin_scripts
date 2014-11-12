@@ -1,13 +1,12 @@
+--turretAttack.lua
+--     Author: root
 --Copyright (C) 2007 <SWGEmu>
-
 --This File is part of Core3.
-
 --This program is free software; you can redistribute
 --it and/or modify it under the terms of the GNU Lesser
 --General Public License as published by the Free Software
 --Foundation; either version 2 of the License,
 --or (at your option) any later version.
-
 --This program is distributed in the hope that it will be useful,
 --but WITHOUT ANY WARRANTY; without even the implied warranty of
 --MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -41,23 +40,9 @@
 --which carries forward this exception.
 --true = 1, false = 0
 
-StrongPoisonCommand = {
-        name = "strongpoison",
-        combatSpam = "attack",
-	dotEffects = {
-	  DotEffect( 
-		POISONED, 
-		{ "resistance_poison", "poison_disease_resist" },
-		HEALTH,
-		true,
-		125, 
-		60,  
-		80, 
-		60,
-		80
-	  )
-	}
+PetStayCommand = {
+	name = "petstay",
+	defaultTime = 0.25,
 }
 
-AddCommand(StrongPoisonCommand)
-
+AddCommand(PetStayCommand)
