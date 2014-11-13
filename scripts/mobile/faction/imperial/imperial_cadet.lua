@@ -10,8 +10,8 @@ imperial_cadet = Creature:new {
 	baseXp = 292,
 	baseHAM = 675,
 	baseHAMmax = 825,
-	armor = 1,
-	resists = {65,75,45,45,30,30,80,65,-1},
+	armor = 0,
+	resists = {0,0,0,0,0,0,0,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -30,14 +30,15 @@ imperial_cadet = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 6000000},
+				{group = "junk", chance = 5000000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
 				{group = "melee_weapons", chance = 1000000},
 				{group = "carbines", chance = 1000000},
+				{group = "wearables_common", chance = 1000000}
 			},
 			lootChance = 2200000
-		}						
+		}
 	},
 	weapons = {"ranged_weapons"},
 	conversationTemplate = "",

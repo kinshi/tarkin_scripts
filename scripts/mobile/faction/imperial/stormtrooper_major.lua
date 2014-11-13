@@ -44,7 +44,7 @@ stormtrooper_major = Creature:new {
 				{group = "wearables_uncommon", chance = 500000}
 			},
 			lootChance = 2800000
-		}						
+		}
 	},
 	weapons = {"stormtrooper_weapons"},
 	conversationTemplate = "imperialRecruiterConvoTemplate",

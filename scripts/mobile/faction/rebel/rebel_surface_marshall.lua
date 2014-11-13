@@ -10,8 +10,8 @@ rebel_surface_marshall = Creature:new {
 	baseXp = 2006,
 	baseHAM = 5000,
 	baseHAMmax = 6100,
-	armor = 1,
-	resists = {65,75,45,45,30,30,80,65,-1},
+	armor = 0,
+	resists = {15,20,0,40,-1,40,-1,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -36,16 +36,17 @@ rebel_surface_marshall = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 1700000},
+				{group = "junk", chance = 3200000},
 				{group = "holocron_dark", chance = 450000},
 				{group = "holocron_light", chance = 450000},
 				{group = "rifles", chance = 1180000},
 				{group = "pistols", chance = 1180000},
 				{group = "carbines", chance = 1180000},
 				{group = "melee_weapons", chance = 930000},
-				{group = "clothing_attachments", chance = 1240000},
-				{group = "armor_attachments", chance = 1240000},
-				{group = "rebel_officer_common", chance = 1450000}
+				{group = "clothing_attachments", chance = 240000},
+				{group = "armor_attachments", chance = 240000},
+				{group = "rebel_officer_common", chance = 450000},
+				{group = "wearables_common", chance = 500000}
 			},
 			lootChance = 3000000
 		}

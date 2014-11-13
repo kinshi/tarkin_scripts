@@ -10,8 +10,8 @@ elite_sand_trooper = Creature:new {
 	baseXp = 4370,
 	baseHAM = 9700,
 	baseHAMmax = 11900,
-	armor = 1,
-	resists = {65,75,45,45,30,30,80,65,-1},
+	armor = 0,
+	resists = {5,5,40,100,-1,-1,-1,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -31,17 +31,19 @@ elite_sand_trooper = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 5550000},
+				{group = "junk", chance = 6550000},
 				{group = "rifles", chance = 550000},
 				{group = "pistols", chance = 550000},
-                {group = "melee_weapons", chance = 550000},
-                {group = "carbines", chance = 550000},
-				{group = "clothing_attachments", chance = 1025000},
-				{group = "armor_attachments", chance = 1025000},
-				{group = "stormtrooper_common", chance = 100000}
+				{group = "melee_weapons", chance = 550000},
+				{group = "carbines", chance = 550000},
+				{group = "clothing_attachments", chance = 25000},
+				{group = "armor_attachments", chance = 25000},
+				{group = "stormtrooper_common", chance = 100000},
+				{group = "wearables_common", chance = 500000},
+				{group = "wearables_uncommon", chance = 500000}
 			},
 			lootChance = 2800000
-		}						
+		}
 	},
 	weapons = {"sandtrooper_weapons"},
 	conversationTemplate = "",

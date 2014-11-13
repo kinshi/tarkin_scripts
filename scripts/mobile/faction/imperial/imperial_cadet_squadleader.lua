@@ -10,8 +10,8 @@ imperial_cadet_squadleader = Creature:new {
 	baseXp = 430,
 	baseHAM = 1000,
 	baseHAMmax = 1200,
-	armor = 1,
-	resists = {65,75,45,45,30,30,80,65,-1},
+	armor = 0,
+	resists = {0,0,0,0,0,0,0,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -31,16 +31,17 @@ imperial_cadet_squadleader = Creature:new {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 3800000},
+				{group = "junk", chance = 4800000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
 				{group = "melee_weapons", chance = 1000000},
 				{group = "carbines", chance = 1000000},
-				{group = "clothing_attachments", chance = 1050000},
-				{group = "armor_attachments", chance = 1050000}
+				{group = "clothing_attachments", chance = 50000},
+				{group = "armor_attachments", chance = 50000},
+				{group = "wearables_common", chance = 1000000}
 			},
 			lootChance = 2200000
-		}						
+		}
 	},
 	weapons = {"ranged_weapons"},
 	conversationTemplate = "",

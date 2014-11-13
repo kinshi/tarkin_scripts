@@ -10,8 +10,8 @@ rebel_crewman = Creature:new {
 	baseXp = 2219,
 	baseHAM = 5900,
 	baseHAMmax = 7200,
-	armor = 1,
-	resists = {65,75,45,45,30,30,80,65,-1},
+	armor = 0,
+	resists = {0,0,0,0,0,0,0,-1,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -35,18 +35,19 @@ rebel_crewman = Creature:new {
 		"object/mobile/dressed_rebel_crewman_human_male_04.iff"},
 	lootGroups = {
 		{
-	        groups = {
+			groups = {
 				{group = "color_crystals", chance = 100000},
-				{group = "junk", chance = 3700000},
+				{group = "junk", chance = 4700000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
-                		{group = "melee_weapons", chance = 1000000},
-                		{group = "carbines", chance = 1000000},
-				{group = "clothing_attachments", chance = 1100000},
-				{group = "armor_attachments", chance = 1100000}
+				{group = "melee_weapons", chance = 1000000},
+				{group = "carbines", chance = 1000000},
+				{group = "clothing_attachments", chance = 100000},
+				{group = "armor_attachments", chance = 100000},
+				{group = "wearables_common", chance = 1000000}
 			},
 			lootChance = 3000000
-		}	
+		}
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
