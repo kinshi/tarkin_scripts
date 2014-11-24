@@ -44,7 +44,7 @@
 object_building_player_city_cantina_naboo = object_building_player_city_shared_cantina_naboo:new {
 	lotSize = 5,
 	baseMaintenanceRate = 50,
-	allowedZones = {"dantooine", "naboo", "rori"},
+	allowedZones = {"dantooine", "naboo", "rori", "endor", "yavin4"},
 	length = 1,
 	width = 1,
 	planetMapCategory = "cantina",

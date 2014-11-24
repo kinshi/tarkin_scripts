@@ -45,7 +45,7 @@ object_building_player_city_garden_dathomir_sml_01 = object_building_player_city
 
 	lotSize = 0,
 	baseMaintenanceRate = 0,
-	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine"},
+	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine", "endor", "yavin4", "dathomir"},
 	length = 1,
 	width = 1,
 	cityRankRequired = 1,

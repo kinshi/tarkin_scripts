@@ -44,7 +44,7 @@
 object_building_player_player_house_generic_small_style_01 = object_building_player_shared_player_house_generic_small_style_01:new {
 	lotSize = 2,
 	baseMaintenanceRate = 8,
-	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine"},
+	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine", "endor", "yavin4", "dathomir"},
 	publicStructure = 0,
 	skillMods = {
 		{"private_medical_rating", 100},

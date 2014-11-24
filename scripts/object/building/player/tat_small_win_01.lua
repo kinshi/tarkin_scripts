@@ -44,7 +44,7 @@
 object_building_player_tatooine_small_window_s01 = object_building_player_shared_tatooine_small_window_s01:new {
 	lotSize = 2,
 	baseMaintenanceRate = 10,
-	allowedZones = {"dantooine", "lok", "tatooine"},
+	allowedZones = {"dantooine", "lok", "tatooine", "dathomir"},
 	constructionMarker = "object/building/player/construction/construction_player_house_corellia_large_style_01.iff",
 	length = 1,
 	width = 1,

@@ -44,7 +44,7 @@
 object_building_player_city_cloning_tatooine = object_building_player_city_shared_cloning_tatooine:new {
 	lotSize = 0,
 	baseMaintenanceRate = 0,
-	allowedZones = {"dantooine", "lok", "tatooine"},
+	allowedZones = {"dantooine", "lok", "tatooine", "dathomir"},
 	length = 1,
 	width = 1,
 	planetMapCategory = "cloningfacility",

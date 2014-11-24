@@ -44,7 +44,7 @@
 object_building_player_city_cityhall_naboo = object_building_player_city_shared_cityhall_naboo:new {
 	lotSize = 0,
 	baseMaintenanceRate = 0,
-	allowedZones = {"dantooine", "naboo", "rori"},
+	allowedZones = {"dantooine", "naboo", "rori", "endor", "yavin4"},
 	length = 1,
 	width = 1,
 	cityRankRequired = 0,

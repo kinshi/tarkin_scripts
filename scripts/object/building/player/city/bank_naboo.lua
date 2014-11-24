@@ -45,7 +45,7 @@ object_building_player_city_bank_naboo = object_building_player_city_shared_bank
 
 	lotSize = 0,
 	baseMaintenanceRate = 0,
-	allowedZones = {"dantooine", "naboo", "rori"},
+	allowedZones = {"dantooine", "naboo", "rori", "endor", "yavin4"},
 	length = 1,
 	width = 1,
 	planetMapCategory = "bank",

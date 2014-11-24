@@ -44,7 +44,7 @@
 object_building_player_player_house_tatooine_medium_style_01 = object_building_player_shared_player_house_tatooine_medium_style_01:new {
 	lotSize = 3,
 	baseMaintenanceRate = 17,
-	allowedZones = {"dantooine", "lok", "tatooine"},
+	allowedZones = {"dantooine", "lok", "tatooine", "dathomir"},
 	childObjects = {
 			{templateFile = "object/tangible/sign/player/house_address_tatooine.iff", x = -4, z = 2, y = 12.55, ox = 0, oy = -1, oz = 0, ow = 0, cellid = -1, containmentType = -1},
 			{templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = 6.94, z = 0.489743, y = 7.98, ox = 0, oy = 1, oz = 0, ow = 0, cellid = 2, containmentType = -1},

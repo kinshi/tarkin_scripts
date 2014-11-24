@@ -44,7 +44,7 @@
 object_building_player_yt1300_house = object_building_player_shared_yt1300_house:new {
 	lotSize = 2,
 	baseMaintenanceRate = 10,
-	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine"},
+	allowedZones = {"corellia", "dantooine", "lok", "naboo", "rori", "talus", "tatooine", "endor", "yavin4", "dathomir"},
 	constructionMarker = "object/building/player/construction/construction_player_house_corellia_large_style_01.iff",
 	publicStructure = 0,
 	length = 1,
