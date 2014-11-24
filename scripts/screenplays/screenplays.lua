@@ -41,7 +41,7 @@ includeFile("events/conversations/life_day_tebeurra_conv_handler.lua")
 includeFile("events/conversations/museum_curator_conv_handler.lua")
 includeFile("events/bestineMuseum.lua")
 includeFile("events/eventPromoter.lua")
---includeFile("events/lifeDay.lua")
+includeFile("events/lifeDay.lua")
 
 
 -- Task/Quest
