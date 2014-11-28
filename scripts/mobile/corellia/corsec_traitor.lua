@@ -34,7 +34,7 @@ corsec_traitor = Creature:new {
 		"object/mobile/dressed_mercenary_destroyer_hum_m.iff"
 		},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 4000000},
 				{group = "wearables_common", chance = 2000000},

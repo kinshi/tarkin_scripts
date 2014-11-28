@@ -11,11 +11,11 @@ giant_dune_kimogila = Creature:new {
 	baseHAM = 81000,
 	baseHAMmax = 99000,
 	armor = 2,
-	resists = {65,80,65,100,65,65,100,65,-1},
+	resists = {165,180,165,200,165,165,200,165,-1},
 	meatType = "meat_carnivore",
-	meatAmount = 1500,
+	meatAmount = 1000,
 	hideType = "hide_leathery",
-	hideAmount = 1500,
+	hideAmount = 1000,
 	boneType = "",
 	boneAmount = 0,
 	milk = 0,
@@ -31,10 +31,10 @@ giant_dune_kimogila = Creature:new {
 	lootGroups = {
 	 {
 	        groups = {
-				{group = "giant_dune_kimo_common", chance = 3000000},
-				{group = "kimogila_common", chance = 7000000},
+				{group = "giant_dune_kimo_common", chance = 2000000},
+				{group = "kimogila_common", chance = 8000000},
 			},
-			lootChance = 7500000
+			lootChance = 6500000
 		}
 	},
 	weapons = {},

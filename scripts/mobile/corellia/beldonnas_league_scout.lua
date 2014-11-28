@@ -39,10 +39,10 @@ beldonnas_league_scout = Creature:new {
 		"object/mobile/dressed_villain_trandoshan_female_01.iff",
 		"object/mobile/dressed_villain_trandoshan_male_01.iff"},
 	lootGroups = {
-       	{
+		{
 			groups = {
 				{group = "junk", chance = 3000000},
-				{group = "wearables_common", chance = 2000000},							
+				{group = "wearables_common", chance = 2000000},
 				{group = "loot_kit_parts", chance = 2000000},
 				{group = "tailor_components", chance = 1000000},
 				{group = "beldonnas_common", chance = 2000000}

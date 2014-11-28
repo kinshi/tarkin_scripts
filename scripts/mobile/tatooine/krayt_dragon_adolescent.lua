@@ -11,7 +11,7 @@ krayt_dragon_adolescent = Creature:new {
 	baseHAM = 268000,
 	baseHAMmax = 312000,
 	armor = 3,
-	resists = {60,60,60,60,50,60,60,60,-1},
+	resists = {195,195,195,195,195,195,195,195,-1},
 	meatType = "meat_carnivore",
 	meatAmount = 1000,
 	hideType = "hide_bristley",
@@ -20,7 +20,7 @@ krayt_dragon_adolescent = Creature:new {
 	boneAmount = 675,
 	milk = 0,
 	tamingChance = 0,
-	ferocity = 20,
+	ferocity = 30,
 	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
 	creatureBitmask = PACK + KILLER + STALKER,
 	optionsBitmask = 128,
@@ -51,7 +51,7 @@ krayt_dragon_adolescent = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareaattack",""},
+		{"creatureareacombo",""},
 		{"posturedownattack","postureDownChance=50"},
 		{"stunattack","stunChance=50"}
 	}

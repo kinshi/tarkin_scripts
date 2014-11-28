@@ -115,23 +115,34 @@ function DefaultInterrupt:startAwarenessInterrupt(pAgent, pObject)
 	--if not scno:isAiAgent() then agent:info("1b") end
 	if ObjectManager.withCreatureObject(pObject, function(creo) return creo:isDead() or creo:isIncapacitated() end) then return end
 	--if not scno:isAiAgent() then agent:info("1c") end
-	if not agent:checkLineOfSight(pObject) then return end
+
+	if agent:isInCombat() then return end
 	--if not scno:isAiAgent() then agent:info("1d") end
+
+	if not agent:checkLineOfSight(pObject) then return end
+	--if not scno:isAiAgent() then agent:info("1e") end
 	
 	if agent:isCamouflaged(pObject) then return end
-	--if not scno:isAiAgent() then agent:info("1e") end
+	--if not scno:isAiAgent() then agent:info("1f") end
 	
 	-- TODO (dannuic): tweak these formulae based on feedback
 	local effectiveLevel = ObjectManager.withCreatureObject(pAgent, function(creo) return creo:getLevel() end)
-	if scno:isPlayerCreature() then effectiveLevel = effectiveLevel * (1 + agent:getFerocity() / 4) end
+	if scno:isPlayerCreature() then
+		effectiveLevel = effectiveLevel * (1 + agent:getFerocity() / 4)
+		local faction = agent:getPvPFaction()
+		if faction == "rebel" or faction == "imperial" then
+			effectiveLevel = effectiveLevel * 2.5
+		elseif faction ~= "" and faction ~= nil then
+			local standing = ObjectManager.withCreaturePlayerObject(pObject, function(ghost) return ghost:getFactionStanding(faction) end)
+			effectiveLevel = effectiveLevel * (1 + (standing / -5000))
+		end
+	end
+
 	local radius = 32 - target:getLevel() + effectiveLevel
 	if not scno:isPlayerCreature() then radius = radius * agent:getFerocity() end
-	if radius < 0 then radius = 0 end
+	if radius < 10 then radius = 10 end
 	if radius > 64 then radius = 64 end
 	local inRange = scno:isInRangeWithObject(pAgent, radius)
-
-	if agent:isInCombat() then return end
-	--if not scno:isAiAgent() then agent:info("1") end
 	
 	local pFollow = agent:getFollowObject();
 	
@@ -150,36 +161,37 @@ function DefaultInterrupt:startAwarenessInterrupt(pAgent, pObject)
 			--agent:info("1c")
 			agent:setOblivious()
 		end
-	elseif pFollow == nil and inRange and (agent:isAggressiveTo(pObject) or agent:getAvgSpeed() > (target:getWalkSpeed() * target:getWalkSpeed())) then
+	elseif agent:isAggressiveTo(pObject) and inRange then
+		--if not scno:isAiAgent() then agent:info("3") end
+		--if scno:isAiAgent() then ObjectManager.withCreatureAiAgent(pObject, function(ai) ai:info("attacking me!") end) end
+		agent:addDefender(pObject)
+	elseif pFollow == nil and inRange and (agent:getAvgSpeed() > (target:getWalkSpeed() * target:getWalkSpeed())) then
 		--if not scno:isAiAgent() then agent:info("2") end
 		agent:setWatchObject(pObject)
 		agent:setAlertDuration(10000); -- TODO (dannuic): make this wait time more dynamic
 		ObjectManager.withSceneObject(pAgent, function(scno) scno:showFlyText("npc_reaction/flytext", "alert", 255, 0, 0) end)
 		agent:activateAwareness(pObject)
-	elseif agent:isAggressiveTo(pObject) and pObject == pFollow and inRange then
-		--if not scno:isAiAgent() then agent:info("3") end
-		--if scno:isAiAgent() then ObjectManager.withCreatureAiAgent(pObject, function(ai) ai:info("attacking me!") end) end
-		agent:addDefender(pObject)
 	elseif pObject == pFollow and agent:alertedTimeIsPast() and agent:getAvgSpeed() <= (target:getWalkSpeed() * target:getWalkSpeed()) then
 		--if not scno:isAiAgent() then agent:info("4") end
 		agent:setOblivious() -- if we're "standing still" (and they aren't aggressive) forget about us
 	elseif pObject == pFollow and not inRange then
 		agent:activateAwareness(pObject)
-	elseif pObject == pFollow and inRange then
+	elseif pObject == pFollow and inRange and scno:getParent() == nil then -- TODO: Do we want weaker mobs to run away when indoors? Revisit when indoor pathing is better
 		--if not scno:isAiAgent() then agent:info("5") end
 		-- TODO (dannuic): Not sure about this stuff, needs testing
 		if ObjectManager.withSceneObject(pFollow, function(followObj) return followObj:isCreatureObject() end) then		
-		  local creoLevel = ObjectManager.withCreatureObject(pFollow, function(creo) return creo:getLevel() end)
-		 
+			local creoLevel = ObjectManager.withCreatureObject(pFollow, function(creo) return creo:getLevel() end)
+ 
 			if effectiveLevel < creoLevel then 
 				agent:runAway(pFollow, 64 - radius)
 			else
 				agent:activateAwareness(pFollow) 
 			end
 		else agent:setOblivious() end
+	else
+		agent:setOblivious()
 	end
 
-	agent:activateRecovery();
 	agent:stopWaiting();
 	agent:executeBehavior();
 end

@@ -32,7 +32,7 @@ corsec_commissioner = Creature:new {
 		"object/mobile/dressed_corsec_captain_human_female_01.iff"
 		},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 4500000},
 				{group = "corsec_weapons", chance = 2500000},

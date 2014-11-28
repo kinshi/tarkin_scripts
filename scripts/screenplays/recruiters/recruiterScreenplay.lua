@@ -362,7 +362,7 @@ function recruiterScreenplay:awardItem(pPlayer, faction, itemString)
 		elseif ( pInventory == nil  ) then
 			return self.errorCodes.INVENTORYERROR
 		end
-		
+
 		itemCost  = math.ceil(itemCost *  getGCWDiscount(pPlayer) * self:getSmugglerDiscount(pPlayer))
 
 		if (factionStanding < (itemCost + self.minimumFactionStanding)) then
