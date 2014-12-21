@@ -151,7 +151,7 @@ describe("GoToTheater", function()
 					it("Should spawn the mobiles at the theater.", function()
 						testGoToTheater:start(pCreatureObject)
 
-						assert.spy(SpawnMobilesMocks.spawnMobiles).was.called_with(pTheater, testGoToTheater.taskName, testGoToTheater.mobileList)
+						assert.spy(SpawnMobilesMocks.spawnMobiles).was.called_with(pTheater, testGoToTheater.taskName, testGoToTheater.mobileList, true)
 					end)
 
 					describe("and the mobiles was spawned", function()
@@ -437,7 +437,7 @@ describe("GoToTheater", function()
 		end)
 	end)
 
-	describe("handleDespawnEvent", function()
+	describe("handleDespawnTheater", function()
 		describe("When called with a player object", function()
 			local realFinish
 
@@ -454,7 +454,7 @@ describe("GoToTheater", function()
 			end)
 
 			it("Should call finish.", function()
-				testGoToTheater:handleDespawnEvent(pCreatureObject)
+				testGoToTheater:handleDespawnTheater(pCreatureObject)
 
 				assert.spy(testGoToTheater.finish).was.called_with(testGoToTheater, pCreatureObject)
 			end)

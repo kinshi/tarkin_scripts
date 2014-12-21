@@ -1,7 +1,8 @@
 package.path = package.path .. ";scripts/screenplays/themepark/?.lua;scripts/screenplays/?.lua;scripts/screenplays/dungeon/corellian_corvette/?.lua"
 require("screenplay")
 require("themeParkLogic")
--- require("corvetteTicketGiverLogic")
+require("corvetteTicketGiverLogic")
+require("corvetteTicketTakerLogic")
 
 -- Theme parks
 includeFile("themepark/conversations/goru_conv_handler.lua")
@@ -19,17 +20,25 @@ includeFile("themepark/valarian/themeParkValarian.lua")
 includeFile("themepark/marauder/themeParkMarauder.lua")
 includeFile("themepark/tutorial.lua")
 
--- Recruiters
-includeFile("recruiters/recruiterConvoHandler.lua")
-includeFile("recruiters/recruiterScreenplay.lua")
+-- GCW
+includeFile("gcw/newsnet.lua")
+includeFile("gcw/recruiters/recruiterConvoHandler.lua")
+includeFile("gcw/recruiters/recruiterScreenplay.lua")
 
 -- Dungeons
-includeFile("dungeon/death_watch_bunker.lua")
+includeFile("dungeon/death_watch_bunker/deathWatchBunker.lua")
+includeFile("dungeon/death_watch_bunker/deathWatchContainerComponents.lua")
+includeFile("dungeon/death_watch_bunker/deathWatchMenuComponents.lua")
+includeFile("dungeon/death_watch_bunker/deathWatchSpawnMap.lua")
+includeFile("dungeon/death_watch_bunker/conversations/death_watch_bunker_conv_handles.lua")
 includeFile("dungeon/geonosian_lab/geo_lab.lua")
 includeFile("dungeon/warren/warren.lua")
-includeFile("dungeon/death_watch_bunker_conv_handles.lua")
---includeFile("dungeon/corellian_corvette/corvetteTicketGiverConvoHandler.lua")
---includeFile("dungeon/corellian_corvette/bronell.lua")
+includeFile("dungeon/corellian_corvette/corvetteTicketGiverConvoHandler.lua")
+includeFile("dungeon/corellian_corvette/corvetteTicketTakerConvoHandler.lua")
+includeFile("dungeon/corellian_corvette/bronell.lua")
+includeFile("dungeon/corellian_corvette/ds_297.lua")
+includeFile("dungeon/corellian_corvette/klaatu.lua")
+includeFile("dungeon/corellian_corvette/lt_lance.lua")
 
 -- Village
 includeFile("village/fs_experience_converter_conv_handler.lua")
@@ -147,6 +156,7 @@ includeFile("tasks/tatooine/vardias_tyne.lua")
 includeFile("tasks/yavin4/gins_darone.lua")
 includeFile("tasks/yavin4/lian_byrne.lua")
 includeFile("tasks/yavin4/ruwan_tokai.lua")
+includeFile("tasks/heralds.lua")
 includeFile("tasks/theater_manager.lua")
 
 -- Caves

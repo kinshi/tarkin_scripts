@@ -133,8 +133,8 @@ end
 -- Handling of the activation of the looted datapad.
 -- @param pSceneObject pointer to the datapad object.
 -- @param pCreatureObject pointer to the creature object who activated the datapad.
-function SithShadowEncounter:useDatapad(pSceneObject, pCreatureObject)
-	Logger:log("Player used the looted datapad.", LT_INFO)
+function SithShadowEncounter:useWaypointDatapad(pSceneObject, pCreatureObject)
+	Logger:log("Player used the looted waypoint datapad.", LT_INFO)
 	if QuestManager.hasCompletedQuest(pCreatureObject, QuestManager.quests.GOT_DATAPAD_1) then
 		SithShadowIntroTheater:start(pCreatureObject)
 		ObjectManager.withCreatureObject(pCreatureObject, function(creatureObject)
@@ -142,6 +142,7 @@ function SithShadowEncounter:useDatapad(pSceneObject, pCreatureObject)
 		end)
 		ObjectManager.withSceneObject(pSceneObject, function(sceneObject)
 			sceneObject:destroyObjectFromWorld()
+			sceneObject:destroyObjectFromDatabase()
 		end)
 		QuestManager.completeQuest(pCreatureObject, QuestManager.quests.LOOT_DATAPAD_1)
 	else

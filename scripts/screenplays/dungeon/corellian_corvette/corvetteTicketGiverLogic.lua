@@ -9,12 +9,12 @@ local ticketTemplate = "object/tangible/travel/travel_ticket/dungeon_ticket.iff"
 local rewardSchematic = "object/tangible/loot/loot_schematic/corellian_corvette_landspeeder_av21_schematic.iff"
 
 local intelLocationsMap = {
-	{ 1, 2, 3 },
-	{ 1, 3, 2 },
-	{ 2, 1, 3 },
-	{ 2, 3, 1 },
-	{ 3, 2, 1 },
-	{ 3, 1, 2 },
+	{ 1, 2, 4 },
+	{ 1, 4, 2 },
+	{ 2, 1, 4 },
+	{ 2, 4, 1 },
+	{ 4, 2, 1 },
+	{ 4, 1, 2 },
 }
 
 CorvetteTicketGiverLogic = ScreenPlay:new {
@@ -71,7 +71,7 @@ function IntelSearchMenuComponent:handleObjectMenuSelect(pContainer, pPlayer, se
 	if activeQuest == self.ticketGiver.giverName and activeStep == "1" and selectedID == 20 then
 		local intelNumber = self.ticketGiver:getContainersIntelNumber(pPlayer, pContainer)
 		if intelNumber == 0 then
-			return
+			return 0
 		end
 
 		local intelAcquired = tonumber(getQuestStatus(player:getObjectID() .. ":corvetteIntelAcquired"))
@@ -79,17 +79,22 @@ function IntelSearchMenuComponent:handleObjectMenuSelect(pContainer, pPlayer, se
 			intelAcquired = 0
 		end
 
-		if intelAcquired == 6 or (intelAcquired == 5 and intelNumber ~= 1) or (intelAcquired == 4 and intelNumber ~= 2) or (intelAcquired == 3 and intelNumber == 3) or (intelAcquired == 2 and intelNumber == 2) or (intelAcquired == 1 and intelNumber == 1) then
+		if intelAcquired == 7 or (intelAcquired == 6 and intelNumber ~= 1) or (intelAcquired == 5 and intelNumber ~= 2) or (intelAcquired == 3 and intelNumber ~= 4) or (intelAcquired == 4 and intelNumber == 4) or (intelAcquired == 2 and intelNumber == 2) or (intelAcquired == 1 and intelNumber == 1) then
 			player:sendSystemMessage("@bestine:already_searched") -- You've already searched here.
-			return
+			return 0
 		end
 
 		local pInventory = CreatureObject(pPlayer):getSlottedObject("inventory")
 		if pInventory == nil then
-			return
+			return 0
 		end
 
-		local pItem = giveItem(pInventory, self.ticketGiver.intelMap.itemTemplates[intelNumber], -1)
+		local intelItem = intelNumber
+		if intelItem == 4 then
+			intelItem = 3
+		end
+
+		local pItem = giveItem(pInventory, self.ticketGiver.intelMap.itemTemplates[intelItem], -1)
 		if pItem ~= nil then
 			SceneObject(pItem):sendTo(pPlayer)
 			player:sendSystemMessage("@bestine:default_receive_msg") -- You search and find something then place it into your inventory.
@@ -98,6 +103,8 @@ function IntelSearchMenuComponent:handleObjectMenuSelect(pContainer, pPlayer, se
 			player:sendSystemMessage("@bestine:inventory_full") -- You find something but have no room in your inventory for it. Try again when you are carrying fewer things.
 		end
 	end
+
+	return 0
 end
 
 function CorvetteTicketGiverLogic:setupComponents()
@@ -158,14 +165,6 @@ function CorvetteTicketGiverLogic:hasIntel(pPlayer)
 	return false
 end
 
-function CorvetteTicketGiverLogic:hasEliteCombatProfession(pPlayer)
-	return ObjectManager.withCreatureObject(pPlayer, function(player)
-		return player:hasSkill("combat_1hsword_novice") or player:hasSkill("combat_2hsword_novice") or player:hasSkill("combat_bountyhunter_novice") or player:hasSkill("combat_carbine_novice")
-			or player:hasSkill("combat_commando_novice") or player:hasSkill("combat_pistol_novice") or player:hasSkill("combat_polearm_novice") or player:hasSkill("combat_rifleman_novice")
-			or player:hasSkill("combat_smuggler_novice") or player:hasSkill("combat_unarmed_novice") or player:hasSkill("science_combatmedic_novice")
-	end)
-end
-
 function CorvetteTicketGiverLogic:removeDocuments(pPlayer)
 	local pInventory = CreatureObject(pPlayer):getSlottedObject("inventory")
 	if pInventory == nil then
@@ -222,14 +221,21 @@ function CorvetteTicketGiverLogic:giveCompensation(pPlayer)
 end
 
 function CorvetteTicketGiverLogic:giveTicket(pPlayer)
-	local pInventory = CreatureObject(pPlayer):getSlottedObject("inventory")
+	local player = CreatureObject(pPlayer)
+	local pInventory = player:getSlottedObject("inventory")
 	if pInventory == nil then
 		return
 	end
 
 	local pItem = giveItem(pInventory, ticketTemplate, -1)
 	if pItem ~= nil then
+		local ticket = LuaTicketObject(pItem)
+		ticket:setDeparturePlanet(self.ticketInfo.depPlanet)
+		ticket:setDeparturePoint(self.ticketInfo.faction)
+		ticket:setArrivalPlanet(self.ticketInfo.missionType)
+		ticket:setArrivalPoint(self.ticketInfo.faction)
 		SceneObject(pItem):sendTo(pPlayer)
+		setQuestStatus(player:getObjectID() .. ":activeCorvetteQuestType", self.ticketInfo.missionType)
 	end
 end
 

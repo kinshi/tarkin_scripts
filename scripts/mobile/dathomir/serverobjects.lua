@@ -146,6 +146,3 @@ includeFile("dathomir/young_malkloc.lua")
 includeFile("dathomir/young_malkloc_plainswalker.lua")
 includeFile("dathomir/young_reptilian_flier.lua")
 includeFile("dathomir/zideera.lua")
---tarkin
-includeFile("dathomir/stuee.lua")
-includeFile("dathomir/monkeh.lua")
