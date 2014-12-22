@@ -38,8 +38,7 @@ dark_side_savage = Creature:new {
 				{group = "melee_weapons", chance = 1000000},
 				{group = "armor_attachments", chance = 1000000},
 				{group = "clothing_attachments", chance = 1000000},
-				{group = "wearables_common", chance = 500000},
-				{group = "wearables_uncommon", chance = 500000}
+				{group = "nightsister_rare", chance = 1000000}
 			},
 			lootChance = 3000000
 		}

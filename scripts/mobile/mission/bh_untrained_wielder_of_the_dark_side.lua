@@ -42,7 +42,7 @@ bh_untrained_wielder_of_the_dark_side = Creature:new {
 		},
 		{
 			groups = {
-				{group = "crystals_poor", chance = 1500000},
+				{group = "nightsister_rare", chance = 1500000},
 				{group = "crystals_quality", chance = 500000},
 				{group = "crystals_okay", chance = 500000},
 				{group = "color_crystals", chance = 2500000},

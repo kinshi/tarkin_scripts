@@ -38,7 +38,7 @@ untrained_wielder_of_the_dark_side = Creature:new {
 				{group = "melee_weapons", chance = 1000000},
 				{group = "armor_attachments", chance = 1000000},
 				{group = "clothing_attachments", chance = 1000000},
-				{group = "wearables_uncommon", chance = 750000},
+				{group = "nightsister_rare", chance = 750000},
 				{group = "wearables_common", chance = 750000}
 			},
 			lootChance = 3000000

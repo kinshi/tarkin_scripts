@@ -30,12 +30,13 @@ singing_mountain_clan_sentry = Creature:new {
 	lootGroups = {
 		{
 			groups = {
+				{group = "nightsister_rare", chance = 1000000},
 				{group = "junk", chance = 500000},
 				{group = "crystals_okay", chance = 500000},
 				{group = "color_crystals", chance = 500000},
 				{group = "armor_attachments", chance = 300000},
 				{group = "clothing_attachments", chance = 300000},
-				{group = "melee_weapons", chance = 3300000},
+				{group = "melee_weapons", chance = 2300000},
 				{group = "rifles", chance = 1200000},
 				{group = "pistols", chance = 1200000},
 				{group = "carbines", chance = 1200000},

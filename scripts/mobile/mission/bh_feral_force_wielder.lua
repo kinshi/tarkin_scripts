@@ -40,7 +40,7 @@ bh_feral_force_wielder = Creature:new {
 		},
 		{
 			groups = {
-				{group = "melee_weapons", chance = 4500000},
+				{group = "nightsister_rare", chance = 4500000},
 				{group = "armor_attachments", chance = 2750000},
 				{group = "clothing_attachments", chance = 2750000}
 			},

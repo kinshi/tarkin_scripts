@@ -36,7 +36,7 @@ feral_force_wielder = Creature:new {
 				{group = "melee_weapons", chance = 1500000},
 				{group = "armor_attachments", chance = 750000},
 				{group = "clothing_attachments", chance = 750000},
-				{group = "wearables_all", chance = 1000000}
+				{group = "nightsister_rare", chance = 1000000}
 			},
 			lootChance = 3500000
 		}

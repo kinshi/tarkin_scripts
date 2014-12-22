@@ -32,9 +32,10 @@ bh_dark_jedi_knight = Creature:new {
 	lootGroups = {
 		{
 			groups = {
+				{group = "nightsister_rare", chance = 1000000},
 				{group = "crystals_premium", chance = 600000},
-				{group = "rifles", chance = 1500000},
-				{group = "pistols", chance = 1500000},
+				{group = "rifles", chance = 1000000},
+				{group = "pistols", chance = 1000000},
 				{group = "bounty_hunter_schemes", chance = 1500000},
 				{group = "armor_attachments", chance = 1700000},
 				{group = "clothing_attachments", chance = 1700000},

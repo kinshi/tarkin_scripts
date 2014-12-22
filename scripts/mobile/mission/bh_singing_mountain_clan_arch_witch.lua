@@ -37,7 +37,7 @@ bh_singing_mountain_clan_arch_witch = Creature:new {
 				{group = "clothing_attachments", chance = 550000},
 				{group = "pistols", chance = 700000},
 				{group = "rifles", chance = 700000},
-				{group = "wearables_all", chance = 1000000}
+				{group = "nightsister_rare", chance = 1000000}
 			},
 			lootChance = 4800000
 		},

@@ -1141,36 +1141,38 @@ includeFile("items/tarkin_custom/ns_shirt_type_03.lua")
 
 --Housing
 
-includeFile("items/tarkin_custom/nge_bespin_house_scheme.lua")
-includeFile("items/tarkin_custom/nge_commando_house_scheme.lua")
-includeFile("items/tarkin_custom/nge_hut_house_deed.lua")
-includeFile("items/tarkin_custom/nge_jabba_house_scheme.lua")
-includeFile("items/tarkin_custom/nge_mustafar_house_scheme.lua")
-includeFile("items/tarkin_custom/nge_sand_crawler_house_scheme.lua")
-includeFile("items/tarkin_custom/nge_tree_house_scheme.lua")
-includeFile("items/tarkin_custom/nge_vehicle_house_scheme.lua")
-includeFile("items/tarkin_custom/nge_gen_lg_win_01_scheme.lua")
-includeFile("items/tarkin_custom/nge_gen_lg_win_02_scheme.lua")
-includeFile("items/tarkin_custom/nge_gen_md_win_01_scheme.lua")
-includeFile("items/tarkin_custom/nge_gen_md_win_02_scheme.lua")
-includeFile("items/tarkin_custom/nge_gen_sm_win_01_scheme.lua")
-includeFile("items/tarkin_custom/nge_gen_sm_win_02_scheme.lua")
-includeFile("items/tarkin_custom/nge_yt1300_house_scheme.lua")
-includeFile("items/tarkin_custom/nge_tat_sm_win_01_scheme.lua")
-includeFile("items/tarkin_custom/nge_nab_sm_win_01_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_bespin_house_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_commando_house_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_hut_house_deed.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_jabba_house_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_mustafar_house_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_sand_crawler_house_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_tree_house_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_vehicle_house_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_gen_lg_win_01_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_gen_lg_win_02_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_gen_md_win_01_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_gen_md_win_02_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_gen_sm_win_01_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_gen_sm_win_02_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_yt1300_house_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_tat_sm_win_01_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_nab_sm_win_01_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_jedi_house_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/nge_sith_house_scheme.lua")
 
 --mandalorian_armor
-includeFile("items/tarkin_custom/mandalorian_belt_scheme.lua")
-includeFile("items/tarkin_custom/mandalorian_bicep_l_scheme.lua")
-includeFile("items/tarkin_custom/mandalorian_bicep_r_scheme.lua")
-includeFile("items/tarkin_custom/mandalorian_boots_scheme.lua")
-includeFile("items/tarkin_custom/mandalorian_bracer_l_scheme.lua")
-includeFile("items/tarkin_custom/mandalorian_bracer_r_scheme.lua")
-includeFile("items/tarkin_custom/mandalorian_chest_scheme.lua")
-includeFile("items/tarkin_custom/mandalorian_gloves_scheme.lua")
-includeFile("items/tarkin_custom/mandalorian_helmet_scheme.lua")
-includeFile("items/tarkin_custom/mandalorian_jetpack_scheme.lua")
-includeFile("items/tarkin_custom/mandalorian_leggings_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_belt_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_bicep_l_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_bicep_r_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_boots_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_bracer_l_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_bracer_r_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_chest_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_gloves_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_helmet_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_jetpack_scheme.lua")
+includeFile("items/tarkin_custom/mandalorian_schemes/mandalorian_leggings_scheme.lua")
 
 --BH armor
 
@@ -1187,8 +1189,8 @@ includeFile("items/tarkin_custom/bounty_hunter_schemes/bounty_hunter_leggings_sc
 
 --Factional Houses
 
-includeFile("items/tarkin_custom/rebel_spire_scheme.lua")
-includeFile("items/tarkin_custom/imperial_spire_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/rebel_spire_scheme.lua")
+includeFile("items/tarkin_custom/nge_housing/imperial_spire_scheme.lua")
 
 --test
 

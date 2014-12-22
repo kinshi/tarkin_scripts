@@ -46,7 +46,7 @@ bh_force_sensitive_crypt_crawler = Creature:new {
 				{group = "crystals_good", chance = 500000},
 				{group = "crystals_okay", chance = 500000},
 				{group = "color_crystals", chance = 2500000},
-				{group = "melee_weapons", chance = 2000000},
+				{group = "nightsister_rare", chance = 2000000},
 				{group = "armor_attachments", chance = 1500000},
 				{group = "clothing_attachments", chance = 1500000}
 			},

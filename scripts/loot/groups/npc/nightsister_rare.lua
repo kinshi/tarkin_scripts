@@ -5,8 +5,10 @@ nightsister_rare = {
 	minimumLevel = 0,
 	maximumLevel = 0,
 	lootItems = {
-		{itemTemplate = "nightsister_bicep_r", weight = 4000000},
-		{itemTemplate = "nightsister_vibro_unit", weight = 6000000}
+		{itemTemplate = "nightsister_bicep_r", weight = 2500000},
+		{itemTemplate = "nightsister_vibro_unit", weight = 2500000},
+		{itemTemplate = "nge_jedi_house_scheme", weight = 2500000},
+		{itemTemplate = "nge_sith_house_scheme", weight = 2500000}
 	}
 }
 

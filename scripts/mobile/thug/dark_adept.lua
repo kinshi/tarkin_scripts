@@ -40,7 +40,7 @@ dark_adept = Creature:new {
 				{group = "armor_attachments", chance = 900000},
 				{group = "clothing_attachments", chance = 900000},
 				{group = "carbines", chance = 1300000},
-				{group = "wearables_rare", chance = 800000}				
+				{group = "nightsister_rare", chance = 800000}				
 			},
 			lootChance = 5500000
 		}
