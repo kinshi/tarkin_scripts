@@ -44,7 +44,7 @@
 object_building_player_city_garden_corellia_sml_01 = object_building_player_city_shared_garden_corellia_sml_01:new {
 	lotSize = 0,
 	baseMaintenanceRate = 0,
-	allowedZones = {"corellia", "talus"},
+	allowedZones = {"corellia", "talus", "endor", "yavin4", "dathomir"},
 	length = 1,
 	width = 1,
 	cityRankRequired = 1,
