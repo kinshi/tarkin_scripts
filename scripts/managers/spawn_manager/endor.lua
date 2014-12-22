@@ -16,7 +16,7 @@ endor_regions = {
 	{"central_desert",0,0,{1,0},UNDEFINEDAREA,1},
 	{"central_forest",0,0,{1,0},UNDEFINEDAREA,1},
 	{"central_peak",0,0,{1,0},UNDEFINEDAREA,1},
-	{"death_watch_bunker",-4655,4330,{1,256},NOSPAWNAREA + NOBUILDZONEAREA,1},
+	{"death_watch_bunker",-4655,4330,{1,2256},NOSPAWNAREA + NOBUILDZONEAREA,1},
 	{"desert_one",0,0,{1,0},UNDEFINEDAREA,1},
 	{"desert_two",0,0,{1,0},UNDEFINEDAREA,1},
 	{"dulok_village_1",6066,-2472,{1,150},NOSPAWNAREA + NOBUILDZONEAREA,1},
