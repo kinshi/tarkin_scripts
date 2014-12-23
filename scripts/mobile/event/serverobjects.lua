@@ -5,3 +5,7 @@ includeFile("event/life_day/oraalarri.lua")
 includeFile("event/life_day/radrrl.lua")
 includeFile("event/life_day/tebeurra.lua")
 
+--Tarkin Custom
+
+includeFile("event/intro_droid.lua")
+

@@ -20,16 +20,6 @@ corellia_medium = {
 			size = 20
 		},
 		{
-			lairTemplateName = "corellia_lord_nyax_chapel_neutral_medium_theater",
-			spawnLimit = -1,
-			minDifficulty = 8,
-			maxDifficulty = 17,
-			numberToSpawn = 0,
-			weighting = 10,
-			size = 25
-		},
-
-		{
 			lairTemplateName = "corellia_hidden_daggers_camp_neutral_medium_theater",
 			spawnLimit = -1,
 			minDifficulty = 9,

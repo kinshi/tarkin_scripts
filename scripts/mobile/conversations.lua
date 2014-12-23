@@ -133,3 +133,9 @@ includeFile("conversations/record_keepers/planet_record_keeper_tatoonie_conv.lua
 includeFile("conversations/record_keepers/record_keeper_imperial_conv.lua")
 includeFile("conversations/record_keepers/record_keeper_jabba_conv.lua")
 includeFile("conversations/record_keepers/record_keeper_rebel_conv.lua")
+
+
+-- Tarkin Events
+
+includeFile("conversations/tasks/anniversary_template.lua")
+includeFile("conversations/tasks/painting_template.lua")

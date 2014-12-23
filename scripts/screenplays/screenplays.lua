@@ -304,7 +304,6 @@ includeFile("treasure_map/TreasureMapMenuComponent.lua")
 --Tests
 --includeFile("tests/options_bitmask_test.lua")
 --includeFile("event/stresstest_20120128.lua")
-includeFile("tests/painting_vendor.lua")
 
 --City Updates
 includeFile("cities/tatooine_mos_eisley_hive_scum_villany.lua")
@@ -322,6 +321,8 @@ includeFile("record_keepers/record_keepers.lua")
 --Tarkin Custom
 
 --includeFile("tests/ep3.lua")
+includeFile("tests/painting_vendor.lua")
+includeFile("events/lifeday_2014.lua")
 
 --Jedi trainers on Dantooine
 

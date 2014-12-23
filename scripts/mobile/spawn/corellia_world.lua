@@ -344,15 +344,6 @@ corellia_world = {
 			size = 20
 		},
 		{
-			lairTemplateName = "corellia_lord_nyax_chapel_neutral_medium_theater",
-			spawnLimit = -1,
-			minDifficulty = 8,
-			maxDifficulty = 17,
-			numberToSpawn = 0,
-			weighting = 10,
-			size = 25
-		},
-		{
 			lairTemplateName = "corellia_drall_camp_neutral_medium_theater",
 			spawnLimit = -1,
 			minDifficulty = 8,
@@ -1028,15 +1019,6 @@ corellia_world = {
 			size = 25
 		},
 		{
-			lairTemplateName = "corellia_lord_nyax_church_neutral_medium_theater",
-			spawnLimit = -1,
-			minDifficulty = 16,
-			maxDifficulty = 25,
-			numberToSpawn = 0,
-			weighting = 10,
-			size = 25
-		},
-		{
 			lairTemplateName = "corellia_beldonna_base_neutral_large_theater",
 			spawnLimit = -1,
 			minDifficulty = 16,
@@ -1277,15 +1259,6 @@ corellia_world = {
 			maxDifficulty = 29,
 			numberToSpawn = 0,
 			weighting = 15,
-			size = 30
-		},
-		{
-			lairTemplateName = "corellia_lord_nyax_visionary_neutral_large_theater",
-			spawnLimit = -1,
-			minDifficulty = 25,
-			maxDifficulty = 34,
-			numberToSpawn = 0,
-			weighting = 10,
 			size = 30
 		},
 		{

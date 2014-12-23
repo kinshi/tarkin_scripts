@@ -8,11 +8,10 @@ anniversary_template = ConvoTemplate:new {
 anniversary_first_screen = ConvoScreen:new {
 	id = "first_screen",
 	leftDialog = "",
-	customDialogText = "Hello, I am C-3PO 'human-cyborg relations'. Welcome to the Tarkin Galaxy! Before you ask - No, I don't know any Luke Skywalker. I am here to dispense Episode III rewards! Please choose one. Keep in mind you only get ONE chance!",
-	stopConversation = "false",
+	customDialogText = "Hello, I am C-3PO 'human-cyborg relations'. Welcome to the Tarkin Galaxy! I am here to dispense Life Day 2014 rewards! Please choose one. Keep in mind you only get ONE chance!",	stopConversation = "false",
 	options = {
 		{"Hangar House", "hangar_house"},
-		{"Relaxation House", "relaxation_house"},
+		{"Tree House", "tree_house"},
 		{"BARC Speeder", "barc_speeder"},
 	}
 }
@@ -42,8 +41,8 @@ anniversary_completed = ConvoScreen:new {
 anniversary_template:addScreen(anniversary_completed);
 
 
-anniversary_relaxation_house= ConvoScreen:new {
-	id = "relaxation_house",
+anniversary_tree_house= ConvoScreen:new {
+	id = "tree_house",
 	leftDialog = "",
 	customDialogText = "Here you are!",
 	stopConversation = "true",
@@ -51,10 +50,10 @@ anniversary_relaxation_house= ConvoScreen:new {
 	
 	}
 }
-anniversary_template:addScreen(anniversary_relaxation_house);
+anniversary_template:addScreen(anniversary_tree_house);
 
-anniversary_relaxation_house= ConvoScreen:new {
-	id = "relaxation_house",
+anniversary_tree_house= ConvoScreen:new {
+	id = "tree_house",
 	leftDialog = "",
 	customDialogText = "Here you are!",
 	stopConversation = "true",
@@ -62,7 +61,7 @@ anniversary_relaxation_house= ConvoScreen:new {
 	
 	}
 }
-anniversary_template:addScreen(anniversary_relaxation_house);
+anniversary_template:addScreen(anniversary_tree_house);
 
 anniversary_barc_speeder= ConvoScreen:new {
 	id = "barc_speeder",
