@@ -1,7 +1,7 @@
 acklay = Creature:new {
 	objectName = "@mob/creature_names:",
 	customName = "Acklay",
-	socialGroup = "geonosian_creature",
+	socialGroup = "kliknik",
 	pvpFaction = "",
 	faction = "",
 	level = 157,
@@ -14,11 +14,11 @@ acklay = Creature:new {
 	armor = 3,
 	resists = {130,145,155,155,145,30,30,30,-1},
 	meatType = "",
-	meatAmount = 0,
+	meatAmount = 100,
 	hideType = "",
 	hideAmount = 0,
 	boneType = "",
-	boneAmount = 0,
+	boneAmount = 100,
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 25,
@@ -26,6 +26,7 @@ acklay = Creature:new {
 	creatureBitmask = PACK + KILLER,
 	optionsBitmask = 128,
 	diet = CARNIVORE,
+	Scale = 1.3,
 
 	templates = {"object/mobile/acklay_hue.iff"},
 	lootGroups = {
@@ -40,10 +41,10 @@ acklay = Creature:new {
 				{group = "clothing_attachment", chance = 5000000},
 				{group = "armor_attachment", chance = 5000000}
 			},
-			lootChance = 3500000
+			lootChance = 4000000
 		},
 	},
-	weapons = {},
+	weapons = {"creature_spit_large_yellow"},
 	conversationTemplate = "",
 	attacks = {
 		{"creatureareacombo",""},
