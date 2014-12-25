@@ -5,13 +5,13 @@ krayt_dragon_grand = Creature:new {
 	faction = "",
 	level = 306,
 	chanceHit = 30,
-	damageMin = 2170,
-	damageMax = 4150,
+	damageMin = 1816,
+	damageMax = 2928,
 	baseXp = 28049,
-	baseHAM = 390000,
-	baseHAMmax = 481000,
+	baseHAM = 130858,
+	baseHAMmax = 150390,
 	armor = 3,
-	resists = {90,90,90,100,65,90,90,90,-1},
+	resists = {170,170,170,170,130,170,170,170,-1},
 	meatType = "meat_carnivore",
 	meatAmount = 1500,
 	hideType = "hide_bristley",
@@ -35,7 +35,7 @@ krayt_dragon_grand = Creature:new {
 				{group = "krayt_dragon_common", chance = 3300000},
 				{group = "pearls_flawless", chance = 3400000}				
 			},
-			lootChance = 9500000
+			lootChance = 8000000
 		},
 		{
 	        groups = {
@@ -45,7 +45,7 @@ krayt_dragon_grand = Creature:new {
 				{group = "rifles", chance = 2000000},
 				{group = "pearls_premium", chance = 2000000}
 			},
-			lootChance = 9000000
+			lootChance = 10000000
 		}
 	},
 	weapons = {},
