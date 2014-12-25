@@ -4,13 +4,13 @@ krayt_dragon_adolescent = Creature:new {
 	pvpFaction = "",
 	faction = "",
 	level = 200,
-	chanceHit = 27.25,
-	damageMin = 1220,
-	damageMax = 2150,
+	chanceHit = 20.0,
+	damageMin = 931,
+	damageMax = 1500,
 	baseXp = 26356,
-	baseHAM = 268000,
-	baseHAMmax = 312000,
-	armor = 3,
+	baseHAM = 67000,
+	baseHAMmax = 77000,
+	armor = 2,
 	resists = {195,195,195,195,195,195,195,195,-1},
 	meatType = "meat_carnivore",
 	meatAmount = 1000,
@@ -35,7 +35,7 @@ krayt_dragon_adolescent = Creature:new {
 				{group = "krayt_tissue_uncommon", chance = 300000},
 				{group = "pearls_premium", chance = 3400000}
 			},
-			lootChance = 7500000
+			lootChance = 6000000
 		},
 		{
 	        groups = {
@@ -45,7 +45,7 @@ krayt_dragon_adolescent = Creature:new {
 				{group = "rifles", chance = 2000000},
 				{group = "pearls_select", chance = 2000000}				
 			},
-			lootChance = 4000000
+			lootChance = 10000000
 		}
 	},
 	weapons = {},
