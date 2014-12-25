@@ -11,7 +11,7 @@ death_watch_ghost = Creature:new {
 	baseHAM = 110000,
 	baseHAMmax = 110000,
 	armor = 2,
-	resists = {65,65,70,60,35,35,100,50,55},
+	resists = {65,65,70,60,35,35,90,50,55},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -37,7 +37,7 @@ death_watch_ghost = Creature:new {
 				{group = "mandalorian_schemes", chance = 500000},
 				{group = "nge_house_commando", chance = 2000000}
 			},
-			lootChance = 3500000
+			lootChance = 5000000
 		}
 	},
 	weapons = {"pirate_weapons_heavy"},

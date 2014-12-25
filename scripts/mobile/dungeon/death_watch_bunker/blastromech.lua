@@ -11,7 +11,7 @@ blastromech = Creature:new {
 	baseHAM = 15000,
 	baseHAMmax = 15000,
 	armor = 1,
-	resists = {45,65,100,60,100,25,40,75,-1},
+	resists = {45,65,90,60,90,25,40,75,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -31,7 +31,7 @@ blastromech = Creature:new {
 			groups = {
 				{group = "droid_loot", chance = 10000000},
 			},
-			lootChance = 2500000
+			lootChance = 5000000
 },
 	conversationTemplate = "",
 	defaultAttack = "creaturerangedattack",
