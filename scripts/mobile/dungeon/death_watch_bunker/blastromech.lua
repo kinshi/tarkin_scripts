@@ -31,7 +31,7 @@ blastromech = Creature:new {
 			groups = {
 				{group = "droid_loot", chance = 10000000},
 			},
-			lootChance = 5000000
+			lootChance = 10000000
 },
 	conversationTemplate = "",
 	defaultAttack = "creaturerangedattack",
