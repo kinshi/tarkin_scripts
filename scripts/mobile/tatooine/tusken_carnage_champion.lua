@@ -46,7 +46,7 @@ tusken_carnage_champion = Creature:new {
 				{group = "deed_voucher", chance = 500000}
 			},
 			lootChance = 5000000
-		}				
+		},				
 	},
 	weapons = {"tusken_weapons"},
 	conversationTemplate = "",
