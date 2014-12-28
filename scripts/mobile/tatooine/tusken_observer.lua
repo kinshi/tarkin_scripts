@@ -39,6 +39,7 @@ tusken_observer = Creature:new {
 			lootChance = 10000000
 		},
 		{
+			groups = {
 				{group = "crystals_premium", chance = 3000000},
 				{group = "nge_house_sand_crawler", chance = 500000},
 				{group = "armor_attachments", chance = 3000000},
