@@ -46,9 +46,8 @@ death_watch_black_sun_assassin = Creature:new {
 		{
 			groups = {
 				{group = "jetpack_parts", chance = 1000000},				
-				{group = "bounty_hunter_armor", chance = 3250000},
-				{group = "nge_house_commando", chance = 1500000},
-				{group = "jetpack_base", chance = 500000}
+				{group = "bounty_hunter_armor", chance = 8000000},
+				{group = "jetpack_base", chance = 1000000}
 			},
 			lootChance = 2000000
 		},

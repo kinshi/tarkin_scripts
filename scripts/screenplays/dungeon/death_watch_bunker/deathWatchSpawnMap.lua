@@ -25,7 +25,7 @@ deathWatchSpecialSpawns = {
 	fenri_dalso = {"fenri_dalso", 0, 25.8, -60, -172.1, -9, 5996346},
 	fenri_dalso_add1 = {"death_watch_wraith", 0, 26.0, -60, -171.1, 0, 5996346},
 	fenri_dalso_add2 = {"death_watch_s_battle_droid", 0, 24.9, -60, -174.0, -5, 5996346},
-	fenri_dalso_add3 = {"death_watch_s_battle_droid", 0, 27.3, -60, -173.7, -9, 5996346},
+--	fenri_dalso_add3 = {"death_watch_s_battle_droid", 0, 27.3, -60, -173.7, -9, 5996346},
 	fenri_dalso_add4 = {"death_watch_wraith", 0, 25.8, -60, -173.7, 0, 5996346},
 	fenri_dalso_assist1 = {"death_watch_wraith", 0, 25.8, -60, -172.1, -9, 5996346},
 	fenri_dalso_assist2 = {"death_watch_wraith", 0, 25.8, -60, -172.1, -9, 5996346},
@@ -61,7 +61,7 @@ deathWatchSpecialSpawns = {
 }
 
 deathWatchStaticSpawns = {
-	{"death_watch_overlord", 300, 118, -64, -94, -135, 5996349},
+	{"death_watch_overlord", 7200, 118, -64, -94, -135, 5996349},
 	{"death_watch_s_battle_droid", 600, 110, -64, -92, 150, 5996349},
 	{"death_watch_ghost", 300, 116, -64, -101, -156, 5996349},
 	{"death_watch_wraith", 300, 113, -64, -100.7, -36, 5996349},
@@ -175,7 +175,7 @@ deathWatchStaticSpawns = {
 	{"death_watch_s_battle_droid", 600, -43.8, -59.8, -296.8, 86, 5996356},
 	{"death_watch_ghost", 300, -90.4, -59.8, -376.2, -31, 5996357},
 	{"death_watch_bloodguard", 300, -97.2, -59.8, -374.0, 10, 5996357},
-	{"death_watch_overlord_mines", 300, -127.1, -59.7, -379.2, 22, 5996357},
+	{"death_watch_overlord_mines", 7200, -127.1, -59.7, -379.2, 22, 5996357},
 	{"death_watch_s_battle_droid", 300, -122.3, -60.1, -376.4, 40, 5996357},
 	{"death_watch_s_battle_droid", 300, -128.3, -60.0, -370.1, 133, 5996357},
 	{"death_watch_s_battle_droid", 300, -121.8, -59.8, -362.7, -162, 5996357},
