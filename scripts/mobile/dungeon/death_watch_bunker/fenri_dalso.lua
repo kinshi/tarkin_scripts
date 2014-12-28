@@ -12,7 +12,7 @@ fenri_dalso = Creature:new {
 	baseHAM = 200000,
 	baseHAMmax = 200000,
 	armor = 2,
-	resists = {75,75,90,80,45,45,100,70,-1},
+	resists = {75,75,90,80,45,45,95,70,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -39,7 +39,7 @@ fenri_dalso = Creature:new {
 			groups = {
 				{group = "mandalorian_schemes", chance = 10000000}
 			},
-			lootChance = 500000
+			lootChance = 10000000
 		}
 
 	},

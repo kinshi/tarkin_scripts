@@ -6,13 +6,13 @@ death_watch_overlord = Creature:new {
 	faction = "",
 	level = 221,
 	chanceHit = 19,
-	damageMin = 1245,
-	damageMax = 2200,
+	damageMin = 622,
+	damageMax = 1100,
 	baseXp = 20948,
-	baseHAM = 350000,
-	baseHAMmax = 350000,
+	baseHAM = 175000,
+	baseHAMmax = 175000,
 	armor = 3,
-	resists = {80,80,90,80,45,45,100,70,55},
+	resists = {80,80,90,80,45,45,95,70,55},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -31,19 +31,24 @@ death_watch_overlord = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "death_watch_bunker_overlord_shared", chance =  8000000},
-				{group = "mandalorian_schemes", chance = 2000000}
+				{group = "mandalorian_schemes", chance = 10000000}
 			},
 			lootChance = 10000000
 		},
 		{
 			groups = {
-				{group = "death_watch_bunker_overlord_shared", chance =  500000},
-				{group = "death_watch_bunker_overlord_quest", chance  = 7500000},
-				{group = "nge_house_commando", chance = 2000000}
+				{group = "death_watch_bunker_overlord_shared", chance =  2500000},
+				{group = "death_watch_bunker_overlord_quest", chance  = 7500000}
 			},
-			lootChance = 5000000
-		}
+			lootChance = 50000000
+		},
+		{
+			groups = {
+				{group = "clothing_attachments", chance = 5000000},
+				{group = "armor_attachments", chance = 5000000}
+			},
+			lootChance = 50000000
+		},
 	},
 	weapons = {"dark_trooper_weapons"},
 	conversationTemplate = "",

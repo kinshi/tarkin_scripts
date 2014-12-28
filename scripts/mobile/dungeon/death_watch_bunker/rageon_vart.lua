@@ -12,7 +12,7 @@ rageon_vart = Creature:new {
 	baseHAM = 175000,
 	baseHAMmax = 175000,
 	armor = 2,
-	resists = {75,75,90,80,45,45,100,70,-1},
+	resists = {75,75,90,80,45,45,95,70,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -39,7 +39,7 @@ rageon_vart = Creature:new {
 			groups = {
 				{group = "mandalorian_schemes", chance = 10000000}
 			},
-			lootChance = 500000
+			lootChance = 2500000
 		}
 	},
 	weapons = {"death_watch_commander_weapons"},

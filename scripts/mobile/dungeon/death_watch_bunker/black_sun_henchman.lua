@@ -28,17 +28,29 @@ black_sun_henchman = Creature:new {
 
 	templates = {"object/mobile/dressed_black_sun_henchman.iff"},
 	lootGroups = {
-         {
+		{
 			groups = {
-				{group = "pistols", chance = 1750000},
-				{group = "rifles", chance = 1750000},
-				{group = "carbines", chance = 1750000},
-				{group = "jetpack_parts", chance = 1000000},				
-				{group = "bounty_hunter_armor", chance = 3250000},
-				{group = "jetpack_base", chance = 500000}
+				{group = "pistols", chance = 3333333},
+				{group = "rifles", chance = 3333333},
+				{group = "carbines", chance = 3333334},
 			},
-			lootChance = 4500000
-		}	
+			lootChance = 10000000
+		},
+		{
+			groups = {
+				{group = "clothing_attachments", chance = 5000000},
+				{group = "armor_attachments", chance = 5000000}
+			},
+			lootChance = 5000000
+		},	
+		{
+			groups = {
+				{group = "jetpack_parts", chance = 1000000},				
+				{group = "bounty_hunter_armor", chance = 8000000},
+				{group = "jetpack_base", chance = 1000000}
+			},
+			lootChance = 2500000
+		},
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
