@@ -42,13 +42,13 @@ death_watch_s_battle_droid = Creature:new {
 				{group = "clothing_attachments", chance = 5000000},
 				{group = "armor_attachments", chance = 5000000}
 			},
-			lootChance = 5000000
+			lootChance = 4000000
 		},
 		{
 			groups = {
 				{group = "av_21_pp", chance = 10000000},
 			},
-			lootChance = 2500000
+			lootChance = 1500000
 		},
 },
 	conversationTemplate = "",

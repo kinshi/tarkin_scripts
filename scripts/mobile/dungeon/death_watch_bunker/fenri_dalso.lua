@@ -39,7 +39,7 @@ fenri_dalso = Creature:new {
 			groups = {
 				{group = "mandalorian_schemes", chance = 10000000}
 			},
-			lootChance = 500000
+			lootChance = 10000000
 		}
 
 	},

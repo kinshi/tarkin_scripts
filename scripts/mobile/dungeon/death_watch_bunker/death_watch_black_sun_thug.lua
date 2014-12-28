@@ -41,7 +41,7 @@ death_watch_black_sun_thug = Creature:new {
 				{group = "clothing_attachments", chance = 5000000},
 				{group = "armor_attachments", chance = 5000000}
 			},
-			lootChance = 5000000
+			lootChance = 4000000
 		},	
 		{
 			groups = {
@@ -50,7 +50,7 @@ death_watch_black_sun_thug = Creature:new {
 				{group = "nge_house_commando", chance = 1500000},
 				{group = "jetpack_base", chance = 500000}
 			},
-			lootChance = 2500000
+			lootChance = 2000000
 		},
 	},
 	weapons = {"pirate_weapons_heavy"},
