@@ -60,7 +60,7 @@ object_tangible_food_foraged_foraged_vegetable_s3 = object_tangible_food_foraged
 	quantityMin = 0,
 	quantityMax = 0,
 	
-	modifiers = { "mind", 500 },
+	modifiers = { "mind", 1000 },
 
 	buffName = "flurr-cle_onion",
 	buffCRC = 0,

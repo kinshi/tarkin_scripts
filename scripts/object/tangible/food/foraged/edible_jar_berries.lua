@@ -60,7 +60,7 @@ object_tangible_food_foraged_edible_jar_berries = object_tangible_food_foraged_s
 	quantityMin = 0,
 	quantityMax = 0,
 	
-	modifiers = { "health", 100 },
+	modifiers = { "health", 200 },
 
 	buffName = "jar_berries",
 	buffCRC = 0,
