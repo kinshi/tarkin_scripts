@@ -5,13 +5,13 @@ tusken_executioner = Creature:new {
 	faction = "tusken_raider",
 	level = 263,
 	chanceHit = 23.5,
-	damageMin = 1645,
-	damageMax = 3000,
+	damageMin = 1145,
+	damageMax = 2500,
 	baseXp = 25167,
 	baseHAM = 261000,
 	baseHAMmax = 320000,
 	armor = 3,
-	resists = {85,80,35,100,20,30,45,80,-1},
+	resists = {85,80,35,90,20,30,45,80,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -31,17 +31,23 @@ tusken_executioner = Creature:new {
 		{
 			groups = {
 				{group = "tusken_common", chance = 3000000},
-				{group = "bone_armor", chance = 750000},
-				{group = "chitin_armor", chance = 750000},
-				{group = "armor_attachments", chance = 1250000},
-				{group = "clothing_attachments", chance = 1250000},
-				{group = "color_crystals", chance = 500000},
-				{group = "crystals_select", chance = 500000},
-				{group = "nge_house_sand_crawler", chance = 1000000},
-				{group = "deed_voucher", chance = 1000000}
+				{group = "bone_armor", chance = 500000},
+				{group = "chitin_armor", chance = 500000},
+				{group = "armor_attachments", chance = 3000000},
+				{group = "clothing_attachments", chance = 3000000}
 			},
-			lootChance = 7000000
-		}		
+			lootChance = 10000000
+		},
+		{
+			groups = {
+				{group = "crystals_premium", chance = 3000000},
+				{group = "nge_house_sand_crawler", chance = 500000},
+				{group = "armor_attachments", chance = 3000000},
+				{group = "clothing_attachments", chance = 3000000},
+				{group = "deed_voucher", chance = 500000}
+			},
+			lootChance = 5000000
+		},				
 	},
 	weapons = {"tusken_weapons"},
 	conversationTemplate = "",

@@ -5,13 +5,13 @@ tusken_witch_doctor = Creature:new {
 	faction = "tusken_raider",
 	level = 202,
 	chanceHit = 16,
-	damageMin = 1145,
-	damageMax = 2000,
+	damageMin = 800,
+	damageMax = 1200,
 	baseXp = 19201,
 	baseHAM = 160000,
 	baseHAMmax = 195000,
 	armor = 3,
-	resists = {65,95,35,100,0,30,45,80,-1},
+	resists = {65,90,35,90,0,30,45,80,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -31,17 +31,23 @@ tusken_witch_doctor = Creature:new {
 		{
 			groups = {
 				{group = "tusken_common", chance = 3000000},
-				{group = "bone_armor", chance = 750000},
-				{group = "chitin_armor", chance = 750000},
-				{group = "armor_attachments", chance = 1250000},
-				{group = "clothing_attachments", chance = 1250000},
-				{group = "color_crystals", chance = 500000},
-				{group = "crystals_quality", chance = 500000},
-				{group = "nge_house_sand_crawler", chance = 1000000},
-				{group = "deed_voucher", chance = 1000000}
+				{group = "bone_armor", chance = 500000},
+				{group = "chitin_armor", chance = 500000},
+				{group = "armor_attachments", chance = 3000000},
+				{group = "clothing_attachments", chance = 3000000}
 			},
-			lootChance = 6000000
-		}	
+			lootChance = 10000000
+		},
+		{
+			groups = {
+				{group = "crystals_premium", chance = 3000000},
+				{group = "nge_house_sand_crawler", chance = 500000},
+				{group = "armor_attachments", chance = 3000000},
+				{group = "clothing_attachments", chance = 3000000},
+				{group = "deed_voucher", chance = 500000}
+			},
+			lootChance = 5000000
+		},				
 	},
 	weapons = {"tusken_weapons"},
 	conversationTemplate = "",

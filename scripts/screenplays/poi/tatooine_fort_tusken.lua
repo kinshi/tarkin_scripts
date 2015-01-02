@@ -25,7 +25,7 @@ FortTuskenScreenPlay = ScreenPlay:new {
 				{group = "armor_attachments", chance = 1700000},
 				{group = "deed_voucher", chance = 600000}
 			},
-			lootChance = 8000000
+			lootChance = 10000000
 		}					
 	},
 	
@@ -99,8 +99,8 @@ function FortTuskenScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "tusken_chief",300,2.0,1.3,10.0,118,1189174)
 	spawnMobile("tatooine", "tusken_warlord",300,-0.9,1.3,9.6,109,1189174)
 	spawnMobile("tatooine", "tusken_flesh_hunter",300,0.6,1.4,12.7,0,1189174)
-	spawnMobile("tatooine", "tusken_witch_doctor",300,1.3,1.5,-10.8,118,1189175)	
-	spawnMobile("tatooine", "tusken_observer",300,0.8,1.7,-7.5,-11,1189175)
+	spawnMobile("tatooine", "tusken_witch_doctor",3600,1.3,1.5,-10.8,118,1189175)	
+	spawnMobile("tatooine", "tusken_observer",3600,0.8,1.7,-7.5,-11,1189175)
 	spawnMobile("tatooine", "tusken_avenger",300,-4.7,1.5,-7.0,0,1189175)
 	spawnMobile("tatooine", "tusken_chief",300,-15.9,3.4,-2.4,118,1189176)
 	spawnMobile("tatooine", "tusken_warlord",300,-12.6,2.9,1.0,109,1189175)
@@ -109,10 +109,10 @@ function FortTuskenScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "tusken_blood_champion",300,-23.7,2.7,3.4,-145,1189176)
 	spawnMobile("tatooine", "tusken_elite_guard",300,-28.5,2.7,1.3,0,1189176)
 	spawnMobile("tatooine", "tusken_gore_chief",300,-20.4,4.3,-11.1,0,1189177)
-	spawnMobile("tatooine", "tusken_carnage_champion",300,-14.6,6.2,-20.5,0,1189177)
+	spawnMobile("tatooine", "tusken_carnage_champion",600,-14.6,6.2,-20.5,0,1189177)
 	spawnMobile("tatooine", "tusken_flesh_hunter",300,-10.3,6.6,-21.8,118,1189177)
 	spawnMobile("tatooine", "tusken_warlord",300,0.7,8.0,-18.9,109,1189178)
-	spawnMobile("tatooine", "tusken_observer",300,8.5,8.2,-33.5,0,1189178)
+	spawnMobile("tatooine", "tusken_observer",600,8.5,8.2,-33.5,0,1189178)
 	spawnMobile("tatooine", "tusken_blood_champion",300,11.5,8.0,-40.7,118,1189178)
 	spawnMobile("tatooine", "tusken_warlord",300,7.1,8.4,-44.9,109,1189178)
 	spawnMobile("tatooine", "tusken_raid_leader",300,-1.2,8.6,-40.1,0,1189179)
@@ -125,10 +125,10 @@ function FortTuskenScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "tusken_warlord",300,-6.9,20.2,-55.9,0,1189180)
 	spawnMobile("tatooine", "tusken_blood_champion",300,-3.5,8.9,-43.4,97,1189179)
 	spawnMobile("tatooine", "tusken_avenger",300,9.1,22.6,-44.8,-122,1189180)
-	spawnMobile("tatooine", "tusken_executioner",300,20.8,22.9,-15.2,-102,1189183)	
+	spawnMobile("tatooine", "tusken_executioner",3600,20.8,22.9,-15.2,-102,1189183)	
 	spawnMobile("tatooine", "tusken_gore_chief",300,15.1,22.8,-17.0,163,1189183)
 	spawnMobile("tatooine", "tusken_brute",300,2.5,22.9,-19.2,101,1189183)
-	spawnMobile("tatooine", "tusken_carnage_champion",300,8.7,23,-28.5,121,1189183)
+	spawnMobile("tatooine", "tusken_carnage_champion",600,8.7,23,-28.5,121,1189183)
 	spawnMobile("tatooine", "tusken_warlord",300,3.5,23.1,-12.2,10,1189183)
 	spawnMobile("tatooine", "tusken_war_master",300,3.1,37.9,-21.5,-55,1189187)
 	spawnMobile("tatooine", "tusken_chief",300,14.0,22.6,5.2,58,1189182)

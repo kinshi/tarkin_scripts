@@ -36,7 +36,7 @@ juvenile_canyon_krayt_dragon = Creature:new {
 				{group = "krayt_dragon_common", chance = 3400000},
 				{group = "pearls_select", chance = 3300000}
 			},
-			lootChance = 6000000
+			lootChance = 5000000
 		},
 		{
 	        groups = {
@@ -45,7 +45,7 @@ juvenile_canyon_krayt_dragon = Creature:new {
 				{group = "melee_two_handed", chance = 2500000},
 				{group = "rifles", chance = 2500000}			
 			},
-			lootChance = 4500000
+			lootChance = 10000000
 		}
 	},
 	weapons = {},

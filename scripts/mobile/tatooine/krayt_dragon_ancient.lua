@@ -5,13 +5,13 @@ krayt_dragon_ancient = Creature:new {
 	faction = "",
 	level = 336,
 	chanceHit = 30.0,
-	damageMin = 2270,
-	damageMax = 4250,
+	damageMin = 1816,
+	damageMax = 2928,
 	baseXp = 28549,
 	baseHAM = 410000,
 	baseHAMmax = 501000,
 	armor = 3,
-	resists = {195,195,195,195,165,195,195,195,-1},
+	resists = {175,175,175,175,145,175,175,175,-1},
 	meatType = "meat_carnivore",
 	meatAmount = 1500,
 	hideType = "hide_bristley",
@@ -44,7 +44,7 @@ krayt_dragon_ancient = Creature:new {
 				{group = "rifles", chance = 2000000},
 				{group = "pearls_quality", chance = 2000000}
 			},
-			lootChance = 9000000
+			lootChance = 10000000
 		}
 	},
 	weapons = {},
