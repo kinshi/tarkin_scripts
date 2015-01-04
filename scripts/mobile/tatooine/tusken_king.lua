@@ -11,7 +11,7 @@ tusken_king = Creature:new {
 	baseHAM = 24000,
 	baseHAMmax = 30000,
 	armor = 2,
-	resists = {55,45,10,80,-1,60,10,10,-1},
+	resists = {45,35,5,80,-1,50,5,5,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -30,17 +30,24 @@ tusken_king = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "tusken_common", chance = 4000000},
-				{group = "bone_armor", chance = 750000},
-				{group = "chitin_armor", chance = 750000},
-				{group = "armor_attachments", chance = 1250000},
-				{group = "clothing_attachments", chance = 1250000},
-				{group = "color_crystals", chance = 500000},
-				{group = "crystals_select", chance = 500000},
-				{group = "deed_voucher", chance = 1000000}
+				{group = "tusken_common", chance = 3000000},
+				{group = "bone_armor", chance = 500000},
+				{group = "chitin_armor", chance = 500000},
+				{group = "armor_attachments", chance = 3000000},
+				{group = "clothing_attachments", chance = 3000000}
 			},
-			lootChance = 4000000
-		}			
+			lootChance = 10000000
+		},
+		{
+			groups = {
+				{group = "crystals_premium", chance = 3000000},
+				{group = "nge_house_sand_crawler", chance = 500000},
+				{group = "armor_attachments", chance = 3000000},
+				{group = "clothing_attachments", chance = 3000000},
+				{group = "deed_voucher", chance = 500000}
+			},
+			lootChance = 5000000
+		},				
 	},
 	weapons = {"tusken_weapons"},
 	conversationTemplate = "",

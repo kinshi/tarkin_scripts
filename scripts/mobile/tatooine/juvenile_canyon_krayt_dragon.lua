@@ -4,7 +4,7 @@ juvenile_canyon_krayt_dragon = Creature:new {
 	pvpFaction = "",
 	faction = "",
 	level = 122,
-	chanceHit = 14.0,
+	chanceHit = 4.0,
 	damageMin = 745,
 	damageMax = 1200,
 	baseXp = 11577,
@@ -28,6 +28,7 @@ juvenile_canyon_krayt_dragon = Creature:new {
 
 	templates = {"object/mobile/juvenile_canyon_krayt.iff"},
 	scale = 0.55;
+
 	lootGroups = {
 		{
 	        groups = {

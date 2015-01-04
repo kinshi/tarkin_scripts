@@ -60,7 +60,7 @@ object_tangible_food_foraged_edible_jar_bugs = object_tangible_food_foraged_shar
 	quantityMin = 0,
 	quantityMax = 0,
 	
-	modifiers = { "action", 100 },
+	modifiers = { "action", 200 },
 
 	buffName = "jar_bugs",
 	buffCRC = 0,
