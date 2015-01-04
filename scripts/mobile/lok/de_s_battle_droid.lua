@@ -4,15 +4,15 @@ de_s_battle_droid = Creature:new {
 	socialGroup = "death_watch",
 	pvpFaction = "death_watch",
 	faction = "",
-	level = 150,
+	level = 175,
 	chanceHit = 9,
-	damageMin = 700,
-	damageMax = 950,
+	damageMin = 450,
+	damageMax = 650,
 	baseXp = 19000,
 	baseHAM = 100000,
-	baseHAMmax = 130000,
+	baseHAMmax = 100000,
 	armor = 2,
-	resists = {65,75,80,40,80,5,20,65,-1},
+	resists = {55,65,70,30,70,5,10,55,30},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -42,18 +42,18 @@ de_s_battle_droid = Creature:new {
 		},
 		{
 			groups = {
-				{group = "droid_loot", chance = 80000000},
+				{group = "droid_loot", chance = 8000000},
 				{group = "nge_house_yt1300", chance = 1000000},
 				{group = "nge_house_mustafar", chance = 1000000}
 			},
-			lootChance = 35000000
+			lootChance = 10000000
 		},
 		{
 			groups = {
 				{group = "clothing_attachments", chance = 5000000},
 				{group = "armor_attachments", chance = 5000000}
 			},
-			lootChance = 25000000
+			lootChance = 45000000
 		},
 },
 	conversationTemplate = "",
