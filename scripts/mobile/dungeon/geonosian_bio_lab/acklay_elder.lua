@@ -14,11 +14,11 @@ acklay_elder = Creature:new {
 	armor = 3,
 	resists = {130,145,155,155,145,30,30,30,-1},
 	meatType = "",
-	meatAmount = 0,
+	meatAmount = 100,
 	hideType = "",
 	hideAmount = 0,
 	boneType = "",
-	boneAmount = 0,
+	boneAmount = 100,
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 35,
@@ -45,7 +45,7 @@ acklay_elder = Creature:new {
 			lootChance = 5000000
 		},
 	},
-	weapons = {},
+	weapons = {"creature_spit_large_yellow"},
 	conversationTemplate = "",
 	attacks = {
 		{"creatureareacombo",""},
