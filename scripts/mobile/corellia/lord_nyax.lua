@@ -11,7 +11,7 @@ lord_nyax = Creature:new {
 	baseHAM = 58000,
 	baseHAMmax = 81000,
 	armor = 2,
-	resists = {80,45,40,20,50,100,10,15,5},
+	resists = {80,45,40,20,50,90,10,15,5},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -29,16 +29,28 @@ lord_nyax = Creature:new {
 	templates = {"object/mobile/dressed_lord_nyax.iff"},
 	lootGroups = {
 		{
-		groups = {
-				{group = "resource_deed", chance = 500000},
-				{group = "crystals_quality", chance = 500000},
-				{group = "nyax", chance = 5000000},
-				{group = "nge_house_bespin", chance = 1000000},
-				{group = "armor_attachments", chance = 1500000},
-				{group = "clothing_attachments", chance = 1500000}
+			groups = {
+				{group = "nyax", chance = 5000000}
+				{group = "crystals_select", chance = 5000000},
 			},
-			lootChance = 7500000
-		}
+			lootChance = 10000000
+		},
+		{
+			groups = {
+				{group = "armor_attachments", chance = 5000000},
+   		            	{group = "clothing_attachments", chance = 5000000}
+			},
+			lootChance = 4000000
+		},
+		{
+			groups = {
+				{group = "crystals_premium", chance = 5000000},
+				{group = "nge_house_bespin", chance = 4000000},
+				{group = "holocron_splinters", chance = 1000000}
+			},
+			lootChance = 1500000
+		},
+	
 	},
 	weapons = {"nyaxs_weapons"},
 	conversationTemplate = "",
