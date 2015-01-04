@@ -4,14 +4,14 @@ giant_canyon_krayt_dragon = Creature:new {
 	pvpFaction = "",
 	faction = "",
 	level = 300,
-	chanceHit = 30.0,
+	chanceHit = 25.0,
 	damageMin = 1453,
 	damageMax = 2343,
 	baseXp = 28549,
-	baseHAM = 104687,
-	baseHAMmax = 120312,
-	armor = 3,
-	resists = {170,170,170,170,130,170,170,170,-1},
+	baseHAM = 385000,
+	baseHAMmax = 471000,
+	armor = 2,
+	resists = {150,150,150,150,100,150,150,150,-1},
 	meatType = "meat_carnivore",
 	meatAmount = 1000,
 	hideType = "hide_bristley",
@@ -28,6 +28,7 @@ giant_canyon_krayt_dragon = Creature:new {
 
 	templates = {"object/mobile/canyon_krayt_dragon.iff"},
 	scale = 1.2;
+
 	lootGroups = {
 		{
 	        groups = {
