@@ -26,7 +26,8 @@ de_ig_assassin_droid = Creature:new {
 	optionsBitmask = 0,
 	diet = NONE,
 
-	templates = {"object/mobile/ig_assassin_droid.iff"},
+	templates = {
+		"object/mobile/ig_assassin_droid.iff",
 		"object/mobile/death_watch_battle_droid_03.iff"},
 	lootGroups = {
 		{

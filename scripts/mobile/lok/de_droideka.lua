@@ -26,7 +26,8 @@ de_droideka = Creature:new {
 	optionsBitmask = 128,
 	diet = HERBIVORE,
 
-	templates = {"object/mobile/droideka.iff"},
+	templates = {
+		"object/mobile/droideka.iff",
 		"object/mobile/death_watch_battle_droid_03.iff"},
 	lootGroups = {
 		{

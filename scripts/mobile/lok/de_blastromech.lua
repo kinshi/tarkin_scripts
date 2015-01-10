@@ -26,7 +26,8 @@ de_blastromech = Creature:new {
 	optionsBitmask = 128,
 	diet = NONE,
 
-	templates = {"object/mobile/blastromech.iff"},
+	templates = {
+		"object/mobile/blastromech.iff",
 		"object/mobile/death_watch_battle_droid_03.iff"},
 	lootGroups = {
 		{
