@@ -65,7 +65,7 @@ object_draft_schematic_droid_component_chassis_droid_binary_load_lifter = object
    ingredientTemplateNames = {"craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n"},
    ingredientTitleNames = {"primary_frame", "secondary_frame", "support_struts", "frame_sub_assembly", "leg_struts", "droid_brain", "manipulator_arm", "motivator", "sensor_suite"},
    ingredientSlotType = {0, 0, 0, 0, 0, 1, 1, 1, 1},
-   resourceTypes = {"steel", "steel_duranium", "metal", "fiberplast", "steel_duralloy", "object/tangible/component/droid/shared_droid_brain.iff", "object/tangible/component/droid/shared_manipulator_arm.iff", "object/tangible/component/droid/shared_droid_motive_system_advanced.iff", "object/tangible/component/droid/shared_sensor_package_droid.iff"},
+   resourceTypes = {"steel", "steel", "metal", "fiberplast", "steel", "object/tangible/component/droid/shared_droid_brain.iff", "object/tangible/component/droid/shared_manipulator_arm.iff", "object/tangible/component/droid/shared_droid_motive_system_advanced.iff", "object/tangible/component/droid/shared_sensor_package_droid.iff"},
    resourceQuantities = {250, 250, 750, 500, 750, 1, 2, 6, 1},
    contribution = {100, 100, 100, 100, 100, 100, 100, 100, 100},
 

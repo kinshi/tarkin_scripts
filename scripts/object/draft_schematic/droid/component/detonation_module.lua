@@ -65,7 +65,7 @@ object_draft_schematic_droid_component_detonation_module = object_draft_schemati
    ingredientTemplateNames = {"craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n"},
    ingredientTitleNames = {"module_frame", "data_storage_matrix", "reaction_chamber"},
    ingredientSlotType = {0, 0, 0},
-   resourceTypes = {"copper", "gas_inert", "gas_reactive_tolium"},
+   resourceTypes = {"copper", "gas_inert", "gas_reactive"},
    resourceQuantities = {40, 20, 80},
    contribution = {100, 100, 100},
 
