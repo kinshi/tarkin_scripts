@@ -50,7 +50,7 @@ acklay_elder = Creature:new {
 	attacks = {
 		{"creatureareacombo",""},
 		{"creatureareaknockdown","knockdownChance=50"},
-		{"dizzyattack","dizzyChance=50"}
+		{"stunattack","stunChance=50"}
 	}
 }
 

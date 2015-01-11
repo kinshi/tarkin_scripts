@@ -30,23 +30,26 @@ tusken_carnage_champion = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "tusken_common", chance = 3000000},
-				{group = "bone_armor", chance = 500000},
-				{group = "chitin_armor", chance = 500000},
-				{group = "armor_attachments", chance = 3000000},
-				{group = "clothing_attachments", chance = 3000000}
+				{group = "tusken_common", chance = 5000000},
+				{group = "bone_armor", chance = 2500000},
+				{group = "chitin_armor", chance = 2500000}
 			},
 			lootChance = 10000000
 		},
 		{
 			groups = {
-				{group = "crystals_select", chance = 3000000},
-				{group = "nge_house_sand_crawler", chance = 500000},
-				{group = "armor_attachments", chance = 3000000},
-				{group = "clothing_attachments", chance = 3000000},
-				{group = "deed_voucher", chance = 500000}
+				{group = "armor_attachments", chance = 5000000},
+				{group = "clothing_attachments", chance = 5000000}			
 			},
-			lootChance = 5000000
+			lootChance = 4000000
+		},
+		{
+			groups = {
+				{group = "crystals_select", chance = 5000000},
+				{group = "nge_house_sand_crawler", chance = 2500000},
+				{group = "deed_voucher", chance = 2500000}
+			},
+			lootChance = 2500000
 		},				
 	},
 	weapons = {"tusken_weapons"},
