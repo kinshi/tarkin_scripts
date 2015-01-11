@@ -32,24 +32,35 @@ visionary_of_lord_nyax = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "junk", chance = 1200000},
-				{group = "melee_two_handed", chance = 1200000},
-				{group = "armor_attachments", chance = 1500000},
-               	{group = "clothing_attachments", chance = 1500000},
-				{group = "force_color_crystal", chance = 1200000},
-				{group = "printer_parts", chance = 1700000},
-				{group = "nge_house_bespin", chance = 1000000},
-				{group = "holocron_splinters", chance = 700000}
+				{group = "junk", chance = 5000000},
+				{group = "melee_two_handed", chance = 1500000},
+				{group = "force_color_crystal", chance = 2000000},
+				{group = "printer_parts", chance = 1500000}
 			},
-			lootChance = 3000000
-		}	
+			lootChance = 10000000
+		},
+		{
+			groups = {
+				{group = "armor_attachments", chance = 5000000},
+   		            	{group = "clothing_attachments", chance = 5000000}
+			},
+			lootChance = 4000000
+		},
+		{
+			groups = {
+				{group = "crystals_premium", chance = 5000000},
+				{group = "nge_house_bespin", chance = 4000000},
+				{group = "holocron_splinters", chance = 1000000}
+			},
+			lootChance = 1500000
+		},
+	
 	},
 	weapons = {"aakuan_pistol_weapons"},
 	conversationTemplate = "",
 	attacks = {
 		{"creatureareaknockdown","knockdownChance=50"},
 		{"creatureareacombo",""},
-		{"dizzyattack","dizzyChance=50"},
 		{"blindattack","blindChance=50"},
 
 	}

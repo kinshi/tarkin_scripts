@@ -4,14 +4,14 @@ tusken_observer = Creature:new {
 	pvpFaction = "tusken_raider",
 	faction = "tusken_raider",
 	level = 227,
-	chanceHit = 19.75,
-	damageMin = 622,
-	damageMax = 1100,
+	chanceHit = 11.75,
+	damageMin = 522,
+	damageMax = 700,
 	baseXp = 21630,
-	baseHAM = 208000,
-	baseHAMmax = 254000,
+	baseHAM = 150000,
+	baseHAMmax = 150000,
 	armor = 2,
-	resists = {85,85,35,90,10,30,45,80,-1},
+	resists = {75,75,35,80,10,30,35,70,-1},
 	meatType = "",
 	meatAmount = 0,
 	hideType = "",
@@ -30,23 +30,26 @@ tusken_observer = Creature:new {
 	lootGroups = {
 		{
 			groups = {
-				{group = "tusken_common", chance = 3000000},
-				{group = "bone_armor", chance = 500000},
-				{group = "chitin_armor", chance = 500000},
-				{group = "armor_attachments", chance = 3000000},
-				{group = "clothing_attachments", chance = 3000000}
+				{group = "tusken_common", chance = 5000000},
+				{group = "bone_armor", chance = 2500000},
+				{group = "chitin_armor", chance = 2500000}
 			},
 			lootChance = 10000000
 		},
 		{
 			groups = {
-				{group = "crystals_premium", chance = 3000000},
-				{group = "nge_house_sand_crawler", chance = 500000},
-				{group = "armor_attachments", chance = 3000000},
-				{group = "clothing_attachments", chance = 3000000},
-				{group = "deed_voucher", chance = 500000}
+				{group = "armor_attachments", chance = 5000000},
+				{group = "clothing_attachments", chance = 5000000}			
 			},
-			lootChance = 5000000
+			lootChance = 4000000
+		},
+		{
+			groups = {
+				{group = "crystals_premium", chance = 5000000},
+				{group = "nge_house_sand_crawler", chance = 2500000},
+				{group = "deed_voucher", chance = 2500000}
+			},
+			lootChance = 2500000
 		},				
 	},
 	weapons = {"tusken_weapons"},
