@@ -65,7 +65,7 @@ object_draft_schematic_droid_component_armor_module_4 = object_draft_schematic_d
    ingredientTemplateNames = {"craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n"},
    ingredientTitleNames = {"module_frame", "armor_filler", "stress_resist_plate", "fracture_capture_medium"},
    ingredientSlotType = {0, 0, 0, 0},
-   resourceTypes = {"steel_duralloy", "metal_ferrous", "metal_nonferrous", "fiberplast"},
+   resourceTypes = {"steel", "metal_ferrous", "metal_nonferrous", "fiberplast"},
    resourceQuantities = {55, 12, 15, 10},
    contribution = {100, 100, 100, 100},
 

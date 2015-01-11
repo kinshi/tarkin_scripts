@@ -65,7 +65,7 @@ object_draft_schematic_droid_component_medic_module_6 = object_draft_schematic_d
    ingredientTemplateNames = {"craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n", "craft_droid_ingredients_n"},
    ingredientTitleNames = {"module_frame", "data_storage_matrix", "med_assist_module", "medical_database"},
    ingredientSlotType = {0, 0, 1, 1},
-   resourceTypes = {"aluminum_duralumin", "metal", "object/tangible/component/item/shared_electronics_gp_module.iff", "object/tangible/component/item/shared_electronics_memory_module.iff"},
+   resourceTypes = {"aluminum", "metal", "object/tangible/component/item/shared_electronics_gp_module.iff", "object/tangible/component/item/shared_electronics_memory_module.iff"},
    resourceQuantities = {25, 20, 1, 3},
    contribution = {100, 100, 100, 100},
 
