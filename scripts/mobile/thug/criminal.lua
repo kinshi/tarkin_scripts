@@ -1,6 +1,7 @@
 criminal = Creature:new {
 	objectName = "@mob/creature_names:criminal",
 	socialGroup = "thug",
+	generateRandomName = true,
 	pvpFaction = "thug",
 	faction = "thug",
 	level = 7,
@@ -23,7 +24,7 @@ criminal = Creature:new {
 	ferocity = 0,
 	pvpBitmask = ATTACKABLE,
 	creatureBitmask = PACK,
-	optionsBitmask = 128,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/dressed_criminal_thug_human_male_01.iff",
@@ -49,7 +50,7 @@ criminal = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_light"},
-	conversationTemplate = "",
+	conversationTemplate = "generic_criminal_mission_giver_convotemplate",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

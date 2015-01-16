@@ -191,6 +191,9 @@ function DeathWatchBunkerScreenPlay:spawnMobiles()
 	for i,v in ipairs(deathWatchStaticSpawns) do
 		spawnMobile("endor", v[1], v[2], v[3], v[4], v[5], v[6], v[7])
 	end
+	for i,v in ipairs(deathWatchQuestNpcs) do
+		spawnMobile("endor", v[1], v[2], v[3], v[4], v[5], v[6], v[7])
+	end
 end
 
 function DeathWatchBunkerScreenPlay:spawnObjects()
@@ -636,7 +639,7 @@ function DeathWatchBunkerScreenPlay:pumpTimer(pCreature)
 	ObjectManager.withCreatureObject(pCreature, function(creature)
 		if creature:hasScreenPlayState(64, "death_watch_foreman_stage") == 0 then
 			creature:removeScreenPlayState(32, "death_watch_foreman_stage")
-			creature:setScreenPlayState(3, "death_watch_foreman_stage_failed")
+			creature:setScreenPlayState(2, "death_watch_foreman_stage_failed")
 			creature:sendSystemMessage("@dungeon/death_watch:water_pressure_failed")
 		end
 	end)

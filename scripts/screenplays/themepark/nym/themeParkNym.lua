@@ -114,7 +114,7 @@ function ThemeParkNym:spawnLootObjects()
 		csuContainer:setCustomObjectName("A Computer Storage Unit")
 		createObserver(OBJECTRADIALUSED, "ThemeParkNym", "notifyNymContainerUsed", csuPointer)
 	end)
-	local cratePointer = spawnSceneObject("lok", "object/tangible/container/loot/placable_loot_crate.iff", -7.9, -20.0, 78.4, 5126291, 0, 0, -1, 0)
+	local cratePointer = spawnSceneObject("lok", "object/tangible/container/loot/loot_crate.iff", -7.9, -20.0, 78.4, 5126291, 0, 0, -1, 0)
 	ObjectManager.withSceneObject(cratePointer, function(crateContainer)
 		crateContainer:setCustomObjectName("Supply Crate")
 		createObserver(OBJECTRADIALUSED, "ThemeParkNym", "notifyNymContainerUsed", cratePointer)
@@ -131,6 +131,9 @@ function ThemeParkNym:notifyNymContainerUsed(pDroid, pPlayer, radialSelected)
 		if (SceneObject(pDroid):getTemplateObjectPath() == "object/tangible/container/loot/astromech_container.iff") then
 			if (player:hasScreenPlayState(1, "nym_theme_park_jinkinsNpc") ~= 1 or player:hasScreenPlayState(2, "nym_theme_park_jinkinsNpc") == 1) then
 				return 1
+			elseif (SceneObject(pInventory):hasFullContainerObjects()) then
+				player:sendSystemMessage("@error_message:inv_full")
+				return 1
 			end
 			questItem = "object/tangible/loot/quest/nym_droid_memory_chip.iff"
 			questMsg = "@theme_park_nym/messages:acquired_memory"
@@ -140,6 +143,9 @@ function ThemeParkNym:notifyNymContainerUsed(pDroid, pPlayer, radialSelected)
 		elseif (SceneObject(pDroid):getTemplateObjectPath() == "object/tangible/container/loot/gas_filter_container.iff") then
 			if (player:hasScreenPlayState(1, "nym_theme_park_koleNpc") ~= 1 or player:hasScreenPlayState(2, "nym_theme_park_koleNpc") == 1) then
 				return 1
+			elseif (SceneObject(pInventory):hasFullContainerObjects()) then
+				player:sendSystemMessage("@error_message:inv_full")
+				return 1
 			end
 			questItem = "object/tangible/loot/quest/nym_filtered_gas.iff"
 			questMsg = "@theme_park_nym/messages:acquired_gas"
@@ -148,6 +154,9 @@ function ThemeParkNym:notifyNymContainerUsed(pDroid, pPlayer, radialSelected)
 			setQuestStatus(player:getObjectID() .. ":koleWaypointID", koleWaypoint)
 		elseif (SceneObject(pDroid):getTemplateObjectPath() == "object/tangible/container/loot/computer_container.iff") then
 			if (player:hasScreenPlayState(1, "nym_theme_park_nymNpc") ~= 1 or player:hasScreenPlayState(8, "nym_theme_park_nymNpc") == 1 or player:hasScreenPlayState(16, "nym_theme_park_nymNpc") == 1) then
+				return 1
+			elseif (SceneObject(pInventory):hasFullContainerObjects()) then
+				player:sendSystemMessage("@error_message:inv_full")
 				return 1
 			end
 			questItem = "object/tangible/loot/quest/nym_hard_drive.iff"
@@ -160,8 +169,11 @@ function ThemeParkNym:notifyNymContainerUsed(pDroid, pPlayer, radialSelected)
 				questMsg = "@theme_park_nym/messages:acquired_hard_drive"
 			end
 			questNpc = "nym"
-		elseif (SceneObject(pDroid):getTemplateObjectPath() == "object/tangible/container/loot/placable_loot_crate.iff") then
+		elseif (SceneObject(pDroid):getTemplateObjectPath() == "object/tangible/container/loot/loot_crate.iff") then
 			if (player:hasScreenPlayState(1, "nym_theme_park_nymNpc") ~= 1 or player:hasScreenPlayState(4, "nym_theme_park_nymNpc") == 1 or player:hasScreenPlayState(16, "nym_theme_park_nymNpc") == 1) then
+				return 1
+			elseif (SceneObject(pInventory):hasFullContainerObjects()) then
+				player:sendSystemMessage("@error_message:inv_full")
 				return 1
 			end
 			questItem = "object/tangible/loot/quest/nym_imggc.iff"
