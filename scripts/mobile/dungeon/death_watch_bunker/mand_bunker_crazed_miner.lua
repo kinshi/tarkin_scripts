@@ -22,17 +22,16 @@ mand_bunker_crazed_miner = Creature:new {
 	milk = 0,
 	tamingChance = 0,
 	ferocity = 0,
-	pvpBitmask = NONE,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
 	creatureBitmask = NONE,
-	optionsBitmask = 264,
+	optionsBitmask = 128,
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/dressed_mand_bunker_crazed_miner.iff"},
 	lootGroups = {},
 	weapons = {},
-	conversationTemplate = "insane_miner_convotemplate",
-	attacks = {
-	}
+	conversationTemplate = "",
+	attacks = merge(brawlermaster,marksmanmaster)
 }
 
 CreatureTemplates:addCreatureTemplate(mand_bunker_crazed_miner, "mand_bunker_crazed_miner")

@@ -423,7 +423,7 @@ function recruiterScreenplay:awardData(pPlayer, faction, itemString)
 			return self.errorCodes.ITEMCOST
 		end
 
-		itemCost  = math.ceil(itemCost *  getGCWDiscount(pPlayer) * self:getSmugglerDiscount(pPlayer))
+		itemCost = math.ceil(itemCost *  getGCWDiscount(pPlayer) * self:getSmugglerDiscount(pPlayer))
 
 		if factionStanding < (itemCost + self.minimumFactionStanding) then
 			return self.errorCodes.NOTENOUGHFACTION
@@ -558,27 +558,34 @@ function recruiterScreenplay:getSmugglerDiscount(pPlayer)
 end
 
 function recruiterScreenplay:handleGoOnLeave(pPlayer)
-	ObjectManager.withCreaturePlayerObject(pPlayer, function(playerObject)
+	ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
+		deleteData(player:getObjectID() .. ":changingFactionStatus")
 		playerObject:setFactionStatus(0)
 	end)
 end
 
 function recruiterScreenplay:handleGoCovert(pPlayer)
-	ObjectManager.withCreaturePlayerObject(pPlayer, function(playerObject)
+	ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
+		deleteData(player:getObjectID() .. ":changingFactionStatus")
 		playerObject:setFactionStatus(2)
 	end)
 end
 
 function recruiterScreenplay:handleGoOvert(pPlayer)
-	ObjectManager.withCreaturePlayerObject(pPlayer, function(playerObject)
+	ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
+		deleteData(player:getObjectID() .. ":changingFactionStatus")
 		playerObject:setFactionStatus(2)
 	end)
 end
 
 function recruiterScreenplay:handleResign(pPlayer)
 	ObjectManager.withCreatureAndPlayerObject(pPlayer, function(player, playerObject)
+		deleteData(player:getObjectID() .. ":changingFactionStatus")
+		local oldFaction = player:getFaction()
+		local oldFactionName = self:getFactionFromHashCode(oldFaction)
 		player:setFactionRank(0)
 		player:setFaction(0)
 		playerObject:setFactionStatus(0)
+		playerObject:decreaseFactionStanding(oldFactionName, 0)
 	end)
 end

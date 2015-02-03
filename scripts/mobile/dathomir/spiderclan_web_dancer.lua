@@ -43,7 +43,7 @@ spiderclan_web_dancer = Creature:new {
 				{group = "wearables_uncommon", chance = 500000}
 			},
 			lootChance = 2700000
-		}			
+		}
 	},
 	weapons = {"mixed_force_weapons"},
 	conversationTemplate = "",

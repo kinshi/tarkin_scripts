@@ -3,6 +3,10 @@ local ObjectManager = require("managers.object.object_manager")
 DeathWatchBunkerScreenPlay = ScreenPlay:new {
 	numberOfActs = 1,
 
+	-- Technician vent repair quest
+	ventsRepaired = false,
+	ventDroidAvailable = true,
+
 	passkey = {
 		hall = "object/tangible/dungeon/death_watch_bunker/passkey_hall.iff",
 		storage = "object/tangible/dungeon/death_watch_bunker/passkey_storage.iff",
@@ -123,13 +127,14 @@ DeathWatchBunkerScreenPlay = ScreenPlay:new {
 
 	missingSkillMessage = { "", "", "", "", "@dungeon/death_watch:not_enough_armorsmith_skill", "@dungeon/death_watch:not_enough_droidengineer_skill", "@dungeon/death_watch:not_enough_tailor_skill" },
 
-	mineCells = { 	5996352, 5996353, 5996354, 5996356, 5996357, 5996358, 5996359, 5996360, 5996361, 5996362,
-		5996363, 5996364, 5996365, 5996366, 5996369, 5996372, 5996375, 5996376, 5996377,
-	},
+	mineCells = { 5996352, 5996353, 5996354, 5996355, 5996356, 5996357, 5996358, 5996359, 5996360, 5996361, 5996362, 5996363, 5996364,
+		5996365, 5996366, 5996367, 5996369, 5996372, 5996373, 5996375, 5996376, 5996377 },
 
 	spawnGroups = { "", "terminalAnextSpawn", "terminalBnextSpawn", "terminalCnextSpawn" },
 
-	spawnEvents = { "", "spawnNextA", "spawnNextB", "spawnNextC" }
+	spawnEvents = { "", "spawnNextA", "spawnNextB", "spawnNextC" },
+
+	containerRespawnTime = 20 * 60 * 1000 -- 20 minutes
 }
 
 registerScreenPlay("DeathWatchBunkerScreenPlay", true)
@@ -146,7 +151,7 @@ function DeathWatchBunkerScreenPlay:start()
 		self:spawnMobiles()
 		self:setupPermissionGroups()
 
-		createEvent(1000 * 30, "DeathWatchBunkerScreenPlay", "poisonEvent", pBunker)
+		createEvent(1000 * 45, "DeathWatchBunkerScreenPlay", "poisonEvent", pBunker)
 		createObserver(ENTEREDBUILDING, "DeathWatchBunkerScreenPlay", "onEnterDWB", pBunker)
 		createObserver(EXITEDBUILDING, "DeathWatchBunkerScreenPlay", "onExitDWB", pBunker)
 	end
@@ -189,6 +194,9 @@ end
 
 function DeathWatchBunkerScreenPlay:spawnMobiles()
 	for i,v in ipairs(deathWatchStaticSpawns) do
+		spawnMobile("endor", v[1], v[2], v[3], v[4], v[5], v[6], v[7])
+	end
+	for i,v in ipairs(deathWatchQuestNpcs) do
 		spawnMobile("endor", v[1], v[2], v[3], v[4], v[5], v[6], v[7])
 	end
 end
@@ -326,17 +334,12 @@ function DeathWatchBunkerScreenPlay:spawnObjects()
 	writeData(spawnedSceneObject:getObjectID() .. ":dwb:accessEnabled", 1)
 	writeData(spawnedSceneObject:getObjectID() .. ":dwb:terminal", 7)
 
-	--Write Data for Foreman
-	writeData(5996314 .. ":dwb:haldo_busy", 0)
-
 	-- Spawn Haldo
 	local halnum = getRandomNumber(1,3)
 	spawn = deathWatchSpecialSpawns["haldo" .. halnum]
 	spawnedPointer = spawnMobile("endor", spawn[1], spawn[2], spawn[3], spawn[4], spawn[5], spawn[6], spawn[7])
 	spawnedSceneObject:_setObject(spawnedPointer)
-	writeData(5996314 .. ":dwb:haldo", spawnedSceneObject:getObjectID())
-	createObserver(OBJECTDESTRUCTION, "DeathWatchBunkerScreenPlay", "haldoKilled", spawnedPointer)
-	--createObserver(DAMAGERECEIVED, "DeathWatchBunkerScreenPlay", "haldoDamage", spawnPointer)
+	createObserver(DAMAGERECEIVED, "DeathWatchBunkerScreenPlay", "haldoDamage", spawnedPointer)
 
 	-- Water Pressure Valve Control A
 	spawnedPointer = spawnSceneObject("endor","object/tangible/terminal/terminal_water_pressure.iff",55.5855,-32,-92.8,5996340,1,0,0,0)
@@ -377,6 +380,7 @@ function DeathWatchBunkerScreenPlay:spawnObjects()
 	-- Loot Boxes
 	spawnedPointer = spawnSceneObject("endor", "object/tangible/container/general/tech_chest.iff", -3.10801,-12,36.7064,5996318,0,0,-1,0)
 	spawnedSceneObject:_setObject(spawnedPointer)
+	self:setLootBoxPermissions(spawnedPointer)
 	spawnedSceneObject:setCustomObjectName("Chest")
 	writeData(spawnedSceneObject:getObjectID() .. ":dwb:lootbox", 1)
 	createEvent(1000, "DeathWatchBunkerScreenPlay", "refillContainer", spawnedPointer)
@@ -384,15 +388,25 @@ function DeathWatchBunkerScreenPlay:spawnObjects()
 
 	spawnedPointer = spawnSceneObject("endor", "object/tangible/dungeon/coal_bin_container.iff",6.01353,-32,-102.05,5996337,0.707107,0,0.707107,0)
 	spawnedSceneObject:_setObject(spawnedPointer)
+	self:setLootBoxPermissions(spawnedPointer)
 	writeData(spawnedSceneObject:getObjectID() .. ":dwb:lootbox", 2)
 	createEvent(1000, "DeathWatchBunkerScreenPlay", "refillContainer", spawnedPointer)
 	createObserver(OBJECTRADIALUSED, "DeathWatchBunkerScreenPlay", "boxLooted", spawnedPointer)
 
 	spawnedPointer = spawnSceneObject("endor", "object/tangible/container/loot/placable_loot_crate_tech_armoire.iff", -2.78947,-32,-27.1899,5996335,0,0,1,0)
 	spawnedSceneObject:_setObject(spawnedPointer)
+	self:setLootBoxPermissions(spawnedPointer)
 	writeData(spawnedSceneObject:getObjectID() .. ":dwb:lootbox", 3)
 	createEvent(1000, "DeathWatchBunkerScreenPlay", "refillContainer", spawnedPointer)
 	createObserver(OBJECTRADIALUSED, "DeathWatchBunkerScreenPlay", "boxLooted", spawnedPointer)
+end
+
+function DeathWatchBunkerScreenPlay:setLootBoxPermissions(pContainer)
+	ObjectManager.withSceneObject(pContainer, function(container)
+		container:setContainerInheritPermissionsFromParent(false)
+		container:setContainerDefaultDenyPermission(MOVEIN)
+		container:setContainerDefaultAllowPermission(OPEN + MOVEOUT)
+	end)
 end
 
 function DeathWatchBunkerScreenPlay:onEnterDWB(sceneObject, creatureObject)
@@ -401,11 +415,7 @@ function DeathWatchBunkerScreenPlay:onEnterDWB(sceneObject, creatureObject)
 			return 0
 		end
 
-		if creature:hasScreenPlayState(2, "death_watch_bunker") == 0 then
-			self:lockAll(creatureObject)
-		else
-			createEvent(10 * 1000, "DeathWatchBunkerScreenPlay", "lockCellsOnly", creatureObject)
-		end
+		self:lockAll(creatureObject)
 	end)
 end
 
@@ -416,7 +426,6 @@ function DeathWatchBunkerScreenPlay:onExitDWB(sceneObject, creatureObject, long)
 		end
 
 		if long == self.buildingIds.outside or long == 0 then
-			creature:sendSystemMessage("@dungeon/death_watch:relock")
 
 			creature:removeScreenPlayState(2, "death_watch_bunker")
 			creature:removeScreenPlayState(4, "death_watch_bunker")
@@ -461,45 +470,7 @@ function DeathWatchBunkerScreenPlay:respawnHaldo(creatureObject)
 	local halNum = getRandomNumber(1,3)
 	local spawn = deathWatchSpecialSpawns["haldo" .. halNum]
 	local spawnPointer = spawnMobile("endor", spawn[1], spawn[2], spawn[3], spawn[4], spawn[5], spawn[6], spawn[7])
-	writeData(5996314 .. ":dwb:haldo", SceneObject(spawnPointer):getObjectID())
-	createObserver(OBJECTDESTRUCTION, "DeathWatchBunkerScreenPlay", "haldoKilled", spawnPointer)
-	--createObserver(DAMAGERECEIVED, "DeathWatchBunkerScreenPlay", "haldoDamage", spawnPointer)
-end
-
-function DeathWatchBunkerScreenPlay:lockCellsOnly(pCreature)
-	if pCreature == nil then
-		return 0
-	end
-
-	ObjectManager.withCreatureObject(pCreature, function(creature)
-		if creature:hasScreenPlayState(2, "death_watch_bunker") == 0 then
-			self:removePermission(pCreature, "DeathWatchBunkerDoor1")
-		end
-
-		if creature:hasScreenPlayState(4, "death_watch_bunker") == 0 then
-			self:removePermission(pCreature, "DeathWatchBunkerDoor2")
-		end
-
-		if creature:hasScreenPlayState(8, "death_watch_bunker") == 0 then
-			self:removePermission(pCreature, "DeathWatchBunkerDoor3")
-		end
-
-		if creature:hasScreenPlayState(16, "death_watch_bunker") == 0 then
-			self:removePermission(pCreature, "DeathWatchBunkerDoor4")
-		end
-
-		if creature:hasScreenPlayState(32, "death_watch_bunker") == 0 then
-			self:removePermission(pCreature, "DeathWatchBunkerDoor5")
-		end
-
-		if creature:hasScreenPlayState(64, "death_watch_bunker") == 0 then
-			self:removePermission(pCreature, "DeathWatchBunkerDoor6")
-		end
-
-		if creature:hasScreenPlayState(128, "death_watch_bunker") == 0 then
-			self:removePermission(pCreature, "DeathWatchBunkerDoor7")
-		end
-	end)
+	createObserver(DAMAGERECEIVED, "DeathWatchBunkerScreenPlay", "haldoDamage", spawnPointer)
 end
 
 function DeathWatchBunkerScreenPlay:boxLooted(pSceneObject, pCreature, selectedID)
@@ -527,7 +498,7 @@ function DeathWatchBunkerScreenPlay:boxLooted(pSceneObject, pCreature, selectedI
 			spawnMobile("endor", spawn[1], spawn[2], spawn[3], spawn[4], spawn[5], spawn[6], spawn[7])
 		end
 
-		createEvent(240 * 1000, "DeathWatchBunkerScreenPlay", "refillContainer", pSceneObject)
+		createEvent(self.containerRespawnTime, "DeathWatchBunkerScreenPlay", "refillContainer", pSceneObject)
 	end
 end
 
@@ -547,17 +518,18 @@ function DeathWatchBunkerScreenPlay:refillContainer(pSceneObject)
 end
 
 function DeathWatchBunkerScreenPlay:poisonEvent(pSceneObject)
-	for i,v in ipairs(self.mineCells) do
-		local pCell = getSceneObject(v)
-		if pCell ~= nil then
-			local cellSize = SceneObject(pCell):getContainerObjectsSize()
+	if (not self.ventsRepaired) then
+		for i,v in ipairs(self.mineCells) do
+			local pCell = getSceneObject(v)
+			if pCell ~= nil then
+				local cellSize = SceneObject(pCell):getContainerObjectsSize()
 
-			for j = 0, cellSize - 1, 1 do
-				local pObject = SceneObject(pCell):getContainerObject(j)
+				for j = 0, cellSize - 1, 1 do
+					local pObject = SceneObject(pCell):getContainerObject(j)
 
-				if pObject ~= nil then
-					if (SceneObject(pObject):isCreatureObject()) then
-						if (not CreatureObject(pObject):isAiAgent() and not self:hasRebreather(pObject) == 1) then
+					if pObject ~= nil then
+						if (SceneObject(pObject):isCreatureObject() and not CreatureObject(pObject):isAiAgent() and not self:hasRebreather(pObject)
+							and not CreatureObject(pObject):isDead() and not CreatureObject(pObject):isIncapacitated()) then
 							self:doPoison(pObject)
 						end
 					end
@@ -565,11 +537,15 @@ function DeathWatchBunkerScreenPlay:poisonEvent(pSceneObject)
 			end
 		end
 	end
-	createEvent(1000 * (50 + getRandomNumber(0,20)) , "DeathWatchBunkerScreenPlay", "poisonEvent", pSceneObject)
+	createEvent(1000 * 45, "DeathWatchBunkerScreenPlay", "poisonEvent", pSceneObject)
 end
 
 function DeathWatchBunkerScreenPlay:timeWarning(pCreature)
 	if pCreature == nil then
+		return
+	end
+
+	if (readData(CreatureObject(pCreature):getObjectID() .. ":teleportedFromBunker") == 1) then
 		return
 	end
 
@@ -594,6 +570,10 @@ function DeathWatchBunkerScreenPlay:removeFromBunker(pCreature)
 		return 0
 	end
 
+	if (readData(CreatureObject(pCreature):getObjectID() .. ":teleportedFromBunker") == 1) then
+		return
+	end
+
 	if (CreatureObject(pCreature):isGrouped()) then
 		local groupSize = CreatureObject(pCreature):getGroupSize()
 
@@ -614,21 +594,98 @@ function DeathWatchBunkerScreenPlay:teleportPlayer(pCreature)
 	if (pCreature == nil) then
 		return 0
 	end
+	writeData(CreatureObject(pCreature):getObjectID() .. ":teleportedFromBunker", 1)
 	CreatureObject(pCreature):teleport(-4657, 14.4, 4322.3, 0)
 	self:lockAll(pCreature)
 end
 
 function DeathWatchBunkerScreenPlay:haldoTimer(pCreature)
-	writeData(5996314 .. ":dwb:haldo_busy", 0)
 	ObjectManager.withCreatureObject(pCreature, function(creature)
 		if creature:hasScreenPlayState(4, "death_watch_foreman_stage") == 0 then
 			creature:removeScreenPlayState(1, "death_watch_foreman_stage")
 			creature:removeScreenPlayState(2, "death_watch_foreman_stage")
 			creature:removeScreenPlayState(4, "death_watch_foreman_stage")
 			creature:sendSystemMessage("@dungeon/death_watch:haldo_failed")
-			creature:setScreenPlayState(1, "death_watch_foreman_stage_failed")
-			createEvent(1000 * 60 * 20, "DeathWatchBunkerScreenPlay", "unlockHaldo", pCreature)
+			if (creature:hasScreenPlayState(2, "death_watch_haldo") == 0) then
+				creature:removeScreenPlayState(1, "death_watch_haldo")
+			end
 		end
+	end)
+end
+
+function DeathWatchBunkerScreenPlay:haldoKilled(pHaldo, pPlayer)
+	createEvent(1000 * 240, "DeathWatchBunkerScreenPlay", "respawnHaldo", pPlayer)
+	ObjectManager.withCreatureObject(pPlayer, function(creature)
+		if (creature:hasScreenPlayState(2, "death_watch_foreman_stage") == 1 and creature:hasScreenPlayState(4, "death_watch_haldo") == 0 and creature:hasScreenPlayState(2, "death_watch_haldo") == 0) then
+			local pInventory = creature:getSlottedObject("inventory")
+			if (pInventory == nil) then
+				creature:sendSystemMessage("Error: Unable to find player inventory.")
+			else
+				if (SceneObject(pInventory):hasFullContainerObjects() == true) then
+					creature:sendSystemMessage("@error_message:inv_full")
+					return 0
+				else
+					local pBattery = getContainerObjectByTemplate(pInventory, "object/tangible/dungeon/death_watch_bunker/drill_battery.iff", true)
+					if (pBattery == nil) then
+						pBattery = giveItem(pInventory,"object/tangible/dungeon/death_watch_bunker/drill_battery.iff", -1)
+						if (pBattery == nil) then
+							creature:sendSystemMessage("Error: Unable to generate item.")
+						else
+							creature:sendSystemMessage("@dungeon/death_watch:recovered_battery")
+							creature:setScreenPlayState(4, "death_watch_haldo")
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+
+function DeathWatchBunkerScreenPlay:haldoDamage(pHaldo, pPlayer, damage)
+	if pHaldo == nil or pPlayer == nil then
+		return
+	end
+
+	ObjectManager.withCreatureObject(pHaldo, function(haldo)
+		if ((haldo:getHAM(0) <= (haldo:getMaxHAM(0) * 0.9)) or (haldo:getHAM(3) <= (haldo:getMaxHAM(3) * 0.9)) or (haldo:getHAM(6) <= (haldo:getMaxHAM(6) * 0.9))) then
+			local spawnLoc = { x = haldo:getPositionX(), z = haldo:getPositionZ(), y = haldo:getPositionY(), cell = haldo:getParentID(), angle = haldo:getDirectionAngle() }
+			local spawnHam = { h = haldo:getHAM(0), a = haldo:getHAM(3), m = haldo:getHAM(6) }
+			SceneObject(pHaldo):destroyObjectFromWorld()
+
+			local pNewHaldo = spawnMobile("endor", "mand_bunker_crazed_miner_converse", 0, spawnLoc.x, spawnLoc.z, spawnLoc.y, spawnLoc.angle, spawnLoc.cell)
+
+			if (pNewHaldo == nil) then
+				return
+			end
+			CreatureObject(pNewHaldo):setPvpStatusBitmask(0)
+			CreatureObject(pNewHaldo):setHAM(0, spawnHam.h)
+			CreatureObject(pNewHaldo):setHAM(3, spawnHam.a)
+			CreatureObject(pNewHaldo):setHAM(6, spawnHam.m)
+
+			spatialChat(pNewHaldo, "@dungeon/death_watch:help_me")
+		end
+	end)
+end
+
+function DeathWatchBunkerScreenPlay:spawnAggroHaldo(pOldHaldo, pPlayer)
+	ObjectManager.withCreatureObject(pOldHaldo, function(haldo)
+		local spawnLoc = { x = haldo:getPositionX(), z = haldo:getPositionZ(), y = haldo:getPositionY(), cell = haldo:getParentID(), angle = haldo:getDirectionAngle() }
+		local spawnHam = { h = haldo:getHAM(0), a = haldo:getHAM(3), m = haldo:getHAM(6) }
+		SceneObject(pOldHaldo):destroyObjectFromWorld()
+
+		local pNewHaldo = spawnMobile("endor", "mand_bunker_crazed_miner", 0, spawnLoc.x, spawnLoc.z, spawnLoc.y, spawnLoc.angle, spawnLoc.cell)
+
+		if (pNewHaldo == nil) then
+			return
+		end
+
+		CreatureObject(pNewHaldo):setHAM(0, spawnHam.h)
+		CreatureObject(pNewHaldo):setHAM(3, spawnHam.a)
+		CreatureObject(pNewHaldo):setHAM(6, spawnHam.m)
+
+		createObserver(OBJECTDESTRUCTION, "DeathWatchBunkerScreenPlay", "haldoKilled", pNewHaldo)
+		spatialChat(pNewHaldo, "@conversation/death_watch_insane_miner:s_99f3d3be")
+		CreatureObject(pNewHaldo):engageCombat(pPlayer)
 	end)
 end
 
@@ -636,17 +693,10 @@ function DeathWatchBunkerScreenPlay:pumpTimer(pCreature)
 	ObjectManager.withCreatureObject(pCreature, function(creature)
 		if creature:hasScreenPlayState(64, "death_watch_foreman_stage") == 0 then
 			creature:removeScreenPlayState(32, "death_watch_foreman_stage")
-			creature:setScreenPlayState(3, "death_watch_foreman_stage_failed")
+			creature:setScreenPlayState(2, "death_watch_foreman_stage_failed")
 			creature:sendSystemMessage("@dungeon/death_watch:water_pressure_failed")
 		end
 	end)
-end
-
-function DeathWatchBunkerScreenPlay:unlockHaldo(pCreature)
-	if (pCreature == nil) then
-		return 0
-	end
-	CreatureObject(pCreature):removeScreenPlayState(1, "death_watch_foreman_stage_failed")
 end
 
 function DeathWatchBunkerScreenPlay:destroyIngredient(pIngredient)
@@ -794,7 +844,7 @@ function DeathWatchBunkerScreenPlay:hasRebreather(pSceneObject)
 	local pRebreather = SceneObject(pSceneObject):getSlottedObject("eyes")
 
 	if (pRebreather == nil) then
-		return 0
+		return false
 	end
 
 	local headSlot = SceneObject(pRebreather):getTemplateObjectPath()
@@ -802,9 +852,9 @@ function DeathWatchBunkerScreenPlay:hasRebreather(pSceneObject)
 	if (headSlot == self.bunkerItems.mandoRebreather) then
 		return SceneObject(pRebreather):getCustomObjectName() == "Advanced Rebreather"
 	elseif (headSlot == self.bunkerItems.mandoHelmet) then
-		return 1
+		return true
 	end
-	return 0
+	return false
 end
 
 --   Inflict poison damage on a creature
@@ -826,6 +876,7 @@ function DeathWatchBunkerScreenPlay:lockAll(pCreature)
 	for i = 1, #self.doorData, 1 do
 		self:removePermission(pCreature, "DeathWatchBunkerDoor" .. i)
 	end
+	CreatureObject(pCreature):sendSystemMessage("@dungeon/death_watch:relock")
 end
 
 function DeathWatchBunkerScreenPlay:spawnDefenders(number, pCreature)
@@ -941,6 +992,19 @@ function DeathWatchBunkerScreenPlay:checkDoor(pSceneObject, pCreature)
 				return
 			end
 
+			if (creature:isGrouped()) then
+				local groupSize = creature:getGroupSize()
+
+				for i = 0, groupSize - 1, 1 do
+					local pMember = creature:getGroupMember(i)
+					if pMember ~= nil then
+						writeData(CreatureObject(pMember):getObjectID() .. ":teleportedFromBunker", 0)
+					end
+				end
+			else
+				writeData(creature:getObjectID() .. ":teleportedFromBunker", 0)
+			end
+
 			createEvent(1000 * 60 * 5, "DeathWatchBunkerScreenPlay", "removeFromBunker", pCreature)
 			createEvent(1000 * 60 * 4.5, "DeathWatchBunkerScreenPlay", "timeWarning", pCreature)
 			createEvent(1000 * 60 * 5.5, "DeathWatchBunkerScreenPlay", "despawnCell", pCell)
@@ -983,8 +1047,6 @@ function DeathWatchBunkerScreenPlay:startForemanQuestStage(number, pCreature)
 	end
 
 	if number == 1 then
-		writeData(5996314 .. ":dwb:haldo_busy", 1)
-		writeData(5996314 .. ":dwb:haldo_player", CreatureObject(pCreature):getObjectID())
 		createEvent(1000 * 60 * 60, "DeathWatchBunkerScreenPlay", "haldoTimer", pCreature)
 	elseif number == 2 then
 		createEvent(1000 * 60 * 60, "DeathWatchBunkerScreenPlay", "pumpTimer", pCreature)
@@ -1088,7 +1150,7 @@ function DeathWatchBunkerScreenPlay:stopCraftingProcess(pCreature, pTerm, succes
 		end
 
 		if teleport == true then
-			createEvent(5000, "DeathWatchBunkerScreenPlay", "teleportPlayer", pCreature)
+			createEvent(5000, "DeathWatchBunkerScreenPlay", "removeFromBunker", pCreature)
 		end
 	end)
 end
