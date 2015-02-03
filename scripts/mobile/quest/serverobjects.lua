@@ -8,11 +8,23 @@ includeFile("quest/theater_manager.lua")
 includeFile("quest/painting_artist.lua")
 
 --Generic
+includeFile("quest/generic/businessman_target_thief_award.lua")
+includeFile("quest/generic/businessman_target_thief_briefcase.lua")
+includeFile("quest/generic/businessman_target.lua")
 includeFile("quest/generic/criminal_target_merchant.lua")
 includeFile("quest/generic/criminal_target_noble.lua")
 includeFile("quest/generic/criminal_target_rival.lua")
 includeFile("quest/generic/criminal_target_thug.lua")
 includeFile("quest/generic/criminal_target.lua")
+includeFile("quest/generic/noble_target_bowl.lua")
+includeFile("quest/generic/noble_target_heirloom.lua")
+includeFile("quest/generic/noble_target_hyperdrive.lua")
+includeFile("quest/generic/noble_target_ledger.lua")
+includeFile("quest/generic/noble_target.lua")
+includeFile("quest/generic/scientist_target_crazed_scientist.lua")
+includeFile("quest/generic/scientist_target_robber.lua")
+includeFile("quest/generic/scientist_target_scientist.lua")
+includeFile("quest/generic/scientist_target_spy.lua")
 
 --CoA
 includeFile("quest/coa/caravan_leader_coa3.lua")

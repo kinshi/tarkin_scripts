@@ -24,19 +24,21 @@ scientist = Creature:new {
 	ferocity = 0,
 	pvpBitmask = NONE,
 	creatureBitmask = NONE,
+	optionsBitmask = 136,
 	diet = HERBIVORE,
 
 	templates = {
-					"object/mobile/dressed_combatmedic_trainer_human_male_01.iff", 
-					"object/mobile/dressed_brigade_captain_human_male_01.iff",
-					"object/mobile/dressed_hutt_medic2_twilek_male_01.iff",
-					"object/mobile/dressed_combatmedic_trainer_human_female_01.iff",
-					"object/mobile/dressed_doctor_trainer_moncal_male_01.iff",
-					"object/mobile/dressed_combatmedic_trainer_rodian_male_01.iff",
-					"object/mobile/dressed_mercenary_medic_rodian_female_01.iff"
-					},
+		"object/mobile/dressed_combatmedic_trainer_human_male_01.iff",
+		"object/mobile/dressed_brigade_captain_human_male_01.iff",
+		"object/mobile/dressed_hutt_medic2_twilek_male_01.iff",
+		"object/mobile/dressed_combatmedic_trainer_human_female_01.iff",
+		"object/mobile/dressed_doctor_trainer_moncal_male_01.iff",
+		"object/mobile/dressed_combatmedic_trainer_rodian_male_01.iff",
+		"object/mobile/dressed_mercenary_medic_rodian_female_01.iff"
+	},
 	lootGroups = {},
 	weapons = {},
+	conversationTemplate = "generic_scientist_mission_giver_convotemplate",
 	attacks = {}
 }
 
