@@ -33,7 +33,8 @@ devil_gulginaw = Creature:new {
 	weapons = {"creature_spit_small_red"},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"}
+		{"stunattack","stunChance=50"},
+		{"posturedownattack","posturedownChance=50"}
 	}
 }
 
