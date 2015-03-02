@@ -32,7 +32,7 @@ kai_tok_scavenger = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
+		{"posturedownattack","posturedownChance=50"},
 		{"stunattack","stunChance=50"}
 	}
 }
