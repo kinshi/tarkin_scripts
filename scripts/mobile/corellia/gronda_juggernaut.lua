@@ -32,7 +32,8 @@ gronda_juggernaut = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
+		{"posturedownattack","posturedownChance=50"},
+		{"stunattack","stunattackChance=50"},
 		{"knockdownattack","knockdownChance=50"}
 	}
 }
