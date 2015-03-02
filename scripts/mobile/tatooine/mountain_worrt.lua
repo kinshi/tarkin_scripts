@@ -33,7 +33,7 @@ mountain_worrt = Creature:new {
 	weapons = {"creature_spit_small_red"},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
+		{"blindattack","blindChance=50"},
 		{"knockdownattack","knockdownChance=50"}
 	}
 }
