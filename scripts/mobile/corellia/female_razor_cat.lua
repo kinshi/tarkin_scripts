@@ -34,7 +34,8 @@ female_razor_cat = Creature:new {
 	conversationTemplate = "",
 	attacks = {
 		{"blindattack","blindChance=50"},
-		{"dizzyattack","dizzyChance=50"}
+		{"stunattack","stunChance=50"},
+		{"knockdownattack","knockdownChance=50"}
 	}
 }
 
