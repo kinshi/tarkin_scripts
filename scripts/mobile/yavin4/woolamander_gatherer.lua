@@ -32,7 +32,7 @@ woolamander_gatherer = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
+		{"stunattack","stunChance=50"},
 		{"intimidationattack","intimidationChance=50"}
 	}
 }
