@@ -51,7 +51,7 @@ krayt_dragon_ancient = Creature:new {
 	conversationTemplate = "",
 	attacks = {
 		{"creatureareacombo",""},
-		{"dizzyattack","dizzyChance=50"},
+		{"posturedownattack","posturedownChance=50"},
 		{"blindattack","blindChance=50"},
 		{"intimidationattack","intimidationChance=50"},
 		{"creatureareaknockdown","knockdownChance=50"},
