@@ -33,7 +33,7 @@ giant_carrion_spat = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
+		{"knockdownattack","knockdownChance=50"},
 		{"stunattack","stunChance=50"}
 	}
 }
