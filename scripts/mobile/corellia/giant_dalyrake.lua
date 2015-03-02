@@ -33,7 +33,9 @@ giant_dalyrake = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
+		{"stunattack","stunChance=50"},
+		{"knockdownattack","knockdownChance=50"},
+		{"posturedownattack","posturedownChance=50"},
 		{"mildpoison",""}
 	}
 }
