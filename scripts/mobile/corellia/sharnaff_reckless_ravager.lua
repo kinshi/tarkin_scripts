@@ -39,7 +39,8 @@ sharnaff_reckless_ravager = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
+		{"stunattack","stunChance=50"},
+		{"posturedownattack","posturedownChance=50"},
 		{"knockdownattack","knockdownChance=50"}
 	}
 }
