@@ -1,7 +1,6 @@
 veermok_scout = Creature:new {
 	objectName = "@mob/creature_names:veermok_scout",
 	socialGroup = "veermok",
-	pvpFaction = "",
 	faction = "",
 	level = 14,
 	chanceHit = 0.3,
@@ -33,7 +32,7 @@ veermok_scout = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

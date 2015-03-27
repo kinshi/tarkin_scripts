@@ -1,7 +1,6 @@
 tortur = Creature:new {
 	objectName = "@mob/creature_names:tortur",
 	socialGroup = "tortur",
-	pvpFaction = "",
 	faction = "",
 	level = 21,
 	chanceHit = 0.34,
@@ -31,8 +30,8 @@ tortur = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"knockdownattack","knockdownChance=50"},
-		{"dizzyattack","dizzyChance=50"}
+		{"knockdownattack",""},
+		{"dizzyattack",""}
 	}
 }
 

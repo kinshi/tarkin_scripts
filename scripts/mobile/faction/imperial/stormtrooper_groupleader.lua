@@ -1,7 +1,7 @@
 stormtrooper_groupleader = Creature:new {
 	objectName = "@mob/creature_names:crackdown_stormtrooper_captain",
+	randomNameType = NAME_STORMTROOPER_TAG,
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 29,
 	chanceHit = 3.08,
@@ -46,6 +46,8 @@ stormtrooper_groupleader = Creature:new {
 	},
 	weapons = {"stormtrooper_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/stormtrooper",
+	personalityStf = "@hireling/hireling_stormtrooper",		
 	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 

@@ -1,7 +1,6 @@
 marooned_pirate_first_mate = Creature:new {
 	objectName = "@mob/creature_names:marooned_pirate_first_mate",
 	socialGroup = "pirate",
-	pvpFaction = "pirate",
 	faction = "pirate",
 	level = 22,
 	chanceHit = 0.33,
@@ -47,6 +46,7 @@ marooned_pirate_first_mate = Creature:new {
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 shear_mite_queen = Creature:new {
 	objectName = "@mob/creature_names:shear_mite_queen",
 	socialGroup = "shear_mite",
-	pvpFaction = "",
 	faction = "",
 	level = 39,
 	chanceHit = 0.43,
@@ -32,7 +31,7 @@ shear_mite_queen = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
+		{"dizzyattack",""},
 		{"strongpoison",""}
 	}
 }

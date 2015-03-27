@@ -1,7 +1,6 @@
 tamed_gurrcat = Creature:new {
 	objectName = "@mob/creature_names:rebel_tamed_gurrcat",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 7,
 	chanceHit = 0.26,
@@ -31,7 +30,7 @@ tamed_gurrcat = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

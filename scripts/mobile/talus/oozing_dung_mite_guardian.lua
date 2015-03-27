@@ -1,7 +1,6 @@
 oozing_dung_mite_guardian = Creature:new {
 	objectName = "@mob/creature_names:oozing_dung_royal_guardian",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 17,
 	chanceHit = 0.31,
@@ -34,7 +33,7 @@ oozing_dung_mite_guardian = Creature:new {
 	conversationTemplate = "",
 	attacks = {
 		{"mediumdisease",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

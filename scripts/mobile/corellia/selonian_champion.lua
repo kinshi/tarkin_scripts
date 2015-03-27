@@ -1,7 +1,6 @@
 selonian_champion = Creature:new {
 	objectName = "@mob/creature_names:selonian_champion",
 	socialGroup = "selonian",
-	pvpFaction = "",
 	faction = "",
 	level = 16,
 	chanceHit = 0.31,
@@ -49,10 +48,11 @@ selonian_champion = Creature:new {
 				{group = "tailor_components", chance = 1500000}
 			},
 			lootChance = 3000000
-		}		
+		}
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/fancy",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

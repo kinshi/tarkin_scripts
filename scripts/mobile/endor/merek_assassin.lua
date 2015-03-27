@@ -1,7 +1,6 @@
 merek_assassin = Creature:new {
 	objectName = "@mob/creature_names:merek_assassin",
 	socialGroup = "merek",
-	pvpFaction = "",
 	faction = "",
 	level = 31,
 	chanceHit = 0.39,
@@ -33,7 +32,7 @@ merek_assassin = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
+		{"dizzyattack",""},
 		{"strongpoison",""}
 	}
 }

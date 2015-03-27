@@ -1,7 +1,6 @@
 mountain_villager = Creature:new {
 	objectName = "@mob/creature_names:mountain_villager",
 	socialGroup = "villager",
-	pvpFaction = "",
 	faction = "",
 	level = 4,
 	chanceHit = 0.240000,
@@ -39,6 +38,7 @@ mountain_villager = Creature:new {
 		}
 	},
 	weapons = {"rebel_weapons_light"},
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

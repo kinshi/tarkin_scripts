@@ -1,7 +1,6 @@
 rebel_resistance_agitator = Creature:new {
 	objectName = "@mob/creature_names:rebel_resistance_agitator",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 7,
 	chanceHit = 0.26,
@@ -35,6 +34,8 @@ rebel_resistance_agitator = Creature:new {
 	},
 	lootGroups = {},
 	weapons = {"rebel_weapons_light"},
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

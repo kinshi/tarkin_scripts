@@ -1,7 +1,6 @@
 variegated_womp_rat = Creature:new {
 	objectName = "@mob/creature_names:variegated_womprat",
 	socialGroup = "rat",
-	pvpFaction = "",
 	faction = "",
 	level = 14,
 	chanceHit = 0.3,
@@ -33,7 +32,8 @@ variegated_womp_rat = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

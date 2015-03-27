@@ -1,7 +1,6 @@
 female_dire_cat = Creature:new {
 	objectName = "@mob/creature_names:female_dire_cat",
 	socialGroup = "dire_cat",
-	pvpFaction = "",
 	faction = "",
 	level = 10,
 	chanceHit = 0.28,
@@ -33,7 +32,8 @@ female_dire_cat = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"",""},
+		{"intimidationattack",""}
 	}
 }
 

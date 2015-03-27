@@ -33,15 +33,12 @@ GoToLocation = Task:new {
 -- @return true if setup was successful, false otherwise.
 function GoToLocation:setupActiveArea(pCreatureObject, spawnPoint, spawnPlanet, spawnRadius)
 	return ObjectManager.withCreatureObject(pCreatureObject, function(creatureObject)
-		local pActiveArea = spawnSceneObject(spawnPlanet, ACTIVE_AREA_IFF, spawnPoint.x, 0, spawnPoint.y, 0, 0)
+		local pActiveArea = spawnActiveArea(spawnPlanet, ACTIVE_AREA_IFF, spawnPoint.x, 0, spawnPoint.y, spawnRadius, 0)
 
 		return ObjectManager.withActiveArea(pActiveArea, function(activeArea)
-			return ObjectManager.withSceneObject(pActiveArea, function(activeAreaSceneObject)
-				writeData(creatureObject:getObjectID() .. self.taskName .. ACTIVE_AREA_ID_STRING, activeAreaSceneObject:getObjectID())
-				activeArea:setRadius(spawnRadius)
-				createObserver(ENTEREDAREA, self.taskName, "handleEnteredAreaEvent", pActiveArea)
-				return pActiveArea
-			end)
+			writeData(creatureObject:getObjectID() .. self.taskName .. ACTIVE_AREA_ID_STRING, activeArea:getObjectID())
+			createObserver(ENTEREDAREA, self.taskName, "handleEnteredAreaEvent", pActiveArea)
+			return pActiveArea
 		end)
 	end)
 end
@@ -51,12 +48,19 @@ end
 -- @param pCreatureObject pointer to the creature who is entering the active area.
 -- @param nothing not used.
 function GoToLocation:handleEnteredAreaEvent(pActiveArea, pCreatureObject, nothing)
-	ObjectManager.withCreatureObject(pCreatureObject, function(creatureObject)
+	if not SceneObject(pCreatureObject):isCreatureObject() then
+		return 0
+	end
+
+	return ObjectManager.withCreatureObject(pCreatureObject, function(creatureObject)
 		local storedActiveAreaId = readData(creatureObject:getObjectID() .. self.taskName .. ACTIVE_AREA_ID_STRING)
-		ObjectManager.withSceneObject(pActiveArea, function(activeArea)
+		return ObjectManager.withSceneObject(pActiveArea, function(activeArea)
 			if storedActiveAreaId == activeArea:getObjectID() then
 				self:onEnteredActiveArea(pCreatureObject)
+				return 1
 			end
+
+			return 0
 		end)
 	end)
 end

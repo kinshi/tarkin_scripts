@@ -1,7 +1,6 @@
 drall_patriot_conqueror = Creature:new {
 	objectName = "@mob/creature_names:drall_patriot_conqueror",
 	socialGroup = "drall",
-	pvpFaction = "drall",
 	faction = "drall",
 	level = 19,
 	chanceHit = 0.32,
@@ -41,6 +40,7 @@ drall_patriot_conqueror = Creature:new {
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

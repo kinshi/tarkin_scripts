@@ -1,7 +1,6 @@
 cas_vankoo = Creature:new {
 	objectName = "@mob/creature_names:cas_vankoo",
 	socialGroup = "kimogila",
-	pvpFaction = "bandit",
 	faction = "bandit",
 	level = 117,
 	chanceHit = 3.4,
@@ -44,6 +43,7 @@ cas_vankoo = Creature:new {
 	},
 	weapons = {"cas_vankoo_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(pistoleermaster,pikemanmaster,marksmanmaster,brawlermaster)
 }
 

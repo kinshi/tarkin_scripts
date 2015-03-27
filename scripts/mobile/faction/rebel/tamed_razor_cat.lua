@@ -1,7 +1,6 @@
 tamed_razor_cat = Creature:new {
 	objectName = "@mob/creature_names:rebel_tamed_razor_cat",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 12,
 	chanceHit = 0.29,
@@ -31,8 +30,8 @@ tamed_razor_cat = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"stunattack","stunChance=50"}
+		{"intimidationattack",""},
+		{"stunattack",""}
 	}
 }
 

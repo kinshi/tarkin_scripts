@@ -1,7 +1,6 @@
 senior_specforce_wilderness_fighter = Creature:new {
 	objectName = "@mob/creature_names:senior_specforce_wilderness_trooper",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 20,
 	chanceHit = 0.33,
@@ -50,6 +49,8 @@ senior_specforce_wilderness_fighter = Creature:new {
 	},
 	weapons = {"imperial_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 giant_veermok = Creature:new {
 	objectName = "@mob/creature_names:giant_veermok",
 	socialGroup = "veermok",
-	pvpFaction = "",
 	faction = "",
 	level = 22,
 	chanceHit = 0.33,
@@ -33,8 +32,8 @@ giant_veermok = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"intimidationattack","intimidationChance=50"}
+		{"dizzyattack",""},
+		{"intimidationattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 roba_runt = Creature:new {
 	objectName = "@mob/creature_names:roba_runt",
 	socialGroup = "roba",
-	pvpFaction = "",
 	faction = "",
 	level = 19,
 	chanceHit = 0.32,
@@ -32,7 +31,7 @@ roba_runt = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"}
+		{"blindattack",""}
 	}
 }
 

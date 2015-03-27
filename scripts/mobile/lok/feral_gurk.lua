@@ -1,7 +1,6 @@
 feral_gurk = Creature:new {
 	objectName = "@mob/creature_names:feral_gurk",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 34,
 	chanceHit = 0.41,
@@ -32,8 +31,8 @@ feral_gurk = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"dizzyattack",""},
+		{"stunattack",""}
 	}
 }
 

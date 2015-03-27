@@ -1,7 +1,6 @@
 male_swamp_tusk_cat = Creature:new {
 	objectName = "@mob/creature_names:male_swamp_tusk_cat",
 	socialGroup = "tusk_cat",
-	pvpFaction = "",
 	faction = "",
 	level = 17,
 	chanceHit = 0.31,
@@ -32,7 +31,7 @@ male_swamp_tusk_cat = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"}
+		{"blindattack",""}
 	}
 }
 

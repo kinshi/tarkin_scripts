@@ -1,7 +1,6 @@
 bandit = Creature:new {
 	objectName = "@mob/creature_names:bandit",
 	socialGroup = "bandit",
-	pvpFaction = "bandit",
 	faction = "bandit",
 	level = 8,
 	chanceHit = 0.27,
@@ -39,6 +38,7 @@ bandit = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

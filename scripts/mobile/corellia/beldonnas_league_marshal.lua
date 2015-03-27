@@ -1,7 +1,6 @@
 beldonnas_league_marshal = Creature:new {
 	objectName = "@mob/creature_names:beldonnas_marshal",
 	socialGroup = "beldonnas_league",
-	pvpFaction = "beldonnas_league",
 	faction = "beldonnas_league",
 	level = 26,
 	chanceHit = 0.36,
@@ -46,7 +45,7 @@ beldonnas_league_marshal = Creature:new {
 		{
 			groups = {
 				{group = "junk", chance = 3000000},
-				{group = "wearables_all", chance = 2000000},				
+				{group = "wearables_all", chance = 2000000},
 				{group = "loot_kit_parts", chance = 2000000},
 				{group = "tailor_components", chance = 1000000},
 				{group = "beldonnas_common", chance = 2000000}
@@ -56,6 +55,7 @@ beldonnas_league_marshal = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

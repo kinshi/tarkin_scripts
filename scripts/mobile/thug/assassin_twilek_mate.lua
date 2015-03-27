@@ -1,7 +1,6 @@
 assassin_twilek_mate = Creature:new {
 	objectName = "@mob/creature_names:assassin",
 	socialGroup = "thug",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 18,
 	chanceHit = 0.32,
@@ -40,6 +39,7 @@ assassin_twilek_mate = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

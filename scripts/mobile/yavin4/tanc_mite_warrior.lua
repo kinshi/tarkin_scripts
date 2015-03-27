@@ -1,7 +1,6 @@
 tanc_mite_warrior = Creature:new {
 	objectName = "@mob/creature_names:tanc_mite_warrior",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 17,
 	chanceHit = 0.31,
@@ -32,7 +31,7 @@ tanc_mite_warrior = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

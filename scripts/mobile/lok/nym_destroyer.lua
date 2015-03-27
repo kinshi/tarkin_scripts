@@ -1,7 +1,6 @@
 nym_destroyer = Creature:new {
 	objectName = "@mob/creature_names:nym_destroyer",
 	socialGroup = "nym",
-	pvpFaction = "nym",
 	faction = "nym",
 	level = 40,
 	chanceHit = 0.43,
@@ -45,6 +44,7 @@ nym_destroyer = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 

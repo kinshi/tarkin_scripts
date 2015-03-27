@@ -1,7 +1,6 @@
 hidden_daggers_leader = Creature:new {
 	objectName = "@mob/creature_names:hidden_daggers_leader",
 	socialGroup = "hidden_daggers",
-	pvpFaction = "hidden_daggers",
 	faction = "hidden_daggers",
 	level = 18,
 	chanceHit = 0.32,
@@ -47,6 +46,7 @@ hidden_daggers_leader = Creature:new {
 	},
 	weapons = {"ranged_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

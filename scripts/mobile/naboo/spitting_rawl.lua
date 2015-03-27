@@ -1,7 +1,6 @@
 spitting_rawl = Creature:new {
 	objectName = "@mob/creature_names:spitting_rawl",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 24,
 	chanceHit = 0.35,
@@ -33,7 +32,7 @@ spitting_rawl = Creature:new {
 	weapons = {"creature_spit_small_red"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
+		{"blindattack",""},
 		{"strongpoison",""}
 	}
 }

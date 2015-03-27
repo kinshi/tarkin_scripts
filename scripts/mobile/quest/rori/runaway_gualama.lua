@@ -1,7 +1,6 @@
 runaway_gualama = Creature:new {
 	objectName = "@mob/creature_names:gualama",
 	socialGroup = "gualama",
-	pvpFaction = "",
 	faction = "",
 	level = 13,
 	chanceHit = 0.29,
@@ -32,7 +31,7 @@ runaway_gualama = Creature:new {
 	weapons = {},
 	conversationTemplate = "hefsen_zindalai_mission_target_convotemplate",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

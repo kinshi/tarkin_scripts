@@ -1,7 +1,6 @@
 gurk_whelp = Creature:new {
 	objectName = "@mob/creature_names:gurk_whelp",
 	socialGroup = "gurk",
-	pvpFaction = "",
 	faction = "",
 	level = 27,
 	chanceHit = 0.36,
@@ -32,8 +31,8 @@ gurk_whelp = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"intimidationattack","intimidationChance=50"}
+		{"blindattack",""},
+		{"intimidationattack",""}
 	}
 }
 

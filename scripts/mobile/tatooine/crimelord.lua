@@ -1,7 +1,6 @@
 crimelord = Creature:new {
 	objectName = "@mob/creature_names:crimelord",
 	socialGroup = "hutt",
-	pvpFaction = "hutt",
 	faction = "hutt",
 	level = 17,
 	chanceHit = 0.32,
@@ -29,13 +28,13 @@ crimelord = Creature:new {
 	templates = {"object/mobile/dressed_tatooine_crimelord.iff"},
 	lootGroups = {
 		{
-	        groups = {
+			groups = {
 				{group = "junk", chance = 3800000},
-				{group = "wearables_common", chance = 2000000},				
+				{group = "wearables_common", chance = 2000000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
-                		{group = "melee_weapons", chance = 1000000},
-                		{group = "carbines", chance = 1000000},
+				{group = "melee_weapons", chance = 1000000},
+				{group = "carbines", chance = 1000000},
 				{group = "clothing_attachments", chance = 100000},
 				{group = "armor_attachments", chance = 100000}
 			},
@@ -44,6 +43,7 @@ crimelord = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 blood_razor_berzerker = Creature:new {
 	objectName = "@mob/creature_names:blood_razor_berzerker",
 	socialGroup = "bloodrazor",
-	pvpFaction = "bloodrazor",
 	faction = "bloodrazor",
 	level = 36,
 	chanceHit = 0.43,
@@ -52,6 +51,7 @@ blood_razor_berzerker = Creature:new {
 	},
 	weapons = {"blood_razer_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(pistoleermaster,pikemanmaster,tkamaster,brawlermaster,marksmanmaster)
 }
 

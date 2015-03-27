@@ -1,7 +1,6 @@
 thune_grassland_guardian = Creature:new {
 	objectName = "@mob/creature_names:thune_grassland_guardian",
 	socialGroup = "thune",
-	pvpFaction = "",
 	faction = "",
 	level = 40,
 	chanceHit = 0.44,
@@ -34,8 +33,8 @@ thune_grassland_guardian = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"dizzyattack",""},
+		{"posturedownattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 nym_guard_elite = Creature:new {
 	objectName = "@mob/creature_names:nym_guard_elite",
 	socialGroup = "nym",
-	pvpFaction = "nym",
 	faction = "nym",
 	level = 38,
 	chanceHit = 0.43,
@@ -43,6 +42,7 @@ nym_guard_elite = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(bountyhuntermaster,marksmanmaster,brawlermaster)
 }
 

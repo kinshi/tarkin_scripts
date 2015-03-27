@@ -1,7 +1,6 @@
 swarming_kliknik = Creature:new {
 	objectName = "@mob/creature_names:kliknik_swarming",
 	socialGroup = "kliknik",
-	pvpFaction = "",
 	faction = "",
 	level = 10,
 	chanceHit = 0.27,
@@ -40,7 +39,7 @@ swarming_kliknik = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""}
 	}
 }
 

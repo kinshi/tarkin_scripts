@@ -1,7 +1,6 @@
 hostile_thune_mother = Creature:new {
 	objectName = "@mob/creature_names:hostile_thune_mother",
 	socialGroup = "thune",
-	pvpFaction = "",
 	faction = "",
 	level = 30,
 	chanceHit = 0.39,
@@ -33,7 +32,8 @@ hostile_thune_mother = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"}
+		{"",""},
+		{"blindattack",""}
 	}
 }
 

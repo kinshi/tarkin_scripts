@@ -1,7 +1,6 @@
 blight_boar = Creature:new {
 	objectName = "@mob/creature_names:zucca_boar_blight",
 	socialGroup = "boar",
-	pvpFaction = "",
 	faction = "",
 	level = 12,
 	chanceHit = 0.29,
@@ -33,7 +32,7 @@ blight_boar = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

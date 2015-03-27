@@ -1,7 +1,6 @@
 trandoshan_sif_02 = Creature:new {
 	objectName = "@mob/creature_names:trandoshan_sif",
 	socialGroup = "sif",
-	pvpFaction = "sif",
 	faction = "sif",
 	level = 43,
 	chanceHit = 0.46,
@@ -30,6 +29,7 @@ trandoshan_sif_02 = Creature:new {
 	lootGroups = {},
 	weapons = {"sif_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,fencermaster,swordsmanmaster)
 }
 

@@ -1,7 +1,6 @@
 sandy_spined_snake = Creature:new {
 	objectName = "@mob/creature_names:sandy_spined_snake",
 	socialGroup = "spine_snake",
-	pvpFaction = "",
 	faction = "",
 	level = 13,
 	chanceHit = 0.3,
@@ -33,8 +32,8 @@ sandy_spined_snake = Creature:new {
 	weapons = {"creature_spit_small_toxicgreen"},
 	conversationTemplate = "",
 	attacks = {
-		{"mediumpoison",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"mediumpoison",""}
 	}
 }
 

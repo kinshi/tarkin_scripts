@@ -1,7 +1,6 @@
 mantigrue_screecher = Creature:new {
 	objectName = "@mob/creature_names:mantigrue_screecher",
 	socialGroup = "mantigrue",
-	pvpFaction = "",
 	faction = "",
 	level = 55,
 	chanceHit = 0.55,
@@ -33,8 +32,8 @@ mantigrue_screecher = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareadisease",""},
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""},
+		{"creatureareadisease",""}
 	}
 }
 

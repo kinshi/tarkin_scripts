@@ -1,7 +1,6 @@
 imperial_veermok = Creature:new {
 	objectName = "@mob/creature_names:imperial_veermok",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 27,
 	chanceHit = 0.36,
@@ -31,7 +30,7 @@ imperial_veermok = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 scoundrel = Creature:new {
 	objectName = "@mob/creature_names:scoundrel",
 	socialGroup = "thug",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 7,
 	chanceHit = 0.260000,
@@ -43,6 +42,7 @@ scoundrel = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_light"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

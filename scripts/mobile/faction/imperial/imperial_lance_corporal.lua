@@ -1,7 +1,6 @@
 imperial_lance_corporal = Creature:new {
 	objectName = "@mob/creature_names:imperial_lance_corporal",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 15,
 	chanceHit = 0.31,
@@ -45,6 +44,8 @@ imperial_lance_corporal = Creature:new {
 	},
 	weapons = {"imperial_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",	
 	attacks = merge(brawlermid,marksmanmid)
 }
 

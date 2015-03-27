@@ -1,7 +1,6 @@
 naboo_police = Creature:new {
 	objectName = "@mob/creature_names:naboo_police",
 	socialGroup = "naboo_security_force",
-	pvpFaction = "naboo_security_force",
 	faction = "naboo_security_force",
 	level = 8,
 	chanceHit = 0.27,
@@ -41,6 +40,7 @@ naboo_police = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

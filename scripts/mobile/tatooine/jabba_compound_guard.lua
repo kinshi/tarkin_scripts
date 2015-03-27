@@ -1,7 +1,6 @@
 jabba_compound_guard = Creature:new {
 	objectName = "@mob/creature_names:jabba_compound_guard",
 	socialGroup = "jabba",
-	pvpFaction = "jabba",
 	faction = "jabba",
 	level = 14,
 	chanceHit = 0.3,
@@ -28,20 +27,21 @@ jabba_compound_guard = Creature:new {
 
 	templates = {"object/mobile/dressed_tatooine_jabba_henchman.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 1500000},
 				{group = "wearables_common", chance = 2000000},
-				{group = "rifles", chance = 2000000},				
+				{group = "rifles", chance = 2000000},
 				{group = "tailor_components", chance = 1500000},
 				{group = "loot_kit_parts", chance = 1500000},
 				{group = "jabba_common", chance = 1500000}
 			},
 			lootChance = 2200000
-		}				
+		}
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmanmid,brawlermid)
 }
 

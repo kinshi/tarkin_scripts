@@ -1,7 +1,6 @@
 kimogila_hatchling = Creature:new {
 	objectName = "@mob/creature_names:kimogila_hatchling",
 	socialGroup = "kimogila",
-	pvpFaction = "",
 	faction = "",
 	level = 22,
 	chanceHit = 0.33,
@@ -32,8 +31,8 @@ kimogila_hatchling = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"dizzyattack",""},
+		{"stunattack",""}
 	}
 }
 

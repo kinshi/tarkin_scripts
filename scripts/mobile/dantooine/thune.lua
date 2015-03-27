@@ -1,7 +1,6 @@
 thune = Creature:new {
 	objectName = "@mob/creature_names:thune",
 	socialGroup = "thune",
-	pvpFaction = "",
 	faction = "",
 	level = 26,
 	chanceHit = 0.36,
@@ -32,7 +31,8 @@ thune = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"",""},
+		{"intimidationattack",""}
 	}
 }
 

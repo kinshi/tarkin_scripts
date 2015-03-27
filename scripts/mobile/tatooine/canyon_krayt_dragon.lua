@@ -1,17 +1,16 @@
 canyon_krayt_dragon = Creature:new {
 	objectName = "@mob/creature_names:canyon_krayt_dragon",
 	socialGroup = "krayt",
-	pvpFaction = "",
 	faction = "",
 	level = 275,
-	chanceHit = 20,
-	damageMin = 1163,
-	damageMax = 1875,
+	chanceHit = 27.25,
+	damageMin = 1520,
+	damageMax = 2750,
 	baseXp = 26356,
 	baseHAM = 321000,
 	baseHAMmax = 392000,
-	armor = 2,
-	resists = {140,140,140,140,100,140,140,140,-1},
+	armor = 3,
+	resists = {160,160,160,160,120,160,160,160,-1},
 	meatType = "meat_carnivore",
 	meatAmount = 1000,
 	hideType = "hide_bristley",
@@ -31,11 +30,10 @@ canyon_krayt_dragon = Creature:new {
 	lootGroups = {
 		{
 	        groups = {
-				{group = "krayt_dragon_common", chance = 3300000},
-				{group = "krayt_tissue_uncommon", chance = 300000},
-				{group = "pearls_premium", chance = 3400000}
+				{group = "krayt_dragon_common", chance = 6000000},
+				{group = "krayt_tissue_uncommon", chance = 4000000}				
 			},
-			lootChance = 7000000
+			lootChance = 5000000
 		},
 		{
 	        groups = {
@@ -43,16 +41,16 @@ canyon_krayt_dragon = Creature:new {
 				{group = "ubese_armor", chance = 2000000},
 				{group = "melee_two_handed", chance = 2000000},
 				{group = "rifles", chance = 2000000},
-				{group = "pearls_select", chance = 2000000}				
+				{group = "wearables_scarce", chance = 2000000},				
 			},
-			lootChance = 10000000
+			lootChance = 2500000
 		}
 	},
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"creatureareaattack",""},
+		{"stunattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 lesser_bocatt = Creature:new {
 	objectName = "@mob/creature_names:lesser_bocatt",
 	socialGroup = "bocatt",
-	pvpFaction = "",
 	faction = "",
 	level = 15,
 	chanceHit = 0.3,
@@ -33,8 +32,8 @@ lesser_bocatt = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"posturedownattack",""},
+		{"stunattack",""}
 	}
 }
 

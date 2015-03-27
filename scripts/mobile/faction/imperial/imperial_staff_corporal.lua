@@ -1,7 +1,6 @@
 imperial_staff_corporal = Creature:new {
 	objectName = "@mob/creature_names:imperial_staff_corporal",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 17,
 	chanceHit = 0.32,
@@ -43,6 +42,8 @@ imperial_staff_corporal = Creature:new {
 		}
 	},
 	weapons = {"imperial_weapons_medium"},
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",	
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 garyns_thief = Creature:new {
 	objectName = "@mob/creature_names:garyn_thief",
 	socialGroup = "garyn",
-	pvpFaction = "garyn",
 	faction = "garyn",
 	level = 15,
 	chanceHit = 0.31,
@@ -30,7 +29,7 @@ garyns_thief = Creature:new {
 		"object/mobile/dressed_garyn_theif_zabrak_male_01.iff",
 		"object/mobile/dressed_garyn_theif_zabrak_female_01.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2000000},
 				{group = "wearables_common", chance = 2000000},
@@ -39,10 +38,11 @@ garyns_thief = Creature:new {
 				{group = "loot_kit_parts", chance = 2000000}
 			},
 			lootChance = 3200000
-		}						
+		}
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

@@ -6,6 +6,7 @@ includeAiFile("templates/idlewander.lua")
 includeAiFile("templates/idlewait.lua")
 includeAiFile("templates/idlepet.lua")
 includeAiFile("templates/gettargetreactive.lua")
+includeAiFile("templates/manualescort.lua")
 includeAiFile("templates/selectattacksimple.lua")
 includeAiFile("templates/combatmovesimple.lua")
 includeAiFile("templates/gettargetpet.lua")
@@ -37,6 +38,7 @@ idle = {
 	{CREATURE_PET, "idlepetc"},
 	{DROID_PET, "idlepetd"},
 	{FACTION_PET, "idlepetf"},
+	{STATIC + WANDER, "idlewanderstatic"},
 	{STATIC, "idlewait"},
 	{PACK, "idlewanderpack"},
 	{NONE, "idlewander"},

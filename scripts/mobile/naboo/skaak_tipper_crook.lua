@@ -1,7 +1,6 @@
 skaak_tipper_crook = Creature:new {
 	objectName = "@mob/creature_names:skaak_tipper_crook",
 	socialGroup = "skaak_tipper_gang",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 10,
 	chanceHit = 0.280000,
@@ -29,7 +28,7 @@ skaak_tipper_crook = Creature:new {
 		"object/mobile/dressed_crook_zabrak_female_01.iff",
 		"object/mobile/dressed_crook_zabrak_male_01.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 4500000},
 				{group = "tailor_components", chance = 1500000},
@@ -38,9 +37,10 @@ skaak_tipper_crook = Creature:new {
 				{group = "skaak_tipper_common", chance = 1000000},
 			},
 			lootChance = 2200000
-		}				
+		}
 	},
 	weapons = {"pirate_weapons_light"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

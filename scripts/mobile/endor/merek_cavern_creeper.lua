@@ -1,7 +1,6 @@
 merek_cavern_creeper = Creature:new {
 	objectName = "@mob/creature_names:merek_cavern_creeper",
 	socialGroup = "merek",
-	pvpFaction = "",
 	faction = "",
 	level = 40,
 	chanceHit = 0.44,
@@ -33,8 +32,8 @@ merek_cavern_creeper = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"intimidationattack","intimidationChance=50"}
+		{"blindattack",""},
+		{"intimidationattack",""}
 	}
 }
 

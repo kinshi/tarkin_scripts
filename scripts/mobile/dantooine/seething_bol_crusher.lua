@@ -1,7 +1,6 @@
 seething_bol_crusher = Creature:new {
 	objectName = "@mob/creature_names:seething_bol_crusher",
 	socialGroup = "bol",
-	pvpFaction = "",
 	faction = "",
 	level = 44,
 	chanceHit = 0.44,
@@ -32,8 +31,8 @@ seething_bol_crusher = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"mediumdisease",""}
+		{"mediumdisease",""},
+		{"dizzyattack",""}
 	}
 }
 

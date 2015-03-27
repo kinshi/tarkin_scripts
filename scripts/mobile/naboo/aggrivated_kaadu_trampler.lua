@@ -1,7 +1,6 @@
 aggrivated_kaadu_trampler = Creature:new {
 	objectName = "@mob/creature_names:kaadu_aggrivated_trampler",
 	socialGroup = "kaadu",
-	pvpFaction = "",
 	faction = "",
 	level = 17,
 	chanceHit = 0.31,
@@ -33,8 +32,8 @@ aggrivated_kaadu_trampler = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"posturedownattack",""}
 	}
 }
 

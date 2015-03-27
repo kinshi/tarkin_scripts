@@ -1,7 +1,6 @@
 king_venom_nightspider = Creature:new {
 	objectName = "@mob/creature_names:king_venom_nightspider",
 	socialGroup = "spider",
-	pvpFaction = "",
 	faction = "",
 	level = 14,
 	chanceHit = 0.3,
@@ -33,7 +32,7 @@ king_venom_nightspider = Creature:new {
 	conversationTemplate = "",
 	attacks = {
 		{"mediumpoison",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

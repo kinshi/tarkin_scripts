@@ -1,7 +1,6 @@
 razorback_felspur = Creature:new {
 	objectName = "@mob/creature_names:desert_razorback_felspur",
 	socialGroup = "boar",
-	pvpFaction = "",
 	faction = "",
 	level = 27,
 	chanceHit = 0.36,
@@ -33,7 +32,7 @@ razorback_felspur = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

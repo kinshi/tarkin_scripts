@@ -1,7 +1,6 @@
 feral_forest_mite_king = Creature:new {
 	objectName = "@mob/creature_names:feral_forest_mite_king",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 27,
 	chanceHit = 0.35,
@@ -32,8 +31,8 @@ feral_forest_mite_king = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"dizzyattack","dizzyChance=50"}
+		{"blindattack",""},
+		{"dizzyattack",""}
 	}
 }
 

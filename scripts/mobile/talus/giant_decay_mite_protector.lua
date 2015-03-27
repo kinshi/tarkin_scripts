@@ -1,7 +1,6 @@
 giant_decay_mite_protector = Creature:new {
 	objectName = "@mob/creature_names:giant_decay_mite_protector",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 14,
 	chanceHit = 0.3,
@@ -32,7 +31,7 @@ giant_decay_mite_protector = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

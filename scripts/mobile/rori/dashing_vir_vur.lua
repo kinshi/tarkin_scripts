@@ -1,7 +1,6 @@
 dashing_vir_vur = Creature:new {
 	objectName = "@mob/creature_names:dashing_vir_vur",
 	socialGroup = "vir_vur",
-	pvpFaction = "",
 	faction = "",
 	level = 12,
 	chanceHit = 0.29,
@@ -33,7 +32,7 @@ dashing_vir_vur = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""}
 	}
 }
 

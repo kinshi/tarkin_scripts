@@ -1,7 +1,6 @@
 perlek_scavenger = Creature:new {
 	objectName = "@mob/creature_names:perlek_scavanger",
 	socialGroup = "perlek",
-	pvpFaction = "",
 	faction = "",
 	level = 15,
 	chanceHit = 0.31,
@@ -33,7 +32,8 @@ perlek_scavenger = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

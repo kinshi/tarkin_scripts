@@ -1,7 +1,6 @@
 fanned_rawl = Creature:new {
 	objectName = "@mob/creature_names:fanned_rawl",
 	socialGroup = "rawl",
-	pvpFaction = "",
 	faction = "",
 	level = 10,
 	chanceHit = 0.28,
@@ -32,8 +31,8 @@ fanned_rawl = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"mildpoison",""},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"mildpoison",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 tormented_bocatt = Creature:new {
 	objectName = "@mob/creature_names:bocatt_tormented",
 	socialGroup = "bocatt",
-	pvpFaction = "",
 	faction = "",
 	level = 26,
 	chanceHit = 0.36,
@@ -33,8 +32,8 @@ tormented_bocatt = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"posturedownattack",""},
+		{"stunattack",""}
 	}
 }
 

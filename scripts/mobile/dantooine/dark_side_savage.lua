@@ -1,7 +1,6 @@
 dark_side_savage = Creature:new {
 	objectName = "@mob/creature_names:dark_side_savage",
 	socialGroup = "kun",
-	pvpFaction = "",
 	faction = "",
 	level = 75,
 	chanceHit = 0.7,
@@ -38,7 +37,8 @@ dark_side_savage = Creature:new {
 				{group = "melee_weapons", chance = 1000000},
 				{group = "armor_attachments", chance = 1000000},
 				{group = "clothing_attachments", chance = 1000000},
-				{group = "nightsister_rare", chance = 1000000}
+				{group = "wearables_common", chance = 500000},
+				{group = "wearables_uncommon", chance = 500000}
 			},
 			lootChance = 3000000
 		}

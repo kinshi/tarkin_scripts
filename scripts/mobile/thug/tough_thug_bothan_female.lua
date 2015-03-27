@@ -1,7 +1,6 @@
 tough_thug_bothan_female = Creature:new {
 	objectName = "@mob/creature_names:thug",
 	socialGroup = "thug",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 16,
 	chanceHit = 0.31,
@@ -40,6 +39,7 @@ tough_thug_bothan_female = Creature:new {
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

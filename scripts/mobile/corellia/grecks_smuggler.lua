@@ -1,7 +1,6 @@
 grecks_smuggler = Creature:new {
 	objectName = "@mob/creature_names:greck_smuggler",
 	socialGroup = "olag_greck",
-	pvpFaction = "olag_greck",
 	faction = "olag_greck",
 	level = 7,
 	chanceHit = 0.26,
@@ -34,17 +33,18 @@ grecks_smuggler = Creature:new {
 		"object/mobile/dressed_robber_twk_female_01.iff",
 		"object/mobile/dressed_robber_twk_male_01.iff"},
 	lootGroups = {
-      	{
+		{
 			groups = {
 				{group = "junk", chance = 7000000},
 				{group = "loot_kit_parts", chance = 2000000},
 				{group = "tailor_components", chance = 1000000}
 			},
 			lootChance = 3000000
-		}	
+		}
 	},
 	weapons = {"ranged_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

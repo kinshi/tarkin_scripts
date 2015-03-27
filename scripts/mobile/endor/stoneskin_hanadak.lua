@@ -1,7 +1,6 @@
 stoneskin_hanadak = Creature:new {
 	objectName = "@mob/creature_names:stoneskin_hanadak",
 	socialGroup = "hanadak",
-	pvpFaction = "",
 	faction = "",
 	level = 139,
 	chanceHit = 4.75,
@@ -32,8 +31,8 @@ stoneskin_hanadak = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"blindattack",""}
 	}
 }
 

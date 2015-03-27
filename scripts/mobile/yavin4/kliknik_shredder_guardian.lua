@@ -1,7 +1,6 @@
 kliknik_shredder_guardian = Creature:new {
 	objectName = "@mob/creature_names:kliknik_shredder_guardian",
 	socialGroup = "kliknik",
-	pvpFaction = "",
 	faction = "",
 	level = 30,
 	chanceHit = 0.39,
@@ -40,8 +39,8 @@ kliknik_shredder_guardian = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"knockdownattack","knockdownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"knockdownattack",""},
+		{"stunattack",""}
 	}
 }
 

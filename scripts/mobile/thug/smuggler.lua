@@ -1,8 +1,7 @@
 smuggler = Creature:new {
 	objectName = "@mob/creature_names:smuggler",
 	socialGroup = "thug",
-	pvpFaction = "thug",
-	faction = "",
+	faction = "thug",
 	level = 14,
 	chanceHit = 0.3,
 	damageMin = 150,
@@ -30,7 +29,7 @@ smuggler = Creature:new {
 		{
 	        	groups = {
 				{group = "junk", chance = 4000000},
-				{group = "wearables_common", chance = 2000000},			
+				{group = "wearables_common", chance = 2000000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
 				{group = "melee_weapons", chance = 1000000},
@@ -40,6 +39,7 @@ smuggler = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_medium"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

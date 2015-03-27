@@ -1,7 +1,6 @@
 drall_chieftain = Creature:new {
 	objectName = "@mob/creature_names:drall_chieftain",
 	socialGroup = "drall",
-	pvpFaction = "drall",
 	faction = "drall",
 	level = 22,
 	chanceHit = 0.35,
@@ -39,6 +38,7 @@ drall_chieftain = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

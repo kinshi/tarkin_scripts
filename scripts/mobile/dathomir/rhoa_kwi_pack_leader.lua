@@ -1,7 +1,6 @@
 rhoa_kwi_pack_leader = Creature:new {
 	objectName = "@mob/creature_names:rhoa_kwi_pack_leader",
 	socialGroup = "kwi",
-	pvpFaction = "",
 	faction = "",
 	level = 50,
 	chanceHit = 0.47,
@@ -33,8 +32,8 @@ rhoa_kwi_pack_leader = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"dizzyattack",""}
 	}
 }
 

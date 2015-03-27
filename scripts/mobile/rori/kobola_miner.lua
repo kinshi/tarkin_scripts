@@ -1,7 +1,6 @@
 kobola_miner = Creature:new {
 	objectName = "@mob/creature_names:kobola_miner",
 	socialGroup = "kobola",
-	pvpFaction = "kobola",
 	faction = "kobola",
 	level = 8,
 	chanceHit = 0.27,
@@ -30,7 +29,7 @@ kobola_miner = Creature:new {
 		"object/mobile/dressed_kobola_miner_human_male_01.iff",
 		"object/mobile/dressed_kobola_miner_human_female_01.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2400000},
 				{group = "tailor_components", chance = 2000000},
@@ -38,10 +37,11 @@ kobola_miner = Creature:new {
 				{group = "kobola_common", chance = 3600000}
 			},
 			lootChance = 2400000
-		}					
+		}
 	},
 	weapons = {"ranged_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

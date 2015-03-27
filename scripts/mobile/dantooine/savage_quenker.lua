@@ -1,7 +1,6 @@
 savage_quenker = Creature:new {
 	objectName = "@mob/creature_names:savage_quenker",
 	socialGroup = "quenker",
-	pvpFaction = "",
 	faction = "",
 	level = 28,
 	chanceHit = 0.36,
@@ -33,8 +32,8 @@ savage_quenker = Creature:new {
 	weapons = {"creature_spit_small_green"},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"stunattack","stunChance=50"}
+		{"intimidationattack",""},
+		{"stunattack",""}
 	}
 }
 

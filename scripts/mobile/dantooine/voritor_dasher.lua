@@ -1,7 +1,6 @@
 voritor_dasher = Creature:new {
 	objectName = "@mob/creature_names:voritor_dasher",
 	socialGroup = "voritor",
-	pvpFaction = "",
 	faction = "",
 	level = 30,
 	chanceHit = 0.39,
@@ -36,11 +35,11 @@ voritor_dasher = Creature:new {
 			lootChance = 2100000
 		}
 	},
-	weapons = {},
+	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareapoison",""},
-		{"dizzyattack","dizzyChance=50"}
+		{"dizzyattack",""},
+		{"creatureareapoison",""}
 	}
 }
 

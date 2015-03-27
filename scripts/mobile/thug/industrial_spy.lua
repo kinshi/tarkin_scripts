@@ -1,7 +1,6 @@
 industrial_spy = Creature:new {
 	objectName = "@mob/creature_names:industrial_spy",
 	socialGroup = "mercenary",
-	pvpFaction = "",
 	faction = "",
 	level = 8,
 	chanceHit = 0.270000,
@@ -39,6 +38,7 @@ industrial_spy = Creature:new {
 		}
 	},
 	weapons = {"rebel_weapons_light"},
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

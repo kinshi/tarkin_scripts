@@ -1,7 +1,6 @@
 rebel_resistance_dissident = Creature:new {
 	objectName = "@mob/creature_names:rebel_resistance_dissident",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 6,
 	chanceHit = 0.25,
@@ -46,6 +45,8 @@ rebel_resistance_dissident = Creature:new {
 		}	
 	},
 	weapons = {"rebel_weapons_light"},
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

@@ -1,7 +1,6 @@
 ronto = Creature:new {
 	objectName = "@mob/creature_names:ronto",
 	socialGroup = "ronto",
-	pvpFaction = "",
 	faction = "",
 	level = 18,
 	chanceHit = 0.32,
@@ -33,8 +32,8 @@ ronto = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"dizzyattack",""},
+		{"stunattack",""}
 	}
 }
 

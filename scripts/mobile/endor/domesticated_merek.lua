@@ -1,7 +1,6 @@
 domesticated_merek = Creature:new {
 	objectName = "@mob/creature_names:domesticated_merek",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 49,
 	chanceHit = 0.5,
@@ -31,8 +30,8 @@ domesticated_merek = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"posturedownattack",""},
+		{"stunattack",""}
 	}
 }
 

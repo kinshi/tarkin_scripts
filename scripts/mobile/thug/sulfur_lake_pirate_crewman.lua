@@ -1,7 +1,6 @@
 sulfur_lake_pirate_crewman = Creature:new {
 	objectName = "@mob/creature_names:slp_crewman",
 	socialGroup = "pirate",
-	pvpFaction = "",
 	faction = "",
 	level = 12,
 	chanceHit = 0.29,
@@ -40,6 +39,7 @@ sulfur_lake_pirate_crewman = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

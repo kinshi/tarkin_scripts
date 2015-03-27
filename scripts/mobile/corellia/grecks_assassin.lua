@@ -1,7 +1,6 @@
 grecks_assassin = Creature:new {
 	objectName = "@mob/creature_names:greck_assassin",
 	socialGroup = "olag_greck",
-	pvpFaction = "olag_greck",
 	faction = "olag_greck",
 	level = 11,
 	chanceHit = 0.29,
@@ -47,10 +46,11 @@ grecks_assassin = Creature:new {
 				{group = "tailor_components", chance = 1000000}
 			},
 			lootChance = 3000000
-		}	
+		}
 	},
 	weapons = {"ranged_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

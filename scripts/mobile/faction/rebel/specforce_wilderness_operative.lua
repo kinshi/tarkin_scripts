@@ -1,7 +1,6 @@
 specforce_wilderness_operative = Creature:new {
 	objectName = "@mob/creature_names:specforce_wilderness_operative",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 18,
 	chanceHit = 0.32,
@@ -33,7 +32,7 @@ specforce_wilderness_operative = Creature:new {
 	             "object/mobile/dressed_rebel_specforce_guerrilla_rodian_male_01.iff",
 	             "object/mobile/dressed_rebel_specforce_guerrilla_zabrak_female_01.iff",
 	},
-    lootGroups = {
+	lootGroups = {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
@@ -51,6 +50,8 @@ specforce_wilderness_operative = Creature:new {
 	},
 	weapons = {"imperial_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

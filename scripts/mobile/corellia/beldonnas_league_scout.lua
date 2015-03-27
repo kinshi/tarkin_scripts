@@ -1,7 +1,6 @@
 beldonnas_league_scout = Creature:new {
 	objectName = "@mob/creature_names:beldonnas_scout",
 	socialGroup = "beldonnas_league",
-	pvpFaction = "beldonnas_league",
 	faction = "beldonnas_league",
 	level = 19,
 	chanceHit = 0.33,
@@ -52,6 +51,7 @@ beldonnas_league_scout = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

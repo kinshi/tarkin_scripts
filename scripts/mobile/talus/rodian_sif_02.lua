@@ -2,7 +2,6 @@ rodian_sif_02 = Creature:new {
 	objectName = "",
 	customName = "a rodian Sif",
 	socialGroup = "sif",
-	pvpFaction = "sif",
 	faction = "sif",
 	level = 45,
 	chanceHit = 0.47,
@@ -31,6 +30,7 @@ rodian_sif_02 = Creature:new {
 	lootGroups = {},
 	weapons = {"sif_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,fencermaster,swordsmanmaster)
 }
 

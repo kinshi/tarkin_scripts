@@ -1,7 +1,6 @@
 rancor = Creature:new {
 	objectName = "@mob/creature_names:rancor",
 	socialGroup = "rancor",
-	pvpFaction = "",
 	faction = "",
 	level = 50,
 	chanceHit = 0.5,
@@ -48,8 +47,8 @@ rancor = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"intimidationattack",""}
 	}
 }
 

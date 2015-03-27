@@ -1,7 +1,6 @@
 abandoned_rebel_private = Creature:new {
 	objectName = "@mob/creature_names:abandoned_rebel_private",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 27,
 	chanceHit = 0.36,
@@ -30,6 +29,7 @@ abandoned_rebel_private = Creature:new {
 	lootGroups = {},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

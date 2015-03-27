@@ -1,7 +1,6 @@
 giant_decay_mite_hatchling = Creature:new {
         objectName = "@mob/creature_names:giant_decay_mite_hatchling",
         socialGroup = "mite",
-        pvpFaction = "",
         faction = "",
         level = 7,
         chanceHit = 0.25,
@@ -31,6 +30,7 @@ giant_decay_mite_hatchling = Creature:new {
         weapons = {},
         conversationTemplate = "",
         attacks = {
+		{"",""},
                 {"milddisease",""}
         }
 }

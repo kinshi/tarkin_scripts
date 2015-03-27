@@ -1,7 +1,6 @@
-noble_target_hyperdrive_part = Creature:new {
+noble_target_hyperdrive = Creature:new {
 	objectName = "@mob/creature_names:thug",
 	socialGroup = "thug",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 7,
 	chanceHit = 0.26,
@@ -56,4 +55,4 @@ noble_target_hyperdrive_part = Creature:new {
 	attacks = merge(marksmannovice,brawlernovice)
 }
 
-CreatureTemplates:addCreatureTemplate(noble_target_hyperdrive_part, "noble_target_hyperdrive_part")
+CreatureTemplates:addCreatureTemplate(noble_target_hyperdrive, "noble_target_hyperdrive")

@@ -1,7 +1,6 @@
 monumenter_bandit = Creature:new {
 	objectName = "@mob/creature_names:monumenter_bandit",
 	socialGroup = "monumenter",
-	pvpFaction = "monumenter",
 	faction = "monumenter",
 	level = 11,
 	chanceHit = 0.29,
@@ -37,6 +36,7 @@ monumenter_bandit = Creature:new {
 		"object/mobile/dressed_criminal_thug_zabrak_male_01.iff"},
 	lootGroups = {},
 	weapons = {"pirate_weapons_medium"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

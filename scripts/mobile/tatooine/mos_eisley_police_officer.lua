@@ -1,7 +1,6 @@
 mos_eisley_police_officer = Creature:new {
 	objectName = "@mob/creature_names:mos_eisley_police_officer",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 13,
 	chanceHit = 0.3,
@@ -45,6 +44,7 @@ mos_eisley_police_officer = Creature:new {
 	lootGroups = {},
 	weapons = {"imperial_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

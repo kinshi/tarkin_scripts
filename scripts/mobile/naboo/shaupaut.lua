@@ -1,7 +1,6 @@
 shaupaut = Creature:new {
 	objectName = "@mob/creature_names:shaupaut",
 	socialGroup = "shaupaut",
-	pvpFaction = "",
 	faction = "",
 	level = 7,
 	chanceHit = 0.26,
@@ -32,7 +31,8 @@ shaupaut = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

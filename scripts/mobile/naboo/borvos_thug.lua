@@ -1,7 +1,6 @@
 borvos_thug = Creature:new {
 	objectName = "@mob/creature_names:borvos_thug",
 	socialGroup = "borvo",
-	pvpFaction = "borvo",
 	faction = "borvo",
 	level = 18,
 	chanceHit = 0.32,
@@ -39,10 +38,11 @@ borvos_thug = Creature:new {
 				{group = "borvos_common", chance = 2800000}
 			},
 			lootChance = 2500000
-		}				
+		}
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

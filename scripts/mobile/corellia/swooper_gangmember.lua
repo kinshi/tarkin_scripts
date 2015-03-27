@@ -2,7 +2,6 @@ swooper_gangmember = Creature:new {
 	objectName = "@mob/creature_names:swooper",
 	customName = "a swooper gangmember",
 	socialGroup = "cor_swoop",
-	pvpFaction = "cor_swoop",
 	faction = "cor_swoop",
 	level = 9,
 	chanceHit = 0.27,
@@ -30,7 +29,7 @@ swooper_gangmember = Creature:new {
 	templates = {"object/mobile/dressed_criminal_swooper_zabrak_female_01.iff",
 				"object/mobile/dressed_criminal_swooper_human_male_01.iff"},
 	lootGroups = {
-      	{
+		{
 			groups = {
 				{group = "junk", chance = 3500000},
 				{group = "loot_kit_parts", chance = 2000000},
@@ -39,10 +38,11 @@ swooper_gangmember = Creature:new {
 				{group = "swooper_common", chance = 2000000}
 			},
 			lootChance = 2200000
-		}		
+		}
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

@@ -1,7 +1,6 @@
 mutated_krevol_clicker = Creature:new {
 	objectName = "@mob/creature_names:mutated_krevol_clicker",
 	socialGroup = "krevol",
-	pvpFaction = "",
 	faction = "",
 	level = 10,
 	chanceHit = 0.28,
@@ -33,8 +32,8 @@ mutated_krevol_clicker = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"blindattack",""}
 	}
 }
 

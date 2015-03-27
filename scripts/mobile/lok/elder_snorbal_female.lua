@@ -1,7 +1,6 @@
 elder_snorbal_female = Creature:new {
 	objectName = "@mob/creature_names:elder_snorbal_female",
 	socialGroup = "snorbal",
-	pvpFaction = "",
 	faction = "",
 	level = 34,
 	chanceHit = 0.41,
@@ -33,8 +32,8 @@ elder_snorbal_female = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"dizzyattack",""},
+		{"stunattack",""}
 	}
 }
 

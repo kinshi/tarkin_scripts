@@ -1,7 +1,6 @@
 kwi = Creature:new {
 	objectName = "@mob/creature_names:kwi",
 	socialGroup = "kwi",
-	pvpFaction = "",
 	faction = "",
 	level = 10,
 	chanceHit = 0.27,
@@ -32,7 +31,8 @@ kwi = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"",""},
+		{"intimidationattack",""}
 	}
 }
 

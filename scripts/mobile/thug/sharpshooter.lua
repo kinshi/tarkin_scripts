@@ -1,7 +1,6 @@
 sharpshooter = Creature:new {
 	objectName = "@mob/creature_names:sharpshooter",
 	socialGroup = "mercenary",
-	pvpFaction = "",
 	faction = "",
 	level = 16,
 	chanceHit = 0.310000,
@@ -39,6 +38,7 @@ sharpshooter = Creature:new {
 		}
 	},
 	weapons = {"ranged_weapons"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

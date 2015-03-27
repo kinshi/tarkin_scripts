@@ -1,7 +1,6 @@
 roba_boar = Creature:new {
 	objectName = "@mob/creature_names:young_roba",
 	socialGroup = "roba",
-	pvpFaction = "",
 	faction = "",
 	level = 50,
 	chanceHit = 0.5,
@@ -32,8 +31,8 @@ roba_boar = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"blindattack",""},
+		{"stunattack",""}
 	}
 }
 

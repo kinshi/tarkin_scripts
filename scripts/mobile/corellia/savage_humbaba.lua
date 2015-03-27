@@ -1,7 +1,6 @@
 savage_humbaba = Creature:new {
 	objectName = "@mob/creature_names:savage_humbaba",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 24,
 	chanceHit = 0.35,
@@ -34,7 +33,7 @@ savage_humbaba = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

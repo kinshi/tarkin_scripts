@@ -1,7 +1,6 @@
 nym_kusak_guardian = Creature:new {
 	objectName = "@mob/creature_names:nym_kusak_guardian",
 	socialGroup = "nym",
-	pvpFaction = "nym",
 	faction = "nym",
 	level = 29,
 	chanceHit = 0.37,
@@ -31,8 +30,8 @@ nym_kusak_guardian = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"dizzyattack",""},
+		{"stunattack",""}
 	}
 }
 

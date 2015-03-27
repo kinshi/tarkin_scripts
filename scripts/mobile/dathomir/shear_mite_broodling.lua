@@ -1,7 +1,6 @@
 shear_mite_broodling = Creature:new {
 	objectName = "@mob/creature_names:shear_mite_broodling",
 	socialGroup = "shear_mite",
-	pvpFaction = "",
 	faction = "",
 	level = 8,
 	chanceHit = 0.27,
@@ -33,7 +32,7 @@ shear_mite_broodling = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""}
 	}
 }
 

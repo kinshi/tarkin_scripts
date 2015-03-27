@@ -1,7 +1,6 @@
 zealot_of_lord_nyax = Creature:new {
 	objectName = "@mob/creature_names:lord_nyax_zealot",
 	socialGroup = "followers_of_lord_nyax",
-	pvpFaction = "followers_of_lord_nyax",
 	faction = "followers_of_lord_nyax",
 	level = 110,
 	chanceHit = 0.90,
@@ -56,6 +55,7 @@ zealot_of_lord_nyax = Creature:new {
 	},
 	weapons = {"aakuan_assassin_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/fancy",
 	attacks = merge(riflemanmaster,tkamaster)
 }
 

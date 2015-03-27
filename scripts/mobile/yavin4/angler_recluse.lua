@@ -1,7 +1,6 @@
 angler_recluse = Creature:new {
 	objectName = "@mob/creature_names:angler_recluse",
 	socialGroup = "angler",
-	pvpFaction = "",
 	faction = "",
 	level = 26,
 	chanceHit = 0.36,
@@ -32,7 +31,7 @@ angler_recluse = Creature:new {
 	weapons = {"creature_spit_small_green","creature_spit_small_green"},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"},
+		{"posturedownattack",""},
 		{"strongpoison",""}
 	}
 }

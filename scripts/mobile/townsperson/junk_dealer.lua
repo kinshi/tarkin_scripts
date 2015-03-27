@@ -1,8 +1,7 @@
 junk_dealer = Creature:new {
 	objectName = "@mob/creature_names:junk_dealer",
-	generateRandomName =true,
+	randomNameType = NAME_GENERIC_TAG,
 	socialGroup = "townsperson",
-	pvpFaction = "townsperson",
 	faction = "townsperson",
 	level = 100,
 	chanceHit = 1,

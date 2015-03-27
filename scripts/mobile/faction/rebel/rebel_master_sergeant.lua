@@ -1,7 +1,6 @@
 rebel_master_sergeant = Creature:new {
 	objectName = "@mob/creature_names:rebel_master_sergeant",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 17,
 	chanceHit = 0.32,
@@ -45,6 +44,8 @@ rebel_master_sergeant = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

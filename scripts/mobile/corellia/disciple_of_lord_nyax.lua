@@ -1,7 +1,6 @@
 disciple_of_lord_nyax = Creature:new {
 	objectName = "@mob/creature_names:lord_nyax_disciple",
 	socialGroup = "followers_of_lord_nyax",
-	pvpFaction = "followers_of_lord_nyax",
 	faction = "followers_of_lord_nyax",
 	level = 80,
 	chanceHit = 0.75,
@@ -56,6 +55,7 @@ disciple_of_lord_nyax = Creature:new {
 	},
 	weapons = {"aakuan_2h_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/fancy",
 	attacks = swordsmanmaster
 }
 

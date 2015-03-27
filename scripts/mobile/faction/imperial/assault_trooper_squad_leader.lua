@@ -1,7 +1,6 @@
 assault_trooper_squad_leader = Creature:new {
 	objectName = "@mob/creature_names:fbase_stormtrooper_squad_leader",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 27,
 	chanceHit = 0.37,
@@ -46,6 +45,8 @@ assault_trooper_squad_leader = Creature:new {
 	},
 	weapons = {"st_assault_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/stormtrooper",
+	personalityStf = "@hireling/hireling_stormtrooper",
 	attacks = merge(marksmanmaster,carbineermaster,brawlermaster)
 }
 

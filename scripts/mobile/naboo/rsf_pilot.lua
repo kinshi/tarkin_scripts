@@ -1,7 +1,6 @@
 rsf_pilot = Creature:new {
 	objectName = "@mob/creature_names:rsf_pilot",
 	socialGroup = "naboo_security_force",
-	pvpFaction = "naboo_security_force",
 	faction = "naboo_security_force",
 	level = 14,
 	chanceHit = 0.3,
@@ -28,7 +27,7 @@ rsf_pilot = Creature:new {
 
 	templates = {"object/mobile/dressed_rsf_pilot.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2000000},
 				{group = "wearables_common", chance = 2000000},
@@ -37,10 +36,11 @@ rsf_pilot = Creature:new {
 				{group = "loot_kit_parts", chance = 2000000}
 			},
 			lootChance = 3200000
-		}					
+		}
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

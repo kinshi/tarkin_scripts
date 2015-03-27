@@ -1,7 +1,6 @@
 bark_mite_hatchling = Creature:new {
 	objectName = "@mob/creature_names:bark_mite_hatchling",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 9,
 	chanceHit = 0.27,
@@ -32,7 +31,7 @@ bark_mite_hatchling = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

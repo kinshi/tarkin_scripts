@@ -1,7 +1,6 @@
 skreeg_warrior = Creature:new {
 	objectName = "@mob/creature_names:skreeg_warrior",
 	socialGroup = "skreeg",
-	pvpFaction = "",
 	faction = "",
 	level = 28,
 	chanceHit = 0.36,
@@ -33,8 +32,8 @@ skreeg_warrior = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"posturedownattack",""},
+		{"stunattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 nym_guard_strong = Creature:new {
 	objectName = "@mob/creature_names:nym_guard_strong",
 	socialGroup = "nym",
-	pvpFaction = "nym",
 	faction = "nym",
 	level = 9,
 	chanceHit = 0.27,
@@ -44,6 +43,7 @@ nym_guard_strong = Creature:new {
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

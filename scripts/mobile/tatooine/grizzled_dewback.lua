@@ -1,7 +1,6 @@
 grizzled_dewback = Creature:new {
 	objectName = "@mob/creature_names:grizzled_dewback",
 	socialGroup = "dewback",
-	pvpFaction = "",
 	faction = "",
 	level = 27,
 	chanceHit = 0.35,
@@ -32,8 +31,8 @@ grizzled_dewback = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"dizzyattack",""}
 	}
 }
 

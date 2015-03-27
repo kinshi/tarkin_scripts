@@ -1,7 +1,6 @@
 domesticated_snorbal = Creature:new {
 	objectName = "@mob/creature_names:domesticated_snorbal",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 31,
 	chanceHit = 0.39,
@@ -32,8 +31,8 @@ domesticated_snorbal = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"dizzyattack",""},
+		{"stunattack",""}
 	}
 }
 

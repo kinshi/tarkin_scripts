@@ -2,7 +2,6 @@ cobral_hooligan = Creature:new {
 	objectName = "",
 	customName = "a Neo-Cobral Hooligan",
 	socialGroup = "cobral",
-	pvpFaction = "cobral",
 	faction = "cobral",
 	level = 10,
 	chanceHit = 0.28,
@@ -44,6 +43,7 @@ cobral_hooligan = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

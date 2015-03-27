@@ -1,7 +1,6 @@
 female_snorbal_calf = Creature:new {
 	objectName = "@mob/creature_names:female_snorbal_calf",
 	socialGroup = "snorbal",
-	pvpFaction = "",
 	faction = "",
 	level = 19,
 	chanceHit = 0.33,
@@ -33,7 +32,7 @@ female_snorbal_calf = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

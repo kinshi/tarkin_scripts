@@ -1,7 +1,6 @@
 bloodseeker_mite_guardian = Creature:new {
 	objectName = "@mob/creature_names:bloodseeker_mite_guardian",
 	socialGroup = "bloodseeker",
-	pvpFaction = "",
 	faction = "",
 	level = 38,
 	chanceHit = 0.4,
@@ -32,8 +31,8 @@ bloodseeker_mite_guardian = Creature:new {
 	weapons = {"creature_spit_small_red"},
 	conversationTemplate = "",
 	attacks = {
-		{"strongdisease",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"strongdisease",""}
 	}
 }
 

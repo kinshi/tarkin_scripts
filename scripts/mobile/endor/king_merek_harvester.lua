@@ -1,7 +1,6 @@
 king_merek_harvester = Creature:new {
 	objectName = "@mob/creature_names:king_merek_harvester",
 	socialGroup = "merek",
-	pvpFaction = "",
 	faction = "",
 	level = 50,
 	chanceHit = 0.5,
@@ -32,8 +31,8 @@ king_merek_harvester = Creature:new {
 	weapons = {"creature_spit_small_red"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"creatureareapoison",""}
+		{"creatureareapoison",""},
+		{"blindattack",""}
 	}
 }
 

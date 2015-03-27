@@ -1,7 +1,6 @@
 spined_snake_recluse = Creature:new {
 	objectName = "@mob/creature_names:spined_snake_recluse",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 14,
 	chanceHit = 0.3,
@@ -32,8 +31,8 @@ spined_snake_recluse = Creature:new {
 	weapons = {"creature_spit_small_toxicgreen"},
 	conversationTemplate = "",
 	attacks = {
-		{"mediumpoison",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"mediumpoison",""}
 	}
 }
 

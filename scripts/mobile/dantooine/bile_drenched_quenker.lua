@@ -1,7 +1,6 @@
 bile_drenched_quenker = Creature:new {
 	objectName = "@mob/creature_names:bile_drenched_quenker",
 	socialGroup = "quenker",
-	pvpFaction = "",
 	faction = "",
 	level = 34,
 	chanceHit = 0.41,
@@ -33,7 +32,8 @@ bile_drenched_quenker = Creature:new {
 	weapons = {"creature_spit_small_green"},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"}
+		{"dizzyattack",""},
+		{"strongpoison",""}
 	}
 }
 

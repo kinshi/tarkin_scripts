@@ -1,7 +1,6 @@
 giant_peko_peko = Creature:new {
 	objectName = "@mob/creature_names:giant_peko_peko",
 	socialGroup = "peko",
-	pvpFaction = "",
 	faction = "",
 	level = 23,
 	chanceHit = 0.35,
@@ -32,8 +31,8 @@ giant_peko_peko = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"dizzyattack",""},
+		{"stunattack",""}
 	}
 }
 

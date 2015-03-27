@@ -1,7 +1,7 @@
 crackdown_elite_dark_trooper = Creature:new {
 	objectName = "@mob/creature_names:crackdown_elite_dark_trooper",
+	randomNameType = NAME_DARKTROOPER,
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 1,
 	chanceHit = 0.64,
@@ -25,6 +25,7 @@ crackdown_elite_dark_trooper = Creature:new {
 	creatureBitmask = PACK + KILLER + STALKER,
 	optionsBitmask = 128,
 	diet = HERBIVORE,
+	scale = 1.5,
 
 	templates = {"object/mobile/dark_trooper.iff"},
 	lootGroups = {

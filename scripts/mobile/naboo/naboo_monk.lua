@@ -1,7 +1,6 @@
 naboo_monk = Creature:new {
 	objectName = "@mob/creature_names:naboo_monk",
 	socialGroup = "self",
-	pvpFaction = "naboo",
 	faction = "naboo",
 	level = 4,
 	chanceHit = 0.24,
@@ -42,6 +41,7 @@ naboo_monk = Creature:new {
 	},
 	weapons = {},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/fancy",
 	attacks = brawlernovice
 }
 

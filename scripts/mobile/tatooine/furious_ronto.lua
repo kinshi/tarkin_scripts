@@ -1,7 +1,6 @@
 furious_ronto = Creature:new {
 	objectName = "@mob/creature_names:ronto_furious",
 	socialGroup = "ronto",
-	pvpFaction = "",
 	faction = "",
 	level = 27,
 	chanceHit = 0.37,
@@ -33,8 +32,8 @@ furious_ronto = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"posturedownattack",""},
+		{"stunattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 rebel_admiral = Creature:new {
 	objectName = "@mob/creature_names:corvette_rebel_admiral",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 226,
 	chanceHit = 19.75,
@@ -42,10 +41,11 @@ rebel_admiral = Creature:new {
 				{group = "wearables_scarce", chance = 1000000}
 			},
 			lootChance = 3000000
-		}	
+		}
 	},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(commandomaster,marksmanmaster,brawlermaster)
 }
 

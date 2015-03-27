@@ -1,7 +1,6 @@
 kamurith_defiler = Creature:new {
 	objectName = "@mob/creature_names:kamurith_defiler",
 	socialGroup = "kamurith",
-	pvpFaction = "",
 	faction = "",
 	level = 50,
 	chanceHit = 0.5,
@@ -32,7 +31,7 @@ kamurith_defiler = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
+		{"dizzyattack",""},
 		{"strongdisease",""}
 	}
 }

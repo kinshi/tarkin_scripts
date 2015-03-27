@@ -1,7 +1,6 @@
 domestic_bol_mount = Creature:new {
 	objectName = "@mob/creature_names:domestic_bol_mount",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 30,
 	chanceHit = 0.39,
@@ -31,8 +30,8 @@ domestic_bol_mount = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"dizzyattack","dizzyChance=50"}
+		{"blindattack",""},
+		{"dizzyattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 woolamander_gatherer = Creature:new {
 	objectName = "@mob/creature_names:woolamander_gatherer",
 	socialGroup = "woolamander",
-	pvpFaction = "",
 	faction = "",
 	level = 29,
 	chanceHit = 0.38,
@@ -32,8 +31,8 @@ woolamander_gatherer = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""},
+		{"dizzyattack",""}
 	}
 }
 

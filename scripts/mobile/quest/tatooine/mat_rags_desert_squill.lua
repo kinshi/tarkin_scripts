@@ -1,7 +1,6 @@
 mat_rags_desert_squill = Creature:new {
 	objectName = "@mob/creature_names:desert_squill",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 20,
 	chanceHit = 0.33,
@@ -38,7 +37,7 @@ mat_rags_desert_squill = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

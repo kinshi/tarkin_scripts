@@ -1,7 +1,6 @@
 swirl_prong_impaler = Creature:new {
 	objectName = "@mob/creature_names:swirl_prong_impaler",
 	socialGroup = "prong",
-	pvpFaction = "",
 	faction = "",
 	level = 30,
 	chanceHit = 0.37,
@@ -32,7 +31,8 @@ swirl_prong_impaler = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"",""},
+		{"posturedownattack",""}
 	}
 }
 

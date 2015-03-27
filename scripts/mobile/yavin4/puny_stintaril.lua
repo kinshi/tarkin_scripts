@@ -1,7 +1,6 @@
 puny_stintaril = Creature:new {
 	objectName = "@mob/creature_names:puny_stintaril",
 	socialGroup = "stinaril",
-	pvpFaction = "",
 	faction = "",
 	level = 9,
 	chanceHit = 0.27,
@@ -32,7 +31,7 @@ puny_stintaril = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 sulfur_lake_pirate = Creature:new {
 	objectName = "@mob/creature_names:slp_pirate",
 	socialGroup = "pirate",
-	pvpFaction = "pirate",
 	faction = "pirate",
 	level = 12,
 	chanceHit = 0.29,
@@ -30,6 +29,7 @@ sulfur_lake_pirate = Creature:new {
 	lootGroups = {},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

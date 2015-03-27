@@ -1,7 +1,6 @@
 noxious_squill = Creature:new {
 	objectName = "@mob/creature_names:noxious_squill",
 	socialGroup = "squill",
-	pvpFaction = "",
 	faction = "",
 	level = 19,
 	chanceHit = 0.33,
@@ -33,8 +32,8 @@ noxious_squill = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"milddisease",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"milddisease",""}
 	}
 }
 

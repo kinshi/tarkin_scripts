@@ -1,7 +1,6 @@
 wastrel = Creature:new {
 	objectName = "@mob/creature_names:wastrel",
 	socialGroup = "thug",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 6,
 	chanceHit = 0.25,
@@ -38,6 +37,7 @@ wastrel = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_light"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

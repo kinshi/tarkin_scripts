@@ -1,7 +1,6 @@
 imperial_private = Creature:new {
 	objectName = "@mob/creature_names:imperial_private",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 15,
 	chanceHit = 0.31,
@@ -50,6 +49,8 @@ imperial_private = Creature:new {
 		}
 	},
 	weapons = {"imperial_weapons_light"},
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",	
 	attacks = merge(brawlermid,marksmanmid)
 }
 

@@ -1,7 +1,6 @@
 vesp_scavenger = Creature:new {
 	objectName = "@mob/creature_names:vesp_scavanger",
 	socialGroup = "vesp",
-	pvpFaction = "",
 	faction = "",
 	level = 29,
 	chanceHit = 0.37,
@@ -30,11 +29,11 @@ vesp_scavenger = Creature:new {
 	controlDeviceTemplate = "object/intangible/pet/vesp_hue.iff",
 	scale = 1.15,
 	lootGroups = {},
-	weapons = {},
+	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""},
+		{"dizzyattack",""}
 	}
 }
 

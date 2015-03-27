@@ -1,7 +1,6 @@
 giant_kimogila = Creature:new {
 	objectName = "@mob/creature_names:giant_kimogila",
 	socialGroup = "kimogila",
-	pvpFaction = "",
 	faction = "",
 	level = 139,
 	chanceHit = 5.5,
@@ -39,8 +38,8 @@ giant_kimogila = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareaknockdown","knockdownChance=50"},
-		{"dizzyattack","dizzyChance=50"}
+		{"creatureareaknockdown",""},
+		{"dizzyattack",""}
 	}
 }
 

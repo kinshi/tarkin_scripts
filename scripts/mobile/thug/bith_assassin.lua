@@ -1,7 +1,6 @@
 bith_assassin = Creature:new {
 	objectName = "@mob/creature_names:assassin",
 	socialGroup = "bith",
-	pvpFaction = "",
 	faction = "",
 	level = 18,
 	chanceHit = 0.32,
@@ -40,6 +39,7 @@ bith_assassin = Creature:new {
 	},
 	weapons = {"ranged_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

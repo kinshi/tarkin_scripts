@@ -1,7 +1,6 @@
 quenker_relic_reaper = Creature:new {
 	objectName = "@mob/creature_names:quenker_relic_reaper",
 	socialGroup = "quenker",
-	pvpFaction = "",
 	faction = "",
 	level = 45,
 	chanceHit = 0.44,
@@ -32,8 +31,8 @@ quenker_relic_reaper = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"intimidationattack","intimidationChance=50"}
+		{"blindattack",""},
+		{"intimidationattack",""}
 	}
 }
 

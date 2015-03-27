@@ -1,7 +1,6 @@
 malkloc_plainswalker = Creature:new {
 	objectName = "@mob/creature_names:malkloc_plainswalker",
 	socialGroup = "malkloc",
-	pvpFaction = "",
 	faction = "",
 	level = 84,
 	chanceHit = 0.7,
@@ -32,8 +31,8 @@ malkloc_plainswalker = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareaknockdown","knockdownChance=30"},
-		{"dizzyattack","dizzyChance=50"}
+		{"dizzyattack",""},
+		{"creatureareaknockdown",""}
 	}
 }
 

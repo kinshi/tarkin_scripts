@@ -1,7 +1,6 @@
 war_gronda = Creature:new {
 	objectName = "@mob/creature_names:war_gronda",
 	socialGroup = "gronda",
-	pvpFaction = "",
 	faction = "",
 	level = 32,
 	chanceHit = 0.34,
@@ -33,8 +32,8 @@ war_gronda = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"knockdownattack","knockdownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"knockdownattack",""},
+		{"stunattack",""}
 	}
 }
 

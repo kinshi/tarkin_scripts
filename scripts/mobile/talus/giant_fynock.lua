@@ -1,7 +1,6 @@
 giant_fynock = Creature:new {
 	objectName = "@mob/creature_names:giant_fynock",
 	socialGroup = "fynock",
-	pvpFaction = "",
 	faction = "",
 	level = 42,
 	chanceHit = 0.44,
@@ -32,8 +31,8 @@ giant_fynock = Creature:new {
 	weapons = {"creature_spit_small_red"},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareaknockdown","knockdownChance=30"},
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""},
+		{"creatureareaknockdown",""}
 	}
 }
 

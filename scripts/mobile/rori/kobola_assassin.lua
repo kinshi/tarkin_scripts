@@ -1,7 +1,6 @@
 kobola_assassin = Creature:new {
 	objectName = "@mob/creature_names:kobola_assassin",
 	socialGroup = "kobola",
-	pvpFaction = "kobola",
 	faction = "kobola",
 	level = 18,
 	chanceHit = 0.32,
@@ -30,7 +29,7 @@ kobola_assassin = Creature:new {
 		"object/mobile/dressed_kobola_assassin_zabrak_male_01.iff",
 		"object/mobile/dressed_kobola_assassin_zabrak_female_01.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2400000},
 				{group = "tailor_components", chance = 2000000},
@@ -38,10 +37,11 @@ kobola_assassin = Creature:new {
 				{group = "kobola_common", chance = 3600000}
 			},
 			lootChance = 2500000
-		}					
+		}
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 frenzied_choku = Creature:new {
 	objectName = "@mob/creature_names:frenzied_choku",
 	socialGroup = "choku",
-	pvpFaction = "",
 	faction = "",
 	level = 21,
 	chanceHit = 0.33,
@@ -34,7 +33,7 @@ frenzied_choku = Creature:new {
 	conversationTemplate = "",
 	attacks = {
 		{"mediumdisease",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

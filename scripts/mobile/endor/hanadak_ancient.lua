@@ -1,7 +1,6 @@
 hanadak_ancient = Creature:new {
 	objectName = "@mob/creature_names:hanadak_ancient",
 	socialGroup = "hanadak",
-	pvpFaction = "",
 	faction = "",
 	level = 41,
 	chanceHit = 0.44,
@@ -32,8 +31,8 @@ hanadak_ancient = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"blindattack",""}
 	}
 }
 

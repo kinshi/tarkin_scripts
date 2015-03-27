@@ -1,7 +1,6 @@
 specforce_marine = Creature:new {
 	objectName = "@mob/creature_names:specforce_marine",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 18,
 	chanceHit = 0.32,
@@ -32,7 +31,7 @@ specforce_marine = Creature:new {
 	             "object/mobile/dressed_rebel_specforce_guerrilla_rodian_male_01.iff",
 	             "object/mobile/dressed_rebel_specforce_guerrilla_zabrak_female_01.iff",
 	},
-lootGroups = {
+	lootGroups = {
 		{
 			groups = {
 				{group = "color_crystals", chance = 100000},
@@ -49,6 +48,8 @@ lootGroups = {
 		}
 	},
 	weapons = {"imperial_weapons_medium"},
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

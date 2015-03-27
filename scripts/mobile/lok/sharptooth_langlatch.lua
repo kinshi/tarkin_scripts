@@ -1,7 +1,6 @@
 sharptooth_langlatch = Creature:new {
 	objectName = "@mob/creature_names:sharptooth_langlatch",
 	socialGroup = "langlatch",
-	pvpFaction = "",
 	faction = "",
 	level = 17,
 	chanceHit = 0.31,
@@ -33,7 +32,7 @@ sharptooth_langlatch = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"}
+		{"dizzyattack",""}
 	}
 }
 

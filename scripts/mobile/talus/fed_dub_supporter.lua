@@ -1,7 +1,6 @@
 fed_dub_supporter = Creature:new {
 	objectName = "@mob/creature_names:fed_dub_supporter",
 	socialGroup = "fed_dub",
-	pvpFaction = "fed_dub",
 	faction = "fed_dub",
 	level = 8,
 	chanceHit = 0.27,
@@ -43,6 +42,7 @@ fed_dub_supporter = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

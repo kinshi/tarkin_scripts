@@ -1,7 +1,6 @@
 juvenile_canyon_krayt_dragon = Creature:new {
 	objectName = "@mob/creature_names:juvenile_canyon_krayt",
 	socialGroup = "krayt",
-	pvpFaction = "",
 	faction = "",
 	level = 122,
 	chanceHit = 4.0,
@@ -51,7 +50,8 @@ juvenile_canyon_krayt_dragon = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"posturedownattack",""},
+		{"creatureareaattack",""}
 	}
 }
 

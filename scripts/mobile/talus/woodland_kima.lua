@@ -1,7 +1,6 @@
 woodland_kima = Creature:new {
 	objectName = "@mob/creature_names:woodland_kima",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 18,
 	chanceHit = 0.32,
@@ -33,7 +32,7 @@ woodland_kima = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

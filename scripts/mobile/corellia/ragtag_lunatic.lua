@@ -1,7 +1,6 @@
 ragtag_lunatic = Creature:new {
 	objectName = "@mob/creature_names:ragtag_lunatic",
 	socialGroup = "ragtag",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 7,
 	chanceHit = 0.260000,
@@ -50,6 +49,7 @@ ragtag_lunatic = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_medium"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

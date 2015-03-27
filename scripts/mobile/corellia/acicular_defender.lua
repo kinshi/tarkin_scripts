@@ -1,7 +1,6 @@
 acicular_defender = Creature:new {
 	objectName = "@mob/creature_names:paralope_acicular_defender",
 	socialGroup = "paralope",
-	pvpFaction = "",
 	faction = "",
 	level = 8,
 	chanceHit = 0.27,
@@ -33,7 +32,7 @@ acicular_defender = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"}
+		{"blindattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 roba_pack_leader = Creature:new {
 	objectName = "@mob/creature_names:roba_pack_leader",
 	socialGroup = "roba",
-	pvpFaction = "",
 	faction = "",
 	level = 30,
 	chanceHit = 0.39,
@@ -32,8 +31,8 @@ roba_pack_leader = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"dizzyattack","dizzyChance=50"}
+		{"dizzyattack",""},
+		{"blindattack",""}
 	}
 }
 

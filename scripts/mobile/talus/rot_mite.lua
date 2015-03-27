@@ -1,7 +1,6 @@
 rot_mite = Creature:new {
 	objectName = "@mob/creature_names:rot_mite",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 11,
 	chanceHit = 0.29,
@@ -32,7 +31,7 @@ rot_mite = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

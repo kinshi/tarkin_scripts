@@ -1,7 +1,6 @@
 diseased_blurrg = Creature:new {
 	objectName = "@mob/creature_names:diseased_blurrg",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 37,
 	chanceHit = 0.41,
@@ -32,8 +31,8 @@ diseased_blurrg = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareableeding",""},
-		{"mediumdisease",""}
+		{"mediumdisease",""},
+		{"creatureareableeding",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 lost_aqualish_outrider = Creature:new {
 	objectName = "@mob/creature_names:lost_aqualish_outrider",
 	socialGroup = "lost_aqualish",
-	pvpFaction = "lost_aqualish",
 	faction = "lost_aqualish",
 	level = 12,
 	chanceHit = 0.29,
@@ -30,7 +29,7 @@ lost_aqualish_outrider = Creature:new {
 		"object/mobile/dressed_lost_aqualish_outrider_female_01.iff",
 		"object/mobile/dressed_lost_aqualish_outrider_male_01.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 3000000},
 				{group = "wearables_common", chance = 2000000},
@@ -39,10 +38,11 @@ lost_aqualish_outrider = Creature:new {
 				{group = "loot_kit_parts", chance = 1500000}
 			},
 			lootChance = 2200000
-		}				
+		}
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

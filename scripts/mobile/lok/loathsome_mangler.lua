@@ -1,7 +1,6 @@
 loathsome_mangler = Creature:new {
 	objectName = "@mob/creature_names:gurk_loathsome_mangler",
 	socialGroup = "gurk",
-	pvpFaction = "",
 	faction = "",
 	level = 33,
 	chanceHit = 0.4,
@@ -33,8 +32,8 @@ loathsome_mangler = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"intimidationattack","intimidationChance=50"}
+		{"dizzyattack",""},
+		{"intimidationattack",""}
 	}
 }
 

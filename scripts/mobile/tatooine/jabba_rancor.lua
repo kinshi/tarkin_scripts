@@ -1,7 +1,6 @@
 jabba_rancor = Creature:new {
 	objectName = "@mob/creature_names:jabbas_palace_rancor",
 	socialGroup = "jabba ",
-	pvpFaction = "",
 	faction = "",
 	level = 61,
 	chanceHit = 0.590000,
@@ -29,8 +28,8 @@ jabba_rancor = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	attacks = {
-		{"stunattack","stunChance=50"},
-		{"intimidationattack","intimidationChance=50"}
+		{"stunattack",""},
+		{"intimidationattack",""}
 	}
 }
 

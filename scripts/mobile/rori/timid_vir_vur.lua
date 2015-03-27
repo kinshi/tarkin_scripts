@@ -1,7 +1,6 @@
 timid_vir_vur = Creature:new {
 	objectName = "@mob/creature_names:timid_vir_vur",
 	socialGroup = "vir_vur",
-	pvpFaction = "",
 	faction = "",
 	level = 8,
 	chanceHit = 0.27,
@@ -33,7 +32,7 @@ timid_vir_vur = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

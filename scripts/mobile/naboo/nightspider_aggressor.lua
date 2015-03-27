@@ -1,7 +1,6 @@
 nightspider_aggressor = Creature:new {
 	objectName = "@mob/creature_names:nightspider_aggressor",
 	socialGroup = "spider",
-	pvpFaction = "",
 	faction = "",
 	level = 9,
 	chanceHit = 0.27,
@@ -32,8 +31,8 @@ nightspider_aggressor = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"mildpoison",""},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"mildpoison",""}
 	}
 }
 

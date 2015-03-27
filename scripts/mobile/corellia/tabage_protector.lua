@@ -1,7 +1,6 @@
 tabage_protector = Creature:new {
 	objectName = "@mob/creature_names:tabage_protector",
 	socialGroup = "tabage",
-	pvpFaction = "",
 	faction = "",
 	level = 18,
 	chanceHit = 0.32,
@@ -33,8 +32,8 @@ tabage_protector = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"mildpoison",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"mildpoison",""}
 	}
 }
 

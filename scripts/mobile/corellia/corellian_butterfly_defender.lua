@@ -1,7 +1,6 @@
 corellian_butterfly_defender = Creature:new {
 	objectName = "@mob/creature_names:corellian_butterfly_defender",
 	socialGroup = "butterfly",
-	pvpFaction = "",
 	faction = "",
 	level = 18,
 	chanceHit = 0.32,
@@ -33,7 +32,8 @@ corellian_butterfly_defender = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"",""},
+		{"intimidationattack",""}
 	}
 }
 

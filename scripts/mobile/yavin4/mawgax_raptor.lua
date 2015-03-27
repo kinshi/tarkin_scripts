@@ -1,7 +1,6 @@
 mawgax_raptor = Creature:new {
 	objectName = "@mob/creature_names:mawgax_raptor",
 	socialGroup = "mawgax",
-	pvpFaction = "",
 	faction = "",
 	level = 30,
 	chanceHit = 0.39,
@@ -33,7 +32,7 @@ mawgax_raptor = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 specops_alliance_free_agent = Creature:new {
 	objectName = "@mob/creature_names:specops_alliance_free_agent",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 27,
 	chanceHit = 0.37,
@@ -36,6 +35,8 @@ specops_alliance_free_agent = Creature:new {
 	lootGroups = {},
 	weapons = {"imperial_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 

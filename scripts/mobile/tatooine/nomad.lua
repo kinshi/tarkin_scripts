@@ -1,7 +1,6 @@
 nomad = Creature:new {
 	objectName = "@mob/creature_names:nomad",
 	socialGroup = "townsperson",
-	pvpFaction = "townsperson",
 	faction = "townsperson",
 	level = 5,
 	chanceHit = 0.25,
@@ -41,6 +40,7 @@ nomad = Creature:new {
 	},
 	weapons = {"rebel_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

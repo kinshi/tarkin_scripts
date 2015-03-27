@@ -1,7 +1,6 @@
 crazed_durni = Creature:new {
 	objectName = "@mob/creature_names:crazed_durni",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 10,
 	chanceHit = 0.28,
@@ -33,7 +32,8 @@ crazed_durni = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"",""},
+		{"posturedownattack",""}
 	}
 }
 

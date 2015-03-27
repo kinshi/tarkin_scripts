@@ -1,7 +1,6 @@
 mountain_vesp = Creature:new {
 	objectName = "@mob/creature_names:mountain_vesp",
 	socialGroup = "vesp",
-	pvpFaction = "",
 	faction = "",
 	level = 24,
 	chanceHit = 0.35,
@@ -32,8 +31,8 @@ mountain_vesp = Creature:new {
 	lootGroups = {},
 	weapons = {"creature_spit_small_yellow"},
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"dizzyattack","dizzyChance=50"}
+		{"blindattack",""},
+		{"dizzyattack",""}
 	}
 }
 

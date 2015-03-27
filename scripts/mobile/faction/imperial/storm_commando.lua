@@ -1,7 +1,6 @@
 storm_commando = Creature:new {
 	objectName = "@mob/creature_names:storm_commando",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 29,
 	chanceHit = 0.38,
@@ -45,6 +44,8 @@ storm_commando = Creature:new {
 	},
 	weapons = {"stormtrooper_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/stormtrooper",
+	personalityStf = "@hireling/hireling_stormtrooper",	
 	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 

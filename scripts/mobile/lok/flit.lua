@@ -1,7 +1,6 @@
 flit = Creature:new {
 	objectName = "@mob/creature_names:flit",
 	socialGroup = "flit",
-	pvpFaction = "",
 	faction = "",
 	level = 8,
 	chanceHit = 0.27,
@@ -32,7 +31,7 @@ flit = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

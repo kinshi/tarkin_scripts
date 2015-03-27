@@ -1,7 +1,6 @@
 maverick_gualama = Creature:new {
 	objectName = "@mob/creature_names:maverick_gualama",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 14,
 	chanceHit = 0.3,
@@ -32,7 +31,8 @@ maverick_gualama = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

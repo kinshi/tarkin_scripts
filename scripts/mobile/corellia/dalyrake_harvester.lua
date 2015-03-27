@@ -1,7 +1,6 @@
 dalyrake_harvester = Creature:new {
 	objectName = "@mob/creature_names:dalyrake_harvester",
 	socialGroup = "dalyrake",
-	pvpFaction = "",
 	faction = "",
 	level = 15,
 	chanceHit = 0.31,
@@ -33,7 +32,8 @@ dalyrake_harvester = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"",""},
+		{"intimidationattack",""}
 	}
 }
 

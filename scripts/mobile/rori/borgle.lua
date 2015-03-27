@@ -1,7 +1,6 @@
 borgle = Creature:new {
 	objectName = "@mob/creature_names:borgle",
 	socialGroup = "borgle",
-	pvpFaction = "",
 	faction = "",
 	level = 12,
 	chanceHit = 0.29,
@@ -32,7 +31,8 @@ borgle = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"",""},
+		{"posturedownattack",""}
 	}
 }
 

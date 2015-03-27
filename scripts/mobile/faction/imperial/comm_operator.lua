@@ -1,7 +1,6 @@
 comm_operator = Creature:new {
 	objectName = "@mob/creature_names:comm_operator",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 14,
 	chanceHit = 0.3,
@@ -43,6 +42,8 @@ comm_operator = Creature:new {
 	},
 	weapons = {"imperial_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",	
 	attacks = merge(brawlermid,marksmanmid)
 }
 

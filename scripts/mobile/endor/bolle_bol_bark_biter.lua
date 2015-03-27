@@ -1,7 +1,6 @@
 bolle_bol_bark_biter = Creature:new {
 	objectName = "@mob/creature_names:bolle_bol_bark_biter",
 	socialGroup = "bol",
-	pvpFaction = "",
 	faction = "",
 	level = 27,
 	chanceHit = 0.36,
@@ -32,8 +31,8 @@ bolle_bol_bark_biter = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"dizzyattack",""},
+		{"posturedownattack",""}
 	}
 }
 

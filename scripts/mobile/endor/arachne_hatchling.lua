@@ -1,7 +1,6 @@
 arachne_hatchling = Creature:new {
 	objectName = "@mob/creature_names:arachne_hatchling",
 	socialGroup = "arachne",
-	pvpFaction = "",
 	faction = "",
 	level = 18,
 	chanceHit = 0.32,
@@ -32,6 +31,7 @@ arachne_hatchling = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
+		{"",""},
 		{"mediumpoison",""}
 	}
 }

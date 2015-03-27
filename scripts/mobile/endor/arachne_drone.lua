@@ -1,7 +1,6 @@
 arachne_drone = Creature:new {
 	objectName = "@mob/creature_names:arachne_drone",
 	socialGroup = "arachne",
-	pvpFaction = "",
 	faction = "",
 	level = 27,
 	chanceHit = 0.36,
@@ -33,7 +32,7 @@ arachne_drone = Creature:new {
 	conversationTemplate = "",
 	attacks = {
 		{"strongpoison",""},
-		{"dizzyattack","dizzyChance=50"}
+		{"dizzyattack",""}
 	}
 }
 

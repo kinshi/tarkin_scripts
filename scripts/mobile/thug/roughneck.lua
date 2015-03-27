@@ -1,7 +1,6 @@
 roughneck = Creature:new {
 	objectName = "@mob/creature_names:roughneck",
 	socialGroup = "thug",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 7,
 	chanceHit = 0.260000,
@@ -45,6 +44,7 @@ roughneck = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_light"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

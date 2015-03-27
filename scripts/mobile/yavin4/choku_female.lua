@@ -1,7 +1,6 @@
 choku_female = Creature:new {
 	objectName = "@mob/creature_names:choku_female",
 	socialGroup = "choku",
-	pvpFaction = "",
 	faction = "",
 	level = 13,
 	chanceHit = 0.3,
@@ -33,7 +32,8 @@ choku_female = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

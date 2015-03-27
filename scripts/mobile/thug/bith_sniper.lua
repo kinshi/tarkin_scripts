@@ -1,7 +1,6 @@
 bith_sniper = Creature:new {
 	objectName = "@mob/creature_names:bith_sniper",
 	socialGroup = "bith",
-	pvpFaction = "",
 	faction = "",
 	level = 9,
 	chanceHit = 0.27,
@@ -40,6 +39,7 @@ bith_sniper = Creature:new {
 	},
 	weapons = {"ranged_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

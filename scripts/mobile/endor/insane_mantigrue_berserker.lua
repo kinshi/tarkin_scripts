@@ -1,7 +1,6 @@
 insane_mantigrue_berserker = Creature:new {
 	objectName = "@mob/creature_names:mantigrue_insane_berserker",
 	socialGroup = "mantigrue",
-	pvpFaction = "",
 	faction = "",
 	level = 50,
 	chanceHit = 0.43,
@@ -33,7 +32,8 @@ insane_mantigrue_berserker = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"}
+		{"blindattack",""},
+		{"stunattack",""}
 	}
 }
 

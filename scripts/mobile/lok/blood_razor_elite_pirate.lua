@@ -1,7 +1,6 @@
 blood_razor_elite_pirate = Creature:new {
 	objectName = "@mob/creature_names:blood_razor_pirate_elite",
 	socialGroup = "bloodrazor",
-	pvpFaction = "bloodrazor",
 	faction = "bloodrazor",
 	level = 33,
 	chanceHit = 0.39,
@@ -51,6 +50,7 @@ blood_razor_elite_pirate = Creature:new {
 	},
 	weapons = {"blood_razer_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(pistoleermaster,pikemanmaster,tkamaster,brawlermaster,marksmanmaster)
 }
 

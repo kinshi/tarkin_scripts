@@ -1,7 +1,6 @@
 hilltop_kima = Creature:new {
 	objectName = "@mob/creature_names:hilltop_kima",
 	socialGroup = "kima",
-	pvpFaction = "",
 	faction = "",
 	level = 22,
 	chanceHit = 0.34,
@@ -33,7 +32,7 @@ hilltop_kima = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"}
+		{"dizzyattack",""}
 	}
 }
 

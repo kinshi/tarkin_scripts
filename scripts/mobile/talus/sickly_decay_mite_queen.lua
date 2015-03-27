@@ -1,7 +1,6 @@
 sickly_decay_mite_queen = Creature:new {
 	objectName = "@mob/creature_names:sickly_decay_mite_queen",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 20,
 	chanceHit = 0.33,
@@ -32,7 +31,7 @@ sickly_decay_mite_queen = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
+		{"blindattack",""},
 		{"mediumdisease",""}
 	}
 }

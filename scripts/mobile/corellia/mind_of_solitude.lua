@@ -1,7 +1,6 @@
 mind_of_solitude = Creature:new {
 	objectName = "@mob/creature_names:mind_of_solitude",
 	socialGroup = "solitude",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 21,
 	chanceHit = 0.34,
@@ -28,6 +27,7 @@ mind_of_solitude = Creature:new {
 	templates = {"object/mobile/human_male.iff"},
 	lootGroups = {},
 	weapons = {"rebel_weapons_heavy"},
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

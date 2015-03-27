@@ -1,7 +1,6 @@
 senior_specforce_pathfinder = Creature:new {
 	objectName = "@mob/creature_names:senior_specforce_pathfinder",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 20,
 	chanceHit = 0.33,
@@ -48,6 +47,8 @@ senior_specforce_pathfinder = Creature:new {
 		}
 	},
 	weapons = {"imperial_weapons_medium"},
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

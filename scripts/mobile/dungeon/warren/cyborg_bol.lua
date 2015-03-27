@@ -1,7 +1,6 @@
 cyborg_bol = Creature:new {
 	objectName = "@mob/creature_names:warren_cyborg_bol",
 	socialGroup = "warren_cyborg",
-	pvpFaction = "",
 	faction = "",
 	level = 36,
 	chanceHit = 0.42,
@@ -31,8 +30,8 @@ cyborg_bol = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"intimidationattack",""}
 	}
 }
 

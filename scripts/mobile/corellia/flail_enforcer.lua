@@ -2,7 +2,6 @@ flail_enforcer = Creature:new {
 	objectName = "",
 	customName = "a Flail enforcer",
 	socialGroup = "flail",
-	pvpFaction = "flail",
 	faction = "flail",
 	level = 19,
 	chanceHit = 0.33,
@@ -51,6 +50,7 @@ flail_enforcer = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

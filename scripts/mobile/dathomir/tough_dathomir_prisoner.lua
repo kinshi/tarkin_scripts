@@ -1,7 +1,6 @@
 tough_dathomir_prisoner = Creature:new {
 	objectName = "@mob/creature_names:prisoner",
 	socialGroup = "prisoner",
-	pvpFaction = "",
 	faction = "",
 	level = 27,
 	chanceHit = 0.27,
@@ -35,6 +34,7 @@ tough_dathomir_prisoner = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = brawlermaster
 }
 

@@ -2,7 +2,6 @@ veteran_explorer = Creature:new {
 	objectName = "",
 	customName = "a Veteran Explorer",
 	socialGroup = "wilder",
-	pvpFaction = "",
 	faction = "",
 	level = 8,
 	chanceHit = 0.27,
@@ -41,6 +40,7 @@ veteran_explorer = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

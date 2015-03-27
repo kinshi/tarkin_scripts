@@ -1,7 +1,6 @@
 plague_victim = Creature:new {
 	objectName = "@mob/creature_names:plague_victim",
 	socialGroup = "townsperson",
-	pvpFaction = "townsperson",
 	faction = "townsperson",
 	level = 6,
 	chanceHit = 0.25,
@@ -38,6 +37,7 @@ plague_victim = Creature:new {
 		}
 	},
 	weapons = {"rebel_weapons_light"},
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

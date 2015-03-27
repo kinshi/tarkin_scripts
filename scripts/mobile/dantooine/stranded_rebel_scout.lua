@@ -1,7 +1,6 @@
 stranded_rebel_scout = Creature:new {
 	objectName = "@mob/creature_names:stranded_rebel_scout",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 22,
 	chanceHit = 3.03,
@@ -30,6 +29,7 @@ stranded_rebel_scout = Creature:new {
 	lootGroups = {},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

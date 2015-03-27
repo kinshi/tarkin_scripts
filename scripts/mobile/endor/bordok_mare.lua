@@ -1,7 +1,6 @@
 bordok_mare = Creature:new {
 	objectName = "@mob/creature_names:bordok_mare",
 	socialGroup = "bordok",
-	pvpFaction = "",
 	faction = "",
 	level = 34,
 	chanceHit = 0.41,
@@ -32,8 +31,8 @@ bordok_mare = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareaknockdown","knockdownChance=30"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"creatureareaknockdown",""}
 	}
 }
 

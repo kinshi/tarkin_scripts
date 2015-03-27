@@ -1,7 +1,6 @@
 chunker_swindler = Creature:new {
 	objectName = "@mob/creature_names:chunker_swindler",
 	socialGroup = "chunker",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 8,
 	chanceHit = 0.27,
@@ -42,6 +41,7 @@ chunker_swindler = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_light"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

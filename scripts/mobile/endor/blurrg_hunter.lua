@@ -1,7 +1,6 @@
 blurrg_hunter = Creature:new {
 	objectName = "@mob/creature_names:blurrg_hunter",
 	socialGroup = "blurrg",
-	pvpFaction = "",
 	faction = "",
 	level = 20,
 	chanceHit = 0.32,
@@ -32,8 +31,8 @@ blurrg_hunter = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"knockdownattack","knockdownChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"knockdownattack",""}
 	}
 }
 

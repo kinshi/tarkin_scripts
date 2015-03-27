@@ -1,7 +1,6 @@
 fierce_piket_protector = Creature:new {
 	objectName = "@mob/creature_names:fierce_piket_protector",
 	socialGroup = "piket",
-	pvpFaction = "",
 	faction = "",
 	level = 45,
 	chanceHit = 0.45,
@@ -32,8 +31,8 @@ fierce_piket_protector = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"dizzyattack","dizzyChance=50"}
+		{"dizzyattack",""},
+		{"blindattack",""}
 	}
 }
 

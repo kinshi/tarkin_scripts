@@ -1,7 +1,6 @@
 purbole_hunter = Creature:new {
 	objectName = "@mob/creature_names:purbole_hunter",
 	socialGroup = "purbole",
-	pvpFaction = "",
 	faction = "",
 	level = 21,
 	chanceHit = 0.32,
@@ -33,8 +32,8 @@ purbole_hunter = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"intimidationattack",""}
 	}
 }
 

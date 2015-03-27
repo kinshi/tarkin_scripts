@@ -1,7 +1,6 @@
 imperial_warrant_officer_ii = Creature:new {
 	objectName = "@mob/creature_names:imperial_warrant_officer_ii",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 18,
 	chanceHit = 0.32,
@@ -52,6 +51,7 @@ imperial_warrant_officer_ii = Creature:new {
 	},
 	weapons = {"imperial_weapons_medium"},
 	conversationTemplate = "imperialRecruiterConvoTemplate",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

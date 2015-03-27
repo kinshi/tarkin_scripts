@@ -1,7 +1,6 @@
 imprisoned_rebel_soldier = Creature:new {
 	objectName = "@mob/creature_names:imprisoned_rebel",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 12,
 	chanceHit = 0.29,
@@ -45,6 +44,8 @@ imprisoned_rebel_soldier = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(brawlermid,marksmanmid)
 }
 

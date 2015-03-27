@@ -1,7 +1,6 @@
 bandit_tutorial_1 = Creature:new {
 	objectName = "@mob/creature_names:bandit",
 	socialGroup = "imperial",
-	pvpFaction = "",
 	faction = "",--dont change this
 	level = 1,
 	chanceHit = 0.390000,
@@ -30,6 +29,7 @@ bandit_tutorial_1 = Creature:new {
 	weapons = {"tutorial_bandit"},--dont change this
 	attacks = {{"defaultattack", ""}},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	optionsBitmask = 0
 }
 

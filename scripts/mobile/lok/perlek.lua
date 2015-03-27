@@ -1,7 +1,6 @@
 perlek = Creature:new {
 	objectName = "@mob/creature_names:perlek",
 	socialGroup = "perlek",
-	pvpFaction = "",
 	faction = "",
 	level = 14,
 	chanceHit = 0.3,
@@ -32,7 +31,7 @@ perlek = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

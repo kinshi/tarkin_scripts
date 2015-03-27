@@ -1,7 +1,6 @@
 spiderclan_protector = Creature:new {
 	objectName = "@mob/creature_names:spider_nightsister_protector",
 	socialGroup = "spider_nightsister",
-	pvpFaction = "spider_nightsister",
 	faction = "spider_nightsister",
 	level = 131,
 	chanceHit = 4.75,
@@ -39,7 +38,7 @@ spiderclan_protector = Creature:new {
 				{group = "pistols", chance = 1000000},
 				{group = "rifles", chance = 1000000},
 				{group = "carbines", chance = 1000000},
-				{group = "deed_voucher", chance = 500000}
+				{group = "wearables_all", chance = 500000}
 			},
 			lootChance = 3600000
 		}			

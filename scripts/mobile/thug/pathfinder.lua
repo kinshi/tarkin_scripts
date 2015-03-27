@@ -2,7 +2,6 @@ pathfinder = Creature:new {
 	objectName = "",
 	costumName = "Pathfinder",
 	socialGroup = "wilder",
-	pvpFaction = "",
 	faction = "",
 	level = 21,
 	chanceHit = 0.33,
@@ -46,6 +45,7 @@ pathfinder = Creature:new {
 	},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

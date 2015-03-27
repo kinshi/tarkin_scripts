@@ -1,7 +1,6 @@
 murra = Creature:new {
 	objectName = "@mob/creature_names:murra",
 	socialGroup = "murra",
-	pvpFaction = "",
 	faction = "",
 	level = 10,
 	chanceHit = 0.27,
@@ -32,7 +31,7 @@ murra = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""}
 	}
 }
 

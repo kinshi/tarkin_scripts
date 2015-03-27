@@ -1,7 +1,6 @@
 brigand = Creature:new {
 	objectName = "@mob/creature_names:brigand",
 	socialGroup = "brigand",
-	pvpFaction = "",
 	faction = "",
 	level = 4,
 	chanceHit = 0.24,
@@ -40,6 +39,7 @@ brigand = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 	--outfit = "testoutfit"
 }

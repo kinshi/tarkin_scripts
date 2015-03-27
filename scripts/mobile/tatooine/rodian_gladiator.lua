@@ -1,7 +1,6 @@
 rodian_gladiator = Creature:new {
 	objectName = "@mob/creature_names:rodian_gladiator",
 	socialGroup = "rodian",
-	pvpFaction = "",
 	faction = "",
 	level = 6,
 	chanceHit = 0.25,
@@ -41,6 +40,7 @@ rodian_gladiator = Creature:new {
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

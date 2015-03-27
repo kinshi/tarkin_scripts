@@ -1,7 +1,6 @@
 brigand_assassin = Creature:new {
 	objectName = "@mob/creature_names:assassin",
 	socialGroup = "brigand",
-	pvpFaction = "",
 	faction = "",
 	level = 17,
 	chanceHit = 0.32,
@@ -32,7 +31,7 @@ brigand_assassin = Creature:new {
 		"object/mobile/dressed_criminal_thug_human_female_01.iff",
 		"object/mobile/dressed_criminal_thug_human_female_02.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 4000000},
 				{group = "wearables_common", chance = 2000000},
@@ -40,10 +39,11 @@ brigand_assassin = Creature:new {
 				{group = "loot_kit_parts", chance = 2000000}
 			},
 			lootChance = 2400000
-		}						
+		}
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmanmaster,brawlermaster)
 }
 

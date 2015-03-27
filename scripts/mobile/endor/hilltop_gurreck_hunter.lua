@@ -1,7 +1,6 @@
 hilltop_gurreck_hunter = Creature:new {
 	objectName = "@mob/creature_names:hilltop_gurreck_hunter",
 	socialGroup = "gurreck",
-	pvpFaction = "",
 	faction = "",
 	level = 41,
 	chanceHit = 0.42,
@@ -33,8 +32,8 @@ hilltop_gurreck_hunter = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"posturedownattack",""}
 	}
 }
 

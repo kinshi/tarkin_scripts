@@ -1,7 +1,6 @@
 poacher = Creature:new {
 	objectName = "@mob/creature_names:poacher_talus",
 	socialGroup = "poacher",
-	pvpFaction = "",
 	faction = "",
 	level = 17,
 	chanceHit = 0.32,
@@ -48,6 +47,7 @@ poacher = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 bol = Creature:new {
 	objectName = "@mob/creature_names:bol",
 	socialGroup = "bol",
-	pvpFaction = "",
 	faction = "",
 	level = 29,
 	chanceHit = 0.39,
@@ -31,8 +30,8 @@ bol = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"intimidationattack",""}
 	}
 }
 

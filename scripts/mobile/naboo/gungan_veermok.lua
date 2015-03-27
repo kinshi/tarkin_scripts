@@ -1,7 +1,6 @@
 gungan_veermok = Creature:new {
 	objectName = "@mob/creature_names:gungan_veermok",
 	socialGroup = "gungan",
-	pvpFaction = "",
 	faction = "gungan",
 	level = 22,
 	chanceHit = 0.35,
@@ -31,7 +30,7 @@ gungan_veermok = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""}
 	}
 }
 

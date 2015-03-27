@@ -1,7 +1,6 @@
 nightspider = Creature:new {
 	objectName = "@mob/creature_names:nightspider",
 	socialGroup = "spider",
-	pvpFaction = "",
 	faction = "",
 	level = 7,
 	chanceHit = 0.26,
@@ -32,7 +31,7 @@ nightspider = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"},
+		{"posturedownattack",""},
 		{"mildpoison",""}
 	}
 }

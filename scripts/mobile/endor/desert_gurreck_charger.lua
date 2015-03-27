@@ -1,7 +1,6 @@
 desert_gurreck_charger = Creature:new {
 	objectName = "@mob/creature_names:desert_gurreck_charger",
 	socialGroup = "gurreck",
-	pvpFaction = "",
 	faction = "",
 	level = 22,
 	chanceHit = 0.33,
@@ -33,7 +32,8 @@ desert_gurreck_charger = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"}
+		{"",""},
+		{"blindattack",""}
 	}
 }
 

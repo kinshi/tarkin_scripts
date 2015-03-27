@@ -1,7 +1,6 @@
 noxious_vrelt_scavenger = Creature:new {
 	objectName = "@mob/creature_names:noxious_vrelt_scavenger",
 	socialGroup = "vrelt",
-	pvpFaction = "",
 	faction = "",
 	level = 10,
 	chanceHit = 0.28,
@@ -33,8 +32,8 @@ noxious_vrelt_scavenger = Creature:new {
 	weapons = {"creature_spit_small_toxicgreen"},
 	conversationTemplate = "",
 	attacks = {
-		{"milddisease",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"milddisease",""}
 	}
 }
 

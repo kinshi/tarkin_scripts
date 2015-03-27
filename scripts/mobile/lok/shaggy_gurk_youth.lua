@@ -1,7 +1,6 @@
 shaggy_gurk_youth = Creature:new {
 	objectName = "@mob/creature_names:shaggy_gurk_youth",
 	socialGroup = "gurk",
-	pvpFaction = "",
 	faction = "",
 	level = 30,
 	chanceHit = 0.39,
@@ -32,7 +31,8 @@ shaggy_gurk_youth = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

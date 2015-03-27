@@ -1,7 +1,6 @@
 blurrg = Creature:new {
 	objectName = "@mob/creature_names:blurrg",
 	socialGroup = "blurrg",
-	pvpFaction = "",
 	faction = "",
 	level = 50,
 	chanceHit = 0.5,
@@ -33,8 +32,8 @@ blurrg = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"blindattack",""}
 	}
 }
 

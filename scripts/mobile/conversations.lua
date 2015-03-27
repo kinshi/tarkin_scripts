@@ -39,6 +39,13 @@ includeFile("conversations/events/life_day/life_day_oraalarri_conv.lua")
 includeFile("conversations/events/life_day/life_day_radrrl_conv.lua")
 includeFile("conversations/events/life_day/life_day_tebeurra_conv.lua")
 
+-- Hero of Tat
+includeFile("conversations/tasks/hero_of_tatooine/hermit_conv.lua")
+includeFile("conversations/tasks/hero_of_tatooine/hero_of_tat_bounty_hunter_conv.lua")
+includeFile("conversations/tasks/hero_of_tatooine/hero_of_tat_farmer_conv.lua")
+includeFile("conversations/tasks/hero_of_tatooine/hero_of_tat_intellect_liar_conv.lua")
+includeFile("conversations/tasks/hero_of_tatooine/hero_of_tat_mother_conv.lua")
+
 -- Events
 includeFile("conversations/events/event_promoter_conv.lua")
 
@@ -59,14 +66,14 @@ includeFile("conversations/dungeon/corellian_corvette/lt_lance_conv.lua")
 
 -- Death Watch Bunker
 includeFile("conversations/dungeon/death_watch_bunker/boba_fett_conv.lua")
-includeFile("conversations/dungeon/death_watch_bunker/lutin_nightstalker_conv.lua")
 includeFile("conversations/dungeon/death_watch_bunker/commander_dkrn_conv.lua")
 includeFile("conversations/dungeon/death_watch_bunker/death_watch_rescue_scientist_conv.lua")
-includeFile("conversations/dungeon/death_watch_bunker/medical_droid_conv.lua")
-includeFile("conversations/dungeon/death_watch_bunker/workshop_droid_conv.lua")
 includeFile("conversations/dungeon/death_watch_bunker/foreman_conv.lua")
 includeFile("conversations/dungeon/death_watch_bunker/haldo_conv.lua")
+includeFile("conversations/dungeon/death_watch_bunker/lutin_nightstalker_conv.lua")
 includeFile("conversations/dungeon/death_watch_bunker/mand_bunker_technician_conv.lua")
+includeFile("conversations/dungeon/death_watch_bunker/medical_droid_conv.lua")
+includeFile("conversations/dungeon/death_watch_bunker/workshop_droid_conv.lua")
 
 -- Warren
 includeFile("conversations/dungeon/warren/oevitt_piboi_conv.lua")
@@ -101,7 +108,6 @@ includeFile("conversations/recruiter/rebel_recruiter_conv.lua")
 includeFile("conversations/recruiter/imperial_recruiter_conv.lua")
 
 -- Tasks
-includeFile("conversations/tasks/hero_of_tatooine/hermit_conv.lua")
 includeFile("conversations/tasks/mozo_bondog_conv.lua")
 includeFile("conversations/tasks/dolac_legasi_conv.lua")
 includeFile("conversations/tasks/dolac_legasi_escaped_prisoner_conv.lua")
@@ -111,7 +117,6 @@ includeFile("conversations/tasks/serene_floater_conv.lua")
 includeFile("conversations/tasks/ris_armor_quest_conv.lua")
 includeFile("conversations/tasks/librarian_conv.lua")
 includeFile("conversations/tasks/theater_manager_conv.lua")
-includeFile("conversations/tasks/painting_template.lua")
 
 -- Village
 includeFile("conversations/village/old_man_conv.lua")
@@ -135,6 +140,8 @@ includeFile("conversations/record_keepers/record_keeper_imperial_conv.lua")
 includeFile("conversations/record_keepers/record_keeper_jabba_conv.lua")
 includeFile("conversations/record_keepers/record_keeper_rebel_conv.lua")
 
+-- Personality Conversations
+includeFile("conversations/pet/pets_conv.lua")
 
 -- Tarkin Events
 

@@ -1,7 +1,6 @@
 fambaa = Creature:new {
 	objectName = "@mob/creature_names:fambaa",
 	socialGroup = "fambaa",
-	pvpFaction = "",
 	faction = "",
 	level = 34,
 	chanceHit = 0.41,
@@ -40,8 +39,8 @@ fambaa = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"dizzyattack",""},
+		{"posturedownattack",""}
 	}
 }
 

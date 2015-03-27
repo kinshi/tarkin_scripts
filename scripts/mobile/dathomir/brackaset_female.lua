@@ -1,7 +1,6 @@
 brackaset_female = Creature:new {
 	objectName = "@mob/creature_names:brackaset_female",
 	socialGroup = "brackaset",
-	pvpFaction = "",
 	faction = "",
 	level = 29,
 	chanceHit = 0.37,
@@ -41,7 +40,7 @@ brackaset_female = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

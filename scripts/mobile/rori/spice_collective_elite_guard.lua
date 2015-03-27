@@ -1,7 +1,6 @@
 spice_collective_elite_guard = Creature:new {
 	objectName = "@mob/creature_names:spice_collective_eliteguard",
 	socialGroup = "spice_collective",
-	pvpFaction = "spice_collective",
 	faction = "spice_collective",
 	level = 25,
 	chanceHit = 0.35,
@@ -43,6 +42,7 @@ spice_collective_elite_guard = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

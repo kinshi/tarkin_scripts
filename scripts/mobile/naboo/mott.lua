@@ -1,7 +1,6 @@
 mott = Creature:new {
 	objectName = "@mob/creature_names:mott",
 	socialGroup = "mott",
-	pvpFaction = "",
 	faction = "",
 	level = 8,
 	chanceHit = 0.27,
@@ -32,7 +31,7 @@ mott = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""}
 	}
 }
 

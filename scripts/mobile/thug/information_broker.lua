@@ -1,7 +1,6 @@
 information_broker = Creature:new {
 	objectName = "@mob/creature_names:bothan_information_broker",
 	socialGroup = "mercenary",
-	pvpFaction = "",
 	faction = "",
 	level = 5,
 	chanceHit = 0.25,
@@ -41,6 +40,7 @@ information_broker = Creature:new {
 	},
 	weapons = {"rebel_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

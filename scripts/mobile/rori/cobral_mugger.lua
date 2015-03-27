@@ -2,7 +2,6 @@ cobral_mugger = Creature:new {
 	objectName = "",
 	customName = "a Neo-Cobral Mugger",
 	socialGroup = "cobral",
-	pvpFaction = "cobral",
 	faction = "cobral",
 	level = 9,
 	chanceHit = 0.27,
@@ -44,6 +43,7 @@ cobral_mugger = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 
