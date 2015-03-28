@@ -16,8 +16,8 @@ function Yavin4ImperialBaseScreenPlay:spawnSceneObjects()
 
 	local pCollector = spawnSceneObject("yavin4", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4042.3, 37.0, -6222.0, 0, 0, 0, 1, 0)
 	local collector = LuaSceneObject(pCollector)
-	local col2creo = LuaCreatureObject(pCollector)
-	col2creo:setOptionsBitmask(264)
+--	local col2creo = LuaCreatureObject(pCollector)
+--	col2creo:setOptionsBitmask(264)
 	collector:setCustomObjectName("\\#ee3377Travel to Imperial Stronghold - Corellia")
 	createObserver(OBJECTRADIALUSED, "StrongholdScreenPlay", "teleportImpStronghold", pCollector)
 	

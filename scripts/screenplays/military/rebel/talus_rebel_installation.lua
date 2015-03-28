@@ -19,8 +19,8 @@ function TalusRebelInstallation:spawnSceneObjects()
 
 	local pCollector = spawnSceneObject("talus", "object/tangible/furniture/imperial/data_terminal_s1.iff", 2388, 125, -4994, 0, 0, 0, 0, 0)
 	local collector = LuaSceneObject(pCollector)
-	local col2creo = LuaCreatureObject(pCollector)
-	col2creo:setOptionsBitmask(264)
+--	local col2creo = LuaCreatureObject(pCollector)
+--	col2creo:setOptionsBitmask(264)
 	collector:setCustomObjectName("\\#ee3377Travel to Rebel Hideout - Corellia")
 	createObserver(OBJECTRADIALUSED, "TalusRebelInstallation", "teleportHideout", pCollector)
 

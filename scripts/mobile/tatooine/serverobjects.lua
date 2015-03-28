@@ -316,3 +316,13 @@ includeFile("tatooine/wuher.lua")
 includeFile("tatooine/young_mos_taike_guard.lua")
 includeFile("tatooine/young_mountain_squill.lua")
 includeFile("tatooine/zucca_boar.lua")
+
+--Tarkin Specific
+includeFile("tatooine/jawa_engineer_poi.lua")
+includeFile("tatooine/jawa_poi.lua")
+includeFile("tatooine/jawa_protector_poi.lua")
+includeFile("tatooine/jawa_leader_poi.lua")
+includeFile("tatooine/jawa_thief_poi.lua")
+includeFile("tatooine/jawa_healer_poi.lua")
+includeFile("tatooine/jawa_warlord_poi.lua")
+includeFile("tatooine/mando_bounty_hunter.lua")		-- includeFile for non agressive Bounty Hunters in Mos Entha Scum & Villany Screenplay
