@@ -17,8 +17,8 @@ function LokRebelSafehouseScreenPlay:spawnSceneObjects()
 
 	local pCollector = spawnSceneObject("lok", "object/tangible/furniture/imperial/data_terminal_s1.iff", -4761, 4.0, 3516, 0, 0, 0, 1, 0)
 	local collector = LuaSceneObject(pCollector)
-	local col2creo = LuaCreatureObject(pCollector)
-	col2creo:setOptionsBitmask(264)
+--	local col2creo = LuaCreatureObject(pCollector)
+--	col2creo:setOptionsBitmask(264)
 	collector:setCustomObjectName("\\#ee3377Travel to Anchorhead - Tatooine")
 	createObserver(OBJECTRADIALUSED, "LokRebelSafehouseScreenPlay", "teleportAH", pCollector)
 	

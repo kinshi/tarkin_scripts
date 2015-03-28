@@ -1,8 +1,7 @@
 sentry_specforce_bombardier = Creature:new {
 	objectName = "",
-	customName = "SPecforce Sentry Bombardier",
+	customName = "Specforce Sentry Bombardier",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 97,
 	chanceHit = 0.95,

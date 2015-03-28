@@ -2,7 +2,6 @@ sentry_specforce_squad_leader = Creature:new {
 	objectName = "",
 	customName = "Specforce Sentry Squad Leader",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 122,
 	chanceHit = 40,

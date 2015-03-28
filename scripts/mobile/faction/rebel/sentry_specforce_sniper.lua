@@ -2,7 +2,6 @@ sentry_specforce_sniper = Creature:new {
 	objectName = "",
 	customName = "Specforce Sentry Sniper",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 97,
 	chanceHit = 0.95,

@@ -20,8 +20,8 @@ function RoriRebelMilitaryBaseScreenPlay:spawnSceneObjects()
 
 	local pCollector = spawnSceneObject("rori", "object/tangible/furniture/imperial/data_terminal_s1.iff", -5311, 76, 5004, 0, 1, 0, 0, 0)
 	local collector = LuaSceneObject(pCollector)
-	local col2creo = LuaCreatureObject(pCollector)
-	col2creo:setOptionsBitmask(264)
+--	local col2creo = LuaCreatureObject(pCollector)
+--	col2creo:setOptionsBitmask(264)
 	collector:setCustomObjectName("\\#ee3377Travel to Rebel Outpost (Rori)")
 	createObserver(OBJECTRADIALUSED, "RoriRebelMilitaryBaseScreenPlay", "teleportRebelOutpost", pCollector)
 			
