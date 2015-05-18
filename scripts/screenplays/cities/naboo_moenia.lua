@@ -19,16 +19,16 @@ function MoeniaScreenPlay:spawnSceneObjects()
 
 	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4717, 4, -4654, 0, 0, 0, 1, 0)
 	local collector = LuaSceneObject(pCollector)
-	local col2creo = LuaCreatureObject(pCollector)
-	col2creo:setOptionsBitmask(264)
+--	local col2creo = LuaCreatureObject(pCollector)
+--	col2creo:setOptionsBitmask(264)
 	collector:setCustomObjectName("\\#ee3377Travel to Rebel Outpost - Rori")
 	createObserver(OBJECTRADIALUSED, "MoeniaScreenPlay", "teleportRebelOutpost", pCollector)
 	
 	local pCollector2 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4720, 4, -4654, 0, 0, 0, 1, 0)
-	local collector = LuaSceneObject(pCollector2)
-	local col2creo = LuaCreatureObject(pCollector2)
-	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Rebel Hideout - Corellia")
+	local collector2 = LuaSceneObject(pCollector2)
+--	local col2creo = LuaCreatureObject(pCollector2)
+--	col2creo:setOptionsBitmask(264)
+	collector2:setCustomObjectName("\\#ee3377Travel to Rebel Hideout - Corellia")
 	createObserver(OBJECTRADIALUSED, "MoeniaScreenPlay", "teleportHideout", pCollector2)
 
 --Moenia SP
@@ -150,6 +150,7 @@ function MoeniaScreenPlay:teleportRebelOutpost(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function MoeniaScreenPlay:teleportHideout(pCollector, pPlayer)
@@ -161,5 +162,6 @@ function MoeniaScreenPlay:teleportHideout(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
