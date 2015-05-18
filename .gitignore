@@ -1,3 +1,5 @@
+/scripts/managers/planet_manager_live.lua
+/scripts/object/tangible/terminal/terminal_character_builder_live.lua
 core3
 core3client
 **/conf/
