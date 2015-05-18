@@ -8,14 +8,14 @@ includeFile("quest/theater_manager.lua")
 includeFile("quest/painting_artist.lua")
 
 --Hero of Tatooine
-includeFile("quest/tatooine/hero_of_tat/hero_of_tat_bh.lua")
-includeFile("quest/tatooine/hero_of_tat/hero_of_tat_farmer.lua")
-includeFile("quest/tatooine/hero_of_tat/hero_of_tat_farmers_child.lua")
-includeFile("quest/tatooine/hero_of_tat/hero_of_tat_farmers_wife.lua")
-includeFile("quest/tatooine/hero_of_tat/hero_of_tat_hermit.lua")
-includeFile("quest/tatooine/hero_of_tat/hero_of_tat_smuggler.lua")
-includeFile("quest/tatooine/hero_of_tat/hero_of_tat_smuggler_captain.lua")
-includeFile("quest/tatooine/hero_of_tat/wild_bladeback_boar.lua")
+--includeFile("quest/tatooine/hero_of_tat/hero_of_tat_bh.lua")
+--includeFile("quest/tatooine/hero_of_tat/hero_of_tat_farmer.lua")
+--includeFile("quest/tatooine/hero_of_tat/hero_of_tat_farmers_child.lua")
+--includeFile("quest/tatooine/hero_of_tat/hero_of_tat_farmers_wife.lua")
+--includeFile("quest/tatooine/hero_of_tat/hero_of_tat_hermit.lua")
+--includeFile("quest/tatooine/hero_of_tat/hero_of_tat_smuggler.lua")
+--includeFile("quest/tatooine/hero_of_tat/hero_of_tat_smuggler_captain.lua")
+--includeFile("quest/tatooine/hero_of_tat/wild_bladeback_boar.lua")
 
 --Generic
 includeFile("quest/generic/businessman_target_thief_award.lua")
