@@ -324,8 +324,8 @@ includeFile("treasure_map/EncodedDiskMenuComponent.lua")
 includeFile("treasure_map/TreasureMapMenuComponent.lua")
 
 --Tests
-includeFile("tests/options_bitmask_test.lua")
-includeFile("event/stresstest_20120128.lua")
+--includeFile("tests/options_bitmask_test.lua")
+--includeFile("event/stresstest_20120128.lua")
 
 --City Updates
 includeFile("cities/tatooine_mos_eisley_hive_scum_villany.lua")
