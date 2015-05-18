@@ -35,8 +35,8 @@ function JawaTradersScreenPlay:spawnMobiles()
 	-- Canopy
 	spawnMobile("tatooine", "jawa_poi", 600, -6126.570, 6.175, 1850.980, -138.479, 0)
 	spawnMobile("tatooine", "jawa_poi", 600, -6125.800, 6.128, 1848.700, 56.274, 0)
-	spawnMobile("tatooine", "farmers_wife", 600, -6128.260, 6.102, 1845.650, 44.951, 0)
-	spawnMobile("tatooine", "farmers_child", 600, -6130.250, 6.148, 1848.000, 146.645, 0)
+--	spawnMobile("tatooine", "farmers_wife", 600, -6128.260, 6.102, 1845.650, 44.951, 0)
+--	spawnMobile("tatooine", "farmers_child", 600, -6130.250, 6.148, 1848.000, 146.645, 0)
 	
 	-- Tent
 	spawnMobile("tatooine", "jawa_poi", 600, -6108.430, 6.119, 1854.190, -168.669, 0)
