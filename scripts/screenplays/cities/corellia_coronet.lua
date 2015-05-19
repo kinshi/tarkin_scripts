@@ -438,24 +438,29 @@ end
 function CorelliaCoronetScreenPlay:teleportDWB(pCollector, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("endor", -4706, 0, 4334, 0)
+	return 0
 end
 
 function CorelliaCoronetScreenPlay:teleportGeo(pCollector, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("yavin4", -6513, 0, -426, 0)
+	return 0
 end
 
 function CorelliaCoronetScreenPlay:teleportNyax(pCollector, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("corellia", 1282, 0, -302, 0)
+	return 0
 end
 
 function CorelliaCoronetScreenPlay:teleportTusken(pCollector, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("tatooine", -4017, 0, 6322, -90)
+	return 0
 end
 
 function CorelliaCoronetScreenPlay:teleportJanta(pCollector, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("dantooine", 7035, 0, -4078, -90)
+	return 0
 end

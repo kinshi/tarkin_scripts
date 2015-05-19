@@ -56,4 +56,5 @@ end
 --function cnet_auxilary_shuttle:teleportTyrena(pCollector, pPlayer)
 --	local player = LuaSceneObject(pPlayer)
 --	player:switchZone("corellia", -5003.0649, 0, -2228.3665, 0)
+--	return 0
 --end

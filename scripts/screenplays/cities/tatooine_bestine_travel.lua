@@ -53,14 +53,17 @@ end
 function BestineScreenPlay:teleportTheed(pCollector, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("naboo", -4858, 0, 4164, 0)
+	return 0
 end
 
 function BestineScreenPlay:teleportCoronet(pCollector2, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("corellia", -66, 0, -4711, 0)
+	return 0
 end
 
 function BestineScreenPlay:teleportNyms(pCollector3, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("lok", 478, 0, 5511, 0)
+	return 0
 end

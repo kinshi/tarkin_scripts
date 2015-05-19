@@ -141,6 +141,7 @@ function ImperialDetachmentHQScreenPlay:teleportImpOasis(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function ImperialDetachmentHQScreenPlay:teleportStronghold(pCollector, pPlayer)
@@ -152,6 +153,7 @@ function ImperialDetachmentHQScreenPlay:teleportStronghold(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function ImperialDetachmentHQScreenPlay:teleportImpRetreat(pCollector, pPlayer)
@@ -163,4 +165,5 @@ function ImperialDetachmentHQScreenPlay:teleportImpRetreat(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
