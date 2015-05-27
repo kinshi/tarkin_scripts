@@ -168,6 +168,7 @@ function RoriImperialEncampmentScreenPlay:teleportImpOutpost(pCollector, pPlayer
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function RoriImperialEncampmentScreenPlay:teleportImpRetreat(pCollector, pPlayer)
@@ -179,4 +180,5 @@ function RoriImperialEncampmentScreenPlay:teleportImpRetreat(pCollector, pPlayer
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end

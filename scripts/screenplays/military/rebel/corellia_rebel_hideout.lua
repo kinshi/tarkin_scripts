@@ -401,6 +401,7 @@ function RebelHideoutScreenPlay:teleportAH(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function RebelHideoutScreenPlay:teleportMoenia(pCollector, pPlayer)
@@ -412,6 +413,7 @@ function RebelHideoutScreenPlay:teleportMoenia(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function RebelHideoutScreenPlay:teleportTalus(pCollector, pPlayer)
@@ -423,4 +425,5 @@ function RebelHideoutScreenPlay:teleportTalus(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end

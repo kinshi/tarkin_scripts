@@ -416,4 +416,5 @@ function setTurretFaction(pTurret)
 		turret:setFaction(FACTIONIMPERIAL)
 		turret:setPvpStatusBitmask(1)
 	end
+	return 0
 end

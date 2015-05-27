@@ -101,4 +101,5 @@ function DantooineImperialOutpostScreenPlay:teleportImpStronghold(pCollector, pP
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end

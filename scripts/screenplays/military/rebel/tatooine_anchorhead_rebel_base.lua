@@ -126,6 +126,7 @@ function AnchorheadRebelBaseScreenPlay:teleportHideout(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function AnchorheadRebelBaseScreenPlay:teleportMoenia(pCollector, pPlayer)
@@ -137,6 +138,7 @@ function AnchorheadRebelBaseScreenPlay:teleportMoenia(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function AnchorheadRebelBaseScreenPlay:teleportSafehouse(pCollector, pPlayer)
@@ -148,4 +150,5 @@ function AnchorheadRebelBaseScreenPlay:teleportSafehouse(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
