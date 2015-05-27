@@ -32,13 +32,8 @@ armodragon = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-<<<<<<< HEAD
-		{"stunattack","stunChance=50"},
-		{"posturedownattack","postureDownChance=50"}
-=======
-		{"dizzyattack",""},
+		{"blindattack",""},
 		{"posturedownattack",""}
->>>>>>> unstable
 	}
 }
 
