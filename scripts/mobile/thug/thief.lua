@@ -1,7 +1,6 @@
 thief = Creature:new {
 	objectName = "@mob/creature_names:thief",
 	socialGroup = "thug",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 12,
 	chanceHit = 0.29,
@@ -42,6 +41,7 @@ thief = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_medium"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

@@ -1,7 +1,6 @@
 roaming_bordok_stud = Creature:new {
 	objectName = "@mob/creature_names:roaming_bordok_stud",
 	socialGroup = "bordok",
-	pvpFaction = "",
 	faction = "",
 	level = 34,
 	chanceHit = 0.41,
@@ -31,8 +30,8 @@ roaming_bordok_stud = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"dizzyattack",""}
 	}
 }
 

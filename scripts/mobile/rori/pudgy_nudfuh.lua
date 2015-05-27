@@ -1,7 +1,6 @@
 pudgy_nudfuh = Creature:new {
 	objectName = "@mob/creature_names:pudgy_nudfuh",
 	socialGroup = "nudfuh",
-	pvpFaction = "",
 	faction = "",
 	level = 9,
 	chanceHit = 0.27,
@@ -32,7 +31,7 @@ pudgy_nudfuh = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

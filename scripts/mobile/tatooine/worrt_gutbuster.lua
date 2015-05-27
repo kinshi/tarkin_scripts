@@ -1,7 +1,6 @@
 worrt_gutbuster = Creature:new {
 	objectName = "@mob/creature_names:worrt_gutbuster",
 	socialGroup = "worrt",
-	pvpFaction = "",
 	faction = "",
 	level = 16,
 	chanceHit = 0.33,
@@ -32,7 +31,7 @@ worrt_gutbuster = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

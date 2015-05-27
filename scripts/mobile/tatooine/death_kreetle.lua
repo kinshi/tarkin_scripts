@@ -1,7 +1,6 @@
 death_kreetle = Creature:new {
 	objectName = "@mob/creature_names:kreetle_death",
 	socialGroup = "kreetle",
-	pvpFaction = "",
 	faction = "",
 	level = 9,
 	chanceHit = 0.27,
@@ -32,7 +31,8 @@ death_kreetle = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

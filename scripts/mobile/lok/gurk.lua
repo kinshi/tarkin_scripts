@@ -1,7 +1,6 @@
 gurk = Creature:new {
 	objectName = "@mob/creature_names:gurk",
 	socialGroup = "gurk",
-	pvpFaction = "",
 	faction = "",
 	level = 30,
 	chanceHit = 0.39,
@@ -31,8 +30,8 @@ gurk = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"dizzyattack",""},
+		{"stunattack",""}
 	}
 }
 

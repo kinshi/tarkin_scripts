@@ -1,7 +1,6 @@
 mercenary_elite = Creature:new {
 	objectName = "@mob/creature_names:mercenary_elite",
 	socialGroup = "lok_mercenaries",
-	pvpFaction = "lok_mercenaries",
 	faction = "lok_mercenaries",
 	level = 40,
 	chanceHit = 0.43,
@@ -47,6 +46,7 @@ mercenary_elite = Creature:new {
 	},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(commandomaster,marksmanmaster,brawlermaster)
 }
 

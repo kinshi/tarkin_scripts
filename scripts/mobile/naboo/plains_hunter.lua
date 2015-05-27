@@ -1,7 +1,6 @@
 plains_hunter = Creature:new {
 	objectName = "@mob/creature_names:plains_hunter",
 	socialGroup = "tusk_cat",
-	pvpFaction = "",
 	faction = "",
 	level = 31,
 	chanceHit = 0.39,
@@ -32,8 +31,8 @@ plains_hunter = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"stunattack","stunChance=50"}
+		{"intimidationattack",""},
+		{"stunattack",""}
 	}
 }
 

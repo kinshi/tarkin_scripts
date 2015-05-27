@@ -1,7 +1,7 @@
 swamp_trooper = Creature:new {
 	objectName = "@mob/creature_names:swamp_trooper",
+	randomNameType = NAME_SWAMPTROOPER_TAG,
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 25,
 	chanceHit = 0.36,
@@ -46,6 +46,7 @@ swamp_trooper = Creature:new {
 	},
 	weapons = {"stormtrooper_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/stormtrooper",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 specops_trooper = Creature:new {
 	objectName = "@mob/creature_names:specops_trooper",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 17,
 	chanceHit = 0.32,
@@ -34,6 +33,8 @@ specops_trooper = Creature:new {
 	},
 	lootGroups = {},
 	weapons = {"imperial_weapons_medium"},
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

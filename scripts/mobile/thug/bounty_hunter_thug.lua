@@ -1,7 +1,6 @@
 bounty_hunter_thug = Creature:new {
 	objectName = "@mob/creature_names:bounty_hunter",
 	socialGroup = "mercenary",
-	pvpFaction = "",
 	faction = "",
 	level = 24,
 	chanceHit = 0.35,
@@ -32,7 +31,7 @@ bounty_hunter_thug = Creature:new {
 		{
 			groups = {
 				{group = "junk", chance = 1500000},
-				{group = "wearables_common", chance = 2000000},				
+				{group = "wearables_common", chance = 2000000},
 				{group = "grenades_looted", chance = 1000000},
 				{group = "armor_all", chance = 1500000},
 				{group = "rifles", chance = 1000000},
@@ -41,9 +40,10 @@ bounty_hunter_thug = Creature:new {
 				{group = "loot_kit_parts", chance = 1000000}
 			},
 			lootChance = 2300000
-		}				
+		}
 	},
 	weapons = {"pirate_weapons_heavy"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

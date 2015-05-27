@@ -1,7 +1,6 @@
 enraged_bull_rancor = Creature:new {
 	objectName = "@mob/creature_names:enraged_bull_rancor",
 	socialGroup = "rancor",
-	pvpFaction = "",
 	faction = "",
 	level = 89,
 	chanceHit = 0.85,
@@ -48,8 +47,8 @@ enraged_bull_rancor = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareaknockdown","knockdownChance=30"},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"creatureareaknockdown",""}
 	}
 }
 

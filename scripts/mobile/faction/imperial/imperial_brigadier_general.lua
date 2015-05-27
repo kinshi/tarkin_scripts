@@ -1,7 +1,6 @@
 imperial_brigadier_general = Creature:new {
 	objectName = "@mob/creature_names:imperial_brigadier_general",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 25,
 	chanceHit = 0.36,
@@ -46,6 +45,8 @@ imperial_brigadier_general = Creature:new {
 	},
 	weapons = {"imperial_weapons_heavy"},
 	conversationTemplate = "imperialRecruiterConvoTemplate",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",	
 	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 

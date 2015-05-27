@@ -1,7 +1,6 @@
 smashball_bully = Creature:new {
 	objectName = "@mob/creature_names:smashball_bully",
 	socialGroup = "smashball",
-	pvpFaction = "smashball",
 	faction = "smashball",
 	level = 7,
 	chanceHit = 0.260000,
@@ -37,16 +36,17 @@ smashball_bully = Creature:new {
 		"object/mobile/dressed_hooligan_rodian_female_01.iff",
 		"object/mobile/dressed_hooligan_rodian_male_01.iff"},
 	lootGroups = {
-      	{
+		{
 			groups = {
 				{group = "junk", chance = 6000000},
 				{group = "loot_kit_parts", chance = 2500000},
 				{group = "tailor_components", chance = 1500000}
 			},
 			lootChance = 3000000
-		}	
+		}
 	},
 	weapons = {"pirate_weapons_medium"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

@@ -1,7 +1,6 @@
 lethargic_behemoth = Creature:new {
 	objectName = "@mob/creature_names:flit_lethargic_behemoth",
 	socialGroup = "flit",
-	pvpFaction = "",
 	faction = "",
 	level = 23,
 	chanceHit = 0.35,
@@ -33,6 +32,8 @@ lethargic_behemoth = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
+		{"stunattack",""},
+		{"knockdownattack",""}
 	}
 }
 

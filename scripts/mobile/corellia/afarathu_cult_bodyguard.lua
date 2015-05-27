@@ -1,7 +1,6 @@
 afarathu_cult_bodyguard = Creature:new {
 	objectName = "@mob/creature_names:afarathu_cult_bodyguard",
 	socialGroup = "afarathu",
-	pvpFaction = "afarathu",
 	faction = "afarathu",
 	level = 15,
 	chanceHit = 0.31,
@@ -50,6 +49,7 @@ afarathu_cult_bodyguard = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

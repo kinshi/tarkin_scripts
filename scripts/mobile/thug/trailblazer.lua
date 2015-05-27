@@ -2,7 +2,6 @@ trailblazer = Creature:new {
         objectName = "",
         customName = "a Trailblazer",
         socialGroup = "wilder",
-        pvpFaction = "",
         faction = "",
         level = 14,
         chanceHit = 0.3,
@@ -46,6 +45,7 @@ trailblazer = Creature:new {
 	},
         weapons = {"rebel_weapons_medium"},
         conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

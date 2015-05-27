@@ -1,7 +1,6 @@
 razor_cat_eviscerator = Creature:new {
 	objectName = "@mob/creature_names:razor_cat_eviscerator",
 	socialGroup = "panther",
-	pvpFaction = "",
 	faction = "",
 	level = 24,
 	chanceHit = 0.35,
@@ -33,8 +32,8 @@ razor_cat_eviscerator = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"intimidationattack",""}
 	}
 }
 

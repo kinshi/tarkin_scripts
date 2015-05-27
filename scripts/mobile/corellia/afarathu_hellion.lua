@@ -1,7 +1,6 @@
 afarathu_hellion = Creature:new {
 	objectName = "@mob/creature_names:afarathu_cult_hellion",
 	socialGroup = "afarathu",
-	pvpFaction = "afarathu",
 	faction = "afarathu",
 	level = 15,
 	chanceHit = 0.31,
@@ -62,6 +61,7 @@ afarathu_hellion = Creature:new {
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

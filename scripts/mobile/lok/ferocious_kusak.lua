@@ -1,7 +1,6 @@
 ferocious_kusak = Creature:new {
 	objectName = "@mob/creature_names:ferocious_kusak",
 	socialGroup = "kusak",
-	pvpFaction = "",
 	faction = "",
 	level = 21,
 	chanceHit = 0.33,
@@ -33,7 +32,8 @@ ferocious_kusak = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"}
+		{"blindattack",""},
+		{"posturedownattack",""}
 	}
 }
 

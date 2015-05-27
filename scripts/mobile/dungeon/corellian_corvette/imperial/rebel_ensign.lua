@@ -1,7 +1,6 @@
 rebel_ensign = Creature:new {
 	objectName = "@mob/creature_names:corvette_rebel_ensign",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 72,
 	chanceHit = 0.7,
@@ -42,10 +41,11 @@ rebel_ensign = Creature:new {
 				{group = "wearables_uncommon", chance = 500000}
 			},
 			lootChance = 3000000
-		}	
+		}
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(riflemanmaster,carbineermaster,marksmanmaster,brawlermaster)
 }
 

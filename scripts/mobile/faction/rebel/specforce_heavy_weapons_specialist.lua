@@ -1,7 +1,6 @@
 specforce_heavy_weapons_specialist = Creature:new {
 	objectName = "@mob/creature_names:specforce_heavy_weapons_specialist",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 18,
 	chanceHit = 0.32,
@@ -48,6 +47,8 @@ specforce_heavy_weapons_specialist = Creature:new {
 		}
 	},
 	weapons = {"imperial_weapons_medium"},
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 remmer_carrion_keeper = Creature:new {
 	objectName = "@mob/creature_names:remmer_carrion_keeper",
 	socialGroup = "remmer",
-	pvpFaction = "",
 	faction = "",
 	level = 24,
 	chanceHit = 0.35,
@@ -31,8 +30,8 @@ remmer_carrion_keeper = Creature:new {
 	weapons = {"creature_spit_small_red"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"blindattack",""}
 	}
 }
 

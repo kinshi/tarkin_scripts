@@ -1,7 +1,6 @@
 elder_hanadak_matriarch = Creature:new {
 	objectName = "@mob/creature_names:elder_hanadak_matriarch",
 	socialGroup = "hanadak",
-	pvpFaction = "",
 	faction = "",
 	level = 35,
 	chanceHit = 0.41,
@@ -32,8 +31,8 @@ elder_hanadak_matriarch = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"intimidationattack",""}
 	}
 }
 

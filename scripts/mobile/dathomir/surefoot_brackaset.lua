@@ -1,7 +1,6 @@
 surefoot_brackaset = Creature:new {
 	objectName = "@mob/creature_names:surefoot_brackaset",
 	socialGroup = "brackaset",
-	pvpFaction = "",
 	faction = "",
 	level = 46,
 	chanceHit = 0.44,
@@ -39,8 +38,8 @@ surefoot_brackaset = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"posturedownattack",""}
 	}
 }
 

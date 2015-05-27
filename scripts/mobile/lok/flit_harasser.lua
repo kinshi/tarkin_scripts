@@ -1,7 +1,6 @@
 flit_harasser = Creature:new {
 	objectName = "@mob/creature_names:flit_harasser",
 	socialGroup = "flit",
-	pvpFaction = "",
 	faction = "",
 	level = 10,
 	chanceHit = 0.28,
@@ -33,7 +32,7 @@ flit_harasser = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

@@ -2,7 +2,6 @@ insane_miner = Creature:new {
 	objectName = "",
 	customName = "an Insane Miner",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 9,
 	chanceHit = 0.27,
@@ -33,6 +32,7 @@ insane_miner = Creature:new {
 	lootGroups = {},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

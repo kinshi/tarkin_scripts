@@ -1,7 +1,6 @@
 bolma_pack_master = Creature:new {
 	objectName = "@mob/creature_names:bolma_pack_master",
 	socialGroup = "bolma",
-	pvpFaction = "",
 	faction = "",
 	level = 22,
 	chanceHit = 0.35,
@@ -32,7 +31,7 @@ bolma_pack_master = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"}
+		{"blindattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 deadly_hooded_rawl = Creature:new {
 	objectName = "@mob/creature_names:rawl_deadly_hooded",
 	socialGroup = "rawl",
-	pvpFaction = "",
 	faction = "",
 	level = 12,
 	chanceHit = 0.29,
@@ -33,8 +32,8 @@ deadly_hooded_rawl = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"mildpoison",""},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"mildpoison",""}
 	}
 }
 

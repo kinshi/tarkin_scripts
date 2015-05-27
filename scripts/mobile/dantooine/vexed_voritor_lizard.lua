@@ -1,7 +1,6 @@
 vexed_voritor_lizard = Creature:new {
 	objectName = "@mob/creature_names:vexed_voritor_lizard",
 	socialGroup = "voritor",
-	pvpFaction = "",
 	faction = "",
 	level = 52,
 	chanceHit = 0.5,
@@ -39,8 +38,8 @@ vexed_voritor_lizard = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"dizzyattack",""}
 	}
 }
 

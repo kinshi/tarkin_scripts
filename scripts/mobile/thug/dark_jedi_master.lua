@@ -1,7 +1,6 @@
 dark_jedi_master = Creature:new {
 	objectName = "@mob/creature_names:dark_jedi_master",
 	socialGroup = "dark_jedi",
-	pvpFaction = "",
 	faction = "",
 	level = 291,
 	chanceHit = 27.25,
@@ -41,7 +40,7 @@ dark_jedi_master = Creature:new {
 				{group = "armor_attachments", chance = 1100000},
 				{group = "clothing_attachments", chance = 1100000},
 				{group = "carbines", chance = 1300000},
-				{group = "nightsister_rare", chance = 800000}			
+				{group = "wearables_scarce", chance = 800000}			
 			},
 			lootChance = 8500000
 		}

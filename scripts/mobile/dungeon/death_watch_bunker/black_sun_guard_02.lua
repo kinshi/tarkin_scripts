@@ -2,7 +2,6 @@ black_sun_guard_02 = Creature:new {
 	--objectName = "@mob/creature_names:mand_bunker_blksun_guard",
 	customName = "Black Sun Sentry",
 	socialGroup = "death_watch",
-	pvpFaction = "death_watch",
 	faction = "",
 	level = 96,
 	chanceHit = 15.5,

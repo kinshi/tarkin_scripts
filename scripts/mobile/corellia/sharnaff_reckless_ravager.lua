@@ -1,7 +1,6 @@
 sharnaff_reckless_ravager = Creature:new {
 	objectName = "@mob/creature_names:sharnaff_reckless_ravager",
 	socialGroup = "sharnaff",
-	pvpFaction = "",
 	faction = "",
 	level = 34,
 	chanceHit = 0.41,
@@ -39,9 +38,8 @@ sharnaff_reckless_ravager = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"},
-		{"posturedownattack","posturedownChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"stunattack",""},
+		{"knockdownattack",""}
 	}
 }
 

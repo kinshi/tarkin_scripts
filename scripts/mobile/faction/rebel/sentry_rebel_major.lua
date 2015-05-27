@@ -2,7 +2,6 @@ sentry_rebel_major = Creature:new {
 	objectName = "",
 	customName = "Rebel Sentry Major",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 182,
 	chanceHit = 130,

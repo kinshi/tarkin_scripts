@@ -1,7 +1,6 @@
 talus_liberation_party_fanatic = Creature:new {
 	objectName = "@mob/creature_names:liberation_fanatic",
 	socialGroup = "liberation_party",
-	pvpFaction = "liberation_party",
 	faction = "liberation_party",
 	level = 17,
 	chanceHit = 0.32,
@@ -28,7 +27,7 @@ talus_liberation_party_fanatic = Creature:new {
 
 	templates = {"object/mobile/dressed_talus_sif_mercenary_rodian_01.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 3000000},
 				{group = "wearables_common", chance = 2000000},
@@ -41,6 +40,7 @@ talus_liberation_party_fanatic = Creature:new {
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

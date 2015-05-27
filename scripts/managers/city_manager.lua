@@ -61,7 +61,6 @@ CityVotingCycles = 3
 CityVotingCyclesUntilLocked = 2
 
 --The amount of time in minutes before the city performs an update.
---CityUpdateInterval = 10080
 CityUpdateInterval = 10080
 
 --The amount of time in minutes a new city has to gain enough citizens to remain a city.
@@ -124,16 +123,6 @@ CitiesAllowed = {
 	emailBody: The body of the email that is sent to citizens when this tax changes. %DI = Amount of new tax; %TO = Name of the city.
 --]]
 CityTaxes = {
-	{--Property Tax
-		min = 0, max = 50,
-		menuText = "@city/city:property_tax_prompt",
-		inputTitle = "@city/city:set_tax_t_property",
-		inputText = "@city/city:set_tax_d_property",
-		statusPrompt = "@city/city:promperty_tax_prompt",
-		systemMessage = "@city/city:set_property_tax",
-		emailSubject = "@city/city:tax_property_subject",
-		emailBody = "@city/city:tax_property_body"
-	},
 	{--Income Tax
 		min = 0, max = 2000,
 		menuText = "@city/city:income_tax",
@@ -143,6 +132,16 @@ CityTaxes = {
 		systemMessage = "@city/city:set_income_tax",
 		emailSubject = "@city/city:tax_income_subject",
 		emailBody = "@city/city:tax_income_body"
+	},
+	{--Property Tax
+		min = 0, max = 50,
+		menuText = "@city/city:property_tax_prompt",
+		inputTitle = "@city/city:set_tax_t_property",
+		inputText = "@city/city:set_tax_d_property",
+		statusPrompt = "@city/city:promperty_tax_prompt",
+		systemMessage = "@city/city:set_property_tax",
+		emailSubject = "@city/city:tax_property_subject",
+		emailBody = "@city/city:tax_property_body"
 	},
 	{--Sales Tax
 		min = 0, max = 20,
@@ -167,9 +166,9 @@ CityTaxes = {
 	{--Garage Tax
 		min = 0, max = 30,
 		menuText = "@city/city:garage_tax",
-		inputTitle = "@city/city:set_tax_t_garage",
+		inputTitle = "Adjust Garage Service Fee", -- missing from stf
 		inputText = "@city/city:set_tax_d_garage",
-		statusPrompt = "Garage Cost: ",
+		statusPrompt = "Garage Cost: ", -- missing from stf
 		systemMessage = "@city/city:set_garage_tax",
 		emailSubject = "@city/city:garage_fee_subject",
 		emailBody = "@city/city:garage_fee_body"
@@ -206,7 +205,7 @@ CitySpecializations = {
 		}
 	},
 	{--Clone Lab
-		name = "@city/city:city_spec_clone",
+		name = "@city/city:city_spec_cloning",
 		cost = 20000,
 		skillMods = {
 			{"private_spec_cloning", 20}
@@ -223,7 +222,7 @@ CitySpecializations = {
 		name = "@city/city:city_spec_missions",
 		cost = 20000,
 		skillMods = {
-			{"private_spec_missions", 20}
+			{"private_spec_missions", 15}
 		}
 	},
 	{--Entertainment District

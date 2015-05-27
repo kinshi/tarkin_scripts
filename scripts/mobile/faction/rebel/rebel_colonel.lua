@@ -1,7 +1,6 @@
 rebel_colonel = Creature:new {
 	objectName = "@mob/creature_names:rebel_colonel",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 24,
 	chanceHit = 0.35,
@@ -52,6 +51,7 @@ rebel_colonel = Creature:new {
 	},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "rebelRecruiterConvoTemplate",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

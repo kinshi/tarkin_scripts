@@ -1,7 +1,6 @@
 bark_mite_burrower_collector = Creature:new {
 	objectName = "@mob/creature_names:bark_mite_burrower_collector",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 36,
 	chanceHit = 0.4,
@@ -32,8 +31,8 @@ bark_mite_burrower_collector = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"blindattack",""},
+		{"stunattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 nomad_chief = Creature:new {
 	objectName = "@mob/creature_names:nomad_chief",
 	socialGroup = "nomad",
-	pvpFaction = "",
 	faction = "naboo",
 	level = 8,
 	chanceHit = 0.270000,
@@ -27,18 +26,19 @@ nomad_chief = Creature:new {
 
 	templates = {"object/mobile/dressed_naboo_nomad.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2000000},
 				{group = "wearables_common", chance = 2000000},
-				{group = "melee_knife", chance = 2000000},						
+				{group = "melee_knife", chance = 2000000},
 				{group = "tailor_components", chance = 2000000},
 				{group = "loot_kit_parts", chance = 2000000}
 			},
 			lootChance = 3200000
-		}					
+		}
 	},
 	weapons = {"rebel_weapons_medium"},
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

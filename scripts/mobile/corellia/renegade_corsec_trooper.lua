@@ -1,7 +1,6 @@
 renegade_corsec_trooper = Creature:new {
 	objectName = "@mob/creature_names:corsec_renegade",
 	socialGroup = "rogue_corsec",
-	pvpFaction = "rogue_corsec",
 	faction = "rogue_corsec",
 	level = 12,
 	chanceHit = 0.29,
@@ -41,6 +40,7 @@ renegade_corsec_trooper = Creature:new {
 	},
 	weapons = {"ranged_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

@@ -1,7 +1,6 @@
 mutated_kahmurra = Creature:new {
 	objectName = "@mob/creature_names:mutated_kahmurra",
 	socialGroup = "kahmurra",
-	pvpFaction = "",
 	faction = "",
 	level = 26,
 	chanceHit = 0.35,
@@ -33,7 +32,8 @@ mutated_kahmurra = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

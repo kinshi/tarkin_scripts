@@ -1,7 +1,6 @@
 blood_razor_cutthroat = Creature:new {
 	objectName = "@mob/creature_names:blood_razor_cutthroat",
 	socialGroup = "bloodrazor",
-	pvpFaction = "bloodrazor",
 	faction = "bloodrazor",
 	level = 34,
 	chanceHit = 0.4,
@@ -53,6 +52,7 @@ blood_razor_cutthroat = Creature:new {
 	},
 	weapons = {"blood_razer_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(pistoleermaster,pikemanmaster,tkamaster,brawlermaster,marksmanmaster)
 }
 

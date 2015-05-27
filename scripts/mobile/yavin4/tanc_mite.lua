@@ -1,7 +1,6 @@
 tanc_mite = Creature:new {
 	objectName = "@mob/creature_names:tanc_mite",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 9,
 	chanceHit = 0.27,
@@ -32,7 +31,7 @@ tanc_mite = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

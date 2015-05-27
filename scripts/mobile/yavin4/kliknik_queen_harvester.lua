@@ -1,7 +1,6 @@
 kliknik_queen_harvester = Creature:new {
 	objectName = "@mob/creature_names:kliknik_queen_harvester",
 	socialGroup = "kliknik",
-	pvpFaction = "",
 	faction = "",
 	level = 30,
 	chanceHit = 0.37,
@@ -39,8 +38,8 @@ kliknik_queen_harvester = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"mildpoison",""},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"mildpoison",""}
 	}
 }
 

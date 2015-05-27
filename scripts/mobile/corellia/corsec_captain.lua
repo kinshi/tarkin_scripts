@@ -1,7 +1,6 @@
 corsec_captain = Creature:new {
 	objectName = "@mob/creature_names:corsec_captain",
 	socialGroup = "corsec",
-	pvpFaction = "corsec",
 	faction = "corsec",
 	level = 22,
 	chanceHit = 0.35,
@@ -42,6 +41,7 @@ corsec_captain = Creature:new {
 	},
 	weapons = {"corsec_police_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

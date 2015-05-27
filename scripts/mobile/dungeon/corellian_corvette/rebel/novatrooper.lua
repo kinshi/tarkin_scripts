@@ -1,7 +1,6 @@
 novatrooper = Creature:new {
 	objectName = "@mob/creature_names:stormtrooper_novatrooper",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 97,
 	chanceHit = 0.95,
@@ -42,10 +41,11 @@ novatrooper = Creature:new {
 				{group = "wearables_uncommon", chance = 500000}
 			},
 			lootChance = 2800000
-		}						
+		}
 	},
 	weapons = {"stormtrooper_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/stormtrooper",
 	attacks = merge(riflemanmaster,carbineermaster,marksmanmaster,brawlermaster)
 }
 

@@ -1,7 +1,6 @@
 garyns_vigo = Creature:new {
 	objectName = "@mob/creature_names:garyn_vigo",
 	socialGroup = "garyn",
-	pvpFaction = "garyn",
 	faction = "garyn",
 	level = 32,
 	chanceHit = 0.4,
@@ -30,7 +29,7 @@ garyns_vigo = Creature:new {
 		"object/mobile/dressed_garyn_vigo_bith_male_01.iff",
 		"object/mobile/dressed_garyn_vigo_bith_female_01.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2000000},
 				{group = "wearables_common", chance = 2000000},
@@ -43,6 +42,7 @@ garyns_vigo = Creature:new {
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

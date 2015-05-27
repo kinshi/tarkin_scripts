@@ -1,7 +1,6 @@
 naboo_nomad = Creature:new {
 	objectName = "@mob/creature_names:naboo_nomad",
 	socialGroup = "nomad",
-	pvpFaction = "",
 	faction = "naboo",
 	level = 6,
 	chanceHit = 0.25,
@@ -41,6 +40,7 @@ naboo_nomad = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

@@ -1,7 +1,6 @@
 wallaw_bull_rancor = Creature:new {
   objectName = "@mob/creature_names:bull_rancor",
   socialGroup = "rancor",
-  pvpFaction = "",
   faction = "",
   level = 65,
   chanceHit = 0.6,
@@ -49,7 +48,7 @@ wallaw_bull_rancor = Creature:new {
   conversationTemplate = "wallaw_loowobbli_mission_target_convotemplate",
   attacks = {
     {"creatureareadisease",""},
-    {"dizzyattack","dizzyChance=50"}
+    {"dizzyattack",""}
   }
 }
 

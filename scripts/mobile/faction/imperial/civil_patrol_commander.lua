@@ -1,7 +1,6 @@
 civil_patrol_commander = Creature:new {
 	objectName = "@mob/creature_names:imperial_civil_patrol_commander",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 10,
 	chanceHit = 0.28,
@@ -30,6 +29,8 @@ civil_patrol_commander = Creature:new {
 	lootGroups = {},
 	weapons = {"ranged_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",	
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

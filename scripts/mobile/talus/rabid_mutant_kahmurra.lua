@@ -1,7 +1,6 @@
 rabid_mutant_kahmurra = Creature:new {
 	objectName = "@mob/creature_names:rabid_mutant_kahmurra",
 	socialGroup = "kahmurra",
-	pvpFaction = "",
 	faction = "",
 	level = 41,
 	chanceHit = 0.44,
@@ -34,7 +33,7 @@ rabid_mutant_kahmurra = Creature:new {
 	conversationTemplate = "",
 	attacks = {
 		{"strongdisease",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

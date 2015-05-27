@@ -1,7 +1,6 @@
 mutant_rancor = Creature:new {
 	objectName = "@mob/creature_names:mutant_rancor",
 	socialGroup = "rancor",
-	pvpFaction = "",
 	faction = "",
 	level = 75,
 	chanceHit = 0.7,
@@ -49,7 +48,7 @@ mutant_rancor = Creature:new {
 	conversationTemplate = "",
 	attacks = {
 		{"creatureareableeding",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

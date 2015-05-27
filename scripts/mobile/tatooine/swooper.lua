@@ -1,7 +1,6 @@
 swooper = Creature:new {
 	objectName = "@mob/creature_names:swooper",
 	socialGroup = "swoop",
-	pvpFaction = "swoop",
 	faction = "swoop",
 	level = 2,
 	chanceHit = 0.21,
@@ -28,19 +27,20 @@ swooper = Creature:new {
 
 	templates = {"object/mobile/dressed_tatooine_valarian_swooper.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 4000000},
-				{group = "wearables_common", chance = 2000000},				
+				{group = "wearables_common", chance = 2000000},
 				{group = "tailor_components", chance = 1000000},
 				{group = "loot_kit_parts", chance = 2000000},
 				{group = "printer_parts", chance = 1000000},
 			},
 			lootChance = 2000000
-		}					
+		}
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

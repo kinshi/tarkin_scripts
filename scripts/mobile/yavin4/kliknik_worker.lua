@@ -1,7 +1,6 @@
 kliknik_worker = Creature:new {
 	objectName = "@mob/creature_names:kliknik_worker",
 	socialGroup = "kliknik",
-	pvpFaction = "",
 	faction = "",
 	level = 23,
 	chanceHit = 0.35,
@@ -39,7 +38,7 @@ kliknik_worker = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""}
 	}
 }
 

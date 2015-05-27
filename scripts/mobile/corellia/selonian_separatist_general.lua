@@ -1,7 +1,6 @@
 selonian_separatist_general = Creature:new {
 	objectName = "@mob/creature_names:selonian_separatist_general",
 	socialGroup = "selonian",
-	pvpFaction = "",
 	faction = "",
 	level = 16,
 	chanceHit = 0.31,
@@ -53,6 +52,7 @@ selonian_separatist_general = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/fancy",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

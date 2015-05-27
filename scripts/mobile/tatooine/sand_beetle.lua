@@ -1,7 +1,6 @@
 sand_beetle = Creature:new {
 	objectName = "@mob/creature_names:sand_beetle",
 	socialGroup = "beetle",
-	pvpFaction = "",
 	faction = "",
 	level = 25,
 	chanceHit = 0.36,
@@ -33,7 +32,8 @@ sand_beetle = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

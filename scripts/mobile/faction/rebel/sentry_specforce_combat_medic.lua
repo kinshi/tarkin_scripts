@@ -2,7 +2,6 @@ sentry_specforce_combat_medic = Creature:new {
 	objectName = "",
 	customName = "Specforce Sentry Combat Medic",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 107,
 	chanceHit = 17.5,

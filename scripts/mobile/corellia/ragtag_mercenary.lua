@@ -2,7 +2,6 @@ ragtag_mercenary = Creature:new {
 	objectName = "",
 	customName = "a Ragtag mercenary",
 	socialGroup = "ragtag",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 8,
 	chanceHit = 0.270000,
@@ -45,6 +44,7 @@ ragtag_mercenary = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_medium"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

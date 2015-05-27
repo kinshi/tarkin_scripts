@@ -1,7 +1,6 @@
 large_sand_beetle = Creature:new {
 	objectName = "@mob/creature_names:large_sand_beetle",
 	socialGroup = "beetle",
-	pvpFaction = "",
 	faction = "",
 	level = 29,
 	chanceHit = 0.37,
@@ -33,8 +32,8 @@ large_sand_beetle = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"blindattack",""},
+		{"stunattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 first_brigade_scout = Creature:new {
 	objectName = "@mob/creature_names:brigade_scout",
 	socialGroup = "restuss",
-	pvpFaction = "restuss",
 	faction = "restuss",
 	level = 7,
 	chanceHit = 0.26,
@@ -30,7 +29,7 @@ first_brigade_scout = Creature:new {
 		"object/mobile/dressed_brigade_scout_trandoshan_male_01.iff",
 		"object/mobile/dressed_brigade_scout_trandoshan_female_01.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 5000000},
 				{group = "wearables_common", chance = 2000000},
@@ -40,10 +39,11 @@ first_brigade_scout = Creature:new {
 				{group = "loot_kit_parts", chance = 500000}
 			},
 			lootChance = 3200000
-		}					
+		}
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

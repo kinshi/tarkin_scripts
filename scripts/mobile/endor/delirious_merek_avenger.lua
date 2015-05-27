@@ -1,7 +1,6 @@
 delirious_merek_avenger = Creature:new {
 	objectName = "@mob/creature_names:delirious_merek_avenger",
 	socialGroup = "merek",
-	pvpFaction = "",
 	faction = "",
 	level = 40,
 	chanceHit = 0.44,
@@ -29,11 +28,11 @@ delirious_merek_avenger = Creature:new {
 	templates = {"object/mobile/merek_hue.iff"},
 	controlDeviceTemplate = "object/intangible/pet/merek_hue.iff",
 	lootGroups = {},
-	weapons = {},
+	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"stunattack","stunChance=50"}
+		{"intimidationattack",""},
+		{"stunattack",""}
 	}
 }
 

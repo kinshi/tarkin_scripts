@@ -1,7 +1,6 @@
 skreeg_gatherer = Creature:new {
 	objectName = "@mob/creature_names:skreeg_gatherer",
 	socialGroup = "skreeg",
-	pvpFaction = "",
 	faction = "",
 	level = 15,
 	chanceHit = 0.31,
@@ -33,7 +32,7 @@ skreeg_gatherer = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

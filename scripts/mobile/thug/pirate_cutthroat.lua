@@ -2,7 +2,6 @@ pirate_cutthroat = Creature:new {
 	objectName = "",
 	costumName = "a Pirate Cutthroat",
 	socialGroup = "pirate",
-	pvpFaction = "",
 	faction = "",
 	level = 8,
 	chanceHit = 0.27,
@@ -60,6 +59,7 @@ pirate_cutthroat = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

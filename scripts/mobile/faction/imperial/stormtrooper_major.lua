@@ -1,7 +1,7 @@
 stormtrooper_major = Creature:new {
 	objectName = "@mob/creature_names:stormtrooper_major",
+	randomNameType = NAME_STORMTROOPER_TAG,
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 32,
 	chanceHit = 0.4,
@@ -48,6 +48,7 @@ stormtrooper_major = Creature:new {
 	},
 	weapons = {"stormtrooper_weapons"},
 	conversationTemplate = "imperialRecruiterConvoTemplate",
+	reactionStf = "@npc_reaction/stormtrooper",
 	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 

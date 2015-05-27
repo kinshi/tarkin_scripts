@@ -1,7 +1,6 @@
 vrobal = Creature:new {
 	objectName = "@mob/creature_names:vrobal",
 	socialGroup = "vrobal",
-	pvpFaction = "",
 	faction = "",
 	level = 14,
 	chanceHit = 0.3,
@@ -32,7 +31,7 @@ vrobal = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""}
 	}
 }
 

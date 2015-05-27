@@ -1,7 +1,6 @@
 valarian_thief = Creature:new {
 	objectName = "@mob/creature_names:valarian_thief",
 	socialGroup = "valarian",
-	pvpFaction = "valarian",
 	faction = "valarian",
 	level = 10,
 	chanceHit = 0.28,
@@ -28,20 +27,21 @@ valarian_thief = Creature:new {
 
 	templates = {"object/mobile/dressed_tatooine_valarian_thief.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2000000},
-				{group = "wearables_common", chance = 2000000},				
+				{group = "wearables_common", chance = 2000000},
 				{group = "tailor_components", chance = 1000000},
 				{group = "loot_kit_parts", chance = 2000000},
 				{group = "printer_parts", chance = 1500000},
 				{group = "valarian_common", chance = 1500000}
 			},
 			lootChance = 2200000
-		}			
+		}
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

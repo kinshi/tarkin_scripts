@@ -1,7 +1,6 @@
 kliknik_dark_warrior = Creature:new {
 	objectName = "@mob/creature_names:kliknik_dark_warrior",
 	socialGroup = "kliknik",
-	pvpFaction = "",
 	faction = "",
 	level = 40,
 	chanceHit = 0.43,
@@ -40,8 +39,8 @@ kliknik_dark_warrior = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"intimidationattack",""}
 	}
 }
 

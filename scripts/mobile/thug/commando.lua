@@ -1,7 +1,6 @@
 commando = Creature:new {
 	objectName = "@mob/creature_names:commando",
 	socialGroup = "mercenary",
-	pvpFaction = "",
 	faction = "",
 	level = 19,
 	chanceHit = 0.33,
@@ -40,6 +39,7 @@ commando = Creature:new {
 	},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 tusk_cat_rider = Creature:new {
 	objectName = "@mob/creature_names:tusk_cat_rider",
 	socialGroup = "naboo",
-	pvpFaction = "naboo",
 	faction = "naboo",
 	level = 16,
 	chanceHit = 0.31,
@@ -30,6 +29,7 @@ tusk_cat_rider = Creature:new {
 	lootGroups = {},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 sunstained_dune_lizard = Creature:new {
 	objectName = "@mob/creature_names:dune_lizard_sunstained",
 	socialGroup = "lizard",
-	pvpFaction = "",
 	faction = "",
 	level = 20,
 	chanceHit = 0.33,
@@ -33,8 +32,7 @@ sunstained_dune_lizard = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"blindattack",""}
 	}
 }
 

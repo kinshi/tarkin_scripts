@@ -1,7 +1,6 @@
 blood_thirsty_monarch = Creature:new {
 	objectName = "@mob/creature_names:corellian_butterfly_monarch_bloodthirsty",
 	socialGroup = "butterfly",
-	pvpFaction = "",
 	faction = "",
 	level = 20,
 	chanceHit = 0.33,
@@ -33,8 +32,8 @@ blood_thirsty_monarch = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"intimidationattack",""}
 	}
 }
 

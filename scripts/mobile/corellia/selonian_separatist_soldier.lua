@@ -1,7 +1,6 @@
 selonian_separatist_soldier = Creature:new {
 	objectName = "@mob/creature_names:selonian_separatist_soldier",
 	socialGroup = "selonian",
-	pvpFaction = "",
 	faction = "",
 	level = 10,
 	chanceHit = 0.28,
@@ -65,6 +64,7 @@ selonian_separatist_soldier = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/fancy",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

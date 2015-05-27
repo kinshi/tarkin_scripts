@@ -1,7 +1,6 @@
 official = Creature:new {
 	objectName = "@mob/creature_names:official",
 	socialGroup = "naboo",
-	pvpFaction = "naboo",
 	faction = "naboo",
 	level = 5,
 	chanceHit = 0.250000,
@@ -30,7 +29,7 @@ official = Creature:new {
 		{
 			groups = {
 				{group = "junk", chance = 2000000},
-				{group = "wearables_common", chance = 2000000},				
+				{group = "wearables_common", chance = 2000000},
 				{group = "tailor_components", chance = 2000000},
 				{group = "loot_kit_parts", chance = 4000000}
 			},
@@ -38,6 +37,7 @@ official = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_medium"},
+	reactionStf = "@npc_reaction/fancy",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

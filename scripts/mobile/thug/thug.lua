@@ -1,7 +1,6 @@
 thug = Creature:new {
 	objectName = "@mob/creature_names:thug",
 	socialGroup = "thug",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 7,
 	chanceHit = 0.26,
@@ -58,6 +57,7 @@ thug = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

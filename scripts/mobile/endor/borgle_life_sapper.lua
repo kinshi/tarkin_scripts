@@ -1,7 +1,6 @@
 borgle_life_sapper = Creature:new {
 	objectName = "@mob/creature_names:borgle_life_sapper",
 	socialGroup = "borgle",
-	pvpFaction = "",
 	faction = "",
 	level = 25,
 	chanceHit = 0.35,
@@ -32,8 +31,8 @@ borgle_life_sapper = Creature:new {
 	weapons = {"creature_spit_small_red"},
 	conversationTemplate = "",
 	attacks = {
-		{"mediumpoison",""},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"mediumpoison",""}
 	}
 }
 

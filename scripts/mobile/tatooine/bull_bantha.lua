@@ -1,7 +1,6 @@
 bull_bantha = Creature:new {
 	objectName = "@mob/creature_names:bull_bantha",
 	socialGroup = "bantha",
-	pvpFaction = "",
 	faction = "",
 	level = 20,
 	chanceHit = 0.33,
@@ -33,7 +32,8 @@ bull_bantha = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

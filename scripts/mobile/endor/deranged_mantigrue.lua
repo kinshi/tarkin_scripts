@@ -1,7 +1,6 @@
 deranged_mantigrue = Creature:new {
 	objectName = "@mob/creature_names:deranged_mantigrue",
 	socialGroup = "mantigrue",
-	pvpFaction = "",
 	faction = "",
 	level = 45,
 	chanceHit = 0.44,
@@ -32,8 +31,8 @@ deranged_mantigrue = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"blindattack",""},
+		{"stunattack",""}
 	}
 }
 

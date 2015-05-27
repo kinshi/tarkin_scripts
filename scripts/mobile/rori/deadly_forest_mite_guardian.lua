@@ -1,7 +1,6 @@
 deadly_forest_mite_guardian = Creature:new {
 	objectName = "@mob/creature_names:deadly_forest_mite_guardian",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 16,
 	chanceHit = 0.31,
@@ -33,8 +32,8 @@ deadly_forest_mite_guardian = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"blindattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 rebel_brigadier_general = Creature:new {
 	objectName = "@mob/creature_names:rebel_brigadier_general",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 25,
 	chanceHit = 0.36,
@@ -40,18 +39,19 @@ rebel_brigadier_general = Creature:new {
 				{group = "junk", chance = 4250000},
 				{group = "rifles", chance = 1000000},
 				{group = "pistols", chance = 1000000},
-                {group = "melee_weapons", chance = 1000000},
-                {group = "carbines", chance = 1000000},
+				{group = "melee_weapons", chance = 1000000},
+				{group = "carbines", chance = 1000000},
 				{group = "clothing_attachments", chance = 100000},
 				{group = "armor_attachments", chance = 100000},
 				{group = "rebel_officer_common", chance = 450000},
 				{group = "wearables_common", chance = 1000000}
 			},
 			lootChance = 3000000
-		}	
+		}
 	},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "rebelRecruiterConvoTemplate",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 

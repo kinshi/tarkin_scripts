@@ -1,7 +1,6 @@
 rebel_specforce_pathfinder = Creature:new {
 	objectName = "@mob/creature_names:rebel_specforce_pathfinder",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 18,
 	chanceHit = 0.32,
@@ -51,6 +50,8 @@ rebel_specforce_pathfinder = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

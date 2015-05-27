@@ -2,7 +2,6 @@ borvos_bruiser = Creature:new {
 	objectName = "",
 	customName = "Borvo's Bruiser",
 	socialGroup = "borvo",
-	pvpFaction = "borvo",
 	faction = "borvo",
 	level = 13,
 	chanceHit = 0.3,
@@ -44,6 +43,7 @@ borvos_bruiser = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

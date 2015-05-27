@@ -1,7 +1,6 @@
 giant_worrt = Creature:new {
 	objectName = "@mob/creature_names:giant_worrt",
 	socialGroup = "worrt",
-	pvpFaction = "",
 	faction = "",
 	level = 13,
 	chanceHit = 0.3,
@@ -33,7 +32,7 @@ giant_worrt = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

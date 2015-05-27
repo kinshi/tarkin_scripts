@@ -1,7 +1,6 @@
 malkloc_bull = Creature:new {
 	objectName = "@mob/creature_names:malkloc_bull",
 	socialGroup = "malkloc",
-	pvpFaction = "",
 	faction = "",
 	level = 28,
 	chanceHit = 0.35,
@@ -32,7 +31,7 @@ malkloc_bull = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

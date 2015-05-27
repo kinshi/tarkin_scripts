@@ -1,7 +1,6 @@
 screaming_kai_tok = Creature:new {
 	objectName = "@mob/creature_names:screaming_kai_tok",
 	socialGroup = "kai_tok",
-	pvpFaction = "",
 	faction = "",
 	level = 21,
 	chanceHit = 0.32,
@@ -33,7 +32,7 @@ screaming_kai_tok = Creature:new {
 	weapons = {"creature_spit_small_green"},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"}
+		{"dizzyattack",""}
 	}
 }
 

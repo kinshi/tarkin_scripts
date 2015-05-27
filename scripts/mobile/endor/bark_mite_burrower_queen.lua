@@ -1,7 +1,6 @@
 bark_mite_burrower_queen = Creature:new {
 	objectName = "@mob/creature_names:bark_mite_burrower_queen",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 60,
 	chanceHit = 0.55,
@@ -32,8 +31,8 @@ bark_mite_burrower_queen = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"strongdisease",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"strongdisease",""}
 	}
 }
 

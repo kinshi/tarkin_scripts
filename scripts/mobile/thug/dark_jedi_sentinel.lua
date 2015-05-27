@@ -1,7 +1,6 @@
 dark_jedi_sentinel = Creature:new {
 	objectName = "@mob/creature_names:dark_jedi_sentinel",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 300,
 	chanceHit = 30,
@@ -41,7 +40,7 @@ dark_jedi_sentinel = Creature:new {
 				{group = "armor_attachments", chance = 1100000},
 				{group = "clothing_attachments", chance = 1100000},
 				{group = "carbines", chance = 1300000},
-				{group = "nightsister_rare", chance = 800000}				
+				{group = "wearables_scarce", chance = 800000}				
 			},
 			lootChance = 8500000
 		}

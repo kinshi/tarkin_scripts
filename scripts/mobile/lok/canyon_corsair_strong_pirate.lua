@@ -1,7 +1,6 @@
 canyon_corsair_strong_pirate = Creature:new {
 	objectName = "@mob/creature_names:canyon_corsair_pirate_strong",
 	socialGroup = "canyon_corsair",
-	pvpFaction = "canyon_corsair",
 	faction = "canyon_corsair",
 	level = 36,
 	chanceHit = 0.41,
@@ -52,6 +51,7 @@ canyon_corsair_strong_pirate = Creature:new {
 	},
 	weapons = {"canyon_corsair_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(swordsmanmaster,carbineermaster,tkamaster,brawlermaster,marksmanmaster)
 }
 

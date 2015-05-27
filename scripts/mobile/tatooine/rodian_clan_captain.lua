@@ -1,7 +1,6 @@
 rodian_clan_captain = Creature:new {
 	objectName = "@mob/creature_names:rodian_clan_captain",
 	socialGroup = "rodian",
-	pvpFaction = "",
 	faction = "",
 	level = 11,
 	chanceHit = 0.29,
@@ -41,6 +40,7 @@ rodian_clan_captain = Creature:new {
 	},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

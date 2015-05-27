@@ -1,7 +1,6 @@
 rebel_sailor = Creature:new {
 	objectName = "@mob/creature_names:corvette_rebel_sailor",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 96,
 	chanceHit = 0.95,
@@ -36,6 +35,7 @@ rebel_sailor = Creature:new {
 	lootGroups = {},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(riflemanmaster,carbineermaster,marksmanmaster,brawlermaster)
 }
 

@@ -1,7 +1,6 @@
 selonian_warlord = Creature:new {
 	objectName = "@mob/creature_names:selonian_warlord",
 	socialGroup = "selonian",
-	pvpFaction = "",
 	faction = "",
 	level = 20,
 	chanceHit = 0.33,
@@ -65,6 +64,7 @@ selonian_warlord = Creature:new {
 	},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/fancy",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

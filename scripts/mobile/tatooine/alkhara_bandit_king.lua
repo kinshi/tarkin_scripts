@@ -1,7 +1,6 @@
 alkhara_bandit_king = Creature:new {
 	objectName = "@mob/creature_names:alkhara_bandit_king",
 	socialGroup = "alkhara",
-	pvpFaction = "alkhara",
 	faction = "alkhara",
 	level = 22,
 	chanceHit = 0.35,
@@ -28,7 +27,7 @@ alkhara_bandit_king = Creature:new {
 
 	templates = {"object/mobile/dressed_tatooine_alkhara_king.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2550000},
 				{group = "wearables_common", chance = 2000000},
@@ -38,10 +37,11 @@ alkhara_bandit_king = Creature:new {
 				{group = "alkhara_common", chance = 450000}
 			},
 			lootChance = 2200000
-		}				
+		}
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

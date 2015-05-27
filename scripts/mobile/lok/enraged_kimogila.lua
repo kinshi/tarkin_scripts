@@ -1,7 +1,6 @@
 enraged_kimogila = Creature:new {
 	objectName = "@mob/creature_names:enraged_kimogila",
 	socialGroup = "kimogila",
-	pvpFaction = "",
 	faction = "",
 	level = 135,
 	chanceHit = 4.75,
@@ -39,8 +38,8 @@ enraged_kimogila = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"dizzyattack",""}
 	}
 }
 

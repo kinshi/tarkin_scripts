@@ -1,7 +1,6 @@
 decay_mite = Creature:new {
 	objectName = "@mob/creature_names:decay_mite",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 9,
 	chanceHit = 0.27,
@@ -32,7 +31,8 @@ decay_mite = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"",""},
+		{"posturedownattack",""}
 	}
 }
 

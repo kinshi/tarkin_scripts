@@ -1,7 +1,6 @@
 enraged_defender = Creature:new {
 	objectName = "@mob/creature_names:piket_enraged_defender",
 	socialGroup = "piket",
-	pvpFaction = "",
 	faction = "",
 	level = 49,
 	chanceHit = 0.47,
@@ -33,8 +32,8 @@ enraged_defender = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"blindattack",""}
 	}
 }
 

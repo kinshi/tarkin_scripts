@@ -1,7 +1,6 @@
 rebel_corporal = Creature:new {
 	objectName = "@mob/creature_names:rebel_corporal",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 15,
 	chanceHit = 0.31,
@@ -51,6 +50,8 @@ rebel_corporal = Creature:new {
 	},
 	weapons = {"rebel_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(brawlermid,marksmanmid)
 }
 

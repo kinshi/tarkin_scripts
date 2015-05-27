@@ -1,7 +1,6 @@
 greater_desert_womp_rat = Creature:new {
 	objectName = "@mob/creature_names:greater_desert_womprat",
 	socialGroup = "rat",
-	pvpFaction = "",
 	faction = "",
 	level = 22,
 	chanceHit = 0.35,
@@ -33,8 +32,8 @@ greater_desert_womp_rat = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"blindattack",""},
+		{"stunattack",""}
 	}
 }
 

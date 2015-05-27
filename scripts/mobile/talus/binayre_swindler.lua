@@ -1,8 +1,7 @@
 binayre_swindler = Creature:new {
 	objectName = "@mob/creature_names:binayre_swindler",
 	socialGroup = "binayre",
-	pvpFaction = "binayre",
-	faction = "pirate",
+	faction = "binayre",
 	level = 20,
 	chanceHit = 0.33,
 	damageMin = 180,
@@ -30,7 +29,7 @@ binayre_swindler = Creature:new {
 		"object/mobile/dressed_binayre_swindler_zabrak_female_01.iff",
 		"object/mobile/dressed_binayre_swindler_zabrak_male_01.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2450000},
 				{group = "tailor_components", chance = 1500000},
@@ -38,10 +37,11 @@ binayre_swindler = Creature:new {
 				{group = "binayre_common", chance = 4550000}
 			},
 			lootChance = 2200000
-		}				
+		}
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

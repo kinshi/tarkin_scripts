@@ -1,7 +1,6 @@
 gualama_patriarch = Creature:new {
 	objectName = "@mob/creature_names:gualama_patriarch",
 	socialGroup = "gualama",
-	pvpFaction = "",
 	faction = "",
 	level = 13,
 	chanceHit = 0.29,
@@ -32,7 +31,8 @@ gualama_patriarch = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"",""},
+		{"intimidationattack",""}
 	}
 }
 

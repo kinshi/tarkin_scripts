@@ -1,7 +1,6 @@
 neo_cobral_boss = Creature:new {
 	objectName = "@mob/creature_names:cobral_boss",
 	socialGroup = "cobral",
-	pvpFaction = "cobral",
 	faction = "cobral",
 	level = 30,
 	chanceHit = 0.38,
@@ -31,7 +30,7 @@ neo_cobral_boss = Creature:new {
 		"object/mobile/dressed_cobral_boss_twk_male_01.iff"},
 	
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2000000},
 				{group = "wearables_all", chance = 2000000},
@@ -40,10 +39,11 @@ neo_cobral_boss = Creature:new {
 				{group = "loot_kit_parts", chance = 2000000}
 			},
 			lootChance = 3200000
-		}					
+		}
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

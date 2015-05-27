@@ -1,7 +1,6 @@
 meatlump_buffoon = Creature:new {
 	objectName = "@mob/creature_names:meatlump_buffoon",
 	socialGroup = "meatlump",
-	pvpFaction = "meatlump",
 	faction = "meatlump",
 	level = 5,
 	chanceHit = 0.250000,
@@ -53,6 +52,7 @@ meatlump_buffoon = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_light"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

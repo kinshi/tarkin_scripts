@@ -1,7 +1,6 @@
 female_langlatch = Creature:new {
 	objectName = "@mob/creature_names:langlatch_female",
 	socialGroup = "langlatch",
-	pvpFaction = "",
 	faction = "",
 	level = 12,
 	chanceHit = 0.29,
@@ -33,8 +32,8 @@ female_langlatch = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"blindattack",""},
+		{"stunattack",""}
 	}
 }
 

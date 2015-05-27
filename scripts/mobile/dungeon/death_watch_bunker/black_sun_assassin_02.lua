@@ -2,7 +2,6 @@ black_sun_assassin_02 = Creature:new {
 --	objectName = "@mob/creature_names:mand_bunker_blksun_assassin",
 	customName = "Blacksun Assassin Scout",
 	socialGroup = "death_watch",
-	pvpFaction = "death_watch",
 	faction = "",
 	level = 107,
 	chanceHit = 25.5,

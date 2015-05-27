@@ -1,8 +1,7 @@
 criminal = Creature:new {
 	objectName = "@mob/creature_names:criminal",
+	randomNameType = NAME_GENERIC_TAG,
 	socialGroup = "thug",
-	generateRandomName = true,
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 7,
 	chanceHit = 0.26,
@@ -28,20 +27,20 @@ criminal = Creature:new {
 	diet = HERBIVORE,
 
 	templates = {"object/mobile/dressed_criminal_thug_human_male_01.iff",
-					"object/mobile/dressed_criminal_thug_bothan_female_01.iff",
-					"object/mobile/dressed_goon_twk_male_01.iff",
-					"object/mobile/dressed_robber_twk_female_01.iff",
-					"object/mobile/dressed_goon_twk_female_01.iff",
-					"object/mobile/dressed_robber_human_female_01.iff",
-					"object/mobile/dressed_villain_trandoshan_male_01.iff",
-					"object/mobile/dressed_criminal_thug_bothan_male_01.iff",
-					"object/mobile/dressed_villain_trandoshan_female_01.iff"
-					},
+		"object/mobile/dressed_criminal_thug_bothan_female_01.iff",
+		"object/mobile/dressed_goon_twk_male_01.iff",
+		"object/mobile/dressed_robber_twk_female_01.iff",
+		"object/mobile/dressed_goon_twk_female_01.iff",
+		"object/mobile/dressed_robber_human_female_01.iff",
+		"object/mobile/dressed_villain_trandoshan_male_01.iff",
+		"object/mobile/dressed_criminal_thug_bothan_male_01.iff",
+		"object/mobile/dressed_villain_trandoshan_female_01.iff"
+	},
 	lootGroups = {
 		{
 			groups = {
 				{group = "junk", chance = 4000000},
-				{group = "wearables_common", chance = 2000000},				
+				{group = "wearables_common", chance = 2000000},
 				{group = "pistols", chance = 1000000},
 				{group = "tailor_components", chance = 1500000},
 				{group = "loot_kit_parts", chance = 1500000}
@@ -51,6 +50,7 @@ criminal = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "generic_criminal_mission_giver_convotemplate",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

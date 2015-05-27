@@ -1,7 +1,6 @@
 deranged_wrix = Creature:new {
 	objectName = "@mob/creature_names:deranged_wrix",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 18,
 	chanceHit = 0.32,
@@ -11,7 +10,7 @@ deranged_wrix = Creature:new {
 	baseHAM = 2400,
 	baseHAMmax = 3000,
 	armor = 0,
-	resists = {115,115,15,145,-1,15,-1,15,-1},
+	resists = {115,115,5,145,-1,5,-1,5,-1},
 	meatType = "meat_carnivore",
 	meatAmount = 55,
 	hideType = "hide_bristley",
@@ -32,8 +31,8 @@ deranged_wrix = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"intimidationattack",""}
 	}
 }
 

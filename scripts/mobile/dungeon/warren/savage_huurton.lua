@@ -1,7 +1,6 @@
 savage_huurton = Creature:new {
 	objectName = "@mob/creature_names:warren_huurton_savage",
 	socialGroup = "warren_huurton",
-	pvpFaction = "",
 	faction = "",
 	level = 26,
 	chanceHit = 0.35,
@@ -32,8 +31,8 @@ savage_huurton = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"intimidationattack",""}
 	}
 }
 

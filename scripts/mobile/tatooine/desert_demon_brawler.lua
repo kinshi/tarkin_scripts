@@ -1,7 +1,6 @@
 desert_demon_brawler = Creature:new {
 	objectName = "@mob/creature_names:desert_demon_brawler",
 	socialGroup = "desert_demon",
-	pvpFaction = "desert_demon",
 	faction = "desert_demon",
 	level = 14,
 	chanceHit = 0.3,
@@ -28,20 +27,21 @@ desert_demon_brawler = Creature:new {
 
 	templates = {"object/mobile/dressed_tatooine_desert_demon_brawler.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2500000},
-				{group = "wearables_common", chance = 2000000},				
+				{group = "wearables_common", chance = 2000000},
 				{group = "tailor_components", chance = 1500000},
 				{group = "loot_kit_parts", chance = 1500000},
 				{group = "printer_parts", chance = 1000000},
 				{group = "desert_demon_common", chance = 1500000}
 			},
 			lootChance = 2200000
-		}				
+		}
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

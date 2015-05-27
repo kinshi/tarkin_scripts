@@ -2,7 +2,6 @@ highwayman = Creature:new {
 	objectName = "",
 	customName = "Highwayman",
 	socialGroup = "brigand",
-	pvpFaction = "",
 	faction = "",
 	level = 10,
 	chanceHit = 0.28,
@@ -58,6 +57,7 @@ highwayman = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

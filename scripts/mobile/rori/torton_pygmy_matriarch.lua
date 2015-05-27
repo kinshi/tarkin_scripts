@@ -1,7 +1,6 @@
 torton_pygmy_matriarch = Creature:new {
 	objectName = "@mob/creature_names:torton_pygmy_matriarch",
 	socialGroup = "torton",
-	pvpFaction = "",
 	faction = "",
 	level = 26,
 	chanceHit = 0.36,
@@ -32,8 +31,8 @@ torton_pygmy_matriarch = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""},
+		{"dizzyattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 blurrg_tracker = Creature:new {
 	objectName = "@mob/creature_names:blurrg_tracker",
 	socialGroup = "blurrg",
-	pvpFaction = "",
 	faction = "",
 	level = 28,
 	chanceHit = 0.36,
@@ -32,8 +31,8 @@ blurrg_tracker = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"knockdownattack","knockdownChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"knockdownattack",""}
 	}
 }
 

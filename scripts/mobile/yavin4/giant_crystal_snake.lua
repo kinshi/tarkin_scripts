@@ -1,7 +1,6 @@
 giant_crystal_snake = Creature:new {
 	objectName = "@mob/creature_names:giant_crystal_snake",
 	socialGroup = "snake",
-	pvpFaction = "",
 	faction = "",
 	level = 31,
 	chanceHit = 0.39,
@@ -33,7 +32,8 @@ giant_crystal_snake = Creature:new {
 	weapons = {"creature_spit_small_toxicgreen"},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"strongpoison",""}
 	}
 }
 

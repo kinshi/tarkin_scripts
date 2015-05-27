@@ -1,7 +1,6 @@
 mature_hanadak = Creature:new {
 	objectName = "@mob/creature_names:mature_hanadak",
 	socialGroup = "hanadak",
-	pvpFaction = "",
 	faction = "",
 	level = 31,
 	chanceHit = 0.39,
@@ -32,8 +31,8 @@ mature_hanadak = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""},
+		{"dizzyattack",""}
 	}
 }
 

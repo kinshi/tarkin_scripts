@@ -1,7 +1,6 @@
 lurking_shear_mite = Creature:new {
 	objectName = "@mob/creature_names:lurking_shear_mite",
 	socialGroup = "shear_mite",
-	pvpFaction = "",
 	faction = "",
 	level = 15,
 	chanceHit = 0.31,
@@ -33,7 +32,8 @@ lurking_shear_mite = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"",""},
+		{"intimidationattack",""}
 	}
 }
 

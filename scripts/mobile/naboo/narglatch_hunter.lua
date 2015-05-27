@@ -1,7 +1,6 @@
 narglatch_hunter = Creature:new {
 	objectName = "@mob/creature_names:narglatch_hunter",
 	socialGroup = "narglatch",
-	pvpFaction = "",
 	faction = "",
 	level = 12,
 	chanceHit = 0.29,
@@ -32,8 +31,8 @@ narglatch_hunter = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"stunattack","stunChance=50"}
+		{"intimidationattack",""},
+		{"stunattack",""}
 	}
 }
 

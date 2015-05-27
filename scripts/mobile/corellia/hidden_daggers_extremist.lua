@@ -1,7 +1,6 @@
 hidden_daggers_extremist = Creature:new {
 	objectName = "@mob/creature_names:hidden_daggers_extremist",
 	socialGroup = "hidden_daggers",
-	pvpFaction = "hidden_daggers",
 	faction = "hidden_daggers",
 	level = 13,
 	chanceHit = 0.3,
@@ -43,9 +42,10 @@ hidden_daggers_extremist = Creature:new {
 				{group = "hidden_dagger_common", chance = 2700000}
 			},
 			lootChance = 3000000
-		}	
+		}
 	},
 	weapons = {"pirate_weapons_medium"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

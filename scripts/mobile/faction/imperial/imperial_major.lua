@@ -1,7 +1,6 @@
 imperial_major = Creature:new {
 	objectName = "@mob/creature_names:imperial_major",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 21,
 	chanceHit = 0.34,
@@ -46,6 +45,7 @@ imperial_major = Creature:new {
 	},
 	weapons = {"imperial_weapons_heavy"},
 	conversationTemplate = "imperialRecruiterConvoTemplate",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 tattered_torton = Creature:new {
 	objectName = "@mob/creature_names:tattered_torton",
 	socialGroup = "torton",
-	pvpFaction = "",
 	faction = "",
 	level = 17,
 	chanceHit = 0.32,
@@ -32,8 +31,8 @@ tattered_torton = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"dizzyattack",""},
+		{"stunattack",""}
 	}
 }
 

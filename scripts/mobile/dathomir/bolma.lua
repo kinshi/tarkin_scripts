@@ -1,7 +1,6 @@
 bolma = Creature:new {
 	objectName = "@mob/creature_names:bolma",
 	socialGroup = "bolma",
-	pvpFaction = "",
 	faction = "",
 	level = 19,
 	chanceHit = 0.33,
@@ -32,8 +31,8 @@ bolma = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"dizzyattack",""},
+		{"posturedownattack",""}
 	}
 }
 

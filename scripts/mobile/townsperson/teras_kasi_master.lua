@@ -1,8 +1,7 @@
 teras_kasi_master = Creature:new {
 	objectName = "@mob/creature_names:teras_kasi_master",
-	generateRandomName = true,
+	randomNameType = NAME_GENERIC_TAG,
 	socialGroup = "townsperson",
-	pvpFaction = "townsperson",
 	faction = "townsperson",
 	level = 21,
 	chanceHit = 0.33,
@@ -33,6 +32,7 @@ teras_kasi_master = Creature:new {
 	lootGroups = {},
 	weapons = {},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = brawlermaster
 }
 

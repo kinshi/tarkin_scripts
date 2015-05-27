@@ -1,7 +1,6 @@
 crimson_blurrg = Creature:new {
 	objectName = "@mob/creature_names:crimson_blurrg",
 	socialGroup = "blurrg",
-	pvpFaction = "",
 	faction = "",
 	level = 35,
 	chanceHit = 0.41,
@@ -31,8 +30,8 @@ crimson_blurrg = Creature:new {
 	weapons = {"creature_spit_small_red"},
 	conversationTemplate = "",
 	attacks = {
-		{"knockdownattack","knockdownChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"knockdownattack",""}
 	}
 }
 

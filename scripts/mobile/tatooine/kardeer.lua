@@ -1,7 +1,6 @@
 kardeer = Creature:new {
 	objectName = "@mob/creature_names:kardeer",
 	socialGroup = "valarian",
-	pvpFaction = "valarian",
 	faction = "valarian",
 	level = 21,
 	chanceHit = 0.33,
@@ -28,6 +27,7 @@ kardeer = Creature:new {
 	templates = {"object/mobile/kardeer.iff"},
 	lootGroups = {},
 	weapons = {},
+	reactionStf = "@npc_reaction/slang",
 	attacks = brawlermaster
 }
 

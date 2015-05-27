@@ -1,7 +1,6 @@
 trandosian_slaver = Creature:new {
 	objectName = "@mob/creature_names:trandoshan_slaver",
 	socialGroup = "slaver",
-	pvpFaction = "",
 	faction = "",
 	level = 5,
 	chanceHit = 0.25,
@@ -41,6 +40,7 @@ trandosian_slaver = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

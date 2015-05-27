@@ -2,7 +2,6 @@ enhanced_force_kliknik = Creature:new {
 	objectName = "",
 	customName = "Force Kliknik",
 	socialGroup = "geonosian_creature",
-	pvpFaction = "",
 	faction = "",
 	level = 94,
 	chanceHit = 0.95,
@@ -37,11 +36,11 @@ enhanced_force_kliknik = Creature:new {
 			lootChance = 3000000
 		}
 	},
-	weapons = {"creature_spit_small_yellow"},
+	weapons = {"creature_spit_heavy_flame"},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareaattack",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"creatureareaattack",""}
 	}
 }
 

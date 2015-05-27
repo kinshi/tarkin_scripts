@@ -1,8 +1,7 @@
 scientist = Creature:new {
 	objectName = "@mob/creature_names:scientist",
-	generateRandomName = true,
+	randomNameType = NAME_GENERIC_TAG,
 	socialGroup = "townsperson",
-	pvpFaction = "townsperson",
 	faction = "townsperson",
 	level = 34,
 	chanceHit = 0.410000,

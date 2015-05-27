@@ -1,7 +1,6 @@
 kliknik_queen = Creature:new {
 	objectName = "@mob/creature_names:kliknik_queen",
 	socialGroup = "kliknik",
-	pvpFaction = "",
 	faction = "",
 	level = 37,
 	chanceHit = 0.41,
@@ -39,7 +38,7 @@ kliknik_queen = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"},
+		{"stunattack",""},
 		{"mildpoison",""}
 	}
 }

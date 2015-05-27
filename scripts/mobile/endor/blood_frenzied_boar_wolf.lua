@@ -1,7 +1,6 @@
 blood_frenzied_boar_wolf = Creature:new {
 	objectName = "@mob/creature_names:blood_frenzied_boar_wolf",
 	socialGroup = "boar",
-	pvpFaction = "",
 	faction = "",
 	level = 45,
 	chanceHit = 0.44,
@@ -32,8 +31,8 @@ blood_frenzied_boar_wolf = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"creatureareableeding",""}
+		{"creatureareableeding",""},
+		{"blindattack",""}
 	}
 }
 

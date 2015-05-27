@@ -58,7 +58,7 @@ Warcry1Command = {
 		{ "nextAttackDelayRecovery" },  
 		{ "warcry_defense" }, 
 		{}, 
-		100, 
+		50, 
 		0, 
 		10 
 	  )
@@ -68,6 +68,9 @@ Warcry1Command = {
 	animationCRC = hashCode("warcry"),
 	effectString = "clienteffect/combat_special_attacker_warcry.cef",
 	range = 15,
+
+	coneAction = true,
+	coneAngle = 15,
 
 	poolsToDamage = 0
 }

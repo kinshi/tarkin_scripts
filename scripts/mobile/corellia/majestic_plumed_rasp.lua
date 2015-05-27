@@ -1,7 +1,6 @@
 majestic_plumed_rasp = Creature:new {
 	objectName = "@mob/creature_names:majestic_plumed_rasp",
 	socialGroup = "rasp",
-	pvpFaction = "",
 	faction = "",
 	level = 12,
 	chanceHit = 0.29,
@@ -32,7 +31,7 @@ majestic_plumed_rasp = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

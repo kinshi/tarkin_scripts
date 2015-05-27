@@ -1,7 +1,6 @@
 plasma_thief_leader = Creature:new {
 	objectName = "@mob/creature_names:plasma_thief_leader",
 	socialGroup = "plasma_thief",
-	pvpFaction = "plasma_thief",
 	faction = "plasma_thief",
 	level = 9,
 	chanceHit = 0.27,
@@ -38,6 +37,7 @@ plasma_thief_leader = Creature:new {
 		}
 	},
 	weapons = {"ranged_weapons"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

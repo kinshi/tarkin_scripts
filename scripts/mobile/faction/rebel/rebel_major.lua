@@ -1,7 +1,6 @@
 rebel_major = Creature:new {
 	objectName = "@mob/creature_names:rebel_major",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 22,
 	chanceHit = 0.35,
@@ -52,6 +51,7 @@ rebel_major = Creature:new {
 	},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "rebelRecruiterConvoTemplate",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

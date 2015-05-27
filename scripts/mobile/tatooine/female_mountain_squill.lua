@@ -1,7 +1,6 @@
 female_mountain_squill = Creature:new {
 	objectName = "@mob/creature_names:female_mountain_squill",
 	socialGroup = "squill",
-	pvpFaction = "",
 	faction = "",
 	level = 34,
 	chanceHit = 0.4,
@@ -32,8 +31,8 @@ female_mountain_squill = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"blindattack",""},
+		{"stunattack",""}
 	}
 }
 

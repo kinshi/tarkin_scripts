@@ -1,7 +1,6 @@
 nym_surveyer = Creature:new {
 	objectName = "@mob/creature_names:nym_surveyer",
 	socialGroup = "nym",
-	pvpFaction = "nym",
 	faction = "nym",
 	level = 21,
 	chanceHit = 0.33,
@@ -44,6 +43,7 @@ nym_surveyer = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,7 @@
 raxa_stormtrooper = Creature:new {
 	objectName = "@mob/creature_names:stormtrooper",
+	randomNameType = NAME_STORMTROOPER_TAG,
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 25,
 	chanceHit = 0.36,

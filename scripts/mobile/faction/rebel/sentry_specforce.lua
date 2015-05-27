@@ -2,7 +2,6 @@ sentry_specforce = Creature:new {
 	objectName = "",
 	customName = "Specforce Sentry",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 97,
 	chanceHit = 0.95,

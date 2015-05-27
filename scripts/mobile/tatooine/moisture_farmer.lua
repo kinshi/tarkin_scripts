@@ -1,7 +1,6 @@
 moisture_farmer = Creature:new {
 	objectName = "@mob/creature_names:moisture_farmer",
 	socialGroup = "townsperson",
-	pvpFaction = "townsperson",
 	faction = "townsperson",
 	level = 4,
 	chanceHit = 0.240000,
@@ -38,6 +37,7 @@ moisture_farmer = Creature:new {
 		}
 	},
 	weapons = {"rebel_weapons_light"},
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

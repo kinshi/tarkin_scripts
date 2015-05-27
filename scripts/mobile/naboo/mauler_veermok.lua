@@ -1,7 +1,6 @@
 mauler_veermok = Creature:new {
 	objectName = "@mob/creature_names:mauler_veermok",
 	socialGroup = "mauler",
-	pvpFaction = "",
 	faction = "",
 	level = 19,
 	chanceHit = 0.33,
@@ -31,8 +30,8 @@ mauler_veermok = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"dizzyattack",""},
+		{"stunattack",""}
 	}
 }
 

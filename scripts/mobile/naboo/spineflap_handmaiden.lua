@@ -1,7 +1,6 @@
 spineflap_handmaiden = Creature:new {
 	objectName = "@mob/creature_names:spineflap_handmaiden",
 	socialGroup = "spineflap",
-	pvpFaction = "",
 	faction = "",
 	level = 15,
 	chanceHit = 0.31,
@@ -33,7 +32,7 @@ spineflap_handmaiden = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 deranged_ravisher = Creature:new {
 	objectName = "@mob/creature_names:squill_deranged_ravisher",
 	socialGroup = "squill",
-	pvpFaction = "",
 	faction = "",
 	level = 35,
 	chanceHit = 0.39,
@@ -33,7 +32,7 @@ deranged_ravisher = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"knockdownattack","knockdownChance=50"},
+		{"knockdownattack",""},
 		{"mediumdisease",""}
 	}
 }

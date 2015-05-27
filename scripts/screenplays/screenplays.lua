@@ -37,6 +37,7 @@ includeFile("dungeon/death_watch_bunker/conversations/deathWatchHaldoConvoHandle
 includeFile("dungeon/death_watch_bunker/conversations/deathWatchLutinNightstalkerConvoHandler.lua")
 includeFile("dungeon/death_watch_bunker/conversations/deathWatchMedicalDroidConvoHandler.lua")
 includeFile("dungeon/death_watch_bunker/conversations/deathWatchRescueScientistConvoHandler.lua")
+includeFile("dungeon/death_watch_bunker/conversations/deathWatchTechnicianConvoHandler.lua")
 includeFile("dungeon/death_watch_bunker/conversations/deathWatchWorkshopDroidConvoHandler.lua")
 includeFile("dungeon/geonosian_lab/geo_lab.lua")
 includeFile("dungeon/warren/warren.lua")
@@ -64,9 +65,14 @@ includeFile("events/eventPromoter.lua")
 includeFile("events/lifeDay.lua")
 
 -- Hero of Tatooine
-includeFile("tasks/hero_of_tatooine/conversations/hermitConvoHandler.lua")
-includeFile("tasks/hero_of_tatooine/heroOfTatooine.lua")
-includeFile("tasks/hero_of_tatooine/heroOfTatooineMenuComponents.lua")
+--includeFile("tasks/hero_of_tatooine/conversations/hermitConvoHandler.lua")
+--includeFile("tasks/hero_of_tatooine/conversations/heroOfTatBountyHunterConvoHandler.lua")
+--includeFile("tasks/hero_of_tatooine/conversations/heroOfTatFarmerConvoHandler.lua")
+--includeFile("tasks/hero_of_tatooine/conversations/heroOfTatIntellectLiarConvoHandler.lua")
+--includeFile("tasks/hero_of_tatooine/conversations/heroOfTatMotherConvoHandler.lua")
+--includeFile("tasks/hero_of_tatooine/heroOfTatooine.lua")
+--includeFile("tasks/hero_of_tatooine/heroOfTatooineContainerComponents.lua")
+--includeFile("tasks/hero_of_tatooine/heroOfTatooineMenuComponents.lua")
 
 -- Task/Quest
 includeFile("tasks/corellia/chertyl_ruluwoor.lua")
@@ -302,7 +308,7 @@ includeFile("static_spawns/dathomir_static_spawns_se.lua")
 includeFile("static_spawns/dathomir_static_spawns_sw.lua")
 includeFile("static_spawns/endor_static_spawns.lua")
 includeFile("static_spawns/lok_static_spawns.lua")
---includeFile("static_spawns/naboo_static_spawns_north.lua")
+includeFile("static_spawns/naboo_static_spawns_north.lua")
 includeFile("static_spawns/naboo_static_spawns_south.lua")
 includeFile("static_spawns/rori_static_spawns.lua")
 includeFile("static_spawns/talus_static_spawns_north.lua")
@@ -336,9 +342,9 @@ includeFile("record_keepers/record_keepers.lua")
 
 --Tarkin Custom
 
---includeFile("tests/ep3.lua")
+includeFile("tests/ep3.lua")
 includeFile("tests/painting_vendor.lua")
-includeFile("events/lifeday_2014.lua")
+--includeFile("events/lifeday_2014.lua")
 
 --Jedi trainers on Dantooine
 

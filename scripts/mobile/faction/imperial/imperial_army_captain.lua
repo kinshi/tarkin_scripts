@@ -1,7 +1,6 @@
 imperial_army_captain = Creature:new {
 	objectName = "@mob/creature_names:imperial_army_captain",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 21,
 	chanceHit = 0.34,
@@ -46,6 +45,8 @@ imperial_army_captain = Creature:new {
 	},
 	weapons = {"imperial_weapons_heavy"},
 	conversationTemplate = "imperialRecruiterConvoTemplate",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",	
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

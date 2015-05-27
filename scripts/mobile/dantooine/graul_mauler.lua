@@ -1,7 +1,6 @@
 graul_mauler = Creature:new {
 	objectName = "@mob/creature_names:graul_mauler",
 	socialGroup = "graul",
-	pvpFaction = "",
 	faction = "",
 	level = 35,
 	chanceHit = 0.41,
@@ -33,8 +32,8 @@ graul_mauler = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"intimidationattack",""}
 	}
 }
 

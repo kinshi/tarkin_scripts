@@ -1,7 +1,6 @@
 great_plains_stalker = Creature:new {
 	objectName = "@mob/creature_names:great_plains_stalker",
 	socialGroup = "panther",
-	pvpFaction = "",
 	faction = "",
 	level = 51,
 	chanceHit = 0.5,
@@ -33,8 +32,8 @@ great_plains_stalker = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"blindattack",""},
+		{"stunattack",""}
 	}
 }
 

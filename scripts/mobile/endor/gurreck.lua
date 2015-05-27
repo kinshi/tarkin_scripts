@@ -1,7 +1,6 @@
 gurreck = Creature:new {
 	objectName = "@mob/creature_names:gurreck",
 	socialGroup = "gurreck",
-	pvpFaction = "",
 	faction = "",
 	level = 50,
 	chanceHit = 0.5,
@@ -33,8 +32,8 @@ gurreck = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"intimidationattack",""}
 	}
 }
 

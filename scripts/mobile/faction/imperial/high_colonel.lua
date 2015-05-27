@@ -1,7 +1,6 @@
 high_colonel = Creature:new {
 	objectName = "@mob/creature_names:high_colonel",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 24,
 	chanceHit = 0.35,
@@ -30,6 +29,8 @@ high_colonel = Creature:new {
 	lootGroups = {},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",	
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 domesticated_brackaset = Creature:new {
 	objectName = "@mob/creature_names:domesticated_brackaset",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 23,
 	chanceHit = 0.35,
@@ -32,7 +31,7 @@ domesticated_brackaset = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 nym_bodyguard = Creature:new {
 	objectName = "@mob/creature_names:nym_bodyguard",
 	socialGroup = "nym",
-	pvpFaction = "nym",
 	faction = "nym",
 	level = 28,
 	chanceHit = 0.37,
@@ -43,6 +42,7 @@ nym_bodyguard = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 

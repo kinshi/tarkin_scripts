@@ -1,7 +1,6 @@
 vesp = Creature:new {
 	objectName = "@mob/creature_names:vesp",
 	socialGroup = "vesp",
-	pvpFaction = "",
 	faction = "",
 	level = 25,
 	chanceHit = 0.35,
@@ -31,8 +30,8 @@ vesp = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"blindattack",""},
+		{"stunattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 afarathu_savage = Creature:new {
 	objectName = "@mob/creature_names:afarathu_cult_savage",
 	socialGroup = "afarathu",
-	pvpFaction = "afarathu",
 	faction = "afarathu",
 	level = 7,
 	chanceHit = 0.26,
@@ -62,6 +61,7 @@ afarathu_savage = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

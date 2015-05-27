@@ -1,7 +1,6 @@
 rodian_clan_medic = Creature:new {
 	objectName = "@mob/creature_names:rodian_clan_medic",
 	socialGroup = "rodian",
-	pvpFaction = "",
 	faction = "",
 	level = 7,
 	chanceHit = 0.26,
@@ -41,6 +40,7 @@ rodian_clan_medic = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

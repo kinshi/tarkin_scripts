@@ -1,7 +1,6 @@
 ragtag_kook = Creature:new {
 	objectName = "@mob/creature_names:ragtag_kook",
 	socialGroup = "ragtag",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 5,
 	chanceHit = 0.250000,
@@ -55,6 +54,7 @@ ragtag_kook = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_light"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

@@ -1,7 +1,6 @@
 mauler_master = Creature:new {
 	objectName = "@mob/creature_names:mauler_master",
 	socialGroup = "mauler",
-	pvpFaction = "",
 	faction = "",
 	level = 54,
 	chanceHit = 0.5,
@@ -28,7 +27,7 @@ mauler_master = Creature:new {
 
 	templates = {"object/mobile/dressed_mauler_master.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 3000000},
 				{group = "tailor_components", chance = 1000000},
@@ -38,10 +37,11 @@ mauler_master = Creature:new {
 				{group = "wearables_uncommon", chance = 1000000}
 			},
 			lootChance = 3000000
-		}					
+		}
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/fancy",
 	attacks = merge(brawlermaster,marksmanmaster,bountyhuntermaster)
 }
 

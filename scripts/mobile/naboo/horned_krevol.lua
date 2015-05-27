@@ -1,7 +1,6 @@
 horned_krevol = Creature:new {
 	objectName = "@mob/creature_names:horned_krevol",
 	socialGroup = "krevol",
-	pvpFaction = "",
 	faction = "",
 	level = 6,
 	chanceHit = 0.25,
@@ -32,7 +31,8 @@ horned_krevol = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

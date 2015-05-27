@@ -2,7 +2,6 @@ frontiersman = Creature:new {
 	objectName = "",
 	customName = "Frontiersman",
 	socialGroup = "wilder",
-	pvpFaction = "",
 	faction = "",
 	level = 17,
 	chanceHit = 0.32,
@@ -42,6 +41,7 @@ frontiersman = Creature:new {
 	},
 	weapons = {},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

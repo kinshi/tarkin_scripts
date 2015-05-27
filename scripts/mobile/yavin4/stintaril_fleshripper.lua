@@ -1,7 +1,6 @@
 stintaril_fleshripper = Creature:new {
 	objectName = "@mob/creature_names:stintaril_fleshstripper",
 	socialGroup = "stinaril",
-	pvpFaction = "",
 	faction = "",
 	level = 16,
 	chanceHit = 0.31,
@@ -33,7 +32,7 @@ stintaril_fleshripper = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""}
 	}
 }
 

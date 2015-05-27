@@ -2,7 +2,6 @@ pirate_squab = Creature:new {
 	objectName = "",
 	customName = "a Pirate Squab",
 	socialGroup = "pirate",
-	pvpFaction = "",
 	faction = "",
 	level = 4,
 	chanceHit = 0.24,
@@ -60,6 +59,7 @@ pirate_squab = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

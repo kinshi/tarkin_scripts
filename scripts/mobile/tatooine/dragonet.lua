@@ -1,7 +1,6 @@
 dragonet = Creature:new {
 	objectName = "@mob/creature_names:dragonet",
 	socialGroup = "lizard",
-	pvpFaction = "",
 	faction = "",
 	level = 29,
 	chanceHit = 0.37,
@@ -33,8 +32,7 @@ dragonet = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"},
-		{"posturedownattack","posturedownChance=50"}
+		{"stunattack",""}
 	}
 }
 

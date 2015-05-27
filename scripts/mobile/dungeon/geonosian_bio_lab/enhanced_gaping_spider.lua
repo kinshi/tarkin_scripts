@@ -2,7 +2,6 @@ enhanced_gaping_spider = Creature:new {
 	objectName = "@mob/creature_names:geonosian_gaping_spider_fire",
 	customName = "Fire Breathing Spider",
 	socialGroup = "geonosian_creature",
-	pvpFaction = "",
 	faction = "",
 	level = 108,
 	chanceHit = 2.5,
@@ -37,11 +36,11 @@ enhanced_gaping_spider = Creature:new {
 			lootChance = 6000000
 		}	
 	},
-	weapons = {"creature_spit_small_toxicgreen"},
+	weapons = {"creature_spit_heavy_flame"},
 	conversationTemplate = "",
 	attacks = {
 		{"strongpoison",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

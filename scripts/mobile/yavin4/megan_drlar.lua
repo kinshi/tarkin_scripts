@@ -1,7 +1,6 @@
 megan_drlar = Creature:new {
 	objectName = "@mob/creature_names:megan_drlar",
 	socialGroup = "thug",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 22,
 	chanceHit = 0.330000,
@@ -28,6 +27,7 @@ megan_drlar = Creature:new {
 	templates = {"object/mobile/megan_drlar.iff"},
 	lootGroups = {},
 	weapons = {},
+	reactionStf = "@npc_reaction/slang",
 	attacks = brawlermaster
 }
 

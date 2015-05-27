@@ -1,7 +1,6 @@
 darklighter_guard = Creature:new {
 	objectName = "@mob/creature_names:darklighter_guard",
 	socialGroup = "darklighter",
-	pvpFaction = "",
 	faction = "",
 	level = 9,
 	chanceHit = 0.27,
@@ -30,6 +29,7 @@ darklighter_guard = Creature:new {
 	lootGroups = {},
 	weapons = {"rebel_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

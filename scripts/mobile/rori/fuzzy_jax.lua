@@ -1,7 +1,6 @@
 fuzzy_jax = Creature:new {
 	objectName = "@mob/creature_names:fuzzy_jax",
 	socialGroup = "jax",
-	pvpFaction = "",
 	faction = "",
 	level = 13,
 	chanceHit = 0.29,
@@ -33,7 +32,8 @@ fuzzy_jax = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 shallow_torton = Creature:new {
 	objectName = "@mob/creature_names:shallow_torton",
 	socialGroup = "torton",
-	pvpFaction = "",
 	faction = "",
 	level = 19,
 	chanceHit = 0.32,
@@ -32,7 +31,7 @@ shallow_torton = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"}
+		{"dizzyattack",""}
 	}
 }
 

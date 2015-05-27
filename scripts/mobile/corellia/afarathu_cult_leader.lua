@@ -1,7 +1,6 @@
 afarathu_cult_leader = Creature:new {
 	objectName = "@mob/creature_names:afarathu_cult_leader",
 	socialGroup = "afarathu",
-	pvpFaction = "afarathu",
 	faction = "afarathu",
 	level = 18,
 	chanceHit = 0.32,
@@ -50,6 +49,7 @@ afarathu_cult_leader = Creature:new {
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

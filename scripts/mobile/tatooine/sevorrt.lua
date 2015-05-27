@@ -1,7 +1,6 @@
 sevorrt = Creature:new {
 	objectName = "@mob/creature_names:sevorrt",
 	socialGroup = "sevorrt",
-	pvpFaction = "",
 	faction = "",
 	level = 7,
 	chanceHit = 0.26,
@@ -33,7 +32,7 @@ sevorrt = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

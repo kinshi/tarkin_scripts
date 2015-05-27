@@ -1,7 +1,6 @@
 jundland_eopie = Creature:new {
 	objectName = "@mob/creature_names:jundland_eopie",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 10,
 	chanceHit = 0.27,
@@ -34,7 +33,8 @@ jundland_eopie = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

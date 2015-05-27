@@ -1,7 +1,6 @@
 assault_trooper = Creature:new {
 	objectName = "@mob/creature_names:assault_trooper",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 26,
 	chanceHit = 0.36,
@@ -46,6 +45,8 @@ assault_trooper = Creature:new {
 	},
 	weapons = {"st_assault_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/stormtrooper",
+	personalityStf = "@hireling/hireling_stormtrooper",
 	attacks = merge(marksmanmaster,carbineermaster,brawlermaster)
 }
 

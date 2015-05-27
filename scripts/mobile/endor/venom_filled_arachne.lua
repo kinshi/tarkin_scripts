@@ -1,7 +1,6 @@
 venom_filled_arachne = Creature:new {
 	objectName = "@mob/creature_names:venom_filled_arachne",
 	socialGroup = "arachne",
-	pvpFaction = "",
 	faction = "",
 	level = 36,
 	chanceHit = 0.4,
@@ -28,11 +27,11 @@ venom_filled_arachne = Creature:new {
 
 	templates = {"object/mobile/queen_arachne.iff"},
 	lootGroups = {},
-	weapons = {},
+	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"strongpoison",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"strongpoison",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 quenker_ravager = Creature:new {
 	objectName = "@mob/creature_names:quenker_ravager",
 	socialGroup = "quenker",
-	pvpFaction = "",
 	faction = "",
 	level = 38,
 	chanceHit = 0.43,
@@ -32,8 +31,8 @@ quenker_ravager = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareapoison",""},
-		{"dizzyattack","dizzyChance=50"}
+		{"dizzyattack",""},
+		{"creatureareapoison",""}
 	}
 }
 

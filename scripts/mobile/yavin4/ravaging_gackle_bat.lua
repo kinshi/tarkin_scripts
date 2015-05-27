@@ -1,7 +1,6 @@
 ravaging_gackle_bat = Creature:new {
 	objectName = "@mob/creature_names:ravaging_gackle_bat",
 	socialGroup = "gacklebat",
-	pvpFaction = "",
 	faction = "",
 	level = 18,
 	chanceHit = 0.32,
@@ -33,7 +32,7 @@ ravaging_gackle_bat = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

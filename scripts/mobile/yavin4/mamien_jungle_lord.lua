@@ -1,7 +1,6 @@
 mamien_jungle_lord = Creature:new {
 	objectName = "@mob/creature_names:mamien_junglelord",
 	socialGroup = "mamien",
-	pvpFaction = "",
 	faction = "",
 	level = 24,
 	chanceHit = 0.35,
@@ -33,8 +32,8 @@ mamien_jungle_lord = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"stunattack",""}
 	}
 }
 

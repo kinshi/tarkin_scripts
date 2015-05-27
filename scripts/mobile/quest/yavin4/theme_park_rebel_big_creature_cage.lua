@@ -1,7 +1,6 @@
 theme_park_rebel_big_creature_cage = Creature:new {
 	objectName = "@mob/creature_names:mawgax_raptor",
 	socialGroup = "mawgax",
-	pvpFaction = "",
 	faction = "",
 	level = 30,
 	chanceHit = 0.39,
@@ -38,7 +37,7 @@ theme_park_rebel_big_creature_cage = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

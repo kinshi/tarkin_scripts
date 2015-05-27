@@ -1,7 +1,6 @@
 mountain_worrt = Creature:new {
 	objectName = "@mob/creature_names:mountain_worrt",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 22,
 	chanceHit = 0.34,
@@ -33,8 +32,8 @@ mountain_worrt = Creature:new {
 	weapons = {"creature_spit_small_red"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"blindattack",""}
 	}
 }
 

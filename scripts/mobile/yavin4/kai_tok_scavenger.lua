@@ -1,7 +1,6 @@
 kai_tok_scavenger = Creature:new {
 	objectName = "@mob/creature_names:kai_tok_scavenger",
 	socialGroup = "kai_tok",
-	pvpFaction = "",
 	faction = "",
 	level = 31,
 	chanceHit = 0.39,
@@ -32,8 +31,8 @@ kai_tok_scavenger = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","posturedownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"posturedownattack",""},
+		{"stunattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 mantigrue_reaper = Creature:new {
 	objectName = "@mob/creature_names:mantigrue_reaper",
 	socialGroup = "mantigrue",
-	pvpFaction = "",
 	faction = "",
 	level = 50,
 	chanceHit = 0.47,
@@ -32,7 +31,7 @@ mantigrue_reaper = Creature:new {
 	weapons = {"creature_spit_small_red"},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

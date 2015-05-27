@@ -1,7 +1,6 @@
 dire_cat = Creature:new {
 	objectName = "@mob/creature_names:dire_cat",
 	socialGroup = "dire_cat",
-	pvpFaction = "",
 	faction = "",
 	level = 14,
 	chanceHit = 0.3,
@@ -32,7 +31,8 @@ dire_cat = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

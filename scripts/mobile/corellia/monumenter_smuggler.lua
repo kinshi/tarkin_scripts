@@ -1,7 +1,6 @@
 monumenter_smuggler = Creature:new {
 	objectName = "@mob/creature_names:monumenter_smuggler",
 	socialGroup = "monumenter",
-	pvpFaction = "monumenter",
 	faction = "monumenter",
 	level = 12,
 	chanceHit = 0.29,
@@ -41,6 +40,7 @@ monumenter_smuggler = Creature:new {
 		"object/mobile/dressed_desperado_bith_male_01.iff"},
 	lootGroups = {},
 	weapons = {"ranged_weapons"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

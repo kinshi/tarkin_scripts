@@ -1,7 +1,6 @@
 huurton_matron = Creature:new {
 	objectName = "@mob/creature_names:huurton_matron",
 	socialGroup = "huurton",
-	pvpFaction = "",
 	faction = "",
 	level = 26,
 	chanceHit = 0.36,
@@ -32,8 +31,8 @@ huurton_matron = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"stunattack","stunChance=50"}
+		{"blindattack",""},
+		{"stunattack",""}
 	}
 }
 

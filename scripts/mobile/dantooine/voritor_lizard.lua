@@ -1,7 +1,6 @@
 voritor_lizard = Creature:new {
 	objectName = "@mob/creature_names:voritor_lizard",
 	socialGroup = "voritor",
-	pvpFaction = "",
 	faction = "",
 	level = 22,
 	chanceHit = 0.35,
@@ -36,10 +35,10 @@ voritor_lizard = Creature:new {
 			lootChance = 1900000
 		}
 	},
-	weapons = {},
+	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

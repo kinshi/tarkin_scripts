@@ -1,7 +1,6 @@
 chunker_mooch = Creature:new {
 	objectName = "@mob/creature_names:chunker_mooch",
 	socialGroup = "chunker",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 7,
 	chanceHit = 0.26,
@@ -42,6 +41,7 @@ chunker_mooch = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_light"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

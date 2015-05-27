@@ -1,7 +1,6 @@
 crazed_gurreck = Creature:new {
 	objectName = "@mob/creature_names:crazed_gurreck",
 	socialGroup = "gurreck",
-	pvpFaction = "",
 	faction = "",
 	level = 25,
 	chanceHit = 0.36,
@@ -33,8 +32,8 @@ crazed_gurreck = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"dizzyattack",""},
+		{"stunattack",""}
 	}
 }
 

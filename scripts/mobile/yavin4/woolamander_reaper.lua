@@ -1,7 +1,6 @@
 woolamander_reaper = Creature:new {
 	objectName = "@mob/creature_names:woolamander_reaper",
 	socialGroup = "woolamander",
-	pvpFaction = "",
 	faction = "",
 	level = 47,
 	chanceHit = 0.48,
@@ -32,7 +31,8 @@ woolamander_reaper = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareadisease",""}
+		{"creatureareadisease",""},
+		{"intimidationattack",""}
 	}
 }
 

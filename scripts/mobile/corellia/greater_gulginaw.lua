@@ -33,9 +33,8 @@ greater_gulginaw = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","posturedownChance=50"},
-		{"knockdownattack","knockdownChance=50"}
-		{"stunattack","stunChance=50"}
+		{"posturedownattack",""},
+		{"stunattack",""}
 	}
 }
 

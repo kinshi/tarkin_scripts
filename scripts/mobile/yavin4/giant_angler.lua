@@ -1,7 +1,6 @@
 giant_angler = Creature:new {
 	objectName = "@mob/creature_names:giant_angler",
 	socialGroup = "angler",
-	pvpFaction = "",
 	faction = "",
 	level = 35,
 	chanceHit = 0.41,
@@ -33,8 +32,8 @@ giant_angler = Creature:new {
 	weapons = {"creature_spit_small_toxicgreen"},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"strongpoison",""}
+		{"strongpoison",""},
+		{"blindattack",""}
 	}
 }
 

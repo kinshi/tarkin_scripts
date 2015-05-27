@@ -1,7 +1,6 @@
 violent_krahbu = Creature:new {
 	objectName = "@mob/creature_names:violent_krahbu",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 13,
 	chanceHit = 0.29,
@@ -33,7 +32,8 @@ violent_krahbu = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"",""},
+		{"intimidationattack",""}
 	}
 }
 

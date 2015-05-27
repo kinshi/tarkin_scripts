@@ -1,7 +1,6 @@
 enraged_reptilian_flier = Creature:new {
 	objectName = "@mob/creature_names:enraged_reptilian_flier",
 	socialGroup = "reptilian_flier",
-	pvpFaction = "",
 	faction = "",
 	level = 27,
 	chanceHit = 0.35,
@@ -33,8 +32,8 @@ enraged_reptilian_flier = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"dizzyattack","dizzyChance=50"}
+		{"dizzyattack",""},
+		{"blindattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 mountain_dewback = Creature:new {
 	objectName = "@mob/creature_names:mountain_dewback",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 20,
 	chanceHit = 0.32,
@@ -33,8 +32,8 @@ mountain_dewback = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"stunattack",""}
 	}
 }
 

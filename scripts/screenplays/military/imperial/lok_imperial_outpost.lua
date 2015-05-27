@@ -43,8 +43,8 @@ function LokImperialOutpostScreenPlay:spawnSceneObjects()
 
 	local pCollector = spawnSceneObject("lok", "object/tangible/furniture/imperial/data_terminal_s1.iff", -1936, 12, -3133, 0, 1, 0, 0, 0)
 	local collector = LuaSceneObject(pCollector)
-	local col2creo = LuaCreatureObject(pCollector)
-	col2creo:setOptionsBitmask(264)
+--	local col2creo = LuaCreatureObject(pCollector)
+--	col2creo:setOptionsBitmask(264)
 	collector:setCustomObjectName("\\#ee3377Travel to Imperial Oasis (Tatooine)")
 	createObserver(OBJECTRADIALUSED, "LokImperialOutpostScreenPlay", "teleportImpOasis", pCollector)
 			

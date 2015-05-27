@@ -1,7 +1,6 @@
 corsec_commissioner = Creature:new {
 	objectName = "@mob/creature_names:corsec_comissioner",
 	socialGroup = "corsec",
-	pvpFaction = "corsec",
 	faction = "corsec",
 	level = 30,
 	chanceHit = 0.39,
@@ -44,6 +43,7 @@ corsec_commissioner = Creature:new {
 	},
 	weapons = {"corsec_police_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

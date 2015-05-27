@@ -1,7 +1,6 @@
 rogue_bageraset = Creature:new {
 	objectName = "@mob/creature_names:rogue_bageraset",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 13,
 	chanceHit = 0.29,
@@ -34,7 +33,7 @@ rogue_bageraset = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

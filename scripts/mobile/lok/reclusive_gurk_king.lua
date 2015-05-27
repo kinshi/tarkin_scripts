@@ -1,7 +1,6 @@
 reclusive_gurk_king = Creature:new {
 	objectName = "@mob/creature_names:recluse_gurk_king",
 	socialGroup = "gurk",
-	pvpFaction = "",
 	faction = "",
 	level = 45,
 	chanceHit = 0.47,
@@ -39,8 +38,8 @@ reclusive_gurk_king = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"blindattack","blindChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""},
+		{"blindattack",""}
 	}
 }
 

@@ -2,7 +2,6 @@ warder = Creature:new {
 	objectName = "",
 	customName = "a Warder",
 	socialGroup = "wilder",
-	pvpFaction = "",
 	faction = "",
 	level = 25,
 	chanceHit = 0.35,
@@ -41,6 +40,7 @@ warder = Creature:new {
 	},
 	weapons = {"rebel_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(commandomaster,marksmanmaster,brawlermaster)
 }
 

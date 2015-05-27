@@ -1,7 +1,6 @@
 brigand_leader = Creature:new {
 	objectName = "@mob/creature_names:brigand_leader",
 	socialGroup = "brigand",
-	pvpFaction = "",
 	faction = "",
 	level = 20,
 	chanceHit = 0.330000,
@@ -42,6 +41,7 @@ brigand_leader = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_heavy"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 Creature = {
 	objectName = "",
 	socialGroup = "",
-	pvpFaction = "",
 	faction = "",
 	level = 0,
 	chanceHit = 0.000000,
@@ -31,6 +30,7 @@ Creature = {
 	weapons = {},
 	attacks = {},
 	conversationTemplate = "",
+	personalityStf = "",
 	optionsBitmask = 128
 }
 

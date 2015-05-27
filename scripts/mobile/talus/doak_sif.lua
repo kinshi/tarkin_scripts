@@ -1,7 +1,6 @@
 doak_sif = Creature:new {
 	objectName = "@mob/creature_names:doak_sif",
 	socialGroup = "sif",
-	pvpFaction = "sif",
 	faction = "sif",
 	level = 48,
 	chanceHit = 0.49,
@@ -30,6 +29,7 @@ doak_sif = Creature:new {
 	lootGroups = {},
 	weapons = {"sif_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,fencermaster,swordsmanmaster)
 }
 

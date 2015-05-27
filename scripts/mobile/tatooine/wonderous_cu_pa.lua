@@ -1,7 +1,6 @@
 wonderous_cu_pa = Creature:new {
 	objectName = "@mob/creature_names:cu_pa_wonderous",
 	socialGroup = "cu_pa",
-	pvpFaction = "",
 	faction = "",
 	level = 14,
 	chanceHit = 0.3,
@@ -31,10 +30,10 @@ wonderous_cu_pa = Creature:new {
 	controlDeviceTemplate = "object/intangible/pet/cu_pa_hue.iff",
 	scale = 1.1,
 	lootGroups = {},
-	weapons = {},
+	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

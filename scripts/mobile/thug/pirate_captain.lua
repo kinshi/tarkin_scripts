@@ -2,7 +2,6 @@ pirate_captain = Creature:new {
 	objectName = "",
 	customName = "a Pirate Captain",
 	socialGroup = "pirate",
-	pvpFaction = "",
 	faction = "",
 	level = 20,
 	chanceHit = 0.33,
@@ -60,6 +59,7 @@ pirate_captain = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

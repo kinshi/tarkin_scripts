@@ -2,7 +2,6 @@ warden_vinzel_heylon = Creature:new {
 	objectName = "",
 	customName = "Warden Vinzel Heylon",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 120,
 	chanceHit = 4.000000,
@@ -46,6 +45,8 @@ warden_vinzel_heylon = Creature:new {
 	},
 	weapons = {"imperial_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 

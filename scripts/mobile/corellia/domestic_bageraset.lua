@@ -1,7 +1,6 @@
 domestic_bageraset = Creature:new {
 	objectName = "@mob/creature_names:domestic_bageraset",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 8,
 	chanceHit = 0.27,
@@ -32,7 +31,7 @@ domestic_bageraset = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

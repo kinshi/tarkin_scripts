@@ -1,7 +1,6 @@
 dread_pirate = Creature:new {
 	objectName = "@mob/creature_names:naboo_dread_pirate",
 	socialGroup = "pirate",
-	pvpFaction = "",
 	faction = "",
 	level = 23,
 	chanceHit = 0.35,
@@ -40,6 +39,7 @@ dread_pirate = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

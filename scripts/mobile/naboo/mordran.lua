@@ -1,7 +1,6 @@
 mordran = Creature:new {
 	objectName = "@mob/creature_names:mordran",
 	socialGroup = "borvo",
-	pvpFaction = "borvo",
 	faction = "borvo",
 	level = 78,
 	chanceHit = 0.750000,
@@ -42,6 +41,7 @@ mordran = Creature:new {
 		}
 	},
 	weapons = {"mordran_weapons"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster, swordsmanmaster)
 }
 

@@ -1,7 +1,6 @@
 rancid_remmer_warrior = Creature:new {
 	objectName = "@mob/creature_names:rancid_remmer_warrior",
 	socialGroup = "remmer",
-	pvpFaction = "",
 	faction = "",
 	level = 33,
 	chanceHit = 0.39,
@@ -32,8 +31,8 @@ rancid_remmer_warrior = Creature:new {
 	weapons = {"creature_spit_small_red"},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"posturedownattack",""}
 	}
 }
 

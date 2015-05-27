@@ -1,7 +1,6 @@
 arachne_widow = Creature:new {
 	objectName = "@mob/creature_names:arachne_widow",
 	socialGroup = "arachne",
-	pvpFaction = "",
 	faction = "",
 	level = 58,
 	chanceHit = 0.53,
@@ -33,8 +32,8 @@ arachne_widow = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"strongpoison",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"strongpoison",""}
 	}
 }
 

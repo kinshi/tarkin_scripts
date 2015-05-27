@@ -1,7 +1,6 @@
 fierce_huurton = Creature:new {
 	objectName = "@mob/creature_names:warren_huurton_fierce",
 	socialGroup = "warren_huurton",
-	pvpFaction = "",
 	faction = "",
 	level = 22,
 	chanceHit = 0.34,
@@ -32,7 +31,7 @@ fierce_huurton = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

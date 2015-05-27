@@ -1,7 +1,6 @@
 plainsfolk = Creature:new {
 	objectName = "@mob/creature_names:plainsfolk",
 	socialGroup = "townsperson",
-	pvpFaction = "townsperson",
 	faction = "townsperson",
 	level = 5,
 	chanceHit = 0.250000,
@@ -28,6 +27,7 @@ plainsfolk = Creature:new {
 	templates = {"object/mobile/dressed_plainsfolk.iff"},
 	lootGroups = {},
 	weapons = {"pirate_weapons_light"},
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

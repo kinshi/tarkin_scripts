@@ -1,7 +1,6 @@
 malkloc = Creature:new {
 	objectName = "@mob/creature_names:malkloc",
 	socialGroup = "malkloc",
-	pvpFaction = "",
 	faction = "",
 	level = 22,
 	chanceHit = 0.33,
@@ -32,7 +31,7 @@ malkloc = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"}
+		{"intimidationattack",""}
 	}
 }
 

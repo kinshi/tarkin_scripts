@@ -1,7 +1,6 @@
 angry_baz_nitch_avenger = Creature:new {
 	objectName = "@mob/creature_names:angry_baz_nitch_avenger",
 	socialGroup = "baz_nitch",
-	pvpFaction = "",
 	faction = "",
 	level = 24,
 	chanceHit = 0.35,
@@ -29,10 +28,11 @@ angry_baz_nitch_avenger = Creature:new {
 	templates = {"object/mobile/baz_nitch_hue.iff"},
 	scale = 1.05,
 	lootGroups = {},
-	weapons = {},
+	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"}
+		{"",""},
+		{"dizzyattack",""}
 	}
 }
 

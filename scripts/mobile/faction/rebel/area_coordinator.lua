@@ -1,7 +1,6 @@
 area_coordinator = Creature:new {
 	objectName = "@mob/creature_names:area_coordinator",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 13,
 	chanceHit = 0.3,
@@ -30,6 +29,8 @@ area_coordinator = Creature:new {
 	lootGroups = {},
 	weapons = {"rebel_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",			
 	attacks = merge(brawlermid,marksmanmid)
 }
 

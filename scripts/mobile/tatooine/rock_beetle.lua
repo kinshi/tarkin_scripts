@@ -1,7 +1,6 @@
 rock_beetle = Creature:new {
 	objectName = "@mob/creature_names:rock_beetle",
 	socialGroup = "beetle",
-	pvpFaction = "",
 	faction = "",
 	level = 13,
 	chanceHit = 0.3,
@@ -31,7 +30,7 @@ rock_beetle = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""}
 	}
 }
 

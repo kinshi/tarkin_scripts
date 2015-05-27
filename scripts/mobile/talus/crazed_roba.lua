@@ -1,7 +1,6 @@
 crazed_roba = Creature:new {
 	objectName = "@mob/creature_names:crazed_roba",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 12,
 	chanceHit = 0.29,
@@ -33,7 +32,8 @@ crazed_roba = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"",""},
+		{"stunattack",""}
 	}
 }
 

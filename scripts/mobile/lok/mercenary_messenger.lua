@@ -1,7 +1,6 @@
 mercenary_messenger = Creature:new {
 	objectName = "@mob/creature_names:mercenary_messanger",
 	socialGroup = "lok_mercenaries",
-	pvpFaction = "lok_mercenaries",
 	faction = "lok_mercenaries",
 	level = 21,
 	chanceHit = 0.33,
@@ -46,6 +45,7 @@ mercenary_messenger = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

@@ -1,7 +1,6 @@
 charred_krevol = Creature:new {
 	objectName = "@mob/creature_names:charred_krevol",
 	socialGroup = "krevol",
-	pvpFaction = "",
 	faction = "",
 	level = 15,
 	chanceHit = 0.31,
@@ -33,7 +32,7 @@ charred_krevol = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""}
 	}
 }
 

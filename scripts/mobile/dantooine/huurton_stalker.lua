@@ -1,7 +1,6 @@
 huurton_stalker = Creature:new {
 	objectName = "@mob/creature_names:huurton_stalker",
 	socialGroup = "huurton",
-	pvpFaction = "",
 	faction = "",
 	level = 33,
 	chanceHit = 0.4,
@@ -33,8 +32,8 @@ huurton_stalker = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"dizzyattack",""}
 	}
 }
 

@@ -1,7 +1,6 @@
 sludge_panther = Creature:new {
 	objectName = "@mob/creature_names:sludge_panther",
 	socialGroup = "panther",
-	pvpFaction = "",
 	faction = "",
 	level = 16,
 	chanceHit = 0.31,
@@ -32,7 +31,7 @@ sludge_panther = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

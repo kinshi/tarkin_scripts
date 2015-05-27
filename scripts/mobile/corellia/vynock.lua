@@ -1,7 +1,6 @@
 vynock = Creature:new {
 	objectName = "@mob/creature_names:vynock",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 9,
 	chanceHit = 0.27,
@@ -32,7 +31,7 @@ vynock = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

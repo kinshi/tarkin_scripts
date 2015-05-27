@@ -1,7 +1,6 @@
 lurking_angler = Creature:new {
 	objectName = "@mob/creature_names:lurking_angler",
 	socialGroup = "angler",
-	pvpFaction = "",
 	faction = "",
 	level = 30,
 	chanceHit = 0.39,
@@ -32,8 +31,8 @@ lurking_angler = Creature:new {
 	weapons = {"creature_spit_small_toxicgreen"},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"mediumpoison",""}
+		{"mediumpoison",""},
+		{"intimidationattack",""}
 	}
 }
 

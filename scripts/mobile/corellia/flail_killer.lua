@@ -1,7 +1,6 @@
 flail_killer = Creature:new {
 	objectName = "@mob/creature_names:flail_killer",
 	socialGroup = "flail",
-	pvpFaction = "flail",
 	faction = "flail",
 	level = 18,
 	chanceHit = 0.32,
@@ -54,6 +53,7 @@ flail_killer = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_medium"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

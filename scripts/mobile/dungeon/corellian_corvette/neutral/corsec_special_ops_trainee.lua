@@ -1,7 +1,6 @@
 corsec_special_ops_trainee = Creature:new {
 	objectName = "@mob/creature_names:corsec_cadet_aggro",
 	socialGroup = "corsec",
-	pvpFaction = "corsec",
 	faction = "corsec",
 	level = 71,
 	chanceHit = 0.7,
@@ -44,6 +43,7 @@ corsec_special_ops_trainee = Creature:new {
 	},
 	weapons = {"corsec_police_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(riflemanmaster,pistoleermaster,carbineermaster,brawlermaster)
 }
 

@@ -1,7 +1,6 @@
 bloodstained_prowler = Creature:new {
 	objectName = "@mob/creature_names:wrix_bloodstained_prowler",
 	socialGroup = "wrix",
-	pvpFaction = "",
 	faction = "",
 	level = 29,
 	chanceHit = 0.35,
@@ -33,8 +32,8 @@ bloodstained_prowler = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"knockdownattack","knockdownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"knockdownattack",""},
+		{"stunattack",""}
 	}
 }
 

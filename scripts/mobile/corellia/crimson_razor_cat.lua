@@ -1,7 +1,6 @@
 crimson_razor_cat = Creature:new {
 	objectName = "@mob/creature_names:crimson_sand_panther",
 	socialGroup = "panther",
-	pvpFaction = "",
 	faction = "",
 	level = 29,
 	chanceHit = 0.39,
@@ -33,8 +32,8 @@ crimson_razor_cat = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","posturedownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"dizzyattack",""},
+		{"stunattack",""}
 	}
 }
 

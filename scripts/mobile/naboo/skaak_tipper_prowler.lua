@@ -1,7 +1,6 @@
 skaak_tipper_prowler = Creature:new {
 	objectName = "@mob/creature_names:skaak_tipper_prowler",
 	socialGroup = "skaak_tipper_gang",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 5,
 	chanceHit = 0.250000,
@@ -31,7 +30,7 @@ skaak_tipper_prowler = Creature:new {
 		"object/mobile/dressed_raider_trandoshan_female_01.iff",
 		"object/mobile/dressed_raider_trandoshan_male_01.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 4500000},
 				{group = "tailor_components", chance = 1500000},
@@ -40,9 +39,10 @@ skaak_tipper_prowler = Creature:new {
 				{group = "skaak_tipper_common", chance = 1000000},
 			},
 			lootChance = 2200000
-		}				
+		}
 	},
 	weapons = {"pirate_weapons_light"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlernovice,marksmannovice)
 }
 

@@ -1,7 +1,6 @@
 narglatch_matriarch = Creature:new {
 	objectName = "@mob/creature_names:narglatch_matriarch",
 	socialGroup = "narglatch",
-	pvpFaction = "",
 	faction = "",
 	level = 27,
 	chanceHit = 0.36,
@@ -32,8 +31,8 @@ narglatch_matriarch = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"intimidationattack","intimidationChance=50"},
-		{"stunattack","stunChance=50"}
+		{"intimidationattack",""},
+		{"stunattack",""}
 	}
 }
 

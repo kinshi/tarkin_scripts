@@ -1,7 +1,6 @@
 giant_mawgax = Creature:new {
 	objectName = "@mob/creature_names:giant_mawgax",
 	socialGroup = "mawgax",
-	pvpFaction = "",
 	faction = "",
 	level = 32,
 	chanceHit = 0.4,
@@ -33,7 +32,7 @@ giant_mawgax = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

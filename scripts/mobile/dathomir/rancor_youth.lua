@@ -1,7 +1,6 @@
 rancor_youth = Creature:new {
 	objectName = "@mob/creature_names:rancor_youth",
 	socialGroup = "rancor",
-	pvpFaction = "",
 	faction = "",
 	level = 45,
 	chanceHit = 0.44,
@@ -48,8 +47,8 @@ rancor_youth = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"creatureareableeding",""},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"creatureareableeding",""}
 	}
 }
 

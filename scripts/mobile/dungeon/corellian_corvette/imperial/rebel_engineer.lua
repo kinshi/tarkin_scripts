@@ -1,7 +1,6 @@
 rebel_engineer = Creature:new {
 	objectName = "@mob/creature_names:corvette_rebel_engineer",
 	socialGroup = "rebel",
-	pvpFaction = "rebel",
 	faction = "rebel",
 	level = 106,
 	chanceHit = 1.75,
@@ -42,10 +41,11 @@ rebel_engineer = Creature:new {
 				{group = "wearables_uncommon", chance = 500000}
 			},
 			lootChance = 3000000
-		}	
+		}
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(riflemanmaster,carbineermaster,marksmanmaster,brawlermaster)
 }
 

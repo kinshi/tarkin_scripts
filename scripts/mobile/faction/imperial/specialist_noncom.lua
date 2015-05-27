@@ -1,7 +1,6 @@
 specialist_noncom = Creature:new {
 	objectName = "@mob/creature_names:specialist_noncom",
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 13,
 	chanceHit = 0.3,
@@ -28,6 +27,8 @@ specialist_noncom = Creature:new {
 	templates = {"object/mobile/dressed_imperial_lieutenant_m.iff"},
 	lootGroups = {},
 	weapons = {"imperial_weapons_light"},
+	reactionStf = "@npc_reaction/military",
+	personalityStf = "@hireling/hireling_military",	
 	attacks = merge(brawlermid,marksmanmid)
 }
 

@@ -1,7 +1,6 @@
 drall_abbot = Creature:new {
 	objectName = "@mob/creature_names:drall_abbot",
 	socialGroup = "drall",
-	pvpFaction = "drall",
 	faction = "drall",
 	level = 15,
 	chanceHit = 0.31,
@@ -41,6 +40,7 @@ drall_abbot = Creature:new {
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermid,marksmanmid)
 }
 

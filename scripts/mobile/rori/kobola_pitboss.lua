@@ -1,7 +1,6 @@
 kobola_pitboss = Creature:new {
 	objectName = "@mob/creature_names:kobola_pitboss",
 	socialGroup = "kobola",
-	pvpFaction = "kobola",
 	faction = "kobola",
 	level = 22,
 	chanceHit = 0.33,
@@ -30,7 +29,7 @@ kobola_pitboss = Creature:new {
 		"object/mobile/dressed_kobola_pitboss_trandoshan_male_01.iff",
 		"object/mobile/dressed_kobola_pitboss_trandoshan_female_01.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2400000},
 				{group = "tailor_components", chance = 2000000},
@@ -38,10 +37,11 @@ kobola_pitboss = Creature:new {
 				{group = "kobola_common", chance = 3600000}
 			},
 			lootChance = 2600000
-		}					
+		}
 	},
 	weapons = {"pirate_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

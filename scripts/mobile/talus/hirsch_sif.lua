@@ -1,7 +1,6 @@
 hirsch_sif = Creature:new {
 	objectName = "@mob/creature_names:hirsch_sif",
 	socialGroup = "sif",
-	pvpFaction = "sif",
 	faction = "sif",
 	level = 57,
 	chanceHit = 0.570000,
@@ -28,6 +27,7 @@ hirsch_sif = Creature:new {
 	templates = {"object/mobile/dressed_hirsch_sif.iff"},
 	lootGroups = {},
 	weapons = {"sif_weapons"},
+	reactionStf = "@npc_reaction/military",
 	attacks = merge(brawlermaster,fencermaster,swordsmanmaster)
 }
 

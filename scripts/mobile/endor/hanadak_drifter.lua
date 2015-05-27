@@ -1,7 +1,6 @@
 hanadak_drifter = Creature:new {
 	objectName = "@mob/creature_names:hanadak_drifter",
 	socialGroup = "hanadak",
-	pvpFaction = "",
 	faction = "",
 	level = 28,
 	chanceHit = 0.37,
@@ -33,8 +32,8 @@ hanadak_drifter = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""},
+		{"dizzyattack",""}
 	}
 }
 

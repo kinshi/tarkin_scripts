@@ -1,7 +1,6 @@
 thune_herd_leader = Creature:new {
 	objectName = "@mob/creature_names:thune_herd_leader",
 	socialGroup = "thune",
-	pvpFaction = "",
 	faction = "",
 	level = 48,
 	chanceHit = 0.48,
@@ -32,8 +31,8 @@ thune_herd_leader = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"posturedownattack","postureDownChance=50"}
+		{"dizzyattack",""},
+		{"posturedownattack",""}
 	}
 }
 

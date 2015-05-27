@@ -2,7 +2,6 @@ traveller = Creature:new {
 	objectName = "",
 	customName = "a Traveller",
 	socialGroup = "wilder",
-	pvpFaction = "",
 	faction = "",
 	level = 4,
 	chanceHit = 0.24,
@@ -67,6 +66,7 @@ traveller = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

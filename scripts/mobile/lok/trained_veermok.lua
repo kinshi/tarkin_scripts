@@ -2,7 +2,6 @@ trained_veermok = Creature:new {
 	objectName = "",
 	customName = "a trained veermok",
 	socialGroup = "veermok",
-	pvpFaction = "",
 	faction = "",
 	level = 20,
 	chanceHit = 0.33,
@@ -32,8 +31,8 @@ trained_veermok = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"dizzyattack",""},
+		{"knockdownattack",""}
 	}
 }
 

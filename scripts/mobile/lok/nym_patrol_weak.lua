@@ -1,7 +1,6 @@
 nym_patrol_weak = Creature:new {
 	objectName = "@mob/creature_names:nym_patrol_weak",
 	socialGroup = "nym",
-	pvpFaction = "nym",
 	faction = "nym",
 	level = 33,
 	chanceHit = 0.4,
@@ -44,6 +43,7 @@ nym_patrol_weak = Creature:new {
 	},
 	weapons = {"pirate_weapons_heavy"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(bountyhuntermaster,marksmanmaster,brawlermaster)
 }
 

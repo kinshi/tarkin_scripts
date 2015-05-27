@@ -1,7 +1,6 @@
 elder_mamien = Creature:new {
 	objectName = "@mob/creature_names:mamien_elder",
 	socialGroup = "mamien",
-	pvpFaction = "",
 	faction = "",
 	level = 20,
 	chanceHit = 0.33,
@@ -32,8 +31,8 @@ elder_mamien = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"},
-		{"knockdownattack","knockdownChance=50"}
+		{"knockdownattack",""},
+		{"stunattack",""}
 	}
 }
 

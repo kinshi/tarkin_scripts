@@ -1,7 +1,6 @@
 dune_lizard = Creature:new {
 	objectName = "@mob/creature_names:dune_lizard",
 	socialGroup = "lizard",
-	pvpFaction = "",
 	faction = "",
 	level = 18,
 	chanceHit = 0.32,
@@ -32,8 +31,7 @@ dune_lizard = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"},
-		{"posturedownattack","posturedownChance=50"}
+		{"stunattack",""}
 	}
 }
 

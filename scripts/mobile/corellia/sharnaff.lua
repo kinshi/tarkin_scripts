@@ -1,14 +1,13 @@
 sharnaff = Creature:new {
 	objectName = "@mob/creature_names:sharnaff",
 	socialGroup = "sharnaff",
-	pvpFaction = "",
 	faction = "",
 	level = 31,
 	chanceHit = 0.38,
 	damageMin = 300,
 	damageMax = 310,
 	baseXp = 3005,
-	baseHAM = 8600,
+posturedown	baseHAM = 8600,
 	baseHAMmax = 10600,
 	armor = 0,
 	resists = {15,15,15,120,120,120,120,150,-1},
@@ -39,8 +38,8 @@ sharnaff = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","posturedownChance=50"},
-		{"stunattack","stunChance=50"}
+		{"posturedownattack",""},
+		{"stunattack",""}
 	}
 }
 

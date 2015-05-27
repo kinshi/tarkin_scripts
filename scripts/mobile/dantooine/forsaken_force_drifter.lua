@@ -1,7 +1,6 @@
 forsaken_force_drifter = Creature:new {
 	objectName = "@mob/creature_names:forsaken_force_drifter",
 	socialGroup = "force",
-	pvpFaction = "",
 	faction = "",
 	level = 80,
 	chanceHit = 0.8,
@@ -38,7 +37,7 @@ forsaken_force_drifter = Creature:new {
 				{group = "melee_weapons", chance = 1000000},
 				{group = "armor_attachments", chance = 1000000},
 				{group = "clothing_attachments", chance = 1000000},
-				{group = "nightsister_rare", chance = 750000},
+				{group = "wearables_common", chance = 750000},
 				{group = "wearables_uncommon", chance = 750000}
 			},
 			lootChance = 4500000

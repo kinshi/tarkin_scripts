@@ -1,7 +1,7 @@
 stormtrooper_colonel = Creature:new {
 	objectName = "@mob/creature_names:fbase_stormtrooper_squad_leader_hard",
+	randomNameType = NAME_STORMTROOPER_TAG,
 	socialGroup = "imperial",
-	pvpFaction = "imperial",
 	faction = "imperial",
 	level = 27,
 	chanceHit = 0.37,
@@ -47,6 +47,8 @@ stormtrooper_colonel = Creature:new {
 	},
 	weapons = {"stormtrooper_weapons"},
 	conversationTemplate = "imperialRecruiterConvoTemplate",
+	reactionStf = "@npc_reaction/stormtrooper",
+	personalityStf = "@hireling/hireling_stormtrooper",		
 	attacks = merge(riflemanmaster,carbineermaster,brawlermaster)
 }
 

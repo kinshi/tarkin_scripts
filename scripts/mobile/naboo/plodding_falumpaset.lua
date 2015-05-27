@@ -1,7 +1,6 @@
 plodding_falumpaset = Creature:new {
 	objectName = "@mob/creature_names:domestic_falumpaset",
 	socialGroup = "self",
-	pvpFaction = "",
 	faction = "",
 	level = 10,
 	chanceHit = 0.28,
@@ -34,7 +33,7 @@ plodding_falumpaset = Creature:new {
 	weapons = {"creature_spit_small_yellow"},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

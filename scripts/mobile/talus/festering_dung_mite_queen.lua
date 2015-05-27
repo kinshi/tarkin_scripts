@@ -1,7 +1,6 @@
 festering_dung_mite_queen = Creature:new {
 	objectName = "@mob/creature_names:festering_dung_queen",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 18,
 	chanceHit = 0.32,
@@ -32,7 +31,7 @@ festering_dung_mite_queen = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"dizzyattack","dizzyChance=50"},
+		{"dizzyattack",""},
 		{"milddisease",""}
 	}
 }

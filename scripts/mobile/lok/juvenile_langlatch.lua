@@ -1,7 +1,6 @@
 juvenile_langlatch = Creature:new {
 	objectName = "@mob/creature_names:langlatch_juvenile",
 	socialGroup = "langlatch",
-	pvpFaction = "",
 	faction = "",
 	level = 8,
 	chanceHit = 0.27,
@@ -32,7 +31,7 @@ juvenile_langlatch = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"posturedownattack","postureDownChance=50"}
+		{"posturedownattack",""}
 	}
 }
 

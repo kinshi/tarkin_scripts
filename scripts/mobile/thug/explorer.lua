@@ -1,7 +1,6 @@
 explorer = Creature:new {
 	objectName = "@mob/creature_names:explorer",
 	socialGroup = "wilder",
-	pvpFaction = "",
 	faction = "",
 	level = 7,
 	chanceHit = 0.26,
@@ -49,6 +48,7 @@ explorer = Creature:new {
 	},
 	weapons = {"rebel_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/townperson",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

@@ -1,7 +1,6 @@
 bodyguard = Creature:new {
 	objectName = "@mob/creature_names:bodyguard",
 	socialGroup = "thug",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 7,
 	chanceHit = 0.26,
@@ -47,6 +46,7 @@ bodyguard = Creature:new {
 	},
 	weapons = {"rebel_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

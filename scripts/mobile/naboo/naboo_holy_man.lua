@@ -1,7 +1,6 @@
 naboo_holy_man = Creature:new {
 	objectName = "@mob/creature_names:naboo_holy_man",
 	socialGroup = "naboo",
-	pvpFaction = "naboo",
 	faction = "naboo",
 	level = 5,
 	chanceHit = 0.250000,
@@ -40,6 +39,7 @@ naboo_holy_man = Creature:new {
 	},
 	weapons = {"rebel_weapons_light"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/fancy",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

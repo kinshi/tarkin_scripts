@@ -1,8 +1,7 @@
 scavenger = Creature:new {
 	objectName = "@mob/creature_names:scavenger",
-	generateRandomName = true,
+	randomNameType = NAME_GENERIC_TAG,
 	socialGroup = "thug",
-	pvpFaction = "thug",
 	faction = "thug",
 	level = 7,
 	chanceHit = 0.260000,
@@ -49,6 +48,7 @@ scavenger = Creature:new {
 		}
 	},
 	weapons = {"pirate_weapons_medium"},
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(marksmannovice,brawlernovice)
 }
 

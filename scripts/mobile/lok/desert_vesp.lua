@@ -1,7 +1,6 @@
 desert_vesp = Creature:new {
 	objectName = "@mob/creature_names:desert_vesp",
 	socialGroup = "vesp",
-	pvpFaction = "",
 	faction = "",
 	level = 30,
 	chanceHit = 0.39,
@@ -34,7 +33,7 @@ desert_vesp = Creature:new {
 	conversationTemplate = "",
 	attacks = {
 		{"strongpoison",""},
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

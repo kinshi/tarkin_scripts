@@ -1,7 +1,6 @@
 dune_stalker_leader = Creature:new {
 	objectName = "@mob/creature_names:dune_stalker_leader",
 	socialGroup = "dune_stalker",
-	pvpFaction = "",
 	faction = "",
 	level = 23,
 	chanceHit = 0.35,
@@ -28,20 +27,21 @@ dune_stalker_leader = Creature:new {
 
 	templates = {"object/mobile/dressed_tatooine_dune_stalker_leader.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2000000},
 				{group = "wearables_common", chance = 2000000},
-				{group = "melee_weapons", chance = 2000000},				
+				{group = "melee_weapons", chance = 2000000},
 				{group = "tailor_components", chance = 1500000},
 				{group = "loot_kit_parts", chance = 1500000},
 				{group = "printer_parts", chance = 1000000},
 			},
 			lootChance = 2200000
-		}			
+		}
 	},
 	weapons = {"tusken_weapons"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 

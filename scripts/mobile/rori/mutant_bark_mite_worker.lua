@@ -1,7 +1,6 @@
 mutant_bark_mite_worker = Creature:new {
 	objectName = "@mob/creature_names:mutant_bark_mite_worker",
 	socialGroup = "mite",
-	pvpFaction = "",
 	faction = "",
 	level = 12,
 	chanceHit = 0.28,
@@ -32,7 +31,7 @@ mutant_bark_mite_worker = Creature:new {
 	weapons = {},
 	conversationTemplate = "",
 	attacks = {
-		{"stunattack","stunChance=50"}
+		{"stunattack",""}
 	}
 }
 

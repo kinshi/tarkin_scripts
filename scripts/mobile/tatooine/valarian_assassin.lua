@@ -1,7 +1,6 @@
 valarian_assassin = Creature:new {
 	objectName = "@mob/creature_names:valarian_assassin",
 	socialGroup = "valarian",
-	pvpFaction = "valarian",
 	faction = "valarian",
 	level = 16,
 	chanceHit = 0.31,
@@ -28,7 +27,7 @@ valarian_assassin = Creature:new {
 
 	templates = {"object/mobile/dressed_tatooine_valarian_assassin.iff"},
 	lootGroups = {
-	    {
+		{
 			groups = {
 				{group = "junk", chance = 2000000},
 				{group = "wearables_common", chance = 1000000},
@@ -39,10 +38,11 @@ valarian_assassin = Creature:new {
 				{group = "valarian_common", chance = 1500000}
 			},
 			lootChance = 2400000
-		}				
+		}
 	},
 	weapons = {"pirate_weapons_medium"},
 	conversationTemplate = "",
+	reactionStf = "@npc_reaction/slang",
 	attacks = merge(brawlermaster,marksmanmaster)
 }
 
