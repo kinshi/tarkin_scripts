@@ -180,6 +180,7 @@ function RoriRebelOutpostScreenPlay:teleportStarbird(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function RoriRebelOutpostScreenPlay:teleportMoenia(pCollector, pPlayer)
@@ -191,4 +192,5 @@ function RoriRebelOutpostScreenPlay:teleportMoenia(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end

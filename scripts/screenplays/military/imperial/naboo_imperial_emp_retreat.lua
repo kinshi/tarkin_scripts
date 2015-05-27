@@ -81,6 +81,7 @@ function NabooImperialEmpRetreatScreenPlay:teleportImpOutpost(pCollector, pPlaye
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function NabooImperialEmpRetreatScreenPlay:teleportImpEncampment(pCollector, pPlayer)
@@ -92,6 +93,7 @@ function NabooImperialEmpRetreatScreenPlay:teleportImpEncampment(pCollector, pPl
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function NabooImperialEmpRetreatScreenPlay:teleportImpStronghold(pCollector, pPlayer)
@@ -103,6 +105,7 @@ function NabooImperialEmpRetreatScreenPlay:teleportImpStronghold(pCollector, pPl
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function NabooImperialEmpRetreatScreenPlay:teleportImpHQ(pCollector, pPlayer)
@@ -114,4 +117,5 @@ function NabooImperialEmpRetreatScreenPlay:teleportImpHQ(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end

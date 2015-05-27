@@ -120,6 +120,7 @@ function TatooineImperialOasisScreenPlay:teleportImpHQ(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function TatooineImperialOasisScreenPlay:teleportLok(pCollector, pPlayer)
@@ -131,4 +132,5 @@ function TatooineImperialOasisScreenPlay:teleportLok(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end

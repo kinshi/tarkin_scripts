@@ -154,6 +154,7 @@ function StrongholdScreenPlay:teleportImpRetreat(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function StrongholdScreenPlay:teleportTatHQ(pCollector, pPlayer)
@@ -165,6 +166,7 @@ function StrongholdScreenPlay:teleportTatHQ(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function StrongholdScreenPlay:teleportTalus(pCollector, pPlayer)
@@ -176,6 +178,7 @@ function StrongholdScreenPlay:teleportTalus(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function StrongholdScreenPlay:teleportDantooine(pCollector, pPlayer)
@@ -187,6 +190,7 @@ function StrongholdScreenPlay:teleportDantooine(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function StrongholdScreenPlay:teleportYavin4(pCollector, pPlayer)
@@ -198,4 +202,5 @@ function StrongholdScreenPlay:teleportYavin4(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end

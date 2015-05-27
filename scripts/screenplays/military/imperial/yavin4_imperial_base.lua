@@ -86,5 +86,6 @@ function StrongholdScreenPlay:teleportImpStronghold(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 

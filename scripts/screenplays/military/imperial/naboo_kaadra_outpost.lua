@@ -74,6 +74,7 @@ function NabooKaadraOutpostScreenPlay:teleportRoriOutpost(pCollector, pPlayer)
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
 	end
+	return 0
 end
 
 function NabooKaadraOutpostScreenPlay:teleportImpRetreat(pCollector2, pPlayer)
@@ -84,5 +85,6 @@ function NabooKaadraOutpostScreenPlay:teleportImpRetreat(pCollector2, pPlayer)
 	else
 		local playerm = LuaCreatureObject(pPlayer)
 		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end	
+	end
+	return 0	
 end
