@@ -43,15 +43,15 @@ PATH=$PATH:/usr/local/BerkeleyDB.5.0/bin
 export PATH
 
 # databases directory , used by bdb utils too
-DB_HOME=/home/swgemu/workspace/tarkin_scripts/databases 
+DB_HOME=/home/tarkin/workspace/tarkin_scripts/databases 
 export DB_HOME
 
 # backup dir (should be on another filesystem)
-DB_BACKUP=/mnt/hgfs/Storage/backup
+DB_BACKUP=/home/tarkin/workspace/db_backup
 export DB_BACKUP
 
 # how much backups will we keep
-DB_CYCLE=14
+DB_CYCLE=5
 export DB_CYCLE
 
 # how much space must be left on backup volume
@@ -60,7 +60,7 @@ export BACKUP_VOLUME_MINFREE_GB
 
 # mysqldump with user and pw 
 #MYSQLDUMP="/usr/bin/mysqldump -u swgdump -p bla "
-MYSQLDUMP="/usr/bin/mysqldump --user=swgemu --password=123456 "
+MYSQLDUMP="/usr/bin/mysqldump --user=tarkin --password=password "
 export MYSQLDUMP
 
 #
