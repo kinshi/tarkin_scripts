@@ -50,7 +50,7 @@ Melee2hHeadHit3Command = {
 	mindCostMultiplier = 1.5,
         accuracyBonus = 10,
 
-	poolsToDamage = MIND_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE,
 
 	animationCRC = hashCode("combo_2d_medium"),
 

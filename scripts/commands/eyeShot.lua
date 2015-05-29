@@ -50,7 +50,7 @@ EyeShotCommand = {
 	actionCostMultiplier = 1,
 	mindCostMultiplier = 1,
 
-	poolsToDamage = MIND_ATTRIBUTE,
+	poolsToDamage = ACTION_ATTRIBUTE,
 
 	stateEffects = {
 	  StateEffect( 

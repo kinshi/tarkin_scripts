@@ -15,6 +15,72 @@ end
 
 function NabooTheedScreenPlay:spawnSceneObjects()
 
+-- Travel Terminals 
+	-- Corellia - Coronet
+	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -30.9903, 7.9418, -42.7771, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 Coronet (Corellia)")
+	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportCoronet", pCollector)
+	-- Dantooine - Mining Outpost
+	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.1035, 7.9418, -40.5938, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 Mining Outpost (Dantooine)")
+	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportDantMining", pCollector)
+	-- Dathomir - Trade Outpost
+	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.1988, 7.9418, -39.3456, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 Trade Outpost (Dathomir)")
+	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportDathTrade", pCollector)
+	-- Endor - Smuggler Outpost
+	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.2629, 7.9418, -37.5066, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 Smuggler Outpost (Endor)")
+	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportEndorSmug", pCollector)
+	-- Lok - Nym's Stronghold
+	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.301, 7.9418, -35.6301, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 Nym's Stronghold (Lok)")
+	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportLok", pCollector)
+	-- Rori - Narmle
+	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.2513, 7.9418, -33.79051, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 Narmle (Rori)")
+	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportRoriNarmle", pCollector)
+	-- Talus - Dearic
+	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.3082, 7.9418, -31.3615, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 Dearic (Talus)")
+	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportTalusDearic", pCollector)
+	-- Tatooine - Mos Eisley
+	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.3154, 7.9418, -29.5019, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 Mos Eisley (Tatooine)")
+	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportTatME", pCollector)
+	-- Yavin4 - Labor Outpost
+	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.3403, 7.9418, -27.8738, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 Labor Outpost (Yavin4)")
+	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportYavinLabor", pCollector)
+
+
 --Theed SP
 spawnSceneObject("naboo", "object/creature/npc/theme_park/player_transport_theed_hangar.iff", -0.6, 7.9, 7.5, 1692104, 0, 0, 0, 0)
 
@@ -387,4 +453,58 @@ function NabooTheedScreenPlay:spawnMobiles()
 	--{"bodyguard",300,-29.8622,7.9418,10.8957,180.008,1692104, "conversation", ""},
 	--{"bodyguard",300,-37.5788,7.9418,22.3791,0,1692104, "conversation", ""},
 
+end
+
+function NabooTheedScreenPlay:teleportCoronet(pCollector, pPlayer)
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("corellia", -131, 0, -4723, 0)  
+	return 0
+end
+
+function NabooTheedScreenPlay:teleportDantMining(pCollector, pPlayer)
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("dantooine", -640, 0, 2502, 0)  
+	return 0
+end
+
+function NabooTheedScreenPlay:teleportDathTrade(pCollector, pPlayer)
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("dathomir", 619, 0, 3089, 0)  
+	return 0
+end
+
+function NabooTheedScreenPlay:teleportEndorSmug(pCollector, pPlayer)
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("endor", -955, 0, 1557, 0)  
+	return 0
+end
+
+function NabooTheedScreenPlay:teleportLok(pCollector, pPlayer)
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("lok", 474, 0, 5511, 0)  
+	return 0
+end
+
+function NabooTheedScreenPlay:teleportRoriNarmle(pCollector, pPlayer)
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("rori", -5312, 0, -2219, 0)  
+	return 0
+end
+
+function NabooTheedScreenPlay:teleportTalusDearic(pCollector, pPlayer)
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("talus", 324, 0, -2928, 0)  
+	return 0
+end
+
+function NabooTheedScreenPlay:teleportTatME(pCollector, pPlayer)
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("tatooine", 3534, 0, -4802, 0)  
+	return 0
+end
+
+function NabooTheedScreenPlay:teleportYavinLabor(pCollector, pPlayer)
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("yavin4", -6927, 0, -5709, 0)  
+	return 0
 end
