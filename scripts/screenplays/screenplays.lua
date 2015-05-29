@@ -41,16 +41,16 @@ includeFile("dungeon/death_watch_bunker/conversations/deathWatchTechnicianConvoH
 includeFile("dungeon/death_watch_bunker/conversations/deathWatchWorkshopDroidConvoHandler.lua")
 includeFile("dungeon/geonosian_lab/geo_lab.lua")
 includeFile("dungeon/warren/warren.lua")
-includeFile("dungeon/corellian_corvette/corellianCorvette.lua")
-includeFile("dungeon/corellian_corvette/corvetteTicketGiverConvoHandler.lua")
-includeFile("dungeon/corellian_corvette/corvetteTicketTakerConvoHandler.lua")
-includeFile("dungeon/corellian_corvette/bronell.lua")
-includeFile("dungeon/corellian_corvette/ds_297.lua")
-includeFile("dungeon/corellian_corvette/klaatu.lua")
-includeFile("dungeon/corellian_corvette/lt_lance.lua")
+--includeFile("dungeon/corellian_corvette/corellianCorvette.lua")
+--includeFile("dungeon/corellian_corvette/corvetteTicketGiverConvoHandler.lua")
+--includeFile("dungeon/corellian_corvette/corvetteTicketTakerConvoHandler.lua")
+--includeFile("dungeon/corellian_corvette/bronell.lua")
+--includeFile("dungeon/corellian_corvette/ds_297.lua")
+--includeFile("dungeon/corellian_corvette/klaatu.lua")
+--includeFile("dungeon/corellian_corvette/lt_lance.lua")
 
 -- Village
-includeFile("village/fs_experience_converter_conv_handler.lua")
+--includeFile("village/fs_experience_converter_conv_handler.lua")
 
 -- Events
 includeFile("events/conversations/bestine_artist_conv_handler.lua")
@@ -335,14 +335,14 @@ includeFile("cities/tatooine_mos_entha_hive_scum_villany.lua")
 includeFile("racetracks/racetracks.lua")
 
 -- Space
-includeFile("space/space_chassis_dealer_conv_handler.lua")
+--includeFile("space/space_chassis_dealer_conv_handler.lua")
 
 -- Record Keepers
 includeFile("record_keepers/record_keepers.lua")
 
 --Tarkin Custom
 
-includeFile("tests/ep3.lua")
+--includeFile("tests/ep3.lua")
 includeFile("tests/painting_vendor.lua")
 --includeFile("events/lifeday_2014.lua")
 
