@@ -18,7 +18,7 @@ function NabooTheedScreenPlay:spawnSceneObjects()
 -- Travel Terminals 
 	-- Corellia - Coronet
 	local pCollector0 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -30.9903, 7.9418, -42.7771, 1692104, 0.747232, 0, 0.664564, 0)
-	local collector = LuaSceneObject(pCollector0)
+	local collector0 = LuaSceneObject(pCollector0)
 	collector0:setCustomObjectName("\\#ee3377 Coronet (Corellia)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportCoronet", pCollector0)
 
