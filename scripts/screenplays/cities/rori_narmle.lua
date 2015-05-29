@@ -17,11 +17,9 @@ function RoriNarmleScreenPlay:spawnSceneObjects()
 
 -- Travel Terminal
 	local pCollector = spawnSceneObject("rori", "object/tangible/furniture/imperial/data_terminal_s1.iff", -5387.5, 80, -2159.27, 0, -0.154592, 0, 0.987978, 0)
-	local collector = LuaSceneObject(pCollector)
-	local col2creo = LuaCreatureObject(pCollector)
-	col2creo:setOptionsBitmask(128)
+	local collector = LuaSceneObject(pCollector0)
 	collector:setCustomObjectName("\\#ee3377 Theed (Naboo)")
-	createObserver(OBJECTRADIALUSED, "RoriNarmleScreenPlay", "teleportNabooTheed", pCollector)
+	createObserver(OBJECTRADIALUSED, "RoriNarmleScreenPlay", "teleportNabooTheed", pCollector0)
 
 --Rori SP
 spawnSceneObject("rori", "object/creature/npc/theme_park/player_transport.iff", -5368.0, 80.0, -2160.0, 0, 35)

@@ -17,11 +17,9 @@ function DantooineMiningOutpostScreenPlay:spawnSceneObjects()
 
 --Travel Points
 	local pCollector = spawnSceneObject("dantooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -646.486, 3, 2487.45, 0, 0.419796, 0, 0.907619, 0)
-	local collector = LuaSceneObject(pCollector)
-	local col2creo = LuaCreatureObject(pCollector)
-	col2creo:setOptionsBitmask(128)
+	local collector = LuaSceneObject(pCollector-)
 	collector:setCustomObjectName("\\#ee3377 Theed (Naboo)")
-	createObserver(OBJECTRADIALUSED, "DantooineMiningOutpostScreenPlay", "teleportNabooTheed", pCollector)
+	createObserver(OBJECTRADIALUSED, "DantooineMiningOutpostScreenPlay", "teleportNabooTheed", pCollector0)
 
 --Mining Outpost SP
 

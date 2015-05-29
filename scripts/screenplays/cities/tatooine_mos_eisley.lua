@@ -17,11 +17,9 @@ function TatooineMosEisleyScreenPlay:spawnSceneObjects()
 
 -- Travel Terminal
 	local pCollector = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", 3631.17, 5, -4791.17, 0, 0.964254, 0, -0.26498, 0)
-	local collector = LuaSceneObject(pCollector)
-	local col2creo = LuaCreatureObject(pCollector)
-	col2creo:setOptionsBitmask(128)
+	local collector = LuaSceneObject(pCollector0)
 	collector:setCustomObjectName("\\#ee3377 Theed (Naboo)")
-	createObserver(OBJECTRADIALUSED, "TatooineMosEisleyScreenPlay", "teleportNabooTheed", pCollector)
+	createObserver(OBJECTRADIALUSED, "TatooineMosEisleyScreenPlay", "teleportNabooTheed", pCollector0)
 	
 	--Lower Floor
 	spawnSceneObject("tatooine", "object/tangible/terminal/terminal_elevator_down.iff", -3.5, 9, -21.4, 1076970, 1, 0, 0, 0) --Middle

@@ -17,11 +17,9 @@ function LokNymStrongholdScreenPlay:spawnSceneObjects()
 
 -- Travel Terminal
 	local pCollector = spawnSceneObject("lok", "object/tangible/furniture/imperial/data_terminal_s1.iff", 455.647, 8.74727, 5506.7, 0, -0.0206281, 0, 0.999787, 0)
-	local collector = LuaSceneObject(pCollector)
-	local col2creo = LuaCreatureObject(pCollector)
-	col2creo:setOptionsBitmask(128)
+	local collector = LuaSceneObject(pCollector0)
 	collector:setCustomObjectName("\\#ee3377 Theed (Naboo)")
-	createObserver(OBJECTRADIALUSED, "LokNymStrongholdScreenPlay", "teleportNabooTheed", pCollector)
+	createObserver(OBJECTRADIALUSED, "LokNymStrongholdScreenPlay", "teleportNabooTheed", pCollector0)
 
 --Nyms SP
 spawnSceneObject("lok", "object/creature/npc/theme_park/player_transport.iff", 457.0, 21.0, 5496.0, 0, 90)
