@@ -17,6 +17,13 @@ function CorelliaCoronetScreenPlay:spawnSceneObjects()
 
 	-- Travel terminal
 
+	local pCollector = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -38.0408, 28, -4727.4, 0, 0.999108, 0, 0.0422203, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 Theed (Naboo)")
+	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportNabooTheed", pCollector)
+
 	local pCollector = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -39.2332, 28, -4700.81, 0, -0.215735, 0, 0.976452, 0)
 	local collector = LuaSceneObject(pCollector)
 	local col2creo = LuaCreatureObject(pCollector)
@@ -462,5 +469,11 @@ end
 function CorelliaCoronetScreenPlay:teleportJanta(pCollector, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("dantooine", 7035, 0, -4078, -90)
+	return 0
+end
+
+function CorelliaCoronetScreenPlay:teleportNabooTheed(pCollector, pPlayer)
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("naboo", -4851, 0, 4172, -90)
 	return 0
 end

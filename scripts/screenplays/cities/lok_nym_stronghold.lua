@@ -15,6 +15,14 @@ end
 
 function LokNymStrongholdScreenPlay:spawnSceneObjects()
 
+-- Travel Terminal
+	local pCollector = spawnSceneObject("lok", "object/tangible/furniture/imperial/data_terminal_s1.iff", 455.647, 8.74727, 5506.7, 0, -0.0206281, 0, 0.999787, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 Theed (Naboo)")
+	createObserver(OBJECTRADIALUSED, "LokNymStrongholdScreenPlay", "teleportNabooTheed", pCollector)
+
 --Nyms SP
 spawnSceneObject("lok", "object/creature/npc/theme_park/player_transport.iff", 457.0, 21.0, 5496.0, 0, 90)
 
@@ -230,4 +238,10 @@ function LokNymStrongholdScreenPlay:spawnMobiles()
 	--{"vendor",60,29.5658,13.25,9.61881,360.011,2745876, "conversation", ""},
 	--{"vendor",60,32.2502,7.25,-1.46477,179.999,2745874, "conversation", ""},
 	--{"vixur_webb",60,-13.2,-0.9,-20.2,22,8145383, "npc_sitting_chair", "Vixur Webb (a musician)"},
+end
+
+function LokNymStrongholdScreenPlay:teleportNabooTheed(pCollector, pPlayer)
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("naboo", -4851, 0, 4172, -90)
+	return 0
 end
