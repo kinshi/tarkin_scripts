@@ -50,7 +50,7 @@ Melee2hMindHit2Command = {
 	mindCostMultiplier = 1.0,
         accuracyBonus = 10,
 
-	poolsToDamage = MIND_ATTRIBUTE,
+	poolsToDamage = ACTION_ATTRIBUTE,
 
 	dotEffects = {
 	  DotEffect( 

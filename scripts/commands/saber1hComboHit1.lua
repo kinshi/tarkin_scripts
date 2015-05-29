@@ -52,7 +52,7 @@ Saber1hComboHit1Command = {
 
 	combatSpam = "saber1hcombohit1",
 	
-	poolsToDamage = HEALTH_ATTRIBUTE + ACTION_ATTRIBUTE + MIND_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE + ACTION_ATTRIBUTE,
 
 	range = -1
 }

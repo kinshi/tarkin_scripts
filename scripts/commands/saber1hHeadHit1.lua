@@ -52,7 +52,7 @@ Saber1hHeadHit1Command = {
 
 	combatSpam = "saber1hheadhit1",
 	
-	poolsToDamage = MIND_ATTRIBUTE,
+	poolsToDamage = ACTION_ATTRIBUTE,
 
 	range = -1
 }
