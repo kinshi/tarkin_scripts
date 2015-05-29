@@ -51,7 +51,7 @@ UnarmedCombo1Command = {
 	mindCostMultiplier = 1.5,
         accuracyBonus = 15,
 
-	poolsToDamage = HEALTH_ATTRIBUTE + ACTION_ATTRIBUTE + MIND_ATTRIBUTE,
+	poolsToDamage = HEALTH_ATTRIBUTE + ACTION_ATTRIBUTE,
 
 	animationCRC = hashCode("combo_4b_medium"),
 

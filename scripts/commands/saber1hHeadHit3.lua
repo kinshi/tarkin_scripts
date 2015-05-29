@@ -52,7 +52,7 @@ Saber1hHeadHit3Command = {
 
 	combatSpam = "saber1hheadhit3",
 	
-	poolsToDamage = MIND_ATTRIBUTE,
+	poolsToDamage = ACTION_ATTRIBUTE,
 	
 	stateEffects = {
 	  StateEffect( 

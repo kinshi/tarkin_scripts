@@ -51,7 +51,7 @@ MindShot2Command = {
 	mindCostMultiplier = 1.5,
 	accuracyBonus = 5,
 
-	poolsToDamage = MIND_ATTRIBUTE,
+	poolsToDamage = ACTION_ATTRIBUTE,
 
 	animationCRC = hashCode("fire_1_special_single_medium_face"),
 

@@ -14,6 +14,15 @@ function TatooineMosEisleyScreenPlay:start()
 end
 
 function TatooineMosEisleyScreenPlay:spawnSceneObjects()
+
+-- Travel Terminal
+	local pCollector = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", 3631.17, 5, -4791.17, 0, 0.964254, 0, -0.26498, 0)
+	local collector = LuaSceneObject(pCollector)
+	local col2creo = LuaCreatureObject(pCollector)
+	col2creo:setOptionsBitmask(128)
+	collector:setCustomObjectName("\\#ee3377 Theed (Naboo)")
+	createObserver(OBJECTRADIALUSED, "TatooineMosEisleyScreenPlay", "teleportNabooTheed", pCollector)
+	
 	--Lower Floor
 	spawnSceneObject("tatooine", "object/tangible/terminal/terminal_elevator_down.iff", -3.5, 9, -21.4, 1076970, 1, 0, 0, 0) --Middle
 	spawnSceneObject("tatooine", "object/tangible/terminal/terminal_elevator_up.iff", -3.5, 0, -21.4, 1076970, 1, 0, 0, 0)
@@ -371,4 +380,10 @@ function TatooineMosEisleyScreenPlay:spawnMobiles()
 	spawnMobile("tatooine", "trainer_rifleman",0,3426,5,-4917,0,0)
 	spawnMobile("tatooine", "trainer_scout",0,3519.76,5,-4786.9,77,0)
 	--{"trainer_smuggler",0,3401,5,-4879,340,0, "worried", ""},
+end
+
+function TatooineMosEisleyScreenPlay:teleportNabooTheed(pCollector, pPlayer)
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("naboo", -4851, 0, 4172, -90)
+	return 0
 end
