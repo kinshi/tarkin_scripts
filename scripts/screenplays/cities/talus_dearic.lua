@@ -16,8 +16,8 @@ end
 function TalusDearicScreenPlay:spawnSceneObjects()
 
 -- Travel Terminal
-	local pCollector = spawnSceneObject("talus", "object/tangible/furniture/imperial/data_terminal_s1.iff", 233.395, 6, -2940.64, 0, 0.197137, 0, 0.980376, 0)
-	local collector = LuaSceneObject(pCollector0)
+	local pCollector0 = spawnSceneObject("talus", "object/tangible/furniture/imperial/data_terminal_s1.iff", 233.395, 6, -2940.64, 0, 0.197137, 0, 0.980376, 0)
+	local collector0 = LuaSceneObject(pCollector0)
 	collector:setCustomObjectName("\\#ee3377 Theed (Naboo)")
 	createObserver(OBJECTRADIALUSED, "TalusDearicScreenPlay", "teleportNabooTheed", pCollector0)
 

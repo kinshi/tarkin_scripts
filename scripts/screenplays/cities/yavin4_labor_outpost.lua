@@ -16,8 +16,8 @@ end
 function Yavin4LaborOutpostScreenPlay:spawnSceneObjects()
 
 -- Travel Terminal
-	local pCollector = spawnSceneObject("yavin4", "object/tangible/furniture/imperial/data_terminal_s1.iff", -6926.93, 73, -5703.08, 0, -0.703275, 0, 0.710918, 0)
-	local collector = LuaSceneObject(pCollector0)
+	local pCollector0 = spawnSceneObject("yavin4", "object/tangible/furniture/imperial/data_terminal_s1.iff", -6926.93, 73, -5703.08, 0, -0.703275, 0, 0.710918, 0)
+	local collector0 = LuaSceneObject(pCollector0)
 	collector:setCustomObjectName("\\#ee3377 Theed (Naboo)")
 	createObserver(OBJECTRADIALUSED, "Yavin4LaborOutpostScreenPlay", "teleportNabooTheed", pCollector0)
 

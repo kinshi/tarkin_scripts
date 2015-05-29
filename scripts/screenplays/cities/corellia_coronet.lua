@@ -17,15 +17,15 @@ function CorelliaCoronetScreenPlay:spawnSceneObjects()
 
 	-- Travel terminal
 
-	local pCollector = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -38.0408, 28, -4727.4, 0, 0.999108, 0, 0.0422203, 0)
-	local collector = LuaSceneObject(pCollector0)
+	local pCollector0 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -38.0408, 28, -4727.4, 0, 0.999108, 0, 0.0422203, 0)
+	local collector0 = LuaSceneObject(pCollector0)
 	collector:setCustomObjectName("\\#ee3377 Theed (Naboo)")
-	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportNabooTheed", pCollector)
+	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportNabooTheed", pCollector0)
 
-	local pCollector = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -39.2332, 28, -4700.81, 0, -0.215735, 0, 0.976452, 0)
-	local collector = LuaSceneObject(pCollector1)
+	local pCollector1 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -39.2332, 28, -4700.81, 0, -0.215735, 0, 0.976452, 0)
+	local collector1 = LuaSceneObject(pCollector1)
 -	collector:setCustomObjectName("\\#ee3377 One-Way Travel to the Death Watch Bunker - (Endor)")
-	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportDWB", pCollector)
+	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportDWB", pCollector1)
 	
 	local pCollector2 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -18.882, 28, -4718.96, 0, -0.489086, 0, 0.870857, 0)
 	local collector2 = LuaSceneObject(pCollector2)

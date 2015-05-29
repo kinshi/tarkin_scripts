@@ -17,48 +17,56 @@ function NabooTheedScreenPlay:spawnSceneObjects()
 
 -- Travel Terminals 
 	-- Corellia - Coronet
-	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -30.9903, 7.9418, -42.7771, 1692104, 0.747232, 0, 0.664564, 0)
+	local pCollector0 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -30.9903, 7.9418, -42.7771, 1692104, 0.747232, 0, 0.664564, 0)
 	local collector = LuaSceneObject(pCollector0)
-	collector:setCustomObjectName("\\#ee3377 Coronet (Corellia)")
+	collector0:setCustomObjectName("\\#ee3377 Coronet (Corellia)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportCoronet", pCollector0)
+
 	-- Dantooine - Mining Outpost
-	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.1035, 7.9418, -40.5938, 1692104, 0.747232, 0, 0.664564, 0)
-	local collector = LuaSceneObject(pCollector1)
+	local pCollector1 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.1035, 7.9418, -40.5938, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector1 = LuaSceneObject(pCollector1)
 	collector:setCustomObjectName("\\#ee3377 Mining Outpost (Dantooine)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportDantMining", pCollector1)
+
 	-- Dathomir - Trade Outpost
-	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.1988, 7.9418, -39.3456, 1692104, 0.747232, 0, 0.664564, 0)
-	local collector = LuaSceneObject(pCollector2)
+	local pCollector2 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.1988, 7.9418, -39.3456, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector2 = LuaSceneObject(pCollector2)
 	collector:setCustomObjectName("\\#ee3377 Trade Outpost (Dathomir)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportDathTrade", pCollector2)
+
 	-- Endor - Smuggler Outpost
-	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.2629, 7.9418, -37.5066, 1692104, 0.747232, 0, 0.664564, 0)
-	local collector = LuaSceneObject(pCollector3)
+	local pCollector3 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.2629, 7.9418, -37.5066, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector3 = LuaSceneObject(pCollector3)
 	collector:setCustomObjectName("\\#ee3377 Smuggler Outpost (Endor)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportEndorSmug", pCollector3)
+
 	-- Lok - Nym's Stronghold
-	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.301, 7.9418, -35.6301, 1692104, 0.747232, 0, 0.664564, 0)
-	local collector = LuaSceneObject(pCollector4)
+	local pCollector4 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.301, 7.9418, -35.6301, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector4 = LuaSceneObject(pCollector4)
 	collector:setCustomObjectName("\\#ee3377 Nym's Stronghold (Lok)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportLok", pCollector4)
+
 	-- Rori - Narmle
-	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.2513, 7.9418, -33.79051, 1692104, 0.747232, 0, 0.664564, 0)
-	local collector = LuaSceneObject(pCollector5)
+	local pCollector5 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.2513, 7.9418, -33.79051, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector5 = LuaSceneObject(pCollector5)
 	collector:setCustomObjectName("\\#ee3377 Narmle (Rori)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportRoriNarmle", pCollector5)
+
 	-- Talus - Dearic
-	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.3082, 7.9418, -31.3615, 1692104, 0.747232, 0, 0.664564, 0)
-	local collector = LuaSceneObject(pCollecto6r)
+	local pCollector6 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.3082, 7.9418, -31.3615, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector6 = LuaSceneObject(pCollector6)
 	collector:setCustomObjectName("\\#ee3377 Dearic (Talus)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportTalusDearic", pCollector6)
+
 	-- Tatooine - Mos Eisley
-	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.3154, 7.9418, -29.5019, 1692104, 0.747232, 0, 0.664564, 0)
-	local collector = LuaSceneObject(pCollector7)
+	local pCollector7 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.3154, 7.9418, -29.5019, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector7 = LuaSceneObject(pCollector7)
 	collector:setCustomObjectName("\\#ee3377 Mos Eisley (Tatooine)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportTatME", pCollector7)
+
 	-- Yavin4 - Labor Outpost
-	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.3403, 7.9418, -27.8738, 1692104, 0.747232, 0, 0.664564, 0)
-	local collector = LuaSceneObject(pCollector8)
+	local pCollector8 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.3403, 7.9418, -27.8738, 1692104, 0.747232, 0, 0.664564, 0)
+	local collector = LuaSceneObject(pCollector7)
 	collector:setCustomObjectName("\\#ee3377 Labor Outpost (Yavin4)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportYavinLabor", pCollector8)
 
