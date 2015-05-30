@@ -24,7 +24,7 @@ function CorelliaCoronetScreenPlay:spawnSceneObjects()
 
 	local pCollector1 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -39.2332, 28, -4700.81, 0, -0.215735, 0, 0.976452, 0)
 	local collector1 = LuaSceneObject(pCollector1)
--	collector:setCustomObjectName("\\#ee3377 One-Way Travel to the Death Watch Bunker - (Endor)")
+	collector1:setCustomObjectName("\\#ee3377 One-Way Travel to the Death Watch Bunker - (Endor)")
 	createObserver(OBJECTRADIALUSED, "CorelliaCoronetScreenPlay", "teleportDWB", pCollector1)
 	
 	local pCollector2 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", -18.882, 28, -4718.96, 0, -0.489086, 0, 0.870857, 0)
@@ -430,38 +430,41 @@ function CorelliaCoronetScreenPlay:spawnMobiles()
 
 end
 
-function CorelliaCoronetScreenPlay:teleportDWB(pCollector, pPlayer)
+
+function CorelliaCoronetScreenPlay:teleportNabooTheed(pCollector0, pPlayer)
+	local player = LuaSceneObject(pPlayer)
+	player:switchZone("naboo", -4851, 0, 4172, -90)
+	return 0
+end
+
+function CorelliaCoronetScreenPlay:teleportDWB(pCollector1, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("endor", -4706, 0, 4334, 0)
 	return 0
 end
 
-function CorelliaCoronetScreenPlay:teleportGeo(pCollector, pPlayer)
+function CorelliaCoronetScreenPlay:teleportGeo(pCollector2, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("yavin4", -6513, 0, -426, 0)
 	return 0
 end
 
-function CorelliaCoronetScreenPlay:teleportNyax(pCollector, pPlayer)
+function CorelliaCoronetScreenPlay:teleportNyax(pCollector3, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("corellia", 1282, 0, -302, 0)
 	return 0
 end
 
-function CorelliaCoronetScreenPlay:teleportTusken(pCollector, pPlayer)
+function CorelliaCoronetScreenPlay:teleportTusken(pCollector4, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("tatooine", -4017, 0, 6322, -90)
 	return 0
 end
 
-function CorelliaCoronetScreenPlay:teleportJanta(pCollector, pPlayer)
+function CorelliaCoronetScreenPlay:teleportJanta(pCollector5, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("dantooine", 7035, 0, -4078, -90)
 	return 0
 end
 
-function CorelliaCoronetScreenPlay:teleportNabooTheed(pCollector, pPlayer)
-	local player = LuaSceneObject(pPlayer)
-	player:switchZone("naboo", -4851, 0, 4172, -90)
-	return 0
-end
+

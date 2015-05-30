@@ -252,7 +252,7 @@ function RoriNarmleScreenPlay:spawnMobiles()
 --	spawnMobile("rori", "trainer_weaponsmith", 1, 0, 1, -13, 0, 4635414)
 end
 
-function RoriNarmleScreenPlay:teleportNabooTheed(pCollector, pPlayer)
+function RoriNarmleScreenPlay:teleportNabooTheed(pCollector0, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("naboo", -4851, 0, 4172, -90)
 	return 0

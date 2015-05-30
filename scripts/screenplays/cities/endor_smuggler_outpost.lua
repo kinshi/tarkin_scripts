@@ -18,7 +18,7 @@ function EndorSmugglerOutpostScreenPlay:spawnSceneObjects()
 -- Travel Terminal
 	local pCollector0 = spawnSceneObject("endor", "object/tangible/furniture/imperial/data_terminal_s1.iff", -970.212, 73, 1564.25, 0, -0.371994, 0, 0.928235, 0)
 	local collector0 = LuaSceneObject(pCollector0)
-	collector:setCustomObjectName("\\#ee3377 Theed (Naboo)")
+	collector0:setCustomObjectName("\\#ee3377 Theed (Naboo)")
 	createObserver(OBJECTRADIALUSED, "EndorSmugglerOutpostScreenPlay", "teleportNabooTheed", pCollector0)
 
 --Smuggler Outpost SP
@@ -54,7 +54,7 @@ function EndorSmugglerOutpostScreenPlay:spawnMobiles()
 
 end
 
-function EndorSmugglerOutpostScreenPlay:teleportNabooTheed(pCollector, pPlayer)
+function EndorSmugglerOutpostScreenPlay:teleportNabooTheed(pCollector0, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("naboo", -4851, 0, 4172, -90)
 	return 0
