@@ -25,49 +25,49 @@ function NabooTheedScreenPlay:spawnSceneObjects()
 	-- Dantooine - Mining Outpost
 	local pCollector1 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.1035, 7.9418, -40.5938, 1692104, 0.747232, 0, 0.664564, 0)
 	local collector1 = LuaSceneObject(pCollector1)
-	collector:setCustomObjectName("\\#ee3377 Mining Outpost (Dantooine)")
+	collector1:setCustomObjectName("\\#ee3377 Mining Outpost (Dantooine)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportDantMining", pCollector1)
 
 	-- Dathomir - Trade Outpost
 	local pCollector2 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.1988, 7.9418, -39.3456, 1692104, 0.747232, 0, 0.664564, 0)
 	local collector2 = LuaSceneObject(pCollector2)
-	collector:setCustomObjectName("\\#ee3377 Trade Outpost (Dathomir)")
+	collector2:setCustomObjectName("\\#ee3377 Trade Outpost (Dathomir)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportDathTrade", pCollector2)
 
 	-- Endor - Smuggler Outpost
 	local pCollector3 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.2629, 7.9418, -37.5066, 1692104, 0.747232, 0, 0.664564, 0)
 	local collector3 = LuaSceneObject(pCollector3)
-	collector:setCustomObjectName("\\#ee3377 Smuggler Outpost (Endor)")
+	collector3:setCustomObjectName("\\#ee3377 Smuggler Outpost (Endor)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportEndorSmug", pCollector3)
 
 	-- Lok - Nym's Stronghold
 	local pCollector4 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.301, 7.9418, -35.6301, 1692104, 0.747232, 0, 0.664564, 0)
 	local collector4 = LuaSceneObject(pCollector4)
-	collector:setCustomObjectName("\\#ee3377 Nym's Stronghold (Lok)")
+	collector4:setCustomObjectName("\\#ee3377 Nym's Stronghold (Lok)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportLok", pCollector4)
 
 	-- Rori - Narmle
 	local pCollector5 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.2513, 7.9418, -33.79051, 1692104, 0.747232, 0, 0.664564, 0)
 	local collector5 = LuaSceneObject(pCollector5)
-	collector:setCustomObjectName("\\#ee3377 Narmle (Rori)")
+	collector5:setCustomObjectName("\\#ee3377 Narmle (Rori)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportRoriNarmle", pCollector5)
 
 	-- Talus - Dearic
 	local pCollector6 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.3082, 7.9418, -31.3615, 1692104, 0.747232, 0, 0.664564, 0)
 	local collector6 = LuaSceneObject(pCollector6)
-	collector:setCustomObjectName("\\#ee3377 Dearic (Talus)")
+	collector6:setCustomObjectName("\\#ee3377 Dearic (Talus)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportTalusDearic", pCollector6)
 
 	-- Tatooine - Mos Eisley
 	local pCollector7 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.3154, 7.9418, -29.5019, 1692104, 0.747232, 0, 0.664564, 0)
 	local collector7 = LuaSceneObject(pCollector7)
-	collector:setCustomObjectName("\\#ee3377 Mos Eisley (Tatooine)")
+	collector7:setCustomObjectName("\\#ee3377 Mos Eisley (Tatooine)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportTatME", pCollector7)
 
 	-- Yavin4 - Labor Outpost
 	local pCollector8 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", -31.3403, 7.9418, -27.8738, 1692104, 0.747232, 0, 0.664564, 0)
-	local collector = LuaSceneObject(pCollector7)
-	collector:setCustomObjectName("\\#ee3377 Labor Outpost (Yavin4)")
+	local collector8 = LuaSceneObject(pCollector8)
+	collector8:setCustomObjectName("\\#ee3377 Labor Outpost (Yavin4)")
 	createObserver(OBJECTRADIALUSED, "NabooTheedScreenPlay", "teleportYavinLabor", pCollector8)
 
 
@@ -445,55 +445,55 @@ function NabooTheedScreenPlay:spawnMobiles()
 
 end
 
-function NabooTheedScreenPlay:teleportCoronet(pCollector, pPlayer)
+function NabooTheedScreenPlay:teleportCoronet(pCollector0, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("corellia", -131, 0, -4723, 0)  
 	return 0
 end
 
-function NabooTheedScreenPlay:teleportDantMining(pCollector, pPlayer)
+function NabooTheedScreenPlay:teleportDantMining(pCollector1, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("dantooine", -640, 0, 2502, 0)  
 	return 0
 end
 
-function NabooTheedScreenPlay:teleportDathTrade(pCollector, pPlayer)
+function NabooTheedScreenPlay:teleportDathTrade(pCollector2, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("dathomir", 619, 0, 3089, 0)  
 	return 0
 end
 
-function NabooTheedScreenPlay:teleportEndorSmug(pCollector, pPlayer)
+function NabooTheedScreenPlay:teleportEndorSmug(pCollector3, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("endor", -955, 0, 1557, 0)  
 	return 0
 end
 
-function NabooTheedScreenPlay:teleportLok(pCollector, pPlayer)
+function NabooTheedScreenPlay:teleportLok(pCollector4, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("lok", 474, 0, 5511, 0)  
 	return 0
 end
 
-function NabooTheedScreenPlay:teleportRoriNarmle(pCollector, pPlayer)
+function NabooTheedScreenPlay:teleportRoriNarmle(pCollector5, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("rori", -5312, 0, -2219, 0)  
 	return 0
 end
 
-function NabooTheedScreenPlay:teleportTalusDearic(pCollector, pPlayer)
+function NabooTheedScreenPlay:teleportTalusDearic(pCollector6, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("talus", 324, 0, -2928, 0)  
 	return 0
 end
 
-function NabooTheedScreenPlay:teleportTatME(pCollector, pPlayer)
+function NabooTheedScreenPlay:teleportTatME(pCollector7, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("tatooine", 3534, 0, -4802, 0)  
 	return 0
 end
 
-function NabooTheedScreenPlay:teleportYavinLabor(pCollector, pPlayer)
+function NabooTheedScreenPlay:teleportYavinLabor(pCollector8, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("yavin4", -6927, 0, -5709, 0)  
 	return 0
