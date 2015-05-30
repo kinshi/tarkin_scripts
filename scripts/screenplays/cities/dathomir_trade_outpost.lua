@@ -18,7 +18,7 @@ function DathomirTradeOutpostScreenPlay:spawnSceneObjects()
 -- Travel Terminal
 	local pCollector0 = spawnSceneObject("dathomir", "object/tangible/furniture/imperial/data_terminal_s1.iff", 596.496, 6, 3099.35, 0, -0.24313, 0, 0.969994, 0)
 	local collector0 = LuaSceneObject(pCollector0)
-	collector:setCustomObjectName("\\#ee3377 Theed (Naboo)")
+	collector0:setCustomObjectName("\\#ee3377 Theed (Naboo)")
 	createObserver(OBJECTRADIALUSED, "DathomirTradeOutpostScreenPlay", "teleportNabooTheed", pCollector0)
 
 --Trade Outpost SP
@@ -63,7 +63,7 @@ function DathomirTradeOutpostScreenPlay:spawnMobiles()
 
 end
 
-function DathomirTradeOutpostScreenPlay:teleportNabooTheed(pCollector, pPlayer)
+function DathomirTradeOutpostScreenPlay:teleportNabooTheed(pCollector0, pPlayer)
 	local player = LuaSceneObject(pPlayer)
 	player:switchZone("naboo", -4851, 0, 4172, -90)
 	return 0
