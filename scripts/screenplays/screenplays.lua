@@ -382,3 +382,8 @@ includeFile("military/rebel/rori_rebel_military_base.lua")
 includeFile("military/rebel/tatooine_anchorhead_rebel_base.lua")
 includeFile("military/rebel/lok_rebel_safehouse.lua")
 includeFile("military/rebel/talus_rebel_installation.lua")
+
+
+-- Travel
+
+includeFile("travel/dungeons.lua")
