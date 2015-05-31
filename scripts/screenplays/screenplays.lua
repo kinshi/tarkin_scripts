@@ -388,3 +388,4 @@ includeFile("military/rebel/talus_rebel_installation.lua")
 
 includeFile("travel/dungeons.lua")
 includeFile("travel/galaxyTheed.lua")
+includeFile("travel/imperialZephyr.lua")

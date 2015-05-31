@@ -39,16 +39,7 @@ end
 
 function LokImperialOutpostScreenPlay:spawnSceneObjects()
 
-	-- Travel terminal
-
-	local pCollector = spawnSceneObject("lok", "object/tangible/furniture/imperial/data_terminal_s1.iff", -1936, 12, -3133, 0, 1, 0, 0, 0)
-	local collector = LuaSceneObject(pCollector)
---	local col2creo = LuaCreatureObject(pCollector)
---	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Imperial Oasis (Tatooine)")
-	createObserver(OBJECTRADIALUSED, "LokImperialOutpostScreenPlay", "teleportImpOasis", pCollector)
-			
-	-- Terminals
+-- Terminals
 
 	spawnSceneObject("lok", "object/tangible/terminal/terminal_character_builder.iff", -1945, 12, -3136, 0, 1, 0, 0, 0)
 
@@ -452,14 +443,3 @@ function LokImperialOutpostScreenPlay:notifyBrigadierDead(pBrigadier, pKiller)
      return 1
 end
 
-function LokImperialOutpostScreenPlay:teleportImpOasis(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then	
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("tatooine", -5369, 0, 2748, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
-end
