@@ -387,3 +387,4 @@ includeFile("military/rebel/talus_rebel_installation.lua")
 -- Travel
 
 includeFile("travel/dungeons.lua")
+includeFile("travel/galaxyTheed.lua")
