@@ -21,14 +21,16 @@
   
 -- Imperial Outpost - (Dantooine) To:
   -- Imperial Stronghold - (Corellia)
+  -- Imperial Prison (Dathomir)
   
 -- Imperial Prison (Dathomir) To:
-  -- Emperor's Retreat - (Naboo)
+  -- Travel to Imperial Outpost - (Dantooine)
   -- Imperial Detachment HQ - (Tatooine)
-  -- Imperial Outpost - (Talus)
+  -- Imperial Prison (Lok)
   
 -- Imperial Prison (Lok) To:
   -- Imperial Oasis (Tatooine)
+  -- Imperial Prison (Dathomir)
   
 -- Emperor's Retreat - (Naboo) To:
   -- Kaadara Outpost - (Naboo)
@@ -109,32 +111,42 @@ function ImperialZephyrScreenPlay:spawnSceneObjects()
   
   local pCollector5 = spawnSceneObject("dantooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -4206.0, 3.0, -2346.0, -1, 0, 0, 1, 0)
   local collector5 = LuaSceneObject(pCollector5)
-  collector5:setCustomObjectName("\\#ee3377Travel to Imperial Stronghold - Corellia")
+  collector5:setCustomObjectName("\\#ee3377Travel to Imperial Stronghold - (Corellia)")
   createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportImpStronghold", pCollector5)
+  
+  local pCollector26 = spawnSceneObject("dantooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -4207.71, 3.0, -2345.75, -1, 0, 0, 1, 0)
+  local collector26 = LuaSceneObject(pCollector26)
+  collector26:setCustomObjectName("\\#ee3377Travel to Imperial Prison - Dathomir)")
+  createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportPrisonDath", pCollector26)
   
   -- Imperial Prison - (Dathomir) ==============
   
-  local pCollector6 = spawnSceneObject("dathomir", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4610, 25, -5791, 0, 0, 0, 1, 0)
+  local pCollector6 = spawnSceneObject("dathomir", "object/tangible/furniture/imperial/data_terminal_s1.iff", -6230.73, 120, 937.996, 0, 0.962674, 0, 0.270663, 0)
   local collector6 = LuaSceneObject(pCollector6)
-  collector6:setCustomObjectName("\\#ee3377Travel to  Emperor's Retreat - (Naboo)")
-  createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportImpRetreat", pCollector6)
+  collector6:setCustomObjectName("\\#ee3377Travel to Imperial Outpost - (Dantooine)")
+  createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportDantooine", pCollector6)
   
-  local pCollector7 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4617, 25, -5791, 0, 0, 0, 1, 0)
+  local pCollector7 = spawnSceneObject("dathomir", "object/tangible/furniture/imperial/data_terminal_s1.iff", -6228.38, 120, 936.471, 0, 0.966555, 0, 0.256459, 0)
   local collector7 = LuaSceneObject(pCollector7)
   collector7:setCustomObjectName("\\#ee3377Travel to Imperial Detachment HQ - (Tatooine)")
   createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportTatHQ", pCollector7)
   
-  local pCollector8 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4617, 25, -5776, 0, 0, 0, 0, 0)
+  local pCollector8 = spawnSceneObject("dathomir", "object/tangible/furniture/imperial/data_terminal_s1.iff", -6226.4, 120, 935.311, 0, 0.964248, 0, 0.265, 0)
   local collector8 = LuaSceneObject(pCollector8)
-  collector8:setCustomObjectName("\\#ee3377Travel to Imperial Outpost - (Talus)")
-  createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportTalus", pCollector8)
+  collector8:setCustomObjectName("\\#ee3377Travel to Imperial Outpost - (Lok)")
+  createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportPrisonLok", pCollector8)
   
   -- Imperial Prison - (Lok) ===========
   
   local pCollector9 = spawnSceneObject("lok", "object/tangible/furniture/imperial/data_terminal_s1.iff", -1936, 12, -3133, 0, 1, 0, 0, 0)
   local collector9 = LuaSceneObject(pCollector9)
-  collector9:setCustomObjectName("\\#ee3377Travel to Imperial Oasis (Tatooine)")
+  collector9:setCustomObjectName("\\#ee3377Travel to Imperial Oasis - (Tatooine)")
   createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportImpOasis", pCollector9)
+  
+  local pCollector9 = spawnSceneObject("lok", "object/tangible/furniture/imperial/data_terminal_s1.iff", -1934.18, 12, -3133.02, 0, 1, 0, 0, 0)
+  local collector9 = LuaSceneObject(pCollector9)
+  collector9:setCustomObjectName("\\#ee3377Travel to Imperial Prison - Dathomir)")
+  createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportPrisonDath", pCollector9)
   
   -- Emperor's Retreat - (Naboo) ===========
   
@@ -156,13 +168,13 @@ function ImperialZephyrScreenPlay:spawnSceneObjects()
   local pCollector13 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", 2437, 292.0, -3896, 0, 0, 0, 0, 0)
   local collector13 = LuaSceneObject(pCollector13)
   collector13:setCustomObjectName("\\#ee3377Travel to Imperial Detachment HQ - (Tatooine)")
-  createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportImpHQ", pCollector13)
+  createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportTatHQ", pCollector13)
   
   -- Kaadara Outpost - (Naboo) ========
    
   local pCollector15 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", 5331, -197, 6420, 0, 0, 0, 0, 0)
   local collector15 = LuaSceneObject(pCollector15)
-  collector:setCustomObjectName("\\#ee3377Travel to Imperial Outpost - Rori")
+  collector15:setCustomObjectName("\\#ee3377Travel to Imperial Outpost - Rori")
   createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportImpEncampmentRori", pCollector15)
 
   local pCollector16 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", 5328, -197.0, 6420, 0, 0, 0, 0, 0)
@@ -210,20 +222,20 @@ function ImperialZephyrScreenPlay:spawnSceneObjects()
   
   local pCollector23 = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -5359.0, 8.0, 2753.0, 0, 0, 0, 1, 0)
   local collector23 = LuaSceneObject(pCollector23)
-  collector23:setCustomObjectName("\\#ee3377Travel to Imperial Detachment HQ - Tatooine")
-  createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportImpHQ", pCollector23)
+  collector23:setCustomObjectName("\\#ee3377Travel to Imperial Detachment HQ - (Tatooine)")
+  createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportTatHQ", pCollector23)
 
   local pCollector24 = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -5363.0, 8.0, 2753.0, 0, 0, 0, 1, 0)
   local collector24 = LuaSceneObject(pCollector24)
-  collector24:setCustomObjectName("\\#ee3377Travel to Imperial Outpost - Lok")
+  collector24:setCustomObjectName("\\#ee3377Travel to Imperial Outpost - (Lok)")
   createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportPrisonLok", pCollector24)
   
   -- Imperial Base - (Yavin4) ==============
   
   local pCollector25 = spawnSceneObject("yavin4", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4042.3, 37.0, -6222.0, 0, 0, 0, 1, 0)
   local collector25 = LuaSceneObject(pCollector25)
-  collector25:setCustomObjectName("\\#ee3377Travel to Imperial Stronghold - Corellia")
-  createObserver(OBJECTRADIALUSED, "StrongholdScreenPlay", "teleportImpStronghold", pCollector25)
+  collector25:setCustomObjectName("\\#ee3377Travel to Imperial Stronghold - (Corellia)")
+  createObserver(OBJECTRADIALUSED, "ImperialZephyrScreenPlay", "teleportImpStronghold", pCollector25)
   
 end
 
@@ -232,9 +244,9 @@ function ImperialZephyrScreenPlay:spawnMobiles()
   -- Place NPCs here.
 end
 
--- Functions that actually teleport the player 
+-- Functions that teleport player
 
-function ImperialZephyrScreenPlay:teleportImpRetreat(pCollector, pPlayer)
+function ImperialZephyrScreenPlay:teleportImpRetreat(pCollectorA, pPlayer)
   local playerfaction = LuaCreatureObject(pPlayer)
   if (playerfaction:isImperial() == true) then
     local player = LuaSceneObject(pPlayer)
@@ -246,7 +258,7 @@ function ImperialZephyrScreenPlay:teleportImpRetreat(pCollector, pPlayer)
   return 0
 end
 
-function ImperialZephyrScreenPlay:teleportTatHQ(pCollector, pPlayer)
+function ImperialZephyrScreenPlay:teleportTatHQ(pCollector13, pPlayer)
   local playerfaction = LuaCreatureObject(pPlayer)
   if (playerfaction:isImperial() == true) then
     local player = LuaSceneObject(pPlayer)
@@ -258,7 +270,7 @@ function ImperialZephyrScreenPlay:teleportTatHQ(pCollector, pPlayer)
   return 0
 end
 
-function ImperialZephyrScreenPlay:teleportTalus(pCollector, pPlayer)
+function ImperialZephyrScreenPlay:teleportTalus(pCollectorD, pPlayer)
   local playerfaction = LuaCreatureObject(pPlayer)
   if (playerfaction:isImperial() == true) then
     local player = LuaSceneObject(pPlayer)
@@ -270,7 +282,7 @@ function ImperialZephyrScreenPlay:teleportTalus(pCollector, pPlayer)
   return 0
 end
 
-function ImperialZephyrScreenPlay:teleportDantooine(pCollector, pPlayer)
+function ImperialZephyrScreenPlay:teleportDantooine(pCollectorE, pPlayer)
   local playerfaction = LuaCreatureObject(pPlayer)
   if (playerfaction:isImperial() == true) then
     local player = LuaSceneObject(pPlayer)
@@ -282,7 +294,7 @@ function ImperialZephyrScreenPlay:teleportDantooine(pCollector, pPlayer)
   return 0
 end
 
-function ImperialZephyrScreenPlay:teleportYavin4(pCollector, pPlayer)
+function ImperialZephyrScreenPlay:teleportYavin4(pCollectorF, pPlayer)
   local playerfaction = LuaCreatureObject(pPlayer)
   if (playerfaction:isImperial() == true) then
     local player = LuaSceneObject(pPlayer)
@@ -294,7 +306,7 @@ function ImperialZephyrScreenPlay:teleportYavin4(pCollector, pPlayer)
   return 0
 end
 
-function ImperialZephyrScreenPlay:teleportImpStronghold(pCollector, pPlayer)
+function ImperialZephyrScreenPlay:teleportImpStronghold(pCollectorG, pPlayer)
   local playerfaction = LuaCreatureObject(pPlayer)
   if (playerfaction:isImperial() == true) then
     local player = LuaSceneObject(pPlayer)
@@ -306,7 +318,7 @@ function ImperialZephyrScreenPlay:teleportImpStronghold(pCollector, pPlayer)
   return 0
 end
 
-function ImperialZephyrScreenPlay:teleportImpOasis(pCollector, pPlayer)
+function ImperialZephyrScreenPlay:teleportImpOasis(pCollectorH, pPlayer)
   local playerfaction = LuaCreatureObject(pPlayer)
   if (playerfaction:isImperial() == true) then  
     local player = LuaSceneObject(pPlayer)
@@ -318,7 +330,7 @@ function ImperialZephyrScreenPlay:teleportImpOasis(pCollector, pPlayer)
   return 0
 end
 
-function ImperialZephyrScreenPlay:teleportImpOutpostKaadara(pCollector, pPlayer)
+function ImperialZephyrScreenPlay:teleportImpOutpostKaadara(pCollectorI, pPlayer)
   local playerfaction = LuaCreatureObject(pPlayer)
   if (playerfaction:isImperial() == true) then  
     local player = LuaSceneObject(pPlayer)
@@ -330,7 +342,7 @@ function ImperialZephyrScreenPlay:teleportImpOutpostKaadara(pCollector, pPlayer)
   return 0
 end
 
-function ImperialZephyrScreenPlay:teleportImpEncampmentRori(pCollector, pPlayer)
+function ImperialZephyrScreenPlay:teleportImpEncampmentRori(pCollectorJ, pPlayer)
   local playerfaction = LuaCreatureObject(pPlayer)
   if (playerfaction:isImperial() == true) then  
     local player = LuaSceneObject(pPlayer)
@@ -342,11 +354,23 @@ function ImperialZephyrScreenPlay:teleportImpEncampmentRori(pCollector, pPlayer)
   return 0
 end
 
-function TatooineImperialOasisScreenPlay:teleportPrisonLok(pCollector, pPlayer)
+function ImperialZephyrScreenPlay:teleportPrisonLok(pCollectorK, pPlayer)
   local playerfaction = LuaCreatureObject(pPlayer)
   if (playerfaction:isImperial() == true) then
     local player = LuaSceneObject(pPlayer)
     player:switchZone("lok", -1938, 0, -3133, 0)
+  else
+    local playerm = LuaCreatureObject(pPlayer)
+    playerm:sendSystemMessage("You are not authorized to use this terminal")
+  end
+  return 0
+end
+
+function ImperialZephyrScreenPlay:teleportPrisonDath(pCollectorK, pPlayer)
+  local playerfaction = LuaCreatureObject(pPlayer)
+  if (playerfaction:isImperial() == true) then
+    local player = LuaSceneObject(pPlayer)
+    player:switchZone("dathomir", -6231, 0, 946, 0)
   else
     local playerm = LuaCreatureObject(pPlayer)
     playerm:sendSystemMessage("You are not authorized to use this terminal")
