@@ -47,7 +47,7 @@ planetarytravel_template:addScreen(planetarytravel_deny);
 planetarytravel_naboo_start = ConvoScreen:new {
   id = "naboo_start",
   leftDialog = "",
-  customDialogText = "Hey, traveler, where on Naboo would you like to go today? All destinations cost 250 credits.",
+  customDialogText = "Howdy, traveler. Where on Naboo would you like to go today? All destinations cost 250 credits.",
   stopConversation = "false",
   options = {
     {"Theed East", "theed_east"},
@@ -66,7 +66,6 @@ planetarytravel_template:addScreen(planetarytravel_naboo_start);
 planetarytravel_theed_east = ConvoScreen:new {
   id = "theed_east",
   leftDialog = "",
-  customDialogText = "Quick and easy, I like it!",
   stopConversation = "true",
   options = { 
   }
@@ -76,7 +75,6 @@ planetarytravel_template:addScreen(planetarytravel_theed_east);
 planetarytravel_theed_palace = ConvoScreen:new {
   id = "theed_palace",
   leftDialog = "",
-  customDialogText = "Doing some sight seeing are ya?",
   stopConversation = "true",
   options = { 
   }
@@ -86,7 +84,6 @@ planetarytravel_template:addScreen(planetarytravel_theed_palace);
 planetarytravel_theed_west = ConvoScreen:new {
 	id = "theed_west",
 	leftDialog = "",
-	customDialogText = "Keep an eye on your pocketbook. Rumor has it there are Rebels in the west end.",
 	stopConversation = "true",
 	options = {	
 	}
@@ -96,7 +93,6 @@ planetarytravel_template:addScreen(planetarytravel_theed_west);
 planetarytravel_lake_retreat = ConvoScreen:new {
   id = "lake_retreat",
   leftDialog = "",
-  customDialogText = "Oh, what a beautiful vacation spot!",
   stopConversation = "true",
   options = { 
   }
@@ -106,7 +102,6 @@ planetarytravel_template:addScreen(planetarytravel_lake_retreat);
 planetarytravel_keren_west = ConvoScreen:new {
   id = "keren_west",
   leftDialog = "",
-  customDialogText = "I have heard good things about Keren.",
   stopConversation = "true",
   options = { 
   }
@@ -116,7 +111,6 @@ planetarytravel_template:addScreen(planetarytravel_keren_west);
 planetarytravel_keren_east = ConvoScreen:new {
   id = "keren_east",
   leftDialog = "",
-  customDialogText = "Sure is nice in Keren this time of year.",
   stopConversation = "true",
   options = { 
   }
@@ -126,7 +120,6 @@ planetarytravel_template:addScreen(planetarytravel_keren_east);
 planetarytravel_kaadara = ConvoScreen:new {
   id = "kaadara",
   leftDialog = "",
-  customDialogText = "If you're interested in animals, I hear there's one of them Creature Handler trainers in Kaadara.",
   stopConversation = "true",
   options = { 
   }
@@ -136,7 +129,6 @@ planetarytravel_template:addScreen(planetarytravel_kaadara);
 planetarytravel_deeja_peak = ConvoScreen:new {
   id = "deeja_peak",
   leftDialog = "",
-  customDialogText = "If you ask me, Deeja Peak is the jewel of this whole rock. Mountains, fresh air... I think I'll retire there.",
   stopConversation = "true",
   options = { 
   }
@@ -146,13 +138,114 @@ planetarytravel_template:addScreen(planetarytravel_deeja_peak);
 planetarytravel_moenia = ConvoScreen:new {
   id = "moenia",
   leftDialog = "",
-  customDialogText = "Careful, there is a heavy Rebel presence in Moenia!",
   stopConversation = "true",
   options = { 
   }
 }
 planetarytravel_template:addScreen(planetarytravel_moenia);
 
+
+-- Corellia =======================
+
+planetarytravel_corellia_start = ConvoScreen:new {
+  id = "corellia_start",
+  leftDialog = "",
+  customDialogText = "Howdy, traveler. Where on Corellia would you like to go today? All destinations cost 250 credits.",
+  stopConversation = "false",
+  options = {
+    {"Coronet West", "coronet_west"},
+    {"Coronet East", "coronet_east"},
+    {"Kor Vella", "kor_vella"},
+    {"Tyrena West", "tyrena_west"},
+    {"Tyrena East", "tyrena_east"},
+    {"Doaba Guerfel", "doaba_guerfel"},
+    {"Bela Vistal North", "bela_vistal_north"},
+    {"Bela Vistal South", "bela_vistal_south"},
+    {"Vreni Island", "vreni_isaland"},
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_corellia_start);
+
+planetarytravel_coronet_west = ConvoScreen:new {
+  id = "coronet_west",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_coronet_west);
+
+planetarytravel_coronet_east = ConvoScreen:new {
+  id = "coronet_east",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_coronet_east);
+
+planetarytravel_kor_vella = ConvoScreen:new {
+  id = "kor_vella",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_kor_vella);
+
+planetarytravel_tyrena_west = ConvoScreen:new {
+  id = "tyrena_west",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_tyrena_west);
+
+planetarytravel_tyrena_east = ConvoScreen:new {
+  id = "tyrena_east",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_tyrena_east);
+
+planetarytravel_doaba_guerfel = ConvoScreen:new {
+  id = "doaba_guerfel",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_doaba_guerfel);
+
+planetarytravel_bela_vistal_north = ConvoScreen:new {
+  id = "bela_vistal_north",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_bela_vistal_north);
+
+planetarytravel_bela_vistal_south = ConvoScreen:new {
+  id = "bela_vistal_south",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_bela_vistal_south);
+
+planetarytravel_vreni_isaland = ConvoScreen:new {
+  id = "vreni_isaland",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_vreni_isaland);
 
 -- Template Footer
 addConversationTemplate("planetarytravel_template", planetarytravel_template);

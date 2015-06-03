@@ -12,36 +12,36 @@
 
 local ObjectManager = require("managers.object.object_manager")
 
-PlanetaryNabooScreenPlay = ScreenPlay:new {
+PlanetaryCorelliaScreenPlay = ScreenPlay:new {
 	numberOfActs = 1, 
 	hasPaid = "false",
-	screenplayName = "PlanetaryNabooScreenPlay"
+	screenplayName = "PlanetaryCorelliaScreenPlay"
 }
 
-registerScreenPlay("PlanetaryNabooScreenPlay", true)
+registerScreenPlay("PlanetaryCorelliaScreenPlay", true)
 
-function PlanetaryNabooScreenPlay:start()
-  if (isZoneEnabled("naboo")) then
+function PlanetaryCorelliaScreenPlay:start()
+  if (isZoneEnabled("corellia")) then
     self:spawnSceneObjects()
     self:spawnMobiles()
   end
 end
 
-function PlanetaryNabooScreenPlay:spawnSceneObjects()
+function PlanetaryCorelliaScreenPlay:spawnSceneObjects()
   -- No objects to place
 end
 
-function PlanetaryNabooScreenPlay:spawnMobiles()
+function PlanetaryCorelliaScreenPlay:spawnMobiles()
   -- Spawn our pilots
-  local pPilotTheedEast = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, -4976, 6.6, 4097, 35, 0 )
-  local pPilotTheedPalace = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, -5406, 6.6, 4316, 35, 0 )
-  local pPilotTheedWest = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, -5864, 6.6, 4173, 88, 0 )
-  local pPilotLakeRetreat = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, -5485, -149.4, -23, -94, 0 )
-  local pPilotKerenWest = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, 1562, 25.6, 2845, 154, 0 )
-  local pPilotKerenEast = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, 2029, 19.6, 2524, -64, 0 )
-  local pPilotKaadara = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, 5129, -191.4, 6608, -1, 0 )
-  local pPilotDeejaPeak = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, 5341, 327.6, -1581, -82, 0 )
-  local pPilotMoenia = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, 4971, 4.4, -4893, -82, 0 )
+  local pPilotCoronetWest = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, -328, 28.6, -4632, 172, 0 )
+  local pPilotCoronetEast = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, -23, 28.6, -4399, -174, 0 )
+  local pPilotKorVella = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, -3771, 86.6, 3240, 159, 0 )
+  local pPilotTyrenaWest = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, -5610, 21.4, -2787, 90, 0 )
+  local pPilotTyrenaEast = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, -5002, 21.6, -2376, -160, 0 )
+  local pPilotDoabaGuefel = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, 3074, 280.6, 4993, 84, 0 )
+  local pPilotBelaVistalNorth = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, 6941, 330.4, -5537, -114, 0 )
+  local pPilotBelaVistalSouth = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, 6632, 330.6, -5921, 125, 0 )
+  local pPilotVreniIsland = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, -5551, 16.4, -6049, 178, 0 )
 end
 
 
@@ -70,7 +70,7 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
     
     -- Last conversation was nil, so get the first screen
     if ( lastConversationScreen == nil ) then
-      nextConversationScreen = conversation:getScreen("naboo_start")
+      nextConversationScreen = conversation:getScreen("corellia_start")
     else
       -- Start playing the rest of the conversation based on user input
       local luaLastConversationScreen = LuaConversationScreen(lastConversationScreen)
@@ -86,15 +86,15 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
       if (credits < 250) then       
         -- Bail if the player doesn't have enough cash on hand.
         nextConversationScreen = conversation:getScreen("insufficient_funds")
-      elseif (optionLink == "theed_east" or
-              optionLink == "theed_palace" or
-              optionLink == "theed_west" or
-              optionLink == "lake_retreat" or
-              optionLink == "keren_west" or
-              optionLink == "keren_east" or
-              optionLink == "kaadara" or
-              optionLink == "deeja_peak" or
-              optionLink == "moenia"
+      elseif (optionLink == "coronet_west" or
+              optionLink == "coronet_east" or
+              optionLink == "kor_vella" or
+              optionLink == "tyrena_west" or
+              optionLink == "tyrena_east" or
+              optionLink == "doaba_guerfel" or
+              optionLink == "bela_vistal_north" or
+              optionLink == "bela_vistal_south" or
+              optionLink == "vreni_isaland"
              ) then
         -- Take 250 credits from the player's cash on hand.
         creature:subtractCashCredits(250)
@@ -115,24 +115,24 @@ function planetarytravel_convo_handler:runScreenHandlers(conversationTemplate, c
 	
 	-- Teleport player
 	if (self.hasPaid == "true") then
-  	if (screenID == "theed_east") then
-      player:switchZone("naboo", -4976, 0, 4103, 0)
-    elseif (screenID == "theed_palace") then
-      player:switchZone("naboo", -5411, 0, 4320, 0)
-    elseif (screenID == "theed_west") then
-      player:switchZone("naboo", -5858, 0, 4171, 0)
-    elseif (screenID == "lake_retreat") then
-      player:switchZone("naboo", -5492, -150, -22, 0)
-    elseif (screenID == "keren_west") then
-      player:switchZone("naboo", 1567, 25, 2840, 0)
-    elseif (screenID == "keren_east") then
-      player:switchZone("naboo", 2021, 19, 2526, 0)
-    elseif (screenID == "kaadara") then
-      player:switchZone("naboo", 5124, -192, 6615, 0)
-    elseif (screenID == "deeja_peak") then
-      player:switchZone("naboo", 5329, 326, -1574, 0)
-    elseif (screenID == "moenia") then
-      player:switchZone("naboo", 4960, 3, -4893, 0)
+  	if (screenID == "coronet_west") then
+      player:switchZone("corellia", -327, 28, -4638, 0)
+    elseif (screenID == "coronet_east") then
+      player:switchZone("corellia", -24, 28, -4407, 0)
+    elseif (screenID == "kor_vella") then
+      player:switchZone("corellia", -3774, 0, 3233, 0)
+    elseif (screenID == "tyrena_west") then
+      player:switchZone("corellia", -5602, 21, -2786, 0)
+    elseif (screenID == "tyrena_east") then
+      player:switchZone("corellia", -5002, 21, -2387, 0)
+    elseif (screenID == "doaba_guerfel") then
+      player:switchZone("corellia", 3083, 280, 4986, 0)
+    elseif (screenID == "bela_vistal_north") then
+      player:switchZone("corellia", 6928, 331, -5541, 0)
+    elseif (screenID == "bela_vistal_south") then
+      player:switchZone("corellia", 6639, 331, -5921, 0)
+    elseif (screenID == "vreni_isaland") then
+      player:switchZone("corellia", -5552, 15, -6059, 0)
     end
     self.hasPaid = "false"
   end
