@@ -247,5 +247,108 @@ planetarytravel_vreni_isaland = ConvoScreen:new {
 }
 planetarytravel_template:addScreen(planetarytravel_vreni_isaland);
 
+
+-- Tatooine ================
+
+planetarytravel_tatooine_start = ConvoScreen:new {
+  id = "tatooine_start",
+  leftDialog = "",
+  customDialogText = "Howdy, traveler. Where on Tatooine would you like to go today? All destinations cost 250 credits.",
+  stopConversation = "false",
+  options = {
+    {"Mos Eisley", "mos_eisley"},
+    {"Bestine", "bestine"},
+    {"Mos Entha West", "mos_entha_west"},
+    {"Mos Entha East", "mos_entha_east"},
+    {"Anchorhead", "anchorhead"},
+    {"Mos Espa West", "mos_espa_west"},
+    {"Mos Espa East", "mos_espa_east"},
+    {"Wayfar", "wayfar"},
+    {"Mos Taike", "mos_taike"},
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_tatooine_start);
+
+planetarytravel_mos_eisley = ConvoScreen:new {
+  id = "mos_eisley",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_mos_eisley);
+
+planetarytravel_bestine = ConvoScreen:new {
+  id = "bestine",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_bestine);
+
+planetarytravel_mos_entha_west = ConvoScreen:new {
+  id = "mos_entha_west",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_mos_entha_west);
+
+planetarytravel_mos_entha_east = ConvoScreen:new {
+  id = "mos_entha_east",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_mos_entha_east);
+
+planetarytravel_anchorhead = ConvoScreen:new {
+  id = "anchorhead",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_anchorhead);
+
+planetarytravel_mos_espa_west = ConvoScreen:new {
+  id = "mos_espa_west",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_mos_espa_west);
+
+planetarytravel_mos_espa_east = ConvoScreen:new {
+  id = "mos_espa_east",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_mos_espa_east);
+
+planetarytravel_wayfar = ConvoScreen:new {
+  id = "wayfar",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_wayfar);
+
+planetarytravel_mos_taike = ConvoScreen:new {
+  id = "mos_taike",
+  leftDialog = "",
+  stopConversation = "true",
+  options = { 
+  }
+}
+planetarytravel_template:addScreen(planetarytravel_mos_taike);
+
 -- Template Footer
 addConversationTemplate("planetarytravel_template", planetarytravel_template);
