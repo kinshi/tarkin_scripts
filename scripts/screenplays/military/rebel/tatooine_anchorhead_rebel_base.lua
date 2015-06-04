@@ -13,31 +13,9 @@ function AnchorheadRebelBaseScreenPlay:start()
 	end
 end
 
---spawn the travel terminals
 
 function AnchorheadRebelBaseScreenPlay:spawnSceneObjects()
 
-	local pCollector = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", 51.8, 52.0, -5335.9, 0, 0, 0, 1, 0)
-	local collector = LuaSceneObject(pCollector)
---	local col2creo = LuaCreatureObject(pCollector)
---	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Rebel Hideout - Corellia")
-	createObserver(OBJECTRADIALUSED, "AnchorheadRebelBaseScreenPlay", "teleportHideout", pCollector)
-
-	local pCollector2 = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", 48.9, 52.0, -5335.9, 0, 0, 0, 1, 0)
-	local collector2 = LuaSceneObject(pCollector2)
---	local col2creo = LuaCreatureObject(pCollector2)
---	col2creo:setOptionsBitmask(264)
-	collector2:setCustomObjectName("\\#ee3377Travel to Moenia Starport - Naboo")
-	createObserver(OBJECTRADIALUSED, "AnchorheadRebelBaseScreenPlay", "teleportMoenia", pCollector2)
-	
-	local pCollector3 = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", 46.1, 52.0, -5335.9, 0, 0, 0, 1, 0)
-	local collector3 = LuaSceneObject(pCollector3)
---	local col2creo = LuaCreatureObject(pCollector3)
---	col2creo:setOptionsBitmask(264)
-	collector3:setCustomObjectName("\\#ee3377Travel to Rebel Safehouse - Lok")
-	createObserver(OBJECTRADIALUSED, "AnchorheadRebelBaseScreenPlay", "teleportSafehouse", pCollector3)
-	
 	-- BLUEFROG
 	--No need to add blue frog here, it is already in the Anchorhead cantina
 
@@ -115,40 +93,3 @@ function AnchorheadRebelBaseScreenPlay:spawnMobiles()
 
 end
 
---travel functions
-
-function AnchorheadRebelBaseScreenPlay:teleportHideout(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isRebel() == true) then	
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("corellia", -6522, 0, 6035, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
-end
-
-function AnchorheadRebelBaseScreenPlay:teleportMoenia(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isRebel() == true) then	
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("naboo", 4731, 4, -4677, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
-end
-
-function AnchorheadRebelBaseScreenPlay:teleportSafehouse(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isRebel() == true) then	
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("lok", -4766, 0, 3512, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
-end

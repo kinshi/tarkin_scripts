@@ -42,29 +42,6 @@ function ImperialPrisonScreenPlay:start()
 end
 
 function ImperialPrisonScreenPlay:spawnSceneObjects()
-
-	-- Travel terminal
-
-	local pCollector = spawnSceneObject("dathomir", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4610, 25, -5791, 0, 0, 0, 1, 0)
-	local collector = LuaSceneObject(pCollector)
---	local col2creo = LuaCreatureObject(pCollector)
---	col2creo:setOptionsBitmask(128)
-	collector:setCustomObjectName("\\#ee3377Travel to  Emperor's Retreat - (Naboo)")
-	createObserver(OBJECTRADIALUSED, "StrongholdScreenPlay", "teleportImpRetreat", pCollector)
-	
-	local pCollector2 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4617, 25, -5791, 0, 0, 0, 1, 0)
-	local collector = LuaSceneObject(pCollector2)
---	local col2creo = LuaCreatureObject(pCollector2)
---	col2creo:setOptionsBitmask(128)
-	collector:setCustomObjectName("\\#ee3377Travel to Imperial Detachment HQ - (Tatooine)")
-	createObserver(OBJECTRADIALUSED, "StrongholdScreenPlay", "teleportTatHQ", pCollector2)
-	
-	local pCollector3 = spawnSceneObject("corellia", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4617, 25, -5776, 0, 0, 0, 0, 0)
-	local collector = LuaSceneObject(pCollector3)
---	local col2creo = LuaCreatureObject(pCollector3)
---	col2creo:setOptionsBitmask(128)
-	collector:setCustomObjectName("\\#ee3377Travel to Imperial Outpost - (Talus)")
-	createObserver(OBJECTRADIALUSED, "StrongholdScreenPlay", "teleportTalus", pCollector3)
 			
 	-- Terminals
 
@@ -398,17 +375,6 @@ function ImperialPrisonScreenPlay:spawnMobiles()
 
 end
 
-function ImperialPrisonScreenPlay:teleportImpRetreat(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("naboo", 2437.8, 0, -3895.7, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
-end
 
 function setTurretFaction(pTurret)
 	if pTurret ~= nil then

@@ -15,20 +15,6 @@ end
 
 function TatooineImperialOasisScreenPlay:spawnSceneObjects()
 
-	local pCollector = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -5359.0, 8.0, 2753.0, 0, 0, 0, 1, 0)
-	local collector = LuaSceneObject(pCollector)
---	local col2creo = LuaCreatureObject(pCollector)
---	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Imperial Detachment HQ - Tatooine")
-	createObserver(OBJECTRADIALUSED, "TatooineImperialOasisScreenPlay", "teleportImpHQ", pCollector)
-
-	local pCollector2 = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -5363.0, 8.0, 2753.0, 0, 0, 0, 1, 0)
-	local collector2 = LuaSceneObject(pCollector2)
---	local col2creo = LuaCreatureObject(pCollector2)
---	col2creo:setOptionsBitmask(264)
-	collector2:setCustomObjectName("\\#ee3377Travel to Imperial Outpost - Lok")
-	createObserver(OBJECTRADIALUSED, "TatooineImperialOasisScreenPlay", "teleportLok", pCollector2)
-	
 	-- BLUEFROG
 	spawnSceneObject("tatooine", "object/tangible/terminal/terminal_character_builder.iff", -5310, 8.5, 2661, 0, 0, 0, 0, 0)
 
@@ -108,29 +94,3 @@ function TatooineImperialOasisScreenPlay:spawnMobiles()
 
 end
 
--- Zephyr Travel Destinations
-
-	
-function TatooineImperialOasisScreenPlay:teleportImpHQ(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then	
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("tatooine", -2583, 0, 2072, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
-end
-
-function TatooineImperialOasisScreenPlay:teleportLok(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("lok", -1938, 0, -3133, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
-end

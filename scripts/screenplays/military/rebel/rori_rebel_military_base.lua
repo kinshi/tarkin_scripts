@@ -16,16 +16,7 @@ end
 
 function RoriRebelMilitaryBaseScreenPlay:spawnSceneObjects()
 
-	-- Travel terminal
-
-	local pCollector = spawnSceneObject("rori", "object/tangible/furniture/imperial/data_terminal_s1.iff", -5311, 76, 5004, 0, 1, 0, 0, 0)
-	local collector = LuaSceneObject(pCollector)
---	local col2creo = LuaCreatureObject(pCollector)
---	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Rebel Outpost (Rori)")
-	createObserver(OBJECTRADIALUSED, "RoriRebelMilitaryBaseScreenPlay", "teleportRebelOutpost", pCollector)
-			
-	-- Terminals
+-- Terminals
 
 	spawnSceneObject("rori", "object/tangible/terminal/terminal_character_builder.iff", -5360.8, 76.0, 5046.0, 0, 1, 0, 0, 0)
 	spawnSceneObject("rori", "object/tangible/terminal/terminal_mission_rebel.iff", -5364.0, 76.0, 5047.0, 0, 1, 0, 0, 0)
@@ -166,20 +157,4 @@ function RoriRebelMilitaryBaseScreenPlay:spawnMobiles()
 	spawnMobile("rori", "sentry_specforce_sniper", 300, -5376.5, 80.0, 5039.5, 25, 0)
 	spawnMobile("rori", "sentry_specforce_sniper", 300, -5378.5, 80.0, 5039.0, -36, 0)
 
-end
-
--- Zephyr Travel Destinations
-
--- Starbird base (Rori) travel function
-	
-function RoriRebelMilitaryBaseScreenPlay:teleportRebelOutpost(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isRebel() == true) then	
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("rori", 3691, 0, -6403, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
 end
