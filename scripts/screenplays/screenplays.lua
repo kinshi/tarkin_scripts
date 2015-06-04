@@ -387,7 +387,8 @@ includeFile("military/rebel/talus_rebel_installation.lua")
 -- Tarkin Travel System
 
 includeFile("travel/dungeons.lua")
-includeFile("travel/galaxyTheed.lua")
+includeFile("travel/galactic_travel_from_theed.lua")
+includeFile("travel/galactic_travel_to_theed.lua")
 includeFile("travel/imperialZephyr.lua")
 includeFile("travel/rebelZephyr.lua")
 includeFile("travel/planetary_travel_naboo.lua")
