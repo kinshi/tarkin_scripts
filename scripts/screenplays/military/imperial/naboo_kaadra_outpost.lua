@@ -13,24 +13,11 @@ function NabooKaadraOutpostScreenPlay:start()
 	end
 end
 
--- Spawn Zephyr objects (travel terms, frog)
+
 
 function NabooKaadraOutpostScreenPlay:spawnSceneObjects()
+  -- Spawn objects (terms, frog, etc)
 
-	local pCollector = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", 5331, -197, 6420, 0, 0, 0, 0, 0)
-	local collector = LuaSceneObject(pCollector)
---	local col2creo = LuaCreatureObject(pCollector)
---	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Imperial Outpost - Rori")
-	createObserver(OBJECTRADIALUSED, "NabooKaadraOutpostScreenPlay", "teleportRoriOutpost", pCollector)
-
-	local pCollector2 = spawnSceneObject("naboo", "object/tangible/furniture/imperial/data_terminal_s1.iff", 5328, -197.0, 6420, 0, 0, 0, 0, 0)
-	local collector = LuaSceneObject(pCollector2)
---	local col2creo = LuaCreatureObject(pCollector2)
---	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Emperor's Retreat -(Naboo)")
-	createObserver(OBJECTRADIALUSED, "NabooKaadraOutpostScreenPlay", "teleportImpRetreat", pCollector2)
-	
 	-- BLUEFROG
 	spawnSceneObject("naboo", "object/tangible/terminal/terminal_character_builder.iff", 5356, -197, 6429, 0, 1, 0, 0, 0)
 	spawnSceneObject("naboo", "object/tangible/terminal/terminal_mission_imperial.iff", 5356, -197, 6433, 0.5, 0.260075, 0, 0.965588, 0)
@@ -61,30 +48,3 @@ function NabooKaadraOutpostScreenPlay:spawnMobiles()
 	spawnMobile("naboo", "sentry_stormtrooper_bombardier", 360, 5336.7, -197.0, 6424.6, -63, 0)
 	
 	end
-
--- Zephyr Travel Destinations
-
-
-function NabooKaadraOutpostScreenPlay:teleportRoriOutpost(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("rori", -5566, 0, -5627, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
-end
-
-function NabooKaadraOutpostScreenPlay:teleportImpRetreat(pCollector2, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("naboo", 2437.8, 0, -3895.7, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0	
-end

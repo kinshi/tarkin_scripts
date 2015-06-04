@@ -147,3 +147,6 @@ includeFile("conversations/pet/pets_conv.lua")
 
 includeFile("conversations/tasks/anniversary_template.lua")
 includeFile("conversations/tasks/painting_template.lua")
+
+-- Tarkin Travel System
+includeFile("conversations/tasks/planetary_travel_conv_handler.lua")

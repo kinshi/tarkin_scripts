@@ -8,8 +8,14 @@ registerScreenPlay("TatooineWayfarScreenPlay", true)
 
 function TatooineWayfarScreenPlay:start()
 	if (isZoneEnabled("tatooine")) then
+	  self:spawnSceneObjects()
 		self:spawnMobiles()
 	end
+end
+
+function TatooineWayfarScreenPlay:spawnSceneObjects()
+  -- Shuttleport for Tarkin Travel System
+  spawnSceneObject("tatooine", "object/building/tatooine/shuttleport_tatooine.iff", -5055, 74.6, -6549, 0, 0)
 end
 
 function TatooineWayfarScreenPlay:spawnMobiles()

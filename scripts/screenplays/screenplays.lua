@@ -384,6 +384,19 @@ includeFile("military/rebel/lok_rebel_safehouse.lua")
 includeFile("military/rebel/talus_rebel_installation.lua")
 
 
--- Travel
+-- Tarkin Travel System
 
 includeFile("travel/dungeons.lua")
+includeFile("travel/galaxyTheed.lua")
+includeFile("travel/imperialZephyr.lua")
+includeFile("travel/rebelZephyr.lua")
+includeFile("travel/planetary_travel_naboo.lua")
+includeFile("travel/planetary_travel_corellia.lua")
+includeFile("travel/planetary_travel_tatooine.lua")
+includeFile("travel/planetary_travel_talus.lua")
+includeFile("travel/planetary_travel_rori.lua")
+includeFile("travel/planetary_travel_dantooine.lua")
+includeFile("travel/planetary_travel_dathomir.lua")
+includeFile("travel/planetary_travel_endor.lua")
+includeFile("travel/planetary_travel_yavin4.lua")
+--includeFile("travel/planetary_travel_lok.lua") -- No public shuttles exist at this time.

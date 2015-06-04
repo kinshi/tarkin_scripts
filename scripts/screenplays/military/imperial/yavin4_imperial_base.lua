@@ -14,13 +14,7 @@ end
 
 function Yavin4ImperialBaseScreenPlay:spawnSceneObjects()
 
-	local pCollector = spawnSceneObject("yavin4", "object/tangible/furniture/imperial/data_terminal_s1.iff", 4042.3, 37.0, -6222.0, 0, 0, 0, 1, 0)
-	local collector = LuaSceneObject(pCollector)
---	local col2creo = LuaCreatureObject(pCollector)
---	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Imperial Stronghold - Corellia")
-	createObserver(OBJECTRADIALUSED, "StrongholdScreenPlay", "teleportImpStronghold", pCollector)
-	
+
 end
 
 function Yavin4ImperialBaseScreenPlay:spawnMobiles()
@@ -75,17 +69,5 @@ function Yavin4ImperialBaseScreenPlay:spawnMobiles()
 	spawnMobile("yavin4", "sentry_stormtrooper", 300, 4061.2, 37.0, -6209.1, -179, 0)
 	spawnMobile("yavin4", "sentry_stormtrooper", 300, 4068.0, 37.0, -6209.1, -179, 0)
 	
-end
-
-function StrongholdScreenPlay:teleportImpStronghold(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("corellia", 4621.7, 0, -5792.2, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
 end
 

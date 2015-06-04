@@ -14,30 +14,7 @@ end
 
 function ImperialDetachmentHQScreenPlay:spawnSceneObjects()
 
-	-- Travel terminal
-
-	local pCollector = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -2576, 5.2, 2065, 0, 1, 0, 0, 0)
-	local collector = LuaSceneObject(pCollector)
---	local col2creo = LuaCreatureObject(pCollector)
---	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Imperial Oasis (Tatooine)")
-	createObserver(OBJECTRADIALUSED, "ImperialDetachmentHQScreenPlay", "teleportImpOasis", pCollector)
-	
-	local pCollector2 = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -2578, 5.2, 2065, 0, 1, 0, 0, 0)
-	local collector = LuaSceneObject(pCollector2)
---	local col2creo = LuaCreatureObject(pCollector2)
---	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Imperial Stronghold (Corellia)")
-	createObserver(OBJECTRADIALUSED, "ImperialDetachmentHQScreenPlay", "teleportStronghold", pCollector2)
-	
-	local pCollector3 = spawnSceneObject("tatooine", "object/tangible/furniture/imperial/data_terminal_s1.iff", -2580, 5.2, 2065, 0, 1, 0, 0, 0)
-	local collector = LuaSceneObject(pCollector3)
---	local col2creo = LuaCreatureObject(pCollector3)
---	col2creo:setOptionsBitmask(264)
-	collector:setCustomObjectName("\\#ee3377Travel to Emporer's Retreat (Naboo)")
-	createObserver(OBJECTRADIALUSED, "ImperialDetachmentHQScreenPlay", "teleportImpRetreat", pCollector3)
-			
-	-- Terminals
+  -- Terminals
 
 	spawnSceneObject("tatooine", "object/tangible/terminal/terminal_character_builder.iff", -2568, 5.5, 2090, 0, 0, 0, 1, 0)
 	spawnSceneObject("tatooine", "object/tangible/terminal/terminal_mission_imperial.iff", -2574, 5.5, 2092, 0, 0, 0, 1, 0)
@@ -130,40 +107,4 @@ function ImperialDetachmentHQScreenPlay:spawnMobiles()
 				
 	-- End Bunker Interior
 	
-end
-
-function ImperialDetachmentHQScreenPlay:teleportImpOasis(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then	
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("tatooine", -5369, 0, 2748, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
-end
-
-function ImperialDetachmentHQScreenPlay:teleportStronghold(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then	
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("corellia", 4630, 0, -5784, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
-end
-
-function ImperialDetachmentHQScreenPlay:teleportImpRetreat(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then	
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("naboo", 2437.8, 0, -3895.7, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
 end

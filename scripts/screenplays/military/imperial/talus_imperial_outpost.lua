@@ -14,16 +14,7 @@ end
 
 function TalusImperialOutpostScreenPlay:spawnSceneObjects()
 
-	-- Travel terminal
-
-	local pCollector = spawnSceneObject("talus", "object/tangible/furniture/imperial/data_terminal_s1.iff", -2212, 20, 2318, 0, 0, 0, 1, 0)
-	local collector = LuaSceneObject(pCollector)
---	local col2creo = LuaCreatureObject(pCollector)
---	col2creo:setOptionsBitmask(128)
-	collector:setCustomObjectName("\\#ee3377Travel to  Imperial Stronghold - (Corellia)")
-	createObserver(OBJECTRADIALUSED, "TalusImperialOutpostScreenPlay", "teleportStronghold", pCollector)
-				
-	-- Terminals
+  -- Terminals
 
 	spawnSceneObject("talus", "object/tangible/terminal/terminal_character_builder.iff", -2190, 20, 2274, 0, 0, 0, 0, 0)
 
@@ -115,16 +106,4 @@ function TalusImperialOutpostScreenPlay:spawnMobiles()
 --	spawnMobile("talus", "farmers_child", 300, -2241.3, 20.0, 2266.9, -16, 0)
 	spawnMobile("talus", "scientist", 300, -2237.3, 20.0, 2223.0, 162, 0)
 
-end
-
-function TalusImperialOutpostScreenPlay:teleportStronghold(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then	
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("corellia", 4630, 0, -5784, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
 end

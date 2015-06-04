@@ -16,23 +16,7 @@ end
 
 function RoriImperialEncampmentScreenPlay:spawnSceneObjects()
 
-	-- Travel terminal
-
-	local pCollector = spawnSceneObject("rori", "object/tangible/furniture/imperial/data_terminal_s1.iff", -5576.0, 76, -5619.2, 0, 0, 0, 1, 0)
-	local collector = LuaSceneObject(pCollector)
---	local col2creo = LuaCreatureObject(pCollector)
---	col2creo:setOptionsBitmask(128)
-	collector:setCustomObjectName("\\#ee3377Travel to Kaadara Outpost - (Naboo)")
-	createObserver(OBJECTRADIALUSED, "RoriImperialEncampmentScreenPlay", "teleportImpOutpost", pCollector)
-	
-	local pCollector2 = spawnSceneObject("rori", "object/tangible/furniture/imperial/data_terminal_s1.iff", -5577.3, 76, -5619.2, 0, 0, 0, 1, 0)
-	local collector = LuaSceneObject(pCollector2)
---	local col2creo = LuaCreatureObject(pCollector2)
---	col2creo:setOptionsBitmask(128)
-	collector:setCustomObjectName("\\#ee3377Travel to Emperor's Retreat - (Naboo)")
-	createObserver(OBJECTRADIALUSED, "RoriImperialEncampmentScreenPlay", "teleportImpRetreat", pCollector2)
-			
-	-- Terminals
+-- Terminals
 
 	spawnSceneObject("rori", "object/tangible/terminal/terminal_character_builder.iff", -5580.0, 76.0, -5619.7, 0, 0, 0, 1, 0)
 	spawnSceneObject("rori", "object/tangible/terminal/terminal_mission_imperial.iff", -5573.2, 76.0, -5617.9, 0, 0, 0, 1, 0)
@@ -156,29 +140,4 @@ function RoriImperialEncampmentScreenPlay:spawnMobiles()
 	
 
 
-end
-
-	
-function RoriImperialEncampmentScreenPlay:teleportImpOutpost(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("naboo", 5333, 0, 6422, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
-end
-
-function RoriImperialEncampmentScreenPlay:teleportImpRetreat(pCollector, pPlayer)
-	local playerfaction = LuaCreatureObject(pPlayer)
-	if (playerfaction:isImperial() == true) then
-		local player = LuaSceneObject(pPlayer)
-		player:switchZone("naboo", 2437.8, 0, -3895.7, 0)
-	else
-		local playerm = LuaCreatureObject(pPlayer)
-		playerm:sendSystemMessage("You are not authorized to use this terminal")
-	end
-	return 0
 end
