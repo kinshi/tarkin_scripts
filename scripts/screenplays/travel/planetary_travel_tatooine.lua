@@ -33,23 +33,23 @@ end
 
 function PlanetaryTatooineScreenPlay:spawnMobiles()
   -- Spawn our pilots
-  local pPilotMosEisley = spawnMobile("tatooine", "tarkin_shuttle_pilot", 1, 3425, 5.6, -4653, -51, 0 )
-  local pPilotBestine = spawnMobile("tatooine", "tarkin_shuttle_pilot", 1, -1088, 12.6, -3564, -87, 0 )
-  local pPilotMosEnthaWest = spawnMobile("tatooine", "tarkin_shuttle_pilot", 1, 1395, 7.6, 3477, 176, 0 )
-  local pPilotMosEnthaEast = spawnMobile("tatooine", "tarkin_shuttle_pilot", 1, 1729, 7.4, 3192, 161, 0 )
-  local pPilotAnchorhead = spawnMobile("tatooine", "tarkin_shuttle_pilot", 1, 46, 52.6, -5329, 153, 0 )
-  local pPilotMosEspaWest = spawnMobile("tatooine", "tarkin_shuttle_pilot", 1, -3121, 5.6, 2172, 88, 0 )
-  local pPilotMosEspaEast = spawnMobile("tatooine", "tarkin_shuttle_pilot", 1, -2893, 5.4, 1923, -17, 0 )
-  local pPilotWayfar = spawnMobile("tatooine", "tarkin_shuttle_pilot", 1, -5064, 75.6, -6547, -72, 0 )
-  local pPilotMosTaike = spawnMobile("tatooine", "tarkin_shuttle_pilot", 1, 3734, 6.4, 2409, 158, 0 )
+  local pPilotMosEisley = spawnMobile("tatooine", "tatooine_shuttle_pilot", 1, 3425, 5.6, -4653, -51, 0 )
+  local pPilotBestine = spawnMobile("tatooine", "tatooine_shuttle_pilot", 1, -1088, 12.6, -3564, -87, 0 )
+  local pPilotMosEnthaWest = spawnMobile("tatooine", "tatooine_shuttle_pilot", 1, 1395, 7.6, 3477, 176, 0 )
+  local pPilotMosEnthaEast = spawnMobile("tatooine", "tatooine_shuttle_pilot", 1, 1729, 7.4, 3192, 161, 0 )
+  local pPilotAnchorhead = spawnMobile("tatooine", "tatooine_shuttle_pilot", 1, 46, 52.6, -5329, 153, 0 )
+  local pPilotMosEspaWest = spawnMobile("tatooine", "tatooine_shuttle_pilot", 1, -3121, 5.6, 2172, 88, 0 )
+  local pPilotMosEspaEast = spawnMobile("tatooine", "tatooine_shuttle_pilot", 1, -2893, 5.4, 1923, -17, 0 )
+  local pPilotWayfar = spawnMobile("tatooine", "tatooine_shuttle_pilot", 1, -5064, 75.6, -6547, -72, 0 )
+  local pPilotMosTaike = spawnMobile("tatooine", "tatooine_shuttle_pilot", 1, 3734, 6.4, 2409, 158, 0 )
 end
 
 
-planetarytravel_convo_handler = Object:new {}
+tatooineshuttlepilot_convo_handler = Object:new {}
 
 
 
-function planetarytravel_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
+function tatooineshuttlepilot_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
 -- Assign the player to variable creature for use inside this function.
   local creature = LuaCreatureObject(conversingPlayer)
   -- Get the last conversation to determine whetehr or not we're  on the first screen
@@ -107,7 +107,7 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
 end
 
 
-function planetarytravel_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
+function tatooineshuttlepilot_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
 	-- Plays the screens of the conversation.
 	local player = LuaSceneObject(conversingPlayer)
 	local screen = LuaConversationScreen(conversationScreen)

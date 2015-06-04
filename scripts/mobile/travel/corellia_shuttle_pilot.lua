@@ -1,4 +1,4 @@
-tarkin_shuttle_pilot = Creature:new {
+corellia_shuttle_pilot = Creature:new {
   objectName = "@mob/creature_names:commoner",
   customName = "Shuttleport Pilot",
   socialGroup = "townsperson",
@@ -31,9 +31,9 @@ tarkin_shuttle_pilot = Creature:new {
 			"object/mobile/dressed_royal_pilot_human_male_01.iff"},
   lootGroups = {},
   weapons = {},
-  conversationTemplate = "planetarytravel_template",
+  conversationTemplate = "corelliashuttlepilot_template",
   attacks = {
   }
 }
 
-CreatureTemplates:addCreatureTemplate(tarkin_shuttle_pilot, "tarkin_shuttle_pilot")
+CreatureTemplates:addCreatureTemplate(corellia_shuttle_pilot, "corellia_shuttle_pilot")

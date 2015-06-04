@@ -33,16 +33,16 @@ end
 
 function PlanetaryTalusScreenPlay:spawnMobiles()
   -- Spawn our pilots
-  local pPilotDearic = spawnMobile("talus", "tarkin_shuttle_pilot", 1, 698, 6.6, -3049, -16, 0 )
-  local pPilotNashal = spawnMobile("talus", "tarkin_shuttle_pilot", 1, 4325, 10.6, 5431, 100, 0 )
+  local pPilotDearic = spawnMobile("talus", "talus_shuttle_pilot", 1, 698, 6.6, -3049, -16, 0 )
+  local pPilotNashal = spawnMobile("talus", "talus_shuttle_pilot", 1, 4325, 10.6, 5431, 100, 0 )
 end
 
 
-planetarytravel_convo_handler = Object:new {}
+talusshuttlepilot_convo_handler = Object:new {}
 
 
 
-function planetarytravel_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
+function talusshuttlepilot_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
 -- Assign the player to variable creature for use inside this function.
   local creature = LuaCreatureObject(conversingPlayer)
   -- Get the last conversation to determine whetehr or not we're  on the first screen
@@ -63,10 +63,11 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
     
     -- Last conversation was nil, so get the first screen
     if ( lastConversationScreen == nil ) then
-      nextConversationScreen = conversation:getScreen("talus_start")
+        nextConversationScreen = conversation:getScreen("talus_start")
     else
       -- Start playing the rest of the conversation based on user input
       local luaLastConversationScreen = LuaConversationScreen(lastConversationScreen)
+      nextConversationScreen = conversation:getScreen("talus_start")
       
       -- Set variable to track what option the player picked and get the option picked
       local optionLink = luaLastConversationScreen:getOptionLink(selectedOption)
@@ -93,7 +94,7 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
 end
 
 
-function planetarytravel_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
+function talusshuttlepilot_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
 	-- Plays the screens of the conversation.
 	local player = LuaSceneObject(conversingPlayer)
 	local screen = LuaConversationScreen(conversationScreen)

@@ -33,16 +33,16 @@ end
 
 function PlanetaryEndorScreenPlay:spawnMobiles()
   -- Spawn our pilots
-  local pPilotSmuggler = spawnMobile("endor", "tarkin_shuttle_pilot", 1, -973, 73, 1555, 83, 0 )
-  local pPilotResearch = spawnMobile("endor", "tarkin_shuttle_pilot", 1, 3222, 24, -3487, -105, 0 )
+  local pPilotSmuggler = spawnMobile("endor", "endor_shuttle_pilot", 1, -973, 73, 1555, 83, 0 )
+  local pPilotResearch = spawnMobile("endor", "endor_shuttle_pilot", 1, 3222, 24, -3487, -105, 0 )
 end
 
 
-planetarytravel_convo_handler = Object:new {}
+endorshuttlepilot_convo_handler = Object:new {}
 
 
 
-function planetarytravel_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
+function endorshuttlepilot_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
 -- Assign the player to variable creature for use inside this function.
   local creature = LuaCreatureObject(conversingPlayer)
   -- Get the last conversation to determine whetehr or not we're  on the first screen
@@ -93,7 +93,7 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
 end
 
 
-function planetarytravel_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
+function endorshuttlepilot_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
 	-- Plays the screens of the conversation.
 	local player = LuaSceneObject(conversingPlayer)
 	local screen = LuaConversationScreen(conversationScreen)

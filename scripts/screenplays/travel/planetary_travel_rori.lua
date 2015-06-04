@@ -33,16 +33,16 @@ end
 
 function PlanetaryRoriScreenPlay:spawnMobiles()
   -- Spawn our pilots
-  local pPilotRestuss = spawnMobile("rori", "tarkin_shuttle_pilot", 1, 5213, 80.6, 5800, -164, 0 )
-  local pPilotNarmle = spawnMobile("rori", "tarkin_shuttle_pilot", 1, -5247, 81.6, -2154, -141, 0 )
+  local pPilotRestuss = spawnMobile("rori", "rori_shuttle_pilot", 1, 5213, 80.6, 5800, -164, 0 )
+  local pPilotNarmle = spawnMobile("rori", "rori_shuttle_pilot", 1, -5247, 81.6, -2154, -141, 0 )
 end
 
 
-planetarytravel_convo_handler = Object:new {}
+rorishuttlepilot_convo_handler = Object:new {}
 
 
 
-function planetarytravel_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
+function rorishuttlepilot_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
 -- Assign the player to variable creature for use inside this function.
   local creature = LuaCreatureObject(conversingPlayer)
   -- Get the last conversation to determine whetehr or not we're  on the first screen
@@ -93,7 +93,7 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
 end
 
 
-function planetarytravel_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
+function rorishuttlepilot_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
 	-- Plays the screens of the conversation.
 	local player = LuaSceneObject(conversingPlayer)
 	local screen = LuaConversationScreen(conversationScreen)

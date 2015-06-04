@@ -33,16 +33,16 @@ end
 
 function PlanetaryYavin4ScreenPlay:spawnMobiles()
   -- Spawn our pilots
-  local pPilotLabor = spawnMobile("yavin4", "tarkin_shuttle_pilot", 1, -6934, 73, -5699, 137, 0 )
-  local pPilotMining = spawnMobile("yavin4", "tarkin_shuttle_pilot", 1, -287, 35, 4883, 74, 0 )
+  local pPilotLabor = spawnMobile("yavin4", "yavin4_shuttle_pilot", 1, -6934, 73, -5699, 137, 0 )
+  local pPilotMining = spawnMobile("yavin4", "yavin4_shuttle_pilot", 1, -287, 35, 4883, 74, 0 )
 end
 
 
-planetarytravel_convo_handler = Object:new {}
+yavin4shuttlepilot_convo_handler = Object:new {}
 
 
 
-function planetarytravel_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
+function yavin4shuttlepilot_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
 -- Assign the player to variable creature for use inside this function.
   local creature = LuaCreatureObject(conversingPlayer)
   -- Get the last conversation to determine whetehr or not we're  on the first screen
@@ -93,7 +93,7 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
 end
 
 
-function planetarytravel_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
+function yavin4shuttlepilot_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
 	-- Plays the screens of the conversation.
 	local player = LuaSceneObject(conversingPlayer)
 	local screen = LuaConversationScreen(conversationScreen)
