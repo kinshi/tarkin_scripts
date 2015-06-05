@@ -26,7 +26,7 @@ woltenkinharafromcoronet_template:addScreen(woltenkinharafromcoronet_insufficien
 woltenkinharafromcoronet_from_coronet_start = ConvoScreen:new {
   id = "from_coronet_start",
   leftDialog = "",
-  customDialogText = "Looking to cause some trouble, eh? I can take ya a few places that'll be worth your while. And mine... My fee is 10k one way, but I'll wait for ya when we get there and give you a lift back here.",
+  customDialogText = "Looking to cause some trouble, eh? I can take ya a few places that'll be worth your while. And mine... My fee is 10k one way, but I'll wait for ya when we get there and give ya a lift back here.",
   stopConversation = "false",
   options = {
     {"Death Watch Bunker", "dwb"},

@@ -109,19 +109,19 @@ function woltenkinharafromcoronet_convo_handler:runScreenHandlers(conversationTe
   	if (screenID == "dwb") then
       player:switchZone("endor", -4706, 0, 4334, 0)
     elseif (screenID == "geo") then
-      player:switchZone("yavin4", -6513, 0, -426, 0)
+      player:switchZone("yavin4", -6500, 93, -495, 0)
     elseif (screenID == "nyax") then
-      player:switchZone("corellia", 1282, 0, -302, 0)
+      player:switchZone("corellia", 1623, 17, -472, 0)
     elseif (screenID == "tusken") then
-     player:switchZone("tatooine", -3919, 0, 6367, -90)
+     player:switchZone("tatooine", -3919, 0, 6367, 0)
     elseif (screenID == "janta") then
-      player:switchZone("dantooine", 7035, 0, -4078, -90)
+      player:switchZone("dantooine", 7035, 0, -4078, 0)
     elseif (screenID == "warren") then
-      player:switchZone("dantooine", -618, 0, -3738, -90)
+      player:switchZone("dantooine", -524, 7, -3773, 0)
     elseif (screenID == "droid") then
-      player:switchZone("lok", 3485, 0, -5027, -90)
+      player:switchZone("lok", 3485, 0, -5027, 0)
     elseif (screenID == "nightsister") then
-      player:switchZone("dathomir", -4680, 13, 4322, -90)
+      player:switchZone("dathomir", -4266, 120, 65, 0)
     end
     self.hasPaid = "false"
   end
