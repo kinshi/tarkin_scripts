@@ -33,23 +33,23 @@ end
 
 function PlanetaryNabooScreenPlay:spawnMobiles()
   -- Spawn our pilots
-  local pPilotTheedEast = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, -4976, 6.6, 4097, 35, 0 )
-  local pPilotTheedPalace = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, -5406, 6.6, 4316, 35, 0 )
-  local pPilotTheedWest = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, -5864, 6.6, 4173, 88, 0 )
-  local pPilotLakeRetreat = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, -5485, -149.4, -23, -94, 0 )
-  local pPilotKerenWest = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, 1562, 25.6, 2845, 154, 0 )
-  local pPilotKerenEast = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, 2029, 19.6, 2524, -64, 0 )
-  local pPilotKaadara = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, 5129, -191.4, 6608, -1, 0 )
-  local pPilotDeejaPeak = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, 5341, 327.6, -1581, -82, 0 )
-  local pPilotMoenia = spawnMobile("naboo", "tarkin_shuttle_pilot", 1, 4971, 4.4, -4893, -82, 0 )
+  local pPilotTheedEast = spawnMobile("naboo", "naboo_shuttle_pilot", 1, -4976, 6.6, 4097, 35, 0 )
+  local pPilotTheedPalace = spawnMobile("naboo", "naboo_shuttle_pilot", 1, -5406, 6.6, 4316, 35, 0 )
+  local pPilotTheedWest = spawnMobile("naboo", "naboo_shuttle_pilot", 1, -5864, 6.6, 4173, 88, 0 )
+  local pPilotLakeRetreat = spawnMobile("naboo", "naboo_shuttle_pilot", 1, -5485, -149.4, -23, -94, 0 )
+  local pPilotKerenWest = spawnMobile("naboo", "naboo_shuttle_pilot", 1, 1562, 25.6, 2845, 154, 0 )
+  local pPilotKerenEast = spawnMobile("naboo", "naboo_shuttle_pilot", 1, 2029, 19.6, 2524, -64, 0 )
+  local pPilotKaadara = spawnMobile("naboo", "naboo_shuttle_pilot", 1, 5129, -191.4, 6608, -1, 0 )
+  local pPilotDeejaPeak = spawnMobile("naboo", "naboo_shuttle_pilot", 1, 5341, 327.6, -1581, -82, 0 )
+  local pPilotMoenia = spawnMobile("naboo", "naboo_shuttle_pilot", 1, 4971, 4.4, -4893, -82, 0 )
 end
 
 
-planetarytravel_convo_handler = Object:new {}
+nabooshuttlepilot_convo_handler = Object:new {}
 
 
 
-function planetarytravel_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
+function nabooshuttlepilot_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
 -- Assign the player to variable creature for use inside this function.
   local creature = LuaCreatureObject(conversingPlayer)
   -- Get the last conversation to determine whetehr or not we're  on the first screen
@@ -107,7 +107,7 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
 end
 
 
-function planetarytravel_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
+function nabooshuttlepilot_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
 	-- Plays the screens of the conversation.
 	local player = LuaSceneObject(conversingPlayer)
 	local screen = LuaConversationScreen(conversationScreen)

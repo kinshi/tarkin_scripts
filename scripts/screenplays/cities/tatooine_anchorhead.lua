@@ -16,7 +16,7 @@ end
 function TatooineAnchorheadScreenPlay:spawnSceneObjects()
 
 --AH Shuttle
-spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_shuttle.iff", 44.0, 52.0, -5320.0, 0, -90)
+--spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_shuttle.iff", 44.0, 52.0, -5320.0, 0, -90)
 
 end
 

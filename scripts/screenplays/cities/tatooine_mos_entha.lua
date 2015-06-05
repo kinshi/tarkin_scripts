@@ -29,13 +29,13 @@ function TatooineMosEnthaScreenPlay:spawnSceneObjects()
 	spawnSceneObject("tatooine", "object/tangible/terminal/terminal_elevator_down.iff", 13.5, 15, -17.95, 1153526, 1, 0, 0, 0)
 
 --Mos Entha SP
-spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_transport.iff", 1242, 7.0, 3060, 0, -140)
+--spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_transport.iff", 1242, 7.0, 3060, 0, -140)
 
 --Mos Entha Shuttle B
-spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_shuttle.iff", 1393, 7.0, 3488, 0, 90)
+--spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_shuttle.iff", 1393, 7.0, 3488, 0, 90)
 
 --Mos Entha Shuttle A
-spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_shuttle.iff", 1729, 7.0, 3202, 0, 90)
+--spawnSceneObject("tatooine", "object/creature/npc/theme_park/player_shuttle.iff", 1729, 7.0, 3202, 0, 90)
 
 end
 

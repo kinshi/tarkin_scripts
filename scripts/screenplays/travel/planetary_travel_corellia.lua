@@ -33,23 +33,23 @@ end
 
 function PlanetaryCorelliaScreenPlay:spawnMobiles()
   -- Spawn our pilots
-  local pPilotCoronetWest = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, -328, 28.6, -4632, 172, 0 )
-  local pPilotCoronetEast = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, -23, 28.6, -4399, -174, 0 )
-  local pPilotKorVella = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, -3771, 86.6, 3240, 159, 0 )
-  local pPilotTyrenaWest = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, -5610, 21.4, -2787, 90, 0 )
-  local pPilotTyrenaEast = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, -5002, 21.6, -2376, -160, 0 )
-  local pPilotDoabaGuefel = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, 3074, 280.6, 4993, 84, 0 )
-  local pPilotBelaVistalNorth = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, 6941, 330.4, -5537, -114, 0 )
-  local pPilotBelaVistalSouth = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, 6632, 330.6, -5921, 125, 0 )
-  local pPilotVreniIsland = spawnMobile("corellia", "tarkin_shuttle_pilot", 1, -5551, 16.4, -6049, 178, 0 )
+  local pPilotCoronetWest = spawnMobile("corellia", "corellia_shuttle_pilot", 1, -328, 28.6, -4632, 172, 0 )
+  local pPilotCoronetEast = spawnMobile("corellia", "corellia_shuttle_pilot", 1, -23, 28.6, -4399, -174, 0 )
+  local pPilotKorVella = spawnMobile("corellia", "corellia_shuttle_pilot", 1, -3771, 86.6, 3240, 159, 0 )
+  local pPilotTyrenaWest = spawnMobile("corellia", "corellia_shuttle_pilot", 1, -5610, 21.4, -2787, 90, 0 )
+  local pPilotTyrenaEast = spawnMobile("corellia", "corellia_shuttle_pilot", 1, -5002, 21.6, -2376, -160, 0 )
+  local pPilotDoabaGuefel = spawnMobile("corellia", "corellia_shuttle_pilot", 1, 3074, 280.6, 4993, 84, 0 )
+  local pPilotBelaVistalNorth = spawnMobile("corellia", "corellia_shuttle_pilot", 1, 6941, 330.4, -5537, -114, 0 )
+  local pPilotBelaVistalSouth = spawnMobile("corellia", "corellia_shuttle_pilot", 1, 6632, 330.6, -5921, 125, 0 )
+  local pPilotVreniIsland = spawnMobile("corellia", "corellia_shuttle_pilot", 1, -5551, 16.4, -6049, 178, 0 )
 end
 
 
-planetarytravel_convo_handler = Object:new {}
+corelliashuttlepilot_convo_handler = Object:new {}
 
 
 
-function planetarytravel_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
+function corelliashuttlepilot_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
 -- Assign the player to variable creature for use inside this function.
   local creature = LuaCreatureObject(conversingPlayer)
   -- Get the last conversation to determine whetehr or not we're  on the first screen
@@ -107,7 +107,7 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
 end
 
 
-function planetarytravel_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
+function corelliashuttlepilot_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
 	-- Plays the screens of the conversation.
 	local player = LuaSceneObject(conversingPlayer)
 	local screen = LuaConversationScreen(conversationScreen)

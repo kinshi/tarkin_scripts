@@ -16,7 +16,7 @@ end
 function LokNymStrongholdScreenPlay:spawnSceneObjects()
 
 --Nyms SP
-spawnSceneObject("lok", "object/creature/npc/theme_park/player_transport.iff", 457.0, 21.0, 5496.0, 0, 90)
+--spawnSceneObject("lok", "object/creature/npc/theme_park/player_transport.iff", 457.0, 21.0, 5496.0, 0, 90)
 
 end
 

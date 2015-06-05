@@ -16,13 +16,13 @@ end
 function CorelliaCoronetScreenPlay:spawnSceneObjects()
 
 --Coronet SP
-spawnSceneObject("corellia", "object/creature/npc/theme_park/player_transport.iff", -47.0, 28.0, -4733.0, 0, 90)
+--spawnSceneObject("corellia", "object/creature/npc/theme_park/player_transport.iff", -47.0, 28.0, -4733.0, 0, 90)
 
 --Shuttle A
-spawnSceneObject("corellia", "object/creature/npc/theme_park/player_shuttle.iff", -24.0, 28.0, -4389, 0, -90)
+--spawnSceneObject("corellia", "object/creature/npc/theme_park/player_shuttle.iff", -24.0, 28.0, -4389, 0, -90)
 
 --Shuttle B
-spawnSceneObject("corellia", "object/creature/npc/theme_park/player_shuttle.iff", -327.0, 28.0, -4620.0, 0, 90)
+--spawnSceneObject("corellia", "object/creature/npc/theme_park/player_shuttle.iff", -327.0, 28.0, -4620.0, 0, 90)
 
 
 end

@@ -33,16 +33,16 @@ end
 
 function PlanetaryDantooineScreenPlay:spawnMobiles()
   -- Spawn our pilots
-  local pPilotAgro = spawnMobile("dantooine", "tarkin_shuttle_pilot", 1, 1589, 4, -6399, -129, 0 )
-  local pPilotMining = spawnMobile("dantooine", "tarkin_shuttle_pilot", 1, -630, 3, 2485, -22, 0 )
+  local pPilotAgro = spawnMobile("dantooine", "dantooine_shuttle_pilot", 1, 1589, 4, -6399, -129, 0 )
+  local pPilotMining = spawnMobile("dantooine", "dantooine_shuttle_pilot", 1, -630, 3, 2485, -22, 0 )
 end
 
 
-planetarytravel_convo_handler = Object:new {}
+dantooineshuttlepilot_convo_handler = Object:new {}
 
 
 
-function planetarytravel_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
+function dantooineshuttlepilot_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
 -- Assign the player to variable creature for use inside this function.
   local creature = LuaCreatureObject(conversingPlayer)
   -- Get the last conversation to determine whetehr or not we're  on the first screen
@@ -80,7 +80,7 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
         -- Bail if the player doesn't have enough cash on hand.
         nextConversationScreen = conversation:getScreen("insufficient_funds")
       elseif (optionLink == "agro" or
-              optionLink == "mining"
+              optionLink == "mining_dant"
              ) then
         -- Take 250 credits from the player's cash on hand.
         creature:subtractCashCredits(250)
@@ -93,7 +93,7 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
 end
 
 
-function planetarytravel_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
+function dantooineshuttlepilot_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
 	-- Plays the screens of the conversation.
 	local player = LuaSceneObject(conversingPlayer)
 	local screen = LuaConversationScreen(conversationScreen)
@@ -103,7 +103,7 @@ function planetarytravel_convo_handler:runScreenHandlers(conversationTemplate, c
 	if (self.hasPaid == "true") then
   	if (screenID == "agro") then
       player:switchZone("dantooine", 1572, 4, -6415, 0)
-    elseif (screenID == "mining") then
+    elseif (screenID == "mining_dant") then
       player:switchZone("dantooine", -638, 3, 2503, 0)
     end
     self.hasPaid = "false"

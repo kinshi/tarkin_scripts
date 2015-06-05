@@ -33,16 +33,16 @@ end
 
 function PlanetaryDathomirScreenPlay:spawnMobiles()
   -- Spawn our pilots
-  local pPilotScience = spawnMobile("dathomir", "tarkin_shuttle_pilot", 1, -58, 18, -1596, -95, 0 )
-  local pPilotTrade = spawnMobile("dathomir", "tarkin_shuttle_pilot", 1, 606, 6, 3079, -29, 0 )
+  local pPilotScience = spawnMobile("dathomir", "dathomir_shuttle_pilot", 1, -58, 18, -1596, -95, 0 )
+  local pPilotTrade = spawnMobile("dathomir", "dathomir_shuttle_pilot", 1, 606, 6, 3079, -29, 0 )
 end
 
 
-planetarytravel_convo_handler = Object:new {}
+dathomirshuttlepilot_convo_handler = Object:new {}
 
 
 
-function planetarytravel_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
+function dathomirshuttlepilot_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
 -- Assign the player to variable creature for use inside this function.
   local creature = LuaCreatureObject(conversingPlayer)
   -- Get the last conversation to determine whetehr or not we're  on the first screen
@@ -93,7 +93,7 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
 end
 
 
-function planetarytravel_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
+function dathomirshuttlepilot_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
 	-- Plays the screens of the conversation.
 	local player = LuaSceneObject(conversingPlayer)
 	local screen = LuaConversationScreen(conversationScreen)

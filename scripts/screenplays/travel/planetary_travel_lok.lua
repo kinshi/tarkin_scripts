@@ -35,19 +35,18 @@ function PlanetaryLokScreenPlay:spawnMobiles()
   -- Spawn our pilots
   
   -- Lok doesn't have any public shuttle ports at this time, but I left you this template in case you add more later!
-  -- Don't forget to edit the conversation template in mobile/conversations/tasks/planetary_travel_conv_handler.lua
-  -- when you change the names of the destinations.
+  -- Don't forget to edit the conversation template to/when you change the names of the destination names.
   
-  --local pPilotLabor = spawnMobile("lok", "tarkin_shuttle_pilot", 1, -6934, 73, -5699, 137, 0 )
-  --local pPilotMining = spawnMobile("lok", "tarkin_shuttle_pilot", 1, -287, 35, 4883, 74, 0 )
+  --local pPilotExample1 = spawnMobile("lok", "lok_shuttle_pilot", 1, -6934, 73, -5699, 137, 0 )
+  --local pPilotExample2 = spawnMobile("lok", "lok_shuttle_pilot", 1, -287, 35, 4883, 74, 0 )
 end
 
 
-planetarytravel_convo_handler = Object:new {}
+lokshuttlepilot_convo_handler = Object:new {}
 
 
 
-function planetarytravel_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
+function lokshuttlepilot_convo_handler:getNextConversationScreen(conversationTemplate, conversingPlayer, selectedOption)
 -- Assign the player to variable creature for use inside this function.
   local creature = LuaCreatureObject(conversingPlayer)
   -- Get the last conversation to determine whetehr or not we're  on the first screen
@@ -84,8 +83,8 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
       if (credits < 250) then       
         -- Bail if the player doesn't have enough cash on hand.
         nextConversationScreen = conversation:getScreen("insufficient_funds")
-      elseif (optionLink == "labor_lok" or
-              optionLink == "mining_lok"
+      elseif (optionLink == "example_1" or
+              optionLink == "example_2"
              ) then
         -- Take 250 credits from the player's cash on hand.
         creature:subtractCashCredits(250)
@@ -98,7 +97,7 @@ function planetarytravel_convo_handler:getNextConversationScreen(conversationTem
 end
 
 
-function planetarytravel_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
+function lokshuttlepilot_convo_handler:runScreenHandlers(conversationTemplate, conversingPlayer, conversingNPC, selectedOption, conversationScreen)
 	-- Plays the screens of the conversation.
 	local player = LuaSceneObject(conversingPlayer)
 	local screen = LuaConversationScreen(conversationScreen)
@@ -106,9 +105,9 @@ function planetarytravel_convo_handler:runScreenHandlers(conversationTemplate, c
 	
 	-- Teleport player
 	if (self.hasPaid == "true") then
-  	if (screenID == "labor_lok") then
+  	if (screenID == "example_1") then
       player:switchZone("lok", -6921, 73, -5732, 0)
-    elseif (screenID == "mining_lok") then
+    elseif (screenID == "example_2") then
       player:switchZone("lok", -269, 35, 4896, 0)
     end
     self.hasPaid = "false"

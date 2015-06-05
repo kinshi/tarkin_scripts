@@ -16,7 +16,7 @@ end
 function TalusDearicScreenPlay:spawnSceneObjects()
 
 --Dearic SP
-spawnSceneObject("talus", "object/creature/npc/theme_park/player_transport.iff", 246.0, 6.0, -2930.0, 0, 90)
+--spawnSceneObject("talus", "object/creature/npc/theme_park/player_transport.iff", 246.0, 6.0, -2930.0, 0, 90)
 
 end
 

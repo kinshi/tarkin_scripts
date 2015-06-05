@@ -16,7 +16,7 @@ end
 function CorelliaDoabaGuerfelScreenPlay:spawnSceneObjects()
 
 --Doaba Guerfel SP
-spawnSceneObject("corellia", "object/creature/npc/theme_park/player_transport.iff", 3382.0, 308.0, 5604.0, 0, 0)
+--spawnSceneObject("corellia", "object/creature/npc/theme_park/player_transport.iff", 3382.0, 308.0, 5604.0, 0, 0)
 
 end
 
