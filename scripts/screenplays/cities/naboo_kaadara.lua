@@ -16,10 +16,10 @@ end
 function NabooKadaaraScreenPlay:spawnSceneObjects()
 	
 --Kadaara SP
-spawnSceneObject("naboo", "object/creature/npc/theme_park/player_transport.iff", 5302, -192.0, 6667, 0, 90)
+--spawnSceneObject("naboo", "object/creature/npc/theme_park/player_transport.iff", 5302, -192.0, 6667, 0, 90)
 
 --Shuttle A
-spawnSceneObject("naboo", "object/creature/npc/theme_park/player_shuttle.iff", 5137, -191.0, 6601, 0, 132)
+--spawnSceneObject("naboo", "object/creature/npc/theme_park/player_shuttle.iff", 5137, -191.0, 6601, 0, 132)
 
 
 end

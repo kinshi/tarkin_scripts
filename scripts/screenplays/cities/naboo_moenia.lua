@@ -18,7 +18,7 @@ end
 function MoeniaScreenPlay:spawnSceneObjects()
 
 --Moenia SP
-spawnSceneObject("naboo", "object/creature/npc/theme_park/player_transport.iff", 4729.0, 4.0, -4646.0, 0, -90)
+--spawnSceneObject("naboo", "object/creature/npc/theme_park/player_transport.iff", 4729.0, 4.0, -4646.0, 0, -90)
 
 end
 

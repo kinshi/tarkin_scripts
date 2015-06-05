@@ -103,7 +103,7 @@ function starpilotfromtheed_convo_handler:getNextConversationScreen(conversation
            nextConversationScreen = conversation:getScreen("insufficient_funds")
           end
       elseif (optionLink == "endor") then
-          if (redits >= 4000) then
+          if (credits >= 4000) then
             creature:subtractCashCredits(4000)
             self.hasPaid = "true"
           else

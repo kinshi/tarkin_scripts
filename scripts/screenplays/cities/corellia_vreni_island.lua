@@ -17,7 +17,7 @@ end
 function VreniIslandScreenPlay:spawnSceneObjects()
 
 --Vreni Island Shuttle
-spawnSceneObject("corellia", "object/creature/npc/theme_park/player_shuttle.iff", -5550.0, 16.0, -6040.0, 0, -90)
+--spawnSceneObject("corellia", "object/creature/npc/theme_park/player_shuttle.iff", -5550.0, 16.0, -6040.0, 0, -90)
 
 end
 

@@ -16,7 +16,7 @@ end
 function CorelliaKorVellaScreenPlay:spawnSceneObjects()
 
 --Kor Vella SP
-spawnSceneObject("corellia", "object/creature/npc/theme_park/player_transport.iff", -3139.0, 31.0, 2893.0, 0, 0)
+--spawnSceneObject("corellia", "object/creature/npc/theme_park/player_transport.iff", -3139.0, 31.0, 2893.0, 0, 0)
 
 end
 

@@ -23,7 +23,7 @@ starpilottotheed_template:addScreen(starpilottotheed_insufficient_funds);
 
 -- To Theed from the other planets ======================
 
-starpilottotheed_rori_start = ConvoScreen:new {
+starpilottotheed_to_theed_start = ConvoScreen:new {
   id = "to_theed_start",
   leftDialog = "",
   customDialogText = "Good day, traveler. The public transit system will return you to Theed for 1000 credits.",
@@ -32,7 +32,7 @@ starpilottotheed_rori_start = ConvoScreen:new {
     {"Sounds great. Thanks!", "accept"},
   }
 }
-starpilottotheed_template:addScreen(starpilottotheed_rori_start);
+starpilottotheed_template:addScreen(starpilottotheed_to_theed_start);
 
 starpilottotheed_accept = ConvoScreen:new {
   id = "accept",

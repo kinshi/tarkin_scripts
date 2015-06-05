@@ -16,7 +16,7 @@ end
 function Yavin4MiningOutpostScreenPlay:spawnSceneObjects()
 
 --Mining Outpost SP
-spawnSceneObject("yavin4", "object/creature/npc/theme_park/player_transport.iff", -302.0, 35.0, 4862.0, 0, 90)
+--spawnSceneObject("yavin4", "object/creature/npc/theme_park/player_transport.iff", -302.0, 35.0, 4862.0, 0, 90)
 
 end
 

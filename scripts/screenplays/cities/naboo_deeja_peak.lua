@@ -18,7 +18,7 @@ end
 function NabooDeejaPeakScreenPlay:spawnSceneObjects()
 
 --Deeja Peak Shuttle
-spawnSceneObject("naboo", "object/creature/npc/theme_park/player_shuttle.iff", 5351.0, 327.0, -1574.0, 0, -180)
+--spawnSceneObject("naboo", "object/creature/npc/theme_park/player_shuttle.iff", 5351.0, 327.0, -1574.0, 0, -180)
 
 end
 

@@ -23,7 +23,7 @@ starpilotfromtheed_template:addScreen(starpilotfromtheed_insufficient_funds);
 
 -- From Theed =======================
 
-starpilotfromtheed_corellia_start = ConvoScreen:new {
+starpilotfromtheed_from_theed_start = ConvoScreen:new {
   id = "from_theed_start",
   leftDialog = "",
   customDialogText = "Hello, traveller! Where can I take you today? Here are my prices...",
@@ -40,7 +40,7 @@ starpilotfromtheed_corellia_start = ConvoScreen:new {
     {"Yavin4 (4500)", "yavin4"},
   }
 }
-starpilotfromtheed_template:addScreen(starpilotfromtheed_corellia_start);
+starpilotfromtheed_template:addScreen(starpilotfromtheed_from_theed_start);
 
 starpilotfromtheed_corellia = ConvoScreen:new {
   id = "corellia",

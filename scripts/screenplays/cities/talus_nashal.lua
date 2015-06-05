@@ -16,7 +16,7 @@ end
 function TalusNashalScreenPlay:spawnSceneObjects()
 
 --Nashal SP
-spawnSceneObject("talus", "object/creature/npc/theme_park/player_transport.iff", 4480.0, 2.0, 5360.0, 0, 0)
+--spawnSceneObject("talus", "object/creature/npc/theme_park/player_transport.iff", 4480.0, 2.0, 5360.0, 0, 0)
 
 end
 

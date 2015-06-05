@@ -16,7 +16,7 @@ end
 function NabooKerenScreenPlay:spawnSceneObjects()
 
 --Keren SP
-spawnSceneObject("naboo", "object/creature/npc/theme_park/player_transport.iff", 1356.0, 13.0, 2766.0, 0, 90)
+--spawnSceneObject("naboo", "object/creature/npc/theme_park/player_transport.iff", 1356.0, 13.0, 2766.0, 0, 90)
 
 end
 

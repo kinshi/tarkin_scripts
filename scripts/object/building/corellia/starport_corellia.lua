@@ -45,11 +45,11 @@ object_building_corellia_starport_corellia = object_building_corellia_shared_sta
 	gameObjectType = 521,
 	planetMapCategory = "starport",
 	childObjects = {
-		{templateFile = "object/tangible/terminal/terminal_travel.iff", x = -2.7419, z = 0.639421, y = 48.1677, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 4, containmentType = -1},
-		{templateFile = "object/tangible/terminal/terminal_travel.iff", x = 12.8, z = 0.639421, y = 51.4, ox = 0, oy = -0.416129, oz = 0, ow = 0.909306, cellid = 4, containmentType = -1},
-		{templateFile = "object/tangible/terminal/terminal_travel.iff", x = 2.54505, z = 0.639421, y = 48.1693, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 4, containmentType = -1},
-		{templateFile = "object/tangible/terminal/terminal_travel.iff", x = -12.2808, z = 0.639421, y = 51.358, ox = 0, oy = 0.388969, oz = 0, ow = 0.921251, cellid = 4, containmentType = -1},
-		{templateFile = "object/tangible/travel/ticket_collector/ticket_collector.iff", x = 10, z = 0, y = -10, ox = 0, oy = 0.707107, oz = 0, ow = 0.707107, cellid = -1, containmentType = -1},
+		--{templateFile = "object/tangible/terminal/terminal_travel.iff", x = -2.7419, z = 0.639421, y = 48.1677, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 4, containmentType = -1},
+		--{templateFile = "object/tangible/terminal/terminal_travel.iff", x = 12.8, z = 0.639421, y = 51.4, ox = 0, oy = -0.416129, oz = 0, ow = 0.909306, cellid = 4, containmentType = -1},
+		--{templateFile = "object/tangible/terminal/terminal_travel.iff", x = 2.54505, z = 0.639421, y = 48.1693, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 4, containmentType = -1},
+		--{templateFile = "object/tangible/terminal/terminal_travel.iff", x = -12.2808, z = 0.639421, y = 51.358, ox = 0, oy = 0.388969, oz = 0, ow = 0.921251, cellid = 4, containmentType = -1},
+		--{templateFile = "object/tangible/travel/ticket_collector/ticket_collector.iff", x = 10, z = 0, y = -10, ox = 0, oy = 0.707107, oz = 0, ow = 0.707107, cellid = -1, containmentType = -1},
 		{templateFile = "object/mobile/player_transport.iff", x = 0, z = 0, y = 0, ox = 0, oy = 1, oz = 0, ow = 0, cellid = -1, containmentType = -1}
 	}
 }

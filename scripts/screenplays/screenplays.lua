@@ -351,9 +351,8 @@ includeFile("tests/painting_vendor.lua")
 
 includeFile("poi/dantooine_jedi_trainers.lua")
 
---_Bestine Travel terms
-
-includeFile("cities/tatooine_bestine_travel.lua")
+-- Bestine Travel terms [Disabled for Tarkin 2.0]
+--includeFile("cities/tatooine_bestine_travel.lua")
 
 -- Theed Cantina
 includeFile("cities/naboo_theed_cantina.lua")
@@ -386,7 +385,8 @@ includeFile("military/rebel/talus_rebel_installation.lua")
 
 -- Tarkin Travel System
 
-includeFile("travel/dungeons.lua")
+includeFile("travel/dungeon_travel_from_coronet.lua")
+includeFile("travel/dungeon_travel_to_coronet.lua")
 includeFile("travel/galactic_travel_from_theed.lua")
 includeFile("travel/galactic_travel_to_theed.lua")
 includeFile("travel/imperialZephyr.lua")
