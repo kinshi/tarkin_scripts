@@ -51,3 +51,5 @@ includeFile("misc/record_keeper_jabba.lua")
 includeFile("misc/record_keeper_rebel.lua")
 includeFile("misc/seeker.lua")
 includeFile("misc/sullustan_male.lua")
+-- Tarkin Specific
+includeFile("misc/theedracecoordinator.lua")
